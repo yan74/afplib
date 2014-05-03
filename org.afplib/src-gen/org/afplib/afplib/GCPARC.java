@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>GCPARC</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Partial Arc (Current Position)</b><br></p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

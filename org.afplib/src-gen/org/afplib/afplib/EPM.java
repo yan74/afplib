@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>EPM</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Page Map</b><br>Ends the Page Map</p><p>ID: 13871563</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>CPD</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Code Page Descriptor</b><br>The Code Page Descriptor (CPD) structured field describes the code page.</p><p>ID: 13870727</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

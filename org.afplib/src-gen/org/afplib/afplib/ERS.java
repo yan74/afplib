@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>ERS</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Resource</b><br>The End Resource structured field terminates an envelope that is used to carry resource objects in external (print file level) resource groups. The envelope is initiated by a Begin Resource (BRS) structured field.</p><p>ID: 13871566</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

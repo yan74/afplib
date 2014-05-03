@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>GNOP1</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>No-Operation</b><br></p>
- * <!-- end-model-doc -->
- *
  *
  * @see org.afplib.afplib.AfplibPackage#getGNOP1()
  * @model

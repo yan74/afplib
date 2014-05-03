@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>EFN</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Font</b><br>The End Font (EFN) structured field ends the font character set object.</p><p>ID: 13871497</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>EMO</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Overlay</b><br>The End Overlay structured field terminates the overlay resource object initiated by a Begin Overlay structured field.</p><p>ID: 13871583</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

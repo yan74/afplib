@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>Presentation Control</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Presentation Control</b><br>The Presentation Control triplet specifies flags that control the presentation of an object.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

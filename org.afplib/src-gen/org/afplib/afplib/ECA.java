@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>ECA</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Color Attribute Table</b><br>Ends the Color Attribute Table</p><p>ID: 13871479</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

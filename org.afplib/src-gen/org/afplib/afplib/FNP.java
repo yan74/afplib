@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>FNP</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Font Position</b><br>The Font Position (FNP) structured field describes the common characteristics of all the characters in a font character set. Four repeating groups, one for each character rotation, are allowed. The order of these groups must correspond to the order of the repeating groups in the Font Orientation (FNO) structured field, each of which specifies a separate character rotation.</p><p>ID: 13872265</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

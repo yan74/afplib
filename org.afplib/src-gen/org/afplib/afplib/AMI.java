@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>AMI</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Absolute Move Inline</b><br>The Absolute Move Inline control sequence moves the baseline coordinate relative to the B-axis.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

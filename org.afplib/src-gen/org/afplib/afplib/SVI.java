@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>SVI</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Set Variable Space Character Increment</b><br>The Set Variable Space Character Increment control sequence specifies the increment for a variable space character. This is a modal control sequence.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

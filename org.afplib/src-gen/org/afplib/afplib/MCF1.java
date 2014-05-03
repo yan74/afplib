@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>MCF1</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Map Coded Font (MCF) Format 1</b><br>The Map Coded Font structured field maps a unique coded font resource local ID</p><p>ID: 13873546</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

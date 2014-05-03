@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>CFI</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Coded Font Index</b><br>The Coded Font Index (CFI) structured field names the font character sets and code pages for the font. The structured field contains a set of parameters, defined as a repeating group. The length of the repeating group is defined in the Coded Font Control structured field. The number of repeating groups in the structured field can be determine by dividing the length of the CFI structured field (minus the length of the structured field introducer) by the length of the CFI repeating group. The repeating groups are sorted in ascending order based on the section identifier.</p><p>ID: 13864074</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

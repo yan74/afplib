@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>BDD</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Bar Code Data Descriptor</b><br>The BDD specifies the size of the bar code presentation space, the type of bar code to be generated, and the parameters used to generate the bar code symbols.</p><p>ID: 13870827</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

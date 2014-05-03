@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>PGP1</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Page Position (Format 1)</b><br>Use Format 2 instead!</p><p>ID: 13872303</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

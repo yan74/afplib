@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>CDD</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Container Data Descriptor</b><br>The Container Data Descriptor structured field specifies control information for a presentation data object that is carried in an object container.</p><p>ID: 13870738</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

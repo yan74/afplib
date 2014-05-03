@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>EBC</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Bar Code Object </b><br>The End Bar Code Object structured field terminates the current bar code object initiated by a Begin Bar Code Object structured field.</p><p>ID: 13871595</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

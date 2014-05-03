@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>MIO</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Map Image Object</b><br>The Map Image Object structured field specifies how an image data object is mapped into its object area.</p><p>ID: 13872123</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

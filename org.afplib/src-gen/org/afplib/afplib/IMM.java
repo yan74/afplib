@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>IMM</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Invoke Medium Map</b><br>The Invoke Medium Map structured field identifies the medium map that is to become active for the document. An Invoke Medium Map structured field affects the document's current environment. The medium map's effect on current environment parameter values lasts until a new medium map is invoked.</p><p>ID: 13872076</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

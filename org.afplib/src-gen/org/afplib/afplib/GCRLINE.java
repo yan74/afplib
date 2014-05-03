@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>GCRLINE</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Relative Line (Current Position)</b><br></p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

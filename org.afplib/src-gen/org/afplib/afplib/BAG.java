@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>BAG</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Begin Active Environment Group</b><br>The Begin Active Environment Group structured field begins an Active Environment Group, which establishes the environment parameters for the page or overlay. The scope of the active environment group is the containing page or overlay.</p><p>ID: 13871305</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

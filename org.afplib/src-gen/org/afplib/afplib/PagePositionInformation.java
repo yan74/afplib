@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>Page Position Information</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Page Position Information</b><br>The Page Position Information triplet is used to tag a page with the Page Position (PGP) structured field repeating group information that is used to present the page. The PGP is specified in the medium map referenced by the FQN type X'8D'?Begin Medium Map Reference triplet. This information is used for viewing the page with a particular form map, which is normally the form map that the document containing this page was archived with. This triplet is not used for printing and is ignored by print servers.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>OBP</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Object Area Position</b><br>The Object Area Position structured field specifies the origin and orientation of the object area, and the origin and orientation of the object content within the object area.</p><p>ID: 13872235</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

@@ -17,10 +17,6 @@
   «FOREACH structuredFields AS sf»
   <eClassifiers xsi:type="ecore:EClass" name="«sf.name»" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>«getProperty(sf.name+".t")»&lt;/b>&lt;br>«getProperty(sf.name+".d")»&lt;/p>&lt;p>ID: «sf.id»&lt;/p>"/>
-      </eAnnotations>
-  
   	  «EXPAND member FOR sf»
   
   </eClassifiers>
@@ -29,10 +25,6 @@
   «FOREACH groupMembers AS gm»
   <eClassifiers xsi:type="ecore:EClass" name="«gm.name»" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>«getProperty(gm.name+".t")»&lt;/b>&lt;br>«getProperty(gm.name+".d")»&lt;/p>"/>
-      </eAnnotations>
-
   	  «EXPAND member FOR gm»
 
   </eClassifiers>

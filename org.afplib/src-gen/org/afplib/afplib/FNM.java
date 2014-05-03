@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>FNM</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Font Patterns Map</b><br>The Font Patterns Map (FNM) structured field describes some characteristics of the font character patterns. Each pattern is described in a separate repeating group. This structured field is omitted if the font does not contain raster patterns.</p><p>ID: 13869705</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

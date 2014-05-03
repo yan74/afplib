@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>BRS</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Begin Resource</b><br>The Begin Resource structured field begins an envelope that is used to carry resource objects in print file level (external) resource groups. Resource references in the data stream are matched against the resource identifier specified by the Begin Resource structured field.</p><p>ID: 13871310</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

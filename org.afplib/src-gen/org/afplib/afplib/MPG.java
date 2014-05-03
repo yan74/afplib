@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>MPG</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Map Page</b><br>The Map Page structured field identifies a page that is to be merged with data specified for the current page by using an Include Page (IPG) structured field.</p><p>ID: 13872047</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

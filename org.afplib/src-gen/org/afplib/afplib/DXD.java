@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>DXD</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Data Map Transmission Subcase Descriptor</b><br></p><p>ID: 13870819</p>
- * <!-- end-model-doc -->
- *
  *
  * @see org.afplib.afplib.AfplibPackage#getDXD()
  * @model

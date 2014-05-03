@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>GSGCH</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Segment Characteristics</b><br></p>
- * <!-- end-model-doc -->
- *
  *
  * @see org.afplib.afplib.AfplibPackage#getGSGCH()
  * @model

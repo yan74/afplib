@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>PEC</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Presentation Environment Control</b><br>The Presentation Environment Control structured field specifies parameters that affect the rendering of presentation data and the appearance that is to be assumed by the presentation device.</p><p>ID: 13871016</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

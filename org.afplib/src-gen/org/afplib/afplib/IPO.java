@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>IPO</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Include Page Overlay</b><br>The Include Page Overlay structured field references an overlay resource definition that is to be positioned on the page. A page overlay can be referenced at any time during the page state, but not during an object state. The overlay contains its own active environment group definition.</p><p>ID: 13873112</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

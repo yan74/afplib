@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>Fully Qualified Name</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Fully Qualified Name</b><br>Ein Fully Qualified Name kann benutzt werden, um Referenzen auf Objekte oder Objektnamen (zum Beispiel DocName im BDT) zu überschreiben.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

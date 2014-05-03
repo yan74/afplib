@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>EPT</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Presentation Text Object</b><br>The End Presentation Text Object structured field terminates the current presentation text object initiated by a Begin Presentation Text Object structured field.</p><p>ID: 13871515</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

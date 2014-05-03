@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>CFC</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Coded Font Control</b><br>The Coded Font Control (CFC) structured field specifies the length of the repeating group in the Coded Font Index (CFI) structured field.</p><p>ID: 13870986</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

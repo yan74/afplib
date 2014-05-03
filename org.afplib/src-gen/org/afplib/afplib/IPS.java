@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>IPS</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Include Page Segment</b><br>The Include Page Segment structured field references a page segment resource object that is to be presented on the page or overlay presentation space. The IPS specifies a reference point on the including page or overlay coordinate system that may be used to position objects contained in the page segment. A page segment can be referenced at any time during page or overlay state, but not during an object state. The page segment inherits the active environment group definition of the including page or overlay.</p><p>ID: 13872991</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

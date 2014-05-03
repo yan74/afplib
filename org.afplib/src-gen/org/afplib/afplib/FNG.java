@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>FNG</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Font Patterns</b><br>The Font Patterns (FNG) structured field carries the character shape data (raster patterns or outline data) for a font character set. When there is more shape data than can fit in a single FNG structured field, a series of consecutive FNG structured fields are used to carry the character shape data; the data can be split across FNG structured fields at any byte boundary; the segmentation flag is not used.</p><p>ID: 13889161</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

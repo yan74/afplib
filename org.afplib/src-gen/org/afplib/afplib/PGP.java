@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>PGP</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Page Position (Format 2)</b><br>The Page Position structured field specifies the position and orientation of a page's presentation space on the medium presentation space for the physical medium.</p><p>ID: 13873583</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>IPG</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Include Page</b><br>The Include Page structured field references a page that is to be included in the document. The Include Page structured field may occur in document state, page-group state, or page state. In all three cases the referenced page is positioned on the media using the (Xm, Ym) offsets specified in the PGP structured field in the active medium map. The referenced page must not contain another Include Page structured field.</p><p>ID: 13873071</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

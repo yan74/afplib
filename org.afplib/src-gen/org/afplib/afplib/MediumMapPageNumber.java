@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>Medium Map Page Number</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Medium Map Page Number</b><br>The Medium Map Page Number triplet is used to specify the sequence number of the page in the set of sequential pages whose presentation is controlled by the most recently activated medium map.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

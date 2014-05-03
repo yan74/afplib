@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>FNO</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Font Orientation</b><br>Each repeating group in the Font Orientation (FNO) structured field applies to one character rotation of a font character set. There can be one, two, three, or four repeating groups.</p><p>ID: 13872777</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

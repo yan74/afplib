@@ -6835,10 +6835,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BAG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Active Environment Group&lt;/b>&lt;br>The Begin Active Environment Group structured field begins an Active Environment Group, which establishes the environment parameters for the page or overlay. The scope of the active environment group is the containing page or overlay.&lt;/p>&lt;p>ID: 13871305&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -6866,10 +6862,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BBC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Bar Code Object&lt;/b>&lt;br>The Begin Bar Code Object structured field begins a bar code data object, which becomes the current data object.&lt;/p>&lt;p>ID: 13871339&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -6899,10 +6891,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BCA" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Color Attribute Table&lt;/b>&lt;br>The Begin Color Attribute Table structured field begins a Color Attribute Table resource object, which becomes the current resource object. A color attribute table contains color attribute data. Note: The BCA structured field is used only in MO:DCA-L data streams.&lt;/p>&lt;p>ID: 13871223&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -6931,10 +6919,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BCF" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Coded Font&lt;/b>&lt;br>The Begin Coded Font (BCF) structured field begins a coded font object.&lt;/p>&lt;p>ID: 13871242&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -6952,10 +6936,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BCP" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Code Page&lt;/b>&lt;br>The Begin Code Page (BCP) structured field begins a code page object.&lt;/p>&lt;p>ID: 13871239&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -6984,10 +6964,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BDA" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Bar Code Data&lt;/b>&lt;br>The BDA structured field contains parameters to position a single bar code symbol within a bar code presentation space, parameters to specify special functions for 2D bar codes, flags to specify attributes specific to the symbol, and the data to be encoded. The data is encoded according to the parameters specified in the Bar Code Data Descriptor (BDD) structured field.&lt;/p>&lt;p>ID: 13889259&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7028,10 +7004,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BDD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Bar Code Data Descriptor&lt;/b>&lt;br>The BDD specifies the size of the bar code presentation space, the type of bar code to be generated, and the parameters used to generate the bar code symbols.&lt;/p>&lt;p>ID: 13870827&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7171,10 +7143,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BDG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Document Environment Group&lt;/b>&lt;br>The Begin Document Environment Group structured field begins a document environment group, which establishes the environment parameters for the form map object. The scope of the document environment group is the containing form map.&lt;/p>&lt;p>ID: 13871300&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7203,10 +7171,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BDI" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Document Index&lt;/b>&lt;br>The Begin Document Index structured field begins the document index.&lt;/p>&lt;p>ID: 13871271&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7234,10 +7198,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BDM" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Data Map&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13871306&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7275,10 +7235,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BDT" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Document&lt;/b>&lt;br>The Begin Document structured field names and begins the document.&lt;/p>&lt;p>ID: 13871272&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7315,10 +7271,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BDX" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Data Map Transmission Subcase&lt;/b>&lt;br>Assigns linedata to pages.&lt;/p>&lt;p>ID: 13871331&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7337,10 +7289,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BFG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Form Environment Group (Obsolete)&lt;/b>&lt;br>...is ignored.&lt;/p>&lt;p>ID: 13871301&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7358,10 +7306,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BFM" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Form Map&lt;/b>&lt;br>The Begin Form Map structured field begins a form map object, also called a form definition or formdef. A form map is a print control resource object that contains one or more medium map resource objects that are invokable on document and page boundaries and that specify a complete set of presentation controls. It also contains an optional document environment group (DEG) that defines the presentation environment for the form map.&lt;/p>&lt;p>ID: 13871309&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7391,10 +7335,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BFN" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Font&lt;/b>&lt;br>The Begin Font (BFN) structured field begins the font character set object.&lt;/p>&lt;p>ID: 13871241&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7422,10 +7362,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BGR" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Graphics Object&lt;/b>&lt;br>The Begin Graphics Object structured field begins a graphics data object which becomes the current data object.&lt;/p>&lt;p>ID: 13871291&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7455,10 +7391,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BII" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin IM Image Object (Obsolete)&lt;/b>&lt;br>The Begin IM Image Object structured field begins an IM image data object, which becomes the current data object.&lt;/p>&lt;p>ID: 13871227&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7476,10 +7408,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BIM" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Image Object&lt;/b>&lt;br>The Begin Image Object structured field begins an IOCA image data object, which becomes the current data object.&lt;/p>&lt;p>ID: 13871355&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7509,10 +7437,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BMM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Medium Map&lt;/b>&lt;br>The Begin Medium Map structured field begins a medium map resource object. A medium map is a print control resource object that contains a complete set of controls for presenting pages on physical media such as sheets and for generating multiple copies of sheets with selectable modifications.&lt;/p>&lt;p>ID: 13871308&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7540,10 +7464,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BMO" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Overlay&lt;/b>&lt;br>The Begin Overlay structured field begins an overlay. An overlay contains an active environment group to establish parameters such as the size of the overlay&apos;s presentation space and the fonts to be used by the data objects. It may also contain any mixture of: Bar code objects, Graphics objects, Image objects, Object containers, Presentation text objects&lt;/p>&lt;p>ID: 13871327&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7573,10 +7493,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BNG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Named Page Group&lt;/b>&lt;br>The Begin Named Page Group structured field begins a page group, which is a named, logical grouping of sequential pages. A page group may contain other nested page groups. All pages in the page group and all other page groups that are nested in the page group inherit the attributes that are assigned to the page group using TLE structured fields.&lt;/p>&lt;p>ID: 13871277&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7604,10 +7520,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BOC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Object Container&lt;/b>&lt;br>The Begin Object Container structured field begins an object container, which may be used to envelop and carry object data. The object data may or may not be defined by an AFP presentation architecture.&lt;/p>&lt;p>ID: 13871250&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7637,10 +7549,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BOG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Object Environment Group&lt;/b>&lt;br>The Begin Object Environment Group structured field begins an Object Environment Group, which establishes the environment parameters for the object. The scope of an object environment group is its containing object.&lt;/p>&lt;p>ID: 13871303&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7668,10 +7576,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BPF" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Print File&lt;/b>&lt;br>The Begin Print File structured field names and begins the print file.&lt;/p>&lt;p>ID: 13871269&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7701,10 +7605,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BPG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Page&lt;/b>&lt;br>The Begin Page structured field begins a presentation page. A presentation page contains an active environment group to establish parameters such as the size of the page&apos;s presentation space and the fonts to be used by the data objects. It may also contain any mixture of: Bar code objects, Graphics objects, Image objects, Object containers, Presentation text objects&lt;/p>&lt;p>ID: 13871279&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7733,10 +7633,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BPM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Page Map&lt;/b>&lt;br>begins a new PAGEDEF.&lt;/p>&lt;p>ID: 13871307&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7754,10 +7650,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BPS" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Page Segment&lt;/b>&lt;br>The Begin Page Segment structured field begins a page segment. A page segment is a resource object that can be referenced from a page or overlay and that contains any mixture of: Bar code objects (BCOCA), Graphics objects (GOCA), Image objects (IOCA)&lt;/p>&lt;p>ID: 13871199&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7787,10 +7679,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BPT" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Presentation Text Object&lt;/b>&lt;br>The Begin Presentation Text Object structured field begins a presentation text object which becomes the current data object.&lt;/p>&lt;p>ID: 13871259&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7818,10 +7706,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BRG" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Resource Group&lt;/b>&lt;br>The Begin Resource Group structured field begins a resource group, which becomes the current resource group at the same level in the document hierarchy.&lt;/p>&lt;p>ID: 13871302&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7851,10 +7735,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BRS" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Resource&lt;/b>&lt;br>The Begin Resource structured field begins an envelope that is used to carry resource objects in print file level (external) resource groups. Resource references in the data stream are matched against the resource identifier specified by the Begin Resource structured field.&lt;/p>&lt;p>ID: 13871310&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7882,10 +7762,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="BSG" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Resource Environment Group&lt;/b>&lt;br>The Begin Resource Environment Group structured field begins a Resource Environment Group (REG), which defines a subset of the resources required for a document or for a group of pages in a document. The scope of the Resource Environment Group is the group of pages that follow, up to the next REG, which is a complete replacement for the current REG, or the end of the document, whichever occurs first.&lt;/p>&lt;p>ID: 13871321&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -7915,10 +7791,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CAT" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Color Attribute Table&lt;/b>&lt;br>only used in MOD:CA-L.&lt;/p>&lt;p>ID: 13873271&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -7934,10 +7806,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="CDD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Container Data Descriptor&lt;/b>&lt;br>The Container Data Descriptor structured field specifies control information for a presentation data object that is carried in an object container.&lt;/p>&lt;p>ID: 13870738&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8005,10 +7873,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CFC" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Coded Font Control&lt;/b>&lt;br>The Coded Font Control (CFC) structured field specifies the length of the repeating group in the Coded Font Index (CFI) structured field.&lt;/p>&lt;p>ID: 13870986&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8043,10 +7907,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CFI" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Coded Font Index&lt;/b>&lt;br>The Coded Font Index (CFI) structured field names the font character sets and code pages for the font. The structured field contains a set of parameters, defined as a repeating group. The length of the repeating group is defined in the Coded Font Control structured field. The number of repeating groups in the structured field can be determine by dividing the length of the CFI structured field (minus the length of the structured field introducer) by the length of the CFI repeating group. The repeating groups are sorted in ascending order based on the section identifier.&lt;/p>&lt;p>ID: 13864074&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8064,10 +7924,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="CPC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Code Page Control&lt;/b>&lt;br>The Code Page Control (CPC) contains information about the code page.&lt;/p>&lt;p>ID: 13870983&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8127,10 +7983,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CPD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Code Page Descriptor&lt;/b>&lt;br>The Code Page Descriptor (CPD) structured field describes the code page.&lt;/p>&lt;p>ID: 13870727&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8189,10 +8041,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CPI" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Code Page Index&lt;/b>&lt;br>In a series of repeating groups, the Code Page Index (CPI) associates character IDs with code points. Each repeating group specifies a character ID, a set of flags, and a code point. The repeating groups may be sorted in ascending order by character IDs or by code point, depending on the Sort Order flag in the Code Page Control structured field. The default sort order is by ascending character ID order. One repeating group is required, but as many as 65,536 repeating groups are allowed. The maximum number of repeating groups is determined by the maximum number of code points in the code page: 256 for single-byte code pages, 256 for double-byte code page sections, and 65,536 for double-byte code pages.&lt;/p>&lt;p>ID: 13864071&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8211,10 +8059,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CTC" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Composed Text Control (obsolete)&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13871003&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8231,10 +8075,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="DXD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Data Map Transmission Subcase Descriptor&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13870819&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 
@@ -8242,10 +8082,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EAG" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Active Environment Group&lt;/b>&lt;br>The End Active Environment Group structured field terminates the definition of an Active Environment Group initiated by a Begin Active Environment Group structured field.&lt;/p>&lt;p>ID: 13871561&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8264,10 +8100,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EBC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Bar Code Object &lt;/b>&lt;br>The End Bar Code Object structured field terminates the current bar code object initiated by a Begin Bar Code Object structured field.&lt;/p>&lt;p>ID: 13871595&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8297,10 +8129,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ECA" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Color Attribute Table&lt;/b>&lt;br>Ends the Color Attribute Table&lt;/p>&lt;p>ID: 13871479&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8329,10 +8157,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ECF" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Coded Font&lt;/b>&lt;br>The End Coded Font (ECF) structured field ends the coded font object.&lt;/p>&lt;p>ID: 13871498&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8350,10 +8174,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="ECP" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Code Page&lt;/b>&lt;br>The End Code Page (ECP) structured field ends the code page object.&lt;/p>&lt;p>ID: 13871495&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8373,10 +8193,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EDG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Document Environment Group&lt;/b>&lt;br>The End Document Environment Group structured field terminates the definition of a document environment group initiated by a Begin Document Environment Group structured field.&lt;/p>&lt;p>ID: 13871556&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8394,10 +8210,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EDI" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Document Index&lt;/b>&lt;br>The End Document Index structured field terminates the document index initiated by a Begin Document Index structured field.&lt;/p>&lt;p>ID: 13871527&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8427,10 +8239,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EDM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Data Map&lt;/b>&lt;br>Ends the Data Map&lt;/p>&lt;p>ID: 13871562&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8448,10 +8256,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EDT" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Document&lt;/b>&lt;br>The End Document structured field terminates the MO:DCA document data stream initiated by a Begin Document structured field.&lt;/p>&lt;p>ID: 13871528&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8481,10 +8285,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EDX" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Data Map Transmission Subcase&lt;/b>&lt;br>Ends the Data Map Transmission Subcase&lt;/p>&lt;p>ID: 13871587&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8502,10 +8302,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EFG" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Form Environment Group (obsolete)&lt;/b>&lt;br>Ends the Form Environment Group&lt;/p>&lt;p>ID: 13871557&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8525,10 +8321,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EFM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Form Map&lt;/b>&lt;br>The End Form Map structured field terminates the form map object initiated by a Begin Form Map structured field&lt;/p>&lt;p>ID: 13871565&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8547,10 +8339,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EFN" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Font&lt;/b>&lt;br>The End Font (EFN) structured field ends the font character set object.&lt;/p>&lt;p>ID: 13871497&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8568,10 +8356,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EGR" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Graphics Object&lt;/b>&lt;br>The End Graphics Object structured field terminates the current graphics object initiated by a Begin Graphics Object structured field.&lt;/p>&lt;p>ID: 13871547&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8601,10 +8385,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EII" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End IM Image Object (Obsolete)&lt;/b>&lt;br>Ends the image.&lt;/p>&lt;p>ID: 13871483&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8622,10 +8402,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EIM" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Image Object&lt;/b>&lt;br>The End Image Object structured field terminates the current image object initiated by a Begin Image Object structured field.&lt;/p>&lt;p>ID: 13871611&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8655,10 +8431,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EMM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Medium Map&lt;/b>&lt;br>The End Medium Map structured field terminates the medium map object initiated by a Begin Medium Map structured field&lt;/p>&lt;p>ID: 13871564&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8676,10 +8448,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EMO" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Overlay&lt;/b>&lt;br>The End Overlay structured field terminates the overlay resource object initiated by a Begin Overlay structured field.&lt;/p>&lt;p>ID: 13871583&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8709,10 +8477,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ENG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Named Page Group&lt;/b>&lt;br>The End Named Page Group structured field terminates a page group that was initiated by a Begin Named Page Group structured field.&lt;/p>&lt;p>ID: 13871533&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8740,10 +8504,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EOC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Object Container&lt;/b>&lt;br>The End Object Container structured field terminates an object container initiated by a Begin Object Container structured field.&lt;/p>&lt;p>ID: 13871506&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8773,10 +8533,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EOG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Object Environment Group&lt;/b>&lt;br>The End Object Environment Group structured field terminates the definition of an Object Environment Group initiated by a Begin Object Environment Group structured field.&lt;/p>&lt;p>ID: 13871559&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8794,10 +8550,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EPF" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Print File&lt;/b>&lt;br>The End Print File structured field terminates the data stream initiated by a Begin Print File structured field.&lt;/p>&lt;p>ID: 13871525&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8827,10 +8579,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EPG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Page&lt;/b>&lt;br>The End Page structured field terminates the current presentation page definition initiated by a Begin Page structured field.&lt;/p>&lt;p>ID: 13871535&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8859,10 +8607,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EPM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Page Map&lt;/b>&lt;br>Ends the Page Map&lt;/p>&lt;p>ID: 13871563&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8881,10 +8625,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EPS" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Page Segment&lt;/b>&lt;br>The End Page Segment structured field terminates the page segment resource object initiated by a Begin Page Segment structured field.&lt;/p>&lt;p>ID: 13871455&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8902,10 +8642,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="EPT" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Presentation Text Object&lt;/b>&lt;br>The End Presentation Text Object structured field terminates the current presentation text object initiated by a Begin Presentation Text Object structured field.&lt;/p>&lt;p>ID: 13871515&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -8935,10 +8671,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ERG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Resource Group&lt;/b>&lt;br>The End Resource Group structured field terminates the definition of a resource group initiated by a Begin Resource Group structured field.&lt;/p>&lt;p>ID: 13871558&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8967,10 +8699,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ERS" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Resource&lt;/b>&lt;br>The End Resource structured field terminates an envelope that is used to carry resource objects in external (print file level) resource groups. The envelope is initiated by a Begin Resource (BRS) structured field.&lt;/p>&lt;p>ID: 13871566&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -8989,10 +8717,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ESG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Resource Environment Group&lt;/b>&lt;br>The End Resource Environment Group structured field terminates the definition of a Resource Environment Group initiated by a Begin Resource Environment Group structured field.&lt;/p>&lt;p>ID: 13871577&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9010,10 +8734,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Control&lt;/b>&lt;br>The Font Control (FNC) structured field provides defaults and information about the font character set.&lt;/p>&lt;p>ID: 13870985&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9233,10 +8953,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FND" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Descriptor&lt;/b>&lt;br>The Font Descriptor (FND) specifies the overall characteristics of a font character set.&lt;/p>&lt;p>ID: 13870729&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9393,10 +9109,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FNG" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Patterns&lt;/b>&lt;br>The Font Patterns (FNG) structured field carries the character shape data (raster patterns or outline data) for a font character set. When there is more shape data than can fit in a single FNG structured field, a series of consecutive FNG structured fields are used to carry the character shape data; the data can be split across FNG structured fields at any byte boundary; the segmentation flag is not used.&lt;/p>&lt;p>ID: 13889161&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9412,10 +9124,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNI" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Index&lt;/b>&lt;br>For each character in a raster font, the Font Index (FNI) describes specific characteristics and points to an entry in the Font Patterns Map (FNM) structured field.&lt;/p>&lt;p>ID: 13864073&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9434,10 +9142,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNN" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Name Map&lt;/b>&lt;br>The Font Name Map is used to map IBM character names to the character names in outline fonts.&lt;/p>&lt;p>ID: 13872009&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9483,10 +9187,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FNM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Patterns Map&lt;/b>&lt;br>The Font Patterns Map (FNM) structured field describes some characteristics of the font character patterns. Each pattern is described in a separate repeating group. This structured field is omitted if the font does not contain raster patterns.&lt;/p>&lt;p>ID: 13869705&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9504,10 +9204,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNO" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Orientation&lt;/b>&lt;br>Each repeating group in the Font Orientation (FNO) structured field applies to one character rotation of a font character set. There can be one, two, three, or four repeating groups.&lt;/p>&lt;p>ID: 13872777&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9527,10 +9223,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FNP" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Position&lt;/b>&lt;br>The Font Position (FNP) structured field describes the common characteristics of all the characters in a font character set. Four repeating groups, one for each character rotation, are allowed. The order of these groups must correspond to the order of the repeating groups in the Font Orientation (FNO) structured field, each of which specifies a separate character rotation.&lt;/p>&lt;p>ID: 13872265&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9549,10 +9241,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="GAD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Graphics Data&lt;/b>&lt;br>The Graphics Data structured field contains the data for a graphics object.&lt;/p>&lt;p>ID: 13889211&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9568,10 +9256,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="GDD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Graphics Data Descriptor&lt;/b>&lt;br>The Graphics Data Descriptor structured field contains the descriptor data for a graphics object.&lt;/p>&lt;p>ID: 13870779&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9598,10 +9282,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="ICP" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>IM Image Cell Position&lt;/b>&lt;br>Describes an image cell&lt;/p>&lt;p>ID: 13872251&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9658,10 +9338,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="IDD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Image Data Descriptor&lt;/b>&lt;br>The Image Data Descriptor structured field contains the descriptor data for an image data object.&lt;/p>&lt;p>ID: 13870843&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9721,10 +9397,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="IEL" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Index Element&lt;/b>&lt;br>The Index Element structured field identifies begin structured fields for use within a document index.&lt;/p>&lt;p>ID: 13873831&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9742,10 +9414,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="IID" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>IM Image Input Descriptor (Obsolete)&lt;/b>&lt;br>Defines an image.&lt;/p>&lt;p>ID: 13870715&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9851,10 +9519,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="IMM" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Invoke Medium Map&lt;/b>&lt;br>The Invoke Medium Map structured field identifies the medium map that is to become active for the document. An Invoke Medium Map structured field affects the document&apos;s current environment. The medium map&apos;s effect on current environment parameter values lasts until a new medium map is invoked.&lt;/p>&lt;p>ID: 13872076&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -9882,10 +9546,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="IOB" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Include Object&lt;/b>&lt;br>An Include Object structured field references an object on a page or overlay. It optionally contains parameters that identify the object and that specify presentation parameters such as object position, size, orientation, mapping, and default color. Where the presentation parameters conflict with parameters specified in the object&apos;s environment group (OEG), the parameters in the Include Object structured field override. If the referenced object is a page segment, the IOB parameters override the corresponding environment group parameters on all data objects in the page segment.&lt;/p>&lt;p>ID: 13873091&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -9979,10 +9639,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="IOC" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>IM Image Output Control (Obsolete)&lt;/b>&lt;br>Defines the Image Presentation Space&lt;/p>&lt;p>ID: 13870971&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10055,10 +9711,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="IPD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Image Picture Data&lt;/b>&lt;br>The Image Picture Data structured field contains the data for an image data object.&lt;/p>&lt;p>ID: 13889275&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10076,10 +9728,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="IPG" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Include Page&lt;/b>&lt;br>The Include Page structured field references a page that is to be included in the document. The Include Page structured field may occur in document state, page-group state, or page state. In all three cases the referenced page is positioned on the media using the (Xm, Ym) offsets specified in the PGP structured field in the active medium map. The referenced page must not contain another Include Page structured field.&lt;/p>&lt;p>ID: 13873071&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10116,10 +9764,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="IPO" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Include Page Overlay&lt;/b>&lt;br>The Include Page Overlay structured field references an overlay resource definition that is to be positioned on the page. A page overlay can be referenced at any time during the page state, but not during an object state. The overlay contains its own active environment group definition.&lt;/p>&lt;p>ID: 13873112&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10173,10 +9817,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="IPS" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Include Page Segment&lt;/b>&lt;br>The Include Page Segment structured field references a page segment resource object that is to be presented on the page or overlay presentation space. The IPS specifies a reference point on the including page or overlay coordinate system that may be used to position objects contained in the page segment. A page segment can be referenced at any time during page or overlay state, but not during an object state. The page segment inherits the active environment group definition of the including page or overlay.&lt;/p>&lt;p>ID: 13872991&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10221,10 +9861,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="IRD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>IM Image Raster Data&lt;/b>&lt;br>Contains Image Raster Data&lt;/p>&lt;p>ID: 13889147&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10240,10 +9876,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="LLE" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Link Logical Element&lt;/b>&lt;br>A Link Logical Element structured field specifies the linkage from a source document component to a target document component. The LLE identifies the source and target and indicates the purpose of the linkage by specifying a link type. The link source and link target may be in the same document component or in different document components, and they need not be of the same document component type. The linkage may involve a complete document component, or it may be restricted to a rectangular area on the presentation space associated with the document component. The Link Logical Element structured field can be embedded in the document that contains the link source, in the document that contains the link target, in the document index for either document, or in any combination of these structures. Link Logical Element parameters do not provide any presentation specifications.&lt;/p>&lt;p>ID: 13874320&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10271,10 +9903,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="LNC" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Line Descriptor Count&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13871847&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10290,10 +9918,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="LND" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Line Descriptor&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13870823&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10451,10 +10075,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MBC" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Bar Code Object&lt;/b>&lt;br>The Map Bar Code Object structured field specifies how a bar code data object is to be mapped into its object area.&lt;/p>&lt;p>ID: 13872107&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10472,10 +10092,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCA" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Color Attribute Table (Obsolete)&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13871991&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10495,10 +10111,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MCC" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Medium Copy Count&lt;/b>&lt;br>The Medium Copy Count structured field specifies the number of copies of each medium, or sheet, to be presented, and the modifications that apply to each copy. This specification is called a copy group. The MCC contains repeating groups that specify copy subgroups, such that each copy subgroup may be specified independently of any other copy subgroup. For each copy subgroup, the number of copies, as well as the modifications to be applied to each copy, is specified by the repeating group. If the modifications for a copy subgroup specify duplexing, that copy subgroup and all successive copy subgroups are paired such that the first copy subgroup in the pair specifies the copy count as well as the modifications to be applied to the front side of each copy, and the second copy subgroup in the pair specifies the same copy count as well as an independent set of modifications to be applied to the back side of each copy. The pairing of copy subgroups continues as long as duplexing is specified.&lt;/p>&lt;p>ID: 13869704&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10516,10 +10128,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Container Data&lt;/b>&lt;br>The Map Container Data structured field specifies how a presentation data object that is carried within an object container is mapped into its object area.&lt;/p>&lt;p>ID: 13872018&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10539,10 +10147,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MCF" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Coded Font (MCF) Format 2&lt;/b>&lt;br>The Map Coded Font structured field maps a unique coded font resource local ID, which may be embedded one or more times within an object&apos;s data and descriptor, to the identifier of a coded font resource object. This identifier may be specified in one of the following formats: A coded font Global Resource Identifier (GRID), A coded font name, A combination of code page name and font character set name&lt;/p>&lt;p>ID: 13872010&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10560,10 +10164,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCF1" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Coded Font (MCF) Format 1&lt;/b>&lt;br>The Map Coded Font structured field maps a unique coded font resource local ID&lt;/p>&lt;p>ID: 13873546&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10590,10 +10190,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MDD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Medium Descriptor&lt;/b>&lt;br>The Medium Descriptor structured field specifies the size and orientation of the medium presentation space for all sheets that are generated by the medium map that contains the Medium Descriptor structured field.&lt;/p>&lt;p>ID: 13870728&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10669,10 +10265,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MDR" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Data Resource&lt;/b>&lt;br>The Map Data Resource structured field specifies resources that are required for presentation. Each resource reference is defined in a repeating group and is identified with a file name, the identifier of a begin structured field for the resource, or any other identifier associated with the resource. The MDR repeating group may additionally specify a local or internal identifier for the resource object. Such a local identifier may be embedded one or more times within an object&apos;s data.&lt;/p>&lt;p>ID: 13872067&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10690,10 +10282,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MFC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Medium Finishing Control&lt;/b>&lt;br>The Medium Finishing Control structured field specifies the finishing requirements for physical media. Finishing can be specified for a media collection at the print file level or at the document level by placing the MFC in the document environment group (DEG) of the form map. Finishing can be specified for a media collection at the medium map level by placing the MFC in a medium map. Finishing can be specified for individual media, or sheets, at the medium map level by placing the MFC in a medium map.&lt;/p>&lt;p>ID: 13869192&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10737,10 +10325,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MGO" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Graphics Object&lt;/b>&lt;br>The Map Graphics Object structured field specifies how a graphics data object is mapped into its object area.&lt;/p>&lt;p>ID: 13872059&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10759,10 +10343,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MIO" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Image Object&lt;/b>&lt;br>The Map Image Object structured field specifies how an image data object is mapped into its object area.&lt;/p>&lt;p>ID: 13872123&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10780,10 +10360,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MMC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Medium Modification Control&lt;/b>&lt;br>The Medium Modification Control structured field specifies the medium modifications to be applied for a copy subgroup specified in the Medium Copy Count (MCC) structured field.&lt;/p>&lt;p>ID: 13870984&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10819,10 +10395,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MMD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Media Destination&lt;/b>&lt;br>The Map Media Destination structured field maps a media destination local ID to the name of a media destination.&lt;/p>&lt;p>ID: 13872077&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10840,10 +10412,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MMO" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Medium Overlay&lt;/b>&lt;br>The Map Medium Overlay structured field maps one-byte medium overlay local identifiers that are specified by keywords in the Medium Modification Control (MMC) structured field to medium overlay names.&lt;/p>&lt;p>ID: 13873631&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10871,10 +10439,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MMT" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Media Type&lt;/b>&lt;br>The Map Media Type structured field maps a media type local ID to the name or OID of a media type.&lt;/p>&lt;p>ID: 13872008&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10892,10 +10456,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MPG" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Page&lt;/b>&lt;br>The Map Page structured field identifies a page that is to be merged with data specified for the current page by using an Include Page (IPG) structured field.&lt;/p>&lt;p>ID: 13872047&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10915,10 +10475,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MPO" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Page Overlay&lt;/b>&lt;br>The Map Page Overlay structured field maps local identifiers to page overlay names.&lt;/p>&lt;p>ID: 13872088&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10936,10 +10492,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="MPS" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Page Segment&lt;/b>&lt;br>The Map Page Segment structured field identifies page segments that are required to present a page on a physical medium.&lt;/p>&lt;p>ID: 13873503&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -10975,10 +10527,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MSU" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Map Suppression&lt;/b>&lt;br>The Map Suppression structured field maps one-byte text suppression local identifiers to text suppression names. Suppressible text is identified in presentation text objects with a local identifier and is bracketed with control sequences that specify the beginning and the end of the suppression. A text suppression is activated by specifying its local identifier in a Medium Modification Control (MMC) structured field in a medium map.&lt;/p>&lt;p>ID: 13872106&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -10997,10 +10545,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="NOP" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>No Operation&lt;/b>&lt;br>The No Operation structured field performs no function.&lt;/p>&lt;p>ID: 13889262&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11016,10 +10560,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="OBD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Object Area Descriptor&lt;/b>&lt;br>The Object Area Descriptor structured field specifies the size and attributes of an object area presentation space.&lt;/p>&lt;p>ID: 13870699&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11038,10 +10578,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="OBP" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Object Area Position&lt;/b>&lt;br>The Object Area Position structured field specifies the origin and orientation of the object area, and the origin and orientation of the object content within the object area.&lt;/p>&lt;p>ID: 13872235&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11139,10 +10675,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="OCD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Object Container Data&lt;/b>&lt;br>The Object Container Data structured field contains the data for an object carried in an object container.&lt;/p>&lt;p>ID: 13889170&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11158,10 +10690,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="PEC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Presentation Environment Control&lt;/b>&lt;br>The Presentation Environment Control structured field specifies parameters that affect the rendering of presentation data and the appearance that is to be assumed by the presentation device.&lt;/p>&lt;p>ID: 13871016&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11180,10 +10708,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="PFC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Presentation Fidelity Control&lt;/b>&lt;br>The Presentation Fidelity Control structured field specifies the user fidelity requirements for data presented on physical media and for operations performed on physical media. The scope of the Presentation Fidelity Control structured field is the document or print file controlled by the form map that contains this structured field.&lt;/p>&lt;p>ID: 13873800&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11210,10 +10734,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="PGD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Page Descriptor&lt;/b>&lt;br>The Page Descriptor structured field specifies the size and attributes of a page or overlay presentation space.&lt;/p>&lt;p>ID: 13870767&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11289,10 +10809,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="PGP" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Page Position (Format 2)&lt;/b>&lt;br>The Page Position structured field specifies the position and orientation of a page&apos;s presentation space on the medium presentation space for the physical medium.&lt;/p>&lt;p>ID: 13873583&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11319,10 +10835,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="PGP1" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Page Position (Format 1)&lt;/b>&lt;br>Use Format 2 instead!&lt;/p>&lt;p>ID: 13872303&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11346,10 +10858,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="PMC" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Page Modification Control&lt;/b>&lt;br>The Page Modification Control structured field specifies modifications to be applied to a page presented on a physical medium.&lt;/p>&lt;p>ID: 13871023&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11377,10 +10885,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="PPO" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Preprocess Presentation Object&lt;/b>&lt;br>The Preprocess Presentation Object structured field specifies presentation parameters for a data object that has been mapped as a resource. These parameters allow the presentation device to preprocess and cache the object so that it is in presentation-ready format when it is included with a subsequent include structured field in the document. Such preprocessing may involve a rasterization or RIP of the object, but is not limited to that. The resource is identified with a file name, the identifier of a begin structured field for the resource, or any other identifier associated with the resource. The referenced resource and all required secondary resources must previously have been mapped with an MDR or an MPO in the same environment group.&lt;/p>&lt;p>ID: 13872579&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11398,10 +10902,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="PTD" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Presentation Text Data Descriptor Format 2&lt;/b>&lt;br>The Presentation Text Data Descriptor structured field contains the descriptor data for a presentation text data object.&lt;/p>&lt;p>ID: 13873563&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11477,10 +10977,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="PTD1" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Presentation Text Descriptor Format 1&lt;/b>&lt;br>The Presentation Text Data Descriptor structured field contains the descriptor data for a presentation text data object.&lt;/p>&lt;p>ID: 13870747&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11545,10 +11041,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="PTX" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Presentation Text Data&lt;/b>&lt;br>The Presentation Text Data structured field contains the data for a presentation text data object.&lt;/p>&lt;p>ID: 13889179&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11566,10 +11058,6 @@
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="TLE" eSuperTypes="base.ecore#//SF">
-  
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Tag Logical Element&lt;/b>&lt;br>A Tag Logical Element structured field assigns an attribute name and an attribute value to a page or page group. The Tag Logical Element structured field may be embedded directly in the page or page group, or it may reference the page or page group from a document index.&lt;/p>&lt;p>ID: 13869200&lt;/p>"/>
-      </eAnnotations>
   
   	  
 	
@@ -11589,10 +11077,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FGD" eSuperTypes="base.ecore#//SF">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Form Environment Group Descriptor (Obsolete)&lt;/b>&lt;br>&lt;/p>&lt;p>ID: 13870789&lt;/p>"/>
-      </eAnnotations>
-  
   	  
 	
 	
@@ -11611,10 +11095,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="AMB" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Absolute Move Baseline&lt;/b>&lt;br>The Absolute Move Baseline control sequence moves the baseline coordinate relative to the I-axis.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11631,10 +11111,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="AMI" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Absolute Move Inline&lt;/b>&lt;br>The Absolute Move Inline control sequence moves the baseline coordinate relative to the B-axis.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11651,10 +11127,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BLN" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Line&lt;/b>&lt;br>The Begin Line control sequence begins a new line.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -11663,10 +11135,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="BSU" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Suppression&lt;/b>&lt;br>The Begin Suppression control sequence marks the beginning of a string of presentation text that may be suppressed from the visible output.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11683,10 +11151,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="DBR" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Draw B-axis Rule&lt;/b>&lt;br>The Draw B-axis Rule control sequence draws a rule in the B-direction.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11719,10 +11183,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="DIR" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Draw I-axis Rule&lt;/b>&lt;br>The Draw I-axis Rule control sequence draws a rule in the I-direction.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11755,10 +11215,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ESU" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Suppression&lt;/b>&lt;br>The End Suppression control sequence marks the end of a string of presentation text suppressed from the visible output.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11775,10 +11231,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="NOPCS" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>No Operation&lt;/b>&lt;br>The No Operation control sequence has no effect on presentation.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11795,10 +11247,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="OVS" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Overstrike&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11823,10 +11271,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="RMB" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Relative Move Baseline&lt;/b>&lt;br>The Relative Move Baseline control sequence moves the baseline coordinate relative to the current baseline coordinate position.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11843,10 +11287,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="RMI" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Relative Move Inline&lt;/b>&lt;br>The Relative Move Inline control sequence moves the inline coordinate of the presentation position relative to the current inline position.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11863,10 +11303,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="RPS" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Repeat String&lt;/b>&lt;br>The Repeat String control sequence contains a string of graphic character code points that is repeated on the current line.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11893,10 +11329,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="SBI" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Baseline Increment&lt;/b>&lt;br>The Set Baseline Increment control sequence specifies the increment to be added to the current baseline coordinate when a Begin Line control sequence is executed. This is a modal control sequence.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11913,10 +11345,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="SCFL" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Coded Font Local&lt;/b>&lt;br>The Set Coded Font Local control sequence activates a coded font and specifies the character attributes to be used.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -11933,10 +11361,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="SEC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Extended Text Color&lt;/b>&lt;br>The Set Extended Text Color control sequence specifies a color value and defines the color space and encoding for that value. The specified color value is applied to foreground areas of the text presentation space.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12001,10 +11425,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="SIA" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Intercharacter Adjustment&lt;/b>&lt;br>The Set Intercharacter Adjustment control sequence specifies additional increment or decrement between graphic characters. This is a modal control sequence.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12029,10 +11449,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="SIM" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Inline Margin&lt;/b>&lt;br>The Set Inline Margin control sequence specifies the position of an inline margin. This is a modal control sequence.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12049,10 +11465,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="STC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Text Color&lt;/b>&lt;br>The Set Text Color control sequence specifies a color attribute for the foreground areas of the text presentation space.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12077,10 +11489,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="STO" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Text Orientation&lt;/b>&lt;br>The Set Text Orientation control sequence establishes the I-direction and B-direction for the subsequent text.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12105,10 +11513,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="SVI" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Variable Space Character Increment&lt;/b>&lt;br>The Set Variable Space Character Increment control sequence specifies the increment for a variable space character. This is a modal control sequence.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12125,10 +11529,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="TBM" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Temporary Baseline Move&lt;/b>&lt;br>The Temporary Baseline Move control sequence changes the position of the baseline without changing the established baseline.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12161,10 +11561,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="TRN" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Transparent Data&lt;/b>&lt;br>The Transparent Data control sequence contains a sequence of code points that are presented without a scan for embedded control sequences.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12181,10 +11577,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="USC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Underscore&lt;/b>&lt;br>The Underscore control sequence identifies text fields that are to be underscored.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12201,10 +11593,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="AttributeQualifier" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Attribute Qualifier&lt;/b>&lt;br>The Attribute Qualifier triplet is used to specify a qualifier for a document attribute.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12229,10 +11617,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="AttributeValue" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Attribute Value&lt;/b>&lt;br>The Attribute Value triplet is used to specify a value for a document attribute.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12259,10 +11643,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CGCSGID" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Coded Graphic Character Set Global Identifier&lt;/b>&lt;br>Definiert die codepage und die Zeichenmenge f&#252;r CHAR Felder.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12287,10 +11667,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CRCResourceManagement" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12323,10 +11699,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="CharacterRotation" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12343,10 +11715,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ColorSpecification" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12403,10 +11771,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="Comment" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12425,10 +11789,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="DataObjectFontDescriptor" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12501,10 +11861,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="DescriptorPosition" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12521,10 +11877,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="EncodingSchemeID" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Encoding Scheme ID&lt;/b>&lt;br>The Encoding Scheme ID triplet is used to specify the encoding scheme associated with a code page. It may optionally also specify the encoding scheme for the user data.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12549,10 +11901,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FontResolution" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Font Resolution and Metric Technology&lt;/b>&lt;br>The Font Resolution and Metric Technology specifies certain metric characteristics of a FOCA raster-technology font character set which may have affected the formatting of the document with this font. This information, as carried by the X&apos;84&apos; triplet, may be used by presentation servers and presentation devices to select the best-matching coded font for presentation.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12585,10 +11933,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="FullyQualifiedName" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Fully Qualified Name&lt;/b>&lt;br>Ein Fully Qualified Name kann benutzt werden, um Referenzen auf Objekte oder Objektnamen (zum Beispiel DocName im BDT) zu &#252;berschreiben.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12623,10 +11967,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="LocalDateAndTimeStamp" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Local Date And Time Stamp&lt;/b>&lt;br>Gibt an, wann das Objekt erstellt oder &#252;berarbeitet wurde.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12699,10 +12039,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="UniversalDateAndTimeStamp" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12791,10 +12127,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MappingOption" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Mapping Option&lt;/b>&lt;br>Definiert, wie ein Bild platziert wird.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12811,10 +12143,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MediaEjectControl" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12839,10 +12167,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MediumMapPageNumber" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Medium Map Page Number&lt;/b>&lt;br>The Medium Map Page Number triplet is used to specify the sequence number of the page in the set of sequential pages whose presentation is controlled by the most recently activated medium map.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12859,10 +12183,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MediumOrientation" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12879,10 +12199,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MeasurementUnits" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12923,10 +12239,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="MODCAInterchangeSet" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12951,10 +12263,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectAreaSize" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -12987,10 +12295,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectClassification" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13053,10 +12357,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectFunctionSetSpecification" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13097,10 +12397,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectOffset" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13133,10 +12429,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="ResourceObjectType" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Resource Object Type&lt;/b>&lt;br>Definiert den Resource-Typ der in diesem BRS enthalten ist.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13161,11 +12453,6 @@
   
   <eClassifiers xsi:type="ecore:EClass" name="PagePositionInformation" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Page Position Information&lt;/b>&lt;br>The Page Position Information triplet is used to tag a page with the Page Position (PGP) structured field repeating group information that is used to present the page. The PGP is specified in the medium map referenced by the FQN type X&apos;8D&apos;&#8212;Begin Medium Map Reference triplet. This information is used for viewing the page with a particular form map, which is normally the form map that the document containing this page was archived with.
-This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13182,10 +12469,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="PresentationControl" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Presentation Control&lt;/b>&lt;br>The Presentation Control triplet specifies flags that control the presentation of an object.&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13202,10 +12485,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="PresentationSpaceResetMixing" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13222,10 +12501,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="PresentationSpaceMixingRules" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13234,10 +12509,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ResourceLocalIdentifier" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13262,10 +12533,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ResourceSectionNumber" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13282,10 +12549,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TextOrientation" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13310,10 +12573,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FontHorizontalScaleFactor" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13330,10 +12589,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FontDescriptorSpecification" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13390,10 +12645,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BeginSegment" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13410,10 +12661,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="EndSegment" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13422,10 +12669,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BeginTile" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13434,10 +12677,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="EndTile" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13446,10 +12685,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BeginTransparencyMask" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13458,10 +12693,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="EndTransparencyMask" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13470,10 +12701,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BeginImage" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13490,10 +12717,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="EndImage" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -13502,10 +12725,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ImageSize" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13554,10 +12773,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ImageEncoding" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13590,10 +12805,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="IDESize" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13610,10 +12821,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ImageLUTID" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13630,10 +12837,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BandImage" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13660,10 +12863,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="IDEStructure" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13720,10 +12919,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ExternalAlgorithm" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13750,10 +12945,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TilePosition" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13778,10 +12969,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TileSize" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13814,10 +13001,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TileSetColor" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13906,10 +13089,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="SetBiLevelImageColor" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13942,10 +13121,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="IOCAFunctionSetIdentification" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13970,10 +13145,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ImageData" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -13990,10 +13161,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BandImageData" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14026,10 +13193,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="IncludeTile" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14046,10 +13209,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ImageSubsampling" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14068,10 +13227,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="SamplingRatios" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14090,10 +13245,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TileTOC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14120,10 +13271,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="CPIRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14166,10 +13313,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="CFIRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14230,10 +13373,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNIRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14332,10 +13471,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNMRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14368,10 +13503,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="LLERG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14406,10 +13537,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MPSRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14436,10 +13563,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCFRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14466,10 +13589,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MBCRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14496,10 +13615,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCARG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14526,10 +13641,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCDRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14556,10 +13667,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MDRRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14586,10 +13693,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MGORG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14616,10 +13719,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MIORG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14646,10 +13745,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MMDRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14676,10 +13771,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MMTRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14706,10 +13797,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MPGRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14736,10 +13823,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MPORG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14766,10 +13849,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="PPORG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14828,10 +13907,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="PGPRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Page Position&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14896,10 +13971,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCCRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14932,10 +14003,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MMORG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14970,10 +14037,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BandImageRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -14990,10 +14053,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MCF1RG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15056,10 +14115,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MMCRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15084,10 +14139,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNORG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15208,10 +14259,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNPRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15308,10 +14355,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TileTOCRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15376,10 +14419,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="SamplingRatiosRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15404,10 +14443,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ExternalAlgorithmRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15440,10 +14475,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNNRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15470,10 +14501,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FNNRG2" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15498,10 +14525,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="BeginSegmentCommand" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Segment Command&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15560,10 +14583,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="EndSegmentCommand" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -15572,10 +14591,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GBAR" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Area&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15592,10 +14607,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GBIMG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Image&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15652,10 +14663,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCBIMG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Begin Image (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15696,10 +14703,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GBOX" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Box&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15764,10 +14767,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCBOX" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Box (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15816,10 +14815,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCHST" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Character String&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15854,10 +14849,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCCHST" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Character String (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15876,10 +14867,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCOMT" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Comment&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15896,10 +14883,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GEAR" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Area&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15916,10 +14899,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GEIMG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Image&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15936,10 +14915,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GEPROL" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>End Prolog&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15956,10 +14931,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GFLT" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Fillet&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -15978,10 +14949,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCFLT" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Fillet (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16000,10 +14967,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GFARC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Full Arc&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16044,10 +15007,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCFARC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Full Arc (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16072,10 +15031,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GIMD" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Image Data&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16092,10 +15047,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GLINE" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Line&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16114,10 +15065,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCLINE" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Line (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16136,10 +15083,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GMRK" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Marker&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16158,10 +15101,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCMRK" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Marker (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16180,10 +15119,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GNOP1" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>No-Operation&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -16192,10 +15127,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GPARC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Partial Arc&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16268,10 +15199,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCPARC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Partial Arc (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16328,10 +15255,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GRLINE" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Relative Line&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16366,10 +15289,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCRLINE" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Relative Line (Current Position)&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16388,10 +15307,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSGCH" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Segment Characteristics&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -16400,10 +15315,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSAP" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Arc Parameters&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16444,10 +15355,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSBMX" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Background Mix&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16464,10 +15371,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCA" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Character Angle&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16492,10 +15395,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Character Cell&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16536,10 +15435,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCD" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Character Direction&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16556,10 +15451,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCR" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Character Precision&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16576,10 +15467,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCS" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Character Set&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16596,10 +15483,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCH" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Character Shear&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16624,10 +15507,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCOL" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Color&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16644,10 +15523,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSCP" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Current Position&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16672,10 +15547,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSECOL" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Extended Color&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16692,10 +15563,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSFLW" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Fractional Line Width&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16720,10 +15587,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSLT" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Line Type&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16740,10 +15603,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSLW" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Line Width&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16760,10 +15619,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSMC" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Marker Cell&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16788,10 +15643,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSMP" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Marker Precision&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16808,10 +15659,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSMS" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Marker Set&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16828,10 +15675,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSMT" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Marker Symbol&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16848,10 +15691,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSMX" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Mix&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16868,10 +15707,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSPS" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Pattern Set&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16888,10 +15723,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSPT" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Pattern Symbol&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16908,10 +15739,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSPCOL" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>Set Process Color&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -16984,10 +15811,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSLE" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17004,10 +15827,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GSLJ" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17024,10 +15843,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCBEZ" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17046,10 +15861,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCCBEZ" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17068,10 +15879,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="WindowSpecification" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17168,10 +15975,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="DrawingOrderSubset" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 
@@ -17180,10 +15983,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCBEZRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17208,10 +16007,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCCBEZRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17236,10 +16031,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GFLTRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17264,10 +16055,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCFLTRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17292,10 +16079,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GLINERG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17320,10 +16103,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCLINERG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17348,10 +16127,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GMRKRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17376,10 +16151,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCMRKRG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17404,10 +16175,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GRLINERG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17432,10 +16199,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="GCRLINERG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17460,10 +16223,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TonerSaver" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17480,10 +16239,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ColorFidelity" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17516,10 +16271,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FontFidelity" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17536,10 +16287,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="TextFidelity" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17564,10 +16311,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MediaFidelity" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17584,10 +16327,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FinishingFidelity" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17612,10 +16351,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="CMRFidelity" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17640,10 +16375,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectByteExtent" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17668,10 +16399,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectByteOffset" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17696,10 +16423,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectStructuredFieldExtent" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17724,10 +16447,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectStructuredFieldOffset" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17752,10 +16471,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectCount" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17788,10 +16503,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectOriginIdentifier" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17832,10 +16543,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="LineDataObjectPositionMigration" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17852,10 +16559,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ColorManagementResourceDescriptor" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17880,10 +16583,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MSURG" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17918,10 +16617,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ImageResolution" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17962,10 +16657,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ObjectContainerPresentationSpaceSize" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -17982,10 +16673,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ExtendedResourceLocalIdentifier" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18010,10 +16697,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="MetricAdjustment" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18078,10 +16761,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ExtensionFont" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18098,10 +16777,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="RenderingIntent" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18158,10 +16833,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FontCodedGraphicCharacterSetGlobalIdentifier" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18186,10 +16857,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="LocaleSelector" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18254,10 +16921,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="FinishingOperation" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18306,10 +16969,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="UP3iFinishingOperation" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18334,10 +16993,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="DeviceAppearance" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18362,10 +17017,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ResourceObjectInclude" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18416,10 +17067,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="PageOverlayConditionalProcessing" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	
@@ -18444,10 +17091,6 @@ This triplet is not used for printing and is ignored by print servers.&lt;/p>"/>
   
   <eClassifiers xsi:type="ecore:EClass" name="ResourceUsageAttribute" eSuperTypes="base.ecore#//Triplet">
   
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>&lt;b>&lt;/b>&lt;br>&lt;/p>"/>
-      </eAnnotations>
-
   	  
 	
 	

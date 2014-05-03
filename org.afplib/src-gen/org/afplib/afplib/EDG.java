@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>EDG</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>End Document Environment Group</b><br>The End Document Environment Group structured field terminates the definition of a document environment group initiated by a Begin Document Environment Group structured field.</p><p>ID: 13871556</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

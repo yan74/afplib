@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>Font Resolution</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Font Resolution and Metric Technology</b><br>The Font Resolution and Metric Technology specifies certain metric characteristics of a FOCA raster-technology font character set which may have affected the formatting of the document with this font. This information, as carried by the X'84' triplet, may be used by presentation servers and presentation devices to select the best-matching coded font for presentation.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

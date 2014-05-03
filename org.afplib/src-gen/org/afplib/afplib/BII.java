@@ -9,10 +9,6 @@ import org.afplib.base.SF;
  * A representation of the model object '<em><b>BII</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Begin IM Image Object (Obsolete)</b><br>The Begin IM Image Object structured field begins an IM image data object, which becomes the current data object.</p><p>ID: 13871227</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

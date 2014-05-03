@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>PTD</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Presentation Text Data Descriptor Format 2</b><br>The Presentation Text Data Descriptor structured field contains the descriptor data for a presentation text data object.</p><p>ID: 13873563</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

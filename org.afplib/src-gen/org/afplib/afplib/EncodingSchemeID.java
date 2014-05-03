@@ -9,10 +9,6 @@ import org.afplib.base.Triplet;
  * A representation of the model object '<em><b>Encoding Scheme ID</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Encoding Scheme ID</b><br>The Encoding Scheme ID triplet is used to specify the encoding scheme associated with a code page. It may optionally also specify the encoding scheme for the user data.</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>

@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>BCA</b></em>'.
  * <!-- end-user-doc -->
  *
- * <!-- begin-model-doc -->
- * <p><b>Begin Color Attribute Table</b><br>The Begin Color Attribute Table structured field begins a Color Attribute Table resource object, which becomes the current resource object. A color attribute table contains color attribute data. Note: The BCA structured field is used only in MO:DCA-L data streams.</p><p>ID: 13871223</p>
- * <!-- end-model-doc -->
- *
  * <p>
  * The following features are supported:
  * <ul>
