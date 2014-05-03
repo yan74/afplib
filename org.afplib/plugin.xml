@@ -10,6 +10,13 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated afplib -->
       <package
+            uri="http://afplib.org/afplibbase"
+            class="org.afplib.base.BasePackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated afplib -->
+      <package
             uri="http://afplib.org/afplib"
             class="org.afplib.afplib.AfplibPackage"/>
    </extension>

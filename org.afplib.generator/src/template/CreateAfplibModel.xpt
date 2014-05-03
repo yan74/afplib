@@ -1,0 +1,100 @@
+«IMPORT afplib»
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE createAfplibModel FOR Model»
+
+«FILE "afplib.ecore"»<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="afplib" nsURI="http://afplib.org/afplib" nsPrefix="afplib">
+
+  <eClassifiers xsi:type="ecore:EClass" name="LineData" eSuperTypes="base.ecore#//SF">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="linedata" eType="ecore:EDataType base.ecore#//ModcaString"/>
+  </eClassifiers>
+  
+  «EXPAND dataType FOREACH structuredFields»
+  «EXPAND dataType FOREACH groupMembers»
+      
+  «FOREACH structuredFields AS sf»
+  <eClassifiers xsi:type="ecore:EClass" name="«sf.name»" eSuperTypes="base.ecore#//SF">
+  
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&lt;p>&lt;b>«getProperty(sf.name+".t")»&lt;/b>&lt;br>«getProperty(sf.name+".d")»&lt;/p>&lt;p>ID: «sf.id»&lt;/p>"/>
+      </eAnnotations>
+  
+  	  «EXPAND member FOR sf»
+  
+  </eClassifiers>
+  «ENDFOREACH»
+  
+  «FOREACH groupMembers AS gm»
+  <eClassifiers xsi:type="ecore:EClass" name="«gm.name»" eSuperTypes="base.ecore#//Triplet">
+  
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&lt;p>&lt;b>«getProperty(gm.name+".t")»&lt;/b>&lt;br>«getProperty(gm.name+".d")»&lt;/p>"/>
+      </eAnnotations>
+
+  	  «EXPAND member FOR gm»
+
+  </eClassifiers>
+  «ENDFOREACH»
+  
+  <eClassifiers xsi:type="ecore:EEnum" name="SFName">
+    «FOREACH structuredFields AS sf»<eLiterals name="«sf.name»" value="«sf.id»" literal="«sf.name»"/>
+    «ENDFOREACH»
+  </eClassifiers>
+</ecore:EPackage>
+
+«ENDFILE»
+
+«ENDDEFINE»
+
+«DEFINE member FOR TYPEContainer»
+	«FOREACH elements AS e»
+	«IF e.metaType == CHAR»
+		«IF e.variableLength == false»
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="«e.name»" «IF e.optional == false»lowerBound="1"«ENDIF» eType="ecore:EDataType base.ecore#//ModcaString«e.stop - e.start + 1»">
+		«ELSE»
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="«e.name»" «IF e.optional == false»lowerBound="1"«ENDIF» eType="ecore:EDataType base.ecore#//ModcaString">
+		«ENDIF»
+	«ELSEIF e.metaType == UBIN || e.metaType == SBIN || e.metaType == BITS || e.metaType == CODE»
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="«e.name»" «IF e.optional == false»lowerBound="1"«ENDIF» eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+	«ELSEIF e.metaType == UNDF»
+	<eStructuralFeatures xsi:type="ecore:EAttribute" name="«e.name»" «IF e.optional == false»lowerBound="1"«ENDIF» eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray">
+	«ELSEIF e.metaType == Group»
+		«IF ((Group)e).type.toString() == "Fixed"»
+			<eStructuralFeatures xsi:type="ecore:EReference" name="«e.name»" «IF e.optional == false»lowerBound="1"«ENDIF» upperBound="-1" eType="ecore:EClass #//«name»RG" containment="true">
+    	«ELSE»
+    		<eStructuralFeatures xsi:type="ecore:EReference" name="«e.name»" «IF e.optional == false»lowerBound="1"«ENDIF» upperBound="-1" eType="ecore:EClass base.ecore#//Triplet" containment="true">
+    	«ENDIF»
+	«ENDIF»
+	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&lt;p>«IF e.optional == true»optional«ELSE»mandatory«ENDIF»&lt;br>«IF e.variableLength == true»variable length«ELSE»fixed length«ENDIF»&lt;/p>"/>
+      </eAnnotations>
+	</eStructuralFeatures>
+	«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE dataType FOR TYPEContainer»
+	  
+	  «FOREACH elements AS e»
+	  «IF e.validValues.size > 0 && e.validValues.get(0).metaType == BitValue»
+  <eClassifiers xsi:type="ecore:EEnum" name="«name»«e.name»">	  
+	      «FOREACH e.validValues AS v»
+	      	«IF v.metaType == BitValue && ((BitValue)v).forceZero == false && ((BitValue)v).name != null»
+    <eLiterals name="«v.name.replaceAll(" ","")»" value="«pow(2,((BitValue)v).Bit)»" literal="«v.name.replaceAll(" ","")»"/>
+	      	«ENDIF»
+	      «ENDFOREACH»
+  </eClassifiers>
+  
+  	  «ELSEIF e.validValues.size > 0 && e.validValues.get(0).metaType == IntEnum && ((IntEnum)e.validValues.get(0)).name != null && "".compareTo(((IntEnum)e.validValues.get(0)).name) != 0»
+  <eClassifiers xsi:type="ecore:EEnum" name="«name»«e.name»">	  
+	      «FOREACH e.validValues AS v»
+	      	«IF v.metaType == IntEnum && ((IntEnum)v).name != null»
+    <eLiterals name="Const«v.name.replaceAll(" ","").replaceAll("\\.","").replaceAll(",","").replaceAll(":","").replaceAll("/","").replaceAll("-","").replaceAll("\\(","").replaceAll("\\)","")»" value="«((IntEnum)v).intValue»" literal="Const«v.name.replaceAll(" ","").replaceAll("\\.","").replaceAll(",","").replaceAll(":","").replaceAll("/","").replaceAll("-","").replaceAll("\\(","").replaceAll("\\)","")»"/>
+	      	«ENDIF»
+	      «ENDFOREACH»
+  </eClassifiers>
+	  «ENDIF»
+	  «ENDFOREACH»
+	  
+«ENDDEFINE»

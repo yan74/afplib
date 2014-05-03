@@ -1,0 +1,60 @@
+«IMPORT afplib»
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE createAfplibGenModel FOR Model»
+«FILE "afplib.genmodel"»<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.afplib/src-gen" creationCommands="false" creationIcons="false"
+    editDirectory="/org.afplib.edit/src" editorDirectory="/org.afplib.editor/src"
+    modelPluginID="org.afplib" runtimeJar="true" modelName="afplib" editPluginClass="org.afplib.provider.AfplibPlugin"
+    editorPluginClass="org.afplib.presentation.AfplibEditorPlugin" testsDirectory="/org.afplib.tests/src"
+    testSuiteClass="org.afplib.tests.AfplibAllTests" importerID="org.eclipse.emf.importer.ecore"
+    containmentProxies="true" complianceLevel="7.0" copyrightFields="false" editPluginID="org.afplib.edit"
+    editorPluginID="org.afplib.editor" testsPluginID="org.afplib.tests" colorProviders="true"
+    runtimePlatform="RAP">
+  <foreignModel>base.ecore</foreignModel>
+  <foreignModel>afplib.ecore</foreignModel>
+  <genPackages prefix="Base" basePackage="org.afplib" disposableProviderFactory="true"
+      ecorePackage="base.ecore#/">
+    <genDataTypes ecoreDataType="base.ecore#//ModcaString"/>
+    <genDataTypes ecoreDataType="base.ecore#//ModcaString4"/>
+    <genDataTypes ecoreDataType="base.ecore#//ModcaString8"/>
+    <genDataTypes ecoreDataType="base.ecore#//ModcaString32"/>
+    <genDataTypes ecoreDataType="base.ecore#//Charset"/>
+    <genClasses ecoreClass="base.ecore#//AFP">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference base.ecore#//AFP/structuredFields"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="base.ecore#//SF">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//SF/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//SF/offset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//SF/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//SF/length"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference base.ecore#//SF/children"/>
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//SF/rawData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//SF/charset"/>
+      <genOperations ecoreOperation="base.ecore#//SF/isBegin"/>
+      <genOperations ecoreOperation="base.ecore#//SF/isEnd"/>
+      <genOperations ecoreOperation="base.ecore#//SF/isDefault">
+        <genParameters ecoreParameter="base.ecore#//SF/isDefault/value"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="base.ecore#//UNKNSF"/>
+    <genClasses ecoreClass="base.ecore#//SFGrouper"/>
+    <genClasses image="false" ecoreClass="base.ecore#//Triplet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//Triplet/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//Triplet/charset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//Triplet/fileOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//Triplet/tripletLength"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//Triplet/tripletId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base.ecore#//Triplet/tripletNumber"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Afplib" basePackage="org.afplib" disposableProviderFactory="true"
+      loadInitialization="true" literalsInterface="false" extensibleProviderFactory="true"
+      childCreationExtenders="true" contentTypeIdentifier="" fileExtensions="afp"
+      ecorePackage="afplib.ecore#/">
+    
+  </genPackages>
+</genmodel:GenModel>
+«ENDFILE»
+«ENDDEFINE»

@@ -1,0 +1,296 @@
+«IMPORT afplib»
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE main FOR Model»
+
+«FILE "org/afplib/StructuredFieldFactory.java"»
+
+package org.afplib;
+
+import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.util.List;
+
+import org.afplib.base.BaseFactory;
+import org.afplib.base.SF;
+import org.afplib.base.Triplet;
+import org.afplib.afplib.*;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
+class StructuredFieldFactory {
+
+	Charset charset = CodepageHelper.CHARSET_IBM500;
+
+	SF sf(byte[] buffer, int pos, int stop) {
+		int id = Data.toUnsigned(buffer, pos+3, pos+5);
+		SF sf;
+		switch(id) {
+		«FOREACH structuredFields AS sf»
+		case «sf.id»: {
+			«sf.name» obj = AfplibFactory.eINSTANCE.create«sf.name»();
+			«IF isBegin(sf.id)»charset = CodepageHelper.CHARSET_IBM500;«ENDIF»
+			«FOREACH sf.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+			«FOREACH sf.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+			sf = obj;
+			break;
+		}«ENDFOREACH»
+		default: sf = BaseFactory.eINSTANCE.createUNKNSF();
+		}
+		sf.setId(id);
+		return sf;
+	}
+	
+	void triplet(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+		int pos = start;
+		while(pos + 1 <= bufstop) {
+			int length = buffer[pos] & 0xff;
+			int id = buffer[pos + 1] & 0xff;
+			int stop = pos + length - 1;
+			if(stop > bufstop) break;
+			
+			switch(id) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "Triplet"»
+			case «t.id»: {
+				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				triplets.add(obj);
+				«IF t.name == "CGCSGID"»
+				charset = CodepageHelper.getCharset(obj.getCPGID(), obj.getGCSGID());
+				«ENDIF»
+				break;
+			}
+			«ENDIF»
+			«ENDFOREACH»
+			}
+			pos+=length;
+		}
+	}
+	
+		private enum State {
+		READ_PREFIX_AND_CLASS, READ_LENGTH, READ_TYPE, READ_CHAINED, READ_UNCHAINED, TERMINATE
+	};
+
+	private final boolean isChained(int functionType) {
+		return (functionType & 0x01) == 1;
+	}
+
+	private final int unchain(int functionType) {
+		return functionType &= 0xfe;
+	}
+	
+	void cs(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+		int number = 0;
+		int length = 0;
+		State state = State.READ_PREFIX_AND_CLASS;
+		boolean isChainedTo = false;
+
+		while (state != State.TERMINATE && start <= bufstop) {
+			int functionType;
+			switch (state) {
+			case READ_UNCHAINED:
+				isChainedTo = false;
+				state = State.READ_PREFIX_AND_CLASS;
+				break;
+			case READ_PREFIX_AND_CLASS:
+				if (Data.toUnsignedByte(buffer[start]) != 0x2B
+						|| Data.toUnsignedByte(buffer[start + 1]) != 0xD3) {
+					
+					//rest are code points
+					
+					Triplet m = cs(buffer, start, bufstop, 0xda);
+					number++;
+					if(m != null) {
+						m.setTripletId(0xda);
+						m.setTripletNumber(number);
+						m.setTripletLength(length + 1);
+						m.setFileOffset(start);
+						triplets.add(m);
+					}
+					else System.out.println("failed CS construction."); // FIXME
+					start += buffer.length;
+
+					state = State.TERMINATE;
+					break;
+				}
+				state = State.READ_LENGTH;
+				start += 2;
+				break;
+			case READ_CHAINED:
+				isChainedTo = true;
+				state = State.READ_LENGTH;
+				break;
+			case READ_LENGTH:
+				length = Data.toUnsignedByte(buffer[start]);
+				state = State.READ_TYPE;
+				length--; // don't include length byte in length because we
+							// increment offset (so it doesn't point to length)
+				start++;
+				break;
+			case READ_TYPE:
+				functionType = Data.toUnsignedByte(buffer[start]);
+				if (isChained(functionType)) {
+					state = State.READ_CHAINED;
+					functionType = unchain(functionType);
+				} else {
+					state = State.READ_UNCHAINED;
+				}
+				Triplet m = cs(buffer, start, start + length - 1, functionType);
+				if(m != null) {
+					m.setTripletId(functionType);
+					m.setTripletNumber(number);
+					m.setTripletLength(length + 1);
+					m.setFileOffset(start);
+					triplets.add(m);
+				}
+				else System.out.println("failed CS construction."); // FIXME
+				number++;
+				start += length;
+				if (start == buffer.length) {
+					state = State.TERMINATE;
+				}
+				break;
+			case TERMINATE:
+				break;
+			}
+		}		
+	}
+	
+	Triplet cs(byte[] buffer, int pos, int stop, int id) {
+		switch(id) {
+		«FOREACH groupMembers AS t»
+		«IF t.type.toString() == "CS"»
+		case «t.id»: {
+			«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+			«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+			«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+			return obj;
+		}
+		«ENDIF»
+		«ENDFOREACH»
+		}
+		return null;
+	}
+	
+	«FOREACH structuredFields AS sf»«EXPAND fixedGroup FOR sf»«ENDFOREACH»
+	«FOREACH groupMembers AS t»«EXPAND fixedGroup FOR t»«ENDFOREACH»
+	
+	«FOREACH groupMembers AS t»
+	«IF t.type.toString() == "Fixed"»
+	«t.name» _«t.name»(byte[] buffer, int pos, int stop) {
+		«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+		«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		return obj;
+	}
+	«ENDIF»
+	«ENDFOREACH»
+	
+}
+«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE fixedGroup FOR TYPEContainer»
+«FOREACH elements AS e»«IF e.metaType == Group && ((Group)e).type.toString() == "Fixed"»
+«IF (((Group)e).elementLength == -1 && ((Group)e).isLengthFixed) || ((Group)e).elementLength != -1»
+	void «name»RG(List<«name»RG> objs, byte[] buffer, int start, int bufstop, int length) {
+		int pos = start;
+		while(pos + length < bufstop) {
+			int stop = pos + length - 1;
+			objs.add(_«name»RG(buffer, pos, stop));
+			pos+=length;
+		}
+	}
+«ELSE»
+	void «name»RG(List<«name»RG> objs, byte[] buffer, int start, int bufstop, int lengthOffset, int lengthSize) {
+		int pos = start;
+		while(pos < bufstop) {
+			int length = Data.toUnsigned(buffer, pos+lengthOffset, pos+lengthOffset-1+lengthSize);
+			int stop = pos + length - 1;
+			if(stop > bufstop) break;
+			objs.add(_«name»RG(buffer, pos, stop));
+			pos+=length;
+		}
+	}
+«ENDIF»
+«ENDIF»«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE setter FOR TYPE»
+    {
+	int sstop = pos+«stop»;		
+	«IF optional == true»
+		«IF variableLength == true»		
+			if(stop >= pos+«start») {
+				sstop = stop;
+		«ELSE»
+			if(stop >= pos+«stop») {
+		«ENDIF»
+	«ELSE»
+		«IF variableLength == true»		
+				sstop = stop;
+				if(sstop >= pos + «start»)
+		«ELSE»
+				if(sstop <= stop)
+		«ENDIF»
+	«ENDIF»
+	«EXPAND elementSetter FOR this»
+	«IF optional == true»
+			}
+	«ENDIF»
+	}
+«ENDDEFINE»
+
+«DEFINE elementSetter FOR Group»{
+	«IF type.toString() == "Fixed"»
+	«IF elementLength == -1»
+		«IF isLengthFixed»
+		int length = Data.toUnsigned(buffer, pos+«start»+«elementLengthOffset», pos+«start»+«elementLengthOffset»-1+«lengthSize»);
+		«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, length);
+		«ELSE»
+		«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, «elementLengthOffset», «lengthSize»);
+		«ENDIF»
+	«ELSE»
+	«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, «elementLength»);
+	«ENDIF»
+	«ELSEIF type.toString() == "Triplet"»
+	triplet(obj.«getter()»(), buffer, pos+«start», sstop);
+	«ELSEIF type.toString() == "SDF"»
+	«ELSEIF type.toString() == "CS"»
+	cs(obj.«getter()»(), buffer, pos+«start», sstop);
+	«ELSEIF type.toString() == "GOCACmd"»
+	«ENDIF»
+	«REM»
+	«IF type.toString() == "Fixed"»
+//	obj.«getter()»().addAll(GroupMemberFactory.getInstance().create(
+//	buffer, pos+«start», sstop + 1, «elementLength», 
+//	«lengthSize», «isLengthFixed», «elementLengthOffset», «idSize», 
+//	«elementIdOffset», «((TYPEContainer)eContainer).name»RG.class, obj, environment));
+	«ELSE»
+//	obj.«getter()»().addAll(Arrays.asList(GroupMemberFactory.getInstance().create(
+//	buffer, pos+«start», sstop + 1, «elementLength», 
+//	«lengthSize», «isLengthFixed», «elementLengthOffset», «idSize», 
+//	«elementIdOffset», "«type»", obj, environment)));
+	«ENDIF»
+«ENDREM»}«ENDDEFINE»
+
+«DEFINE elementSetter FOR CHAR»«IF this.eContainer.metaType == SF»
+					obj.«setter()»(new String(buffer, pos+«start», sstop-pos-«start»+1, CodepageHelper.CHARSET_IBM500));«ELSE»
+					obj.«setter()»(new String(buffer, pos+«start», sstop-pos-«start»+1, charset));«ENDIF»
+«ENDDEFINE»
+
+«DEFINE elementSetter FOR UBIN»obj.«setter()»(Data.toUnsigned(buffer, pos+«start», sstop));«ENDDEFINE»
+
+«DEFINE elementSetter FOR SBIN»obj.«setter()»(Data.toSigned(buffer, pos+«start», sstop));«ENDDEFINE»
+
+«DEFINE elementSetter FOR BITS»obj.«setter()»(Data.toUnsigned(buffer, pos+«start», sstop));«ENDDEFINE»
+
+«DEFINE elementSetter FOR CODE»obj.«setter()»(Data.toUnsigned(buffer, pos+«start», sstop));«ENDDEFINE»
+
+«DEFINE elementSetter FOR UNDF»obj.«setter()»(Arrays.copyOfRange(buffer, pos+«start», sstop + 1));«ENDDEFINE»
+
+«DEFINE elementSetter FOR TYPE»
+oOO
+«ENDDEFINE»

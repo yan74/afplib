@@ -38,7 +38,7 @@ public interface BasePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://hcsystems.de/modca/base";
+	String eNS_URI = "http://afplib.org/afplibbase";
 
 	/**
 	 * The package namespace name.

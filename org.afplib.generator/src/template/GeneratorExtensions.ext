@@ -1,0 +1,11 @@
+import afplib;
+
+getter(TYPE this) :
+	"get"+name.toFirstUpper();
+	
+setter(TYPE this) :
+	"set"+name.toFirstUpper();
+	
+boolean isBegin(int id) :
+	JAVA org.afplib.generator.util.BeginHelper.isBegin(java.lang.Integer);
+	

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="base" nsURI="http://afplib.org/afplibbase" nsPrefix="base">
+  <eClassifiers xsi:type="ecore:EClass" name="AFP">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="structuredFields" upperBound="-1"
+        eType="#//SF" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SF" abstract="true">
+    <eOperations name="isBegin" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eOperations name="isEnd" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eOperations name="isDefault" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="offset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//SF" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rawData" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="charset" eType="#//Charset"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UNKNSF" eSuperTypes="#//SF"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="ModcaString" instanceClassName="java.lang.String"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="ModcaString4" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ModcaString4"/>
+      <details key="baseType" value="java.lang.String"/>
+      <details key="minLength" value="4"/>
+      <details key="maxLength" value="4"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ModcaString8" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ModcaString8"/>
+      <details key="baseType" value="java.lang.String"/>
+      <details key="minLength" value="8"/>
+      <details key="maxLength" value="8"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ModcaString32" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ModcaString32"/>
+      <details key="baseType" value="java.lang.String"/>
+      <details key="minLength" value="32"/>
+      <details key="maxLength" value="32"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Charset" instanceClassName="java.nio.charset.Charset"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SFGrouper" eSuperTypes="#//SF"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Triplet" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="charset" eType="#//Charset"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fileOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripletLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripletId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripletNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="afplib" nsURI="http://hcsystems.de/afplib/structure" nsPrefix="afplib">
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="structuredFields" upperBound="-1"
+        eType="#//SF" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groupMembers" upperBound="-1"
+        eType="#//GroupMember" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="submodel" upperBound="-1"
+        eType="#//Model" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interchangeSets" upperBound="-1"
+        eType="#//InterchangeSet" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TYPEContainer" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//TYPE" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayElement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constraint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SF" eSuperTypes="#//TYPEContainer">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="possibleElements" upperBound="-1"
+        eType="#//SFElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GroupMember" eSuperTypes="#//TYPEContainer">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//GroupType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lengthAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TYPE" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="start" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stop" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="optional" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="variableLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isReserved" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="validValues" upperBound="-1"
+        eType="#//Value" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constraint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CODE" eSuperTypes="#//TYPE"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BITS" eSuperTypes="#//TYPE"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CHAR" eSuperTypes="#//TYPE"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UNDF" eSuperTypes="#//TYPE"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SBIN" eSuperTypes="#//TYPE"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UBIN" eSuperTypes="#//TYPE"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//TYPE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="possibleElements" upperBound="-1"
+        eType="#//GroupElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="elementIdOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="elementLength" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="elementLengthOffset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="idSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lengthSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//GroupType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isLengthFixed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GroupType">
+    <eLiterals name="Fixed"/>
+    <eLiterals name="Triplet" value="1" literal="Triplet"/>
+    <eLiterals name="SDF" value="2"/>
+    <eLiterals name="CS" value="4" literal="CS"/>
+    <eLiterals name="GOCACmd" value="5"/>
+    <eLiterals name="Unknown" value="-1" literal="Unknown"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GroupElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" lowerBound="1"
+        eType="#//GroupMember"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lowerBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="upperBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="usage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constraint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Value" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StringEnum" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stringValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Range" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lowerBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="upperBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntEnum" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="intValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BitValue" eSuperTypes="#//Value">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Bit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="forceZero" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SFElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" lowerBound="1"
+        eType="#//SF"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alternativeMember" eType="#//SF"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="optional" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiple" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ordered" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//SF"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterchangeSet">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//InterchangeSetEnum"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" upperBound="-1"
+        eType="#//Constraint" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraint" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainerMember" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" lowerBound="1"
+        upperBound="-1" eType="#//TYPEContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lowerBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="upperBound" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ordered" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valueConstraints" eType="#//Constraint"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainerConstraint" eSuperTypes="#//Constraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="member" upperBound="-1"
+        eType="#//ContainerMember" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" lowerBound="1" eType="#//TYPEContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//TYPEContainer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompoundConstraint" eSuperTypes="#//Constraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" eType="#//Constraint"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="#//Operator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" eType="#//Constraint"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TYPEConstraint" eSuperTypes="#//Constraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" eType="#//TYPE"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="#//Operator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="InterchangeSetEnum">
+    <eLiterals name="IS1" value="1"/>
+    <eLiterals name="IS2" value="2"/>
+    <eLiterals name="IS3" value="3"/>
+    <eLiterals name="GEN"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Operator">
+    <eLiterals name="EQ"/>
+    <eLiterals name="LT" value="1"/>
+    <eLiterals name="LE" value="2"/>
+    <eLiterals name="GT" value="3"/>
+    <eLiterals name="GE" value="4"/>
+    <eLiterals name="NE" value="5" literal=""/>
+    <eLiterals name="NULL" value="6"/>
+    <eLiterals name="NOTNULL" value="7"/>
+    <eLiterals name="AND" value="20"/>
+    <eLiterals name="OR" value="21"/>
+    <eLiterals name="NOT" value="22"/>
+  </eClassifiers>
+</ecore:EPackage>
