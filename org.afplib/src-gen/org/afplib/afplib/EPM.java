@@ -1,0 +1,53 @@
+/**
+ */
+package org.afplib.afplib;
+
+import org.afplib.base.SF;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>EPM</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <!-- begin-model-doc -->
+ * <p><b>End Page Map</b><br>Ends the Page Map</p><p>ID: 13871563</p>
+ * <!-- end-model-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link org.afplib.afplib.EPM#getPMName <em>PM Name</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @see org.afplib.afplib.AfplibPackage#getEPM()
+ * @model
+ * @generated
+ */
+public interface EPM extends SF {
+	/**
+	 * Returns the value of the '<em><b>PM Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>PM Name</em>' attribute.
+	 * @see #setPMName(String)
+	 * @see org.afplib.afplib.AfplibPackage#getEPM_PMName()
+	 * @model dataType="org.afplib.base.ModcaString8" required="true"
+	 * @generated
+	 */
+	String getPMName();
+
+	/**
+	 * Sets the value of the '{@link org.afplib.afplib.EPM#getPMName <em>PM Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>PM Name</em>' attribute.
+	 * @see #getPMName()
+	 * @generated
+	 */
+	void setPMName(String value);
+
+} // EPM
