@@ -1,68 +1,70 @@
 <?xml version="1.0" encoding="ASCII"?>
-<afplib:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:afplib="http://hcsystems.de/afplib/structure">
+<afplib:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:afplib="http://org.afplib/structure" 
+ xsi:schemaLocation="http://org.afplib/structure metamodel/afpStructure.ecore">
   <structuredFields name="BAG" displayElement="AEGName" id="13871305">
     <elements xsi:type="afplib:CHAR" name="AEGName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="Optional. May occur more than once. Specifies encoding for structured field parameters defined with a CHAR data type."/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1" usage="Optional. May occur more than once. Carries unarchitected data."/>
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.117" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.99" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.98" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.101" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.109" optional="true" ordered="true" parent="//@structuredFields.24"/>
-    <possibleElements member="//@structuredFields.110" optional="true" multiple="true" ordered="true" parent="//@structuredFields.24"/>
-    <possibleElements member="//@structuredFields.111" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.119" ordered="true"/>
-    <possibleElements member="//@structuredFields.38" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.114" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.115" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.124" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.125" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.40" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BBC" displayElement="BCdoName" id="13871339">
     <elements xsi:type="afplib:CHAR" name="BCdoName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
-      <possibleElements member="//@groupMembers.193" upperBound="1"/>
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.22" ordered="true"/>
-    <possibleElements member="//@structuredFields.5" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.41" ordered="true"/>
+    
+    
+    
   </structuredFields>
   <structuredFields name="BCA" id="13871223">
     <elements xsi:type="afplib:CHAR" name="CATName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.31" ordered="true"/>
-    <possibleElements member="//@structuredFields.42" multiple="true" ordered="true"/>
+    
+    
   </structuredFields>
   <structuredFields name="BCF" displayElement="RSName" id="13871242">
     <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true"/>
-    <possibleElements member="//@structuredFields.33" ordered="true"/>
-    <possibleElements member="//@structuredFields.34" ordered="true"/>
-    <possibleElements member="//@structuredFields.43" ordered="true"/>
+    
+    
+    
   </structuredFields>
   <structuredFields name="BCP" displayElement="RSName" id="13871239">
     <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.35" upperBound="1" constraint="StampType == 0"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1" constraint="StampType == 3"/>
-      <possibleElements member="//@groupMembers.26" upperBound="1"/>
-      <possibleElements member="//@groupMembers.192" upperBound="1"/>
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.36" ordered="true"/>
-    <possibleElements member="//@structuredFields.35" ordered="true"/>
-    <possibleElements member="//@structuredFields.37" ordered="true"/>
-    <possibleElements member="//@structuredFields.44" ordered="true"/>
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BDA" id="13889259">
     <elements xsi:type="afplib:BITS" name="Flags" start="9" stop="9">
@@ -163,39 +165,39 @@
     <elements xsi:type="afplib:UBIN" name="MULT" start="29" stop="29"/>
     <elements xsi:type="afplib:UBIN" name="WENE" start="30" stop="31" defaultable="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="32" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.28" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="BDG" id="13871300">
     <elements xsi:type="afplib:CHAR" name="DEGName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.118" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.117" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.107" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.112" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.120" ordered="true"/>
-    <possibleElements member="//@structuredFields.100" ordered="true"/>
-    <possibleElements member="//@structuredFields.102" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.101" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.45" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BDI" id="13871271">
     <elements xsi:type="afplib:CHAR" name="IndxName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 83"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.81" multiple="true"/>
-    <possibleElements member="//@structuredFields.91" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.127" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.46" ordered="true"/>
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BDM" id="13871306">
     <elements xsi:type="afplib:CHAR" name="DMName" start="9" stop="16"/>
@@ -205,253 +207,253 @@
       <validValues xsi:type="afplib:IntEnum" name="XMD" intValue="2"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="18" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.32" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="BDT" displayElement="DocName" id="13871272">
     <elements xsi:type="afplib:CHAR" name="DocName" start="9" stop="16"/>
     <elements xsi:type="afplib:CODE" name="Reserved" start="17" stop="18" isReserved="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="19" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 10"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 152"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.83" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.87" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.91" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.18" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.30" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.24" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.20" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.48" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BDX" id="13871331">
     <elements xsi:type="afplib:CHAR" name="DMXName" start="9" stop="16"/>
   </structuredFields>
   <structuredFields name="BFG" id="13871301">
     <elements xsi:type="afplib:CHAR" name="FEGName" start="9" stop="16" optional="true"/>
-    <possibleElements member="//@structuredFields.107" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.110" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.108" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.106" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.101" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.120" ordered="true"/>
-    <possibleElements member="//@structuredFields.100" ordered="true"/>
-    <possibleElements member="//@structuredFields.96" ordered="true"/>
-    <possibleElements member="//@structuredFields.105" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.122" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.102" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.117" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.50" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BFM" displayElement="FMName" id="13871309">
     <elements xsi:type="afplib:CHAR" name="FMName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet"/>
-    <possibleElements member="//@structuredFields.7" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.18" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.51" ordered="true"/>
+    
+    
+    
   </structuredFields>
   <structuredFields name="BFN" displayElement="RSName" id="13871241">
     <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.26" upperBound="1"/>
-      <possibleElements member="//@groupMembers.192" upperBound="1"/>
-      <possibleElements member="//@groupMembers.36"/>
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.70" ordered="true"/>
-    <possibleElements member="//@structuredFields.69" ordered="true"/>
-    <possibleElements member="//@structuredFields.74" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.75" ordered="true"/>
-    <possibleElements member="//@structuredFields.76" ordered="true"/>
-    <possibleElements member="//@structuredFields.72" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.73" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.71" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.52" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BGR" id="13871291">
     <elements xsi:type="afplib:CHAR" name="GdoName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.22" ordered="true"/>
-    <possibleElements member="//@structuredFields.77" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.53" ordered="true"/>
+    
+    
+    
   </structuredFields>
   <structuredFields name="BII" id="13871227">
     <elements xsi:type="afplib:CHAR" name="ImoName" start="9" stop="16" optional="true"/>
-    <possibleElements member="//@structuredFields.85" ordered="true"/>
-    <possibleElements member="//@structuredFields.82" ordered="true"/>
-    <possibleElements member="//@structuredFields.90" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.79" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.54" ordered="true"/>
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BIM" displayElement="IdoName" id="13871355">
     <elements xsi:type="afplib:CHAR" name="IdoName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="Optional. May occur more than once. Specifies encoding for structured field parameters defined with a CHAR data type."/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'01'&#x2014;Replace First GID Name. This GID overrides the Begin Image Object structured field name and is used as the identifier of the image." constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1" usage="Optional. This triplet or the Universal Date and Time Stamp (X'72') triplet may occur once. Assigns a date and time stamp to the object."/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1" usage="Optional. May occur more than once. Carries unarchitected data."/>
-      <possibleElements member="//@groupMembers.36" upperBound="1" usage="Optional. This triplet or the Local Date and Time Stamp (X'62') triplet may occur once. Assigns a universal date and time stamp to the object." constraint=""/>
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.22" ordered="true"/>
-    <possibleElements member="//@structuredFields.86" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.55" ordered="true"/>
+    
+    
+    
   </structuredFields>
   <structuredFields name="BMM" displayElement="MMName" id="13871308">
     <elements xsi:type="afplib:CHAR" name="MMName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.38" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.107" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.110" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.108" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.106" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.101" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.120" ordered="true"/>
-    <possibleElements member="//@structuredFields.100" ordered="true"/>
-    <possibleElements member="//@structuredFields.96" ordered="true"/>
-    <possibleElements member="//@structuredFields.105" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.122" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.102" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.117" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.56" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BMO" displayElement="OvlyName" id="13871327">
     <elements xsi:type="afplib:CHAR" name="OvlyName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.0" ordered="true"/>
-    <possibleElements member="//@structuredFields.91" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.127" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.1" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.15" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.17" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.16" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.27" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.21" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.84" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.89" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.57" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BNG" displayElement="PGrpName" id="13871277">
     <elements xsi:type="afplib:CHAR" name="PGrpName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 141"/>
-      <possibleElements member="//@groupMembers.39" upperBound="1"/>
-      <possibleElements member="//@groupMembers.191" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.49" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.127" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.83" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.87" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.91" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.18" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.30" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.24" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.20" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.58" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BOC" displayElement="ObjCName" id="13871250">
     <elements xsi:type="afplib:CHAR" name="ObjCName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.44" lowerBound="1" upperBound="1"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" constraint="FQNType == 66"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" constraint="FQNType == 110"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" constraint="FQNType == 126"/>
-      <possibleElements member="//@groupMembers.187" upperBound="1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.22" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.116" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.59" ordered="true"/>
+    
+    
+    
   </structuredFields>
   <structuredFields name="BOG" id="13871303">
     <elements xsi:type="afplib:CHAR" name="OEGName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.117" optional="true" ordered="true" parent="//@structuredFields.15"/>
-    <possibleElements member="//@structuredFields.117" optional="true" ordered="true" parent="//@structuredFields.17"/>
-    <possibleElements member="//@structuredFields.117" optional="true" ordered="true" parent="//@structuredFields.21"/>
-    <possibleElements member="//@structuredFields.114" ordered="true"/>
-    <possibleElements member="//@structuredFields.115" ordered="true"/>
-    <possibleElements member="//@structuredFields.94" optional="true" ordered="true" parent="//@structuredFields.1"/>
-    <possibleElements member="//@structuredFields.103" optional="true" ordered="true" parent="//@structuredFields.15"/>
-    <possibleElements member="//@structuredFields.98" optional="true" multiple="true" ordered="true" parent="//@structuredFields.15"/>
-    <possibleElements member="//@structuredFields.98" optional="true" multiple="true" ordered="true" parent="//@structuredFields.1"/>
-    <possibleElements member="//@structuredFields.104" optional="true" ordered="true" parent="//@structuredFields.17"/>
-    <possibleElements member="//@structuredFields.97" optional="true" ordered="true" parent="//@structuredFields.21"/>
-    <possibleElements member="//@structuredFields.101" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.6" ordered="true" parent="//@structuredFields.1"/>
-    <possibleElements member="//@structuredFields.78" ordered="true" parent="//@structuredFields.15"/>
-    <possibleElements member="//@structuredFields.32" optional="true" ordered="true" parent="//@structuredFields.21"/>
-    <possibleElements member="//@structuredFields.80" ordered="true" parent="//@structuredFields.17"/>
-    <possibleElements member="//@structuredFields.60" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BPF" displayElement="PFName" id="13871269">
     <elements xsi:type="afplib:CHAR" name="PFName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.42" lowerBound="1" upperBound="1"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="Optional. May occur more than once. Specifies encoding for structured field parameters defined with a CHAR data type."/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'01'&#x2014;Replace First GID Name. This GID overrides the structured field name and is used as the name of this file." constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1" usage="Optional. May occur more than once. Carries unarchitected data."/>
-      <possibleElements member="//@groupMembers.36" upperBound="1" usage="Optional. This triplet or the Local Date and Time Stamp (X'62') triplet may occur once. Assigns a universal date and time stamp to the object." constraint=""/>
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.28" optional="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.8" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.10" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.61" ordered="true"/>
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BPG" displayElement="PageName" id="13871279">
     <elements xsi:type="afplib:CHAR" name="PageName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="Optional. May occur more than once. Specifies encoding for structured field parameters defined with a CHAR data type."/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'01'&#x2014;Replace First GID Name. This GID overrides the Begin Page structured field name and is used as the name of the page." constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'8D'&#x2014;Begin Medium Map Reference. Specifies the name of the medium map object that is active for presenting the page on a physical medium.\nApplication Note: This triplet is typically specified on the BPG structured fields when the page or page group is to be archived with a specific form map. It allows the page or page group to be retrieved and viewed at a later time without &#x201c;playing back&#x201d; the whole document. This triplet is ignored by print servers." constraint="FQNType == 141"/>
-      <possibleElements member="//@groupMembers.39" upperBound="1" usage="Optional. May occur once. Specifies the sequence number of the page in the set of sequential pages controlled by the active medium map. The first page in the set has sequence number 1."/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1" usage="Optional. May occur more than once. Carries unarchitected data."/>
-      <possibleElements member="//@groupMembers.48" upperBound="1" usage="Optional. May occur once. Specifies the PGP repeating group that is used to view the page and its PMC overlay data. The PGP is specified in the medium map referenced by a FQN type X'8D'&#x2014;Begin Medium Map Reference triplet. If the X'81' triplet is specified, it overrides a Medium Map Page Number (X'56') triplet. This triplet is not used for printing and is ignored by print servers." constraint=""/>
-      <possibleElements member="//@groupMembers.49" upperBound="1" usage="Optional. May occur once. Specified on a BPG to indicate whether the page is intended to be viewed. If this triplet is not specified, the architected default is that the page is intended to be viewed. If this triplet is also specified on an Index Element (IEL) that indexes the page, the IEL triplet overrides if there is a conflict. This triplet is ignored for printing. "/>
+      
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.0" ordered="true"/>
-    <possibleElements member="//@structuredFields.84" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.87" optional="true"/>
-    <possibleElements member="//@structuredFields.88" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.89" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.91" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.127" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.1" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.15" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.17" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.16" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.21" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.27" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.62" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BPM" id="13871307">
     <elements xsi:type="afplib:CHAR" name="PMName" start="9" stop="16"/>
@@ -459,77 +461,77 @@
   <structuredFields name="BPS" displayElement="PsegName" id="13871199">
     <elements xsi:type="afplib:CHAR" name="PsegName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.1" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.15" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.17" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.16" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.64" ordered="true"/>
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BPT" id="13871259">
     <elements xsi:type="afplib:CHAR" name="PTdoName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.36" upperBound="1"/>
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.126" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.65" ordered="true"/>
+    
+    
   </structuredFields>
   <structuredFields name="BRG" displayElement="RGrpName" id="13871302">
     <elements xsi:type="afplib:CHAR" name="RGrpName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="Optional. May occur more than once. Specifies encoding for structured field parameters defined with a CHAR data type."/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'01'&#x2014;Replace First GID Name. This GID overrides the Begin Resource Group structured field name and is used as the name of the resource group." constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" usage="Optional. May occur more than once. The Fully Qualified Name type that may appear is X'83'&#x2014;Begin Document Name. Specifies the name of a document that references resources contained in this resource group." constraint="FQNType == 131"/>
-      <possibleElements member="//@groupMembers.35" upperBound="1" usage="Optional. This triplet or the Universal Date and Time Stamp (X'72') triplet may occur once. Assigns a date and time stamp to the object."/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1" usage="Optional. May occur more than once. Carries unarchitected data."/>
-      <possibleElements member="//@groupMembers.36" upperBound="1" usage="Optional. This triplet or the Local Date and Time Stamp (X'62') triplet may occur once. Assigns a universal date and time stamp to the object." constraint=""/>
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.29" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.66" ordered="true"/>
+    
+    
   </structuredFields>
   <structuredFields name="BRS" displayElement="RSName" id="13871310">
     <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="19" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. Is mandatory if this resource carries a TrueType" constraint="FQNType == 110"/>
-      <possibleElements member="//@groupMembers.44" upperBound="1" usage=""/>
-      <possibleElements member="//@groupMembers.47" lowerBound="1" upperBound="1" usage=""/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'01'&#x2014;Replace First GID Name. This GID overrides the Begin Resource structured field name and is used as the name of the resource." constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" usage="Optional. May occur more than once. The Fully Qualified Name type that may appear is X'41'&#x2014;Color Management Resource (CMR) Reference." constraint="FQNType == 65"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" usage="Optional. May occur more than once. The Fully Qualified Name type that may appear is X'7E'&#x2014;Data-object Font Linked Font Identifier." constraint="FQNType == 126"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.19" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.26" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.13" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.1" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.15" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.16" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.17" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.21" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.3" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.4" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.14" optional="true" multiple="true"/>
-    <possibleElements member="//@structuredFields.67" ordered="true"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="BSG" id="13871321">
     <elements xsi:type="afplib:CHAR" name="REGName" start="9" stop="16" optional="true"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.29" upperBound="-1"/>
+      
+      
     </elements>
-    <possibleElements member="//@structuredFields.101" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.110" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.123" optional="true" multiple="true" ordered="true"/>
-    <possibleElements member="//@structuredFields.68" ordered="true"/>
+    
+    
+    
+    
   </structuredFields>
   <structuredFields name="CAT" id="13873271">
     <elements xsi:type="afplib:UNDF" name="CATData" start="9" stop="32768" optional="true" variableLength="true"/>
@@ -556,9 +558,9 @@
       <validValues xsi:type="afplib:Range" lowerBound="0" upperBound="32767"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="21" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
-      <possibleElements member="//@groupMembers.196" upperBound="1"/>
-      <possibleElements member="//@groupMembers.197"/>
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="CFC" id="13870986">
@@ -569,7 +571,7 @@
       <validValues xsi:type="afplib:IntEnum" name="Retired1" intValue="1"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="11" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.199" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="CFI" id="13864074">
@@ -631,130 +633,130 @@
   </structuredFields>
   <structuredFields name="DXD" id="13870819"/>
   <structuredFields name="EAG" displayElement="AEGName" id="13871561">
-    <elements xsi:type="afplib:CHAR" name="AEGName" start="9" stop="16" optional="true" constraint="AEGName &amp;lt;> null implies isDefault(AEGName) or oclContainer().oclAsType(BAG).AEGName = AEGName"/>
+    <elements xsi:type="afplib:CHAR" name="AEGName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EBC" displayElement="BCdoName" id="13871595">
-    <elements xsi:type="afplib:CHAR" name="BCdoName" start="9" stop="16" optional="true" constraint="BCdoName &amp;lt;> null implies isDefault(BCdoName) or oclContainer().oclAsType(BBC).BCdoName = BCdoName"/>
+    <elements xsi:type="afplib:CHAR" name="BCdoName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="ECA" displayElement="CATName" id="13871479">
-    <elements xsi:type="afplib:CHAR" name="CATName" start="9" stop="16" optional="true" constraint="CATName &amp;lt;> null implies isDefault(CATName) or oclContainer().oclAsType(BCA).CATName = CATName"/>
+    <elements xsi:type="afplib:CHAR" name="CATName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="ECF" id="13871498">
-    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" constraint="RSName &amp;lt;> null implies isDefault(RSName) or oclContainer().oclAsType(BCF).RSName = RSName"/>
+    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="ECP" displayElement="RSName" id="13871495">
-    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" constraint="RSName &amp;lt;> null implies isDefault(RSName) or oclContainer().oclAsType(BCP).RSName = RSName"/>
+    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EDG" id="13871556">
-    <elements xsi:type="afplib:CHAR" name="DEGName" start="9" stop="16" optional="true" constraint="DEGName &amp;lt;> null implies isDefault(DEGName) or oclContainer().oclAsType(EDG).DEGName = DEGName"/>
+    <elements xsi:type="afplib:CHAR" name="DEGName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EDI" id="13871527">
-    <elements xsi:type="afplib:CHAR" name="IndxName" start="9" stop="16" optional="true" constraint="IndxName &amp;lt;> null implies isDefault(IndxName) or oclContainer().oclAsType(BDI).IndxName = IndxName"/>
+    <elements xsi:type="afplib:CHAR" name="IndxName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EDM" id="13871562">
-    <elements xsi:type="afplib:CHAR" name="DMName" start="9" stop="16" constraint="DMName &amp;lt;> null implies isDefault(DMName) or oclContainer().oclAsType(BDM).DMName = DMName"/>
+    <elements xsi:type="afplib:CHAR" name="DMName" start="9" stop="16" />
   </structuredFields>
   <structuredFields name="EDT" displayElement="DocName" id="13871528">
-    <elements xsi:type="afplib:CHAR" name="DocName" start="9" stop="16" optional="true" constraint="DocName &amp;lt;> null implies isDefault(DocName) or oclContainer().oclAsType(BDT).DocName = DocName"/>
+    <elements xsi:type="afplib:CHAR" name="DocName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EDX" id="13871587">
-    <elements xsi:type="afplib:CHAR" name="DMXName" start="9" stop="16" constraint="DMXName &amp;lt;> null implies isDefault(DMXName) or oclContainer().oclAsType(BDX).DMXName = DMXName"/>
+    <elements xsi:type="afplib:CHAR" name="DMXName" start="9" stop="16" />
   </structuredFields>
   <structuredFields name="EFG" id="13871557">
-    <elements xsi:type="afplib:CHAR" name="FEGName" start="9" stop="16" optional="true" constraint="FEGName &amp;lt;> null implies isDefault(FEGName) or oclContainer().oclAsType(BFG).FEGName = FEGName"/>
+    <elements xsi:type="afplib:CHAR" name="FEGName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EFM" displayElement="FMName" id="13871565">
-    <elements xsi:type="afplib:CHAR" name="FMName" start="9" stop="16" optional="true" constraint="FMName &amp;lt;> null implies isDefault(FMName) or oclContainer().oclAsType(BFM).FMName = FMName"/>
+    <elements xsi:type="afplib:CHAR" name="FMName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EFN" displayElement="RSName" id="13871497">
-    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" constraint="RSName &amp;lt;> null implies isDefault(RSName) or oclContainer().oclAsType(BFN).RSName = RSName"/>
+    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EGR" id="13871547">
-    <elements xsi:type="afplib:CHAR" name="GdoName" start="9" stop="16" optional="true" constraint="GdoName &amp;lt;> null implies isDefault(GdoName) or oclContainer().oclAsType(BGR).GdoName = GdoName"/>
+    <elements xsi:type="afplib:CHAR" name="GdoName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EII" id="13871483">
-    <elements xsi:type="afplib:CHAR" name="ImoName" start="9" stop="16" optional="true" constraint="ImoName &amp;lt;> null implies isDefault(ImoName) or oclContainer().oclAsType(BII).ImoName = ImoName"/>
+    <elements xsi:type="afplib:CHAR" name="ImoName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EIM" id="13871611">
-    <elements xsi:type="afplib:CHAR" name="IdoName" start="9" stop="16" optional="true" constraint="IdoName &amp;lt;> null implies isDefault(IdoName) or oclContainer().oclAsType(BIM).IdoName = IdoName"/>
+    <elements xsi:type="afplib:CHAR" name="IdoName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EMM" displayElement="MMName" id="13871564">
-    <elements xsi:type="afplib:CHAR" name="MMName" start="9" stop="16" optional="true" constraint="MMName &amp;lt;> null implies isDefault(MMName) or oclContainer().oclAsType(BMM).MMName = MMName"/>
+    <elements xsi:type="afplib:CHAR" name="MMName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EMO" displayElement="OvlyName" id="13871583">
-    <elements xsi:type="afplib:CHAR" name="OvlyName" start="9" stop="16" optional="true" constraint="OvlyName &amp;lt;> null implies isDefault(OvlyName) or oclContainer().oclAsType(BMO).OvlyName = OvlyName"/>
+    <elements xsi:type="afplib:CHAR" name="OvlyName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="ENG" displayElement="PGrpName" id="13871533">
-    <elements xsi:type="afplib:CHAR" name="PGrpName" start="9" stop="16" optional="true" constraint="PGrpName &amp;lt;> null implies isDefault(PGrpName) or oclContainer().oclAsType(BNG).PGrpName = PGrpName"/>
+    <elements xsi:type="afplib:CHAR" name="PGrpName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EOC" id="13871506">
-    <elements xsi:type="afplib:CHAR" name="ObjCName" start="9" stop="16" optional="true" constraint="ObjCName &amp;lt;> null implies isDefault(ObjCName) or oclContainer().oclAsType(BOC).ObjCName = ObjCName"/>
+    <elements xsi:type="afplib:CHAR" name="ObjCName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EOG" id="13871559">
-    <elements xsi:type="afplib:CHAR" name="OEGName" start="9" stop="16" optional="true" constraint="OEGName &amp;lt;> null implies isDefault(OEGName) or oclContainer().oclAsType(BOG).OEGName = OEGName"/>
+    <elements xsi:type="afplib:CHAR" name="OEGName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EPF" displayElement="PFName" id="13871525">
-    <elements xsi:type="afplib:CHAR" name="PFName" start="9" stop="16" optional="true" constraint="PFName &amp;lt;> null implies isDefault(PFName) or oclContainer().oclAsType(BPF).PFName = PFName"/>
+    <elements xsi:type="afplib:CHAR" name="PFName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EPG" displayElement="PageName" id="13871535">
-    <elements xsi:type="afplib:CHAR" name="PageName" start="9" stop="16" optional="true" constraint="PageName &amp;lt;> null implies isDefault(PageName) or oclContainer().oclAsType(BPG).PageName = PageName"/>
+    <elements xsi:type="afplib:CHAR" name="PageName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="EPM" id="13871563">
-    <elements xsi:type="afplib:CHAR" name="PMName" start="9" stop="16" constraint="PMName &amp;lt;> null implies isDefault(PMName) or oclContainer().oclAsType(BPM).PMName = PMName"/>
+    <elements xsi:type="afplib:CHAR" name="PMName" start="9" stop="16" />
   </structuredFields>
   <structuredFields name="EPS" displayElement="PsegName" id="13871455">
-    <elements xsi:type="afplib:CHAR" name="PsegName" start="9" stop="16" optional="true" constraint="PsegName &amp;lt;> null implies isDefault(PsegName) or oclContainer().oclAsType(BPS).PsegName = PsegName"/>
+    <elements xsi:type="afplib:CHAR" name="PsegName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="EPT" id="13871515">
-    <elements xsi:type="afplib:CHAR" name="PTdoName" start="9" stop="16" optional="true" constraint="PTdoName &amp;lt;> null implies isDefault(PTdoName) or oclContainer().oclAsType(BPT).PTdoName = PTdoName"/>
+    <elements xsi:type="afplib:CHAR" name="PTdoName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="ERG" displayElement="RGrpName" id="13871558">
-    <elements xsi:type="afplib:CHAR" name="RGrpName" start="9" stop="16" optional="true" constraint="RGrpName &amp;lt;> null implies isDefault(RGrpName) or oclContainer().oclAsType(BRG).RGrpName = RGrpName"/>
+    <elements xsi:type="afplib:CHAR" name="RGrpName" start="9" stop="16" optional="true" />
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="ERS" displayElement="RSName" id="13871566">
-    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" constraint="RSName &amp;lt;> null implies isDefault(RSName) or oclContainer().oclAsType(BRS).RSName = RSName"/>
+    <elements xsi:type="afplib:CHAR" name="RSName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="ESG" id="13871577">
-    <elements xsi:type="afplib:CHAR" name="REGName" start="9" stop="16" optional="true" constraint="REGName &amp;lt;> null implies isDefault(REGName) or oclContainer().oclAsType(BSG).REGName = REGName"/>
+    <elements xsi:type="afplib:CHAR" name="REGName" start="9" stop="16" optional="true" />
   </structuredFields>
   <structuredFields name="FNC" id="13870985">
     <elements xsi:type="afplib:UBIN" name="Retired" start="9" stop="9">
@@ -848,7 +850,7 @@
       <validValues xsi:type="afplib:Range" lowerBound="0" upperBound="65535"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="51" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.200" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="FND" id="13870729">
@@ -907,8 +909,8 @@
     <elements xsi:type="afplib:UBIN" name="GCSID" start="85" stop="86"/>
     <elements xsi:type="afplib:UBIN" name="FGID" start="87" stop="88"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="89" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 7"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 8"/>
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="FNG" id="13889161">
@@ -965,20 +967,20 @@
   </structuredFields>
   <structuredFields name="IEL" id="13873831">
     <elements xsi:type="afplib:Group" name="Triplets" start="9" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 202"/>
-      <possibleElements member="//@groupMembers.188" lowerBound="1" upperBound="1"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 13"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 135"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 141"/>
-      <possibleElements member="//@groupMembers.39" upperBound="1"/>
-      <possibleElements member="//@groupMembers.187" upperBound="1"/>
-      <possibleElements member="//@groupMembers.190" upperBound="1"/>
-      <possibleElements member="//@groupMembers.189" upperBound="1"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
-      <possibleElements member="//@groupMembers.191" upperBound="1"/>
-      <possibleElements member="//@groupMembers.48" upperBound="1"/>
-      <possibleElements member="//@groupMembers.49" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="IID" id="13870715">
@@ -998,7 +1000,7 @@
   <structuredFields name="IMM" displayElement="MMPName" id="13872076">
     <elements xsi:type="afplib:CHAR" name="MMPName" start="9" stop="16"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="17" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="IOB" displayElement="ObjName" id="13873091">
@@ -1030,22 +1032,22 @@
       <validValues xsi:type="afplib:IntEnum" name="Page or overlay coordinate system" intValue="1"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="36" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.44" upperBound="1"/>
-      <possibleElements member="//@groupMembers.41" upperBound="1"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" constraint="FQNType == 222"/>
-      <possibleElements member="//@groupMembers.34" upperBound="-1" constraint="FQNType == 190"/>
-      <possibleElements member="//@groupMembers.37" upperBound="1"/>
-      <possibleElements member="//@groupMembers.43" upperBound="1"/>
-      <possibleElements member="//@groupMembers.28" upperBound="1"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
-      <possibleElements member="//@groupMembers.50" upperBound="1"/>
-      <possibleElements member="//@groupMembers.51" upperBound="1"/>
-      <possibleElements member="//@groupMembers.194" upperBound="1"/>
-      <possibleElements member="//@groupMembers.201"/>
-      <possibleElements member="//@groupMembers.196" upperBound="1"/>
-      <possibleElements member="//@groupMembers.197" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="IOC" id="13870971">
@@ -1067,10 +1069,10 @@
       <validValues xsi:type="afplib:BitValue" name="Format"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="26" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 131"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 1"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="IPO" displayElement="OvlyName" id="13873112">
@@ -1084,8 +1086,8 @@
       <validValues xsi:type="afplib:IntEnum" name="270 degrees" intValue="34560"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="25" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="Optional. May occur more than once. Specifies encoding for structured field parameters defined with a CHAR data type."/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Optional. May occur once. The Fully Qualified Name type that may appear is X'01'&#x2014;Replace First GID Name. This GID overrides the Include Overlay structured field name and is used as the name of the overlay." constraint="FQNType == 1"/>
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="IPS" displayElement="PsegName" id="13872991">
@@ -1093,7 +1095,7 @@
     <elements xsi:type="afplib:SBIN" name="XpsOset" start="17" stop="19"/>
     <elements xsi:type="afplib:SBIN" name="YpsOset" start="20" stop="22"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="23" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="IRD" id="13889147">
@@ -1166,7 +1168,7 @@
       <validValues xsi:type="afplib:BitValue" name="CutSheetOrientation"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="22" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.40" upperBound="1"/>
+      
     </elements>
   </structuredFields>
   <structuredFields name="MDR" id="13872067">
@@ -1197,9 +1199,9 @@
       <validValues xsi:type="afplib:IntEnum" name="Retired" intValue="6"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="13" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.204" upperBound="1"/>
-      <possibleElements member="//@groupMembers.205"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="MGO" id="13872059">
@@ -1250,12 +1252,12 @@
   </structuredFields>
   <structuredFields name="OBD" id="13870699">
     <elements xsi:type="afplib:Group" name="Triplets" start="9" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.31" lowerBound="1" upperBound="1"/>
-      <possibleElements member="//@groupMembers.41" lowerBound="1" upperBound="1"/>
-      <possibleElements member="//@groupMembers.43" lowerBound="1" upperBound="1"/>
-      <possibleElements member="//@groupMembers.28" upperBound="1"/>
-      <possibleElements member="//@groupMembers.50" upperBound="1"/>
-      <possibleElements member="//@groupMembers.51" upperBound="1"/>
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="OBP" id="13872235">
@@ -1296,9 +1298,9 @@
   </structuredFields>
   <structuredFields name="PEC" id="13871016">
     <elements xsi:type="afplib:Group" name="Triplets" start="11" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.46" upperBound="1" constraint="ObjTpe == 0xA8"/>
-      <possibleElements member="//@groupMembers.201" upperBound="1"/>
-      <possibleElements member="//@groupMembers.206" upperBound="1"/>
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="PFC" id="13873800">
@@ -1306,13 +1308,13 @@
       <validValues xsi:type="afplib:BitValue" name="Reset"/>
     </elements>
     <elements xsi:type="afplib:Group" name="Triplets" start="13" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.180" upperBound="1"/>
-      <possibleElements member="//@groupMembers.181" upperBound="1"/>
-      <possibleElements member="//@groupMembers.182" upperBound="1"/>
-      <possibleElements member="//@groupMembers.183" upperBound="1"/>
-      <possibleElements member="//@groupMembers.184" upperBound="1"/>
-      <possibleElements member="//@groupMembers.185" upperBound="1"/>
-      <possibleElements member="//@groupMembers.186" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="PGD" id="13870767">
@@ -1338,9 +1340,9 @@
     </elements>
     <elements xsi:type="afplib:UBIN" name="Reserved" start="21" stop="23"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="24" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.28" upperBound="1"/>
-      <possibleElements member="//@groupMembers.50" upperBound="1"/>
-      <possibleElements member="//@groupMembers.51" upperBound="1"/>
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="PGP" id="13873583">
@@ -1356,9 +1358,9 @@
   <structuredFields name="PMC" id="13871023">
     <elements xsi:type="afplib:CODE" name="PMCid" start="9" stop="9"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="11" stop="32768" optional="true" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.41" upperBound="1"/>
-      <possibleElements member="//@groupMembers.207"/>
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="PPO" id="13872579">
@@ -1385,15 +1387,15 @@
     </elements>
     <elements xsi:type="afplib:BITS" name="RESERVED" start="21" stop="22" optional="true"/>
     <elements xsi:type="afplib:Group" name="CS" start="23" stop="32768" optional="true" variableLength="true" type="CS">
-      <possibleElements member="//@groupMembers.12" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.13" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.14" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.0" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.1" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.16" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.15" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.17" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.18" upperBound="-1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="PTD1" id="13870747">
@@ -1419,39 +1421,39 @@
   </structuredFields>
   <structuredFields name="PTX" id="13889179">
     <elements xsi:type="afplib:Group" name="CS" start="9" stop="32768" variableLength="true" type="CS">
-      <possibleElements member="//@groupMembers.16" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.15" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.19" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.1" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.10" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.12" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.0" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.9" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.2" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.18" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.21" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.11" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.7" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.5" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.4" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.17" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.14" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.13" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.3" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.6" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.8" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.22" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.20" upperBound="-1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="TLE" id="13869200">
     <elements xsi:type="afplib:Group" name="Triplets" start="9" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" usage="Specifies the attribute name of the tag logical element." constraint="FQNType == 11"/>
-      <possibleElements member="//@groupMembers.24" lowerBound="1" upperBound="1" usage="Specifies the attribute value of the tag logical element"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1" usage="specifies the code page and character set for interpretation of subsequent character strings in the TLE. If not present, the including object specifies the code page and character set for interpretation of character strings in the TLE"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 135 || FQNType == 13"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" usage="Specifies the name of the tag logical element." constraint="FQNType == 12"/>
-      <possibleElements member="//@groupMembers.23" upperBound="1" usage="Specifies an attribute qualifier for the tag logical element."/>
+      
+      
+      
+      
+      
+      
     </elements>
   </structuredFields>
   <structuredFields name="FGD" id="13870789">
@@ -2232,27 +2234,27 @@
   <groupMembers name="MCFRG" id="5" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 7"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 8"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 132"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 133"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 134"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 142"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.56" upperBound="1"/>
-      <possibleElements member="//@groupMembers.202" upperBound="1"/>
-      <possibleElements member="//@groupMembers.52" upperBound="1" constraint="ResType == 5"/>
-      <possibleElements member="//@groupMembers.53" upperBound="1"/>
-      <possibleElements member="//@groupMembers.27" upperBound="1"/>
-      <possibleElements member="//@groupMembers.32" upperBound="1"/>
-      <possibleElements member="//@groupMembers.55" upperBound="1"/>
-      <possibleElements member="//@groupMembers.33"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="MBCRG" id="8" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="4" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.37" lowerBound="1" upperBound="1" constraint="MapValue == 0"/>
+      
     </elements>
   </groupMembers>
   <groupMembers name="MCARG" id="9" lengthAttribute="RGLength">
@@ -2262,68 +2264,68 @@
   <groupMembers name="MCDRG" id="10" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="4" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.37" lowerBound="1" upperBound="1"/>
+      
     </elements>
   </groupMembers>
   <groupMembers name="MDRRG" id="11" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 132 || FQNType == 206 || FQNType == 222"/>
-      <possibleElements member="//@groupMembers.44" upperBound="1"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 190"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 133"/>
-      <possibleElements member="//@groupMembers.202" upperBound="1"/>
-      <possibleElements member="//@groupMembers.32" upperBound="1"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
-      <possibleElements member="//@groupMembers.30" upperBound="1"/>
-      <possibleElements member="//@groupMembers.203" upperBound="1"/>
-      <possibleElements member="//@groupMembers.194" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="MGORG" id="12" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.37" lowerBound="1" upperBound="1"/>
+      
     </elements>
   </groupMembers>
   <groupMembers name="MIORG" id="13" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.37" lowerBound="1" upperBound="1"/>
+      
     </elements>
   </groupMembers>
   <groupMembers name="MMDRG" id="48" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 18"/>
-      <possibleElements member="//@groupMembers.198" lowerBound="1" upperBound="1" constraint="ResType == 42"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="MMTRG" id="14" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="2" constraint="FQNType == 17"/>
-      <possibleElements member="//@groupMembers.198" lowerBound="1" upperBound="1" constraint="ResType == 64"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="MPGRG" id="15" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 131"/>
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 135"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1" constraint="ObjTpe == 175"/>
+      
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="MPORG" id="16" lengthAttribute="RGLength">
     <elements xsi:type="afplib:UBIN" name="RGLength" stop="1"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="2" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 0x84"/>
-      <possibleElements member="//@groupMembers.52" lowerBound="1" upperBound="1" constraint="ResType == 0x02"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="PPORG" id="17" lengthAttribute="RGLength">
@@ -2343,19 +2345,19 @@
     <elements xsi:type="afplib:SBIN" name="XocaOset" start="6" stop="8"/>
     <elements xsi:type="afplib:SBIN" name="YocaOset" start="9" stop="11"/>
     <elements xsi:type="afplib:Group" name="Triplets" start="12" stop="32768" variableLength="true" elementIdOffset="1" elementLength="-1" idSize="1" lengthSize="1" type="Triplet">
-      <possibleElements member="//@groupMembers.34" lowerBound="1" upperBound="1" constraint="FQNType == 0x84 || FQNType == 0xce"/>
-      <possibleElements member="//@groupMembers.44" upperBound="1"/>
-      <possibleElements member="//@groupMembers.41" upperBound="1"/>
-      <possibleElements member="//@groupMembers.194" upperBound="1"/>
-      <possibleElements member="//@groupMembers.25" upperBound="-1"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 0xde"/>
-      <possibleElements member="//@groupMembers.34" upperBound="1" constraint="FQNType == 0xbe"/>
-      <possibleElements member="//@groupMembers.37" upperBound="1"/>
-      <possibleElements member="//@groupMembers.43" upperBound="1"/>
-      <possibleElements member="//@groupMembers.46" upperBound="1"/>
-      <possibleElements member="//@groupMembers.201" upperBound="1"/>
-      <possibleElements member="//@groupMembers.196" upperBound="1"/>
-      <possibleElements member="//@groupMembers.197" upperBound="1"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </elements>
   </groupMembers>
   <groupMembers name="PGPRG" id="18" lengthAttribute="RGLength">
