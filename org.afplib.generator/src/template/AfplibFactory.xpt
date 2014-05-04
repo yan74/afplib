@@ -68,8 +68,51 @@ class StructuredFieldFactory {
 			pos+=length;
 		}
 	}
+
+	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+		int pos = start;
+		int lengthSize, lengthOffset, idSize, lengthAddition;
+		
+		while(pos + 1 <= bufstop) {
+		
+			if(0xfe == Integer.valueOf(Data.toHex(buffer, pos, 1), 16)) {
+				lengthSize = 2;
+				lengthOffset = 2;
+				idSize = 2;
+				lengthAddition = 4;
+			} else {
+				lengthSize = 1;
+				lengthOffset = 1;
+				idSize = 1;
+				lengthAddition = 2;
+			}
 	
-		private enum State {
+			int id = Integer.valueOf(Data.toHex(buffer, pos, idSize), 16);
+		
+			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos + lengthOffset - 1 + lengthSize);
+			length += lengthAddition;
+			
+			int stop = pos + length - 1;
+			if(stop > bufstop) break;
+			
+			switch(id) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "SDF"»
+			case «t.id»: {
+				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				triplets.add(obj);
+				break;
+			}
+			«ENDIF»
+			«ENDFOREACH»
+			}
+			pos+=length;
+		}
+	}
+
+	private enum State {
 		READ_PREFIX_AND_CLASS, READ_LENGTH, READ_TYPE, READ_CHAINED, READ_UNCHAINED, TERMINATE
 	};
 
@@ -197,7 +240,7 @@ class StructuredFieldFactory {
 «IF (((Group)e).elementLength == -1 && ((Group)e).isLengthFixed) || ((Group)e).elementLength != -1»
 	void «name»RG(List<«name»RG> objs, byte[] buffer, int start, int bufstop, int length) {
 		int pos = start;
-		while(pos + length < bufstop) {
+		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_«name»RG(buffer, pos, stop));
 			pos+=length;
@@ -206,7 +249,7 @@ class StructuredFieldFactory {
 «ELSE»
 	void «name»RG(List<«name»RG> objs, byte[] buffer, int start, int bufstop, int lengthOffset, int lengthSize) {
 		int pos = start;
-		while(pos < bufstop) {
+		while(pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos+lengthOffset, pos+lengthOffset-1+lengthSize);
 			int stop = pos + length - 1;
 			if(stop > bufstop) break;
@@ -258,6 +301,7 @@ class StructuredFieldFactory {
 	«ELSEIF type.toString() == "Triplet"»
 	triplet(obj.«getter()»(), buffer, pos+«start», sstop);
 	«ELSEIF type.toString() == "SDF"»
+	sdf(obj.«getter()»(), buffer, pos+«start», sstop);
 	«ELSEIF type.toString() == "CS"»
 	cs(obj.«getter()»(), buffer, pos+«start», sstop);
 	«ELSEIF type.toString() == "GOCACmd"»

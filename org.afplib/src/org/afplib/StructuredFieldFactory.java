@@ -2966,6 +2966,8 @@ class StructuredFieldFactory {
 
 						{
 
+							sdf(obj.getSDFS(), buffer, pos + 18, sstop);
+
 						}
 
 					}
@@ -3385,6 +3387,8 @@ class StructuredFieldFactory {
 						sstop = stop;
 
 						{
+
+							sdf(obj.getSdfs(), buffer, pos + 9, sstop);
 
 						}
 
@@ -7298,6 +7302,790 @@ class StructuredFieldFactory {
 		}
 	}
 
+	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+		int pos = start;
+		int lengthSize, lengthOffset, idSize, lengthAddition;
+
+		while (pos + 1 <= bufstop) {
+
+			if (0xfe == Integer.valueOf(Data.toHex(buffer, pos, 1), 16)) {
+				lengthSize = 2;
+				lengthOffset = 2;
+				idSize = 2;
+				lengthAddition = 4;
+			} else {
+				lengthSize = 1;
+				lengthOffset = 1;
+				idSize = 1;
+				lengthAddition = 2;
+			}
+
+			int id = Integer.valueOf(Data.toHex(buffer, pos, idSize), 16);
+
+			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
+					+ lengthOffset - 1 + lengthSize);
+			length += lengthAddition;
+
+			int stop = pos + length - 1;
+			if (stop > bufstop)
+				break;
+
+			switch (id) {
+
+				case 112 : {
+					BeginSegment obj = AfplibFactory.eINSTANCE
+							.createBeginSegment();
+
+					{
+						int sstop = pos + 5;
+
+						if (stop >= pos + 5) {
+
+							obj.setSEGNAME(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 113 : {
+					EndSegment obj = AfplibFactory.eINSTANCE.createEndSegment();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 140 : {
+					BeginTile obj = AfplibFactory.eINSTANCE.createBeginTile();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 141 : {
+					EndTile obj = AfplibFactory.eINSTANCE.createEndTile();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 142 : {
+					BeginTransparencyMask obj = AfplibFactory.eINSTANCE
+							.createBeginTransparencyMask();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 143 : {
+					EndTransparencyMask obj = AfplibFactory.eINSTANCE
+							.createEndTransparencyMask();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 145 : {
+					BeginImage obj = AfplibFactory.eINSTANCE.createBeginImage();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setOBJTYPE(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 147 : {
+					EndImage obj = AfplibFactory.eINSTANCE.createEndImage();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 148 : {
+					ImageSize obj = AfplibFactory.eINSTANCE.createImageSize();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setUNITBASE(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 4;
+
+						if (sstop <= stop)
+
+							obj.setHRESOL(Data.toUnsigned(buffer, pos + 3,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setVRESOL(Data.toUnsigned(buffer, pos + 5,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 8;
+
+						if (sstop <= stop)
+
+							obj.setHSIZE(Data
+									.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					{
+						int sstop = pos + 10;
+
+						if (sstop <= stop)
+
+							obj.setVSIZE(Data
+									.toUnsigned(buffer, pos + 9, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 149 : {
+					ImageEncoding obj = AfplibFactory.eINSTANCE
+							.createImageEncoding();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setCOMPRID(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setRECID(Data
+									.toUnsigned(buffer, pos + 3, sstop));
+
+					}
+
+					{
+						int sstop = pos + 4;
+
+						if (stop >= pos + 4) {
+
+							obj.setBITORDR(Data.toUnsigned(buffer, pos + 4,
+									sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 150 : {
+					IDESize obj = AfplibFactory.eINSTANCE.createIDESize();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setIDESZ(Data
+									.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 151 : {
+					ImageLUTID obj = AfplibFactory.eINSTANCE.createImageLUTID();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setLUTID(Data
+									.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 152 : {
+					BandImage obj = AfplibFactory.eINSTANCE.createBandImage();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 3)
+
+						{
+
+							BandImageRG(obj.getRg(), buffer, pos + 3, sstop, 1);
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setBCOUNT(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 155 : {
+					IDEStructure obj = AfplibFactory.eINSTANCE
+							.createIDEStructure();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setFLAGS(Data
+									.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setFORMAT(Data.toUnsigned(buffer, pos + 3,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setSIZE1(Data
+									.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					{
+						int sstop = pos + 8;
+
+						if (stop >= pos + 8) {
+
+							obj.setSIZE2(Data
+									.toUnsigned(buffer, pos + 8, sstop));
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (stop >= pos + 9) {
+
+							obj.setSIZE3(Data
+									.toUnsigned(buffer, pos + 9, sstop));
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 10;
+
+						if (stop >= pos + 10) {
+
+							obj.setSIZE4(Data.toUnsigned(buffer, pos + 10,
+									sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 159 : {
+					ExternalAlgorithm obj = AfplibFactory.eINSTANCE
+							.createExternalAlgorithm();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 4)
+
+						{
+
+							ExternalAlgorithmRG(obj.getRg(), buffer, pos + 4,
+									sstop, 3);
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setALGTYPE(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 181 : {
+					TilePosition obj = AfplibFactory.eINSTANCE
+							.createTilePosition();
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setXOFFSET(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setYOFFSET(Data.toUnsigned(buffer, pos + 6,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 182 : {
+					TileSize obj = AfplibFactory.eINSTANCE.createTileSize();
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setTHSIZE(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setTVSIZE(Data.toUnsigned(buffer, pos + 6,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 10;
+
+						if (stop >= pos + 10) {
+
+							obj.setRELRES(Data.toUnsigned(buffer, pos + 10,
+									sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 183 : {
+					TileSetColor obj = AfplibFactory.eINSTANCE
+							.createTileSetColor();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setCSPACE(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setRESERVED(Data.toUnsigned(buffer, pos + 3,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setSIZE1(Data
+									.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setSIZE2(Data
+									.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					{
+						int sstop = pos + 8;
+
+						if (sstop <= stop)
+
+							obj.setSIZE3(Data
+									.toUnsigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setSIZE4(Data
+									.toUnsigned(buffer, pos + 9, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setCVAL1(Data.toUnsigned(buffer, pos + 10,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 13;
+
+						if (sstop <= stop)
+
+							obj.setCVAL2(Data.toUnsigned(buffer, pos + 12,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 15;
+
+						if (sstop <= stop)
+
+							obj.setCVAL3(Data.toUnsigned(buffer, pos + 14,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 17;
+
+						if (sstop <= stop)
+
+							obj.setCVAL4(Data.toUnsigned(buffer, pos + 16,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 246 : {
+					SetBiLevelImageColor obj = AfplibFactory.eINSTANCE
+							.createSetBiLevelImageColor();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setAREA(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						sstop = stop;
+						if (sstop >= pos + 3)
+
+							obj.setReserved(Arrays.copyOfRange(buffer, pos + 3,
+									sstop + 1));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setNAMECOLR(Data.toUnsigned(buffer, pos + 4,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 247 : {
+					IOCAFunctionSetIdentification obj = AfplibFactory.eINSTANCE
+							.createIOCAFunctionSetIdentification();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setCATEGORY(Data.toUnsigned(buffer, pos + 2,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setFCNSET(Data.toUnsigned(buffer, pos + 3,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 65170 : {
+					ImageData obj = AfplibFactory.eINSTANCE.createImageData();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 4)
+
+							obj.setDATA(Arrays.copyOfRange(buffer, pos + 4,
+									sstop + 1));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 65180 : {
+					BandImageData obj = AfplibFactory.eINSTANCE
+							.createBandImageData();
+
+					{
+						int sstop = pos + 4;
+
+						if (sstop <= stop)
+
+							obj.setBANDNUM(Data.toUnsigned(buffer, pos + 4,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setRESERVED(Data.toUnsigned(buffer, pos + 5,
+									sstop));
+
+					}
+
+					{
+						int sstop = pos + 32768;
+
+						if (stop >= pos + 7) {
+							sstop = stop;
+
+							obj.setDATA(Arrays.copyOfRange(buffer, pos + 7,
+									sstop + 1));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 65208 : {
+					IncludeTile obj = AfplibFactory.eINSTANCE
+							.createIncludeTile();
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setTIRID(Data
+									.toUnsigned(buffer, pos + 4, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 65230 : {
+					ImageSubsampling obj = AfplibFactory.eINSTANCE
+							.createImageSubsampling();
+
+					{
+						int sstop = pos + 32768;
+
+						if (stop >= pos + 4) {
+							sstop = stop;
+
+							{
+
+								sdf(obj.getSdfs(), buffer, pos + 4, sstop);
+
+							}
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 1 : {
+					SamplingRatios obj = AfplibFactory.eINSTANCE
+							.createSamplingRatios();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							SamplingRatiosRG(obj.getRg(), buffer, pos + 2,
+									sstop, 2);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 65211 : {
+					TileTOC obj = AfplibFactory.eINSTANCE.createTileTOC();
+
+					{
+						int sstop = pos + 32768;
+
+						if (stop >= pos + 6) {
+							sstop = stop;
+
+							{
+
+								TileTOCRG(obj.getRg(), buffer, pos + 6, sstop,
+										26);
+
+							}
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setReserved(Data.toUnsigned(buffer, pos + 4,
+									sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+			}
+			pos += length;
+		}
+	}
+
 	private enum State {
 		READ_PREFIX_AND_CLASS, READ_LENGTH, READ_TYPE, READ_CHAINED, READ_UNCHAINED, TERMINATE
 	};
@@ -7920,7 +8708,7 @@ class StructuredFieldFactory {
 	void CFIRG(List<CFIRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_CFIRG(buffer, pos, stop));
 			pos += length;
@@ -7930,7 +8718,7 @@ class StructuredFieldFactory {
 	void CPIRG(List<CPIRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_CPIRG(buffer, pos, stop));
 			pos += length;
@@ -7940,7 +8728,7 @@ class StructuredFieldFactory {
 	void FNIRG(List<FNIRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_FNIRG(buffer, pos, stop));
 			pos += length;
@@ -7950,7 +8738,7 @@ class StructuredFieldFactory {
 	void FNNRG(List<FNNRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_FNNRG(buffer, pos, stop));
 			pos += length;
@@ -7960,7 +8748,7 @@ class StructuredFieldFactory {
 	void FNMRG(List<FNMRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_FNMRG(buffer, pos, stop));
 			pos += length;
@@ -7970,7 +8758,7 @@ class StructuredFieldFactory {
 	void FNORG(List<FNORG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_FNORG(buffer, pos, stop));
 			pos += length;
@@ -7980,7 +8768,7 @@ class StructuredFieldFactory {
 	void FNPRG(List<FNPRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_FNPRG(buffer, pos, stop));
 			pos += length;
@@ -7990,7 +8778,7 @@ class StructuredFieldFactory {
 	void LLERG(List<LLERG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8004,7 +8792,7 @@ class StructuredFieldFactory {
 	void MBCRG(List<MBCRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8018,7 +8806,7 @@ class StructuredFieldFactory {
 	void MCARG(List<MCARG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8032,7 +8820,7 @@ class StructuredFieldFactory {
 	void MCCRG(List<MCCRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_MCCRG(buffer, pos, stop));
 			pos += length;
@@ -8042,7 +8830,7 @@ class StructuredFieldFactory {
 	void MCDRG(List<MCDRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8056,7 +8844,7 @@ class StructuredFieldFactory {
 	void MCFRG(List<MCFRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8070,7 +8858,7 @@ class StructuredFieldFactory {
 	void MCF1RG(List<MCF1RG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_MCF1RG(buffer, pos, stop));
 			pos += length;
@@ -8080,7 +8868,7 @@ class StructuredFieldFactory {
 	void MDRRG(List<MDRRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8094,7 +8882,7 @@ class StructuredFieldFactory {
 	void MGORG(List<MGORG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8108,7 +8896,7 @@ class StructuredFieldFactory {
 	void MIORG(List<MIORG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8122,7 +8910,7 @@ class StructuredFieldFactory {
 	void MMCRG(List<MMCRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_MMCRG(buffer, pos, stop));
 			pos += length;
@@ -8132,7 +8920,7 @@ class StructuredFieldFactory {
 	void MMDRG(List<MMDRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8146,7 +8934,7 @@ class StructuredFieldFactory {
 	void MMORG(List<MMORG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_MMORG(buffer, pos, stop));
 			pos += length;
@@ -8156,7 +8944,7 @@ class StructuredFieldFactory {
 	void MMTRG(List<MMTRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8170,7 +8958,7 @@ class StructuredFieldFactory {
 	void MPGRG(List<MPGRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8184,7 +8972,7 @@ class StructuredFieldFactory {
 	void MPORG(List<MPORG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8198,7 +8986,7 @@ class StructuredFieldFactory {
 	void MPSRG(List<MPSRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8212,7 +9000,7 @@ class StructuredFieldFactory {
 	void MSURG(List<MSURG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_MSURG(buffer, pos, stop));
 			pos += length;
@@ -8222,7 +9010,7 @@ class StructuredFieldFactory {
 	void PGPRG(List<PGPRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8236,7 +9024,7 @@ class StructuredFieldFactory {
 	void PPORG(List<PPORG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
-		while (pos < bufstop) {
+		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
 			int stop = pos + length - 1;
@@ -8250,7 +9038,7 @@ class StructuredFieldFactory {
 	void BandImageRG(List<BandImageRG> objs, byte[] buffer, int start,
 			int bufstop, int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_BandImageRG(buffer, pos, stop));
 			pos += length;
@@ -8260,7 +9048,7 @@ class StructuredFieldFactory {
 	void ExternalAlgorithmRG(List<ExternalAlgorithmRG> objs, byte[] buffer,
 			int start, int bufstop, int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_ExternalAlgorithmRG(buffer, pos, stop));
 			pos += length;
@@ -8270,7 +9058,7 @@ class StructuredFieldFactory {
 	void SamplingRatiosRG(List<SamplingRatiosRG> objs, byte[] buffer,
 			int start, int bufstop, int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_SamplingRatiosRG(buffer, pos, stop));
 			pos += length;
@@ -8280,7 +9068,7 @@ class StructuredFieldFactory {
 	void TileTOCRG(List<TileTOCRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_TileTOCRG(buffer, pos, stop));
 			pos += length;
@@ -8290,7 +9078,7 @@ class StructuredFieldFactory {
 	void GFLTRG(List<GFLTRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GFLTRG(buffer, pos, stop));
 			pos += length;
@@ -8300,7 +9088,7 @@ class StructuredFieldFactory {
 	void GCFLTRG(List<GCFLTRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GCFLTRG(buffer, pos, stop));
 			pos += length;
@@ -8310,7 +9098,7 @@ class StructuredFieldFactory {
 	void GLINERG(List<GLINERG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GLINERG(buffer, pos, stop));
 			pos += length;
@@ -8320,7 +9108,7 @@ class StructuredFieldFactory {
 	void GCLINERG(List<GCLINERG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GCLINERG(buffer, pos, stop));
 			pos += length;
@@ -8330,7 +9118,7 @@ class StructuredFieldFactory {
 	void GMRKRG(List<GMRKRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GMRKRG(buffer, pos, stop));
 			pos += length;
@@ -8340,7 +9128,7 @@ class StructuredFieldFactory {
 	void GCMRKRG(List<GCMRKRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GCMRKRG(buffer, pos, stop));
 			pos += length;
@@ -8350,7 +9138,7 @@ class StructuredFieldFactory {
 	void GRLINERG(List<GRLINERG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GRLINERG(buffer, pos, stop));
 			pos += length;
@@ -8360,7 +9148,7 @@ class StructuredFieldFactory {
 	void GCRLINERG(List<GCRLINERG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GCRLINERG(buffer, pos, stop));
 			pos += length;
@@ -8370,7 +9158,7 @@ class StructuredFieldFactory {
 	void GCBEZRG(List<GCBEZRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GCBEZRG(buffer, pos, stop));
 			pos += length;
@@ -8380,7 +9168,7 @@ class StructuredFieldFactory {
 	void GCCBEZRG(List<GCCBEZRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
-		while (pos + length < bufstop) {
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
 			objs.add(_GCCBEZRG(buffer, pos, stop));
 			pos += length;
