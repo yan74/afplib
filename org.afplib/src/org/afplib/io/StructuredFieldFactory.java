@@ -13,7 +13,7 @@ import org.afplib.afplib.*;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-class StructuredFieldFactory {
+class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 
@@ -8088,96 +8088,6 @@ class StructuredFieldFactory {
 		}
 	}
 
-	private enum State {
-		READ_PREFIX_AND_CLASS, READ_LENGTH, READ_TYPE, READ_CHAINED, READ_UNCHAINED, TERMINATE
-	};
-
-	private final boolean isChained(int functionType) {
-		return (functionType & 0x01) == 1;
-	}
-
-	private final int unchain(int functionType) {
-		return functionType &= 0xfe;
-	}
-
-	void cs(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
-		int number = 0;
-		int length = 0;
-		State state = State.READ_PREFIX_AND_CLASS;
-		boolean isChainedTo = false;
-
-		while (state != State.TERMINATE && start <= bufstop) {
-			int functionType;
-			switch (state) {
-				case READ_UNCHAINED :
-					isChainedTo = false;
-					state = State.READ_PREFIX_AND_CLASS;
-					break;
-				case READ_PREFIX_AND_CLASS :
-					if (Data.toUnsignedByte(buffer[start]) != 0x2B
-							|| Data.toUnsignedByte(buffer[start + 1]) != 0xD3) {
-
-						//rest are code points
-
-						Triplet m = cs(buffer, start, bufstop, 0xda);
-						number++;
-						if (m != null) {
-							m.setTripletId(0xda);
-							m.setTripletNumber(number);
-							m.setTripletLength(length + 1);
-							m.setFileOffset(start);
-							triplets.add(m);
-						} else
-							System.out.println("failed CS construction."); // FIXME
-						start += buffer.length;
-
-						state = State.TERMINATE;
-						break;
-					}
-					state = State.READ_LENGTH;
-					start += 2;
-					break;
-				case READ_CHAINED :
-					isChainedTo = true;
-					state = State.READ_LENGTH;
-					break;
-				case READ_LENGTH :
-					length = Data.toUnsignedByte(buffer[start]);
-					state = State.READ_TYPE;
-					length--; // don't include length byte in length because we
-								// increment offset (so it doesn't point to length)
-					start++;
-					break;
-				case READ_TYPE :
-					functionType = Data.toUnsignedByte(buffer[start]);
-					if (isChained(functionType)) {
-						state = State.READ_CHAINED;
-						functionType = unchain(functionType);
-					} else {
-						state = State.READ_UNCHAINED;
-					}
-					Triplet m = cs(buffer, start, start + length - 1,
-							functionType);
-					if (m != null) {
-						m.setTripletId(functionType);
-						m.setTripletNumber(number);
-						m.setTripletLength(length + 1);
-						m.setFileOffset(start);
-						triplets.add(m);
-					} else
-						System.out.println("failed CS construction."); // FIXME
-					number++;
-					start += length;
-					if (start == buffer.length) {
-						state = State.TERMINATE;
-					}
-					break;
-				case TERMINATE :
-					break;
-			}
-		}
-	}
-
 	Triplet cs(byte[] buffer, int pos, int stop, int id) {
 		switch (id) {
 
@@ -13893,6 +13803,977 @@ class StructuredFieldFactory {
 					buffer[start] = Data.toUnsignedByte(length)[0];
 					buffer[start + 1] = Data.toUnsignedByte(71)[0];
 
+					break;
+				}
+
+				default :
+					throw new IllegalArgumentException("unknown triplet: " + m);
+			}
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
+	int binary_cs(byte[] buffer, int bstart, List<Triplet> triplets) {
+		int start = bstart;
+
+		boolean nextCSisUnChained = true;
+		Triplet lastTriplet = triplets.size() == 0 ? null : triplets
+				.get(triplets.size() - 1);
+
+		for (Triplet m : triplets) {
+			int length = 0;
+
+			if (nextCSisUnChained) {
+				buffer[start] = (byte) 0x2b;
+				buffer[start + 1] = (byte) 0xd3;
+				start += 2;
+				nextCSisUnChained = false;
+			}
+
+			start++; // length is not considered to be part of cs -> model error
+
+			switch (m.eClass().getClassifierID()) {
+
+				case AfplibPackage.AMB : {
+					m.setTripletId(210);
+					AMB obj = (AMB) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getDSPLCMNT() != null) {
+
+						if (obj.getDSPLCMNT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getDSPLCMNT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(210 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(210 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.AMI : {
+					m.setTripletId(198);
+					AMI obj = (AMI) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getDSPLCMNT() != null) {
+
+						if (obj.getDSPLCMNT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getDSPLCMNT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(198 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(198 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.BLN : {
+					m.setTripletId(216);
+					BLN obj = (BLN) m;
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(216 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(216 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.BSU : {
+					m.setTripletId(242);
+					BSU obj = (BSU) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLID() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getLID());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(242 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(242 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.DBR : {
+					m.setTripletId(230);
+					DBR obj = (DBR) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getRWIDTH() != null) {
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (obj.getRWIDTHFRACTION() != null) {
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getRLENGTH() != null) {
+
+						if (obj.getRLENGTH() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getRLENGTH());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getRWIDTH() != null) {
+
+						if (obj.getRWIDTH() != null) {
+							Saver.saveSigned(buffer, start + 3, start + 4,
+									obj.getRWIDTH());
+						}
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (obj.getRWIDTHFRACTION() != null) {
+
+						if (obj.getRWIDTHFRACTION() != null) {
+							Saver.saveSigned(buffer, start + 5, start + 5,
+									obj.getRWIDTHFRACTION());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(230 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(230 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.DIR : {
+					m.setTripletId(228);
+					DIR obj = (DIR) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getRWIDTH() != null) {
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (obj.getRWIDTHFRACTION() != null) {
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getRLENGTH() != null) {
+
+						if (obj.getRLENGTH() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getRLENGTH());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getRWIDTH() != null) {
+
+						if (obj.getRWIDTH() != null) {
+							Saver.saveSigned(buffer, start + 3, start + 4,
+									obj.getRWIDTH());
+						}
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (obj.getRWIDTHFRACTION() != null) {
+
+						if (obj.getRWIDTHFRACTION() != null) {
+							Saver.saveSigned(buffer, start + 5, start + 5,
+									obj.getRWIDTHFRACTION());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(228 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(228 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.ESU : {
+					m.setTripletId(244);
+					ESU obj = (ESU) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLID() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getLID());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(244 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(244 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.NOPCS : {
+					m.setTripletId(248);
+					NOPCS obj = (NOPCS) m;
+
+					if (obj.getIGNDATA() != null) {
+
+					}
+
+					if (obj.getIGNDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 1,
+									obj.getIGNDATA());
+							if (1 + size > length)
+								length = 1 + size;
+						}
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(248 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(248 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.OVS : {
+					m.setTripletId(114);
+					OVS obj = (OVS) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (obj.getBYPSIDEN() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getBYPSIDEN());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (obj.getOVERCHAR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 3,
+								obj.getOVERCHAR());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(114 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(114 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.RMB : {
+					m.setTripletId(212);
+					RMB obj = (RMB) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getINCRMENT() != null) {
+
+						if (obj.getINCRMENT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getINCRMENT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(212 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(212 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.RMI : {
+					m.setTripletId(200);
+					RMI obj = (RMI) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getINCRMENT() != null) {
+
+						if (obj.getINCRMENT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getINCRMENT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(200 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(200 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.RPS : {
+					m.setTripletId(238);
+					RPS obj = (RPS) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getRPTDATA() != null) {
+
+					}
+
+					if (obj.getRLENGTH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 2,
+								obj.getRLENGTH());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getRPTDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 3,
+									obj.getRPTDATA(), charset);
+							if (3 + size > length)
+								length = 3 + size;
+						}
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(238 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(238 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.SBI : {
+					m.setTripletId(208);
+					SBI obj = (SBI) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getINCRMENT() != null) {
+
+						if (obj.getINCRMENT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getINCRMENT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(208 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(208 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.SCFL : {
+					m.setTripletId(240);
+					SCFL obj = (SCFL) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLID() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getLID());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(240 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(240 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.SEC : {
+					m.setTripletId(128);
+					SEC obj = (SEC) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (8 + 1 > length)
+						length = 8 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+					if (obj.getCOLVALUE() != null) {
+
+					}
+
+					if (obj.getRESERVED() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getRESERVED());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (obj.getCOLSPCE() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2,
+								obj.getCOLSPCE());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getCOLSIZE1() != null) {
+
+						Saver.saveUnsigned(buffer, start + 7, start + 7,
+								obj.getCOLSIZE1());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getCOLSIZE2() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 8,
+								obj.getCOLSIZE2());
+
+						if (8 + 1 > length)
+							length = 8 + 1;
+
+					}
+
+					if (obj.getCOLSIZE3() != null) {
+
+						Saver.saveUnsigned(buffer, start + 9, start + 9,
+								obj.getCOLSIZE3());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getCOLSIZE4() != null) {
+
+						Saver.saveUnsigned(buffer, start + 10, start + 10,
+								obj.getCOLSIZE4());
+
+						if (10 + 1 > length)
+							length = 10 + 1;
+
+					}
+
+					if (obj.getCOLVALUE() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 11,
+									obj.getCOLVALUE());
+							if (11 + size > length)
+								length = 11 + size;
+						}
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(128 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(128 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.SIA : {
+					m.setTripletId(194);
+					SIA obj = (SIA) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getDIRCTION() != null) {
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getADJSTMNT() != null) {
+
+						if (obj.getADJSTMNT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getADJSTMNT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getDIRCTION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3,
+								obj.getDIRCTION());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(194 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(194 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.SIM : {
+					m.setTripletId(192);
+					SIM obj = (SIM) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getDSPLCMNT() != null) {
+
+						if (obj.getDSPLCMNT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getDSPLCMNT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(192 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(192 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.STC : {
+					m.setTripletId(116);
+					STC obj = (STC) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getPRECSION() != null) {
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getFRGCOLOR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 2,
+								obj.getFRGCOLOR());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getPRECSION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3,
+								obj.getPRECSION());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(116 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(116 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.STO : {
+					m.setTripletId(246);
+					STO obj = (STO) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (4 + 1 > length)
+						length = 4 + 1;
+
+					if (obj.getIORNTION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 2,
+								obj.getIORNTION());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getBORNTION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 4,
+								obj.getBORNTION());
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(246 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(246 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.SVI : {
+					m.setTripletId(196);
+					SVI obj = (SVI) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (obj.getINCRMENT() != null) {
+
+						if (obj.getINCRMENT() != null) {
+							Saver.saveSigned(buffer, start + 1, start + 2,
+									obj.getINCRMENT());
+						}
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(196 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(196 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.TBM : {
+					m.setTripletId(120);
+					TBM obj = (TBM) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getPRECSION() != null) {
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getINCRMENT() != null) {
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (obj.getDIRCTION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getDIRCTION());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (obj.getPRECSION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2,
+								obj.getPRECSION());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getINCRMENT() != null) {
+
+						if (obj.getINCRMENT() != null) {
+							Saver.saveSigned(buffer, start + 3, start + 4,
+									obj.getINCRMENT());
+						}
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(120 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(120 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.TRN : {
+					m.setTripletId(218);
+					TRN obj = (TRN) m;
+
+					if (obj.getTRNDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 1,
+									obj.getTRNDATA());
+							if (1 + size > length)
+								length = 1 + size;
+						}
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(218 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(218 | 0x01)[0]; // chain it
+					}
+					break;
+				}
+
+				case AfplibPackage.USC : {
+					m.setTripletId(118);
+					USC obj = (USC) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getBYPSIDEN() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1,
+								obj.getBYPSIDEN());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (length == 0)
+						length = 1;
+					buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+					if (lastTriplet.equals(m)) {
+						buffer[start] = Data.toUnsignedByte(118 & 0xfe)[0]; // unchain it
+						nextCSisUnChained = true;
+					} else {
+						buffer[start] = Data.toUnsignedByte(118 | 0x01)[0]; // chain it
+					}
 					break;
 				}
 
@@ -19697,6 +20578,10 @@ class StructuredFieldFactory {
 
 					{
 
+						int size = binary_cs(buffer, start + 23, obj.getCS());
+						if (23 + size > length)
+							length = 23 + size;
+
 					}
 
 				}
@@ -19883,6 +20768,10 @@ class StructuredFieldFactory {
 				PTX obj = (PTX) sf;
 
 				{
+
+					int size = binary_cs(buffer, start + 9, obj.getCS());
+					if (9 + size > length)
+						length = 9 + size;
 
 				}
 

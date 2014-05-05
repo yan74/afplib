@@ -20,7 +20,7 @@ import org.afplib.afplib.*;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-class StructuredFieldFactory {
+class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 
@@ -113,95 +113,6 @@ class StructuredFieldFactory {
 			pos+=length;
 		}
 	}
-
-	private enum State {
-		READ_PREFIX_AND_CLASS, READ_LENGTH, READ_TYPE, READ_CHAINED, READ_UNCHAINED, TERMINATE
-	};
-
-	private final boolean isChained(int functionType) {
-		return (functionType & 0x01) == 1;
-	}
-
-	private final int unchain(int functionType) {
-		return functionType &= 0xfe;
-	}
-	
-	void cs(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
-		int number = 0;
-		int length = 0;
-		State state = State.READ_PREFIX_AND_CLASS;
-		boolean isChainedTo = false;
-
-		while (state != State.TERMINATE && start <= bufstop) {
-			int functionType;
-			switch (state) {
-			case READ_UNCHAINED:
-				isChainedTo = false;
-				state = State.READ_PREFIX_AND_CLASS;
-				break;
-			case READ_PREFIX_AND_CLASS:
-				if (Data.toUnsignedByte(buffer[start]) != 0x2B
-						|| Data.toUnsignedByte(buffer[start + 1]) != 0xD3) {
-					
-					//rest are code points
-					
-					Triplet m = cs(buffer, start, bufstop, 0xda);
-					number++;
-					if(m != null) {
-						m.setTripletId(0xda);
-						m.setTripletNumber(number);
-						m.setTripletLength(length + 1);
-						m.setFileOffset(start);
-						triplets.add(m);
-					}
-					else System.out.println("failed CS construction."); // FIXME
-					start += buffer.length;
-
-					state = State.TERMINATE;
-					break;
-				}
-				state = State.READ_LENGTH;
-				start += 2;
-				break;
-			case READ_CHAINED:
-				isChainedTo = true;
-				state = State.READ_LENGTH;
-				break;
-			case READ_LENGTH:
-				length = Data.toUnsignedByte(buffer[start]);
-				state = State.READ_TYPE;
-				length--; // don't include length byte in length because we
-							// increment offset (so it doesn't point to length)
-				start++;
-				break;
-			case READ_TYPE:
-				functionType = Data.toUnsignedByte(buffer[start]);
-				if (isChained(functionType)) {
-					state = State.READ_CHAINED;
-					functionType = unchain(functionType);
-				} else {
-					state = State.READ_UNCHAINED;
-				}
-				Triplet m = cs(buffer, start, start + length - 1, functionType);
-				if(m != null) {
-					m.setTripletId(functionType);
-					m.setTripletNumber(number);
-					m.setTripletLength(length + 1);
-					m.setFileOffset(start);
-					triplets.add(m);
-				}
-				else System.out.println("failed CS construction."); // FIXME
-				number++;
-				start += length;
-				if (start == buffer.length) {
-					state = State.TERMINATE;
-				}
-				break;
-			case TERMINATE:
-				break;
-			}
-		}		
-	}
 	
 	Triplet cs(byte[] buffer, int pos, int stop, int id) {
 		switch(id) {
@@ -246,7 +157,7 @@ class StructuredFieldFactory {
 				«t.name» obj = («t.name») m;
 				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
 				«FOREACH t.elements AS e»
-				«IF e.name == t.lengthAttribute»obj.«setter()»(length);«ENDIF»
+				«IF e.name == t.lengthAttribute»obj.«setter(e)»(length);«ENDIF»
 				«ENDFOREACH»
 				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
 
@@ -256,6 +167,54 @@ class StructuredFieldFactory {
 				«IF t.name == "CGCSGID"»
 				charset = CodepageHelper.getCharset(obj.getCPGID(), obj.getGCSGID());
 				«ENDIF»
+				break;
+			}
+			«ENDIF»«ENDFOREACH»
+			default: throw new IllegalArgumentException("unknown triplet: "+m);
+			}
+			start += length;
+		}
+		
+		return start - bstart;
+	}
+
+	int binary_cs(byte[] buffer, int bstart, List<Triplet> triplets) {
+		int start = bstart;
+		
+		boolean nextCSisUnChained = true;
+		Triplet lastTriplet = triplets.size() == 0 ? null : triplets.get(triplets.size() - 1);
+		
+		for(Triplet m : triplets) {
+			int length = 0;
+			
+			if(nextCSisUnChained) {
+				buffer[start] = (byte) 0x2b;
+				buffer[start + 1] = (byte) 0xd3;
+				start += 2;
+				nextCSisUnChained = false;
+			}		
+			
+			start++; // length is not considered to be part of cs -> model error
+			
+			switch(m.eClass().getClassifierID()) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "CS"»
+			case AfplibPackage.«camelCase2Constant(t.name)»: {
+				m.setTripletId(«t.id»);
+				«t.name» obj = («t.name») m;
+				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
+				«FOREACH t.elements AS e»
+				«ENDFOREACH»
+				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
+
+				if(length == 0) length = 1;
+				buffer[start - 1] = Data.toUnsignedByte(length + 1)[0]; // include type
+				if(lastTriplet.equals(m)) {
+					buffer[start] = Data.toUnsignedByte(«t.id» & 0xfe)[0]; // unchain it
+					nextCSisUnChained = true;
+				} else {
+					buffer[start] = Data.toUnsignedByte(«t.id» | 0x01)[0]; // chain it
+				}
 				break;
 			}
 			«ENDIF»«ENDFOREACH»
@@ -309,6 +268,9 @@ class StructuredFieldFactory {
 			{
 			«IF ((Group)this).type.toString() == "Triplet"»
 			int size = binary_triplets(buffer, start + «start», obj.«getter()»());
+			if(«start» + size > length) length = «start» + size;
+			«ELSEIF ((Group)this).type.toString() == "CS"»
+			int size = binary_cs(buffer, start + «start», obj.«getter()»());
 			if(«start» + size > length) length = «start» + size;
 			«ENDIF»
 			«REM»
