@@ -10806,4 +10806,5723 @@ class StructuredFieldFactory {
 		return obj;
 	}
 
+	public int binary(byte[] buffer, int start, SF sf) {
+		int length = 9;
+		switch (sf.eClass().getClassifierID()) {
+
+			case AfplibPackage.BAG : {
+				sf.setId(13871305);
+				BAG obj = (BAG) sf;
+
+				if (obj.getAEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getAEGName() != null) {
+
+					if (obj.getAEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getAEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BBC : {
+				sf.setId(13871339);
+				BBC obj = (BBC) sf;
+
+				if (obj.getBCdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getBCdoName() != null) {
+
+					if (obj.getBCdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getBCdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BCA : {
+				sf.setId(13871223);
+				BCA obj = (BCA) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getCATName() != null) {
+
+					if (obj.getCATName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getCATName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BCF : {
+				sf.setId(13871242);
+				BCF obj = (BCF) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BCP : {
+				sf.setId(13871239);
+				BCP obj = (BCP) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDA : {
+				sf.setId(13889259);
+				BDA obj = (BDA) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (11 + 1 > length)
+					length = 11 + 1;
+
+				if (13 + 1 > length)
+					length = 13 + 1;
+
+				if (obj.getFlags() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getFlags());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getXoffset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 11,
+							obj.getXoffset());
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+				}
+
+				if (obj.getYoffset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 12, start + 13,
+							obj.getYoffset());
+
+					if (13 + 1 > length)
+						length = 13 + 1;
+
+				}
+
+				if (obj.getData() != null) {
+
+					{
+						int size = Saver
+								.save(buffer, start + 14, obj.getData());
+						if (14 + size > length)
+							length = 14 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDD : {
+				sf.setId(13870827);
+				BDD obj = (BDD) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (21 + 1 > length)
+					length = 21 + 1;
+
+				if (22 + 1 > length)
+					length = 22 + 1;
+
+				if (23 + 1 > length)
+					length = 23 + 1;
+
+				if (25 + 1 > length)
+					length = 25 + 1;
+
+				if (26 + 1 > length)
+					length = 26 + 1;
+
+				if (28 + 1 > length)
+					length = 28 + 1;
+
+				if (29 + 1 > length)
+					length = 29 + 1;
+
+				if (31 + 1 > length)
+					length = 31 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getUBASE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getUBASE());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getReserved() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getReserved());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXUPUB() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getXUPUB());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getYUPUB() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getYUPUB());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXEXTENT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 16,
+							obj.getXEXTENT());
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getYEXTENT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getYEXTENT());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getReserved2() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 20,
+							obj.getReserved2());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getTYPE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 21,
+							obj.getTYPE());
+
+					if (21 + 1 > length)
+						length = 21 + 1;
+
+				}
+
+				if (obj.getMOD() != null) {
+
+					Saver.saveUnsigned(buffer, start + 22, start + 22,
+							obj.getMOD());
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getLID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 23, start + 23,
+							obj.getLID());
+
+					if (23 + 1 > length)
+						length = 23 + 1;
+
+				}
+
+				if (obj.getCOLOR() != null) {
+
+					Saver.saveUnsigned(buffer, start + 24, start + 25,
+							obj.getCOLOR());
+
+					if (25 + 1 > length)
+						length = 25 + 1;
+
+				}
+
+				if (obj.getMODULEWIDTH() != null) {
+
+					Saver.saveUnsigned(buffer, start + 26, start + 26,
+							obj.getMODULEWIDTH());
+
+					if (26 + 1 > length)
+						length = 26 + 1;
+
+				}
+
+				if (obj.getELEMENTHEIGHT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 27, start + 28,
+							obj.getELEMENTHEIGHT());
+
+					if (28 + 1 > length)
+						length = 28 + 1;
+
+				}
+
+				if (obj.getMULT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 29, start + 29,
+							obj.getMULT());
+
+					if (29 + 1 > length)
+						length = 29 + 1;
+
+				}
+
+				if (obj.getWENE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 30, start + 31,
+							obj.getWENE());
+
+					if (31 + 1 > length)
+						length = 31 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDG : {
+				sf.setId(13871300);
+				BDG obj = (BDG) sf;
+
+				if (obj.getDEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getDEGName() != null) {
+
+					if (obj.getDEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDI : {
+				sf.setId(13871271);
+				BDI obj = (BDI) sf;
+
+				if (obj.getIndxName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getIndxName() != null) {
+
+					if (obj.getIndxName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getIndxName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDM : {
+				sf.setId(13871306);
+				BDM obj = (BDM) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getDMName() != null) {
+
+					if (obj.getDMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getDatFmt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 17,
+							obj.getDatFmt());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDT : {
+				sf.setId(13871272);
+				BDT obj = (BDT) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getDocName() != null) {
+
+					if (obj.getDocName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDocName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getReserved() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getReserved());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BDX : {
+				sf.setId(13871331);
+				BDX obj = (BDX) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getDMXName() != null) {
+
+					if (obj.getDMXName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDMXName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BFG : {
+				sf.setId(13871301);
+				BFG obj = (BFG) sf;
+
+				if (obj.getFEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getFEGName() != null) {
+
+					if (obj.getFEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getFEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BFM : {
+				sf.setId(13871309);
+				BFM obj = (BFM) sf;
+
+				if (obj.getFMName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getFMName() != null) {
+
+					if (obj.getFMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getFMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BFN : {
+				sf.setId(13871241);
+				BFN obj = (BFN) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BGR : {
+				sf.setId(13871291);
+				BGR obj = (BGR) sf;
+
+				if (obj.getGdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getGdoName() != null) {
+
+					if (obj.getGdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getGdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BII : {
+				sf.setId(13871227);
+				BII obj = (BII) sf;
+
+				if (obj.getImoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getImoName() != null) {
+
+					if (obj.getImoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getImoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BIM : {
+				sf.setId(13871355);
+				BIM obj = (BIM) sf;
+
+				if (obj.getIdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getIdoName() != null) {
+
+					if (obj.getIdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getIdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BMM : {
+				sf.setId(13871308);
+				BMM obj = (BMM) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getMMName() != null) {
+
+					if (obj.getMMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getMMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BMO : {
+				sf.setId(13871327);
+				BMO obj = (BMO) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getOvlyName() != null) {
+
+					if (obj.getOvlyName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getOvlyName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BNG : {
+				sf.setId(13871277);
+				BNG obj = (BNG) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPGrpName() != null) {
+
+					if (obj.getPGrpName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPGrpName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BOC : {
+				sf.setId(13871250);
+				BOC obj = (BOC) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				{
+
+				}
+
+				if (obj.getObjCName() != null) {
+
+					if (obj.getObjCName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getObjCName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BOG : {
+				sf.setId(13871303);
+				BOG obj = (BOG) sf;
+
+				if (obj.getOEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getOEGName() != null) {
+
+					if (obj.getOEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getOEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BPF : {
+				sf.setId(13871269);
+				BPF obj = (BPF) sf;
+
+				if (obj.getPFName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPFName() != null) {
+
+					if (obj.getPFName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPFName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BPG : {
+				sf.setId(13871279);
+				BPG obj = (BPG) sf;
+
+				if (obj.getPageName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPageName() != null) {
+
+					if (obj.getPageName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPageName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BPM : {
+				sf.setId(13871307);
+				BPM obj = (BPM) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getPMName() != null) {
+
+					if (obj.getPMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BPS : {
+				sf.setId(13871199);
+				BPS obj = (BPS) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPsegName() != null) {
+
+					if (obj.getPsegName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPsegName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BPT : {
+				sf.setId(13871259);
+				BPT obj = (BPT) sf;
+
+				if (obj.getPTdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPTdoName() != null) {
+
+					if (obj.getPTdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPTdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BRG : {
+				sf.setId(13871302);
+				BRG obj = (BRG) sf;
+
+				if (obj.getRGrpName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getRGrpName() != null) {
+
+					if (obj.getRGrpName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRGrpName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BRS : {
+				sf.setId(13871310);
+				BRS obj = (BRS) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				{
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.BSG : {
+				sf.setId(13871321);
+				BSG obj = (BSG) sf;
+
+				if (obj.getREGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getREGName() != null) {
+
+					if (obj.getREGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getREGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CAT : {
+				sf.setId(13873271);
+				CAT obj = (CAT) sf;
+
+				if (obj.getCATData() != null) {
+
+				}
+
+				if (obj.getCATData() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getCATData());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CDD : {
+				sf.setId(13870738);
+				CDD obj = (CDD) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getXocBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getXocBase());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getYocBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getYocBase());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXocUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getXocUnits());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getYocUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getYocUnits());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXocSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 17,
+							obj.getXocSize());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getYocSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 18, start + 20,
+							obj.getYocSize());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CFC : {
+				sf.setId(13870986);
+				CFC obj = (CFC) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getCFIRGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getCFIRGLen());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getRetired1() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getRetired1());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CFI : {
+				sf.setId(13864074);
+				CFI obj = (CFI) sf;
+
+				{
+
+				}
+
+				if (obj.getFixedLengthRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CPC : {
+				sf.setId(13870983);
+				CPC obj = (CPC) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (19 + 1 > length)
+					length = 19 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (21 + 1 > length)
+					length = 21 + 1;
+
+				if (obj.getDefCharID() != null) {
+
+					if (obj.getDefCharID() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDefCharID(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getPrtFlags() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 17,
+							obj.getPrtFlags());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getCPIRGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 18, start + 18,
+							obj.getCPIRGLen());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getVSCharSN() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 19,
+							obj.getVSCharSN());
+
+					if (19 + 1 > length)
+						length = 19 + 1;
+
+				}
+
+				if (obj.getVSChar() != null) {
+
+					Saver.saveUnsigned(buffer, start + 20, start + 20,
+							obj.getVSChar());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getVSFlags() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 21,
+							obj.getVSFlags());
+
+					if (21 + 1 > length)
+						length = 21 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CPD : {
+				sf.setId(13870727);
+				CPD obj = (CPD) sf;
+
+				if (40 + 1 > length)
+					length = 40 + 1;
+
+				if (42 + 1 > length)
+					length = 42 + 1;
+
+				if (46 + 1 > length)
+					length = 46 + 1;
+
+				if (48 + 1 > length)
+					length = 48 + 1;
+
+				if (50 + 1 > length)
+					length = 50 + 1;
+
+				if (obj.getEncScheme() != null) {
+
+					if (52 + 1 > length)
+						length = 52 + 1;
+
+				}
+
+				if (obj.getCPDesc() != null) {
+
+					if (obj.getCPDesc() != null) {
+						Saver.save(buffer, start + 9, start + 40,
+								obj.getCPDesc(), Charset.forName("IBM500"));
+					}
+
+					if (40 + 1 > length)
+						length = 40 + 1;
+
+				}
+
+				if (obj.getGCGIDLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 41, start + 42,
+							obj.getGCGIDLen());
+
+					if (42 + 1 > length)
+						length = 42 + 1;
+
+				}
+
+				if (obj.getNumCdPts() != null) {
+
+					Saver.saveUnsigned(buffer, start + 43, start + 46,
+							obj.getNumCdPts());
+
+					if (46 + 1 > length)
+						length = 46 + 1;
+
+				}
+
+				if (obj.getGCSGID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 47, start + 48,
+							obj.getGCSGID());
+
+					if (48 + 1 > length)
+						length = 48 + 1;
+
+				}
+
+				if (obj.getCPGID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 49, start + 50,
+							obj.getCPGID());
+
+					if (50 + 1 > length)
+						length = 50 + 1;
+
+				}
+
+				if (obj.getEncScheme() != null) {
+
+					Saver.saveUnsigned(buffer, start + 51, start + 52,
+							obj.getEncScheme());
+
+					if (52 + 1 > length)
+						length = 52 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CPI : {
+				sf.setId(13864071);
+				CPI obj = (CPI) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.CTC : {
+				sf.setId(13871003);
+				CTC obj = (CTC) sf;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (obj.getConData() != null) {
+
+					if (obj.getConData() != null) {
+						Saver.save(buffer, start + 9, start + 18,
+								obj.getConData());
+					}
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.DXD : {
+				sf.setId(13870819);
+				DXD obj = (DXD) sf;
+
+				return length;
+			}
+			case AfplibPackage.EAG : {
+				sf.setId(13871561);
+				EAG obj = (EAG) sf;
+
+				if (obj.getAEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getAEGName() != null) {
+
+					if (obj.getAEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getAEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EBC : {
+				sf.setId(13871595);
+				EBC obj = (EBC) sf;
+
+				if (obj.getBCdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getBCdoName() != null) {
+
+					if (obj.getBCdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getBCdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ECA : {
+				sf.setId(13871479);
+				ECA obj = (ECA) sf;
+
+				if (obj.getCATName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getCATName() != null) {
+
+					if (obj.getCATName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getCATName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ECF : {
+				sf.setId(13871498);
+				ECF obj = (ECF) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ECP : {
+				sf.setId(13871495);
+				ECP obj = (ECP) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EDG : {
+				sf.setId(13871556);
+				EDG obj = (EDG) sf;
+
+				if (obj.getDEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getDEGName() != null) {
+
+					if (obj.getDEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EDI : {
+				sf.setId(13871527);
+				EDI obj = (EDI) sf;
+
+				if (obj.getIndxName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getIndxName() != null) {
+
+					if (obj.getIndxName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getIndxName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EDM : {
+				sf.setId(13871562);
+				EDM obj = (EDM) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getDMName() != null) {
+
+					if (obj.getDMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EDT : {
+				sf.setId(13871528);
+				EDT obj = (EDT) sf;
+
+				if (obj.getDocName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getDocName() != null) {
+
+					if (obj.getDocName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDocName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EDX : {
+				sf.setId(13871587);
+				EDX obj = (EDX) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getDMXName() != null) {
+
+					if (obj.getDMXName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getDMXName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EFG : {
+				sf.setId(13871557);
+				EFG obj = (EFG) sf;
+
+				if (obj.getFEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getFEGName() != null) {
+
+					if (obj.getFEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getFEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EFM : {
+				sf.setId(13871565);
+				EFM obj = (EFM) sf;
+
+				if (obj.getFMName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getFMName() != null) {
+
+					if (obj.getFMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getFMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EFN : {
+				sf.setId(13871497);
+				EFN obj = (EFN) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EGR : {
+				sf.setId(13871547);
+				EGR obj = (EGR) sf;
+
+				if (obj.getGdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getGdoName() != null) {
+
+					if (obj.getGdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getGdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EII : {
+				sf.setId(13871483);
+				EII obj = (EII) sf;
+
+				if (obj.getImoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getImoName() != null) {
+
+					if (obj.getImoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getImoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EIM : {
+				sf.setId(13871611);
+				EIM obj = (EIM) sf;
+
+				if (obj.getIdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getIdoName() != null) {
+
+					if (obj.getIdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getIdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EMM : {
+				sf.setId(13871564);
+				EMM obj = (EMM) sf;
+
+				if (obj.getMMName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getMMName() != null) {
+
+					if (obj.getMMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getMMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EMO : {
+				sf.setId(13871583);
+				EMO obj = (EMO) sf;
+
+				if (obj.getOvlyName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getOvlyName() != null) {
+
+					if (obj.getOvlyName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getOvlyName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ENG : {
+				sf.setId(13871533);
+				ENG obj = (ENG) sf;
+
+				if (obj.getPGrpName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPGrpName() != null) {
+
+					if (obj.getPGrpName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPGrpName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EOC : {
+				sf.setId(13871506);
+				EOC obj = (EOC) sf;
+
+				if (obj.getObjCName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getObjCName() != null) {
+
+					if (obj.getObjCName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getObjCName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EOG : {
+				sf.setId(13871559);
+				EOG obj = (EOG) sf;
+
+				if (obj.getOEGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getOEGName() != null) {
+
+					if (obj.getOEGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getOEGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EPF : {
+				sf.setId(13871525);
+				EPF obj = (EPF) sf;
+
+				if (obj.getPFName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPFName() != null) {
+
+					if (obj.getPFName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPFName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EPG : {
+				sf.setId(13871535);
+				EPG obj = (EPG) sf;
+
+				if (obj.getPageName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPageName() != null) {
+
+					if (obj.getPageName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPageName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EPM : {
+				sf.setId(13871563);
+				EPM obj = (EPM) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getPMName() != null) {
+
+					if (obj.getPMName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPMName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EPS : {
+				sf.setId(13871455);
+				EPS obj = (EPS) sf;
+
+				if (obj.getPsegName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getPsegName() != null) {
+
+					if (obj.getPsegName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPsegName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.EPT : {
+				sf.setId(13871515);
+				EPT obj = (EPT) sf;
+
+				if (obj.getPTdoName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPTdoName() != null) {
+
+					if (obj.getPTdoName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPTdoName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ERG : {
+				sf.setId(13871558);
+				ERG obj = (ERG) sf;
+
+				if (obj.getRGrpName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getRGrpName() != null) {
+
+					if (obj.getRGrpName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRGrpName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ERS : {
+				sf.setId(13871566);
+				ERS obj = (ERS) sf;
+
+				if (obj.getRSName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getRSName() != null) {
+
+					if (obj.getRSName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getRSName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ESG : {
+				sf.setId(13871577);
+				ESG obj = (ESG) sf;
+
+				if (obj.getREGName() != null) {
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getREGName() != null) {
+
+					if (obj.getREGName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getREGName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNC : {
+				sf.setId(13870985);
+				FNC obj = (FNC) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (11 + 1 > length)
+					length = 11 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (13 + 1 > length)
+					length = 13 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (22 + 1 > length)
+					length = 22 + 1;
+
+				if (23 + 1 > length)
+					length = 23 + 1;
+
+				if (24 + 1 > length)
+					length = 24 + 1;
+
+				if (25 + 1 > length)
+					length = 25 + 1;
+
+				if (28 + 1 > length)
+					length = 28 + 1;
+
+				if (29 + 1 > length)
+					length = 29 + 1;
+
+				if (30 + 1 > length)
+					length = 30 + 1;
+
+				if (obj.getResXUBase() != null) {
+
+					if (31 + 1 > length)
+						length = 31 + 1;
+
+				}
+
+				if (obj.getResYUBase() != null) {
+
+					if (32 + 1 > length)
+						length = 32 + 1;
+
+				}
+
+				if (obj.getXfrUnits() != null) {
+
+					if (34 + 1 > length)
+						length = 34 + 1;
+
+				}
+
+				if (obj.getYfrUnits() != null) {
+
+					if (36 + 1 > length)
+						length = 36 + 1;
+
+				}
+
+				if (obj.getOPatDCnt() != null) {
+
+					if (40 + 1 > length)
+						length = 40 + 1;
+
+				}
+
+				if (obj.getReserved2() != null) {
+
+				}
+
+				if (obj.getFNNRGLen() != null) {
+
+					if (44 + 1 > length)
+						length = 44 + 1;
+
+				}
+
+				if (obj.getFNNDCnt() != null) {
+
+					if (48 + 1 > length)
+						length = 48 + 1;
+
+				}
+
+				if (obj.getFNNMapCnt() != null) {
+
+					if (50 + 1 > length)
+						length = 50 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getRetired() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getRetired());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getPatTech() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getPatTech());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getReserved1() != null) {
+
+					if (obj.getReserved1() != null) {
+						Saver.save(buffer, start + 11, start + 11,
+								obj.getReserved1());
+					}
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+				}
+
+				if (obj.getFntFlags() != null) {
+
+					Saver.saveUnsigned(buffer, start + 12, start + 12,
+							obj.getFntFlags());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getXUnitBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 13,
+							obj.getXUnitBase());
+
+					if (13 + 1 > length)
+						length = 13 + 1;
+
+				}
+
+				if (obj.getYUnitBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 14, start + 14,
+							obj.getYUnitBase());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXftUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 16,
+							obj.getXftUnits());
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getYftUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getYftUnits());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getMaxBoxWd() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 20,
+							obj.getMaxBoxWd());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getMaxBoxHt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 22,
+							obj.getMaxBoxHt());
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getFNORGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 23, start + 23,
+							obj.getFNORGLen());
+
+					if (23 + 1 > length)
+						length = 23 + 1;
+
+				}
+
+				if (obj.getFNIRGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 24, start + 24,
+							obj.getFNIRGLen());
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getPatAlign() != null) {
+
+					Saver.saveUnsigned(buffer, start + 25, start + 25,
+							obj.getPatAlign());
+
+					if (25 + 1 > length)
+						length = 25 + 1;
+
+				}
+
+				if (obj.getRPatDCnt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 26, start + 28,
+							obj.getRPatDCnt());
+
+					if (28 + 1 > length)
+						length = 28 + 1;
+
+				}
+
+				if (obj.getFNPRGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 29, start + 29,
+							obj.getFNPRGLen());
+
+					if (29 + 1 > length)
+						length = 29 + 1;
+
+				}
+
+				if (obj.getFNMRGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 30, start + 30,
+							obj.getFNMRGLen());
+
+					if (30 + 1 > length)
+						length = 30 + 1;
+
+				}
+
+				if (obj.getResXUBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 31, start + 31,
+							obj.getResXUBase());
+
+					if (31 + 1 > length)
+						length = 31 + 1;
+
+				}
+
+				if (obj.getResYUBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 32, start + 32,
+							obj.getResYUBase());
+
+					if (32 + 1 > length)
+						length = 32 + 1;
+
+				}
+
+				if (obj.getXfrUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 33, start + 34,
+							obj.getXfrUnits());
+
+					if (34 + 1 > length)
+						length = 34 + 1;
+
+				}
+
+				if (obj.getYfrUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 35, start + 36,
+							obj.getYfrUnits());
+
+					if (36 + 1 > length)
+						length = 36 + 1;
+
+				}
+
+				if (obj.getOPatDCnt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 37, start + 40,
+							obj.getOPatDCnt());
+
+					if (40 + 1 > length)
+						length = 40 + 1;
+
+				}
+
+				if (obj.getReserved2() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 41,
+								obj.getReserved2());
+						if (41 + size > length)
+							length = 41 + size;
+					}
+
+				}
+
+				if (obj.getFNNRGLen() != null) {
+
+					Saver.saveUnsigned(buffer, start + 44, start + 44,
+							obj.getFNNRGLen());
+
+					if (44 + 1 > length)
+						length = 44 + 1;
+
+				}
+
+				if (obj.getFNNDCnt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 45, start + 48,
+							obj.getFNNDCnt());
+
+					if (48 + 1 > length)
+						length = 48 + 1;
+
+				}
+
+				if (obj.getFNNMapCnt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 49, start + 50,
+							obj.getFNNMapCnt());
+
+					if (50 + 1 > length)
+						length = 50 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FND : {
+				sf.setId(13870729);
+				FND obj = (FND) sf;
+
+				if (40 + 1 > length)
+					length = 40 + 1;
+
+				if (41 + 1 > length)
+					length = 41 + 1;
+
+				if (42 + 1 > length)
+					length = 42 + 1;
+
+				if (44 + 1 > length)
+					length = 44 + 1;
+
+				if (46 + 1 > length)
+					length = 46 + 1;
+
+				if (48 + 1 > length)
+					length = 48 + 1;
+
+				if (50 + 1 > length)
+					length = 50 + 1;
+
+				if (52 + 1 > length)
+					length = 52 + 1;
+
+				if (54 + 1 > length)
+					length = 54 + 1;
+
+				if (55 + 1 > length)
+					length = 55 + 1;
+
+				if (56 + 1 > length)
+					length = 56 + 1;
+
+				if (57 + 1 > length)
+					length = 57 + 1;
+
+				if (72 + 1 > length)
+					length = 72 + 1;
+
+				if (74 + 1 > length)
+					length = 74 + 1;
+
+				if (84 + 1 > length)
+					length = 84 + 1;
+
+				if (86 + 1 > length)
+					length = 86 + 1;
+
+				if (88 + 1 > length)
+					length = 88 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getTypeFcDesc() != null) {
+
+					if (obj.getTypeFcDesc() != null) {
+						Saver.save(buffer, start + 9, start + 40,
+								obj.getTypeFcDesc(), Charset.forName("IBM500"));
+					}
+
+					if (40 + 1 > length)
+						length = 40 + 1;
+
+				}
+
+				if (obj.getFtWtClass() != null) {
+
+					Saver.saveUnsigned(buffer, start + 41, start + 41,
+							obj.getFtWtClass());
+
+					if (41 + 1 > length)
+						length = 41 + 1;
+
+				}
+
+				if (obj.getFtWdClass() != null) {
+
+					Saver.saveUnsigned(buffer, start + 42, start + 42,
+							obj.getFtWdClass());
+
+					if (42 + 1 > length)
+						length = 42 + 1;
+
+				}
+
+				if (obj.getMaxPtSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 43, start + 44,
+							obj.getMaxPtSize());
+
+					if (44 + 1 > length)
+						length = 44 + 1;
+
+				}
+
+				if (obj.getNomPtSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 45, start + 46,
+							obj.getNomPtSize());
+
+					if (46 + 1 > length)
+						length = 46 + 1;
+
+				}
+
+				if (obj.getMinPtSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 47, start + 48,
+							obj.getMinPtSize());
+
+					if (48 + 1 > length)
+						length = 48 + 1;
+
+				}
+
+				if (obj.getMaxHSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 49, start + 50,
+							obj.getMaxHSize());
+
+					if (50 + 1 > length)
+						length = 50 + 1;
+
+				}
+
+				if (obj.getNomHSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 51, start + 52,
+							obj.getNomHSize());
+
+					if (52 + 1 > length)
+						length = 52 + 1;
+
+				}
+
+				if (obj.getMinHSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 53, start + 54,
+							obj.getMinHSize());
+
+					if (54 + 1 > length)
+						length = 54 + 1;
+
+				}
+
+				if (obj.getDsnGenCls() != null) {
+
+					Saver.saveUnsigned(buffer, start + 55, start + 55,
+							obj.getDsnGenCls());
+
+					if (55 + 1 > length)
+						length = 55 + 1;
+
+				}
+
+				if (obj.getDsnSubCls() != null) {
+
+					Saver.saveUnsigned(buffer, start + 56, start + 56,
+							obj.getDsnSubCls());
+
+					if (56 + 1 > length)
+						length = 56 + 1;
+
+				}
+
+				if (obj.getDsnSpcGrp() != null) {
+
+					Saver.saveUnsigned(buffer, start + 57, start + 57,
+							obj.getDsnSpcGrp());
+
+					if (57 + 1 > length)
+						length = 57 + 1;
+
+				}
+
+				if (obj.getReserved1() != null) {
+
+					if (obj.getReserved1() != null) {
+						Saver.save(buffer, start + 58, start + 72,
+								obj.getReserved1());
+					}
+
+					if (72 + 1 > length)
+						length = 72 + 1;
+
+				}
+
+				if (obj.getFtDsFlags() != null) {
+
+					Saver.saveUnsigned(buffer, start + 73, start + 74,
+							obj.getFtDsFlags());
+
+					if (74 + 1 > length)
+						length = 74 + 1;
+
+				}
+
+				if (obj.getReserved2() != null) {
+
+					if (obj.getReserved2() != null) {
+						Saver.save(buffer, start + 75, start + 84,
+								obj.getReserved2());
+					}
+
+					if (84 + 1 > length)
+						length = 84 + 1;
+
+				}
+
+				if (obj.getGCSID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 85, start + 86,
+							obj.getGCSID());
+
+					if (86 + 1 > length)
+						length = 86 + 1;
+
+				}
+
+				if (obj.getFGID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 87, start + 88,
+							obj.getFGID());
+
+					if (88 + 1 > length)
+						length = 88 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNG : {
+				sf.setId(13889161);
+				FNG obj = (FNG) sf;
+
+				if (obj.getPatData() != null) {
+
+				}
+
+				if (obj.getPatData() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getPatData());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNI : {
+				sf.setId(13864073);
+				FNI obj = (FNI) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNN : {
+				sf.setId(13872009);
+				FNN obj = (FNN) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (obj.getRg() != null && obj.getRg().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getRg2() != null && obj.getRg2().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getIBMFormat() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getIBMFormat());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getTechnologyFormat() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getTechnologyFormat());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				if (obj.getRg2() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNM : {
+				sf.setId(13869705);
+				FNM obj = (FNM) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNO : {
+				sf.setId(13872777);
+				FNO obj = (FNO) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FNP : {
+				sf.setId(13872265);
+				FNP obj = (FNP) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.GAD : {
+				sf.setId(13889211);
+				GAD obj = (GAD) sf;
+
+				if (obj.getGOCAdat() != null) {
+
+				}
+
+				if (obj.getGOCAdat() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getGOCAdat());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.GDD : {
+				sf.setId(13870779);
+				GDD obj = (GDD) sf;
+
+				if (obj.getGOCAdes() != null) {
+
+				}
+
+				if (obj.getCommands() != null && obj.getCommands().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getGOCAdes() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getGOCAdes());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				if (obj.getCommands() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.ICP : {
+				sf.setId(13872251);
+				ICP obj = (ICP) sf;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (obj.getXCOset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 10,
+							obj.getXCOset());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getYCOset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getYCOset());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getXCSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getXCSize());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getYCSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 16,
+							obj.getYCSize());
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getXFilSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getXFilSize());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getYFilSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 20,
+							obj.getYFilSize());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IDD : {
+				sf.setId(13870843);
+				IDD obj = (IDD) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (11 + 1 > length)
+					length = 11 + 1;
+
+				if (13 + 1 > length)
+					length = 13 + 1;
+
+				if (15 + 1 > length)
+					length = 15 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (obj.getSDFS() != null && obj.getSDFS().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getUNITBASE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getUNITBASE());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getXRESOL() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 11,
+							obj.getXRESOL());
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+				}
+
+				if (obj.getYRESOL() != null) {
+
+					Saver.saveUnsigned(buffer, start + 12, start + 13,
+							obj.getYRESOL());
+
+					if (13 + 1 > length)
+						length = 13 + 1;
+
+				}
+
+				if (obj.getXSIZE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 14, start + 15,
+							obj.getXSIZE());
+
+					if (15 + 1 > length)
+						length = 15 + 1;
+
+				}
+
+				if (obj.getYSIZE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 16, start + 17,
+							obj.getYSIZE());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getSDFS() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IEL : {
+				sf.setId(13873831);
+				IEL obj = (IEL) sf;
+
+				{
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IID : {
+				sf.setId(13870715);
+				IID obj = (IID) sf;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (21 + 1 > length)
+					length = 21 + 1;
+
+				if (22 + 1 > length)
+					length = 22 + 1;
+
+				if (24 + 1 > length)
+					length = 24 + 1;
+
+				if (26 + 1 > length)
+					length = 26 + 1;
+
+				if (28 + 1 > length)
+					length = 28 + 1;
+
+				if (30 + 1 > length)
+					length = 30 + 1;
+
+				if (36 + 1 > length)
+					length = 36 + 1;
+
+				if (38 + 1 > length)
+					length = 38 + 1;
+
+				if (40 + 1 > length)
+					length = 40 + 1;
+
+				if (42 + 1 > length)
+					length = 42 + 1;
+
+				if (44 + 1 > length)
+					length = 44 + 1;
+
+				if (obj.getConData1() != null) {
+
+					if (obj.getConData1() != null) {
+						Saver.save(buffer, start + 9, start + 20,
+								obj.getConData1());
+					}
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getXBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 21,
+							obj.getXBase());
+
+					if (21 + 1 > length)
+						length = 21 + 1;
+
+				}
+
+				if (obj.getYBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 22, start + 22,
+							obj.getYBase());
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getXUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 23, start + 24,
+							obj.getXUnits());
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getYUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 25, start + 26,
+							obj.getYUnits());
+
+					if (26 + 1 > length)
+						length = 26 + 1;
+
+				}
+
+				if (obj.getXSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 27, start + 28,
+							obj.getXSize());
+
+					if (28 + 1 > length)
+						length = 28 + 1;
+
+				}
+
+				if (obj.getYSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 29, start + 30,
+							obj.getYSize());
+
+					if (30 + 1 > length)
+						length = 30 + 1;
+
+				}
+
+				if (obj.getConData2() != null) {
+
+					if (obj.getConData2() != null) {
+						Saver.save(buffer, start + 31, start + 36,
+								obj.getConData2());
+					}
+
+					if (36 + 1 > length)
+						length = 36 + 1;
+
+				}
+
+				if (obj.getXCSizeD() != null) {
+
+					Saver.saveUnsigned(buffer, start + 37, start + 38,
+							obj.getXCSizeD());
+
+					if (38 + 1 > length)
+						length = 38 + 1;
+
+				}
+
+				if (obj.getYCSizeD() != null) {
+
+					Saver.saveUnsigned(buffer, start + 39, start + 40,
+							obj.getYCSizeD());
+
+					if (40 + 1 > length)
+						length = 40 + 1;
+
+				}
+
+				if (obj.getConData3() != null) {
+
+					if (obj.getConData3() != null) {
+						Saver.save(buffer, start + 41, start + 42,
+								obj.getConData3());
+					}
+
+					if (42 + 1 > length)
+						length = 42 + 1;
+
+				}
+
+				if (obj.getColor() != null) {
+
+					Saver.saveUnsigned(buffer, start + 43, start + 44,
+							obj.getColor());
+
+					if (44 + 1 > length)
+						length = 44 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IMM : {
+				sf.setId(13872076);
+				IMM obj = (IMM) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getMMPName() != null) {
+
+					if (obj.getMMPName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getMMPName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IOB : {
+				sf.setId(13873091);
+				IOB obj = (IOB) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (21 + 1 > length)
+					length = 21 + 1;
+
+				if (24 + 1 > length)
+					length = 24 + 1;
+
+				if (26 + 1 > length)
+					length = 26 + 1;
+
+				if (28 + 1 > length)
+					length = 28 + 1;
+
+				if (31 + 1 > length)
+					length = 31 + 1;
+
+				if (34 + 1 > length)
+					length = 34 + 1;
+
+				if (35 + 1 > length)
+					length = 35 + 1;
+
+				{
+
+				}
+
+				if (obj.getObjName() != null) {
+
+					if (obj.getObjName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getObjName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getObjType() != null) {
+
+					Saver.saveUnsigned(buffer, start + 18, start + 18,
+							obj.getObjType());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getXoaOset() != null) {
+
+					if (obj.getXoaOset() != null) {
+						Saver.saveSigned(buffer, start + 19, start + 21,
+								obj.getXoaOset());
+					}
+
+					if (21 + 1 > length)
+						length = 21 + 1;
+
+				}
+
+				if (obj.getYoaOset() != null) {
+
+					if (obj.getYoaOset() != null) {
+						Saver.saveSigned(buffer, start + 22, start + 24,
+								obj.getYoaOset());
+					}
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getXoaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 25, start + 26,
+							obj.getXoaOrent());
+
+					if (26 + 1 > length)
+						length = 26 + 1;
+
+				}
+
+				if (obj.getYoaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 27, start + 28,
+							obj.getYoaOrent());
+
+					if (28 + 1 > length)
+						length = 28 + 1;
+
+				}
+
+				if (obj.getXocaOset() != null) {
+
+					if (obj.getXocaOset() != null) {
+						Saver.saveSigned(buffer, start + 29, start + 31,
+								obj.getXocaOset());
+					}
+
+					if (31 + 1 > length)
+						length = 31 + 1;
+
+				}
+
+				if (obj.getYocaOset() != null) {
+
+					if (obj.getYocaOset() != null) {
+						Saver.saveSigned(buffer, start + 32, start + 34,
+								obj.getYocaOset());
+					}
+
+					if (34 + 1 > length)
+						length = 34 + 1;
+
+				}
+
+				if (obj.getRefCSys() != null) {
+
+					Saver.saveUnsigned(buffer, start + 35, start + 35,
+							obj.getRefCSys());
+
+					if (35 + 1 > length)
+						length = 35 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IOC : {
+				sf.setId(13870971);
+				IOC obj = (IOC) sf;
+
+				if (11 + 1 > length)
+					length = 11 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (26 + 1 > length)
+					length = 26 + 1;
+
+				if (28 + 1 > length)
+					length = 28 + 1;
+
+				if (30 + 1 > length)
+					length = 30 + 1;
+
+				if (32 + 1 > length)
+					length = 32 + 1;
+
+				if (obj.getXoaOset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 11,
+							obj.getXoaOset());
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+				}
+
+				if (obj.getYoaOset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 12, start + 14,
+							obj.getYoaOset());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXoaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 16,
+							obj.getXoaOrent());
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getYoaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getYoaOrent());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getConData1() != null) {
+
+					if (obj.getConData1() != null) {
+						Saver.save(buffer, start + 19, start + 26,
+								obj.getConData1());
+					}
+
+					if (26 + 1 > length)
+						length = 26 + 1;
+
+				}
+
+				if (obj.getXMap() != null) {
+
+					Saver.saveUnsigned(buffer, start + 27, start + 28,
+							obj.getXMap());
+
+					if (28 + 1 > length)
+						length = 28 + 1;
+
+				}
+
+				if (obj.getYMap() != null) {
+
+					Saver.saveUnsigned(buffer, start + 29, start + 30,
+							obj.getYMap());
+
+					if (30 + 1 > length)
+						length = 30 + 1;
+
+				}
+
+				if (obj.getConData2() != null) {
+
+					if (obj.getConData2() != null) {
+						Saver.save(buffer, start + 31, start + 32,
+								obj.getConData2());
+					}
+
+					if (32 + 1 > length)
+						length = 32 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IPD : {
+				sf.setId(13889275);
+				IPD obj = (IPD) sf;
+
+				if (obj.getSdfs() != null && obj.getSdfs().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getSdfs() != null) {
+
+				}
+
+				if (obj.getSdfs() == null || obj.getSdfs().size() == 0) {
+					if (obj.getRawData() != null && obj.getRawData().length > 0) {
+						byte[] b = java.util.Arrays.copyOfRange(
+								obj.getRawData(), 9,
+								obj.getRawData().length - 1);
+						Saver.save(buffer, start + 9, start + 9 + b.length - 1,
+								b);
+						length = obj.getRawData().length;
+					}
+				}
+
+				return length;
+			}
+			case AfplibPackage.IPG : {
+				sf.setId(13873071);
+				IPG obj = (IPG) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (25 + 1 > length)
+					length = 25 + 1;
+
+				{
+
+				}
+
+				if (obj.getPgName() != null) {
+
+					if (obj.getPgName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPgName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getIPgFlgs() != null) {
+
+					Saver.saveUnsigned(buffer, start + 25, start + 25,
+							obj.getIPgFlgs());
+
+					if (25 + 1 > length)
+						length = 25 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IPO : {
+				sf.setId(13873112);
+				IPO obj = (IPO) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (19 + 1 > length)
+					length = 19 + 1;
+
+				if (22 + 1 > length)
+					length = 22 + 1;
+
+				if (obj.getOvlyOrent() != null) {
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getOvlyName() != null) {
+
+					if (obj.getOvlyName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getOvlyName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getXolOset() != null) {
+
+					if (obj.getXolOset() != null) {
+						Saver.saveSigned(buffer, start + 17, start + 19,
+								obj.getXolOset());
+					}
+
+					if (19 + 1 > length)
+						length = 19 + 1;
+
+				}
+
+				if (obj.getYolOset() != null) {
+
+					if (obj.getYolOset() != null) {
+						Saver.saveSigned(buffer, start + 20, start + 22,
+								obj.getYolOset());
+					}
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getOvlyOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 23, start + 24,
+							obj.getOvlyOrent());
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IPS : {
+				sf.setId(13872991);
+				IPS obj = (IPS) sf;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (19 + 1 > length)
+					length = 19 + 1;
+
+				if (22 + 1 > length)
+					length = 22 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPsegName() != null) {
+
+					if (obj.getPsegName() != null) {
+						Saver.save(buffer, start + 9, start + 16,
+								obj.getPsegName(), Charset.forName("IBM500"));
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getXpsOset() != null) {
+
+					if (obj.getXpsOset() != null) {
+						Saver.saveSigned(buffer, start + 17, start + 19,
+								obj.getXpsOset());
+					}
+
+					if (19 + 1 > length)
+						length = 19 + 1;
+
+				}
+
+				if (obj.getYpsOset() != null) {
+
+					if (obj.getYpsOset() != null) {
+						Saver.saveSigned(buffer, start + 20, start + 22,
+								obj.getYpsOset());
+					}
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.IRD : {
+				sf.setId(13889147);
+				IRD obj = (IRD) sf;
+
+				if (obj.getIMdata() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getIMdata());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.LLE : {
+				sf.setId(13874320);
+				LLE obj = (LLE) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				{
+
+				}
+
+				if (obj.getLnkType() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getLnkType());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.LNC : {
+				sf.setId(13871847);
+				LNC obj = (LNC) sf;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (obj.getNumDSC() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 10,
+							obj.getNumDSC());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.LND : {
+				sf.setId(13870823);
+				LND obj = (LND) sf;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (19 + 1 > length)
+					length = 19 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (22 + 1 > length)
+					length = 22 + 1;
+
+				if (24 + 1 > length)
+					length = 24 + 1;
+
+				if (26 + 1 > length)
+					length = 26 + 1;
+
+				if (34 + 1 > length)
+					length = 34 + 1;
+
+				if (35 + 1 > length)
+					length = 35 + 1;
+
+				if (39 + 1 > length)
+					length = 39 + 1;
+
+				if (41 + 1 > length)
+					length = 41 + 1;
+
+				if (43 + 1 > length)
+					length = 43 + 1;
+
+				if (45 + 1 > length)
+					length = 45 + 1;
+
+				if (46 + 1 > length)
+					length = 46 + 1;
+
+				if (48 + 1 > length)
+					length = 48 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getLNDFlgs() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 10,
+							obj.getLNDFlgs());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getIPos() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getIPos());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getBPos() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getBPos());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getTxtOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 18,
+							obj.getTxtOrent());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getFntLID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 19,
+							obj.getFntLID());
+
+					if (19 + 1 > length)
+						length = 19 + 1;
+
+				}
+
+				if (obj.getChnlCde() != null) {
+
+					Saver.saveUnsigned(buffer, start + 20, start + 20,
+							obj.getChnlCde());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getNLNDskp() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 22,
+							obj.getNLNDskp());
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getNLNDsp() != null) {
+
+					Saver.saveUnsigned(buffer, start + 23, start + 24,
+							obj.getNLNDsp());
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getNLNDreu() != null) {
+
+					Saver.saveUnsigned(buffer, start + 25, start + 26,
+							obj.getNLNDreu());
+
+					if (26 + 1 > length)
+						length = 26 + 1;
+
+				}
+
+				if (obj.getSupName() != null) {
+
+					if (obj.getSupName() != null) {
+						Saver.save(buffer, start + 27, start + 34,
+								obj.getSupName(), Charset.forName("IBM500"));
+					}
+
+					if (34 + 1 > length)
+						length = 34 + 1;
+
+				}
+
+				if (obj.getSOLid() != null) {
+
+					Saver.saveUnsigned(buffer, start + 35, start + 35,
+							obj.getSOLid());
+
+					if (35 + 1 > length)
+						length = 35 + 1;
+
+				}
+
+				if (obj.getDataStrt() != null) {
+
+					Saver.saveUnsigned(buffer, start + 36, start + 39,
+							obj.getDataStrt());
+
+					if (39 + 1 > length)
+						length = 39 + 1;
+
+				}
+
+				if (obj.getDataLgth() != null) {
+
+					Saver.saveUnsigned(buffer, start + 40, start + 41,
+							obj.getDataLgth());
+
+					if (41 + 1 > length)
+						length = 41 + 1;
+
+				}
+
+				if (obj.getTxtColor() != null) {
+
+					Saver.saveUnsigned(buffer, start + 42, start + 43,
+							obj.getTxtColor());
+
+					if (43 + 1 > length)
+						length = 43 + 1;
+
+				}
+
+				if (obj.getNLNDccp() != null) {
+
+					Saver.saveUnsigned(buffer, start + 44, start + 45,
+							obj.getNLNDccp());
+
+					if (45 + 1 > length)
+						length = 45 + 1;
+
+				}
+
+				if (obj.getSubpgID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 46, start + 46,
+							obj.getSubpgID());
+
+					if (46 + 1 > length)
+						length = 46 + 1;
+
+				}
+
+				if (obj.getCCPID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 47, start + 48,
+							obj.getCCPID());
+
+					if (48 + 1 > length)
+						length = 48 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MBC : {
+				sf.setId(13872107);
+				MBC obj = (MBC) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MCA : {
+				sf.setId(13871991);
+				MCA obj = (MCA) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MCC : {
+				sf.setId(13869704);
+				MCC obj = (MCC) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MCD : {
+				sf.setId(13872018);
+				MCD obj = (MCD) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MCF : {
+				sf.setId(13872010);
+				MCF obj = (MCF) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MCF1 : {
+				sf.setId(13873546);
+				MCF1 obj = (MCF1) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				{
+
+				}
+
+				if (obj.getRGLength() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getRGLength());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MDD : {
+				sf.setId(13870728);
+				MDD obj = (MDD) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (21 + 1 > length)
+					length = 21 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getXmBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getXmBase());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getYmBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getYmBase());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXmUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getXmUnits());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getYmUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getYmUnits());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXmSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 17,
+							obj.getXmSize());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getYmSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 18, start + 20,
+							obj.getYmSize());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getMDDFlgs() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 21,
+							obj.getMDDFlgs());
+
+					if (21 + 1 > length)
+						length = 21 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MDR : {
+				sf.setId(13872067);
+				MDR obj = (MDR) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MFC : {
+				sf.setId(13869192);
+				MFC obj = (MFC) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (11 + 1 > length)
+					length = 11 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getMFCFlgs() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getMFCFlgs());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getMedColl() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 11,
+							obj.getMedColl());
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+				}
+
+				if (obj.getMFCScpe() != null) {
+
+					Saver.saveUnsigned(buffer, start + 12, start + 12,
+							obj.getMFCScpe());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MGO : {
+				sf.setId(13872059);
+				MGO obj = (MGO) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MIO : {
+				sf.setId(13872123);
+				MIO obj = (MIO) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MMC : {
+				sf.setId(13870984);
+				MMC obj = (MMC) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (obj.getRg() != null && obj.getRg().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getMMCid() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getMMCid());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getPARAMETER1() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getPARAMETER1());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MMD : {
+				sf.setId(13872077);
+				MMD obj = (MMD) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MMO : {
+				sf.setId(13873631);
+				MMO obj = (MMO) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				{
+
+				}
+
+				if (obj.getRGLength() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getRGLength());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MMT : {
+				sf.setId(13872008);
+				MMT obj = (MMT) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MPG : {
+				sf.setId(13872047);
+				MPG obj = (MPG) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MPO : {
+				sf.setId(13872088);
+				MPO obj = (MPO) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MPS : {
+				sf.setId(13873503);
+				MPS obj = (MPS) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				{
+
+				}
+
+				if (obj.getRGLength() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getRGLength());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getReserved() != null) {
+
+					if (obj.getReserved() != null) {
+						Saver.save(buffer, start + 10, start + 12,
+								obj.getReserved());
+					}
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getFixedLengthRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.MSU : {
+				sf.setId(13872106);
+				MSU obj = (MSU) sf;
+
+				{
+
+				}
+
+				if (obj.getRg() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.NOP : {
+				sf.setId(13889262);
+				NOP obj = (NOP) sf;
+
+				if (obj.getUndfData() != null) {
+
+				}
+
+				if (obj.getUndfData() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getUndfData());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.OBD : {
+				sf.setId(13870699);
+				OBD obj = (OBD) sf;
+
+				{
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.OBP : {
+				sf.setId(13872235);
+				OBP obj = (OBP) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (13 + 1 > length)
+					length = 13 + 1;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (24 + 1 > length)
+					length = 24 + 1;
+
+				if (27 + 1 > length)
+					length = 27 + 1;
+
+				if (29 + 1 > length)
+					length = 29 + 1;
+
+				if (31 + 1 > length)
+					length = 31 + 1;
+
+				if (32 + 1 > length)
+					length = 32 + 1;
+
+				if (obj.getOAPosID() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getOAPosID());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getRGLength() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getRGLength());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXoaOset() != null) {
+
+					if (obj.getXoaOset() != null) {
+						Saver.saveSigned(buffer, start + 11, start + 13,
+								obj.getXoaOset());
+					}
+
+					if (13 + 1 > length)
+						length = 13 + 1;
+
+				}
+
+				if (obj.getYoaOset() != null) {
+
+					if (obj.getYoaOset() != null) {
+						Saver.saveSigned(buffer, start + 14, start + 16,
+								obj.getYoaOset());
+					}
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getXoaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getXoaOrent());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getYoaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 20,
+							obj.getYoaOrent());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getXocaOset() != null) {
+
+					if (obj.getXocaOset() != null) {
+						Saver.saveSigned(buffer, start + 22, start + 24,
+								obj.getXocaOset());
+					}
+
+					if (24 + 1 > length)
+						length = 24 + 1;
+
+				}
+
+				if (obj.getYocaOset() != null) {
+
+					if (obj.getYocaOset() != null) {
+						Saver.saveSigned(buffer, start + 25, start + 27,
+								obj.getYocaOset());
+					}
+
+					if (27 + 1 > length)
+						length = 27 + 1;
+
+				}
+
+				if (obj.getXocaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 28, start + 29,
+							obj.getXocaOrent());
+
+					if (29 + 1 > length)
+						length = 29 + 1;
+
+				}
+
+				if (obj.getYocaOrent() != null) {
+
+					Saver.saveUnsigned(buffer, start + 30, start + 31,
+							obj.getYocaOrent());
+
+					if (31 + 1 > length)
+						length = 31 + 1;
+
+				}
+
+				if (obj.getRefCSys() != null) {
+
+					Saver.saveUnsigned(buffer, start + 32, start + 32,
+							obj.getRefCSys());
+
+					if (32 + 1 > length)
+						length = 32 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.OCD : {
+				sf.setId(13889170);
+				OCD obj = (OCD) sf;
+
+				if (obj.getObjCdat() != null) {
+
+				}
+
+				if (obj.getObjCdat() != null) {
+
+					{
+						int size = Saver.save(buffer, start + 9,
+								obj.getObjCdat());
+						if (9 + size > length)
+							length = 9 + size;
+					}
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PEC : {
+				sf.setId(13871016);
+				PEC obj = (PEC) sf;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PFC : {
+				sf.setId(13873800);
+				PFC obj = (PFC) sf;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPFCFlgs() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getPFCFlgs());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PGD : {
+				sf.setId(13870767);
+				PGD obj = (PGD) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (23 + 1 > length)
+					length = 23 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getXpgBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getXpgBase());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getYpgBase() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getYpgBase());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXpgUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getXpgUnits());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getYpgUnits() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getYpgUnits());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXpgSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 17,
+							obj.getXpgSize());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getYpgSize() != null) {
+
+					Saver.saveUnsigned(buffer, start + 18, start + 20,
+							obj.getYpgSize());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getReserved() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 23,
+							obj.getReserved());
+
+					if (23 + 1 > length)
+						length = 23 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PGP : {
+				sf.setId(13873583);
+				PGP obj = (PGP) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				{
+
+				}
+
+				if (obj.getConstant() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getConstant());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PGP1 : {
+				sf.setId(13872303);
+				PGP1 obj = (PGP1) sf;
+
+				if (11 + 1 > length)
+					length = 11 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (obj.getXOset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 11,
+							obj.getXOset());
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+				}
+
+				if (obj.getYOset() != null) {
+
+					Saver.saveUnsigned(buffer, start + 12, start + 14,
+							obj.getYOset());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PMC : {
+				sf.setId(13871023);
+				PMC obj = (PMC) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (obj.getTriplets() != null && obj.getTriplets().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getPMCid() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getPMCid());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PPO : {
+				sf.setId(13872579);
+				PPO obj = (PPO) sf;
+
+				{
+
+				}
+
+				if (obj.getRG() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PTD : {
+				sf.setId(13873563);
+				PTD obj = (PTD) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (17 + 1 > length)
+					length = 17 + 1;
+
+				if (20 + 1 > length)
+					length = 20 + 1;
+
+				if (obj.getRESERVED() != null) {
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getCS() != null && obj.getCS().size() > 0) {
+
+					{
+
+					}
+
+				}
+
+				if (obj.getXPBASE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getXPBASE());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getYPBASE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getYPBASE());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXPUNITVL() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getXPUNITVL());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getYPUNITVL() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getYPUNITVL());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXPEXTENT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 17,
+							obj.getXPEXTENT());
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+				}
+
+				if (obj.getYPEXTENT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 18, start + 20,
+							obj.getYPEXTENT());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getRESERVED() != null) {
+
+					Saver.saveUnsigned(buffer, start + 21, start + 22,
+							obj.getRESERVED());
+
+					if (22 + 1 > length)
+						length = 22 + 1;
+
+				}
+
+				if (obj.getCS() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PTD1 : {
+				sf.setId(13870747);
+				PTD1 obj = (PTD1) sf;
+
+				if (9 + 1 > length)
+					length = 9 + 1;
+
+				if (10 + 1 > length)
+					length = 10 + 1;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (14 + 1 > length)
+					length = 14 + 1;
+
+				if (16 + 1 > length)
+					length = 16 + 1;
+
+				if (18 + 1 > length)
+					length = 18 + 1;
+
+				if (obj.getRESERVED() != null) {
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				if (obj.getXPBASE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 9, start + 9,
+							obj.getXPBASE());
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+				}
+
+				if (obj.getYPBASE() != null) {
+
+					Saver.saveUnsigned(buffer, start + 10, start + 10,
+							obj.getYPBASE());
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+				}
+
+				if (obj.getXPUNITVL() != null) {
+
+					Saver.saveUnsigned(buffer, start + 11, start + 12,
+							obj.getXPUNITVL());
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				if (obj.getYPUNITVL() != null) {
+
+					Saver.saveUnsigned(buffer, start + 13, start + 14,
+							obj.getYPUNITVL());
+
+					if (14 + 1 > length)
+						length = 14 + 1;
+
+				}
+
+				if (obj.getXPEXTENT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 15, start + 16,
+							obj.getXPEXTENT());
+
+					if (16 + 1 > length)
+						length = 16 + 1;
+
+				}
+
+				if (obj.getYPEXTENT() != null) {
+
+					Saver.saveUnsigned(buffer, start + 17, start + 18,
+							obj.getYPEXTENT());
+
+					if (18 + 1 > length)
+						length = 18 + 1;
+
+				}
+
+				if (obj.getRESERVED() != null) {
+
+					Saver.saveUnsigned(buffer, start + 19, start + 20,
+							obj.getRESERVED());
+
+					if (20 + 1 > length)
+						length = 20 + 1;
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.PTX : {
+				sf.setId(13889179);
+				PTX obj = (PTX) sf;
+
+				{
+
+				}
+
+				if (obj.getCS() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.TLE : {
+				sf.setId(13869200);
+				TLE obj = (TLE) sf;
+
+				{
+
+				}
+
+				if (obj.getTriplets() != null) {
+
+				}
+
+				return length;
+			}
+			case AfplibPackage.FGD : {
+				sf.setId(13870789);
+				FGD obj = (FGD) sf;
+
+				if (12 + 1 > length)
+					length = 12 + 1;
+
+				if (obj.getConData() != null) {
+
+					if (obj.getConData() != null) {
+						Saver.save(buffer, start + 9, start + 12,
+								obj.getConData());
+					}
+
+					if (12 + 1 > length)
+						length = 12 + 1;
+
+				}
+
+				return length;
+			}
+			default :
+				throw new IllegalArgumentException("unknown structured field: "
+						+ sf);
+		}
+	}
+
 }

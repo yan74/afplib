@@ -11,6 +11,8 @@ import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
 
+import org.afplib.CodepageHelper;
+import org.afplib.Data;
 import org.afplib.base.BaseFactory;
 import org.afplib.base.SF;
 import org.afplib.base.Triplet;
@@ -230,6 +232,114 @@ class StructuredFieldFactory {
 	}
 	«ENDIF»
 	«ENDFOREACH»
+	
+	
+	public int binary(byte[] buffer, int start, SF sf) {
+		int length = 9;
+		switch(sf.eClass().getClassifierID()) {
+		«FOREACH structuredFields AS sf»
+		case AfplibPackage.«sf.name»: {
+			sf.setId(«sf.id»);
+			«sf.name» obj = («sf.name») sf;
+		«FOREACH sf.elements AS e»
+			«IF e.optional»
+				if(obj.«e.getter()»() != null«IF e.metaType == Group» && obj.«e.getter()»().size() > 0«ENDIF») {
+			«ENDIF»
+			«IF e.metaType == Group»
+				«IF e.variableLength»
+					{
+					«REM»
+					«IF ((Group)e).type.toString() == "Triplet"»
+					binary_triplets(buffer, start + «e.start», obj.«e.getter()»());
+					if(«e.start» + size > length) length = «e.start» + size;
+					«ENDIF»
+					int size = GroupMemberFactory.getInstance().save(
+					buffer, start + «e.start», «((Group)e).elementLength», 
+					«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
+					«((Group)e).elementIdOffset», obj.«e.getter()»(), "«((Group)e).type»", environment);
+					if(«e.start» + size > length) length = «e.start» + size;«ENDREM»
+					}
+				«ELSE»«REM»
+					GroupMemberFactory.getInstance().save(
+					buffer, start + «e.start», «((Group)e).elementLength», 
+					«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
+					«((Group)e).elementIdOffset», obj.«e.getter()»(), "«((Group)e).type»", environment);
+					if(«e.stop» + 1 > length) length = «e.stop» + 1;«ENDREM»
+				«ENDIF»
+			«ELSE»
+				«IF e.variableLength»
+				«ELSE»
+					if(«e.stop» + 1 > length) length = «e.stop» + 1;
+				«ENDIF»
+			«ENDIF»			
+			«IF e.optional»
+				}
+			«ENDIF»
+		«ENDFOREACH»
+
+		«FOREACH sf.elements AS e»
+			«IF this.metaType == GroupMember && e.name == (((GroupMember)this).lengthAttribute)»obj.«e.setter()»(length);«ENDIF»
+«REM»mandatory may not be present in source «IF e.optional»«ENDREM»
+				if(obj.«e.getter()»() != null) {
+«REM»			«ENDIF»«ENDREM»
+			«IF e.metaType == Group»
+			«ELSE»
+				«IF e.variableLength»
+					«IF e.metaType == CHAR»
+					{
+					int size = Saver.save(buffer, start + «e.start», obj.«e.getter()»(), obj.getCharset());
+					if(«e.start» + size > length) length = «e.start» + size;
+					}
+					«ELSE»
+					{
+					int size = Saver.save(buffer, start + «e.start», obj.«e.getter()»());
+					if(«e.start» + size > length) length = «e.start» + size;
+					}
+					«ENDIF»
+				«ELSE»
+					«IF e.metaType == CHAR»«IF e.eContainer.metaType == SF»
+						if(obj.«e.getter()»() != null) {
+						Saver.save(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»(), Charset.forName("IBM500"));
+						}
+						«ELSE»
+						if(obj.«e.getter()»() != null) {
+						Saver.save(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»(), obj.getCharset());
+						}
+					«ENDIF»
+					«ELSEIF e.metaType == UNDF»
+					if(obj.«e.getter()»() != null) {
+					Saver.save(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»());
+					}
+					«ELSEIF e.metaType == SBIN»
+					if(obj.«e.getter()»() != null) {
+					Saver.saveSigned(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»());
+					}
+					«ELSE»
+					Saver.saveUnsigned(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»());
+					«ENDIF»
+					if(«e.stop» + 1 > length) length = «e.stop» + 1;
+				«ENDIF»
+			«ENDIF»			
+				}«REM»moved out of e.optional if, cause see above «ENDREM»
+			«IF e.optional»
+				«IF sf.name == "IPD"»
+				if(obj.getSdfs() == null || obj.getSdfs().size() == 0) {
+					if(obj.getRawData() != null && obj.getRawData().length > 0) {
+						byte[] b = java.util.Arrays.copyOfRange(obj.getRawData(), 9, obj.getRawData().length - 1);
+						Saver.save(buffer, start + 9, start + 9 + b.length - 1,
+								b);
+						length = obj.getRawData().length;
+					}
+				}
+				«ENDIF»
+			«ENDIF»
+		«ENDFOREACH»
+
+			return length;
+		}«ENDFOREACH»
+		default: throw new IllegalArgumentException("unknown structured field: "+sf);
+		}
+	}
 	
 }
 «ENDFILE»
