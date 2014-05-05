@@ -29,6 +29,7 @@ import org.afplib.afplib.STO;
 import org.afplib.afplib.TRN;
 import org.afplib.afplib.TextOrientation;
 import org.afplib.base.SF;
+import org.afplib.io.AfpInputStream;
 import org.junit.Test;
 
 public class ChainedSequenceTest {

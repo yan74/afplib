@@ -1,9 +1,11 @@
-package org.afplib;
+package org.afplib.io;
 
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
 
+import org.afplib.CodepageHelper;
+import org.afplib.Data;
 import org.afplib.base.BaseFactory;
 import org.afplib.base.SF;
 import org.afplib.base.Triplet;

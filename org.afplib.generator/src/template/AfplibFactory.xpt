@@ -3,9 +3,9 @@
 
 «DEFINE main FOR Model»
 
-«FILE "org/afplib/StructuredFieldFactory.java"»
+«FILE "org/afplib/io/StructuredFieldFactory.java"»
 
-package org.afplib;
+package org.afplib.io;
 
 import java.nio.charset.Charset;
 import java.util.Arrays;

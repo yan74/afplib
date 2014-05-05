@@ -25,6 +25,7 @@ import org.afplib.afplib.TilePosition;
 import org.afplib.afplib.TileSize;
 import org.afplib.afplib.TileTOC;
 import org.afplib.base.SF;
+import org.afplib.io.AfpInputStream;
 import org.junit.Test;
 
 public class SDFTest {

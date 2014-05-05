@@ -13,6 +13,7 @@ import org.afplib.afplib.Comment;
 import org.afplib.afplib.EPS;
 import org.afplib.afplib.ERS;
 import org.afplib.base.SF;
+import org.afplib.io.AfpInputStream;
 import org.eclipse.emf.common.command.Command;
 import org.junit.Test;
 

@@ -11,6 +11,7 @@ import org.afplib.afplib.BRS;
 import org.afplib.afplib.ResourceObjectType;
 import org.afplib.base.SF;
 import org.afplib.base.Triplet;
+import org.afplib.io.AfpInputStream;
 import org.eclipse.emf.common.util.EList;
 import org.junit.Test;
 

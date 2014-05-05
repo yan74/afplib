@@ -1,4 +1,4 @@
-package org.afplib;
+package org.afplib.io;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

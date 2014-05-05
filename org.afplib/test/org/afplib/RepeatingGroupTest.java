@@ -18,6 +18,7 @@ import org.afplib.afplib.ResourceLocalIdentifier;
 import org.afplib.afplib.ResourceSectionNumber;
 import org.afplib.afplib.TextOrientation;
 import org.afplib.base.SF;
+import org.afplib.io.AfpInputStream;
 import org.junit.Test;
 
 public class RepeatingGroupTest {
