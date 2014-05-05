@@ -8627,6 +8627,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_CFIRG(byte[] buffer, int bstart, List<CFIRG> triplets) {
+		int start = bstart;
+
+		for (CFIRG obj : triplets) {
+			int length = _CFIRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void CPIRG(List<CPIRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8635,6 +8646,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_CPIRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_CPIRG(byte[] buffer, int bstart, List<CPIRG> triplets) {
+		int start = bstart;
+
+		for (CPIRG obj : triplets) {
+			int length = _CPIRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void FNIRG(List<FNIRG> objs, byte[] buffer, int start, int bufstop,
@@ -8647,6 +8669,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_FNIRG(byte[] buffer, int bstart, List<FNIRG> triplets) {
+		int start = bstart;
+
+		for (FNIRG obj : triplets) {
+			int length = _FNIRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void FNNRG(List<FNNRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8655,6 +8688,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_FNNRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_FNNRG(byte[] buffer, int bstart, List<FNNRG> triplets) {
+		int start = bstart;
+
+		for (FNNRG obj : triplets) {
+			int length = _FNNRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void FNMRG(List<FNMRG> objs, byte[] buffer, int start, int bufstop,
@@ -8667,6 +8711,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_FNMRG(byte[] buffer, int bstart, List<FNMRG> triplets) {
+		int start = bstart;
+
+		for (FNMRG obj : triplets) {
+			int length = _FNMRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void FNORG(List<FNORG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8677,6 +8732,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_FNORG(byte[] buffer, int bstart, List<FNORG> triplets) {
+		int start = bstart;
+
+		for (FNORG obj : triplets) {
+			int length = _FNORG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void FNPRG(List<FNPRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8685,6 +8751,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_FNPRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_FNPRG(byte[] buffer, int bstart, List<FNPRG> triplets) {
+		int start = bstart;
+
+		for (FNPRG obj : triplets) {
+			int length = _FNPRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void LLERG(List<LLERG> objs, byte[] buffer, int start, int bufstop,
@@ -8701,6 +8778,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_LLERG(byte[] buffer, int bstart, List<LLERG> triplets) {
+		int start = bstart;
+
+		for (LLERG obj : triplets) {
+			int length = _LLERG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MBCRG(List<MBCRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
@@ -8713,6 +8801,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MBCRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MBCRG(byte[] buffer, int bstart, List<MBCRG> triplets) {
+		int start = bstart;
+
+		for (MBCRG obj : triplets) {
+			int length = _MBCRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MCARG(List<MCARG> objs, byte[] buffer, int start, int bufstop,
@@ -8729,6 +8828,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MCARG(byte[] buffer, int bstart, List<MCARG> triplets) {
+		int start = bstart;
+
+		for (MCARG obj : triplets) {
+			int length = _MCARG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MCCRG(List<MCCRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8737,6 +8847,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MCCRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MCCRG(byte[] buffer, int bstart, List<MCCRG> triplets) {
+		int start = bstart;
+
+		for (MCCRG obj : triplets) {
+			int length = _MCCRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MCDRG(List<MCDRG> objs, byte[] buffer, int start, int bufstop,
@@ -8753,6 +8874,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MCDRG(byte[] buffer, int bstart, List<MCDRG> triplets) {
+		int start = bstart;
+
+		for (MCDRG obj : triplets) {
+			int length = _MCDRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MCFRG(List<MCFRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
@@ -8767,6 +8899,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MCFRG(byte[] buffer, int bstart, List<MCFRG> triplets) {
+		int start = bstart;
+
+		for (MCFRG obj : triplets) {
+			int length = _MCFRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MCF1RG(List<MCF1RG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8775,6 +8918,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MCF1RG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MCF1RG(byte[] buffer, int bstart, List<MCF1RG> triplets) {
+		int start = bstart;
+
+		for (MCF1RG obj : triplets) {
+			int length = _MCF1RG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MDRRG(List<MDRRG> objs, byte[] buffer, int start, int bufstop,
@@ -8791,6 +8945,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MDRRG(byte[] buffer, int bstart, List<MDRRG> triplets) {
+		int start = bstart;
+
+		for (MDRRG obj : triplets) {
+			int length = _MDRRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MGORG(List<MGORG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
@@ -8803,6 +8968,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MGORG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MGORG(byte[] buffer, int bstart, List<MGORG> triplets) {
+		int start = bstart;
+
+		for (MGORG obj : triplets) {
+			int length = _MGORG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MIORG(List<MIORG> objs, byte[] buffer, int start, int bufstop,
@@ -8819,6 +8995,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MIORG(byte[] buffer, int bstart, List<MIORG> triplets) {
+		int start = bstart;
+
+		for (MIORG obj : triplets) {
+			int length = _MIORG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MMCRG(List<MMCRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8827,6 +9014,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MMCRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MMCRG(byte[] buffer, int bstart, List<MMCRG> triplets) {
+		int start = bstart;
+
+		for (MMCRG obj : triplets) {
+			int length = _MMCRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MMDRG(List<MMDRG> objs, byte[] buffer, int start, int bufstop,
@@ -8843,6 +9041,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MMDRG(byte[] buffer, int bstart, List<MMDRG> triplets) {
+		int start = bstart;
+
+		for (MMDRG obj : triplets) {
+			int length = _MMDRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MMORG(List<MMORG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8851,6 +9060,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MMORG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MMORG(byte[] buffer, int bstart, List<MMORG> triplets) {
+		int start = bstart;
+
+		for (MMORG obj : triplets) {
+			int length = _MMORG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MMTRG(List<MMTRG> objs, byte[] buffer, int start, int bufstop,
@@ -8867,6 +9087,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MMTRG(byte[] buffer, int bstart, List<MMTRG> triplets) {
+		int start = bstart;
+
+		for (MMTRG obj : triplets) {
+			int length = _MMTRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MPGRG(List<MPGRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
@@ -8879,6 +9110,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MPGRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MPGRG(byte[] buffer, int bstart, List<MPGRG> triplets) {
+		int start = bstart;
+
+		for (MPGRG obj : triplets) {
+			int length = _MPGRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void MPORG(List<MPORG> objs, byte[] buffer, int start, int bufstop,
@@ -8895,6 +9137,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MPORG(byte[] buffer, int bstart, List<MPORG> triplets) {
+		int start = bstart;
+
+		for (MPORG obj : triplets) {
+			int length = _MPORG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MPSRG(List<MPSRG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
@@ -8909,6 +9162,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_MPSRG(byte[] buffer, int bstart, List<MPSRG> triplets) {
+		int start = bstart;
+
+		for (MPSRG obj : triplets) {
+			int length = _MPSRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void MSURG(List<MSURG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8917,6 +9181,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_MSURG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_MSURG(byte[] buffer, int bstart, List<MSURG> triplets) {
+		int start = bstart;
+
+		for (MSURG obj : triplets) {
+			int length = _MSURG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void PGPRG(List<PGPRG> objs, byte[] buffer, int start, int bufstop,
@@ -8933,6 +9208,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_PGPRG(byte[] buffer, int bstart, List<PGPRG> triplets) {
+		int start = bstart;
+
+		for (PGPRG obj : triplets) {
+			int length = _PGPRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void PPORG(List<PPORG> objs, byte[] buffer, int start, int bufstop,
 			int lengthOffset, int lengthSize) {
 		int pos = start;
@@ -8947,6 +9233,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_PPORG(byte[] buffer, int bstart, List<PPORG> triplets) {
+		int start = bstart;
+
+		for (PPORG obj : triplets) {
+			int length = _PPORG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void BandImageRG(List<BandImageRG> objs, byte[] buffer, int start,
 			int bufstop, int length) {
 		int pos = start;
@@ -8955,6 +9252,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_BandImageRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_BandImageRG(byte[] buffer, int bstart, List<BandImageRG> triplets) {
+		int start = bstart;
+
+		for (BandImageRG obj : triplets) {
+			int length = _BandImageRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void ExternalAlgorithmRG(List<ExternalAlgorithmRG> objs, byte[] buffer,
@@ -8967,6 +9275,18 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_ExternalAlgorithmRG(byte[] buffer, int bstart,
+			List<ExternalAlgorithmRG> triplets) {
+		int start = bstart;
+
+		for (ExternalAlgorithmRG obj : triplets) {
+			int length = _ExternalAlgorithmRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void SamplingRatiosRG(List<SamplingRatiosRG> objs, byte[] buffer,
 			int start, int bufstop, int length) {
 		int pos = start;
@@ -8975,6 +9295,18 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_SamplingRatiosRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_SamplingRatiosRG(byte[] buffer, int bstart,
+			List<SamplingRatiosRG> triplets) {
+		int start = bstart;
+
+		for (SamplingRatiosRG obj : triplets) {
+			int length = _SamplingRatiosRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void TileTOCRG(List<TileTOCRG> objs, byte[] buffer, int start, int bufstop,
@@ -8987,6 +9319,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_TileTOCRG(byte[] buffer, int bstart, List<TileTOCRG> triplets) {
+		int start = bstart;
+
+		for (TileTOCRG obj : triplets) {
+			int length = _TileTOCRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void GFLTRG(List<GFLTRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -8995,6 +9338,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_GFLTRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_GFLTRG(byte[] buffer, int bstart, List<GFLTRG> triplets) {
+		int start = bstart;
+
+		for (GFLTRG obj : triplets) {
+			int length = _GFLTRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void GCFLTRG(List<GCFLTRG> objs, byte[] buffer, int start, int bufstop,
@@ -9007,6 +9361,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_GCFLTRG(byte[] buffer, int bstart, List<GCFLTRG> triplets) {
+		int start = bstart;
+
+		for (GCFLTRG obj : triplets) {
+			int length = _GCFLTRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void GLINERG(List<GLINERG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -9015,6 +9380,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_GLINERG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_GLINERG(byte[] buffer, int bstart, List<GLINERG> triplets) {
+		int start = bstart;
+
+		for (GLINERG obj : triplets) {
+			int length = _GLINERG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void GCLINERG(List<GCLINERG> objs, byte[] buffer, int start, int bufstop,
@@ -9027,6 +9403,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_GCLINERG(byte[] buffer, int bstart, List<GCLINERG> triplets) {
+		int start = bstart;
+
+		for (GCLINERG obj : triplets) {
+			int length = _GCLINERG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void GMRKRG(List<GMRKRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -9035,6 +9422,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_GMRKRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_GMRKRG(byte[] buffer, int bstart, List<GMRKRG> triplets) {
+		int start = bstart;
+
+		for (GMRKRG obj : triplets) {
+			int length = _GMRKRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void GCMRKRG(List<GCMRKRG> objs, byte[] buffer, int start, int bufstop,
@@ -9047,6 +9445,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_GCMRKRG(byte[] buffer, int bstart, List<GCMRKRG> triplets) {
+		int start = bstart;
+
+		for (GCMRKRG obj : triplets) {
+			int length = _GCMRKRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void GRLINERG(List<GRLINERG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -9055,6 +9464,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_GRLINERG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_GRLINERG(byte[] buffer, int bstart, List<GRLINERG> triplets) {
+		int start = bstart;
+
+		for (GRLINERG obj : triplets) {
+			int length = _GRLINERG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	void GCRLINERG(List<GCRLINERG> objs, byte[] buffer, int start, int bufstop,
@@ -9067,6 +9487,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_GCRLINERG(byte[] buffer, int bstart, List<GCRLINERG> triplets) {
+		int start = bstart;
+
+		for (GCRLINERG obj : triplets) {
+			int length = _GCRLINERG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void GCBEZRG(List<GCBEZRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -9077,6 +9508,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	int binary_GCBEZRG(byte[] buffer, int bstart, List<GCBEZRG> triplets) {
+		int start = bstart;
+
+		for (GCBEZRG obj : triplets) {
+			int length = _GCBEZRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
 	void GCCBEZRG(List<GCCBEZRG> objs, byte[] buffer, int start, int bufstop,
 			int length) {
 		int pos = start;
@@ -9085,6 +9527,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			objs.add(_GCCBEZRG(buffer, pos, stop));
 			pos += length;
 		}
+	}
+
+	int binary_GCCBEZRG(byte[] buffer, int bstart, List<GCCBEZRG> triplets) {
+		int start = bstart;
+
+		for (GCCBEZRG obj : triplets) {
+			int length = _GCCBEZRG(obj, buffer, start);
+			start += length;
+		}
+
+		return start - bstart;
 	}
 
 	CPIRG _CPIRG(byte[] buffer, int pos, int stop) {
@@ -9130,6 +9583,67 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _CPIRG(CPIRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (8 + 1 > length)
+			length = 8 + 1;
+
+		if (9 + 1 > length)
+			length = 9 + 1;
+
+		if (obj.getCount() != null) {
+
+			if (10 + 1 > length)
+				length = 10 + 1;
+
+		}
+
+		if (obj.getGCGID() != null) {
+
+			if (obj.getGCGID() != null) {
+				Saver.save(buffer, start + 0, start + 7, obj.getGCGID(),
+						charset);
+			}
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getPrtFlags() != null) {
+
+			Saver.saveUnsigned(buffer, start + 8, start + 8, obj.getPrtFlags());
+
+			if (8 + 1 > length)
+				length = 8 + 1;
+
+		}
+
+		if (obj.getCodePoint() != null) {
+
+			Saver.saveUnsigned(buffer, start + 9, start + 9, obj.getCodePoint());
+
+			if (9 + 1 > length)
+				length = 9 + 1;
+
+		}
+
+		if (obj.getCount() != null) {
+
+			Saver.saveUnsigned(buffer, start + 10, start + 10, obj.getCount());
+
+			if (10 + 1 > length)
+				length = 10 + 1;
+
+		}
+
+		return length;
 	}
 
 	CFIRG _CFIRG(byte[] buffer, int pos, int stop) {
@@ -9193,6 +9707,88 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _CFIRG(CFIRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (15 + 1 > length)
+			length = 15 + 1;
+
+		if (17 + 1 > length)
+			length = 17 + 1;
+
+		if (19 + 1 > length)
+			length = 19 + 1;
+
+		if (24 + 1 > length)
+			length = 24 + 1;
+
+		if (obj.getFCSName() != null) {
+
+			if (obj.getFCSName() != null) {
+				Saver.save(buffer, start + 0, start + 7, obj.getFCSName(),
+						charset);
+			}
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getCPName() != null) {
+
+			if (obj.getCPName() != null) {
+				Saver.save(buffer, start + 8, start + 15, obj.getCPName(),
+						charset);
+			}
+
+			if (15 + 1 > length)
+				length = 15 + 1;
+
+		}
+
+		if (obj.getSVSize() != null) {
+
+			Saver.saveUnsigned(buffer, start + 16, start + 17, obj.getSVSize());
+
+			if (17 + 1 > length)
+				length = 17 + 1;
+
+		}
+
+		if (obj.getSHScale() != null) {
+
+			Saver.saveUnsigned(buffer, start + 18, start + 19, obj.getSHScale());
+
+			if (19 + 1 > length)
+				length = 19 + 1;
+
+		}
+
+		if (obj.getReserved() != null) {
+
+			{
+				int size = Saver.save(buffer, start + 20, obj.getReserved());
+				if (20 + size > length)
+					length = 20 + size;
+			}
+
+		}
+
+		if (obj.getSection() != null) {
+
+			Saver.saveUnsigned(buffer, start + 24, start + 24, obj.getSection());
+
+			if (24 + 1 > length)
+				length = 24 + 1;
+
+		}
+
+		return length;
 	}
 
 	FNIRG _FNIRG(byte[] buffer, int pos, int stop) {
@@ -9301,6 +9897,164 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _FNIRG(FNIRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (9 + 1 > length)
+			length = 9 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (13 + 1 > length)
+			length = 13 + 1;
+
+		if (15 + 1 > length)
+			length = 15 + 1;
+
+		if (17 + 1 > length)
+			length = 17 + 1;
+
+		if (19 + 1 > length)
+			length = 19 + 1;
+
+		if (21 + 1 > length)
+			length = 21 + 1;
+
+		if (23 + 1 > length)
+			length = 23 + 1;
+
+		if (25 + 1 > length)
+			length = 25 + 1;
+
+		if (27 + 1 > length)
+			length = 27 + 1;
+
+		if (obj.getGCGID() != null) {
+
+			if (obj.getGCGID() != null) {
+				Saver.save(buffer, start + 0, start + 7, obj.getGCGID(),
+						charset);
+			}
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getCharInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getCharInc());
+
+			if (9 + 1 > length)
+				length = 9 + 1;
+
+		}
+
+		if (obj.getAscendHt() != null) {
+
+			if (obj.getAscendHt() != null) {
+				Saver.saveSigned(buffer, start + 10, start + 11,
+						obj.getAscendHt());
+			}
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		if (obj.getDescendDp() != null) {
+
+			if (obj.getDescendDp() != null) {
+				Saver.saveSigned(buffer, start + 12, start + 13,
+						obj.getDescendDp());
+			}
+
+			if (13 + 1 > length)
+				length = 13 + 1;
+
+		}
+
+		if (obj.getReserved() != null) {
+
+			Saver.saveUnsigned(buffer, start + 14, start + 15,
+					obj.getReserved());
+
+			if (15 + 1 > length)
+				length = 15 + 1;
+
+		}
+
+		if (obj.getFNMCnt() != null) {
+
+			Saver.saveUnsigned(buffer, start + 16, start + 17, obj.getFNMCnt());
+
+			if (17 + 1 > length)
+				length = 17 + 1;
+
+		}
+
+		if (obj.getASpace() != null) {
+
+			if (obj.getASpace() != null) {
+				Saver.saveSigned(buffer, start + 18, start + 19,
+						obj.getASpace());
+			}
+
+			if (19 + 1 > length)
+				length = 19 + 1;
+
+		}
+
+		if (obj.getBSpace() != null) {
+
+			Saver.saveUnsigned(buffer, start + 20, start + 21, obj.getBSpace());
+
+			if (21 + 1 > length)
+				length = 21 + 1;
+
+		}
+
+		if (obj.getCSpace() != null) {
+
+			if (obj.getCSpace() != null) {
+				Saver.saveSigned(buffer, start + 22, start + 23,
+						obj.getCSpace());
+			}
+
+			if (23 + 1 > length)
+				length = 23 + 1;
+
+		}
+
+		if (obj.getReserved2() != null) {
+
+			Saver.saveUnsigned(buffer, start + 24, start + 25,
+					obj.getReserved2());
+
+			if (25 + 1 > length)
+				length = 25 + 1;
+
+		}
+
+		if (obj.getBaseOset() != null) {
+
+			if (obj.getBaseOset() != null) {
+				Saver.saveSigned(buffer, start + 26, start + 27,
+						obj.getBaseOset());
+			}
+
+			if (27 + 1 > length)
+				length = 27 + 1;
+
+		}
+
+		return length;
+	}
+
 	FNMRG _FNMRG(byte[] buffer, int pos, int stop) {
 		FNMRG obj = AfplibFactory.eINSTANCE.createFNMRG();
 
@@ -9332,6 +10086,48 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _FNMRG(FNMRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (obj.getCharBoxWd() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getCharBoxWd());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getCharBoxHt() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 3, obj.getCharBoxHt());
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getPatDOset() != null) {
+
+			Saver.saveUnsigned(buffer, start + 4, start + 7, obj.getPatDOset());
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		return length;
 	}
 
 	LLERG _LLERG(byte[] buffer, int pos, int stop) {
@@ -9372,6 +10168,50 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _LLERG(LLERG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (2 + 1 > length)
+			length = 2 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 3, obj.getTriplets());
+			if (3 + size > length)
+				length = 3 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getRGFunct() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getRGFunct());
+
+			if (2 + 1 > length)
+				length = 2 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MPSRG _MPSRG(byte[] buffer, int pos, int stop) {
 		MPSRG obj = AfplibFactory.eINSTANCE.createMPSRG();
 
@@ -9395,6 +10235,39 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MPSRG(MPSRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (obj.getReserved() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 3, obj.getReserved());
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getPsegName() != null) {
+
+			if (obj.getPsegName() != null) {
+				Saver.save(buffer, start + 4, start + 11, obj.getPsegName(),
+						charset);
+			}
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		return length;
 	}
 
 	MCFRG _MCFRG(byte[] buffer, int pos, int stop) {
@@ -9426,6 +10299,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MCFRG(MCFRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MBCRG _MBCRG(byte[] buffer, int pos, int stop) {
 		MBCRG obj = AfplibFactory.eINSTANCE.createMBCRG();
 
@@ -9452,6 +10357,30 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MBCRG(MBCRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
 	}
 
 	MCARG _MCARG(byte[] buffer, int pos, int stop) {
@@ -9483,6 +10412,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MCARG(MCARG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MCDRG _MCDRG(byte[] buffer, int pos, int stop) {
 		MCDRG obj = AfplibFactory.eINSTANCE.createMCDRG();
 
@@ -9509,6 +10470,30 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MCDRG(MCDRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
 	}
 
 	MDRRG _MDRRG(byte[] buffer, int pos, int stop) {
@@ -9540,6 +10525,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MDRRG(MDRRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MGORG _MGORG(byte[] buffer, int pos, int stop) {
 		MGORG obj = AfplibFactory.eINSTANCE.createMGORG();
 
@@ -9567,6 +10584,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MGORG(MGORG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
 	}
 
 	MIORG _MIORG(byte[] buffer, int pos, int stop) {
@@ -9598,6 +10647,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MIORG(MIORG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MMDRG _MMDRG(byte[] buffer, int pos, int stop) {
 		MMDRG obj = AfplibFactory.eINSTANCE.createMMDRG();
 
@@ -9625,6 +10706,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MMDRG(MMDRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
 	}
 
 	MMTRG _MMTRG(byte[] buffer, int pos, int stop) {
@@ -9656,6 +10769,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MMTRG(MMTRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MPGRG _MPGRG(byte[] buffer, int pos, int stop) {
 		MPGRG obj = AfplibFactory.eINSTANCE.createMPGRG();
 
@@ -9685,6 +10830,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MPGRG(MPGRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
+	}
+
 	MPORG _MPORG(byte[] buffer, int pos, int stop) {
 		MPORG obj = AfplibFactory.eINSTANCE.createMPORG();
 
@@ -9712,6 +10889,38 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MPORG(MPORG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
 	}
 
 	PPORG _PPORG(byte[] buffer, int pos, int stop) {
@@ -9777,6 +10986,92 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _PPORG(PPORG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (2 + 1 > length)
+			length = 2 + 1;
+
+		if (5 + 1 > length)
+			length = 5 + 1;
+
+		if (8 + 1 > length)
+			length = 8 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 12, obj.getTriplets());
+			if (12 + size > length)
+				length = 12 + size;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getRGLength());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getObjType() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getObjType());
+
+			if (2 + 1 > length)
+				length = 2 + 1;
+
+		}
+
+		if (obj.getProcFlgs() != null) {
+
+			Saver.saveUnsigned(buffer, start + 5, start + 5, obj.getProcFlgs());
+
+			if (5 + 1 > length)
+				length = 5 + 1;
+
+		}
+
+		if (obj.getXocaOset() != null) {
+
+			if (obj.getXocaOset() != null) {
+				Saver.saveSigned(buffer, start + 6, start + 8,
+						obj.getXocaOset());
+			}
+
+			if (8 + 1 > length)
+				length = 8 + 1;
+
+		}
+
+		if (obj.getYocaOset() != null) {
+
+			if (obj.getYocaOset() != null) {
+				Saver.saveSigned(buffer, start + 9, start + 11,
+						obj.getYocaOset());
+			}
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		if (obj.getTriplets() != null) {
+
+		}
+
+		return length;
 	}
 
 	PGPRG _PGPRG(byte[] buffer, int pos, int stop) {
@@ -9852,6 +11147,110 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _PGPRG(PGPRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (6 + 1 > length)
+			length = 6 + 1;
+
+		if (8 + 1 > length)
+			length = 8 + 1;
+
+		if (9 + 1 > length)
+			length = 9 + 1;
+
+		if (obj.getPgFlgs() != null) {
+
+			if (10 + 1 > length)
+				length = 10 + 1;
+
+		}
+
+		if (obj.getPMCid() != null) {
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		obj.setRGLength(length);
+
+		if (obj.getRGLength() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getRGLength());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getXmOset() != null) {
+
+			if (obj.getXmOset() != null) {
+				Saver.saveSigned(buffer, start + 1, start + 3, obj.getXmOset());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getYmOset() != null) {
+
+			if (obj.getYmOset() != null) {
+				Saver.saveSigned(buffer, start + 4, start + 6, obj.getYmOset());
+			}
+
+			if (6 + 1 > length)
+				length = 6 + 1;
+
+		}
+
+		if (obj.getPGorient() != null) {
+
+			Saver.saveUnsigned(buffer, start + 7, start + 8, obj.getPGorient());
+
+			if (8 + 1 > length)
+				length = 8 + 1;
+
+		}
+
+		if (obj.getSHside() != null) {
+
+			Saver.saveUnsigned(buffer, start + 9, start + 9, obj.getSHside());
+
+			if (9 + 1 > length)
+				length = 9 + 1;
+
+		}
+
+		if (obj.getPgFlgs() != null) {
+
+			Saver.saveUnsigned(buffer, start + 10, start + 10, obj.getPgFlgs());
+
+			if (10 + 1 > length)
+				length = 10 + 1;
+
+		}
+
+		if (obj.getPMCid() != null) {
+
+			Saver.saveUnsigned(buffer, start + 11, start + 11, obj.getPMCid());
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		return length;
+	}
+
 	MCCRG _MCCRG(byte[] buffer, int pos, int stop) {
 		MCCRG obj = AfplibFactory.eINSTANCE.createMCCRG();
 
@@ -9883,6 +11282,48 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MCCRG(MCCRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (5 + 1 > length)
+			length = 5 + 1;
+
+		if (obj.getStartnum() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getStartnum());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getStopnum() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 3, obj.getStopnum());
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getMMCid() != null) {
+
+			Saver.saveUnsigned(buffer, start + 5, start + 5, obj.getMMCid());
+
+			if (5 + 1 > length)
+				length = 5 + 1;
+
+		}
+
+		return length;
 	}
 
 	MMORG _MMORG(byte[] buffer, int pos, int stop) {
@@ -9919,6 +11360,51 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MMORG(MMORG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (obj.getOVLid() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getOVLid());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getFlags() != null) {
+
+			Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getFlags());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getOVLname() != null) {
+
+			if (obj.getOVLname() != null) {
+				Saver.save(buffer, start + 4, start + 11, obj.getOVLname(),
+						charset);
+			}
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		return length;
+	}
+
 	BandImageRG _BandImageRG(byte[] buffer, int pos, int stop) {
 		BandImageRG obj = AfplibFactory.eINSTANCE.createBandImageRG();
 
@@ -9932,6 +11418,24 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _BandImageRG(BandImageRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (obj.getBITCNT() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getBITCNT());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		return length;
 	}
 
 	MCF1RG _MCF1RG(byte[] buffer, int pos, int stop) {
@@ -9999,6 +11503,97 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _MCF1RG(MCF1RG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (2 + 1 > length)
+			length = 2 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (19 + 1 > length)
+			length = 19 + 1;
+
+		if (27 + 1 > length)
+			length = 27 + 1;
+
+		if (obj.getCharRot() != null) {
+
+			if (29 + 1 > length)
+				length = 29 + 1;
+
+		}
+
+		if (obj.getCFLid() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getCFLid());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getSectid() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getSectid());
+
+			if (2 + 1 > length)
+				length = 2 + 1;
+
+		}
+
+		if (obj.getCFName() != null) {
+
+			if (obj.getCFName() != null) {
+				Saver.save(buffer, start + 4, start + 11, obj.getCFName(),
+						charset);
+			}
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		if (obj.getCPName() != null) {
+
+			if (obj.getCPName() != null) {
+				Saver.save(buffer, start + 12, start + 19, obj.getCPName(),
+						charset);
+			}
+
+			if (19 + 1 > length)
+				length = 19 + 1;
+
+		}
+
+		if (obj.getFCSName() != null) {
+
+			if (obj.getFCSName() != null) {
+				Saver.save(buffer, start + 20, start + 27, obj.getFCSName(),
+						charset);
+			}
+
+			if (27 + 1 > length)
+				length = 27 + 1;
+
+		}
+
+		if (obj.getCharRot() != null) {
+
+			Saver.saveUnsigned(buffer, start + 28, start + 29, obj.getCharRot());
+
+			if (29 + 1 > length)
+				length = 29 + 1;
+
+		}
+
+		return length;
+	}
+
 	MMCRG _MMCRG(byte[] buffer, int pos, int stop) {
 		MMCRG obj = AfplibFactory.eINSTANCE.createMMCRG();
 
@@ -10021,6 +11616,36 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MMCRG(MMCRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (obj.getKey() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getKey());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getValue() != null) {
+
+			Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getValue());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		return length;
 	}
 
 	FNORG _FNORG(byte[] buffer, int pos, int stop) {
@@ -10155,6 +11780,189 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _FNORG(FNORG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (5 + 1 > length)
+			length = 5 + 1;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (9 + 1 > length)
+			length = 9 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (12 + 1 > length)
+			length = 12 + 1;
+
+		if (13 + 1 > length)
+			length = 13 + 1;
+
+		if (15 + 1 > length)
+			length = 15 + 1;
+
+		if (17 + 1 > length)
+			length = 17 + 1;
+
+		if (19 + 1 > length)
+			length = 19 + 1;
+
+		if (21 + 1 > length)
+			length = 21 + 1;
+
+		if (23 + 1 > length)
+			length = 23 + 1;
+
+		if (25 + 1 > length)
+			length = 25 + 1;
+
+		if (obj.getReserved() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getReserved());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getCharRot() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 3, obj.getCharRot());
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getMaxBOset() != null) {
+
+			if (obj.getMaxBOset() != null) {
+				Saver.saveSigned(buffer, start + 4, start + 5,
+						obj.getMaxBOset());
+			}
+
+			if (5 + 1 > length)
+				length = 5 + 1;
+
+		}
+
+		if (obj.getMaxCharInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 6, start + 7,
+					obj.getMaxCharInc());
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getSpCharInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getSpCharInc());
+
+			if (9 + 1 > length)
+				length = 9 + 1;
+
+		}
+
+		if (obj.getMaxBExt() != null) {
+
+			Saver.saveUnsigned(buffer, start + 10, start + 11, obj.getMaxBExt());
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		if (obj.getOrntFlgs() != null) {
+
+			Saver.saveUnsigned(buffer, start + 12, start + 12,
+					obj.getOrntFlgs());
+
+			if (12 + 1 > length)
+				length = 12 + 1;
+
+		}
+
+		if (obj.getReserved2() != null) {
+
+			Saver.saveUnsigned(buffer, start + 13, start + 13,
+					obj.getReserved2());
+
+			if (13 + 1 > length)
+				length = 13 + 1;
+
+		}
+
+		if (obj.getEmSpInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 14, start + 15, obj.getEmSpInc());
+
+			if (15 + 1 > length)
+				length = 15 + 1;
+
+		}
+
+		if (obj.getReserved3() != null) {
+
+			Saver.saveUnsigned(buffer, start + 16, start + 17,
+					obj.getReserved3());
+
+			if (17 + 1 > length)
+				length = 17 + 1;
+
+		}
+
+		if (obj.getFigSpInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 18, start + 19,
+					obj.getFigSpInc());
+
+			if (19 + 1 > length)
+				length = 19 + 1;
+
+		}
+
+		if (obj.getNomCharInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 20, start + 21,
+					obj.getNomCharInc());
+
+			if (21 + 1 > length)
+				length = 21 + 1;
+
+		}
+
+		if (obj.getDefBInc() != null) {
+
+			Saver.saveUnsigned(buffer, start + 22, start + 23, obj.getDefBInc());
+
+			if (23 + 1 > length)
+				length = 23 + 1;
+
+		}
+
+		if (obj.getMinASp() != null) {
+
+			Saver.saveUnsigned(buffer, start + 24, start + 25, obj.getMinASp());
+
+			if (25 + 1 > length)
+				length = 25 + 1;
+
+		}
+
+		return length;
+	}
+
 	FNPRG _FNPRG(byte[] buffer, int pos, int stop) {
 		FNPRG obj = AfplibFactory.eINSTANCE.createFNPRG();
 
@@ -10261,6 +12069,163 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _FNPRG(FNPRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (5 + 1 > length)
+			length = 5 + 1;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (9 + 1 > length)
+			length = 9 + 1;
+
+		if (14 + 1 > length)
+			length = 14 + 1;
+
+		if (15 + 1 > length)
+			length = 15 + 1;
+
+		if (16 + 1 > length)
+			length = 16 + 1;
+
+		if (18 + 1 > length)
+			length = 18 + 1;
+
+		if (19 + 1 > length)
+			length = 19 + 1;
+
+		if (21 + 1 > length)
+			length = 21 + 1;
+
+		if (obj.getReserved() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 1, obj.getReserved());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getLcHeight() != null) {
+
+			if (obj.getLcHeight() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3,
+						obj.getLcHeight());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getCapMHt() != null) {
+
+			if (obj.getCapMHt() != null) {
+				Saver.saveSigned(buffer, start + 4, start + 5, obj.getCapMHt());
+			}
+
+			if (5 + 1 > length)
+				length = 5 + 1;
+
+		}
+
+		if (obj.getMaxAscHt() != null) {
+
+			if (obj.getMaxAscHt() != null) {
+				Saver.saveSigned(buffer, start + 6, start + 7,
+						obj.getMaxAscHt());
+			}
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getMaxDesDp() != null) {
+
+			if (obj.getMaxDesDp() != null) {
+				Saver.saveSigned(buffer, start + 8, start + 9,
+						obj.getMaxDesDp());
+			}
+
+			if (9 + 1 > length)
+				length = 9 + 1;
+
+		}
+
+		if (obj.getReserved2() != null) {
+
+			if (obj.getReserved2() != null) {
+				Saver.save(buffer, start + 10, start + 14, obj.getReserved2());
+			}
+
+			if (14 + 1 > length)
+				length = 14 + 1;
+
+		}
+
+		if (obj.getRetired() != null) {
+
+			Saver.saveUnsigned(buffer, start + 15, start + 15, obj.getRetired());
+
+			if (15 + 1 > length)
+				length = 15 + 1;
+
+		}
+
+		if (obj.getReserved3() != null) {
+
+			Saver.saveUnsigned(buffer, start + 16, start + 16,
+					obj.getReserved3());
+
+			if (16 + 1 > length)
+				length = 16 + 1;
+
+		}
+
+		if (obj.getUscoreWd() != null) {
+
+			Saver.saveUnsigned(buffer, start + 17, start + 18,
+					obj.getUscoreWd());
+
+			if (18 + 1 > length)
+				length = 18 + 1;
+
+		}
+
+		if (obj.getUscoreWdf() != null) {
+
+			Saver.saveUnsigned(buffer, start + 19, start + 19,
+					obj.getUscoreWdf());
+
+			if (19 + 1 > length)
+				length = 19 + 1;
+
+		}
+
+		if (obj.getUscorePos() != null) {
+
+			if (obj.getUscorePos() != null) {
+				Saver.saveSigned(buffer, start + 20, start + 21,
+						obj.getUscorePos());
+			}
+
+			if (21 + 1 > length)
+				length = 21 + 1;
+
+		}
+
+		return length;
+	}
+
 	TileTOCRG _TileTOCRG(byte[] buffer, int pos, int stop) {
 		TileTOCRG obj = AfplibFactory.eINSTANCE.createTileTOCRG();
 
@@ -10330,6 +12295,96 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _TileTOCRG(TileTOCRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (15 + 1 > length)
+			length = 15 + 1;
+
+		if (16 + 1 > length)
+			length = 16 + 1;
+
+		if (17 + 1 > length)
+			length = 17 + 1;
+
+		if (25 + 1 > length)
+			length = 25 + 1;
+
+		if (obj.getXOFFSET() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 3, obj.getXOFFSET());
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		if (obj.getYOFFSET() != null) {
+
+			Saver.saveUnsigned(buffer, start + 4, start + 7, obj.getYOFFSET());
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getTHSIZE() != null) {
+
+			Saver.saveUnsigned(buffer, start + 8, start + 11, obj.getTHSIZE());
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		if (obj.getTVSIZE() != null) {
+
+			Saver.saveUnsigned(buffer, start + 12, start + 15, obj.getTVSIZE());
+
+			if (15 + 1 > length)
+				length = 15 + 1;
+
+		}
+
+		if (obj.getRELRES() != null) {
+
+			Saver.saveUnsigned(buffer, start + 16, start + 16, obj.getRELRES());
+
+			if (16 + 1 > length)
+				length = 16 + 1;
+
+		}
+
+		if (obj.getCOMPR() != null) {
+
+			Saver.saveUnsigned(buffer, start + 17, start + 17, obj.getCOMPR());
+
+			if (17 + 1 > length)
+				length = 17 + 1;
+
+		}
+
+		if (obj.getDATAPOS() != null) {
+
+			Saver.saveUnsigned(buffer, start + 18, start + 25, obj.getDATAPOS());
+
+			if (25 + 1 > length)
+				length = 25 + 1;
+
+		}
+
+		return length;
+	}
+
 	SamplingRatiosRG _SamplingRatiosRG(byte[] buffer, int pos, int stop) {
 		SamplingRatiosRG obj = AfplibFactory.eINSTANCE.createSamplingRatiosRG();
 
@@ -10352,6 +12407,36 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _SamplingRatiosRG(SamplingRatiosRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (obj.getHSAMPLE() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getHSAMPLE());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getVSAMPLE() != null) {
+
+			Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getVSAMPLE());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		return length;
 	}
 
 	ExternalAlgorithmRG _ExternalAlgorithmRG(byte[] buffer, int pos, int stop) {
@@ -10388,6 +12473,48 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _ExternalAlgorithmRG(ExternalAlgorithmRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (2 + 1 > length)
+			length = 2 + 1;
+
+		if (obj.getDIRCTN() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getDIRCTN());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getPADBDRY() != null) {
+
+			Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getPADBDRY());
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getPADALMT() != null) {
+
+			Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getPADALMT());
+
+			if (2 + 1 > length)
+				length = 2 + 1;
+
+		}
+
+		return length;
+	}
+
 	FNNRG _FNNRG(byte[] buffer, int pos, int stop) {
 		FNNRG obj = AfplibFactory.eINSTANCE.createFNNRG();
 
@@ -10411,6 +12538,39 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _FNNRG(FNNRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (11 + 1 > length)
+			length = 11 + 1;
+
+		if (obj.getGCGID() != null) {
+
+			if (obj.getGCGID() != null) {
+				Saver.save(buffer, start + 0, start + 7, obj.getGCGID(),
+						charset);
+			}
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getTSOffset() != null) {
+
+			Saver.saveUnsigned(buffer, start + 8, start + 11, obj.getTSOffset());
+
+			if (11 + 1 > length)
+				length = 11 + 1;
+
+		}
+
+		return length;
 	}
 
 	FNNRG2 _FNNRG2(byte[] buffer, int pos, int stop) {
@@ -10442,6 +12602,42 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _FNNRG2(FNNRG2 obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (obj.getTSIDLen() != null) {
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getTSID() != null) {
+
+		}
+
+		if (obj.getTSIDLen() != null) {
+
+			Saver.saveUnsigned(buffer, start + 0, start + 0, obj.getTSIDLen());
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getTSID() != null) {
+
+			{
+				int size = Saver.save(buffer, start + 1, obj.getTSID());
+				if (1 + size > length)
+					length = 1 + size;
+			}
+
+		}
+
+		return length;
+	}
+
 	GCBEZRG _GCBEZRG(byte[] buffer, int pos, int stop) {
 		GCBEZRG obj = AfplibFactory.eINSTANCE.createGCBEZRG();
 
@@ -10464,6 +12660,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _GCBEZRG(GCBEZRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
 	}
 
 	GCCBEZRG _GCCBEZRG(byte[] buffer, int pos, int stop) {
@@ -10490,6 +12720,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _GCCBEZRG(GCCBEZRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
+	}
+
 	GFLTRG _GFLTRG(byte[] buffer, int pos, int stop) {
 		GFLTRG obj = AfplibFactory.eINSTANCE.createGFLTRG();
 
@@ -10512,6 +12776,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _GFLTRG(GFLTRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
 	}
 
 	GCFLTRG _GCFLTRG(byte[] buffer, int pos, int stop) {
@@ -10538,6 +12836,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _GCFLTRG(GCFLTRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
+	}
+
 	GLINERG _GLINERG(byte[] buffer, int pos, int stop) {
 		GLINERG obj = AfplibFactory.eINSTANCE.createGLINERG();
 
@@ -10560,6 +12892,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _GLINERG(GLINERG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
 	}
 
 	GCLINERG _GCLINERG(byte[] buffer, int pos, int stop) {
@@ -10586,6 +12952,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _GCLINERG(GCLINERG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
+	}
+
 	GMRKRG _GMRKRG(byte[] buffer, int pos, int stop) {
 		GMRKRG obj = AfplibFactory.eINSTANCE.createGMRKRG();
 
@@ -10608,6 +13008,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _GMRKRG(GMRKRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
 	}
 
 	GCMRKRG _GCMRKRG(byte[] buffer, int pos, int stop) {
@@ -10634,6 +13068,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _GCMRKRG(GCMRKRG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (3 + 1 > length)
+			length = 3 + 1;
+
+		if (obj.getXPOS() != null) {
+
+			if (obj.getXPOS() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 1, obj.getXPOS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		if (obj.getYPOS() != null) {
+
+			if (obj.getYPOS() != null) {
+				Saver.saveSigned(buffer, start + 2, start + 3, obj.getYPOS());
+			}
+
+			if (3 + 1 > length)
+				length = 3 + 1;
+
+		}
+
+		return length;
+	}
+
 	GRLINERG _GRLINERG(byte[] buffer, int pos, int stop) {
 		GRLINERG obj = AfplibFactory.eINSTANCE.createGRLINERG();
 
@@ -10658,6 +13126,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return obj;
 	}
 
+	int _GRLINERG(GRLINERG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (obj.getXOSSF() != null) {
+
+			if (obj.getXOSSF() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 0, obj.getXOSSF());
+			}
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getYOFFS() != null) {
+
+			if (obj.getYOFFS() != null) {
+				Saver.saveSigned(buffer, start + 1, start + 1, obj.getYOFFS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		return length;
+	}
+
 	GCRLINERG _GCRLINERG(byte[] buffer, int pos, int stop) {
 		GCRLINERG obj = AfplibFactory.eINSTANCE.createGCRLINERG();
 
@@ -10680,6 +13182,40 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _GCRLINERG(GCRLINERG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (0 + 1 > length)
+			length = 0 + 1;
+
+		if (1 + 1 > length)
+			length = 1 + 1;
+
+		if (obj.getXOSSF() != null) {
+
+			if (obj.getXOSSF() != null) {
+				Saver.saveSigned(buffer, start + 0, start + 0, obj.getXOSSF());
+			}
+
+			if (0 + 1 > length)
+				length = 0 + 1;
+
+		}
+
+		if (obj.getYOFFS() != null) {
+
+			if (obj.getYOFFS() != null) {
+				Saver.saveSigned(buffer, start + 1, start + 1, obj.getYOFFS());
+			}
+
+			if (1 + 1 > length)
+				length = 1 + 1;
+
+		}
+
+		return length;
 	}
 
 	MSURG _MSURG(byte[] buffer, int pos, int stop) {
@@ -10714,6 +13250,53 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 
 		return obj;
+	}
+
+	int _MSURG(MSURG obj, byte[] buffer, int start) {
+		int length = 0;
+
+		if (7 + 1 > length)
+			length = 7 + 1;
+
+		if (8 + 1 > length)
+			length = 8 + 1;
+
+		if (9 + 1 > length)
+			length = 9 + 1;
+
+		if (obj.getSUPname() != null) {
+
+			if (obj.getSUPname() != null) {
+				Saver.save(buffer, start + 0, start + 7, obj.getSUPname(),
+						charset);
+			}
+
+			if (7 + 1 > length)
+				length = 7 + 1;
+
+		}
+
+		if (obj.getReserved() != null) {
+
+			if (obj.getReserved() != null) {
+				Saver.save(buffer, start + 8, start + 8, obj.getReserved());
+			}
+
+			if (8 + 1 > length)
+				length = 8 + 1;
+
+		}
+
+		if (obj.getSUPid() != null) {
+
+			Saver.saveUnsigned(buffer, start + 9, start + 9, obj.getSUPid());
+
+			if (9 + 1 > length)
+				length = 9 + 1;
+
+		}
+
+		return length;
 	}
 
 	int binary_triplets(byte[] buffer, int bstart, List<Triplet> triplets) {
@@ -16377,6 +18960,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_CFIRG(buffer, start + 9,
+							obj.getFixedLengthRG());
+					if (9 + size > length)
+						length = 9 + size;
+
 				}
 
 				if (obj.getFixedLengthRG() != null) {
@@ -16566,6 +19154,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				CPI obj = (CPI) sf;
 
 				{
+
+					int size = binary_CPIRG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
 
 				}
 
@@ -18197,6 +20789,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_FNIRG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
+
 				}
 
 				if (obj.getRg() != null) {
@@ -18218,6 +20814,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				if (obj.getRg() != null && obj.getRg().size() > 0) {
 
 					{
+
+						int size = binary_FNNRG(buffer, start + 11, obj.getRg());
+						if (11 + size > length)
+							length = 11 + size;
 
 					}
 
@@ -18267,6 +20867,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_FNMRG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
+
 				}
 
 				if (obj.getRg() != null) {
@@ -18281,6 +20885,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_FNORG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
+
 				}
 
 				if (obj.getRg() != null) {
@@ -18294,6 +20902,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				FNP obj = (FNP) sf;
 
 				{
+
+					int size = binary_FNPRG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
 
 				}
 
@@ -19264,6 +21876,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_LLERG(buffer, start + 11, obj.getRG());
+					if (11 + size > length)
+						length = 11 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 11 + 0, start + 11
+								+ 0 + 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 11 + 0, start + 11
+								+ 0 + 2 - 1, 0);
+
 				}
 
 				if (obj.getLnkType() != null) {
@@ -19553,6 +22176,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MBCRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19566,6 +22200,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				MCA obj = (MCA) sf;
 
 				{
+
+					int size = binary_MCARG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
 
 				}
 
@@ -19581,6 +22226,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MCCRG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
+
 				}
 
 				if (obj.getRg() != null) {
@@ -19595,6 +22244,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MCDRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19608,6 +22268,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				MCF obj = (MCF) sf;
 
 				{
+
+					int size = binary_MCFRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
 
 				}
 
@@ -19625,6 +22296,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					length = 9 + 1;
 
 				{
+
+					int size = binary_MCF1RG(buffer, start + 13, obj.getRG());
+					if (13 + size > length)
+						length = 13 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
+								+ -4 + 1 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
+								+ -4 + 1 - 1, 0);
 
 				}
 
@@ -19764,6 +22446,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MDRRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19840,6 +22533,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MGORG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19853,6 +22557,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				MIO obj = (MIO) sf;
 
 				{
+
+					int size = binary_MIORG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
 
 				}
 
@@ -19875,6 +22590,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				if (obj.getRg() != null && obj.getRg().size() > 0) {
 
 					{
+
+						int size = binary_MMCRG(buffer, start + 11, obj.getRg());
+						if (11 + size > length)
+							length = 11 + size;
 
 					}
 
@@ -19912,6 +22631,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MMDRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19928,6 +22658,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					length = 9 + 1;
 
 				{
+
+					int size = binary_MMORG(buffer, start + 13, obj.getRg());
+					if (13 + size > length)
+						length = 13 + size;
 
 				}
 
@@ -19953,6 +22687,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MMTRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19967,6 +22712,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_MPGRG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
+
 				}
 
 				if (obj.getRG() != null) {
@@ -19980,6 +22736,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				MPO obj = (MPO) sf;
 
 				{
+
+					int size = binary_MPORG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
 
 				}
 
@@ -20000,6 +22767,19 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					length = 12 + 1;
 
 				{
+
+					int size = binary_MPSRG(buffer, start + 13,
+							obj.getFixedLengthRG());
+					if (13 + size > length)
+						length = 13 + size;
+
+					if (obj.getFixedLengthRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
+								+ -4 + 1 - 1, size
+								/ obj.getFixedLengthRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
+								+ -4 + 1 - 1, 0);
 
 				}
 
@@ -20036,6 +22816,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				MSU obj = (MSU) sf;
 
 				{
+
+					int size = binary_MSURG(buffer, start + 9, obj.getRg());
+					if (9 + size > length)
+						length = 9 + size;
 
 				}
 
@@ -20445,6 +23229,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				{
 
+					int size = binary_PGPRG(buffer, start + 10, obj.getRG());
+					if (10 + size > length)
+						length = 10 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 10 + 0, start + 10
+								+ 0 + 1 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 10 + 0, start + 10
+								+ 0 + 1 - 1, 0);
+
 				}
 
 				if (obj.getConstant() != null) {
@@ -20536,6 +23331,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				PPO obj = (PPO) sf;
 
 				{
+
+					int size = binary_PPORG(buffer, start + 9, obj.getRG());
+					if (9 + size > length)
+						length = 9 + size;
+
+					if (obj.getRG().size() > 0)
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, size / obj.getRG().size());
+					else
+						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
+								+ 2 - 1, 0);
 
 				}
 

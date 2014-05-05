@@ -141,6 +141,14 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 		return obj;
 	}
+	
+	int _«t.name»(«t.name» obj, byte[] buffer, int start) {
+		int length = 0;
+		«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF t.lengthAttribute == e.name»obj.«e.setter()»(length);«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
+		return length;
+	}
 	«ENDIF»
 	«ENDFOREACH»
 
@@ -156,9 +164,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				m.setTripletId(«t.id»);
 				«t.name» obj = («t.name») m;
 				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
-				«FOREACH t.elements AS e»
-				«IF e.name == t.lengthAttribute»obj.«setter(e)»(length);«ENDIF»
-				«ENDFOREACH»
 				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
 
 				if(length == 0) length = 2;
@@ -203,8 +208,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				m.setTripletId(«t.id»);
 				«t.name» obj = («t.name») m;
 				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
-				«FOREACH t.elements AS e»
-				«ENDFOREACH»
 				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
 
 				if(length == 0) length = 1;
@@ -272,6 +275,15 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«ELSEIF ((Group)this).type.toString() == "CS"»
 			int size = binary_cs(buffer, start + «start», obj.«getter()»());
 			if(«start» + size > length) length = «start» + size;
+			«ELSEIF ((Group)this).type.toString() == "Fixed"»
+			int size = binary_«((TYPEContainer)eContainer).name»RG(buffer, start + «start», obj.«getter()»());
+			if(«start» + size > length) length = «start» + size;
+			«IF ((Group)this).lengthSize != -1»
+			if(obj.«getter()»().size()>0)
+			Saver.saveUnsigned(buffer, start + «start» + «((Group)this).elementLengthOffset», start + «start» + «((Group)this).elementLengthOffset» + «((Group)this).lengthSize» - 1, size / obj.«getter()»().size());
+			else
+			Saver.saveUnsigned(buffer, start + «start» + «((Group)this).elementLengthOffset», start + «start» + «((Group)this).elementLengthOffset» + «((Group)this).lengthSize» - 1, 0);
+			«ENDIF»
 			«ENDIF»
 			«REM»
 			int size = GroupMemberFactory.getInstance().save(
@@ -366,7 +378,19 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 «ENDIF»
-«ENDIF»«ENDFOREACH»
+
+	int binary_«name»RG(byte[] buffer, int bstart, List<«name»RG> triplets) {
+		int start = bstart;
+		
+		for(«name»RG obj : triplets) {
+			int length = _«name»RG(obj, buffer, start);
+			start += length;
+		}
+		
+		return start - bstart;
+	}
+«ENDIF»
+«ENDFOREACH»
 «ENDDEFINE»
 
 «DEFINE setter FOR TYPE»
