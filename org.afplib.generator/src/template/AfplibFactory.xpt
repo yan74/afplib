@@ -183,6 +183,44 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return start - bstart;
 	}
 
+	int binary_sdf(byte[] buffer, int bstart, List<Triplet> triplets) {
+		int start = bstart;
+		
+		for(Triplet m : triplets) {
+			int length = 0;
+			switch(m.eClass().getClassifierID()) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "SDF"»
+			case AfplibPackage.«camelCase2Constant(t.name)»: {
+				m.setTripletId(«t.id»);
+				«t.name» obj = («t.name») m;
+				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
+				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
+
+				if((«t.id» & 0xff00) == 0xfe00) {
+					if(length == 0) length = 4;
+					byte[] bId = Data.toUnsignedShort(«t.id»);
+					byte[] bLength = Data.toUnsignedShort(length - 4);
+					buffer[start] = bId[0];
+					buffer[start + 1] = bId[1];
+					buffer[start + 2] = bLength[0];										
+					buffer[start + 3] = bLength[1];										
+				} else {
+					if(length == 0) length = 2;
+					buffer[start] = Data.toUnsignedByte(«t.id»)[0];
+					buffer[start + 1] = Data.toUnsignedByte(length - 2)[0];					
+				}
+				break;
+			}
+			«ENDIF»«ENDFOREACH»
+			default: throw new IllegalArgumentException("unknown triplet: "+m);
+			}
+			start += length;
+		}
+		
+		return start - bstart;
+	}
+
 	int binary_cs(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
 		
@@ -284,6 +322,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			else
 			Saver.saveUnsigned(buffer, start + «start» + «((Group)this).elementLengthOffset», start + «start» + «((Group)this).elementLengthOffset» + «((Group)this).lengthSize» - 1, 0);
 			«ENDIF»
+			«ELSEIF ((Group)this).type.toString() == "SDF"»
+			int size = binary_sdf(buffer, start + «start», obj.«getter()»());
+			if(«start» + size > length) length = «start» + size;
+			«ELSEIF ((Group)this).type.toString() == "GOCACmd"»«REM»not needed«ENDREM»
 			«ENDIF»
 			«REM»
 			int size = GroupMemberFactory.getInstance().save(
