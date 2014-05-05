@@ -10,6 +10,7 @@ public class AfpInputStream extends FilterInputStream {
 
 	StructuredFieldFactory factory = new StructuredFieldFactory();
 	byte[] data = new byte[32768];
+	int length;
 	
 	public AfpInputStream(InputStream in) {
 		super(in);
@@ -34,8 +35,6 @@ public class AfpInputStream extends FilterInputStream {
 		if((buf & 0xff) != 0x5a)
 			throw new IOException("cannot find 5a magic byte");
 		data[0] = (byte) (buf & 0xff);
-		
-		int length;
 		
 		buf = read();
 		if(buf == -1)
