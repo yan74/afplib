@@ -1,6 +1,7 @@
 package org.afplib;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,21 +14,15 @@ import org.afplib.afplib.BMO;
 import org.afplib.afplib.BPT;
 import org.afplib.afplib.BRG;
 import org.afplib.afplib.BRS;
-import org.afplib.afplib.CharacterRotation;
 import org.afplib.afplib.EAG;
-import org.afplib.afplib.FullyQualifiedName;
 import org.afplib.afplib.MCF;
-import org.afplib.afplib.MPS;
 import org.afplib.afplib.NOPCS;
 import org.afplib.afplib.PGD;
 import org.afplib.afplib.PTD;
 import org.afplib.afplib.PTX;
-import org.afplib.afplib.ResourceLocalIdentifier;
-import org.afplib.afplib.ResourceSectionNumber;
 import org.afplib.afplib.SCFL;
 import org.afplib.afplib.STO;
 import org.afplib.afplib.TRN;
-import org.afplib.afplib.TextOrientation;
 import org.afplib.base.SF;
 import org.afplib.io.AfpInputStream;
 import org.junit.Test;
@@ -35,7 +30,7 @@ import org.junit.Test;
 public class ChainedSequenceTest {
 
 	/**
-	 * repeatingGroupVariableLength.afp looks like this:
+	 * cs.afp looks like this:
 	 * BRG 
 	 * 	 BRS
 	 *     BMO

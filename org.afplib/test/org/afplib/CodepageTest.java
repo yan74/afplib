@@ -1,9 +1,9 @@
 package org.afplib;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.afplib.afplib.BPS;
@@ -14,7 +14,6 @@ import org.afplib.afplib.EPS;
 import org.afplib.afplib.ERS;
 import org.afplib.base.SF;
 import org.afplib.io.AfpInputStream;
-import org.eclipse.emf.common.command.Command;
 import org.junit.Test;
 
 public class CodepageTest {

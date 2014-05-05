@@ -1,6 +1,7 @@
 package org.afplib;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,7 +11,6 @@ import org.afplib.afplib.BMO;
 import org.afplib.afplib.BRG;
 import org.afplib.afplib.BRS;
 import org.afplib.afplib.CharacterRotation;
-import org.afplib.afplib.Comment;
 import org.afplib.afplib.FullyQualifiedName;
 import org.afplib.afplib.MCF;
 import org.afplib.afplib.MPS;
@@ -39,7 +39,7 @@ public class RepeatingGroupTest {
 	 * @throws IOException
 	 */
 	@Test
-	public void testAsciiComment() throws IOException {
+	public void testRepeatingGroup() throws IOException {
 		
 		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream("testdata/repeatingGroupVariableLength.afp"))) {
 			SF sf = afpin.readStructuredField();
