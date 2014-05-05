@@ -232,7 +232,40 @@ class StructuredFieldFactory {
 	}
 	«ENDIF»
 	«ENDFOREACH»
-	
+
+	int binary_triplets(byte[] buffer, int bstart, List<Triplet> triplets) {
+		int start = bstart;
+		
+		for(Triplet m : triplets) {
+			int length = 0;
+			switch(m.eClass().getClassifierID()) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "Triplet"»
+			case AfplibPackage.«camelCase2Constant(t.name)»: {
+				m.setTripletId(«t.id»);
+				«t.name» obj = («t.name») m;
+				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
+				«FOREACH t.elements AS e»
+				«IF e.name == t.lengthAttribute»obj.«setter()»(length);«ENDIF»
+				«ENDFOREACH»
+				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
+
+				if(length == 0) length = 2;
+				buffer[start] = Data.toUnsignedByte(length)[0];
+				buffer[start + 1] = Data.toUnsignedByte(«t.id»)[0];
+				«IF t.name == "CGCSGID"»
+				charset = CodepageHelper.getCharset(obj.getCPGID(), obj.getGCSGID());
+				«ENDIF»
+				break;
+			}
+			«ENDIF»«ENDFOREACH»
+			default: throw new IllegalArgumentException("unknown triplet: "+m);
+			}
+			start += length;
+		}
+		
+		return start - bstart;
+	}
 	
 	public int binary(byte[] buffer, int start, SF sf) {
 		int length = 9;
@@ -241,99 +274,21 @@ class StructuredFieldFactory {
 		case AfplibPackage.«sf.name»: {
 			sf.setId(«sf.id»);
 			«sf.name» obj = («sf.name») sf;
-		«FOREACH sf.elements AS e»
-			«IF e.optional»
-				if(obj.«e.getter()»() != null«IF e.metaType == Group» && obj.«e.getter()»().size() > 0«ENDIF») {
-			«ENDIF»
-			«IF e.metaType == Group»
-				«IF e.variableLength»
-					{
-					«REM»
-					«IF ((Group)e).type.toString() == "Triplet"»
-					binary_triplets(buffer, start + «e.start», obj.«e.getter()»());
-					if(«e.start» + size > length) length = «e.start» + size;
-					«ENDIF»
-					int size = GroupMemberFactory.getInstance().save(
-					buffer, start + «e.start», «((Group)e).elementLength», 
-					«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
-					«((Group)e).elementIdOffset», obj.«e.getter()»(), "«((Group)e).type»", environment);
-					if(«e.start» + size > length) length = «e.start» + size;«ENDREM»
-					}
-				«ELSE»«REM»
-					GroupMemberFactory.getInstance().save(
-					buffer, start + «e.start», «((Group)e).elementLength», 
-					«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
-					«((Group)e).elementIdOffset», obj.«e.getter()»(), "«((Group)e).type»", environment);
-					if(«e.stop» + 1 > length) length = «e.stop» + 1;«ENDREM»
-				«ENDIF»
-			«ELSE»
-				«IF e.variableLength»
-				«ELSE»
-					if(«e.stop» + 1 > length) length = «e.stop» + 1;
-				«ENDIF»
-			«ENDIF»			
-			«IF e.optional»
+			«IF isBegin(sf.id)»charset = CodepageHelper.CHARSET_IBM500;«ENDIF»
+			«FOREACH sf.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
+			«FOREACH sf.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
+			«REM»«IF optional»«ENDREM»
+			«IF sf.name == "IPD"»
+			if(obj.getSdfs() == null || obj.getSdfs().size() == 0) {
+				if(obj.getRawData() != null && obj.getRawData().length > 0) {
+					byte[] b = java.util.Arrays.copyOfRange(obj.getRawData(), 9, obj.getRawData().length - 1);
+					Saver.save(buffer, start + 9, start + 9 + b.length - 1,
+							b);
+					length = obj.getRawData().length;
 				}
+			}
 			«ENDIF»
-		«ENDFOREACH»
-
-		«FOREACH sf.elements AS e»
-			«IF this.metaType == GroupMember && e.name == (((GroupMember)this).lengthAttribute)»obj.«e.setter()»(length);«ENDIF»
-«REM»mandatory may not be present in source «IF e.optional»«ENDREM»
-				if(obj.«e.getter()»() != null) {
-«REM»			«ENDIF»«ENDREM»
-			«IF e.metaType == Group»
-			«ELSE»
-				«IF e.variableLength»
-					«IF e.metaType == CHAR»
-					{
-					int size = Saver.save(buffer, start + «e.start», obj.«e.getter()»(), obj.getCharset());
-					if(«e.start» + size > length) length = «e.start» + size;
-					}
-					«ELSE»
-					{
-					int size = Saver.save(buffer, start + «e.start», obj.«e.getter()»());
-					if(«e.start» + size > length) length = «e.start» + size;
-					}
-					«ENDIF»
-				«ELSE»
-					«IF e.metaType == CHAR»«IF e.eContainer.metaType == SF»
-						if(obj.«e.getter()»() != null) {
-						Saver.save(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»(), Charset.forName("IBM500"));
-						}
-						«ELSE»
-						if(obj.«e.getter()»() != null) {
-						Saver.save(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»(), obj.getCharset());
-						}
-					«ENDIF»
-					«ELSEIF e.metaType == UNDF»
-					if(obj.«e.getter()»() != null) {
-					Saver.save(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»());
-					}
-					«ELSEIF e.metaType == SBIN»
-					if(obj.«e.getter()»() != null) {
-					Saver.saveSigned(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»());
-					}
-					«ELSE»
-					Saver.saveUnsigned(buffer, start + «e.start», start + «e.stop», obj.«e.getter()»());
-					«ENDIF»
-					if(«e.stop» + 1 > length) length = «e.stop» + 1;
-				«ENDIF»
-			«ENDIF»			
-				}«REM»moved out of e.optional if, cause see above «ENDREM»
-			«IF e.optional»
-				«IF sf.name == "IPD"»
-				if(obj.getSdfs() == null || obj.getSdfs().size() == 0) {
-					if(obj.getRawData() != null && obj.getRawData().length > 0) {
-						byte[] b = java.util.Arrays.copyOfRange(obj.getRawData(), 9, obj.getRawData().length - 1);
-						Saver.save(buffer, start + 9, start + 9 + b.length - 1,
-								b);
-						length = obj.getRawData().length;
-					}
-				}
-				«ENDIF»
-			«ENDIF»
-		«ENDFOREACH»
+			«REM»«ENDIF»«ENDREM»
 
 			return length;
 		}«ENDFOREACH»
@@ -343,6 +298,87 @@ class StructuredFieldFactory {
 	
 }
 «ENDFILE»
+«ENDDEFINE»
+
+«DEFINE groupSaver FOR TYPE»
+	«IF optional»
+		if(obj.«getter()»() != null«IF metaType == Group» && obj.«getter()»().size() > 0«ENDIF») {
+	«ENDIF»
+	«IF metaType == Group»
+		«IF variableLength»
+			{
+			«IF ((Group)this).type.toString() == "Triplet"»
+			int size = binary_triplets(buffer, start + «start», obj.«getter()»());
+			if(«start» + size > length) length = «start» + size;
+			«ENDIF»
+			«REM»
+			int size = GroupMemberFactory.getInstance().save(
+			buffer, start + «start», «((Group)e).elementLength», 
+			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
+			«((Group)e).elementIdOffset», obj.«getter()»(), "«((Group)e).type»", environment);
+			if(«start» + size > length) length = «start» + size;«ENDREM»
+			}
+		«ELSE»«REM»
+			GroupMemberFactory.getInstance().save(
+			buffer, start + «start», «((Group)e).elementLength», 
+			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
+			«((Group)e).elementIdOffset», obj.«getter()»(), "«((Group)e).type»", environment);
+			if(«stop» + 1 > length) length = «stop» + 1;«ENDREM»
+		«ENDIF»
+	«ELSE»
+		«IF variableLength»
+		«ELSE»
+			if(«stop» + 1 > length) length = «stop» + 1;
+		«ENDIF»
+	«ENDIF»			
+	«IF optional»
+		}
+	«ENDIF»
+«ENDDEFINE»
+
+«DEFINE propertySaver FOR TYPE»
+«REM»mandatory may not be present in source «IF optional»«ENDREM»
+		if(obj.«getter()»() != null) {
+«REM»			«ENDIF»«ENDREM»
+	«IF metaType == Group»
+	«ELSE»
+		«IF variableLength»
+			«IF metaType == CHAR»
+			{
+			int size = Saver.save(buffer, start + «start», obj.«getter()»(), charset);
+			if(«start» + size > length) length = «start» + size;
+			}
+			«ELSE»
+			{
+			int size = Saver.save(buffer, start + «start», obj.«getter()»());
+			if(«start» + size > length) length = «start» + size;
+			}
+			«ENDIF»
+		«ELSE»
+			«IF metaType == CHAR»«IF eContainer.metaType == SF»
+				if(obj.«getter()»() != null) {
+				Saver.save(buffer, start + «start», start + «stop», obj.«getter()»(), Charset.forName("IBM500"));
+				}
+				«ELSE»
+				if(obj.«getter()»() != null) {
+				Saver.save(buffer, start + «start», start + «stop», obj.«getter()»(), charset);
+				}
+			«ENDIF»
+			«ELSEIF metaType == UNDF»
+			if(obj.«getter()»() != null) {
+			Saver.save(buffer, start + «start», start + «stop», obj.«getter()»());
+			}
+			«ELSEIF metaType == SBIN»
+			if(obj.«getter()»() != null) {
+			Saver.saveSigned(buffer, start + «start», start + «stop», obj.«getter()»());
+			}
+			«ELSE»
+			Saver.saveUnsigned(buffer, start + «start», start + «stop», obj.«getter()»());
+			«ENDIF»
+			if(«stop» + 1 > length) length = «stop» + 1;
+		«ENDIF»
+	«ENDIF»			
+		}«REM»moved out of optional if, cause see above «ENDREM»
 «ENDDEFINE»
 
 «DEFINE fixedGroup FOR TYPEContainer»

@@ -14,4 +14,7 @@ int sbin(int in, int size) :
 
 boolean isBegin(int id) :
 	JAVA org.afplib.generator.util.BeginHelper.isBegin(java.lang.Integer);
+
+String camelCase2Constant(String obj):
+	JAVA org.afplib.generator.util.CamelCase.camelCase2Constant(java.lang.String);
 	
