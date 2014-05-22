@@ -6,6 +6,27 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AFP Library</name>
 	<description>Java object library able to read and write AFP (Advanced Function Presentation) files.</description>
+	<url>https://github.com/yan74/afplib</url>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Yan Hackl-Feldbusch</name>
+			<email>yan@hcsystems.de</email>
+			<organization></organization>
+			<organizationUrl>https://github.com/yan74</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:git@github.com:yan74/afplib.git</connection>
+		<developerConnection>scm:git:git@github.com:yan74/afplib.git</developerConnection>
+		<url>git@github.com:yan74/afplib.git</url>
+	</scm>
+
 
 	<build>
 		<plugins>
@@ -52,4 +73,5 @@
 			<version>4.11</version>
 		</dependency>
 	</dependencies>
+
 </project>
