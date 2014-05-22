@@ -2,7 +2,7 @@
 <workflow>
 	<property name="model" value="org.afplib.generator/src/model.xmi" />
 	<property name="src-model" value="src/metamodel" />
-	<property name="src-gen" value="../org.afplib/src-gen" />
+	<property name="src-gen" value="../org.afplib/src/main/java" />
 	
 	<!-- set up EMF for standalone execution -->
 	<bean class="org.eclipse.emf.mwe.utils.StandaloneSetup" >
@@ -40,7 +40,7 @@
 	<component class="org.eclipse.xpand2.Generator">
 		<metaModel idRef="mm_emf"/>
 		<expand value="template::AfplibFactory::main FOR myModelSlot" />
-		<outlet path="../org.afplib/src" >
+		<outlet path="../org.afplib/src/main/java" >
 			<postprocessor class="org.eclipse.xpand2.output.JavaBeautifier" />
 		</outlet>
 	</component>
