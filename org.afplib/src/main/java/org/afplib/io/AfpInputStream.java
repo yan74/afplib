@@ -4,6 +4,7 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.afplib.Data;
 import org.afplib.base.SF;
 
 public class AfpInputStream extends FilterInputStream {
@@ -60,7 +61,23 @@ public class AfpInputStream extends FilterInputStream {
 		if(read < length)
 			throw new IOException("premature end of file.");
 		
-		return factory.sf(data, 0, length + 2);
+		return factory.sf(data, 0, getLength() + 2);
 	}
+	
+	private int getLength() {
+		int result = length;
+		
+		if((data[6] & 0x08) == 0x08) { // padding
+			int padding = 0;
+			if(data[data.length - 1] == 0) {
+				padding = Data.toUnsigned(data, data.length-3, data.length-2);
+			} else {
+				padding = Data.toUnsigned(data, data.length-1, data.length-1);
+			}
+			result -= padding;
+		}
+		return result;
+	}
+
 	
 }
