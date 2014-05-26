@@ -13,6 +13,8 @@ import org.afplib.io.AfpInputStream;
 
 public class CountPagesAndResources {
 
+	private static boolean progress = false;
+
 	public static void main(String[] args) {
 		
 		String[] files = new String[0];
@@ -37,7 +39,8 @@ public class CountPagesAndResources {
 		System.out.println("pages  res file");
 		
 		for(String s : files) {
-			System.out.print(String.format("            %s", s));
+			if(progress)
+				System.out.print(String.format("            %s", s));
 			try (AfpInputStream in = new AfpInputStream(
 					new BufferedInputStream(new FileInputStream(s)))) {
 
@@ -49,19 +52,25 @@ public class CountPagesAndResources {
 					switch(sf.getId()) {
 					case SFName.BPG_VALUE:
 						pages++;
-						System.out.print(String.format("\r%06d %04d %s", pages, resources, s));
+						if(progress && pages % 1000 == 0)
+							System.out.print(String.format("\r%06d %04d %s", pages, resources, s));
 						break;
 					case SFName.BRS_VALUE:
 						resources++;
-						System.out.print(String.format("\r%06d %04d %s", pages, resources, s));
+						if(progress && resources % 1000 == 0)
+							System.out.print(String.format("\r%06d %04d %s", pages, resources, s));
 						break;
 					}
 				}
 				
-				System.out.println(String.format("\r%06d %04d %s", pages, resources, s));
+				if(progress)
+					System.out.print("\r");
+				System.out.println(String.format("%06d %04d %s", pages, resources, s));
 				
-			} catch (IOException e) {
-				e.printStackTrace();
+			} catch (Exception e) {
+				if(progress)
+					System.out.print("\r");
+				System.out.println(String.format("000000 0000 %s:%s", s, e.getLocalizedMessage()));
 			}
 		}
 
