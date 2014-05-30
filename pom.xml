@@ -10,12 +10,5 @@
 		<module>org.afplib</module>
 		<module>org.afplib.samples</module>
 	</modules>
-	<distributionManagement>
-		<repository>
-			<id>file-repository</id>
-			<url>file:///var/www/repository</url>
-		</repository>
-	</distributionManagement>
-
 
 </project>
