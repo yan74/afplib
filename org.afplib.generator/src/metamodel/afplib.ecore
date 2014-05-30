@@ -9725,6 +9725,9 @@
 	
 
   
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageData" 
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+  
   </eClassifiers>
   
   <eClassifiers xsi:type="ecore:EClass" name="IPG" eSuperTypes="base.ecore#//SF">

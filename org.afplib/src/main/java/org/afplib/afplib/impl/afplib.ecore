@@ -1682,6 +1682,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="IPD" eSuperTypes="http://afplib.org/afplibbase#//SF">
     <eStructuralFeatures xsi:type="ecore:EReference" name="sdfs" upperBound="-1" eType="ecore:EClass http://afplib.org/afplibbase#//Triplet"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageData" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IPG" eSuperTypes="http://afplib.org/afplibbase#//SF">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="PgName" lowerBound="1"

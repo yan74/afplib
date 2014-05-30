@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
 
 import org.afplib.base.impl.SFImpl;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -18,6 +19,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IPDImpl#getSdfs <em>Sdfs</em>}</li>
+ *   <li>{@link org.afplib.afplib.impl.IPDImpl#getImageData <em>Image Data</em>}</li>
  * </ul>
  * </p>
  *
@@ -44,6 +47,25 @@ public class IPDImpl extends SFImpl implements IPD {
 	 * @ordered
 	 */
 	protected EList<Triplet> sdfs;
+
+	/**
+	 * The default value of the '{@link #getImageData() <em>Image Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImageData()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final byte[] IMAGE_DATA_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getImageData() <em>Image Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImageData()
+	 * @generated
+	 * @ordered
+	 */
+	protected byte[] imageData = IMAGE_DATA_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,6 +103,27 @@ public class IPDImpl extends SFImpl implements IPD {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public byte[] getImageData() {
+		return imageData;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setImageData(byte[] newImageData) {
+		byte[] oldImageData = imageData;
+		imageData = newImageData;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IPD__IMAGE_DATA, oldImageData, imageData));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -100,6 +143,8 @@ public class IPDImpl extends SFImpl implements IPD {
 		switch (featureID) {
 			case AfplibPackage.IPD__SDFS:
 				return getSdfs();
+			case AfplibPackage.IPD__IMAGE_DATA:
+				return getImageData();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -117,6 +162,9 @@ public class IPDImpl extends SFImpl implements IPD {
 				getSdfs().clear();
 				getSdfs().addAll((Collection<? extends Triplet>)newValue);
 				return;
+			case AfplibPackage.IPD__IMAGE_DATA:
+				setImageData((byte[])newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -132,6 +180,9 @@ public class IPDImpl extends SFImpl implements IPD {
 			case AfplibPackage.IPD__SDFS:
 				getSdfs().clear();
 				return;
+			case AfplibPackage.IPD__IMAGE_DATA:
+				setImageData(IMAGE_DATA_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -146,8 +197,26 @@ public class IPDImpl extends SFImpl implements IPD {
 		switch (featureID) {
 			case AfplibPackage.IPD__SDFS:
 				return sdfs != null && !sdfs.isEmpty();
+			case AfplibPackage.IPD__IMAGE_DATA:
+				return IMAGE_DATA_EDEFAULT == null ? imageData != null : !IMAGE_DATA_EDEFAULT.equals(imageData);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (imageData: ");
+		result.append(imageData);
+		result.append(')');
+		return result.toString();
 	}
 
 } //IPDImpl

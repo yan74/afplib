@@ -18,7 +18,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="«sf.name»" eSuperTypes="base.ecore#//SF">
   
   	  «EXPAND member FOR sf»
-  
+  «IF sf.name == "IPD"»
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageData" 
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
+  «ENDIF»
   </eClassifiers>
   «ENDFOREACH»
   

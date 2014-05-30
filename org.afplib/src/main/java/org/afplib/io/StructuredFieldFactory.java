@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
 
 class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
+	int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 
 	SF sf(byte[] buffer, int pos, int stop) {
@@ -3382,6 +3383,16 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			case 13889275 : {
 				IPD obj = AfplibFactory.eINSTANCE.createIPD();
 
+				if (missingImageData > 0) {
+					int imlength = Math.min(stop + 1 - (pos + 9),
+							missingImageData);
+					obj.setImageData(Arrays.copyOfRange(buffer, pos + 9, pos
+							+ 9 + imlength));
+					missingImageData -= imlength;
+					sf = obj;
+					break;
+				}
+
 				{
 					int sstop = pos + 32768;
 
@@ -4978,7 +4989,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			int length = buffer[pos] & 0xff;
 			int id = buffer[pos + 1] & 0xff;
 			int stop = pos + length - 1;
-			if (stop > bufstop || length == 0)
+			if (stop > bufstop)
 				break;
 
 			switch (id) {
@@ -7938,6 +7949,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 									sstop + 1));
 
 					}
+
+					int dataLength = stop + 1 - (pos + 4);
+					missingImageData = length - lengthAddition - dataLength;
 
 					triplets.add(obj);
 					break;

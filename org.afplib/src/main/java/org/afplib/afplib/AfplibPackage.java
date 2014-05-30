@@ -9480,13 +9480,22 @@ public interface AfplibPackage extends EPackage {
 	int IPD__SDFS = BasePackage.SF_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Image Data</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IPD__IMAGE_DATA = BasePackage.SF_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>IPD</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IPD_FEATURE_COUNT = BasePackage.SF_FEATURE_COUNT + 1;
+	int IPD_FEATURE_COUNT = BasePackage.SF_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.impl.IPGImpl <em>IPG</em>}' class.
@@ -39621,6 +39630,17 @@ public interface AfplibPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getIPD_Sdfs();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.afplib.afplib.IPD#getImageData <em>Image Data</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Image Data</em>'.
+	 * @see org.afplib.afplib.IPD#getImageData()
+	 * @see #getIPD()
+	 * @generated
+	 */
+	EAttribute getIPD_ImageData();
 
 	/**
 	 * Returns the meta object for class '{@link org.afplib.afplib.IPG <em>IPG</em>}'.

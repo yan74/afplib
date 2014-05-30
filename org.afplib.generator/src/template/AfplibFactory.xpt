@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.EObject;
 
 class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
+    int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 
 	SF sf(byte[] buffer, int pos, int stop) {
@@ -32,6 +33,15 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		case «sf.id»: {
 			«sf.name» obj = AfplibFactory.eINSTANCE.create«sf.name»();
 			«IF isBegin(sf.id)»charset = CodepageHelper.CHARSET_IBM500;«ENDIF»
+			«IF sf.name == "IPD"»
+				if(missingImageData > 0) {
+					int imlength = Math.min(stop + 1 - (pos + 9), missingImageData);
+					obj.setImageData(Arrays.copyOfRange(buffer, pos + 9, pos + 9 + imlength));
+					missingImageData -= imlength;
+					sf = obj;
+					break;
+				}
+			«ENDIF»
 			«FOREACH sf.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 			«FOREACH sf.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 			sf = obj;
@@ -74,7 +84,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		int lengthSize, lengthOffset, idSize, lengthAddition;
-		
+				
 		while(pos + 1 <= bufstop) {
 		
 			if(0xfe == Integer.valueOf(Data.toHex(buffer, pos, 1), 16)) {
@@ -104,6 +114,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
 				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				«IF t.name == "ImageData"»
+						int dataLength = stop + 1 - (pos + 4);
+						missingImageData = length - lengthAddition - dataLength;
+				«ENDIF»
 				triplets.add(obj);
 				break;
 			}

@@ -7131,6 +7131,15 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getIPD_ImageData() {
+        return (EAttribute)getIPD().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getIPG() {
 		if (ipgEClass == null) {
 			ipgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(282);
