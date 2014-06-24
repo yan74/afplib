@@ -4987,6 +4987,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		int pos = start;
 		while (pos + 1 <= bufstop) {
 			int length = buffer[pos] & 0xff;
+			if(length == 0) break;
 			int id = buffer[pos + 1] & 0xff;
 			int stop = pos + length - 1;
 			if (stop > bufstop)

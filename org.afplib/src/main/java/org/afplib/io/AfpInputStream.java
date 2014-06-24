@@ -13,6 +13,9 @@ public class AfpInputStream extends FilterInputStream {
 	byte[] data = new byte[32768];
 	int length;
 	
+	int number = 0;
+	long offset = 0;
+	
 	public AfpInputStream(InputStream in) {
 		super(in);
 	}
@@ -22,8 +25,10 @@ public class AfpInputStream extends FilterInputStream {
 		int buf;
 		int leadingLength = 0;
 		
+		long thisOffset = offset;
+
 		do {
-			buf = read();
+			buf = read(); offset++;
 			leadingLength++;
 		} while((buf & 0xff) != 0x5a && buf != -1 && leadingLength < 5);
 		
@@ -37,14 +42,14 @@ public class AfpInputStream extends FilterInputStream {
 			throw new IOException("cannot find 5a magic byte");
 		data[0] = (byte) (buf & 0xff);
 		
-		buf = read();
+		buf = read(); offset++;
 		if(buf == -1)
 			throw new IOException("premature end of file.");
 		data[1] = (byte) (buf & 0xff);
 
 		length = (byte) buf << 8;
 
-		buf = read();
+		buf = read(); offset++;
 		if(buf == -1)
 			throw new IOException("premature end of file.");
 		data[2] = (byte) (buf & 0xff);
@@ -57,11 +62,17 @@ public class AfpInputStream extends FilterInputStream {
 			throw new IOException("length of structured field is too large: "+length);
 				
 		int read = read(data, 3, length);
+		offset += read;
 		
 		if(read < length)
 			throw new IOException("premature end of file.");
 		
-		return factory.sf(data, 0, getLength() + 2);
+		SF sf = factory.sf(data, 0, getLength() + 2);
+		sf.setLength(length + 3);
+		sf.setOffset(thisOffset);
+		sf.setNumber(number++);
+		
+		return sf;
 	}
 	
 	private int getLength() {
