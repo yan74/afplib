@@ -87,8 +87,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.afplib</groupId>
-			<artifactId>org.afplib</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>afplib</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
