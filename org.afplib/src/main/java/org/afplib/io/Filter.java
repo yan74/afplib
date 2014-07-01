@@ -4,7 +4,7 @@ import org.afplib.base.SF;
 
 public interface Filter {
 
-	enum STATE { DROP, MODIFIED, UNTOUCHED }
+	enum STATE { DROP, MODIFIED, UNTOUCHED, STOP }
 	
 	STATE onStructuredField(SF sf);
 	

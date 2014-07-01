@@ -16,7 +16,8 @@ public class AfpFilter {
 	
 	public void filter(Filter filter) throws IOException {
 		SF sf;
-		while((sf = in.readStructuredField()) != null) {
+		boolean stop = false;
+		while(!stop && (sf = in.readStructuredField()) != null) {
 			switch(filter.onStructuredField(sf)) {
 			case DROP:
 				break;
@@ -25,6 +26,9 @@ public class AfpFilter {
 				break;
 			case UNTOUCHED:
 				out.write(in.data, 0, in.length + 3);
+				break;
+			case STOP:
+				stop = true;
 				break;
 			}
 		}
