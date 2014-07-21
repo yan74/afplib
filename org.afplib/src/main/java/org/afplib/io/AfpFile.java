@@ -1,7 +1,5 @@
 package org.afplib.io;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -65,10 +63,9 @@ public class AfpFile extends RandomAccessFile {
 	}
 	
 	public void writeStructuredField(SF sf) throws IOException {
-		throw new UnsupportedOperationException();
-//		try(AfpOutputStream afpout = new AfpOutputStream(new AfpOut(this))) {
-//			afpout.writeStructuredField(sf);
-//		}
+		try(AfpOutputStream afpout = new AfpOutputStream(new AfpOut(this))) {
+			afpout.writeStructuredField(sf);
+		}
 	}
 
 }
