@@ -4979,8 +4979,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			}
 			default :
 				sf = BaseFactory.eINSTANCE.createUNKNSF();
-				byte[] data = new byte[stop - pos + 1];
-				System.arraycopy(buffer, pos, data, 0, stop - pos + 1);
+				byte[] data = new byte[stop - pos + 1 + 2];
+				System.arraycopy(buffer, pos, data, 0, stop - pos + 1 + 2);
 				((UNKNSF) sf).setRawData(data);
 				break;
 		}
@@ -18673,6 +18673,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	public int binary(byte[] buffer, int start, SF sf) {
 		int length = 9;
+		if (sf instanceof UNKNSF) {
+			System.arraycopy(sf.getRawData(), 0, buffer, start,
+					sf.getRawData().length);
+			length = sf.getRawData().length - 2;
+			return length;
+		}
 		switch (sf.eClass().getClassifierID()) {
 
 			case AfplibPackage.BAG : {
@@ -25066,12 +25072,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				return length;
 			}
 
-			default : {
-				System.arraycopy(buffer, start, sf.getRawData(), 0,
-						sf.getRawData().length);
-				length = sf.getRawData().length;
-				return length;
-			}
+			default :
+				throw new IllegalArgumentException("unknown sf: " + sf);
 		}
 	}
 
