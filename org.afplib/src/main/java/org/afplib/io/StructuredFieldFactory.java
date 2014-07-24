@@ -8,6 +8,7 @@ import org.afplib.CodepageHelper;
 import org.afplib.Data;
 import org.afplib.base.BaseFactory;
 import org.afplib.base.SF;
+import org.afplib.base.UNKNSF;
 import org.afplib.base.Triplet;
 import org.afplib.afplib.*;
 import org.eclipse.emf.ecore.EClass;
@@ -4978,6 +4979,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			}
 			default :
 				sf = BaseFactory.eINSTANCE.createUNKNSF();
+				byte[] data = new byte[stop - pos + 1];
+				System.arraycopy(buffer, pos, data, 0, stop - pos + 1);
+				((UNKNSF) sf).setRawData(data);
+				break;
 		}
 		sf.setId(id);
 		return sf;
@@ -4987,7 +4992,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		int pos = start;
 		while (pos + 1 <= bufstop) {
 			int length = buffer[pos] & 0xff;
-			if(length == 0) break;
+			if (length == 0)
+				break;
 			int id = buffer[pos + 1] & 0xff;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
@@ -18712,6 +18718,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BBC : {
 				sf.setId(13871339);
 				BBC obj = (BBC) sf;
@@ -18755,6 +18762,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BCA : {
 				sf.setId(13871223);
 				BCA obj = (BCA) sf;
@@ -18794,6 +18802,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BCF : {
 				sf.setId(13871242);
 				BCF obj = (BCF) sf;
@@ -18820,6 +18829,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BCP : {
 				sf.setId(13871239);
 				BCP obj = (BCP) sf;
@@ -18863,6 +18873,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDA : {
 				sf.setId(13889259);
 				BDA obj = (BDA) sf;
@@ -18919,6 +18930,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDD : {
 				sf.setId(13870827);
 				BDD obj = (BDD) sf;
@@ -19137,6 +19149,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDG : {
 				sf.setId(13871300);
 				BDG obj = (BDG) sf;
@@ -19180,6 +19193,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDI : {
 				sf.setId(13871271);
 				BDI obj = (BDI) sf;
@@ -19223,6 +19237,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDM : {
 				sf.setId(13871306);
 				BDM obj = (BDM) sf;
@@ -19275,6 +19290,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDT : {
 				sf.setId(13871272);
 				BDT obj = (BDT) sf;
@@ -19327,6 +19343,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BDX : {
 				sf.setId(13871331);
 				BDX obj = (BDX) sf;
@@ -19349,6 +19366,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BFG : {
 				sf.setId(13871301);
 				BFG obj = (BFG) sf;
@@ -19375,6 +19393,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BFM : {
 				sf.setId(13871309);
 				BFM obj = (BFM) sf;
@@ -19418,6 +19437,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BFN : {
 				sf.setId(13871241);
 				BFN obj = (BFN) sf;
@@ -19461,6 +19481,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BGR : {
 				sf.setId(13871291);
 				BGR obj = (BGR) sf;
@@ -19504,6 +19525,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BII : {
 				sf.setId(13871227);
 				BII obj = (BII) sf;
@@ -19530,6 +19552,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BIM : {
 				sf.setId(13871355);
 				BIM obj = (BIM) sf;
@@ -19573,6 +19596,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BMM : {
 				sf.setId(13871308);
 				BMM obj = (BMM) sf;
@@ -19612,6 +19636,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BMO : {
 				sf.setId(13871327);
 				BMO obj = (BMO) sf;
@@ -19651,6 +19676,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BNG : {
 				sf.setId(13871277);
 				BNG obj = (BNG) sf;
@@ -19690,6 +19716,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BOC : {
 				sf.setId(13871250);
 				BOC obj = (BOC) sf;
@@ -19725,6 +19752,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BOG : {
 				sf.setId(13871303);
 				BOG obj = (BOG) sf;
@@ -19768,6 +19796,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BPF : {
 				sf.setId(13871269);
 				BPF obj = (BPF) sf;
@@ -19811,6 +19840,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BPG : {
 				sf.setId(13871279);
 				BPG obj = (BPG) sf;
@@ -19854,6 +19884,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BPM : {
 				sf.setId(13871307);
 				BPM obj = (BPM) sf;
@@ -19876,6 +19907,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BPS : {
 				sf.setId(13871199);
 				BPS obj = (BPS) sf;
@@ -19915,6 +19947,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BPT : {
 				sf.setId(13871259);
 				BPT obj = (BPT) sf;
@@ -19958,6 +19991,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BRG : {
 				sf.setId(13871302);
 				BRG obj = (BRG) sf;
@@ -20001,6 +20035,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BRS : {
 				sf.setId(13871310);
 				BRS obj = (BRS) sf;
@@ -20036,6 +20071,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.BSG : {
 				sf.setId(13871321);
 				BSG obj = (BSG) sf;
@@ -20079,6 +20115,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CAT : {
 				sf.setId(13873271);
 				CAT obj = (CAT) sf;
@@ -20100,6 +20137,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CDD : {
 				sf.setId(13870738);
 				CDD obj = (CDD) sf;
@@ -20201,6 +20239,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CFC : {
 				sf.setId(13870986);
 				CFC obj = (CFC) sf;
@@ -20250,6 +20289,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CFI : {
 				sf.setId(13864074);
 				CFI obj = (CFI) sf;
@@ -20269,6 +20309,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CPC : {
 				sf.setId(13870983);
 				CPC obj = (CPC) sf;
@@ -20355,6 +20396,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CPD : {
 				sf.setId(13870727);
 				CPD obj = (CPD) sf;
@@ -20445,6 +20487,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CPI : {
 				sf.setId(13864071);
 				CPI obj = (CPI) sf;
@@ -20463,6 +20506,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.CTC : {
 				sf.setId(13871003);
 				CTC obj = (CTC) sf;
@@ -20484,12 +20528,14 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.DXD : {
 				sf.setId(13870819);
 				DXD obj = (DXD) sf;
 
 				return length;
 			}
+
 			case AfplibPackage.EAG : {
 				sf.setId(13871561);
 				EAG obj = (EAG) sf;
@@ -20515,6 +20561,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EBC : {
 				sf.setId(13871595);
 				EBC obj = (EBC) sf;
@@ -20557,6 +20604,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ECA : {
 				sf.setId(13871479);
 				ECA obj = (ECA) sf;
@@ -20599,6 +20647,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ECF : {
 				sf.setId(13871498);
 				ECF obj = (ECF) sf;
@@ -20624,6 +20673,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ECP : {
 				sf.setId(13871495);
 				ECP obj = (ECP) sf;
@@ -20649,6 +20699,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EDG : {
 				sf.setId(13871556);
 				EDG obj = (EDG) sf;
@@ -20674,6 +20725,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EDI : {
 				sf.setId(13871527);
 				EDI obj = (EDI) sf;
@@ -20716,6 +20768,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EDM : {
 				sf.setId(13871562);
 				EDM obj = (EDM) sf;
@@ -20737,6 +20790,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EDT : {
 				sf.setId(13871528);
 				EDT obj = (EDT) sf;
@@ -20779,6 +20833,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EDX : {
 				sf.setId(13871587);
 				EDX obj = (EDX) sf;
@@ -20800,6 +20855,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EFG : {
 				sf.setId(13871557);
 				EFG obj = (EFG) sf;
@@ -20825,6 +20881,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EFM : {
 				sf.setId(13871565);
 				EFM obj = (EFM) sf;
@@ -20850,6 +20907,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EFN : {
 				sf.setId(13871497);
 				EFN obj = (EFN) sf;
@@ -20875,6 +20933,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EGR : {
 				sf.setId(13871547);
 				EGR obj = (EGR) sf;
@@ -20917,6 +20976,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EII : {
 				sf.setId(13871483);
 				EII obj = (EII) sf;
@@ -20942,6 +21002,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EIM : {
 				sf.setId(13871611);
 				EIM obj = (EIM) sf;
@@ -20984,6 +21045,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EMM : {
 				sf.setId(13871564);
 				EMM obj = (EMM) sf;
@@ -21009,6 +21071,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EMO : {
 				sf.setId(13871583);
 				EMO obj = (EMO) sf;
@@ -21051,6 +21114,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ENG : {
 				sf.setId(13871533);
 				ENG obj = (ENG) sf;
@@ -21093,6 +21157,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EOC : {
 				sf.setId(13871506);
 				EOC obj = (EOC) sf;
@@ -21135,6 +21200,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EOG : {
 				sf.setId(13871559);
 				EOG obj = (EOG) sf;
@@ -21160,6 +21226,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EPF : {
 				sf.setId(13871525);
 				EPF obj = (EPF) sf;
@@ -21202,6 +21269,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EPG : {
 				sf.setId(13871535);
 				EPG obj = (EPG) sf;
@@ -21244,6 +21312,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EPM : {
 				sf.setId(13871563);
 				EPM obj = (EPM) sf;
@@ -21265,6 +21334,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EPS : {
 				sf.setId(13871455);
 				EPS obj = (EPS) sf;
@@ -21290,6 +21360,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.EPT : {
 				sf.setId(13871515);
 				EPT obj = (EPT) sf;
@@ -21332,6 +21403,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ERG : {
 				sf.setId(13871558);
 				ERG obj = (ERG) sf;
@@ -21374,6 +21446,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ERS : {
 				sf.setId(13871566);
 				ERS obj = (ERS) sf;
@@ -21399,6 +21472,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ESG : {
 				sf.setId(13871577);
 				ESG obj = (ESG) sf;
@@ -21424,6 +21498,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNC : {
 				sf.setId(13870985);
 				FNC obj = (FNC) sf;
@@ -21808,6 +21883,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FND : {
 				sf.setId(13870729);
 				FND obj = (FND) sf;
@@ -22058,6 +22134,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNG : {
 				sf.setId(13889161);
 				FNG obj = (FNG) sf;
@@ -22079,6 +22156,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNI : {
 				sf.setId(13864073);
 				FNI obj = (FNI) sf;
@@ -22097,6 +22175,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNN : {
 				sf.setId(13872009);
 				FNN obj = (FNN) sf;
@@ -22157,6 +22236,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNM : {
 				sf.setId(13869705);
 				FNM obj = (FNM) sf;
@@ -22175,6 +22255,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNO : {
 				sf.setId(13872777);
 				FNO obj = (FNO) sf;
@@ -22193,6 +22274,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FNP : {
 				sf.setId(13872265);
 				FNP obj = (FNP) sf;
@@ -22211,6 +22293,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.GAD : {
 				sf.setId(13889211);
 				GAD obj = (GAD) sf;
@@ -22232,6 +22315,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.GDD : {
 				sf.setId(13870779);
 				GDD obj = (GDD) sf;
@@ -22265,6 +22349,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.ICP : {
 				sf.setId(13872251);
 				ICP obj = (ICP) sf;
@@ -22349,6 +22434,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IDD : {
 				sf.setId(13870843);
 				IDD obj = (IDD) sf;
@@ -22436,6 +22522,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IEL : {
 				sf.setId(13873831);
 				IEL obj = (IEL) sf;
@@ -22455,6 +22542,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IID : {
 				sf.setId(13870715);
 				IID obj = (IID) sf;
@@ -22623,6 +22711,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IMM : {
 				sf.setId(13872076);
 				IMM obj = (IMM) sf;
@@ -22661,6 +22750,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IOB : {
 				sf.setId(13873091);
 				IOB obj = (IOB) sf;
@@ -22807,6 +22897,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IOC : {
 				sf.setId(13870971);
 				IOC obj = (IOC) sf;
@@ -22921,6 +23012,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IPD : {
 				sf.setId(13889275);
 				IPD obj = (IPD) sf;
@@ -22954,6 +23046,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IPG : {
 				sf.setId(13873071);
 				IPG obj = (IPG) sf;
@@ -23001,6 +23094,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IPO : {
 				sf.setId(13873112);
 				IPO obj = (IPO) sf;
@@ -23086,6 +23180,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IPS : {
 				sf.setId(13872991);
 				IPS obj = (IPS) sf;
@@ -23154,6 +23249,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.IRD : {
 				sf.setId(13889147);
 				IRD obj = (IRD) sf;
@@ -23171,6 +23267,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.LLE : {
 				sf.setId(13874320);
 				LLE obj = (LLE) sf;
@@ -23209,6 +23306,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.LNC : {
 				sf.setId(13871847);
 				LNC obj = (LNC) sf;
@@ -23228,6 +23326,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.LND : {
 				sf.setId(13870823);
 				LND obj = (LND) sf;
@@ -23474,6 +23573,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MBC : {
 				sf.setId(13872107);
 				MBC obj = (MBC) sf;
@@ -23499,6 +23599,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MCA : {
 				sf.setId(13871991);
 				MCA obj = (MCA) sf;
@@ -23524,6 +23625,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MCC : {
 				sf.setId(13869704);
 				MCC obj = (MCC) sf;
@@ -23542,6 +23644,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MCD : {
 				sf.setId(13872018);
 				MCD obj = (MCD) sf;
@@ -23567,6 +23670,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MCF : {
 				sf.setId(13872010);
 				MCF obj = (MCF) sf;
@@ -23592,6 +23696,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MCF1 : {
 				sf.setId(13873546);
 				MCF1 obj = (MCF1) sf;
@@ -23630,6 +23735,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MDD : {
 				sf.setId(13870728);
 				MDD obj = (MDD) sf;
@@ -23744,6 +23850,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MDR : {
 				sf.setId(13872067);
 				MDR obj = (MDR) sf;
@@ -23769,6 +23876,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MFC : {
 				sf.setId(13869192);
 				MFC obj = (MFC) sf;
@@ -23831,6 +23939,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MGO : {
 				sf.setId(13872059);
 				MGO obj = (MGO) sf;
@@ -23856,6 +23965,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MIO : {
 				sf.setId(13872123);
 				MIO obj = (MIO) sf;
@@ -23881,6 +23991,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MMC : {
 				sf.setId(13870984);
 				MMC obj = (MMC) sf;
@@ -23929,6 +24040,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MMD : {
 				sf.setId(13872077);
 				MMD obj = (MMD) sf;
@@ -23954,6 +24066,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MMO : {
 				sf.setId(13873631);
 				MMO obj = (MMO) sf;
@@ -23985,6 +24098,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MMT : {
 				sf.setId(13872008);
 				MMT obj = (MMT) sf;
@@ -24010,6 +24124,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MPG : {
 				sf.setId(13872047);
 				MPG obj = (MPG) sf;
@@ -24035,6 +24150,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MPO : {
 				sf.setId(13872088);
 				MPO obj = (MPO) sf;
@@ -24060,6 +24176,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MPS : {
 				sf.setId(13873503);
 				MPS obj = (MPS) sf;
@@ -24115,6 +24232,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.MSU : {
 				sf.setId(13872106);
 				MSU obj = (MSU) sf;
@@ -24133,6 +24251,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.NOP : {
 				sf.setId(13889262);
 				NOP obj = (NOP) sf;
@@ -24154,6 +24273,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.OBD : {
 				sf.setId(13870699);
 				OBD obj = (OBD) sf;
@@ -24173,6 +24293,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.OBP : {
 				sf.setId(13872235);
 				OBP obj = (OBP) sf;
@@ -24330,6 +24451,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.OCD : {
 				sf.setId(13889170);
 				OCD obj = (OCD) sf;
@@ -24351,6 +24473,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PEC : {
 				sf.setId(13871016);
 				PEC obj = (PEC) sf;
@@ -24374,6 +24497,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PFC : {
 				sf.setId(13873800);
 				PFC obj = (PFC) sf;
@@ -24410,6 +24534,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PGD : {
 				sf.setId(13870767);
 				PGD obj = (PGD) sf;
@@ -24524,6 +24649,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PGP : {
 				sf.setId(13873583);
 				PGP obj = (PGP) sf;
@@ -24562,6 +24688,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PGP1 : {
 				sf.setId(13872303);
 				PGP1 obj = (PGP1) sf;
@@ -24594,6 +24721,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PMC : {
 				sf.setId(13871023);
 				PMC obj = (PMC) sf;
@@ -24630,6 +24758,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PPO : {
 				sf.setId(13872579);
 				PPO obj = (PPO) sf;
@@ -24655,6 +24784,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PTD : {
 				sf.setId(13873563);
 				PTD obj = (PTD) sf;
@@ -24772,6 +24902,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PTD1 : {
 				sf.setId(13870747);
 				PTD1 obj = (PTD1) sf;
@@ -24873,6 +25004,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.PTX : {
 				sf.setId(13889179);
 				PTX obj = (PTX) sf;
@@ -24891,6 +25023,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.TLE : {
 				sf.setId(13869200);
 				TLE obj = (TLE) sf;
@@ -24910,6 +25043,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
+
 			case AfplibPackage.FGD : {
 				sf.setId(13870789);
 				FGD obj = (FGD) sf;
@@ -24931,9 +25065,13 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				return length;
 			}
-			default :
-				throw new IllegalArgumentException("unknown structured field: "
-						+ sf);
+
+			default : {
+				System.arraycopy(buffer, start, sf.getRawData(), 0,
+						sf.getRawData().length);
+				length = sf.getRawData().length;
+				return length;
+			}
 		}
 	}
 

@@ -15,6 +15,7 @@ import org.afplib.CodepageHelper;
 import org.afplib.Data;
 import org.afplib.base.BaseFactory;
 import org.afplib.base.SF;
+import org.afplib.base.UNKNSF;
 import org.afplib.base.Triplet;
 import org.afplib.afplib.*;
 import org.eclipse.emf.ecore.EClass;
@@ -47,7 +48,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			sf = obj;
 			break;
 		}«ENDFOREACH»
-		default: sf = BaseFactory.eINSTANCE.createUNKNSF();
+		default: 
+				sf = BaseFactory.eINSTANCE.createUNKNSF(); 
+				byte[] data = new byte[stop - pos + 1];
+				System.arraycopy(buffer, pos, data, 0, stop - pos + 1);
+				((UNKNSF)sf).setRawData(data);
+				break;
 		}
 		sf.setId(id);
 		return sf;
@@ -306,8 +312,13 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«REM»«ENDIF»«ENDREM»
 
 			return length;
-		}«ENDFOREACH»
-		default: throw new IllegalArgumentException("unknown structured field: "+sf);
+		}
+		«ENDFOREACH»
+		default: {
+			System.arraycopy(buffer, start, sf.getRawData(), 0, sf.getRawData().length);
+			length = sf.getRawData().length;
+			return length;
+		}
 		}
 	}
 	
