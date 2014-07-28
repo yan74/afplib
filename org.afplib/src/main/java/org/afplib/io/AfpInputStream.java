@@ -75,6 +75,16 @@ public class AfpInputStream extends FilterInputStream {
 		return sf;
 	}
 	
+	public long getCurrentOffset() {
+		return offset;
+	}
+	
+	public byte[] getLastReadBuffer() {
+		byte[] result = new byte[length + 3];
+		System.arraycopy(data, 0, result, 0, length + 3);
+		return result;
+	}
+	
 	private int getLength() {
 		int result = length;
 		
