@@ -361,7 +361,14 @@ public class AfpCombine {
 				Iterator<SF> it = map.sfs.iterator();
 				BMM bmm = (BMM) it.next();
 				if(files[i].renameIMM.containsKey(mmName)) {
-					bmm.setMMName(files[i].renameIMM.get(mmName));
+					String newName = files[i].renameIMM.get(mmName);
+
+					if(mmsWritten.contains(newName)) {
+						log.debug("not writing resource {} as {} again", mmName, newName);
+						continue;
+					}
+
+					bmm.setMMName(newName);
 					log.debug("writing medium map {} as {} from {}", mmName, bmm.getMMName(), files[i].file.getName());				
 				} else if(mmsWritten.contains(mmName)) {
 					log.debug("not writing medium map {} again", mmName);
@@ -462,8 +469,13 @@ public class AfpCombine {
 						
 						if(files[i].renamings.containsKey(key)) {
 							String newName = files[i].renamings.get(key);
+							ResourceKey newkey = new ResourceKey(key.getType(), newName, key.getObjId());
+							if(resourcesWritten.contains(newkey)) {
+								log.debug("not writing resource {} as {} again", key.getName(), newName);
+								continue;
+							}
 							renameBRSERS(brs, newName);
-							resourcesWritten.add(new ResourceKey(key.getType(), newName, key.getObjId()));
+							resourcesWritten.add(newkey);
 							log.debug("writing resource {} as {} from {}", key.getName(), newName, files[i].file.getName());
 						} else if(resourcesWritten.contains(key)) {
 							log.debug("not writing resource {} again", key.getName());
