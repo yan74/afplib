@@ -331,8 +331,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	«IF optional»
 		if(obj.«getter()»() != null«IF metaType == Group» && obj.«getter()»().size() > 0«ENDIF») {
 	«ENDIF»
-	«IF metaType == Group»
-		«IF variableLength»
+	«IF metaType == Group»«REM» not sure about this
+		«IF variableLength»«ENDREM»
 			{
 			«IF ((Group)this).type.toString() == "Triplet"»
 			int size = binary_triplets(buffer, start + «start», obj.«getter()»());
@@ -360,14 +360,14 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
 			«((Group)e).elementIdOffset», obj.«getter()»(), "«((Group)e).type»", environment);
 			if(«start» + size > length) length = «start» + size;«ENDREM»
-			}
-		«ELSE»«REM»
+			}«REM»
+		«ELSE»
 			GroupMemberFactory.getInstance().save(
 			buffer, start + «start», «((Group)e).elementLength», 
 			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
 			«((Group)e).elementIdOffset», obj.«getter()»(), "«((Group)e).type»", environment);
-			if(«stop» + 1 > length) length = «stop» + 1;«ENDREM»
-		«ENDIF»
+			if(«stop» + 1 > length) length = «stop» + 1;
+		«ENDIF»«ENDREM»
 	«ELSE»
 		«IF variableLength»
 		«ELSE»

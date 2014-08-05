@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.afplib.afplib.AfplibFactory;
+import org.afplib.afplib.AfplibPackage;
 import org.afplib.afplib.BAG;
 import org.afplib.afplib.BMO;
 import org.afplib.afplib.BRG;
@@ -17,11 +18,15 @@ import org.afplib.afplib.CharacterRotation;
 import org.afplib.afplib.FullyQualifiedName;
 import org.afplib.afplib.FullyQualifiedNameFQNFormat;
 import org.afplib.afplib.FullyQualifiedNameFQNType;
+import org.afplib.afplib.MCD;
+import org.afplib.afplib.MCDRG;
 import org.afplib.afplib.MCF;
 import org.afplib.afplib.MCFRG;
 import org.afplib.afplib.MPS;
 import org.afplib.afplib.MPSRG;
 import org.afplib.afplib.MPSRGLength;
+import org.afplib.afplib.MappingOption;
+import org.afplib.afplib.MappingOptionMapValue;
 import org.afplib.afplib.ResourceLocalIdentifier;
 import org.afplib.afplib.ResourceLocalIdentifierResType;
 import org.afplib.afplib.ResourceSectionNumber;
@@ -180,5 +185,29 @@ public class RepeatingGroupTest {
 		}
 
 	}
+	
+	@Test
+	public void testMCDRGSaveWithKindaFixedLength() throws IOException {
+		MCD mcd = new AfpBuilder()
+			.withMember(new AfpBuilder()
+				.withMember(new AfpBuilder()
+					.with(AfplibPackage.MAPPING_OPTION__MAP_VALUE, MappingOptionMapValue.CONST_POSITIONANDTRIM_VALUE)
+				.create(MappingOption.class))
+			.create(MCDRG.class))
+		.create(MCD.class);
+		
+		File ftmp = File.createTempFile("tmp", ".afp");
+		ftmp.deleteOnExit();
+		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
+			afpout.writeStructuredField(mcd);
+		}
+		
+		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
+			mcd = (MCD) afpin.readStructuredField();
+			
+			assertEquals(5, mcd.getRG().get(0).getRGLength().intValue());
+		}
+	}
+
 
 }

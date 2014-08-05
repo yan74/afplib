@@ -10386,6 +10386,14 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		if (1 + 1 > length)
 			length = 1 + 1;
 
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
+
 		obj.setRGLength(length);
 
 		if (obj.getRGLength() != null) {
@@ -10498,6 +10506,14 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 		if (1 + 1 > length)
 			length = 1 + 1;
+
+		{
+
+			int size = binary_triplets(buffer, start + 2, obj.getTriplets());
+			if (2 + size > length)
+				length = 2 + size;
+
+		}
 
 		obj.setRGLength(length);
 
