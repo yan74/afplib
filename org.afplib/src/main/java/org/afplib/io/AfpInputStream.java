@@ -20,6 +20,13 @@ public class AfpInputStream extends FilterInputStream {
 		super(in);
 	}
 
+	/**
+	 * Reads a new structured field from the input stream.
+	 * This method is not thread-safe!
+	 * 
+	 * @return structured field or null if end of input.
+	 * @throws IOException
+	 */
 	public SF readStructuredField() throws IOException {
 		
 		int buf;
@@ -75,10 +82,21 @@ public class AfpInputStream extends FilterInputStream {
 		return sf;
 	}
 	
+	/**
+	 * current position in the input stream
+	 * 
+	 * @return position
+	 */
 	public long getCurrentOffset() {
 		return offset;
 	}
 	
+	/**
+	 * returns a copy of the last read buffer that
+	 * contained the previous structured field.
+	 * 
+	 * @return copy of internal buffer
+	 */
 	public byte[] getLastReadBuffer() {
 		byte[] result = new byte[length + 3];
 		System.arraycopy(data, 0, result, 0, length + 3);
