@@ -10,12 +10,18 @@ import java.util.LinkedList;
 import org.afplib.afplib.SFName;
 import org.afplib.base.SF;
 import org.afplib.io.AfpInputStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class CountPagesAndResources {
+
+	private static final Logger log = LoggerFactory.getLogger(CountPagesAndResources.class);
 
 	private static boolean progress = false;
 
 	public static void main(String[] args) {
+		
+		log.info("starting...");
 		
 		String[] files = new String[0];
 		LinkedList<String> f = new LinkedList<String>();
@@ -49,6 +55,8 @@ public class CountPagesAndResources {
 
 				SF sf;
 				while((sf = in.readStructuredField()) != null) {
+					log.trace("{}", sf);
+
 					switch(sf.getId()) {
 					case SFName.BPG_VALUE:
 						pages++;
@@ -74,6 +82,7 @@ public class CountPagesAndResources {
 			}
 		}
 
+		log.info("done...");
 	}
 
 }
