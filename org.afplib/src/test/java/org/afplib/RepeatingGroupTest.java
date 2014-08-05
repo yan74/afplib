@@ -179,8 +179,9 @@ public class RepeatingGroupTest {
 			
 			assertEquals(MPSRGLength.CONST_LENGTH12_VALUE, mps.getRGLength().intValue());
 			
-			assertEquals(1, mps.getFixedLengthRG().size());
+			assertEquals(2, mps.getFixedLengthRG().size());
 			assertEquals("S1EX002A", mps.getFixedLengthRG().get(0).getPsegName());
+			assertEquals("S1EX002B", mps.getFixedLengthRG().get(1).getPsegName());
  
 		}
 

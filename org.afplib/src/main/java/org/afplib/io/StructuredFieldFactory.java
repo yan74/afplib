@@ -4291,8 +4291,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 					{
 
+						int length = Data.toUnsigned(buffer, pos + 13 + -4, pos
+								+ 13 + -4 - 1 + 1);
 						MPSRG(obj.getFixedLengthRG(), buffer, pos + 13, sstop,
-								-4, 1);
+								length);
 
 					}
 
@@ -9170,14 +9172,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	}
 
 	void MPSRG(List<MPSRG> objs, byte[] buffer, int start, int bufstop,
-			int lengthOffset, int lengthSize) {
+			int length) {
 		int pos = start;
-		while (pos <= bufstop) {
-			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
-					+ lengthOffset - 1 + lengthSize);
+		while (pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
-			if (stop > bufstop)
-				break;
 			objs.add(_MPSRG(buffer, pos, stop));
 			pos += length;
 		}
