@@ -3,7 +3,7 @@
 
 	<groupId>org.afplib</groupId>
 	<artifactId>afplib-all</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.6</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>org.afplib</module>

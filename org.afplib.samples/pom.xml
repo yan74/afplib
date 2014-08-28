@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.afplib</groupId>
 	<artifactId>samples</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.6</version>
 	<name>AFP Library Samples</name>
 	<description>Samples using the object library able to read and write AFP (Advanced Function Presentation) files.</description>
 	<url>https://github.com/yan74/afplib</url>
@@ -45,6 +45,19 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<descriptorRefs>
@@ -70,6 +83,9 @@
 						<goals>
 							<goal>jar</goal>
 						</goals>
+						<configuration>
+							<additionalparam>-Xdoclint:none</additionalparam>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -90,11 +106,12 @@
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6</version>
+				<version>1.6.2</version>
 				<extensions>true</extensions>
 				<configuration>
 					<serverId>ossrh</serverId>
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -104,7 +121,7 @@
 		<dependency>
 			<groupId>org.afplib</groupId>
 			<artifactId>afplib</artifactId>
-			<version>0.0.4-SNAPSHOT</version>
+			<version>0.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
