@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.afplib</groupId>
 	<artifactId>afplib</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>AFP Library</name>
 	<description>Java object library able to read and write AFP (Advanced Function Presentation) files.</description>
 	<url>https://github.com/yan74/afplib</url>
@@ -17,7 +16,7 @@
 		<developer>
 			<name>Yan Hackl-Feldbusch</name>
 			<email>yan@hcsystems.de</email>
-			<organization></organization>
+			<organization />
 			<organizationUrl>https://github.com/yan74</organizationUrl>
 		</developer>
 	</developers>
@@ -25,7 +24,8 @@
 		<connection>scm:git:git@github.com:yan74/afplib.git</connection>
 		<developerConnection>scm:git:git@github.com:yan74/afplib.git</developerConnection>
 		<url>git@github.com:yan74/afplib.git</url>
-	</scm>
+	  <tag>HEAD</tag>
+  </scm>
 
 	<distributionManagement>
 		<snapshotRepository>

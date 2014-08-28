@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.afplib</groupId>
 	<artifactId>afplib-all</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>org.afplib</module>
@@ -23,7 +24,7 @@
 		<developer>
 			<name>Yan Hackl-Feldbusch</name>
 			<email>yan@hcsystems.de</email>
-			<organization />
+			<organization></organization>
 			<organizationUrl>https://github.com/yan74</organizationUrl>
 		</developer>
 	</developers>
@@ -31,8 +32,7 @@
 		<connection>scm:git:git@github.com:yan74/afplib.git</connection>
 		<developerConnection>scm:git:git@github.com:yan74/afplib.git</developerConnection>
 		<url>git@github.com:yan74/afplib.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+	</scm>
 
 	<distributionManagement>
 		<snapshotRepository>
