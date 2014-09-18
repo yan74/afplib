@@ -21,6 +21,11 @@ public class AfpInputStream extends FilterInputStream {
 		super(in);
 	}
 
+	public AfpInputStream(InputStream in, int leadingBytesToIgnorePerSF) {
+		super(in);
+		leadingLengthBytes = leadingBytesToIgnorePerSF;
+	}
+
 	/**
 	 * Reads a new structured field from the input stream.
 	 * This method is not thread-safe!
@@ -49,7 +54,7 @@ public class AfpInputStream extends FilterInputStream {
 //				throw new IOException("found trailing garbage at the end of file.");
 		} else {
 			if(leadingLengthBytes > 0) read(data, 0, leadingLengthBytes); // just throw away those
-			buf = read();
+			buf = read(); offset++;
 		}
 		
 		if(buf == -1)
@@ -128,5 +133,8 @@ public class AfpInputStream extends FilterInputStream {
 		return result;
 	}
 
+	public int getLeadingLengthBytes() {
+		return leadingLengthBytes;
+	}
 	
 }
