@@ -274,7 +274,7 @@
   <eClassifiers xsi:type="ecore:EEnum" name="MFCMedColl">
     <eLiterals name="ConstNosheetcollection" literal="ConstNosheetcollection"/>
     <eLiterals name="ConstBeginsheetcollection" value="1" literal="ConstBeginsheetcollection"/>
-    <eLiterals name="ConstContinuesheetcollection" literal="ConstContinuesheetcollection"/>
+    <eLiterals name="ConstContinuesheetcollection" value="2" literal="ConstContinuesheetcollection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MFCMFCScpe">
     <eLiterals name="ConstPrintLevel" value="1" literal="ConstPrintLevel"/>

@@ -3413,7 +3413,7 @@
       <validValues
           xsi:type="afplib:IntEnum"
           name="Continue sheet collection"
-          intValue="0"/>
+          intValue="2"/>
     </elements>
     <elements
         xsi:type="afplib:CODE"

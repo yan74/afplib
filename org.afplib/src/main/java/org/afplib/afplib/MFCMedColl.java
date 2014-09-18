@@ -46,7 +46,7 @@ public enum MFCMedColl implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CONST_CONTINUESHEETCOLLECTION(0, "ConstContinuesheetcollection", "ConstContinuesheetcollection");
+	CONST_CONTINUESHEETCOLLECTION(2, "ConstContinuesheetcollection", "ConstContinuesheetcollection");
 
 	/**
 	 * The '<em><b>Const Nosheetcollection</b></em>' literal value.
@@ -91,7 +91,7 @@ public enum MFCMedColl implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CONST_CONTINUESHEETCOLLECTION_VALUE = 0;
+	public static final int CONST_CONTINUESHEETCOLLECTION_VALUE = 2;
 
 	/**
 	 * An array of all the '<em><b>MFC Med Coll</b></em>' enumerators.
@@ -156,6 +156,7 @@ public enum MFCMedColl implements Enumerator {
 		switch (value) {
 			case CONST_NOSHEETCOLLECTION_VALUE: return CONST_NOSHEETCOLLECTION;
 			case CONST_BEGINSHEETCOLLECTION_VALUE: return CONST_BEGINSHEETCOLLECTION;
+			case CONST_CONTINUESHEETCOLLECTION_VALUE: return CONST_CONTINUESHEETCOLLECTION;
 		}
 		return null;
 	}

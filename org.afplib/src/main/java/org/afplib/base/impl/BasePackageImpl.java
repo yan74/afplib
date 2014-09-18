@@ -542,7 +542,7 @@ public class BasePackageImpl extends EPackageImpl implements BasePackage {
 	 * @generated
 	 */
 	protected void createExtendedMetaDataAnnotations() {
-		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";		
+		String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
 		addAnnotation
 		  (modcaString4EDataType, 
 		   source, 
@@ -551,7 +551,7 @@ public class BasePackageImpl extends EPackageImpl implements BasePackage {
 			 "baseType", "java.lang.String",
 			 "minLength", "4",
 			 "maxLength", "4"
-		   });		
+		   });	
 		addAnnotation
 		  (modcaString8EDataType, 
 		   source, 
@@ -560,7 +560,7 @@ public class BasePackageImpl extends EPackageImpl implements BasePackage {
 			 "baseType", "java.lang.String",
 			 "minLength", "8",
 			 "maxLength", "8"
-		   });		
+		   });	
 		addAnnotation
 		  (modcaString32EDataType, 
 		   source, 
