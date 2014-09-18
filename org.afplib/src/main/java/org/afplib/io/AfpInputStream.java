@@ -15,6 +15,7 @@ public class AfpInputStream extends FilterInputStream {
 	
 	int number = 0;
 	long offset = 0;
+	int leadingLengthBytes = -1;
 	
 	public AfpInputStream(InputStream in) {
 		super(in);
@@ -30,17 +31,26 @@ public class AfpInputStream extends FilterInputStream {
 	public SF readStructuredField() throws IOException {
 		
 		int buf;
-		int leadingLength = 0;
 		
 		long thisOffset = offset;
 
-		do {
-			buf = read(); offset++;
-			leadingLength++;
-		} while((buf & 0xff) != 0x5a && buf != -1 && leadingLength < 5);
-		
-		if(buf == -1 && leadingLength > 1)
-			throw new IOException("found trailing garbage at the end of file.");
+		if(leadingLengthBytes == -1) {
+			// we haven't tested for mvs download leading length bytes
+			// we don't need them and don't want to see them
+			int leadingLength = 0;
+			do {
+				buf = read(); offset++;
+				leadingLength++;
+			} while((buf & 0xff) != 0x5a && buf != -1 && leadingLength < 5);
+			
+			leadingLengthBytes = leadingLength-1;
+			
+//			if(buf == -1 && leadingLength > 1)
+//				throw new IOException("found trailing garbage at the end of file.");
+		} else {
+			if(leadingLengthBytes > 0) read(data, 0, leadingLengthBytes); // just throw away those
+			buf = read();
+		}
 		
 		if(buf == -1)
 			return null;
