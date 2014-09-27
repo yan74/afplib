@@ -73,6 +73,7 @@ import org.afplib.io.AfpInputStream;
 import org.afplib.io.AfpOutputStream;
 import org.afplib.io.Filter;
 import org.afplib.io.Filter.STATE;
+import org.apache.commons.lang3.StringUtils;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.slf4j.Logger;
@@ -120,7 +121,7 @@ public class AfpCombine {
 			else f.add(args[i]);
 		}
 		
-		log.debug("in: {}", String.join(":", f));
+		log.debug("in: {}", StringUtils.join(f, ':'));
 		log.debug("out: {}", out);
 		
 		try {
