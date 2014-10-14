@@ -79,6 +79,16 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				«IF t.name == "CGCSGID"»
 				charset = CodepageHelper.getCharset(obj.getCPGID(), obj.getGCSGID());
 				«ENDIF»
+				«IF t.name == "FullyQualifiedName"»
+				if(obj.getFQNType() == FullyQualifiedNameFQNType.CONST_DATA_OBJECT_INTERNAL_RESOURCE_REFERENCE_VALUE) {
+
+					if(stop >= pos + 4) {
+						Integer lid = Data.toUnsigned(buffer, pos + 4, pos + 4);
+						obj.setFQName(lid.toString());
+					}
+					
+				}
+				«ENDIF»
 				break;
 			}
 			«ENDIF»
@@ -343,7 +353,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«ELSEIF ((Group)this).type.toString() == "Fixed"»
 			int size = binary_«((TYPEContainer)eContainer).name»RG(buffer, start + «start», obj.«getter()»());
 			if(«start» + size > length) length = «start» + size;
-			«IF ((Group)this).lengthSize != -1»
+			«IF ((TYPEContainer)eContainer).metaType == "GroupMember" && ((GroupMember)eContainer).lengthAttribute.length > 0»
 			if(obj.«getter()»().size()>0)
 			Saver.saveUnsigned(buffer, start + «start» + «((Group)this).elementLengthOffset», start + «start» + «((Group)this).elementLengthOffset» + «((Group)this).lengthSize» - 1, size / obj.«getter()»().size());
 			else
@@ -387,10 +397,21 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	«ELSE»
 		«IF variableLength»
 			«IF metaType == CHAR»
+				«IF name == "FQName"»
+				if(obj.getFQNType() == FullyQualifiedNameFQNType.CONST_DATA_OBJECT_INTERNAL_RESOURCE_REFERENCE_VALUE) {
+					int lid = Integer.parseInt(obj.getFQName());
+					Saver.saveUnsigned(buffer, start + «start», start + «start», lid);
+					length = «start» + 1;
+				} else {
+					int size = Saver.save(buffer, start + «start», obj.«getter()»(), charset);
+					if(«start» + size > length) length = «start» + size;
+				}
+				«ELSE»
 			{
 			int size = Saver.save(buffer, start + «start», obj.«getter()»(), charset);
 			if(«start» + size > length) length = «start» + size;
 			}
+				«ENDIF»
 			«ELSE»
 			{
 			int size = Saver.save(buffer, start + «start», obj.«getter()»());
@@ -402,7 +423,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				if(obj.«getter()»() != null) {
 				Saver.save(buffer, start + «start», start + «stop», obj.«getter()»(), Charset.forName("IBM500"));
 				}
-				«ELSE»
+			«ELSE»
 				if(obj.«getter()»() != null) {
 				Saver.save(buffer, start + «start», start + «stop», obj.«getter()»(), charset);
 				}
@@ -440,6 +461,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		int pos = start;
 		while(pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos+lengthOffset, pos+lengthOffset-1+lengthSize);
+			if(length == 0) break;
 			int stop = pos + length - 1;
 			if(stop > bufstop) break;
 			objs.add(_«name»RG(buffer, pos, stop));

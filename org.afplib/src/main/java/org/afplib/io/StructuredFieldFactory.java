@@ -5453,6 +5453,16 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 					triplets.add(obj);
 
+					if (obj.getFQNType() == FullyQualifiedNameFQNType.CONST_DATA_OBJECT_INTERNAL_RESOURCE_REFERENCE_VALUE) {
+
+						if (stop >= pos + 4) {
+							Integer lid = Data.toUnsigned(buffer, pos + 4,
+									pos + 4);
+							obj.setFQName(lid.toString());
+						}
+
+					}
+
 					break;
 				}
 
@@ -8793,6 +8803,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -8818,6 +8830,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -8843,6 +8857,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -8889,6 +8905,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -8914,6 +8932,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -8960,6 +8980,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -8985,6 +9007,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9010,6 +9034,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9056,6 +9082,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9102,6 +9130,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9127,6 +9157,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9152,6 +9184,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9219,6 +9253,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -9244,6 +9280,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		while (pos <= bufstop) {
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos
 					+ lengthOffset - 1 + lengthSize);
+			if (length == 0)
+				break;
 			int stop = pos + length - 1;
 			if (stop > bufstop)
 				break;
@@ -13911,7 +13949,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 					if (obj.getFQName() != null) {
 
-						{
+						if (obj.getFQNType() == FullyQualifiedNameFQNType.CONST_DATA_OBJECT_INTERNAL_RESOURCE_REFERENCE_VALUE) {
+							int lid = Integer.parseInt(obj.getFQName());
+							Saver.saveUnsigned(buffer, start + 4, start + 4,
+									lid);
+							length = 4 + 1;
+						} else {
 							int size = Saver.save(buffer, start + 4,
 									obj.getFQName(), charset);
 							if (4 + size > length)
@@ -23301,13 +23344,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (11 + size > length)
 						length = 11 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 11 + 0, start + 11
-								+ 0 + 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 11 + 0, start + 11
-								+ 0 + 2 - 1, 0);
-
 				}
 
 				if (obj.getLnkType() != null) {
@@ -23604,13 +23640,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -23629,13 +23658,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					int size = binary_MCARG(buffer, start + 9, obj.getRG());
 					if (9 + size > length)
 						length = 9 + size;
-
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
 
 				}
 
@@ -23675,13 +23697,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -23700,13 +23715,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					int size = binary_MCFRG(buffer, start + 9, obj.getRG());
 					if (9 + size > length)
 						length = 9 + size;
-
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
 
 				}
 
@@ -23729,13 +23737,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					int size = binary_MCF1RG(buffer, start + 13, obj.getRG());
 					if (13 + size > length)
 						length = 13 + size;
-
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
-								+ -4 + 1 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
-								+ -4 + 1 - 1, 0);
 
 				}
 
@@ -23881,13 +23882,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -23970,13 +23964,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -23995,13 +23982,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					int size = binary_MIORG(buffer, start + 9, obj.getRG());
 					if (9 + size > length)
 						length = 9 + size;
-
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
 
 				}
 
@@ -24071,13 +24051,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -24129,13 +24102,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -24155,13 +24121,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (9 + size > length)
 						length = 9 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
-
 				}
 
 				if (obj.getRG() != null) {
@@ -24180,13 +24139,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					int size = binary_MPORG(buffer, start + 9, obj.getRG());
 					if (9 + size > length)
 						length = 9 + size;
-
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
 
 				}
 
@@ -24213,14 +24165,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 							obj.getFixedLengthRG());
 					if (13 + size > length)
 						length = 13 + size;
-
-					if (obj.getFixedLengthRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
-								+ -4 + 1 - 1, size
-								/ obj.getFixedLengthRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 13 + -4, start + 13
-								+ -4 + 1 - 1, 0);
 
 				}
 
@@ -24683,13 +24627,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (10 + size > length)
 						length = 10 + size;
 
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 10 + 0, start + 10
-								+ 0 + 1 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 10 + 0, start + 10
-								+ 0 + 1 - 1, 0);
-
 				}
 
 				if (obj.getConstant() != null) {
@@ -24788,13 +24725,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					int size = binary_PPORG(buffer, start + 9, obj.getRG());
 					if (9 + size > length)
 						length = 9 + size;
-
-					if (obj.getRG().size() > 0)
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, size / obj.getRG().size());
-					else
-						Saver.saveUnsigned(buffer, start + 9 + 0, start + 9 + 0
-								+ 2 - 1, 0);
 
 				}
 
