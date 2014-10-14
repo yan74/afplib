@@ -10,6 +10,7 @@ package org.afplib.io;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 import org.afplib.CodepageHelper;
 import org.afplib.Data;
@@ -25,6 +26,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
     int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
+	Stack<Charset> charsets = new Stack<>();
 
 	SF sf(byte[] buffer, int pos, int stop) {
 		int id = Data.toUnsigned(buffer, pos+3, pos+5);
@@ -33,7 +35,16 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		«FOREACH structuredFields AS sf»
 		case «sf.id»: {
 			«sf.name» obj = AfplibFactory.eINSTANCE.create«sf.name»();
-			«IF isBegin(sf.id)»charset = CodepageHelper.CHARSET_IBM500;«ENDIF»
+			«IF isBegin(sf.id)»		
+			charsets.push(charset);
+			charset = CodepageHelper.CHARSET_IBM500;
+			«ENDIF»
+			«IF isEnd(sf.id)»
+			if(!charsets.isEmpty())	
+				charset = charsets.pop();
+			else
+				charset = CodepageHelper.CHARSET_IBM500;
+			«ENDIF»
 			«IF sf.name == "IPD"»
 				if(missingImageData > 0) {
 					int imlength = Math.min(stop + 1 - (pos + 9), missingImageData);
@@ -310,7 +321,16 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		case AfplibPackage.«sf.name»: {
 			sf.setId(«sf.id»);
 			«sf.name» obj = («sf.name») sf;
-			«IF isBegin(sf.id)»charset = CodepageHelper.CHARSET_IBM500;«ENDIF»
+			«IF isBegin(sf.id)»		
+			charsets.push(charset);
+			charset = CodepageHelper.CHARSET_IBM500;
+			«ENDIF»
+			«IF isEnd(sf.id)»
+			if(!charsets.isEmpty())	
+				charset = charsets.pop();
+			else
+				charset = CodepageHelper.CHARSET_IBM500;
+			«ENDIF»
 			«FOREACH sf.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
 			«FOREACH sf.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
 			«REM»«IF optional»«ENDREM»
