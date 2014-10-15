@@ -14,6 +14,7 @@ import org.afplib.afplib.BAG;
 import org.afplib.afplib.BMO;
 import org.afplib.afplib.BRG;
 import org.afplib.afplib.BRS;
+import org.afplib.afplib.CGCSGID;
 import org.afplib.afplib.CharacterRotation;
 import org.afplib.afplib.FullyQualifiedName;
 import org.afplib.afplib.FullyQualifiedNameFQNFormat;
@@ -22,6 +23,8 @@ import org.afplib.afplib.MCD;
 import org.afplib.afplib.MCDRG;
 import org.afplib.afplib.MCF;
 import org.afplib.afplib.MCFRG;
+import org.afplib.afplib.MDR;
+import org.afplib.afplib.MDRRG;
 import org.afplib.afplib.MPS;
 import org.afplib.afplib.MPSRG;
 import org.afplib.afplib.MPSRGLength;
@@ -207,6 +210,53 @@ public class RepeatingGroupTest {
 			mcd = (MCD) afpin.readStructuredField();
 			
 			assertEquals(5, mcd.getRG().get(0).getRGLength().intValue());
+		}
+	}
+	
+	@Test
+	public void testMDRSave() throws IOException {
+		MDR mdr = new AfpBuilder()
+			.withMember(new AfpBuilder()
+				.withMember(new AfpBuilder()
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_TYPE, FullyQualifiedNameFQNType.CONST_DATA_OBJECT_EXTERNAL_RESOURCE_REFERENCE_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_FORMAT, FullyQualifiedNameFQNFormat.CONST_CHARACTERSTRING_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQ_NAME, "Arial")
+					.create(FullyQualifiedName.class)) // size = 9
+				.withMember(new AfpBuilder()
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_TYPE, FullyQualifiedNameFQNType.CONST_DATA_OBJECT_INTERNAL_RESOURCE_REFERENCE_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_FORMAT, FullyQualifiedNameFQNFormat.CONST_CHARACTERSTRING_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQ_NAME, "1")
+					.create(FullyQualifiedName.class)) // size = 5
+				.create(MDRRG.class))
+			.withMember(new AfpBuilder()
+				.withMember(new AfpBuilder()
+					.with(AfplibPackage.CGCSGID__GCSGID, 0)
+					.with(AfplibPackage.CGCSGID__CPGID, 500)
+					.create(CGCSGID.class)) // size = 6
+				.withMember(new AfpBuilder()
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_TYPE, FullyQualifiedNameFQNType.CONST_DATA_OBJECT_EXTERNAL_RESOURCE_REFERENCE_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_FORMAT, FullyQualifiedNameFQNFormat.CONST_CHARACTERSTRING_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQ_NAME, "Arial Narrow")
+					.create(FullyQualifiedName.class)) // size = 16
+				.withMember(new AfpBuilder()
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_TYPE, FullyQualifiedNameFQNType.CONST_DATA_OBJECT_INTERNAL_RESOURCE_REFERENCE_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQN_FORMAT, FullyQualifiedNameFQNFormat.CONST_CHARACTERSTRING_VALUE)
+					.with(AfplibPackage.FULLY_QUALIFIED_NAME__FQ_NAME, "2")
+					.create(FullyQualifiedName.class)) // size = 5
+				.create(MDRRG.class))
+			.create(MDR.class);
+		
+		File ftmp = File.createTempFile("tmp", ".afp");
+		ftmp.deleteOnExit();
+		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
+			afpout.writeStructuredField(mdr);
+		}
+		
+		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
+			mdr = (MDR) afpin.readStructuredField();
+			
+			assertEquals(9 + 5 + 2, mdr.getRG().get(0).getRGLength().intValue());
+			assertEquals(6+ 16 + 5 + 2, mdr.getRG().get(1).getRGLength().intValue());
 		}
 	}
 

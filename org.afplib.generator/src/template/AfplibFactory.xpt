@@ -373,7 +373,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«ELSEIF ((Group)this).type.toString() == "Fixed"»
 			int size = binary_«((TYPEContainer)eContainer).name»RG(buffer, start + «start», obj.«getter()»());
 			if(«start» + size > length) length = «start» + size;
-			«IF ((TYPEContainer)eContainer).metaType == "GroupMember" && ((GroupMember)eContainer).lengthAttribute.length > 0»
+			«IF ((Group)this).lengthSize != -1 && ((Group)this).isLengthFixed»
 			if(obj.«getter()»().size()>0)
 			Saver.saveUnsigned(buffer, start + «start» + «((Group)this).elementLengthOffset», start + «start» + «((Group)this).elementLengthOffset» + «((Group)this).lengthSize» - 1, size / obj.«getter()»().size());
 			else
@@ -469,6 +469,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 «FOREACH elements AS e»«IF e.metaType == Group && ((Group)e).type.toString() == "Fixed"»
 «IF (((Group)e).elementLength == -1 && ((Group)e).isLengthFixed) || ((Group)e).elementLength != -1»
 	void «name»RG(List<«name»RG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;

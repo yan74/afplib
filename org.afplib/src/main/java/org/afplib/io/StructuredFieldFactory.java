@@ -12027,6 +12027,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void CFIRG(List<CFIRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12068,6 +12069,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void CPIRG(List<CPIRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12249,6 +12251,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void FNIRG(List<FNIRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12276,6 +12279,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void FNNRG(List<FNNRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12302,6 +12306,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void FNMRG(List<FNMRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12327,6 +12332,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void FNORG(List<FNORG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12352,6 +12358,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void FNPRG(List<FNPRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12575,6 +12582,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void MCCRG(List<MCCRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12657,6 +12665,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void MCF1RG(List<MCF1RG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12784,6 +12793,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void MMCRG(List<MMCRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12838,6 +12848,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void MMORG(List<MMORG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12949,6 +12960,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void MPSRG(List<MPSRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -12974,6 +12986,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void MSURG(List<MSURG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13418,6 +13431,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void BandImageRG(List<BandImageRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13452,6 +13466,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void ExternalAlgorithmRG(List<ExternalAlgorithmRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13521,6 +13536,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void SamplingRatiosRG(List<SamplingRatiosRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13547,6 +13563,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void TileTOCRG(List<TileTOCRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13817,6 +13834,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GFLTRG(List<GFLTRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13842,6 +13860,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GCFLTRG(List<GCFLTRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13880,6 +13899,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GLINERG(List<GLINERG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13905,6 +13925,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GCLINERG(List<GCLINERG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13930,6 +13951,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GMRKRG(List<GMRKRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -13955,6 +13977,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GCMRKRG(List<GCMRKRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -14002,6 +14025,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GRLINERG(List<GRLINERG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -14027,6 +14051,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GCRLINERG(List<GCRLINERG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -14144,6 +14169,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GCBEZRG(List<GCBEZRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -14169,6 +14195,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 
 	void GCCBEZRG(List<GCCBEZRG> objs, byte[] buffer, int start, int bufstop, int length) {
+		if(length == 0) return;
 		int pos = start;
 		while(pos + length - 1 <= bufstop) {
 			int stop = pos + length - 1;
@@ -36606,6 +36633,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			int size = binary_MCF1RG(buffer, start + 13, obj.getRG());
 			if(13 + size > length) length = 13 + size;
 			
+			if(obj.getRG().size()>0)
+			Saver.saveUnsigned(buffer, start + 13 + -4, start + 13 + -4 + 1 - 1, size / obj.getRG().size());
+			else
+			Saver.saveUnsigned(buffer, start + 13 + -4, start + 13 + -4 + 1 - 1, 0);
+			
 			
 			
 			}
@@ -37325,6 +37357,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			
 			int size = binary_MPSRG(buffer, start + 13, obj.getFixedLengthRG());
 			if(13 + size > length) length = 13 + size;
+			
+			if(obj.getFixedLengthRG().size()>0)
+			Saver.saveUnsigned(buffer, start + 13 + -4, start + 13 + -4 + 1 - 1, size / obj.getFixedLengthRG().size());
+			else
+			Saver.saveUnsigned(buffer, start + 13 + -4, start + 13 + -4 + 1 - 1, 0);
 			
 			
 			
