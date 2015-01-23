@@ -3427,7 +3427,7 @@
       <validValues
           xsi:type="afplib:IntEnum"
           name="Document Level, All"
-          intValue="1"/>
+          intValue="2"/>
       <validValues
           xsi:type="afplib:IntEnum"
           name="Document Level, Selected"
