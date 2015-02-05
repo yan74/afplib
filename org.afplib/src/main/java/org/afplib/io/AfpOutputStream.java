@@ -10,7 +10,7 @@ import org.afplib.base.SF;
 public class AfpOutputStream extends FilterOutputStream {
 
 	StructuredFieldFactory factory = new StructuredFieldFactory();
-	byte[] buffer = new byte[32768];
+	byte[] buffer;
 	int index;
 
 	public AfpOutputStream(OutputStream out) {
@@ -18,6 +18,7 @@ public class AfpOutputStream extends FilterOutputStream {
 	}
 
 	public void writeStructuredField(SF sf) throws IOException {
+		buffer = new byte[32768];
 		int length = factory.binary(buffer, 0, sf);
 		
 		buffer[0] = (byte) 0x5a;
