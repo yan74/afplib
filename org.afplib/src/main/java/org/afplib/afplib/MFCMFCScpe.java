@@ -36,7 +36,7 @@ public enum MFCMFCScpe implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	CONST_DOCUMENT_LEVEL_ALL(1, "ConstDocumentLevelAll", "ConstDocumentLevelAll"),
+	CONST_DOCUMENT_LEVEL_ALL(2, "ConstDocumentLevelAll", "ConstDocumentLevelAll"),
 
 	/**
 	 * The '<em><b>Const Document Level Selected</b></em>' literal object.
@@ -106,7 +106,7 @@ public enum MFCMFCScpe implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CONST_DOCUMENT_LEVEL_ALL_VALUE = 1;
+	public static final int CONST_DOCUMENT_LEVEL_ALL_VALUE = 2;
 
 	/**
 	 * The '<em><b>Const Document Level Selected</b></em>' literal value.
@@ -233,6 +233,7 @@ public enum MFCMFCScpe implements Enumerator {
 	public static MFCMFCScpe get(int value) {
 		switch (value) {
 			case CONST_PRINT_LEVEL_VALUE: return CONST_PRINT_LEVEL;
+			case CONST_DOCUMENT_LEVEL_ALL_VALUE: return CONST_DOCUMENT_LEVEL_ALL;
 			case CONST_DOCUMENT_LEVEL_SELECTED_VALUE: return CONST_DOCUMENT_LEVEL_SELECTED;
 			case CONST_MEDIUM_LEVELEACH_VALUE: return CONST_MEDIUM_LEVELEACH;
 			case CONST_MEDIUM_LEVELCOLLECTION_VALUE: return CONST_MEDIUM_LEVELCOLLECTION;
