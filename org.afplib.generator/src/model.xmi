@@ -8284,7 +8284,7 @@
   </groupMembers>
   <groupMembers
       name="GCCHST"
-      displayElement="83"
+      id="131"
       type="GOCACmd">
     <elements
         xsi:type="afplib:CHAR"
