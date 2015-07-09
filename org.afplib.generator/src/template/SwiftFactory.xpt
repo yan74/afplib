@@ -1,0 +1,455 @@
+«IMPORT afplib»
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE main FOR Model»
+
+«FILE "AfpFactory.swift"»
+
+import Foundation
+
+    func toSigned(data: UnsafePointer<UInt8>, length: Int) -> Int {
+        var result:Int = Int(UnsafePointer<Int8>(data).memory)
+        var p = data.successor()
+        
+        for i in 1..<length {
+            result = result << 8
+            result |= Int(p.memory)
+            p = p.successor()
+        }
+        
+        return result
+    }
+
+    func toUnsigned(data: UnsafePointer<UInt8>, length: Int) -> Int {
+        var result = 0
+        var p = data
+        
+        for i in 0..<length {
+            result = result << 8
+            result |= ((Int(p.memory & 0xff)) & 0xff)
+            p = p.successor()
+        }
+        
+        return result
+    }
+    
+    func toString(data: UnsafePointer<UInt8>, length: Int, cpgid: Int) -> String {
+        if cpgid == 850 {
+            var result = NSString(bytes: data, length: length, encoding: NSASCIIStringEncoding)
+            return result! as String
+        } else if cpgid == 1200 {
+            var result = NSString(bytes: data, length: length, encoding: NSUTF16StringEncoding)
+            return result! as String
+        } else if cpgid == 1250 {
+            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1250StringEncoding)
+            return result! as String
+        } else if cpgid == 1251 {
+            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1251StringEncoding)
+            return result! as String
+        } else if cpgid == 1252 {
+            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1252StringEncoding)
+            return result! as String
+        } else if cpgid == 1253 {
+            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1253StringEncoding)
+            return result! as String
+        } else if cpgid == 1254 {
+            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1254StringEncoding)
+            return result! as String
+        } else {
+            let bytes = ebcdic2ascii(toBytes(data, length))
+            let p = UnsafePointer<Void>(bytes)
+            var result = NSString(bytes: p, length: length, encoding: NSASCIIStringEncoding)
+            return result! as String
+        }
+    }
+
+    func toBytes(data: UnsafePointer<UInt8>, length: Int) -> [UInt8] {
+        var result: [UInt8] = []
+
+        var p = data
+        
+        for i in 0..<length {
+            result.append(p.memory)
+            p = p.successor()
+        }
+
+        return result
+    }
+    
+    
+public class AfpFactory {
+    
+    var cpgid = 500
+    var cpgids: [Int] = []
+    var missingImageData = 0
+
+	let sfCreators = [ «FOREACH structuredFields AS sf»«sf.id» : c_«sf.name»,«ENDFOREACH» ]
+	let tripletCreators = [ «FOREACH groupMembers AS t»«IF t.type.toString() == "Triplet"»«t.id» : c_«t.name»,«ENDIF»«ENDFOREACH» ]
+	let csCreators = [ «FOREACH groupMembers AS t»«IF t.type.toString() == "CS"»«t.id» : c_«t.name»,«ENDIF»«ENDFOREACH» ]
+	let sdfCreators = [ «FOREACH groupMembers AS t»«IF t.type.toString() == "SDF"»«t.id» : c_«t.name»,«ENDIF»«ENDFOREACH» ]
+	let gocaCreators = [ «FOREACH groupMembers AS t»«IF t.type.toString() == "GOCACmd"»«t.id» : c_«t.name»,«ENDIF»«ENDFOREACH» ]
+    
+	public func sf(data: UnsafePointer<UInt8>, length: Int) -> SF? {
+        var id = toUnsigned(data.advancedBy(3), 3)
+		let creator = sfCreators[id]
+		if creator == nil { return nil }
+        
+        let obj = creator!(self)(data, length: length)
+        return obj
+	}
+
+	func triplet(tripletData: UnsafePointer<UInt8>, tripletLength: Int) -> [Triplet] {
+		var triplets: [Triplet] = []
+		var available = tripletLength
+		var data = tripletData
+		while available >= 2 {
+			var length = Int(data.memory)
+			if length == 0 || length > available { break }
+
+			var id = Int(data.successor().memory)
+			let creator = tripletCreators[id]
+			if creator != nil { 
+		        let obj = creator!(self)(data, length: length)
+		        triplets.append(obj)
+			}
+
+			data = data.advancedBy(length)
+			available -= length
+		}
+		return triplets
+	}
+	
+    func sdf(sdfData: UnsafePointer<UInt8>, sdfLength: Int) -> [Triplet] {
+        var sdfs: [Triplet] = []
+        var available = sdfLength
+        var data = sdfData
+        
+        while available >= 2 {
+            var id = Int(data.memory)
+            var length = 0
+            
+            if(id == 0xfe) {
+                id = toUnsigned(data, 2)
+                length = toUnsigned(data.advancedBy(2), 2) + 4
+            } else {
+                length = toUnsigned(data.advancedBy(1), 1) + 2
+            }
+            if length == 0 || length > available { break }
+            
+            let creator = sdfCreators[id]
+            if creator != nil {
+                let obj = creator!(self)(data, length: length)
+                sdfs.append(obj)
+            }
+            
+            data = data.advancedBy(length)
+            available -= length
+        }
+        return sdfs
+    }
+
+    func goca(gocaData: UnsafePointer<UInt8>, gocaLength: Int) -> [Triplet] {
+        var gocas: [Triplet] = []
+        var available = gocaLength
+        var data = gocaData
+        
+        while available >= 2 {
+            var id = Int(data.memory)
+            var length = 0
+            
+            if id == 0 {
+                length = 1
+            } else if id & 0x88 == 0x08 {
+                length = 2
+            } else if id == 0xfe {
+            	id = toUnsigned(data.advancedBy(1), 1)
+                length = toUnsigned(data.advancedBy(2), 2) + 4
+            } else {
+                length = toUnsigned(data.advancedBy(1), 1) + 2
+            }
+            if length == 0 || length > available { break }
+            
+            let creator = gocaCreators[id]
+            if creator != nil {
+                let obj = creator!(self)(data, length: length)
+                gocas.append(obj)
+            }
+            
+            data = data.advancedBy(length)
+            available -= length
+        }
+        return gocas
+    }
+
+    func isChained(functionType: UInt8) -> Bool {
+        return (functionType & 0x01) == 1
+    }
+    
+    func unchain(functionType: UInt8) -> UInt8 {
+        return functionType & 0xfe
+    }
+    
+	func cs(csData: UnsafePointer<UInt8>, csLength: Int) -> [Triplet] {
+        var result: [Triplet] = []
+        var available = csLength
+		var data = csData
+		var number = 0
+		
+		var chained = false
+		
+		while available >= 2 {
+		
+			if !chained && (data.memory != 0x2B || data.successor().memory != 0xD3) {
+				//rest are code points
+				let creator = csCreators[0xda]
+				let obj = creator!(self)(data, length: available)
+				number++
+				result.append(obj)
+				return result
+			}
+			
+			if !chained {
+				data = data.advancedBy(2)
+				available -= 2
+			}
+			
+			var length = Int(data.memory)
+			length--
+			data = data.successor()
+            available--
+			
+			var functionType = data.memory
+			if isChained(functionType) {
+				chained = true
+				functionType = unchain(functionType)
+			} else {
+				chained = false
+			}
+			
+			let creator = csCreators[Int(functionType)]
+			let obj = creator!(self)(data, length: length)
+			number++
+			result.append(obj)
+
+			data = data.advancedBy(length)
+			available -= length
+        }
+        return result
+	}
+
+	«FOREACH structuredFields AS sf»
+    func c_«sf.name»(data: UnsafePointer<UInt8>, length: Int) -> SF {
+			let obj = «sf.name»();
+			«IF isBegin(sf.id)»
+			cpgids.append(cpgid)
+			cpgid = 500
+			«ENDIF»
+			«IF isEnd(sf.id)»
+			if cpgids.isEmpty {
+			  cpgid = cpgids.removeLast()
+			} else {
+			  cpgid = 500
+			}
+			«ENDIF»
+			«IF sf.name == "IPD"»
+			if missingImageData > 0 {
+			  let imlength = length - 9 < missingImageData ? length - 9 : missingImageData
+			  obj.imageData = toBytes(data.advancedBy(9), imlength)
+			  missingImageData -= imlength
+			}
+			«ENDIF»
+			«IF sf.name == "FNN"»
+			obj.rawData = toBytes(data, length)
+			«ENDIF»
+			«FOREACH sf.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+			«FOREACH sf.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+			return obj
+	}
+	«ENDFOREACH»
+	
+	«FOREACH groupMembers AS t»«IF t.type.toString() == "Triplet"»
+    func c_«t.name»(data: UnsafePointer<UInt8>, length: Int) -> Triplet {
+		let obj = «t.name»()
+		«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«IF t.name == "CGCSGID"»
+		if obj.CPGID != nil { cpgid = obj.CPGID! }
+		«ENDIF»
+		«IF t.name == "FullyQualifiedName"»
+				if obj.FQNType != nil && obj.FQNType! == FullyQualifiedNameFQNType.ConstDataObjectInternalResourceReference.rawValue {
+
+					if length > 4 {
+						let lid = toUnsigned(data.advancedBy(4), 1)
+						obj.FQName = "\(lid)"
+					}
+					
+				}
+		«ENDIF»
+		return obj
+    }
+	«ENDIF»«ENDFOREACH»
+
+	«FOREACH groupMembers AS t»«IF t.type.toString() == "CS"»
+    func c_«t.name»(data: UnsafePointer<UInt8>, length: Int) -> Triplet {
+		let obj = «t.name»()
+		«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		return obj
+    }
+	«ENDIF»«ENDFOREACH»
+
+	«FOREACH groupMembers AS t»«IF t.type.toString() == "GOCACmd"»
+    func c_«t.name»(data: UnsafePointer<UInt8>, length: Int) -> Triplet {
+		let obj = «t.name»()
+		«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		return obj
+    }
+	«ENDIF»«ENDFOREACH»
+
+	«FOREACH groupMembers AS t»«IF t.type.toString() == "SDF"»
+    func c_«t.name»(data: UnsafePointer<UInt8>, length: Int) -> Triplet {
+		let obj = «t.name»()
+		«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«IF t.name == "ImageData"»
+//				int dataLength = stop + 1 - (pos + 4);
+//				missingImageData = length - lengthAddition - dataLength;
+		«ENDIF»
+		return obj
+    }
+	«ENDIF»«ENDFOREACH»
+
+	«FOREACH structuredFields AS sf»«EXPAND fixedGroup FOR sf»«ENDFOREACH»
+	«FOREACH groupMembers AS t»«EXPAND fixedGroup FOR t»«ENDFOREACH»
+
+	«FOREACH groupMembers AS t»
+	«IF t.type.toString() == "Fixed"»
+	func _«t.name»(data: UnsafePointer<UInt8>, length: Int) -> «t.name» {
+		let obj = «t.name»();
+		«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+		return obj;
+	}
+	«ENDIF»
+	«ENDFOREACH»
+	
+}
+	
+«ENDFILE»
+«ENDDEFINE»
+
+«DEFINE fixedGroup FOR TYPEContainer»
+«FOREACH elements AS e»«IF e.metaType == Group && ((Group)e).type.toString() == "Fixed"»
+«IF (((Group)e).elementLength == -1 && ((Group)e).isLengthFixed) || ((Group)e).elementLength != -1»
+	func c_«name»RG(rgData: UnsafePointer<UInt8>, dataSize: Int, rgLength: Int) -> [«name»RG] {
+		if rgLength == 0 { return [] }
+
+		var result: [«name»RG] = []
+		var data = rgData
+		var available = dataSize
+		let length = rgLength
+		
+		while available >= rgLength {
+			result.append(_«name»RG(data, length: length))
+			available -= rgLength
+			data = data.advancedBy(rgLength)
+		}
+		return result 
+	} 
+«ELSE» 
+	func c_«name»RG(rgData: UnsafePointer<UInt8>, dataSize: Int, lengthOffset: Int, lengthSize: Int) -> [«name»RG] {
+		var result: [«name»RG] = []
+		var data = rgData
+		var available = dataSize
+
+		while available >= lengthSize + lengthOffset {
+			let length = toUnsigned(data.advancedBy(lengthOffset), lengthSize)
+			if length == 0 || length > available { break }
+			result.append(_«name»RG(data, length: length))
+			available -= length
+			data = data.advancedBy(length)
+		}
+		return result 
+	} 
+«ENDIF»
+«ENDIF»
+«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE setter FOR TYPE»
+		«IF variableLength == true»		
+		if(«start» < length) {
+		  let l = length - «start» // < «stop - start + 1» ? length - «start» : «stop - start + 1»
+		«ELSE»
+		if(«stop» < length) {
+		  let l = «stop - start + 1»
+		«ENDIF»
+ 	«EXPAND elementSetter FOR this»
+ 	} 
+«REM»
+	«IF optional == true»
+		«IF variableLength == true»		
+			if(stop >= pos+«start») {
+				sstop = stop;
+		«ELSE»
+			if(stop >= pos+«stop») {
+		«ENDIF»
+	«ELSE»
+		«IF variableLength == true»		
+				sstop = stop;
+				if(sstop >= pos + «start»)
+		«ELSE»
+				if(sstop <= stop)
+		«ENDIF»
+	«ENDIF»
+	«IF optional == true»
+			}
+	«ENDIF»
+	comment«ENDREM»
+«ENDDEFINE»
+
+«DEFINE elementSetter FOR Group»
+	«IF type.toString() == "Fixed"»
+	«IF elementLength == -1»
+		«IF isLengthFixed»
+		let rgl = toUnsigned(data.advancedBy(«start + elementLengthOffset»), «lengthSize»)
+		obj.«name» = c_«((TYPEContainer)eContainer).name»RG(data.advancedBy(«start»), dataSize: l, rgLength: rgl);
+		«ELSE»
+		obj.«name» = c_«((TYPEContainer)eContainer).name»RG(data.advancedBy(«start»), dataSize: l, lengthOffset: «elementLengthOffset», lengthSize: «lengthSize»);
+//		«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, «elementLengthOffset», «lengthSize»);
+		«ENDIF» 
+	«ELSE»
+	obj.«name» = c_«((TYPEContainer)eContainer).name»RG(data.advancedBy(«start»), dataSize: l, rgLength: «elementLength»);
+	«ENDIF»
+	«ELSEIF type.toString() == "Triplet"»
+	obj.«name» = triplet(data.advancedBy(«start»), tripletLength: l);
+	«ELSEIF type.toString() == "SDF"»
+	obj.«name» = sdf(data.advancedBy(«start»), sdfLength: l);
+	«ELSEIF type.toString() == "CS"»
+	obj.«name» = cs(data.advancedBy(«start»), csLength: l);
+	«ELSEIF type.toString() == "GOCACmd"»
+	obj.«name» = goca(data.advancedBy(«start»), gocaLength: l);
+	«ENDIF»
+«ENDDEFINE»
+
+«DEFINE elementSetter FOR CHAR»«IF this.eContainer.metaType == SF»
+obj.«name» = toString(data.advancedBy(«start»), l, 500) // ibm500
+«ELSE»
+obj.«name» = toString(data.advancedBy(«start»), l, cpgid) // charset
+«ENDIF»
+«ENDDEFINE»
+
+«DEFINE elementSetter FOR UBIN»obj.«name» = toUnsigned(data.advancedBy(«start»), l)«ENDDEFINE»
+
+«DEFINE elementSetter FOR SBIN»obj.«name» = toSigned(data.advancedBy(«start»), l)«ENDDEFINE»
+
+«DEFINE elementSetter FOR BITS»obj.«name» = toUnsigned(data.advancedBy(«start»), l)«ENDDEFINE»
+
+«DEFINE elementSetter FOR CODE»obj.«name» = toUnsigned(data.advancedBy(«start»), l)«ENDDEFINE»
+
+«DEFINE elementSetter FOR UNDF»obj.«name» = toBytes(data.advancedBy(«start»), l)«ENDDEFINE»
+
+«DEFINE elementSetter FOR TYPE»
+oOO
+«ENDDEFINE»

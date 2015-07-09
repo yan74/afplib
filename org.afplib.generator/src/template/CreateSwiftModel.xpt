@@ -1,0 +1,93 @@
+«IMPORT afplib»
+«EXTENSION template::GeneratorExtensions»
+
+«DEFINE createSwiftModel FOR Model»
+
+«FILE "afplib.swift"»
+
+ import Cocoa
+ 
+ enum SFID: Int {
+ «FOREACH structuredFields AS sf»case «sf.name» = «sf.id»
+ «ENDFOREACH»
+ }
+  
+ public class SF {
+    var id: Int
+    
+    init(id: Int) {
+        self.id = id
+    }
+  }
+  
+ public class Triplet {
+  }
+  «EXPAND dataType FOREACH structuredFields»
+  «EXPAND dataType FOREACH groupMembers»
+  «FOREACH structuredFields AS sf»
+  public class «sf.name» : SF {
+     public init() {
+       super.init(id: «sf.id»)
+     }
+  	  «EXPAND member FOR sf»
+  «IF sf.name == "IPD"»
+	  public var imageData: [UInt8]?
+  «ENDIF»
+  «IF sf.name == "FNN"»
+	  public var rawData: [UInt8]?
+  «ENDIF»
+  }
+  «ENDFOREACH»
+  
+  «FOREACH groupMembers AS gm»
+  public class «gm.name» : Triplet {
+  
+  	  «EXPAND member FOR gm»
+
+  }
+  «ENDFOREACH»
+  
+«ENDFILE»
+
+«ENDDEFINE»
+
+«DEFINE member FOR TYPEContainer»
+	«FOREACH elements AS e»
+	«IF e.metaType == CHAR»
+	  public var «e.name»: String?
+	«ELSEIF e.metaType == UBIN || e.metaType == SBIN || e.metaType == BITS || e.metaType == CODE»
+	  public var «e.name»: Int?
+	«ELSEIF e.metaType == UNDF»
+	  public var «e.name»: [UInt8]?
+	«ELSEIF e.metaType == Group»
+		«IF ((Group)e).type.toString() == "Fixed"»
+		public var «e.name»: [«name»RG] = []
+    	«ELSE»
+		public var «e.name»: [Triplet] = []
+    	«ENDIF»
+	«ENDIF»
+	«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE dataType FOR TYPEContainer»
+	  «FOREACH elements AS e»
+	  «IF e.validValues.size > 0 && e.validValues.get(0).metaType == BitValue»
+  	  public enum «name»«e.name»: Int {
+	      «FOREACH e.validValues AS v»
+	      	«IF v.metaType == BitValue && ((BitValue)v).forceZero == false && ((BitValue)v).name != null»
+    		case Const«v.name.replaceAll(" ","")» = «pow(2,((BitValue)v).Bit)»
+	      	«ENDIF»
+	      «ENDFOREACH»
+	  }
+  
+  	  «ELSEIF e.validValues.size > 0 && e.validValues.get(0).metaType == IntEnum && ((IntEnum)e.validValues.get(0)).name != null && "".compareTo(((IntEnum)e.validValues.get(0)).name) != 0»
+  	  public enum «name»«e.name»: Int {
+	      «FOREACH e.validValues AS v»
+	      	«IF v.metaType == IntEnum && ((IntEnum)v).name != null»
+	        case Const«v.name.replaceAll(" ","").replaceAll("\\.","").replaceAll(",","").replaceAll(":","").replaceAll("/","").replaceAll("-","").replaceAll("\\(","").replaceAll("\\)","")» = «((IntEnum)v).intValue»
+	      	«ENDIF»
+	      «ENDFOREACH»
+  	  }
+	  «ENDIF»
+	  «ENDFOREACH»
+«ENDDEFINE»

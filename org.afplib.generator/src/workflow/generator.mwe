@@ -34,6 +34,18 @@
 	</component>
 	<component class="org.eclipse.xpand2.Generator">
 		<metaModel idRef="mm_emf"/>
+		<expand value="template::CreateSwiftModel::createSwiftModel FOR myModelSlot" />
+		<outlet path="${src-model}" />
+	</component>
+	<component class="org.eclipse.xpand2.Generator">
+		<metaModel idRef="mm_emf"/>
+		<expand value="template::SwiftFactory::main FOR myModelSlot" />
+		<outlet path="${src-model}" >
+			<postprocessor class="org.eclipse.xpand2.output.JavaBeautifier" />
+		</outlet>		
+	</component>
+	<component class="org.eclipse.xpand2.Generator">
+		<metaModel idRef="mm_emf"/>
 		<expand value="template::CreateAfplibGenModel::createAfplibGenModel FOR myModelSlot" />
 		<outlet path="${src-model}" />
 	</component>
