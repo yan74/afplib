@@ -1,7 +1,7 @@
 afplib
 ======
 
-JAVA Library for reading &amp; writing AFP (Advanced Function Presentation) Files.
+JAVA Library for reading &amp; writing AFP (Advanced Function Presentation) Files. See https://en.wikipedia.org/wiki/Advanced_Function_Presentation
 
 How to get started
 ------------------
