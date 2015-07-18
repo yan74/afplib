@@ -100,5 +100,21 @@ Overview
 --------
 
 Have a look on the definition of Begin Document (BDT) - MOD:CA reference page 128:
-![BDT](docs/BDT-Definitions.png)
+![BDT](https://raw.githubusercontent.com/yan74/afplib/master/org.afplib/docs/BDT-Definition.png)
 
+and afplib's representation of it:
+
+```java
+...
+public interface BDT extends SF {
+	String getDocName();
+	void setDocName(String value);
+
+	Integer getReserved();
+	void setReserved(Integer value);
+
+	EList<Triplet> getTriplets();
+} // BDT
+```
+
+afplib frees you from creating the structured field introducer (ID, calculating structured field length), ...
