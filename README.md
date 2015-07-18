@@ -117,4 +117,50 @@ public interface BDT extends SF {
 } // BDT
 ```
 
-afplib frees you from creating the structured field introducer (ID, calculating structured field length), ...
+afplib frees you from creating the structured field introducer (ID, calculating structured field length), and knowing which attributes at what position and length a structured field has.
+
+Consider e.g. following file:
+
+5A002BD3A8A8000000C8C5D3D3D6E6D3C400001965D4A840868999A2A340C1C6D7D3898240D79996879981945A0010D3A9A8000001C8C5D3D3D6E6D3C4
+
+or broken down:
+
+| hex code | description|
+| -------- | -----------|
+|5A 00 2B | magic byte (5a) and length|
+|D3 A8 A8 00 00 00 | id (BDT) and flags|
+|C8 C5 D3 D3 D6 E6 D3 C4 00 00 | DocName = HELLOWLD (EBCDIC) |
+|19 65 | Triplet Length and ID (Comment)|
+|D4 A8 40 86 89 99 A2 A3 40 C1 C6 D7 D3 89 82 40 D7 99 96 87 99 81 94| My first AFPLib Program (EBCDIC)|
+|5A 00 10 | magic byte and length|
+|D3 A9 A8 00 00 01| id (EDT) and flags|
+|C8 C5 D3 D3 D6 E6 D3 C4|DocName = HELLOWLD (EBCDIC) |
+
+afplib transforms this binary data into the following:
+```java
+		try(AfpInputStream ain = new AfpInputStream(new FileInputStream("hello.afp"))) {
+			
+			BDT bdt = (BDT) ain.readStructuredField();
+			EDT edt = (EDT) ain.readStructuredField();
+			
+			System.out.println(bdt.getDocName());
+			System.out.println(bdt.getReserved());
+			System.out.println(bdt.getTriplets().size());
+			System.out.println(((Comment)bdt.getTriplets().get(0)).getComment());
+
+			System.out.println(edt.getDocName());
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+```
+Output:
+```bash
+HELLOWLD                # System.out.println(bdt.getDocName());
+0                       # System.out.println(bdt.getReserved());
+1                       # System.out.println(bdt.getTriplets().size());
+My first AFPLib Program # System.out.println(((Comment)bdt.getTriplets().get(0)).getComment());
+HELLOWLD                # System.out.println(edt.getDocName());
+```
+
+
