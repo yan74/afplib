@@ -5,6 +5,8 @@ JAVA Library for reading &amp; writing AFP (Advanced Function Presentation) File
 
 afplib provides a low level API to transform AFP files, i.e. structured fields, triplets, ... into JAVA objects and vice versa. To make use of it you need to know MO:DCA (see http://afpcinc.org/wp-content/uploads/2014/04/modca08.pdf). afplib is build on top of EMF (Eclipse Modeling Framework) - http://www.eclipse.org/modeling/emf/
 
+Home: http://afplib.org
+
 How to get started
 ------------------
 
