@@ -1,0 +1,9 @@
+org.afplib
+org.afplib.afplib
+org.afplib.afplib.impl
+org.afplib.afplib.util
+org.afplib.base
+org.afplib.base.impl
+org.afplib.base.util
+org.afplib.helper.formdef
+org.afplib.io
