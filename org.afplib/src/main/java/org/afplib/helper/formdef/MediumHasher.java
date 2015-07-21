@@ -14,6 +14,12 @@ public class MediumHasher {
 
 	private static final Logger log = LoggerFactory.getLogger(MediumHasher.class);
 
+	/**
+	 * creates a hash code based on provided structured fields.
+	 * 
+	 * @param sfs array of structured fields
+	 * @return hash code
+	 */
 	public static int hashCode(SF[] sfs) {
 		
 		if (sfs == null || sfs.length == 0) return 0;

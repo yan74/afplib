@@ -2,6 +2,12 @@ package org.afplib;
 
 import java.nio.charset.Charset;
 
+/**
+ * Helper to convert CGCGID triplet into JAVA code page.
+ * 
+ * @author Yan Hackl-Feldbusch <yan@hcsystems.de>
+ *
+ */
 public class CodepageHelper {
 
 	public static final Charset CHARSET_IBM500 = Charset.forName("ibm500");

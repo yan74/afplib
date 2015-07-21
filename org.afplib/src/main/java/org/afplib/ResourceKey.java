@@ -17,6 +17,12 @@ import org.afplib.base.Triplet;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
 
+/**
+ * Identifies an AFP resource.
+ * 
+ * @author Yan Hackl-Feldbusch <yan@hcsystems.de>
+ *
+ */
 public class ResourceKey {
 	int type;
 	String name;

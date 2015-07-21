@@ -26,10 +26,11 @@ BAG bag = new AfpBuilder()
 	.withMember(new AfpBuilder()
 		.with(AfplibPackage.COMMENT__COMMENT, "My Comment")
 		.create(Comment.class))
-	.withMember(new AfpBuilder()
-		.create(NOP.class))
 	.create(BAG.class);
  *	</pre></code>
+ * 
+ * This creates an environment group named BAGTEST0 with a
+ * comment triplet saying "My Comment".
  * 
  * @author Yan Hackl-Feldbusch <yan@hcsystems.de>
  *

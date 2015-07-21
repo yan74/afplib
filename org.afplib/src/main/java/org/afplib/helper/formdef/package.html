@@ -1,0 +1,22 @@
+<html><body>
+<p>provides helper for working with formdef and medium maps (aka copy group).</p>
+<p>Start with reading the formdef:</p>
+<code><pre>
+try(AfpInputStream ain = new AfpInputStream(new FileInputStream(file))) {
+	Formdef formdef = FormdefScanner.scan(ain);
+}
+</pre></code>
+<p>Find some medium maps:</p>
+<code><pre>
+MediumMap map = formdef.findByName("MM000000");
+map = formdef.findFirstByBin(1);
+map = formdef.findFirstByMediaName("A108", Plex.DUPLEX);
+MediumMap[] maps = formdef.mediumMaps();
+</pre></code>
+<p>Inspect medium map:</p>
+<code><pre>
+Integer bin = map.getBin();
+Plex plex = map.getPlex();
+</pre></code>
+</body>
+</html>

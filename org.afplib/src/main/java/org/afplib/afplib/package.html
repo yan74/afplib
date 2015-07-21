@@ -1,0 +1,18 @@
+<html><body>
+<p>This packages contents are automatically generated and provide the interfaces to MOD:CA objects.</p>
+<p>You can use {@link org.afplib.afplib.AfplibFactory} to create new structured fields, triplets, SDFs, ...
+and {@link org.afplib.afplib.AfplibPackage} to identify a given object.</p>
+<code><pre>
+BDT bdt = AfplibFactory.eINSTANCE.createBDT();
+bdt.setDocName("HELLOWLD");
+
+SF sf = bdt;
+switch(sf.eClass().getClassifierID()) {
+	case AfplibPackage.BDT:
+		break;
+	case AfplibPackage.EDT:
+		break;
+}
+</pre></code>
+</body>
+</html>
