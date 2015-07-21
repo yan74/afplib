@@ -15,35 +15,35 @@ public class StreamVsMappedFile {
 	
 	@Test
 	public void testMappedFile() throws IOException {
-		AfpMappedFile afp = new AfpMappedFile(new File(testFile));
-		
-		// run once to load all the classes involved
-		while(afp.next() != null);
-		
-		afp = new AfpMappedFile(new File(testFile));
-		
-		long counter = 0;
-		long milis = System.nanoTime();
-		while(afp.next() != null) counter++;
-		
-		System.out.println("MappedFile: " + (System.nanoTime() - milis) / counter + " nanos per sf");		
+		try(AfpMappedFile afp = new AfpMappedFile(new File(testFile))) {
+			// run once to load all the classes involved
+			while(afp.next() != null);
+		}
+			
+		try(AfpMappedFile afp = new AfpMappedFile(new File(testFile))) {			
+			long counter = 0;
+			long milis = System.nanoTime();
+			while(afp.next() != null) counter++;
+			
+			System.out.println("MappedFile: " + (System.nanoTime() - milis) / counter + " nanos per sf");		
+		}
 	}
 	
 	@Test
 	public void testStream() throws IOException {
-		AfpInputStream afp = new AfpInputStream(new BufferedInputStream(new FileInputStream(testFile)));
+		try(AfpInputStream afp = new AfpInputStream(new BufferedInputStream(new FileInputStream(testFile)))) {
+			// run once to load all the classes involved
+			while(afp.readStructuredField() != null);
+		}
 		
-		// run once to load all the classes involved
-		while(afp.readStructuredField() != null);
-		afp.close();
+		try(AfpInputStream afp = new AfpInputStream(new BufferedInputStream(new FileInputStream(testFile)))) {
+			long counter = 0;
+			long milis = System.nanoTime();
+			while(afp.readStructuredField() != null) counter++;
+			
+			System.out.println("Stream: " + (System.nanoTime() - milis) / counter + " nanos per sf");		
+		}
 		
-		afp = new AfpInputStream(new BufferedInputStream(new FileInputStream(testFile)));
-		
-		long counter = 0;
-		long milis = System.nanoTime();
-		while(afp.readStructuredField() != null) counter++;
-		
-		System.out.println("Stream: " + (System.nanoTime() - milis) / counter + " nanos per sf");		
 	}
 
 }

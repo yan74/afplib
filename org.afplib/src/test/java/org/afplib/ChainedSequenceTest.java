@@ -11,7 +11,6 @@ import java.nio.charset.Charset;
 
 import org.afplib.afplib.AMB;
 import org.afplib.afplib.AMI;
-import org.afplib.afplib.AfplibFactory;
 import org.afplib.afplib.BAG;
 import org.afplib.afplib.BMO;
 import org.afplib.afplib.BPT;
