@@ -21,7 +21,7 @@ public abstract class AbstractStructuredFieldFactory {
 	
 	void cs(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int number = 0;
-		int length = 0;
+		int len = 0;
 		State state = State.READ_PREFIX_AND_CLASS;
 
 		while (state != State.TERMINATE && start <= bufstop) {
@@ -41,7 +41,7 @@ public abstract class AbstractStructuredFieldFactory {
 					if(m != null) {
 						m.setTripletId(0xda);
 						m.setTripletNumber(number);
-						m.setTripletLength(length + 1);
+						m.setTripletLength(len + 1);
 						m.setFileOffset(start);
 						triplets.add(m);
 					}
@@ -58,9 +58,9 @@ public abstract class AbstractStructuredFieldFactory {
 				state = State.READ_LENGTH;
 				break;
 			case READ_LENGTH:
-				length = Data.toUnsignedByte(buffer[start]);
+				len = Data.toUnsignedByte(buffer[start]);
 				state = State.READ_TYPE;
-				length--; // don't include length byte in length because we
+				len--; // don't include length byte in length because we
 							// increment offset (so it doesn't point to length)
 				start++;
 				break;
@@ -72,17 +72,17 @@ public abstract class AbstractStructuredFieldFactory {
 				} else {
 					state = State.READ_UNCHAINED;
 				}
-				Triplet m = cs(buffer, start, start + length - 1, functionType);
+				Triplet m = cs(buffer, start, start + len - 1, functionType);
 				if(m != null) {
 					m.setTripletId(functionType);
 					m.setTripletNumber(number);
-					m.setTripletLength(length + 1);
+					m.setTripletLength(len + 1);
 					m.setFileOffset(start);
 					triplets.add(m);
 				}
 				else System.out.println("failed CS construction."); // FIXME
 				number++;
-				start += length;
+				start += len;
 				if (start == buffer.length) {
 					state = State.TERMINATE;
 				}

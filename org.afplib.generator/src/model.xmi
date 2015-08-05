@@ -2099,8 +2099,7 @@
         name="Reserved2"
         start="41"
         stop="43"
-        optional="true"
-        variableLength="true"/>
+        optional="true"/>
     <elements
         xsi:type="afplib:UBIN"
         name="FNNRGLen"
@@ -4916,7 +4915,7 @@
   <groupMembers
       name="AttributeValue"
       displayElement="AttVal"
-      id="54"
+      id="54" optional="true"
       type="Triplet">
     <elements
         xsi:type="afplib:CODE"
