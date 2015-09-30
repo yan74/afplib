@@ -22,6 +22,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
     int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 	Stack<Charset> charsets = new Stack<>();
+	FNC fnc;
 
 	SF sf(byte[] buffer, int pos, int stop) {
 		int id = Data.toUnsigned(buffer, pos+3, pos+5);
@@ -1701,7 +1702,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	CFIRG(obj.getFixedLengthRG(), buffer, pos+9, sstop, 25);
+		
 	
 	
 	}
@@ -1887,7 +1890,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	CPIRG(obj.getRg(), buffer, pos+9, sstop, 10);
+		
 	
 	
 	}
@@ -2366,6 +2371,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			else
 				charset = CodepageHelper.CHARSET_IBM500;
 			
+			
+				this.fnc = null;
 			
 			
 			
@@ -3032,6 +3039,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			
 			
 			
+				this.fnc = (FNC) obj;
+			
 			
     {
 	int sstop = pos+32768;		
@@ -3296,9 +3305,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
     {
 	int sstop = pos+43;		
 	
-				
-			if(stop >= pos+41) {
-				sstop = stop;
+		
+			if(stop >= pos+43) {
 		
 	
 	obj.setReserved2(Arrays.copyOfRange(buffer, pos+41, sstop + 1));
@@ -3607,7 +3615,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
-	FNIRG(obj.getRg(), buffer, pos+9, sstop, 28);
+		
+	FNIRG(obj.getRg(), buffer, pos+9, sstop, fnc == null || fnc.getFNIRGLen() == null ? 28 : fnc.getFNIRGLen());
+		
 	
 	
 	}
@@ -3635,7 +3645,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	FNNRG(obj.getRg(), buffer, pos+11, sstop, 12);
+		
 	
 	
 	}
@@ -3703,7 +3715,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	FNMRG(obj.getRg(), buffer, pos+9, sstop, 8);
+		
 	
 	
 	}
@@ -3731,7 +3745,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	FNORG(obj.getRg(), buffer, pos+9, sstop, 26);
+		
 	
 	
 	}
@@ -3759,7 +3775,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	FNPRG(obj.getRg(), buffer, pos+9, sstop, 22);
+		
 	
 	
 	}
@@ -5031,7 +5049,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	MCCRG(obj.getRg(), buffer, pos+9, sstop, 6);
+		
 	
 	
 	}
@@ -5417,7 +5437,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	MMCRG(obj.getRg(), buffer, pos+11, sstop, 2);
+		
 	
 	
 	}
@@ -5499,7 +5521,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	MMORG(obj.getRg(), buffer, pos+13, sstop, 12);
+		
 	
 	
 	}
@@ -5681,7 +5705,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	MSURG(obj.getRg(), buffer, pos+9, sstop, 10);
+		
 	
 	
 	}
@@ -9944,7 +9970,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	BandImageRG(obj.getRg(), buffer, pos+3, sstop, 1);
+		
 	
 	
 	}
@@ -10067,7 +10095,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	ExternalAlgorithmRG(obj.getRg(), buffer, pos+4, sstop, 3);
+		
 	
 	
 	}
@@ -10509,7 +10539,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	SamplingRatiosRG(obj.getRg(), buffer, pos+2, sstop, 2);
+		
 	
 	
 	}
@@ -10538,7 +10570,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	{
 	
 	
+		
 	TileTOCRG(obj.getRg(), buffer, pos+6, sstop, 26);
+		
 	
 	
 	}
@@ -14990,10 +15024,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+11;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+11) {
 		
 	
 	obj.setAscendHt(Data.toSigned(buffer, pos+10, sstop));
+	
+			}
 	
 	}
 
@@ -15001,10 +15037,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+13;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+13) {
 		
 	
 	obj.setDescendDp(Data.toSigned(buffer, pos+12, sstop));
+	
+			}
 	
 	}
 
@@ -15012,10 +15050,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+15;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+15) {
 		
 	
 	obj.setReserved(Data.toUnsigned(buffer, pos+14, sstop));
+	
+			}
 	
 	}
 
@@ -15023,10 +15063,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+17;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+17) {
 		
 	
 	obj.setFNMCnt(Data.toUnsigned(buffer, pos+16, sstop));
+	
+			}
 	
 	}
 
@@ -15034,10 +15076,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+19;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+19) {
 		
 	
 	obj.setASpace(Data.toSigned(buffer, pos+18, sstop));
+	
+			}
 	
 	}
 
@@ -15045,10 +15089,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+21;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+21) {
 		
 	
 	obj.setBSpace(Data.toUnsigned(buffer, pos+20, sstop));
+	
+			}
 	
 	}
 
@@ -15056,10 +15102,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+23;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+23) {
 		
 	
 	obj.setCSpace(Data.toSigned(buffer, pos+22, sstop));
+	
+			}
 	
 	}
 
@@ -15067,10 +15115,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+25;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+25) {
 		
 	
 	obj.setReserved2(Data.toUnsigned(buffer, pos+24, sstop));
+	
+			}
 	
 	}
 
@@ -15078,10 +15128,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	int sstop = pos+27;		
 	
 		
-				if(sstop <= stop)
+			if(stop >= pos+27) {
 		
 	
 	obj.setBaseOset(Data.toSigned(buffer, pos+26, sstop));
+	
+			}
 	
 	}
 
@@ -15108,13 +15160,19 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	
 
 	
+		if(obj.getAscendHt() != null) {
+	
 	
 		
 			if(11 + 1 > length) length = 11 + 1;
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getDescendDp() != null) {
 	
 	
 		
@@ -15122,7 +15180,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getReserved() != null) {
 	
 	
 		
@@ -15130,7 +15192,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getFNMCnt() != null) {
 	
 	
 		
@@ -15138,7 +15204,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getASpace() != null) {
 	
 	
 		
@@ -15146,7 +15216,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getBSpace() != null) {
 	
 	
 		
@@ -15154,7 +15228,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getCSpace() != null) {
 	
 	
 		
@@ -15162,7 +15240,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getReserved2() != null) {
 	
 	
 		
@@ -15170,13 +15252,19 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		
 				
 	
+		}
+	
 
+	
+		if(obj.getBaseOset() != null) {
 	
 	
 		
 			if(27 + 1 > length) length = 27 + 1;
 		
 				
+	
+		}
 	
 
 		
@@ -33309,6 +33397,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	
 	
 		
+			if(43 + 1 > length) length = 43 + 1;
 		
 				
 	
@@ -33649,11 +33738,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	
 		
 			
-			{
-			int size = Saver.save(buffer, start + 41, obj.getReserved2());
-			if(41 + size > length) length = 41 + size;
+			if(obj.getReserved2() != null) {
+			Saver.save(buffer, start + 41, start + 43, obj.getReserved2());
 			}
 			
+			if(43 + 1 > length) length = 43 + 1;
 		
 				
 		}

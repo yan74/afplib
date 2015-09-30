@@ -27,6 +27,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
     int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 	Stack<Charset> charsets = new Stack<>();
+	FNC fnc;
 
 	SF sf(byte[] buffer, int pos, int stop) {
 		int id = Data.toUnsigned(buffer, pos+3, pos+5);
@@ -53,6 +54,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					sf = obj;
 					break;
 				}
+			«ELSEIF sf.name == "FNC"»
+				this.fnc = (FNC) obj;
+			«ELSEIF sf.name == "EFN"»
+				this.fnc = null;
 			«ENDIF»
 			«FOREACH sf.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 			«FOREACH sf.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
@@ -540,7 +545,11 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, «elementLengthOffset», «lengthSize»);
 		«ENDIF»
 	«ELSE»
+		«IF ((TYPEContainer)eContainer).name == "FNI"»
+	«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, fnc == null || fnc.getFNIRGLen() == null ? «elementLength» : fnc.getFNIRGLen());
+		«ELSE»
 	«((TYPEContainer)eContainer).name»RG(obj.«getter()»(), buffer, pos+«start», sstop, «elementLength»);
+		«ENDIF»
 	«ENDIF»
 	«ELSEIF type.toString() == "Triplet"»
 	triplet(obj.«getter()»(), buffer, pos+«start», sstop);

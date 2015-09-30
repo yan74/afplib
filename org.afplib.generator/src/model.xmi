@@ -4915,7 +4915,7 @@
   <groupMembers
       name="AttributeValue"
       displayElement="AttVal"
-      id="54" optional="true"
+      id="54"
       type="Triplet">
     <elements
         xsi:type="afplib:CODE"
@@ -6988,47 +6988,47 @@
         xsi:type="afplib:SBIN"
         name="AscendHt"
         start="10"
-        stop="11"/>
+        stop="11" optional="true"/>
     <elements
         xsi:type="afplib:SBIN"
         name="DescendDp"
         start="12"
-        stop="13"/>
+        stop="13" optional="true"/>
     <elements
         xsi:type="afplib:UBIN"
         name="Reserved"
         start="14"
-        stop="15"/>
+        stop="15" optional="true"/>
     <elements
         xsi:type="afplib:UBIN"
         name="FNMCnt"
         start="16"
-        stop="17"/>
+        stop="17" optional="true"/>
     <elements
         xsi:type="afplib:SBIN"
         name="ASpace"
         start="18"
-        stop="19"/>
+        stop="19" optional="true"/>
     <elements
         xsi:type="afplib:UBIN"
         name="BSpace"
         start="20"
-        stop="21"/>
+        stop="21" optional="true"/>
     <elements
         xsi:type="afplib:SBIN"
         name="CSpace"
         start="22"
-        stop="23"/>
+        stop="23" optional="true"/>
     <elements
         xsi:type="afplib:UBIN"
         name="Reserved2"
         start="24"
-        stop="25"/>
+        stop="25" optional="true"/>
     <elements
         xsi:type="afplib:SBIN"
         name="BaseOset"
         start="26"
-        stop="27"/>
+        stop="27" optional="true"/>
   </groupMembers>
   <groupMembers
       name="FNMRG"

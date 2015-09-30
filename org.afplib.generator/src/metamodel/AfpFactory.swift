@@ -2937,9 +2937,9 @@ obj.REGName = toString(data.advancedBy(9), l, 500) // ibm500
  	} 
 
 
-				
-		if(41 < length) {
-		  let l = length - 41 // < 3 ? length - 41 : 3
+		
+		if(43 < length) {
+		  let l = 3
 		
  	obj.Reserved2 = toBytes(data.advancedBy(41), l)
  	} 

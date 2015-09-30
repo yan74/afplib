@@ -8909,7 +8909,7 @@
 	<eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved2"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>optional&lt;br>variable length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
@@ -13397,74 +13397,74 @@
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AscendHt" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AscendHt"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DescendDp" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DescendDp"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FNMCnt" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FNMCnt"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ASpace" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ASpace"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BSpace" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BSpace"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CSpace" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CSpace"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved2" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved2"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BaseOset" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BaseOset"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+        <details key="documentation" value="&lt;p>optional&lt;br>fixed length&lt;/p>"/>
       </eAnnotations>
 	</eStructuralFeatures>
 	
