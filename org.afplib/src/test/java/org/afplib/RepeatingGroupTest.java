@@ -25,6 +25,8 @@ import org.afplib.afplib.MCF;
 import org.afplib.afplib.MCFRG;
 import org.afplib.afplib.MDR;
 import org.afplib.afplib.MDRRG;
+import org.afplib.afplib.MIO;
+import org.afplib.afplib.MIORG;
 import org.afplib.afplib.MPS;
 import org.afplib.afplib.MPSRG;
 import org.afplib.afplib.MPSRGLength;
@@ -257,6 +259,30 @@ public class RepeatingGroupTest {
 			
 			assertEquals(9 + 5 + 2, mdr.getRG().get(0).getRGLength().intValue());
 			assertEquals(6+ 16 + 5 + 2, mdr.getRG().get(1).getRGLength().intValue());
+		}
+	}
+	
+	@Test
+	public void testMIORGLength() throws IOException {
+		MIO mio = new AfpBuilder()
+        .withMember(new AfpBuilder()
+//	        .with(AfplibPackage.MIORG__RG_LENGTH, (int) 5)
+	        .withMember(new AfpBuilder()
+	        	.with(AfplibPackage.MAPPING_OPTION__MAP_VALUE, MappingOptionMapValue.CONST_POSITIONANDTRIM_VALUE)
+	            .create(MappingOption.class))
+	        .create(MIORG.class))
+        .create(MIO.class);
+
+		File ftmp = File.createTempFile("tmp", ".afp");
+		ftmp.deleteOnExit();
+		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
+			afpout.writeStructuredField(mio);
+		}
+		
+		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
+			mio = (MIO) afpin.readStructuredField();
+			
+			assertEquals(5, mio.getRG().get(0).getRGLength().intValue());
 		}
 	}
 
