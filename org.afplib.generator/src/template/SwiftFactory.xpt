@@ -35,34 +35,34 @@ import Foundation
     
     func toString(data: UnsafePointer<UInt8>, length: Int, cpgid: Int) -> String {
         if cpgid == 850 {
-            var result = NSString(bytes: data, length: length, encoding: NSASCIIStringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSASCIIStringEncoding)
             return result! as String
         } else if cpgid == 1200 {
-            var result = NSString(bytes: data, length: length, encoding: NSUTF16StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSUTF16StringEncoding)
             return result! as String
         } else if cpgid == 1250 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1250StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1250StringEncoding)
             return result! as String
         } else if cpgid == 1251 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1251StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1251StringEncoding)
             return result! as String
         } else if cpgid == 1252 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1252StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1252StringEncoding)
             return result! as String
         } else if cpgid == 1253 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1253StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1253StringEncoding)
             return result! as String
         } else if cpgid == 1254 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1254StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1254StringEncoding)
             return result! as String
         } else {
-            let bytes = ebcdic2ascii(toBytes(data, length))
+            let bytes = ebcdic2ascii(toBytes(data, length: length))
             let p = UnsafePointer<Void>(bytes)
-            var result = NSString(bytes: p, length: length, encoding: NSASCIIStringEncoding)
+            let result = NSString(bytes: p, length: length, encoding: NSASCIIStringEncoding)
             return result! as String
         }
     }
-
+    
     func toBytes(data: UnsafePointer<UInt8>, length: Int) -> [UInt8] {
         var result: [UInt8] = []
 
