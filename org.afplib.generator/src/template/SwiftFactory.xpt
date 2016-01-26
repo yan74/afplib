@@ -11,7 +11,7 @@ import Foundation
         var result:Int = Int(UnsafePointer<Int8>(data).memory)
         var p = data.successor()
         
-        for i in 1..<length {
+        for _ in 1..<length {
             result = result << 8
             result |= Int(p.memory)
             p = p.successor()
@@ -24,7 +24,7 @@ import Foundation
         var result = 0
         var p = data
         
-        for i in 0..<length {
+        for _ in 0..<length {
             result = result << 8
             result |= ((Int(p.memory & 0xff)) & 0xff)
             p = p.successor()
@@ -62,13 +62,13 @@ import Foundation
             return result! as String
         }
     }
-    
+
     func toBytes(data: UnsafePointer<UInt8>, length: Int) -> [UInt8] {
         var result: [UInt8] = []
 
         var p = data
         
-        for i in 0..<length {
+        for _ in 0..<length {
             result.append(p.memory)
             p = p.successor()
         }
