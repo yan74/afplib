@@ -26,12 +26,16 @@ public class MediumHasher {
 
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
 
-		try (AfpOutputStream out = new AfpOutputStream(bout)) {
+		AfpOutputStream out = null;
+		try {
+			out = new AfpOutputStream(bout);
 			for (SF sf : sfs)
 				out.writeStructuredField(sf);
 		} catch (IOException e) {
 			log.error("hashcode error", e);
 			return 0;
+		} finally {
+			if(out != null) try { out.close(); } catch(IOException e) {}
 		}
 
 		return new HashCodeBuilder().append(bout.toByteArray()).toHashCode();

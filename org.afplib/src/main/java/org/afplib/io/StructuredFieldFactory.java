@@ -21,7 +21,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
     int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
-	Stack<Charset> charsets = new Stack<>();
+	Stack<Charset> charsets = new Stack<Charset>();
 	FNC fnc;
 
 	SF sf(byte[] buffer, int pos, int stop) {
