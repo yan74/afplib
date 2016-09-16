@@ -2680,20 +2680,6 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum fnnibmFormatEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum fnnTechnologyFormatEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EEnum iddunitbaseEEnum = null;
 
 	/**
@@ -3884,7 +3870,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBAG() {
 		if (bagEClass == null) {
-			bagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(195);
+			bagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(193);
 		}
 		return bagEClass;
 	}
@@ -3914,7 +3900,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBBC() {
 		if (bbcEClass == null) {
-			bbcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(196);
+			bbcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(194);
 		}
 		return bbcEClass;
 	}
@@ -3944,7 +3930,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBCA() {
 		if (bcaEClass == null) {
-			bcaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(197);
+			bcaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(195);
 		}
 		return bcaEClass;
 	}
@@ -3974,7 +3960,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBCF() {
 		if (bcfEClass == null) {
-			bcfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(198);
+			bcfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(196);
 		}
 		return bcfEClass;
 	}
@@ -3995,7 +3981,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBCP() {
 		if (bcpEClass == null) {
-			bcpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(199);
+			bcpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(197);
 		}
 		return bcpEClass;
 	}
@@ -4025,7 +4011,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDA() {
 		if (bdaEClass == null) {
-			bdaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(200);
+			bdaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(198);
 		}
 		return bdaEClass;
 	}
@@ -4073,7 +4059,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDD() {
 		if (bddEClass == null) {
-			bddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(201);
+			bddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(199);
 		}
 		return bddEClass;
 	}
@@ -4229,7 +4215,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDG() {
 		if (bdgEClass == null) {
-			bdgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(202);
+			bdgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(200);
 		}
 		return bdgEClass;
 	}
@@ -4259,7 +4245,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDI() {
 		if (bdiEClass == null) {
-			bdiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(203);
+			bdiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(201);
 		}
 		return bdiEClass;
 	}
@@ -4289,7 +4275,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDM() {
 		if (bdmEClass == null) {
-			bdmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(204);
+			bdmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(202);
 		}
 		return bdmEClass;
 	}
@@ -4328,7 +4314,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDT() {
 		if (bdtEClass == null) {
-			bdtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(205);
+			bdtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(203);
 		}
 		return bdtEClass;
 	}
@@ -4367,7 +4353,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBDX() {
 		if (bdxEClass == null) {
-			bdxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(206);
+			bdxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(204);
 		}
 		return bdxEClass;
 	}
@@ -4388,7 +4374,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBFG() {
 		if (bfgEClass == null) {
-			bfgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(207);
+			bfgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(205);
 		}
 		return bfgEClass;
 	}
@@ -4409,7 +4395,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBFM() {
 		if (bfmEClass == null) {
-			bfmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(208);
+			bfmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(206);
 		}
 		return bfmEClass;
 	}
@@ -4439,7 +4425,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBFN() {
 		if (bfnEClass == null) {
-			bfnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(209);
+			bfnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(207);
 		}
 		return bfnEClass;
 	}
@@ -4469,7 +4455,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBGR() {
 		if (bgrEClass == null) {
-			bgrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(210);
+			bgrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(208);
 		}
 		return bgrEClass;
 	}
@@ -4499,7 +4485,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBII() {
 		if (biiEClass == null) {
-			biiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(211);
+			biiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(209);
 		}
 		return biiEClass;
 	}
@@ -4520,7 +4506,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBIM() {
 		if (bimEClass == null) {
-			bimEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(212);
+			bimEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(210);
 		}
 		return bimEClass;
 	}
@@ -4550,7 +4536,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBMM() {
 		if (bmmEClass == null) {
-			bmmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(213);
+			bmmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(211);
 		}
 		return bmmEClass;
 	}
@@ -4580,7 +4566,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBMO() {
 		if (bmoEClass == null) {
-			bmoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(214);
+			bmoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(212);
 		}
 		return bmoEClass;
 	}
@@ -4610,7 +4596,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBNG() {
 		if (bngEClass == null) {
-			bngEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(215);
+			bngEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(213);
 		}
 		return bngEClass;
 	}
@@ -4640,7 +4626,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBOC() {
 		if (bocEClass == null) {
-			bocEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(216);
+			bocEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(214);
 		}
 		return bocEClass;
 	}
@@ -4670,7 +4656,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBOG() {
 		if (bogEClass == null) {
-			bogEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(217);
+			bogEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(215);
 		}
 		return bogEClass;
 	}
@@ -4700,7 +4686,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBPF() {
 		if (bpfEClass == null) {
-			bpfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(218);
+			bpfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(216);
 		}
 		return bpfEClass;
 	}
@@ -4730,7 +4716,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBPG() {
 		if (bpgEClass == null) {
-			bpgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(219);
+			bpgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(217);
 		}
 		return bpgEClass;
 	}
@@ -4760,7 +4746,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBPM() {
 		if (bpmEClass == null) {
-			bpmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(220);
+			bpmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(218);
 		}
 		return bpmEClass;
 	}
@@ -4781,7 +4767,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBPS() {
 		if (bpsEClass == null) {
-			bpsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(221);
+			bpsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(219);
 		}
 		return bpsEClass;
 	}
@@ -4811,7 +4797,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBPT() {
 		if (bptEClass == null) {
-			bptEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(222);
+			bptEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(220);
 		}
 		return bptEClass;
 	}
@@ -4841,7 +4827,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBRG() {
 		if (brgEClass == null) {
-			brgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(223);
+			brgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(221);
 		}
 		return brgEClass;
 	}
@@ -4871,7 +4857,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBRS() {
 		if (brsEClass == null) {
-			brsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(224);
+			brsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(222);
 		}
 		return brsEClass;
 	}
@@ -4901,7 +4887,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBSG() {
 		if (bsgEClass == null) {
-			bsgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(225);
+			bsgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(223);
 		}
 		return bsgEClass;
 	}
@@ -4931,7 +4917,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCAT() {
 		if (catEClass == null) {
-			catEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(226);
+			catEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(224);
 		}
 		return catEClass;
 	}
@@ -4952,7 +4938,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCDD() {
 		if (cddEClass == null) {
-			cddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(227);
+			cddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(225);
 		}
 		return cddEClass;
 	}
@@ -5027,7 +5013,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCFC() {
 		if (cfcEClass == null) {
-			cfcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(228);
+			cfcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(226);
 		}
 		return cfcEClass;
 	}
@@ -5066,7 +5052,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCFI() {
 		if (cfiEClass == null) {
-			cfiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(229);
+			cfiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(227);
 		}
 		return cfiEClass;
 	}
@@ -5087,7 +5073,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCPC() {
 		if (cpcEClass == null) {
-			cpcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(230);
+			cpcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(228);
 		}
 		return cpcEClass;
 	}
@@ -5153,7 +5139,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCPD() {
 		if (cpdEClass == null) {
-			cpdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(231);
+			cpdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(229);
 		}
 		return cpdEClass;
 	}
@@ -5219,7 +5205,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCPI() {
 		if (cpiEClass == null) {
-			cpiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(232);
+			cpiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(230);
 		}
 		return cpiEClass;
 	}
@@ -5240,7 +5226,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCTC() {
 		if (ctcEClass == null) {
-			ctcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(233);
+			ctcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(231);
 		}
 		return ctcEClass;
 	}
@@ -5261,7 +5247,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDXD() {
 		if (dxdEClass == null) {
-			dxdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(234);
+			dxdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(232);
 		}
 		return dxdEClass;
 	}
@@ -5273,7 +5259,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEAG() {
 		if (eagEClass == null) {
-			eagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(235);
+			eagEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(233);
 		}
 		return eagEClass;
 	}
@@ -5294,7 +5280,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEBC() {
 		if (ebcEClass == null) {
-			ebcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(236);
+			ebcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(234);
 		}
 		return ebcEClass;
 	}
@@ -5324,7 +5310,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getECA() {
 		if (ecaEClass == null) {
-			ecaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(237);
+			ecaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(235);
 		}
 		return ecaEClass;
 	}
@@ -5354,7 +5340,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getECF() {
 		if (ecfEClass == null) {
-			ecfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(238);
+			ecfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(236);
 		}
 		return ecfEClass;
 	}
@@ -5375,7 +5361,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getECP() {
 		if (ecpEClass == null) {
-			ecpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(239);
+			ecpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(237);
 		}
 		return ecpEClass;
 	}
@@ -5396,7 +5382,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEDG() {
 		if (edgEClass == null) {
-			edgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(240);
+			edgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(238);
 		}
 		return edgEClass;
 	}
@@ -5417,7 +5403,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEDI() {
 		if (ediEClass == null) {
-			ediEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(241);
+			ediEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(239);
 		}
 		return ediEClass;
 	}
@@ -5447,7 +5433,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEDM() {
 		if (edmEClass == null) {
-			edmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(242);
+			edmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(240);
 		}
 		return edmEClass;
 	}
@@ -5468,7 +5454,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEDT() {
 		if (edtEClass == null) {
-			edtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(243);
+			edtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(241);
 		}
 		return edtEClass;
 	}
@@ -5498,7 +5484,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEDX() {
 		if (edxEClass == null) {
-			edxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(244);
+			edxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(242);
 		}
 		return edxEClass;
 	}
@@ -5519,7 +5505,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEFG() {
 		if (efgEClass == null) {
-			efgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(245);
+			efgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(243);
 		}
 		return efgEClass;
 	}
@@ -5540,7 +5526,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEFM() {
 		if (efmEClass == null) {
-			efmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(246);
+			efmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(244);
 		}
 		return efmEClass;
 	}
@@ -5561,7 +5547,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEFN() {
 		if (efnEClass == null) {
-			efnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(247);
+			efnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(245);
 		}
 		return efnEClass;
 	}
@@ -5582,7 +5568,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEGR() {
 		if (egrEClass == null) {
-			egrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(248);
+			egrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(246);
 		}
 		return egrEClass;
 	}
@@ -5612,7 +5598,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEII() {
 		if (eiiEClass == null) {
-			eiiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(249);
+			eiiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(247);
 		}
 		return eiiEClass;
 	}
@@ -5633,7 +5619,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEIM() {
 		if (eimEClass == null) {
-			eimEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(250);
+			eimEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(248);
 		}
 		return eimEClass;
 	}
@@ -5663,7 +5649,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEMM() {
 		if (emmEClass == null) {
-			emmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(251);
+			emmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(249);
 		}
 		return emmEClass;
 	}
@@ -5684,7 +5670,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEMO() {
 		if (emoEClass == null) {
-			emoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(252);
+			emoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(250);
 		}
 		return emoEClass;
 	}
@@ -5714,7 +5700,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getENG() {
 		if (engEClass == null) {
-			engEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(253);
+			engEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(251);
 		}
 		return engEClass;
 	}
@@ -5744,7 +5730,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEOC() {
 		if (eocEClass == null) {
-			eocEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(254);
+			eocEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(252);
 		}
 		return eocEClass;
 	}
@@ -5774,7 +5760,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEOG() {
 		if (eogEClass == null) {
-			eogEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(255);
+			eogEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(253);
 		}
 		return eogEClass;
 	}
@@ -5795,7 +5781,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEPF() {
 		if (epfEClass == null) {
-			epfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(256);
+			epfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(254);
 		}
 		return epfEClass;
 	}
@@ -5825,7 +5811,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEPG() {
 		if (epgEClass == null) {
-			epgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(257);
+			epgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(255);
 		}
 		return epgEClass;
 	}
@@ -5855,7 +5841,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEPM() {
 		if (epmEClass == null) {
-			epmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(258);
+			epmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(256);
 		}
 		return epmEClass;
 	}
@@ -5876,7 +5862,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEPS() {
 		if (epsEClass == null) {
-			epsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(259);
+			epsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(257);
 		}
 		return epsEClass;
 	}
@@ -5897,7 +5883,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEPT() {
 		if (eptEClass == null) {
-			eptEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(260);
+			eptEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(258);
 		}
 		return eptEClass;
 	}
@@ -5927,7 +5913,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getERG() {
 		if (ergEClass == null) {
-			ergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(261);
+			ergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(259);
 		}
 		return ergEClass;
 	}
@@ -5957,7 +5943,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getERS() {
 		if (ersEClass == null) {
-			ersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(262);
+			ersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(260);
 		}
 		return ersEClass;
 	}
@@ -5978,7 +5964,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getESG() {
 		if (esgEClass == null) {
-			esgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(263);
+			esgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(261);
 		}
 		return esgEClass;
 	}
@@ -5999,7 +5985,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNC() {
 		if (fncEClass == null) {
-			fncEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(264);
+			fncEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(262);
 		}
 		return fncEClass;
 	}
@@ -6245,7 +6231,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFND() {
 		if (fndEClass == null) {
-			fndEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(265);
+			fndEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(263);
 		}
 		return fndEClass;
 	}
@@ -6419,7 +6405,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNG() {
 		if (fngEClass == null) {
-			fngEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(266);
+			fngEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(264);
 		}
 		return fngEClass;
 	}
@@ -6440,7 +6426,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNI() {
 		if (fniEClass == null) {
-			fniEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(267);
+			fniEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(265);
 		}
 		return fniEClass;
 	}
@@ -6461,7 +6447,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNN() {
 		if (fnnEClass == null) {
-			fnnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(268);
+			fnnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(266);
 		}
 		return fnnEClass;
 	}
@@ -6471,35 +6457,8 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFNN_IBMFormat() {
+	public EAttribute getFNN_FNNData() {
         return (EAttribute)getFNN().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getFNN_TechnologyFormat() {
-        return (EAttribute)getFNN().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getFNN_Rg() {
-        return (EReference)getFNN().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getFNN_Rg2() {
-        return (EReference)getFNN().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -6509,7 +6468,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNM() {
 		if (fnmEClass == null) {
-			fnmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(269);
+			fnmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(267);
 		}
 		return fnmEClass;
 	}
@@ -6530,7 +6489,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNO() {
 		if (fnoEClass == null) {
-			fnoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(270);
+			fnoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(268);
 		}
 		return fnoEClass;
 	}
@@ -6551,7 +6510,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNP() {
 		if (fnpEClass == null) {
-			fnpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(271);
+			fnpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(269);
 		}
 		return fnpEClass;
 	}
@@ -6572,7 +6531,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGAD() {
 		if (gadEClass == null) {
-			gadEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(272);
+			gadEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(270);
 		}
 		return gadEClass;
 	}
@@ -6593,7 +6552,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGDD() {
 		if (gddEClass == null) {
-			gddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(273);
+			gddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(271);
 		}
 		return gddEClass;
 	}
@@ -6623,7 +6582,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getICP() {
 		if (icpEClass == null) {
-			icpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(274);
+			icpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(272);
 		}
 		return icpEClass;
 	}
@@ -6689,7 +6648,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIDD() {
 		if (iddEClass == null) {
-			iddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(275);
+			iddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(273);
 		}
 		return iddEClass;
 	}
@@ -6755,7 +6714,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIEL() {
 		if (ielEClass == null) {
-			ielEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(276);
+			ielEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(274);
 		}
 		return ielEClass;
 	}
@@ -6776,7 +6735,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIID() {
 		if (iidEClass == null) {
-			iidEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(277);
+			iidEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(275);
 		}
 		return iidEClass;
 	}
@@ -6896,7 +6855,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIMM() {
 		if (immEClass == null) {
-			immEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(278);
+			immEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(276);
 		}
 		return immEClass;
 	}
@@ -6926,7 +6885,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIOB() {
 		if (iobEClass == null) {
-			iobEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(279);
+			iobEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(277);
 		}
 		return iobEClass;
 	}
@@ -7028,7 +6987,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIOC() {
 		if (iocEClass == null) {
-			iocEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(280);
+			iocEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(278);
 		}
 		return iocEClass;
 	}
@@ -7112,7 +7071,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIPD() {
 		if (ipdEClass == null) {
-			ipdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(281);
+			ipdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(279);
 		}
 		return ipdEClass;
 	}
@@ -7122,8 +7081,8 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getIPD_Sdfs() {
-        return (EReference)getIPD().getEStructuralFeatures().get(0);
+	public EAttribute getIPD_IOCAdat() {
+        return (EAttribute)getIPD().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -7142,7 +7101,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIPG() {
 		if (ipgEClass == null) {
-			ipgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(282);
+			ipgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(280);
 		}
 		return ipgEClass;
 	}
@@ -7181,7 +7140,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIPO() {
 		if (ipoEClass == null) {
-			ipoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(283);
+			ipoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(281);
 		}
 		return ipoEClass;
 	}
@@ -7238,7 +7197,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIPS() {
 		if (ipsEClass == null) {
-			ipsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(284);
+			ipsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(282);
 		}
 		return ipsEClass;
 	}
@@ -7286,7 +7245,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIRD() {
 		if (irdEClass == null) {
-			irdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(285);
+			irdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(283);
 		}
 		return irdEClass;
 	}
@@ -7307,7 +7266,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLLE() {
 		if (lleEClass == null) {
-			lleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(286);
+			lleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(284);
 		}
 		return lleEClass;
 	}
@@ -7337,7 +7296,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLNC() {
 		if (lncEClass == null) {
-			lncEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(287);
+			lncEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(285);
 		}
 		return lncEClass;
 	}
@@ -7358,7 +7317,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLND() {
 		if (lndEClass == null) {
-			lndEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(288);
+			lndEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(286);
 		}
 		return lndEClass;
 	}
@@ -7532,7 +7491,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMBC() {
 		if (mbcEClass == null) {
-			mbcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(289);
+			mbcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(287);
 		}
 		return mbcEClass;
 	}
@@ -7553,7 +7512,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCA() {
 		if (mcaEClass == null) {
-			mcaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(290);
+			mcaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(288);
 		}
 		return mcaEClass;
 	}
@@ -7574,7 +7533,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCC() {
 		if (mccEClass == null) {
-			mccEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(291);
+			mccEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(289);
 		}
 		return mccEClass;
 	}
@@ -7595,7 +7554,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCD() {
 		if (mcdEClass == null) {
-			mcdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(292);
+			mcdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(290);
 		}
 		return mcdEClass;
 	}
@@ -7616,7 +7575,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCF() {
 		if (mcfEClass == null) {
-			mcfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(293);
+			mcfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(291);
 		}
 		return mcfEClass;
 	}
@@ -7637,7 +7596,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCF1() {
 		if (mcf1EClass == null) {
-			mcf1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(294);
+			mcf1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(292);
 		}
 		return mcf1EClass;
 	}
@@ -7667,7 +7626,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMDD() {
 		if (mddEClass == null) {
-			mddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(295);
+			mddEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(293);
 		}
 		return mddEClass;
 	}
@@ -7751,7 +7710,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMDR() {
 		if (mdrEClass == null) {
-			mdrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(296);
+			mdrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(294);
 		}
 		return mdrEClass;
 	}
@@ -7772,7 +7731,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMFC() {
 		if (mfcEClass == null) {
-			mfcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(297);
+			mfcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(295);
 		}
 		return mfcEClass;
 	}
@@ -7820,7 +7779,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMGO() {
 		if (mgoEClass == null) {
-			mgoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(298);
+			mgoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(296);
 		}
 		return mgoEClass;
 	}
@@ -7841,7 +7800,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMIO() {
 		if (mioEClass == null) {
-			mioEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(299);
+			mioEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(297);
 		}
 		return mioEClass;
 	}
@@ -7862,7 +7821,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMC() {
 		if (mmcEClass == null) {
-			mmcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(300);
+			mmcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(298);
 		}
 		return mmcEClass;
 	}
@@ -7901,7 +7860,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMD() {
 		if (mmdEClass == null) {
-			mmdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(301);
+			mmdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(299);
 		}
 		return mmdEClass;
 	}
@@ -7922,7 +7881,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMO() {
 		if (mmoEClass == null) {
-			mmoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(302);
+			mmoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(300);
 		}
 		return mmoEClass;
 	}
@@ -7952,7 +7911,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMT() {
 		if (mmtEClass == null) {
-			mmtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(303);
+			mmtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(301);
 		}
 		return mmtEClass;
 	}
@@ -7973,7 +7932,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMPG() {
 		if (mpgEClass == null) {
-			mpgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(304);
+			mpgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(302);
 		}
 		return mpgEClass;
 	}
@@ -7994,7 +7953,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMPO() {
 		if (mpoEClass == null) {
-			mpoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(305);
+			mpoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(303);
 		}
 		return mpoEClass;
 	}
@@ -8015,7 +7974,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMPS() {
 		if (mpsEClass == null) {
-			mpsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(306);
+			mpsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(304);
 		}
 		return mpsEClass;
 	}
@@ -8054,7 +8013,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMSU() {
 		if (msuEClass == null) {
-			msuEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(307);
+			msuEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(305);
 		}
 		return msuEClass;
 	}
@@ -8075,7 +8034,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getNOP() {
 		if (nopEClass == null) {
-			nopEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(308);
+			nopEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(306);
 		}
 		return nopEClass;
 	}
@@ -8096,7 +8055,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getOBD() {
 		if (obdEClass == null) {
-			obdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(309);
+			obdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(307);
 		}
 		return obdEClass;
 	}
@@ -8117,7 +8076,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getOBP() {
 		if (obpEClass == null) {
-			obpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(310);
+			obpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(308);
 		}
 		return obpEClass;
 	}
@@ -8228,7 +8187,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getOCD() {
 		if (ocdEClass == null) {
-			ocdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(311);
+			ocdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(309);
 		}
 		return ocdEClass;
 	}
@@ -8249,7 +8208,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPEC() {
 		if (pecEClass == null) {
-			pecEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(312);
+			pecEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(310);
 		}
 		return pecEClass;
 	}
@@ -8270,7 +8229,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPFC() {
 		if (pfcEClass == null) {
-			pfcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(313);
+			pfcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(311);
 		}
 		return pfcEClass;
 	}
@@ -8300,7 +8259,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPGD() {
 		if (pgdEClass == null) {
-			pgdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(314);
+			pgdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(312);
 		}
 		return pgdEClass;
 	}
@@ -8384,7 +8343,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPGP() {
 		if (pgpEClass == null) {
-			pgpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(315);
+			pgpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(313);
 		}
 		return pgpEClass;
 	}
@@ -8414,7 +8373,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPGP1() {
 		if (pgp1EClass == null) {
-			pgp1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(316);
+			pgp1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(314);
 		}
 		return pgp1EClass;
 	}
@@ -8444,7 +8403,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPMC() {
 		if (pmcEClass == null) {
-			pmcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(317);
+			pmcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(315);
 		}
 		return pmcEClass;
 	}
@@ -8474,7 +8433,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPPO() {
 		if (ppoEClass == null) {
-			ppoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(318);
+			ppoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(316);
 		}
 		return ppoEClass;
 	}
@@ -8495,7 +8454,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPTD() {
 		if (ptdEClass == null) {
-			ptdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(319);
+			ptdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(317);
 		}
 		return ptdEClass;
 	}
@@ -8579,7 +8538,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPTD1() {
 		if (ptd1EClass == null) {
-			ptd1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(320);
+			ptd1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(318);
 		}
 		return ptd1EClass;
 	}
@@ -8654,7 +8613,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPTX() {
 		if (ptxEClass == null) {
-			ptxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(321);
+			ptxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(319);
 		}
 		return ptxEClass;
 	}
@@ -8675,7 +8634,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTLE() {
 		if (tleEClass == null) {
-			tleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(322);
+			tleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(320);
 		}
 		return tleEClass;
 	}
@@ -8696,7 +8655,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFGD() {
 		if (fgdEClass == null) {
-			fgdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(323);
+			fgdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(321);
 		}
 		return fgdEClass;
 	}
@@ -8717,7 +8676,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getAMB() {
 		if (ambEClass == null) {
-			ambEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(324);
+			ambEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(322);
 		}
 		return ambEClass;
 	}
@@ -8738,7 +8697,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getAMI() {
 		if (amiEClass == null) {
-			amiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(325);
+			amiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(323);
 		}
 		return amiEClass;
 	}
@@ -8759,7 +8718,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBLN() {
 		if (blnEClass == null) {
-			blnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(326);
+			blnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(324);
 		}
 		return blnEClass;
 	}
@@ -8771,7 +8730,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBSU() {
 		if (bsuEClass == null) {
-			bsuEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(327);
+			bsuEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(325);
 		}
 		return bsuEClass;
 	}
@@ -8792,7 +8751,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDBR() {
 		if (dbrEClass == null) {
-			dbrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(328);
+			dbrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(326);
 		}
 		return dbrEClass;
 	}
@@ -8831,7 +8790,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDIR() {
 		if (dirEClass == null) {
-			dirEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(329);
+			dirEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(327);
 		}
 		return dirEClass;
 	}
@@ -8870,7 +8829,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getESU() {
 		if (esuEClass == null) {
-			esuEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(330);
+			esuEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(328);
 		}
 		return esuEClass;
 	}
@@ -8891,7 +8850,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getNOPCS() {
 		if (nopcsEClass == null) {
-			nopcsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(331);
+			nopcsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(329);
 		}
 		return nopcsEClass;
 	}
@@ -8912,7 +8871,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getOVS() {
 		if (ovsEClass == null) {
-			ovsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(332);
+			ovsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(330);
 		}
 		return ovsEClass;
 	}
@@ -8942,7 +8901,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getRMB() {
 		if (rmbEClass == null) {
-			rmbEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(333);
+			rmbEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(331);
 		}
 		return rmbEClass;
 	}
@@ -8963,7 +8922,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getRMI() {
 		if (rmiEClass == null) {
-			rmiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(334);
+			rmiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(332);
 		}
 		return rmiEClass;
 	}
@@ -8984,7 +8943,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getRPS() {
 		if (rpsEClass == null) {
-			rpsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(335);
+			rpsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(333);
 		}
 		return rpsEClass;
 	}
@@ -9014,7 +8973,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSBI() {
 		if (sbiEClass == null) {
-			sbiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(336);
+			sbiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(334);
 		}
 		return sbiEClass;
 	}
@@ -9035,7 +8994,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSCFL() {
 		if (scflEClass == null) {
-			scflEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(337);
+			scflEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(335);
 		}
 		return scflEClass;
 	}
@@ -9056,7 +9015,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSEC() {
 		if (secEClass == null) {
-			secEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(338);
+			secEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(336);
 		}
 		return secEClass;
 	}
@@ -9131,7 +9090,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSIA() {
 		if (siaEClass == null) {
-			siaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(339);
+			siaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(337);
 		}
 		return siaEClass;
 	}
@@ -9161,7 +9120,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSIM() {
 		if (simEClass == null) {
-			simEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(340);
+			simEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(338);
 		}
 		return simEClass;
 	}
@@ -9182,7 +9141,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSTC() {
 		if (stcEClass == null) {
-			stcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(341);
+			stcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(339);
 		}
 		return stcEClass;
 	}
@@ -9212,7 +9171,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSTO() {
 		if (stoEClass == null) {
-			stoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(342);
+			stoEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(340);
 		}
 		return stoEClass;
 	}
@@ -9242,7 +9201,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSVI() {
 		if (sviEClass == null) {
-			sviEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(343);
+			sviEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(341);
 		}
 		return sviEClass;
 	}
@@ -9263,7 +9222,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTBM() {
 		if (tbmEClass == null) {
-			tbmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(344);
+			tbmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(342);
 		}
 		return tbmEClass;
 	}
@@ -9302,7 +9261,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTRN() {
 		if (trnEClass == null) {
-			trnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(345);
+			trnEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(343);
 		}
 		return trnEClass;
 	}
@@ -9323,7 +9282,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getUSC() {
 		if (uscEClass == null) {
-			uscEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(346);
+			uscEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(344);
 		}
 		return uscEClass;
 	}
@@ -9344,7 +9303,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getAttributeQualifier() {
 		if (attributeQualifierEClass == null) {
-			attributeQualifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(347);
+			attributeQualifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(345);
 		}
 		return attributeQualifierEClass;
 	}
@@ -9374,7 +9333,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getAttributeValue() {
 		if (attributeValueEClass == null) {
-			attributeValueEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(348);
+			attributeValueEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(346);
 		}
 		return attributeValueEClass;
 	}
@@ -9404,7 +9363,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCGCSGID() {
 		if (cgcsgidEClass == null) {
-			cgcsgidEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(349);
+			cgcsgidEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(347);
 		}
 		return cgcsgidEClass;
 	}
@@ -9434,7 +9393,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCRCResourceManagement() {
 		if (crcResourceManagementEClass == null) {
-			crcResourceManagementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(350);
+			crcResourceManagementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(348);
 		}
 		return crcResourceManagementEClass;
 	}
@@ -9473,7 +9432,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCharacterRotation() {
 		if (characterRotationEClass == null) {
-			characterRotationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(351);
+			characterRotationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(349);
 		}
 		return characterRotationEClass;
 	}
@@ -9494,7 +9453,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getColorSpecification() {
 		if (colorSpecificationEClass == null) {
-			colorSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(352);
+			colorSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(350);
 		}
 		return colorSpecificationEClass;
 	}
@@ -9560,7 +9519,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getComment() {
 		if (commentEClass == null) {
-			commentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(353);
+			commentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(351);
 		}
 		return commentEClass;
 	}
@@ -9581,7 +9540,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDataObjectFontDescriptor() {
 		if (dataObjectFontDescriptorEClass == null) {
-			dataObjectFontDescriptorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(354);
+			dataObjectFontDescriptorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(352);
 		}
 		return dataObjectFontDescriptorEClass;
 	}
@@ -9665,7 +9624,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDescriptorPosition() {
 		if (descriptorPositionEClass == null) {
-			descriptorPositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(355);
+			descriptorPositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(353);
 		}
 		return descriptorPositionEClass;
 	}
@@ -9686,7 +9645,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEncodingSchemeID() {
 		if (encodingSchemeIDEClass == null) {
-			encodingSchemeIDEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(356);
+			encodingSchemeIDEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(354);
 		}
 		return encodingSchemeIDEClass;
 	}
@@ -9716,7 +9675,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFontResolution() {
 		if (fontResolutionEClass == null) {
-			fontResolutionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(357);
+			fontResolutionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(355);
 		}
 		return fontResolutionEClass;
 	}
@@ -9755,7 +9714,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFullyQualifiedName() {
 		if (fullyQualifiedNameEClass == null) {
-			fullyQualifiedNameEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(358);
+			fullyQualifiedNameEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(356);
 		}
 		return fullyQualifiedNameEClass;
 	}
@@ -9794,7 +9753,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLocalDateAndTimeStamp() {
 		if (localDateAndTimeStampEClass == null) {
-			localDateAndTimeStampEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(359);
+			localDateAndTimeStampEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(357);
 		}
 		return localDateAndTimeStampEClass;
 	}
@@ -9878,7 +9837,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getUniversalDateAndTimeStamp() {
 		if (universalDateAndTimeStampEClass == null) {
-			universalDateAndTimeStampEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(360);
+			universalDateAndTimeStampEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(358);
 		}
 		return universalDateAndTimeStampEClass;
 	}
@@ -9980,7 +9939,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMappingOption() {
 		if (mappingOptionEClass == null) {
-			mappingOptionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(361);
+			mappingOptionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(359);
 		}
 		return mappingOptionEClass;
 	}
@@ -10001,7 +9960,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMediaEjectControl() {
 		if (mediaEjectControlEClass == null) {
-			mediaEjectControlEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(362);
+			mediaEjectControlEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(360);
 		}
 		return mediaEjectControlEClass;
 	}
@@ -10031,7 +9990,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMediumMapPageNumber() {
 		if (mediumMapPageNumberEClass == null) {
-			mediumMapPageNumberEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(363);
+			mediumMapPageNumberEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(361);
 		}
 		return mediumMapPageNumberEClass;
 	}
@@ -10052,7 +10011,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMediumOrientation() {
 		if (mediumOrientationEClass == null) {
-			mediumOrientationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(364);
+			mediumOrientationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(362);
 		}
 		return mediumOrientationEClass;
 	}
@@ -10073,7 +10032,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMeasurementUnits() {
 		if (measurementUnitsEClass == null) {
-			measurementUnitsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(365);
+			measurementUnitsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(363);
 		}
 		return measurementUnitsEClass;
 	}
@@ -10121,7 +10080,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMODCAInterchangeSet() {
 		if (modcaInterchangeSetEClass == null) {
-			modcaInterchangeSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(366);
+			modcaInterchangeSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(364);
 		}
 		return modcaInterchangeSetEClass;
 	}
@@ -10151,7 +10110,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectAreaSize() {
 		if (objectAreaSizeEClass == null) {
-			objectAreaSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(367);
+			objectAreaSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(365);
 		}
 		return objectAreaSizeEClass;
 	}
@@ -10190,7 +10149,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectClassification() {
 		if (objectClassificationEClass == null) {
-			objectClassificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(368);
+			objectClassificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(366);
 		}
 		return objectClassificationEClass;
 	}
@@ -10256,7 +10215,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectFunctionSetSpecification() {
 		if (objectFunctionSetSpecificationEClass == null) {
-			objectFunctionSetSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(369);
+			objectFunctionSetSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(367);
 		}
 		return objectFunctionSetSpecificationEClass;
 	}
@@ -10304,7 +10263,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectOffset() {
 		if (objectOffsetEClass == null) {
-			objectOffsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(370);
+			objectOffsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(368);
 		}
 		return objectOffsetEClass;
 	}
@@ -10343,7 +10302,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getResourceObjectType() {
 		if (resourceObjectTypeEClass == null) {
-			resourceObjectTypeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(371);
+			resourceObjectTypeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(369);
 		}
 		return resourceObjectTypeEClass;
 	}
@@ -10373,7 +10332,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPagePositionInformation() {
 		if (pagePositionInformationEClass == null) {
-			pagePositionInformationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(372);
+			pagePositionInformationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(370);
 		}
 		return pagePositionInformationEClass;
 	}
@@ -10394,7 +10353,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPresentationControl() {
 		if (presentationControlEClass == null) {
-			presentationControlEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(373);
+			presentationControlEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(371);
 		}
 		return presentationControlEClass;
 	}
@@ -10415,7 +10374,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPresentationSpaceResetMixing() {
 		if (presentationSpaceResetMixingEClass == null) {
-			presentationSpaceResetMixingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(374);
+			presentationSpaceResetMixingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(372);
 		}
 		return presentationSpaceResetMixingEClass;
 	}
@@ -10436,7 +10395,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPresentationSpaceMixingRules() {
 		if (presentationSpaceMixingRulesEClass == null) {
-			presentationSpaceMixingRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(375);
+			presentationSpaceMixingRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(373);
 		}
 		return presentationSpaceMixingRulesEClass;
 	}
@@ -10448,7 +10407,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getResourceLocalIdentifier() {
 		if (resourceLocalIdentifierEClass == null) {
-			resourceLocalIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(376);
+			resourceLocalIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(374);
 		}
 		return resourceLocalIdentifierEClass;
 	}
@@ -10478,7 +10437,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getResourceSectionNumber() {
 		if (resourceSectionNumberEClass == null) {
-			resourceSectionNumberEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(377);
+			resourceSectionNumberEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(375);
 		}
 		return resourceSectionNumberEClass;
 	}
@@ -10499,7 +10458,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTextOrientation() {
 		if (textOrientationEClass == null) {
-			textOrientationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(378);
+			textOrientationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(376);
 		}
 		return textOrientationEClass;
 	}
@@ -10529,7 +10488,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFontHorizontalScaleFactor() {
 		if (fontHorizontalScaleFactorEClass == null) {
-			fontHorizontalScaleFactorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(379);
+			fontHorizontalScaleFactorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(377);
 		}
 		return fontHorizontalScaleFactorEClass;
 	}
@@ -10550,7 +10509,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFontDescriptorSpecification() {
 		if (fontDescriptorSpecificationEClass == null) {
-			fontDescriptorSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(380);
+			fontDescriptorSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(378);
 		}
 		return fontDescriptorSpecificationEClass;
 	}
@@ -10616,7 +10575,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBeginSegment() {
 		if (beginSegmentEClass == null) {
-			beginSegmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(381);
+			beginSegmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(379);
 		}
 		return beginSegmentEClass;
 	}
@@ -10637,7 +10596,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEndSegment() {
 		if (endSegmentEClass == null) {
-			endSegmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(382);
+			endSegmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(380);
 		}
 		return endSegmentEClass;
 	}
@@ -10649,7 +10608,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBeginTile() {
 		if (beginTileEClass == null) {
-			beginTileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(383);
+			beginTileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(381);
 		}
 		return beginTileEClass;
 	}
@@ -10661,7 +10620,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEndTile() {
 		if (endTileEClass == null) {
-			endTileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(384);
+			endTileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(382);
 		}
 		return endTileEClass;
 	}
@@ -10673,7 +10632,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBeginTransparencyMask() {
 		if (beginTransparencyMaskEClass == null) {
-			beginTransparencyMaskEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(385);
+			beginTransparencyMaskEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(383);
 		}
 		return beginTransparencyMaskEClass;
 	}
@@ -10685,7 +10644,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEndTransparencyMask() {
 		if (endTransparencyMaskEClass == null) {
-			endTransparencyMaskEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(386);
+			endTransparencyMaskEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(384);
 		}
 		return endTransparencyMaskEClass;
 	}
@@ -10697,7 +10656,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBeginImage() {
 		if (beginImageEClass == null) {
-			beginImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(387);
+			beginImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(385);
 		}
 		return beginImageEClass;
 	}
@@ -10718,7 +10677,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEndImage() {
 		if (endImageEClass == null) {
-			endImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(388);
+			endImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(386);
 		}
 		return endImageEClass;
 	}
@@ -10730,7 +10689,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getImageSize() {
 		if (imageSizeEClass == null) {
-			imageSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(389);
+			imageSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(387);
 		}
 		return imageSizeEClass;
 	}
@@ -10787,7 +10746,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getImageEncoding() {
 		if (imageEncodingEClass == null) {
-			imageEncodingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(390);
+			imageEncodingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(388);
 		}
 		return imageEncodingEClass;
 	}
@@ -10826,7 +10785,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIDESize() {
 		if (ideSizeEClass == null) {
-			ideSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(391);
+			ideSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(389);
 		}
 		return ideSizeEClass;
 	}
@@ -10847,7 +10806,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getImageLUTID() {
 		if (imageLUTIDEClass == null) {
-			imageLUTIDEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(392);
+			imageLUTIDEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(390);
 		}
 		return imageLUTIDEClass;
 	}
@@ -10868,7 +10827,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBandImage() {
 		if (bandImageEClass == null) {
-			bandImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(393);
+			bandImageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(391);
 		}
 		return bandImageEClass;
 	}
@@ -10898,7 +10857,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIDEStructure() {
 		if (ideStructureEClass == null) {
-			ideStructureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(394);
+			ideStructureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(392);
 		}
 		return ideStructureEClass;
 	}
@@ -10964,7 +10923,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getExternalAlgorithm() {
 		if (externalAlgorithmEClass == null) {
-			externalAlgorithmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(395);
+			externalAlgorithmEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(393);
 		}
 		return externalAlgorithmEClass;
 	}
@@ -10994,7 +10953,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTilePosition() {
 		if (tilePositionEClass == null) {
-			tilePositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(396);
+			tilePositionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(394);
 		}
 		return tilePositionEClass;
 	}
@@ -11024,7 +10983,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTileSize() {
 		if (tileSizeEClass == null) {
-			tileSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(397);
+			tileSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(395);
 		}
 		return tileSizeEClass;
 	}
@@ -11063,7 +11022,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTileSetColor() {
 		if (tileSetColorEClass == null) {
-			tileSetColorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(398);
+			tileSetColorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(396);
 		}
 		return tileSetColorEClass;
 	}
@@ -11165,7 +11124,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSetBiLevelImageColor() {
 		if (setBiLevelImageColorEClass == null) {
-			setBiLevelImageColorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(399);
+			setBiLevelImageColorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(397);
 		}
 		return setBiLevelImageColorEClass;
 	}
@@ -11204,7 +11163,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIOCAFunctionSetIdentification() {
 		if (iocaFunctionSetIdentificationEClass == null) {
-			iocaFunctionSetIdentificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(400);
+			iocaFunctionSetIdentificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(398);
 		}
 		return iocaFunctionSetIdentificationEClass;
 	}
@@ -11234,7 +11193,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getImageData() {
 		if (imageDataEClass == null) {
-			imageDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(401);
+			imageDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(399);
 		}
 		return imageDataEClass;
 	}
@@ -11255,7 +11214,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBandImageData() {
 		if (bandImageDataEClass == null) {
-			bandImageDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(402);
+			bandImageDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(400);
 		}
 		return bandImageDataEClass;
 	}
@@ -11294,7 +11253,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getIncludeTile() {
 		if (includeTileEClass == null) {
-			includeTileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(403);
+			includeTileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(401);
 		}
 		return includeTileEClass;
 	}
@@ -11315,7 +11274,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getImageSubsampling() {
 		if (imageSubsamplingEClass == null) {
-			imageSubsamplingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(404);
+			imageSubsamplingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(402);
 		}
 		return imageSubsamplingEClass;
 	}
@@ -11336,7 +11295,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSamplingRatios() {
 		if (samplingRatiosEClass == null) {
-			samplingRatiosEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(405);
+			samplingRatiosEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(403);
 		}
 		return samplingRatiosEClass;
 	}
@@ -11357,7 +11316,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTileTOC() {
 		if (tileTOCEClass == null) {
-			tileTOCEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(406);
+			tileTOCEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(404);
 		}
 		return tileTOCEClass;
 	}
@@ -11387,7 +11346,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCPIRG() {
 		if (cpirgEClass == null) {
-			cpirgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(407);
+			cpirgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(405);
 		}
 		return cpirgEClass;
 	}
@@ -11435,7 +11394,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCFIRG() {
 		if (cfirgEClass == null) {
-			cfirgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(408);
+			cfirgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(406);
 		}
 		return cfirgEClass;
 	}
@@ -11501,7 +11460,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNIRG() {
 		if (fnirgEClass == null) {
-			fnirgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(409);
+			fnirgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(407);
 		}
 		return fnirgEClass;
 	}
@@ -11612,7 +11571,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNMRG() {
 		if (fnmrgEClass == null) {
-			fnmrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(410);
+			fnmrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(408);
 		}
 		return fnmrgEClass;
 	}
@@ -11651,7 +11610,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLLERG() {
 		if (llergEClass == null) {
-			llergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(411);
+			llergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(409);
 		}
 		return llergEClass;
 	}
@@ -11690,7 +11649,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMPSRG() {
 		if (mpsrgEClass == null) {
-			mpsrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(412);
+			mpsrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(410);
 		}
 		return mpsrgEClass;
 	}
@@ -11720,7 +11679,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCFRG() {
 		if (mcfrgEClass == null) {
-			mcfrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(413);
+			mcfrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(411);
 		}
 		return mcfrgEClass;
 	}
@@ -11750,7 +11709,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMBCRG() {
 		if (mbcrgEClass == null) {
-			mbcrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(414);
+			mbcrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(412);
 		}
 		return mbcrgEClass;
 	}
@@ -11780,7 +11739,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCARG() {
 		if (mcargEClass == null) {
-			mcargEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(415);
+			mcargEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(413);
 		}
 		return mcargEClass;
 	}
@@ -11810,7 +11769,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCDRG() {
 		if (mcdrgEClass == null) {
-			mcdrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(416);
+			mcdrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(414);
 		}
 		return mcdrgEClass;
 	}
@@ -11840,7 +11799,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMDRRG() {
 		if (mdrrgEClass == null) {
-			mdrrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(417);
+			mdrrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(415);
 		}
 		return mdrrgEClass;
 	}
@@ -11870,7 +11829,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMGORG() {
 		if (mgorgEClass == null) {
-			mgorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(418);
+			mgorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(416);
 		}
 		return mgorgEClass;
 	}
@@ -11900,7 +11859,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMIORG() {
 		if (miorgEClass == null) {
-			miorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(419);
+			miorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(417);
 		}
 		return miorgEClass;
 	}
@@ -11930,7 +11889,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMDRG() {
 		if (mmdrgEClass == null) {
-			mmdrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(420);
+			mmdrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(418);
 		}
 		return mmdrgEClass;
 	}
@@ -11960,7 +11919,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMTRG() {
 		if (mmtrgEClass == null) {
-			mmtrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(421);
+			mmtrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(419);
 		}
 		return mmtrgEClass;
 	}
@@ -11990,7 +11949,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMPGRG() {
 		if (mpgrgEClass == null) {
-			mpgrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(422);
+			mpgrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(420);
 		}
 		return mpgrgEClass;
 	}
@@ -12020,7 +11979,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMPORG() {
 		if (mporgEClass == null) {
-			mporgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(423);
+			mporgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(421);
 		}
 		return mporgEClass;
 	}
@@ -12050,7 +12009,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPPORG() {
 		if (pporgEClass == null) {
-			pporgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(424);
+			pporgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(422);
 		}
 		return pporgEClass;
 	}
@@ -12116,7 +12075,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPGPRG() {
 		if (pgprgEClass == null) {
-			pgprgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(425);
+			pgprgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(423);
 		}
 		return pgprgEClass;
 	}
@@ -12191,7 +12150,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCCRG() {
 		if (mccrgEClass == null) {
-			mccrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(426);
+			mccrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(424);
 		}
 		return mccrgEClass;
 	}
@@ -12230,7 +12189,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMORG() {
 		if (mmorgEClass == null) {
-			mmorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(427);
+			mmorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(425);
 		}
 		return mmorgEClass;
 	}
@@ -12269,7 +12228,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBandImageRG() {
 		if (bandImageRGEClass == null) {
-			bandImageRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(428);
+			bandImageRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(426);
 		}
 		return bandImageRGEClass;
 	}
@@ -12290,7 +12249,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMCF1RG() {
 		if (mcf1RGEClass == null) {
-			mcf1RGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(429);
+			mcf1RGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(427);
 		}
 		return mcf1RGEClass;
 	}
@@ -12356,7 +12315,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMMCRG() {
 		if (mmcrgEClass == null) {
-			mmcrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(430);
+			mmcrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(428);
 		}
 		return mmcrgEClass;
 	}
@@ -12386,7 +12345,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNORG() {
 		if (fnorgEClass == null) {
-			fnorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(431);
+			fnorgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(429);
 		}
 		return fnorgEClass;
 	}
@@ -12524,7 +12483,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNPRG() {
 		if (fnprgEClass == null) {
-			fnprgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(432);
+			fnprgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(430);
 		}
 		return fnprgEClass;
 	}
@@ -12635,7 +12594,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTileTOCRG() {
 		if (tileTOCRGEClass == null) {
-			tileTOCRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(433);
+			tileTOCRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(431);
 		}
 		return tileTOCRGEClass;
 	}
@@ -12710,7 +12669,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getSamplingRatiosRG() {
 		if (samplingRatiosRGEClass == null) {
-			samplingRatiosRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(434);
+			samplingRatiosRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(432);
 		}
 		return samplingRatiosRGEClass;
 	}
@@ -12740,7 +12699,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getExternalAlgorithmRG() {
 		if (externalAlgorithmRGEClass == null) {
-			externalAlgorithmRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(435);
+			externalAlgorithmRGEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(433);
 		}
 		return externalAlgorithmRGEClass;
 	}
@@ -12779,7 +12738,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNNRG() {
 		if (fnnrgEClass == null) {
-			fnnrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(436);
+			fnnrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(434);
 		}
 		return fnnrgEClass;
 	}
@@ -12809,7 +12768,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFNNRG2() {
 		if (fnnrg2EClass == null) {
-			fnnrg2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(437);
+			fnnrg2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(435);
 		}
 		return fnnrg2EClass;
 	}
@@ -12839,7 +12798,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getBeginSegmentCommand() {
 		if (beginSegmentCommandEClass == null) {
-			beginSegmentCommandEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(438);
+			beginSegmentCommandEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(436);
 		}
 		return beginSegmentCommandEClass;
 	}
@@ -12905,7 +12864,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getEndSegmentCommand() {
 		if (endSegmentCommandEClass == null) {
-			endSegmentCommandEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(439);
+			endSegmentCommandEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(437);
 		}
 		return endSegmentCommandEClass;
 	}
@@ -12917,7 +12876,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGBAR() {
 		if (gbarEClass == null) {
-			gbarEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(440);
+			gbarEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(438);
 		}
 		return gbarEClass;
 	}
@@ -12938,7 +12897,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGBIMG() {
 		if (gbimgEClass == null) {
-			gbimgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(441);
+			gbimgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(439);
 		}
 		return gbimgEClass;
 	}
@@ -13004,7 +12963,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCBIMG() {
 		if (gcbimgEClass == null) {
-			gcbimgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(442);
+			gcbimgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(440);
 		}
 		return gcbimgEClass;
 	}
@@ -13052,7 +13011,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGBOX() {
 		if (gboxEClass == null) {
-			gboxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(443);
+			gboxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(441);
 		}
 		return gboxEClass;
 	}
@@ -13127,7 +13086,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCBOX() {
 		if (gcboxEClass == null) {
-			gcboxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(444);
+			gcboxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(442);
 		}
 		return gcboxEClass;
 	}
@@ -13184,7 +13143,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCHST() {
 		if (gchstEClass == null) {
-			gchstEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(445);
+			gchstEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(443);
 		}
 		return gchstEClass;
 	}
@@ -13223,7 +13182,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCCHST() {
 		if (gcchstEClass == null) {
-			gcchstEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(446);
+			gcchstEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(444);
 		}
 		return gcchstEClass;
 	}
@@ -13244,7 +13203,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCOMT() {
 		if (gcomtEClass == null) {
-			gcomtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(447);
+			gcomtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(445);
 		}
 		return gcomtEClass;
 	}
@@ -13265,7 +13224,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGEAR() {
 		if (gearEClass == null) {
-			gearEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(448);
+			gearEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(446);
 		}
 		return gearEClass;
 	}
@@ -13286,7 +13245,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGEIMG() {
 		if (geimgEClass == null) {
-			geimgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(449);
+			geimgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(447);
 		}
 		return geimgEClass;
 	}
@@ -13307,7 +13266,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGEPROL() {
 		if (geprolEClass == null) {
-			geprolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(450);
+			geprolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(448);
 		}
 		return geprolEClass;
 	}
@@ -13328,7 +13287,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGFLT() {
 		if (gfltEClass == null) {
-			gfltEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(451);
+			gfltEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(449);
 		}
 		return gfltEClass;
 	}
@@ -13349,7 +13308,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCFLT() {
 		if (gcfltEClass == null) {
-			gcfltEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(452);
+			gcfltEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(450);
 		}
 		return gcfltEClass;
 	}
@@ -13370,7 +13329,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGFARC() {
 		if (gfarcEClass == null) {
-			gfarcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(453);
+			gfarcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(451);
 		}
 		return gfarcEClass;
 	}
@@ -13418,7 +13377,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCFARC() {
 		if (gcfarcEClass == null) {
-			gcfarcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(454);
+			gcfarcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(452);
 		}
 		return gcfarcEClass;
 	}
@@ -13448,7 +13407,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGIMD() {
 		if (gimdEClass == null) {
-			gimdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(455);
+			gimdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(453);
 		}
 		return gimdEClass;
 	}
@@ -13469,7 +13428,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGLINE() {
 		if (glineEClass == null) {
-			glineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(456);
+			glineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(454);
 		}
 		return glineEClass;
 	}
@@ -13490,7 +13449,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCLINE() {
 		if (gclineEClass == null) {
-			gclineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(457);
+			gclineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(455);
 		}
 		return gclineEClass;
 	}
@@ -13511,7 +13470,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGMRK() {
 		if (gmrkEClass == null) {
-			gmrkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(458);
+			gmrkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(456);
 		}
 		return gmrkEClass;
 	}
@@ -13532,7 +13491,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCMRK() {
 		if (gcmrkEClass == null) {
-			gcmrkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(459);
+			gcmrkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(457);
 		}
 		return gcmrkEClass;
 	}
@@ -13553,7 +13512,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGNOP1() {
 		if (gnop1EClass == null) {
-			gnop1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(460);
+			gnop1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(458);
 		}
 		return gnop1EClass;
 	}
@@ -13565,7 +13524,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGPARC() {
 		if (gparcEClass == null) {
-			gparcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(461);
+			gparcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(459);
 		}
 		return gparcEClass;
 	}
@@ -13649,7 +13608,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCPARC() {
 		if (gcparcEClass == null) {
-			gcparcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(462);
+			gcparcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(460);
 		}
 		return gcparcEClass;
 	}
@@ -13715,7 +13674,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGRLINE() {
 		if (grlineEClass == null) {
-			grlineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(463);
+			grlineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(461);
 		}
 		return grlineEClass;
 	}
@@ -13754,7 +13713,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCRLINE() {
 		if (gcrlineEClass == null) {
-			gcrlineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(464);
+			gcrlineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(462);
 		}
 		return gcrlineEClass;
 	}
@@ -13775,7 +13734,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSGCH() {
 		if (gsgchEClass == null) {
-			gsgchEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(465);
+			gsgchEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(463);
 		}
 		return gsgchEClass;
 	}
@@ -13787,7 +13746,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSAP() {
 		if (gsapEClass == null) {
-			gsapEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(466);
+			gsapEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(464);
 		}
 		return gsapEClass;
 	}
@@ -13835,7 +13794,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSBMX() {
 		if (gsbmxEClass == null) {
-			gsbmxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(467);
+			gsbmxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(465);
 		}
 		return gsbmxEClass;
 	}
@@ -13856,7 +13815,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCA() {
 		if (gscaEClass == null) {
-			gscaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(468);
+			gscaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(466);
 		}
 		return gscaEClass;
 	}
@@ -13886,7 +13845,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCC() {
 		if (gsccEClass == null) {
-			gsccEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(469);
+			gsccEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(467);
 		}
 		return gsccEClass;
 	}
@@ -13934,7 +13893,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCD() {
 		if (gscdEClass == null) {
-			gscdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(470);
+			gscdEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(468);
 		}
 		return gscdEClass;
 	}
@@ -13955,7 +13914,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCR() {
 		if (gscrEClass == null) {
-			gscrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(471);
+			gscrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(469);
 		}
 		return gscrEClass;
 	}
@@ -13976,7 +13935,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCS() {
 		if (gscsEClass == null) {
-			gscsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(472);
+			gscsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(470);
 		}
 		return gscsEClass;
 	}
@@ -13997,7 +13956,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCH() {
 		if (gschEClass == null) {
-			gschEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(473);
+			gschEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(471);
 		}
 		return gschEClass;
 	}
@@ -14027,7 +13986,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCOL() {
 		if (gscolEClass == null) {
-			gscolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(474);
+			gscolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(472);
 		}
 		return gscolEClass;
 	}
@@ -14048,7 +14007,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSCP() {
 		if (gscpEClass == null) {
-			gscpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(475);
+			gscpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(473);
 		}
 		return gscpEClass;
 	}
@@ -14078,7 +14037,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSECOL() {
 		if (gsecolEClass == null) {
-			gsecolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(476);
+			gsecolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(474);
 		}
 		return gsecolEClass;
 	}
@@ -14099,7 +14058,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSFLW() {
 		if (gsflwEClass == null) {
-			gsflwEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(477);
+			gsflwEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(475);
 		}
 		return gsflwEClass;
 	}
@@ -14129,7 +14088,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSLT() {
 		if (gsltEClass == null) {
-			gsltEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(478);
+			gsltEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(476);
 		}
 		return gsltEClass;
 	}
@@ -14150,7 +14109,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSLW() {
 		if (gslwEClass == null) {
-			gslwEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(479);
+			gslwEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(477);
 		}
 		return gslwEClass;
 	}
@@ -14171,7 +14130,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSMC() {
 		if (gsmcEClass == null) {
-			gsmcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(480);
+			gsmcEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(478);
 		}
 		return gsmcEClass;
 	}
@@ -14201,7 +14160,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSMP() {
 		if (gsmpEClass == null) {
-			gsmpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(481);
+			gsmpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(479);
 		}
 		return gsmpEClass;
 	}
@@ -14222,7 +14181,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSMS() {
 		if (gsmsEClass == null) {
-			gsmsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(482);
+			gsmsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(480);
 		}
 		return gsmsEClass;
 	}
@@ -14243,7 +14202,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSMT() {
 		if (gsmtEClass == null) {
-			gsmtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(483);
+			gsmtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(481);
 		}
 		return gsmtEClass;
 	}
@@ -14264,7 +14223,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSMX() {
 		if (gsmxEClass == null) {
-			gsmxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(484);
+			gsmxEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(482);
 		}
 		return gsmxEClass;
 	}
@@ -14285,7 +14244,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSPS() {
 		if (gspsEClass == null) {
-			gspsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(485);
+			gspsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(483);
 		}
 		return gspsEClass;
 	}
@@ -14306,7 +14265,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSPT() {
 		if (gsptEClass == null) {
-			gsptEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(486);
+			gsptEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(484);
 		}
 		return gsptEClass;
 	}
@@ -14327,7 +14286,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSPCOL() {
 		if (gspcolEClass == null) {
-			gspcolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(487);
+			gspcolEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(485);
 		}
 		return gspcolEClass;
 	}
@@ -14411,7 +14370,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSLE() {
 		if (gsleEClass == null) {
-			gsleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(488);
+			gsleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(486);
 		}
 		return gsleEClass;
 	}
@@ -14432,7 +14391,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGSLJ() {
 		if (gsljEClass == null) {
-			gsljEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(489);
+			gsljEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(487);
 		}
 		return gsljEClass;
 	}
@@ -14453,7 +14412,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCBEZ() {
 		if (gcbezEClass == null) {
-			gcbezEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(490);
+			gcbezEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(488);
 		}
 		return gcbezEClass;
 	}
@@ -14474,7 +14433,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCCBEZ() {
 		if (gccbezEClass == null) {
-			gccbezEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(491);
+			gccbezEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(489);
 		}
 		return gccbezEClass;
 	}
@@ -14495,7 +14454,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getWindowSpecification() {
 		if (windowSpecificationEClass == null) {
-			windowSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(492);
+			windowSpecificationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(490);
 		}
 		return windowSpecificationEClass;
 	}
@@ -14606,7 +14565,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDrawingOrderSubset() {
 		if (drawingOrderSubsetEClass == null) {
-			drawingOrderSubsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(493);
+			drawingOrderSubsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(491);
 		}
 		return drawingOrderSubsetEClass;
 	}
@@ -14618,7 +14577,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCBEZRG() {
 		if (gcbezrgEClass == null) {
-			gcbezrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(494);
+			gcbezrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(492);
 		}
 		return gcbezrgEClass;
 	}
@@ -14648,7 +14607,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCCBEZRG() {
 		if (gccbezrgEClass == null) {
-			gccbezrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(495);
+			gccbezrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(493);
 		}
 		return gccbezrgEClass;
 	}
@@ -14678,7 +14637,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGFLTRG() {
 		if (gfltrgEClass == null) {
-			gfltrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(496);
+			gfltrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(494);
 		}
 		return gfltrgEClass;
 	}
@@ -14708,7 +14667,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCFLTRG() {
 		if (gcfltrgEClass == null) {
-			gcfltrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(497);
+			gcfltrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(495);
 		}
 		return gcfltrgEClass;
 	}
@@ -14738,7 +14697,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGLINERG() {
 		if (glinergEClass == null) {
-			glinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(498);
+			glinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(496);
 		}
 		return glinergEClass;
 	}
@@ -14768,7 +14727,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCLINERG() {
 		if (gclinergEClass == null) {
-			gclinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(499);
+			gclinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(497);
 		}
 		return gclinergEClass;
 	}
@@ -14798,7 +14757,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGMRKRG() {
 		if (gmrkrgEClass == null) {
-			gmrkrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(500);
+			gmrkrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(498);
 		}
 		return gmrkrgEClass;
 	}
@@ -14828,7 +14787,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCMRKRG() {
 		if (gcmrkrgEClass == null) {
-			gcmrkrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(501);
+			gcmrkrgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(499);
 		}
 		return gcmrkrgEClass;
 	}
@@ -14858,7 +14817,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGRLINERG() {
 		if (grlinergEClass == null) {
-			grlinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(502);
+			grlinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(500);
 		}
 		return grlinergEClass;
 	}
@@ -14888,7 +14847,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getGCRLINERG() {
 		if (gcrlinergEClass == null) {
-			gcrlinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(503);
+			gcrlinergEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(501);
 		}
 		return gcrlinergEClass;
 	}
@@ -14918,7 +14877,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTonerSaver() {
 		if (tonerSaverEClass == null) {
-			tonerSaverEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(504);
+			tonerSaverEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(502);
 		}
 		return tonerSaverEClass;
 	}
@@ -14939,7 +14898,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getColorFidelity() {
 		if (colorFidelityEClass == null) {
-			colorFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(505);
+			colorFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(503);
 		}
 		return colorFidelityEClass;
 	}
@@ -14978,7 +14937,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFontFidelity() {
 		if (fontFidelityEClass == null) {
-			fontFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(506);
+			fontFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(504);
 		}
 		return fontFidelityEClass;
 	}
@@ -14999,7 +14958,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getTextFidelity() {
 		if (textFidelityEClass == null) {
-			textFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(507);
+			textFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(505);
 		}
 		return textFidelityEClass;
 	}
@@ -15029,7 +14988,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMediaFidelity() {
 		if (mediaFidelityEClass == null) {
-			mediaFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(508);
+			mediaFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(506);
 		}
 		return mediaFidelityEClass;
 	}
@@ -15050,7 +15009,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFinishingFidelity() {
 		if (finishingFidelityEClass == null) {
-			finishingFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(509);
+			finishingFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(507);
 		}
 		return finishingFidelityEClass;
 	}
@@ -15080,7 +15039,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getCMRFidelity() {
 		if (cmrFidelityEClass == null) {
-			cmrFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(510);
+			cmrFidelityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(508);
 		}
 		return cmrFidelityEClass;
 	}
@@ -15110,7 +15069,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectByteExtent() {
 		if (objectByteExtentEClass == null) {
-			objectByteExtentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(511);
+			objectByteExtentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(509);
 		}
 		return objectByteExtentEClass;
 	}
@@ -15140,7 +15099,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectByteOffset() {
 		if (objectByteOffsetEClass == null) {
-			objectByteOffsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(512);
+			objectByteOffsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(510);
 		}
 		return objectByteOffsetEClass;
 	}
@@ -15170,7 +15129,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectStructuredFieldExtent() {
 		if (objectStructuredFieldExtentEClass == null) {
-			objectStructuredFieldExtentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(513);
+			objectStructuredFieldExtentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(511);
 		}
 		return objectStructuredFieldExtentEClass;
 	}
@@ -15200,7 +15159,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectStructuredFieldOffset() {
 		if (objectStructuredFieldOffsetEClass == null) {
-			objectStructuredFieldOffsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(514);
+			objectStructuredFieldOffsetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(512);
 		}
 		return objectStructuredFieldOffsetEClass;
 	}
@@ -15230,7 +15189,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectCount() {
 		if (objectCountEClass == null) {
-			objectCountEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(515);
+			objectCountEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(513);
 		}
 		return objectCountEClass;
 	}
@@ -15269,7 +15228,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectOriginIdentifier() {
 		if (objectOriginIdentifierEClass == null) {
-			objectOriginIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(516);
+			objectOriginIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(514);
 		}
 		return objectOriginIdentifierEClass;
 	}
@@ -15317,7 +15276,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLineDataObjectPositionMigration() {
 		if (lineDataObjectPositionMigrationEClass == null) {
-			lineDataObjectPositionMigrationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(517);
+			lineDataObjectPositionMigrationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(515);
 		}
 		return lineDataObjectPositionMigrationEClass;
 	}
@@ -15338,7 +15297,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getColorManagementResourceDescriptor() {
 		if (colorManagementResourceDescriptorEClass == null) {
-			colorManagementResourceDescriptorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(518);
+			colorManagementResourceDescriptorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(516);
 		}
 		return colorManagementResourceDescriptorEClass;
 	}
@@ -15368,7 +15327,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMSURG() {
 		if (msurgEClass == null) {
-			msurgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(519);
+			msurgEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(517);
 		}
 		return msurgEClass;
 	}
@@ -15407,7 +15366,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getImageResolution() {
 		if (imageResolutionEClass == null) {
-			imageResolutionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(520);
+			imageResolutionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(518);
 		}
 		return imageResolutionEClass;
 	}
@@ -15455,7 +15414,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getObjectContainerPresentationSpaceSize() {
 		if (objectContainerPresentationSpaceSizeEClass == null) {
-			objectContainerPresentationSpaceSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(521);
+			objectContainerPresentationSpaceSizeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(519);
 		}
 		return objectContainerPresentationSpaceSizeEClass;
 	}
@@ -15476,7 +15435,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getExtendedResourceLocalIdentifier() {
 		if (extendedResourceLocalIdentifierEClass == null) {
-			extendedResourceLocalIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(522);
+			extendedResourceLocalIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(520);
 		}
 		return extendedResourceLocalIdentifierEClass;
 	}
@@ -15506,7 +15465,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getMetricAdjustment() {
 		if (metricAdjustmentEClass == null) {
-			metricAdjustmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(523);
+			metricAdjustmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(521);
 		}
 		return metricAdjustmentEClass;
 	}
@@ -15581,7 +15540,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getExtensionFont() {
 		if (extensionFontEClass == null) {
-			extensionFontEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(524);
+			extensionFontEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(522);
 		}
 		return extensionFontEClass;
 	}
@@ -15602,7 +15561,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getRenderingIntent() {
 		if (renderingIntentEClass == null) {
-			renderingIntentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(525);
+			renderingIntentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(523);
 		}
 		return renderingIntentEClass;
 	}
@@ -15668,7 +15627,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFontCodedGraphicCharacterSetGlobalIdentifier() {
 		if (fontCodedGraphicCharacterSetGlobalIdentifierEClass == null) {
-			fontCodedGraphicCharacterSetGlobalIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(526);
+			fontCodedGraphicCharacterSetGlobalIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(524);
 		}
 		return fontCodedGraphicCharacterSetGlobalIdentifierEClass;
 	}
@@ -15698,7 +15657,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getLocaleSelector() {
 		if (localeSelectorEClass == null) {
-			localeSelectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(527);
+			localeSelectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(525);
 		}
 		return localeSelectorEClass;
 	}
@@ -15764,7 +15723,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getFinishingOperation() {
 		if (finishingOperationEClass == null) {
-			finishingOperationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(528);
+			finishingOperationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(526);
 		}
 		return finishingOperationEClass;
 	}
@@ -15821,7 +15780,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getUP3iFinishingOperation() {
 		if (up3iFinishingOperationEClass == null) {
-			up3iFinishingOperationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(529);
+			up3iFinishingOperationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(527);
 		}
 		return up3iFinishingOperationEClass;
 	}
@@ -15851,7 +15810,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getDeviceAppearance() {
 		if (deviceAppearanceEClass == null) {
-			deviceAppearanceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(530);
+			deviceAppearanceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(528);
 		}
 		return deviceAppearanceEClass;
 	}
@@ -15881,7 +15840,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getResourceObjectInclude() {
 		if (resourceObjectIncludeEClass == null) {
-			resourceObjectIncludeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(531);
+			resourceObjectIncludeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(529);
 		}
 		return resourceObjectIncludeEClass;
 	}
@@ -15938,7 +15897,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getPageOverlayConditionalProcessing() {
 		if (pageOverlayConditionalProcessingEClass == null) {
-			pageOverlayConditionalProcessingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(532);
+			pageOverlayConditionalProcessingEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(530);
 		}
 		return pageOverlayConditionalProcessingEClass;
 	}
@@ -15968,7 +15927,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EClass getResourceUsageAttribute() {
 		if (resourceUsageAttributeEClass == null) {
-			resourceUsageAttributeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(533);
+			resourceUsageAttributeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(531);
 		}
 		return resourceUsageAttributeEClass;
 	}
@@ -16419,33 +16378,9 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getFNNIBMFormat() {
-		if (fnnibmFormatEEnum == null) {
-			fnnibmFormatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(37);
-		}
-		return fnnibmFormatEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EEnum getFNNTechnologyFormat() {
-		if (fnnTechnologyFormatEEnum == null) {
-			fnnTechnologyFormatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(38);
-		}
-		return fnnTechnologyFormatEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EEnum getIDDUNITBASE() {
 		if (iddunitbaseEEnum == null) {
-			iddunitbaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(39);
+			iddunitbaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return iddunitbaseEEnum;
 	}
@@ -16457,7 +16392,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIOBObjType() {
 		if (iobObjTypeEEnum == null) {
-			iobObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(40);
+			iobObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(38);
 		}
 		return iobObjTypeEEnum;
 	}
@@ -16469,7 +16404,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIOBXoaOrent() {
 		if (iobXoaOrentEEnum == null) {
-			iobXoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(41);
+			iobXoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(39);
 		}
 		return iobXoaOrentEEnum;
 	}
@@ -16481,7 +16416,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIOBYoaOrent() {
 		if (iobYoaOrentEEnum == null) {
-			iobYoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(42);
+			iobYoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(40);
 		}
 		return iobYoaOrentEEnum;
 	}
@@ -16493,7 +16428,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIOBRefCSys() {
 		if (iobRefCSysEEnum == null) {
-			iobRefCSysEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(43);
+			iobRefCSysEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(41);
 		}
 		return iobRefCSysEEnum;
 	}
@@ -16505,7 +16440,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIPGIPgFlgs() {
 		if (ipgiPgFlgsEEnum == null) {
-			ipgiPgFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(44);
+			ipgiPgFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(42);
 		}
 		return ipgiPgFlgsEEnum;
 	}
@@ -16517,7 +16452,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIPOOvlyOrent() {
 		if (ipoOvlyOrentEEnum == null) {
-			ipoOvlyOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(45);
+			ipoOvlyOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(43);
 		}
 		return ipoOvlyOrentEEnum;
 	}
@@ -16529,7 +16464,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMDDXmBase() {
 		if (mddXmBaseEEnum == null) {
-			mddXmBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(46);
+			mddXmBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(44);
 		}
 		return mddXmBaseEEnum;
 	}
@@ -16541,7 +16476,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMDDYmBase() {
 		if (mddYmBaseEEnum == null) {
-			mddYmBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(47);
+			mddYmBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(45);
 		}
 		return mddYmBaseEEnum;
 	}
@@ -16553,7 +16488,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMDDMDDFlgs() {
 		if (mddmddFlgsEEnum == null) {
-			mddmddFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(48);
+			mddmddFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(46);
 		}
 		return mddmddFlgsEEnum;
 	}
@@ -16565,7 +16500,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMFCMFCFlgs() {
 		if (mfcmfcFlgsEEnum == null) {
-			mfcmfcFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(49);
+			mfcmfcFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(47);
 		}
 		return mfcmfcFlgsEEnum;
 	}
@@ -16577,7 +16512,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMFCMedColl() {
 		if (mfcMedCollEEnum == null) {
-			mfcMedCollEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(50);
+			mfcMedCollEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(48);
 		}
 		return mfcMedCollEEnum;
 	}
@@ -16589,7 +16524,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMFCMFCScpe() {
 		if (mfcmfcScpeEEnum == null) {
-			mfcmfcScpeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(51);
+			mfcmfcScpeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(49);
 		}
 		return mfcmfcScpeEEnum;
 	}
@@ -16601,7 +16536,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMMCPARAMETER1() {
 		if (mmcparameter1EEnum == null) {
-			mmcparameter1EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(52);
+			mmcparameter1EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(50);
 		}
 		return mmcparameter1EEnum;
 	}
@@ -16613,7 +16548,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMMORGLength() {
 		if (mmorgLengthEEnum == null) {
-			mmorgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(53);
+			mmorgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(51);
 		}
 		return mmorgLengthEEnum;
 	}
@@ -16625,7 +16560,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMPSRGLength() {
 		if (mpsrgLengthEEnum == null) {
-			mpsrgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(54);
+			mpsrgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(52);
 		}
 		return mpsrgLengthEEnum;
 	}
@@ -16637,7 +16572,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOBPRGLength() {
 		if (obprgLengthEEnum == null) {
-			obprgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(55);
+			obprgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(53);
 		}
 		return obprgLengthEEnum;
 	}
@@ -16649,7 +16584,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOBPXoaOrent() {
 		if (obpXoaOrentEEnum == null) {
-			obpXoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(56);
+			obpXoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(54);
 		}
 		return obpXoaOrentEEnum;
 	}
@@ -16661,7 +16596,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOBPYoaOrent() {
 		if (obpYoaOrentEEnum == null) {
-			obpYoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(57);
+			obpYoaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(55);
 		}
 		return obpYoaOrentEEnum;
 	}
@@ -16673,7 +16608,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOBPXocaOrent() {
 		if (obpXocaOrentEEnum == null) {
-			obpXocaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(58);
+			obpXocaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(56);
 		}
 		return obpXocaOrentEEnum;
 	}
@@ -16685,7 +16620,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOBPYocaOrent() {
 		if (obpYocaOrentEEnum == null) {
-			obpYocaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(59);
+			obpYocaOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(57);
 		}
 		return obpYocaOrentEEnum;
 	}
@@ -16697,7 +16632,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOBPRefCSys() {
 		if (obpRefCSysEEnum == null) {
-			obpRefCSysEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(60);
+			obpRefCSysEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(58);
 		}
 		return obpRefCSysEEnum;
 	}
@@ -16709,7 +16644,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPFCPFCFlgs() {
 		if (pfcpfcFlgsEEnum == null) {
-			pfcpfcFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(61);
+			pfcpfcFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(59);
 		}
 		return pfcpfcFlgsEEnum;
 	}
@@ -16721,7 +16656,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGDXpgBase() {
 		if (pgdXpgBaseEEnum == null) {
-			pgdXpgBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(62);
+			pgdXpgBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(60);
 		}
 		return pgdXpgBaseEEnum;
 	}
@@ -16733,7 +16668,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGDYpgBase() {
 		if (pgdYpgBaseEEnum == null) {
-			pgdYpgBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(63);
+			pgdYpgBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(61);
 		}
 		return pgdYpgBaseEEnum;
 	}
@@ -16745,7 +16680,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGPConstant() {
 		if (pgpConstantEEnum == null) {
-			pgpConstantEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(64);
+			pgpConstantEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(62);
 		}
 		return pgpConstantEEnum;
 	}
@@ -16757,7 +16692,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPTDXPBASE() {
 		if (ptdxpbaseEEnum == null) {
-			ptdxpbaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(65);
+			ptdxpbaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(63);
 		}
 		return ptdxpbaseEEnum;
 	}
@@ -16769,7 +16704,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPTDYPBASE() {
 		if (ptdypbaseEEnum == null) {
-			ptdypbaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(66);
+			ptdypbaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(64);
 		}
 		return ptdypbaseEEnum;
 	}
@@ -16781,7 +16716,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPTD1XPBASE() {
 		if (ptd1XPBASEEEnum == null) {
-			ptd1XPBASEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(67);
+			ptd1XPBASEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(65);
 		}
 		return ptd1XPBASEEEnum;
 	}
@@ -16793,7 +16728,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPTD1YPBASE() {
 		if (ptd1YPBASEEEnum == null) {
-			ptd1YPBASEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(68);
+			ptd1YPBASEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(66);
 		}
 		return ptd1YPBASEEEnum;
 	}
@@ -16805,7 +16740,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getOVSBYPSIDEN() {
 		if (ovsbypsidenEEnum == null) {
-			ovsbypsidenEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(69);
+			ovsbypsidenEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(67);
 		}
 		return ovsbypsidenEEnum;
 	}
@@ -16817,7 +16752,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSECCOLSPCE() {
 		if (seccolspceEEnum == null) {
-			seccolspceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(70);
+			seccolspceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(68);
 		}
 		return seccolspceEEnum;
 	}
@@ -16829,7 +16764,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSIADIRCTION() {
 		if (siadirctionEEnum == null) {
-			siadirctionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(71);
+			siadirctionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(69);
 		}
 		return siadirctionEEnum;
 	}
@@ -16841,7 +16776,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSTCFRGCOLOR() {
 		if (stcfrgcolorEEnum == null) {
-			stcfrgcolorEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(72);
+			stcfrgcolorEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(70);
 		}
 		return stcfrgcolorEEnum;
 	}
@@ -16853,7 +16788,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSTCPRECSION() {
 		if (stcprecsionEEnum == null) {
-			stcprecsionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(73);
+			stcprecsionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(71);
 		}
 		return stcprecsionEEnum;
 	}
@@ -16865,7 +16800,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSTOIORNTION() {
 		if (stoiorntionEEnum == null) {
-			stoiorntionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(74);
+			stoiorntionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(72);
 		}
 		return stoiorntionEEnum;
 	}
@@ -16877,7 +16812,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSTOBORNTION() {
 		if (stoborntionEEnum == null) {
-			stoborntionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(75);
+			stoborntionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(73);
 		}
 		return stoborntionEEnum;
 	}
@@ -16889,7 +16824,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTBMDIRCTION() {
 		if (tbmdirctionEEnum == null) {
-			tbmdirctionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(76);
+			tbmdirctionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(74);
 		}
 		return tbmdirctionEEnum;
 	}
@@ -16901,7 +16836,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTBMPRECSION() {
 		if (tbmprecsionEEnum == null) {
-			tbmprecsionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(77);
+			tbmprecsionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(75);
 		}
 		return tbmprecsionEEnum;
 	}
@@ -16913,7 +16848,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getUSCBYPSIDEN() {
 		if (uscbypsidenEEnum == null) {
-			uscbypsidenEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(78);
+			uscbypsidenEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(76);
 		}
 		return uscbypsidenEEnum;
 	}
@@ -16925,7 +16860,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getCRCResourceManagementFmtQual() {
 		if (crcResourceManagementFmtQualEEnum == null) {
-			crcResourceManagementFmtQualEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(79);
+			crcResourceManagementFmtQualEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(77);
 		}
 		return crcResourceManagementFmtQualEEnum;
 	}
@@ -16937,7 +16872,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getColorSpecificationColSpce() {
 		if (colorSpecificationColSpceEEnum == null) {
-			colorSpecificationColSpceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(80);
+			colorSpecificationColSpceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(78);
 		}
 		return colorSpecificationColSpceEEnum;
 	}
@@ -16949,7 +16884,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getDataObjectFontDescriptorFontTech() {
 		if (dataObjectFontDescriptorFontTechEEnum == null) {
-			dataObjectFontDescriptorFontTechEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(81);
+			dataObjectFontDescriptorFontTechEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(79);
 		}
 		return dataObjectFontDescriptorFontTechEEnum;
 	}
@@ -16961,7 +16896,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getDataObjectFontDescriptorCharRot() {
 		if (dataObjectFontDescriptorCharRotEEnum == null) {
-			dataObjectFontDescriptorCharRotEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(82);
+			dataObjectFontDescriptorCharRotEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(80);
 		}
 		return dataObjectFontDescriptorCharRotEEnum;
 	}
@@ -16973,7 +16908,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getDataObjectFontDescriptorEncEnv() {
 		if (dataObjectFontDescriptorEncEnvEEnum == null) {
-			dataObjectFontDescriptorEncEnvEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(83);
+			dataObjectFontDescriptorEncEnvEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(81);
 		}
 		return dataObjectFontDescriptorEncEnvEEnum;
 	}
@@ -16985,7 +16920,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getDataObjectFontDescriptorEncID() {
 		if (dataObjectFontDescriptorEncIDEEnum == null) {
-			dataObjectFontDescriptorEncIDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(84);
+			dataObjectFontDescriptorEncIDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(82);
 		}
 		return dataObjectFontDescriptorEncIDEEnum;
 	}
@@ -16997,7 +16932,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getEncodingSchemeIDESidCP() {
 		if (encodingSchemeIDESidCPEEnum == null) {
-			encodingSchemeIDESidCPEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(85);
+			encodingSchemeIDESidCPEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(83);
 		}
 		return encodingSchemeIDESidCPEEnum;
 	}
@@ -17009,7 +16944,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getEncodingSchemeIDESidUD() {
 		if (encodingSchemeIDESidUDEEnum == null) {
-			encodingSchemeIDESidUDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(86);
+			encodingSchemeIDESidUDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(84);
 		}
 		return encodingSchemeIDESidUDEEnum;
 	}
@@ -17021,7 +16956,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontResolutionMetTech() {
 		if (fontResolutionMetTechEEnum == null) {
-			fontResolutionMetTechEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(87);
+			fontResolutionMetTechEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(85);
 		}
 		return fontResolutionMetTechEEnum;
 	}
@@ -17033,7 +16968,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontResolutionRPuBase() {
 		if (fontResolutionRPuBaseEEnum == null) {
-			fontResolutionRPuBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(88);
+			fontResolutionRPuBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(86);
 		}
 		return fontResolutionRPuBaseEEnum;
 	}
@@ -17045,7 +16980,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontResolutionRPUnits() {
 		if (fontResolutionRPUnitsEEnum == null) {
-			fontResolutionRPUnitsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(89);
+			fontResolutionRPUnitsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(87);
 		}
 		return fontResolutionRPUnitsEEnum;
 	}
@@ -17057,7 +16992,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFullyQualifiedNameFQNType() {
 		if (fullyQualifiedNameFQNTypeEEnum == null) {
-			fullyQualifiedNameFQNTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(90);
+			fullyQualifiedNameFQNTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(88);
 		}
 		return fullyQualifiedNameFQNTypeEEnum;
 	}
@@ -17069,7 +17004,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFullyQualifiedNameFQNFormat() {
 		if (fullyQualifiedNameFQNFormatEEnum == null) {
-			fullyQualifiedNameFQNFormatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(91);
+			fullyQualifiedNameFQNFormatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(89);
 		}
 		return fullyQualifiedNameFQNFormatEEnum;
 	}
@@ -17081,7 +17016,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getLocalDateAndTimeStampStampType() {
 		if (localDateAndTimeStampStampTypeEEnum == null) {
-			localDateAndTimeStampStampTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(92);
+			localDateAndTimeStampStampTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(90);
 		}
 		return localDateAndTimeStampStampTypeEEnum;
 	}
@@ -17093,7 +17028,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMappingOptionMapValue() {
 		if (mappingOptionMapValueEEnum == null) {
-			mappingOptionMapValueEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(93);
+			mappingOptionMapValueEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(91);
 		}
 		return mappingOptionMapValueEEnum;
 	}
@@ -17105,7 +17040,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMediaEjectControlReserved() {
 		if (mediaEjectControlReservedEEnum == null) {
-			mediaEjectControlReservedEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(94);
+			mediaEjectControlReservedEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(92);
 		}
 		return mediaEjectControlReservedEEnum;
 	}
@@ -17117,7 +17052,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMediaEjectControlEjCtrl() {
 		if (mediaEjectControlEjCtrlEEnum == null) {
-			mediaEjectControlEjCtrlEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(95);
+			mediaEjectControlEjCtrlEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(93);
 		}
 		return mediaEjectControlEjCtrlEEnum;
 	}
@@ -17129,7 +17064,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMediumOrientationMedOrient() {
 		if (mediumOrientationMedOrientEEnum == null) {
-			mediumOrientationMedOrientEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(96);
+			mediumOrientationMedOrientEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(94);
 		}
 		return mediumOrientationMedOrientEEnum;
 	}
@@ -17141,7 +17076,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMeasurementUnitsXoaBase() {
 		if (measurementUnitsXoaBaseEEnum == null) {
-			measurementUnitsXoaBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(97);
+			measurementUnitsXoaBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(95);
 		}
 		return measurementUnitsXoaBaseEEnum;
 	}
@@ -17153,7 +17088,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMeasurementUnitsYoaBase() {
 		if (measurementUnitsYoaBaseEEnum == null) {
-			measurementUnitsYoaBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(98);
+			measurementUnitsYoaBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(96);
 		}
 		return measurementUnitsYoaBaseEEnum;
 	}
@@ -17165,7 +17100,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMODCAInterchangeSetIStype() {
 		if (modcaInterchangeSetIStypeEEnum == null) {
-			modcaInterchangeSetIStypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(99);
+			modcaInterchangeSetIStypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(97);
 		}
 		return modcaInterchangeSetIStypeEEnum;
 	}
@@ -17177,7 +17112,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMODCAInterchangeSetISid() {
 		if (modcaInterchangeSetISidEEnum == null) {
-			modcaInterchangeSetISidEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(100);
+			modcaInterchangeSetISidEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(98);
 		}
 		return modcaInterchangeSetISidEEnum;
 	}
@@ -17189,7 +17124,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectAreaSizeSizeType() {
 		if (objectAreaSizeSizeTypeEEnum == null) {
-			objectAreaSizeSizeTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(101);
+			objectAreaSizeSizeTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(99);
 		}
 		return objectAreaSizeSizeTypeEEnum;
 	}
@@ -17201,7 +17136,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectClassificationObjClass() {
 		if (objectClassificationObjClassEEnum == null) {
-			objectClassificationObjClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(102);
+			objectClassificationObjClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(100);
 		}
 		return objectClassificationObjClassEEnum;
 	}
@@ -17213,7 +17148,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectClassificationStrucFlgs() {
 		if (objectClassificationStrucFlgsEEnum == null) {
-			objectClassificationStrucFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(103);
+			objectClassificationStrucFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(101);
 		}
 		return objectClassificationStrucFlgsEEnum;
 	}
@@ -17225,7 +17160,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectFunctionSetSpecificationObjType() {
 		if (objectFunctionSetSpecificationObjTypeEEnum == null) {
-			objectFunctionSetSpecificationObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(104);
+			objectFunctionSetSpecificationObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(102);
 		}
 		return objectFunctionSetSpecificationObjTypeEEnum;
 	}
@@ -17237,7 +17172,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectFunctionSetSpecificationArchVrsn() {
 		if (objectFunctionSetSpecificationArchVrsnEEnum == null) {
-			objectFunctionSetSpecificationArchVrsnEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(105);
+			objectFunctionSetSpecificationArchVrsnEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(103);
 		}
 		return objectFunctionSetSpecificationArchVrsnEEnum;
 	}
@@ -17249,7 +17184,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectFunctionSetSpecificationDCAFnSet() {
 		if (objectFunctionSetSpecificationDCAFnSetEEnum == null) {
-			objectFunctionSetSpecificationDCAFnSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(106);
+			objectFunctionSetSpecificationDCAFnSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(104);
 		}
 		return objectFunctionSetSpecificationDCAFnSetEEnum;
 	}
@@ -17261,7 +17196,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectFunctionSetSpecificationOCAFnSet() {
 		if (objectFunctionSetSpecificationOCAFnSetEEnum == null) {
-			objectFunctionSetSpecificationOCAFnSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(107);
+			objectFunctionSetSpecificationOCAFnSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(105);
 		}
 		return objectFunctionSetSpecificationOCAFnSetEEnum;
 	}
@@ -17273,7 +17208,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectOffsetObjTpe() {
 		if (objectOffsetObjTpeEEnum == null) {
-			objectOffsetObjTpeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(108);
+			objectOffsetObjTpeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(106);
 		}
 		return objectOffsetObjTpeEEnum;
 	}
@@ -17285,7 +17220,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getResourceObjectTypeObjType() {
 		if (resourceObjectTypeObjTypeEEnum == null) {
-			resourceObjectTypeObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(109);
+			resourceObjectTypeObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(107);
 		}
 		return resourceObjectTypeObjTypeEEnum;
 	}
@@ -17297,7 +17232,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPresentationControlPRSFlg() {
 		if (presentationControlPRSFlgEEnum == null) {
-			presentationControlPRSFlgEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(110);
+			presentationControlPRSFlgEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(108);
 		}
 		return presentationControlPRSFlgEEnum;
 	}
@@ -17309,7 +17244,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getResourceLocalIdentifierResType() {
 		if (resourceLocalIdentifierResTypeEEnum == null) {
-			resourceLocalIdentifierResTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(111);
+			resourceLocalIdentifierResTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(109);
 		}
 		return resourceLocalIdentifierResTypeEEnum;
 	}
@@ -17321,7 +17256,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTextOrientationIAxis() {
 		if (textOrientationIAxisEEnum == null) {
-			textOrientationIAxisEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(112);
+			textOrientationIAxisEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(110);
 		}
 		return textOrientationIAxisEEnum;
 	}
@@ -17333,7 +17268,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTextOrientationBAxis() {
 		if (textOrientationBAxisEEnum == null) {
-			textOrientationBAxisEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(113);
+			textOrientationBAxisEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(111);
 		}
 		return textOrientationBAxisEEnum;
 	}
@@ -17345,7 +17280,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontDescriptorSpecificationFtWtClass() {
 		if (fontDescriptorSpecificationFtWtClassEEnum == null) {
-			fontDescriptorSpecificationFtWtClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(114);
+			fontDescriptorSpecificationFtWtClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(112);
 		}
 		return fontDescriptorSpecificationFtWtClassEEnum;
 	}
@@ -17357,7 +17292,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontDescriptorSpecificationFtWdClass() {
 		if (fontDescriptorSpecificationFtWdClassEEnum == null) {
-			fontDescriptorSpecificationFtWdClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(115);
+			fontDescriptorSpecificationFtWdClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(113);
 		}
 		return fontDescriptorSpecificationFtWdClassEEnum;
 	}
@@ -17369,7 +17304,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontDescriptorSpecificationFtDsFlags() {
 		if (fontDescriptorSpecificationFtDsFlagsEEnum == null) {
-			fontDescriptorSpecificationFtDsFlagsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(116);
+			fontDescriptorSpecificationFtDsFlagsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(114);
 		}
 		return fontDescriptorSpecificationFtDsFlagsEEnum;
 	}
@@ -17381,7 +17316,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontDescriptorSpecificationFtUsFlags() {
 		if (fontDescriptorSpecificationFtUsFlagsEEnum == null) {
-			fontDescriptorSpecificationFtUsFlagsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(117);
+			fontDescriptorSpecificationFtUsFlagsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(115);
 		}
 		return fontDescriptorSpecificationFtUsFlagsEEnum;
 	}
@@ -17393,7 +17328,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getImageEncodingCOMPRID() {
 		if (imageEncodingCOMPRIDEEnum == null) {
-			imageEncodingCOMPRIDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(118);
+			imageEncodingCOMPRIDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(116);
 		}
 		return imageEncodingCOMPRIDEEnum;
 	}
@@ -17405,7 +17340,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getImageEncodingRECID() {
 		if (imageEncodingRECIDEEnum == null) {
-			imageEncodingRECIDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(119);
+			imageEncodingRECIDEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(117);
 		}
 		return imageEncodingRECIDEEnum;
 	}
@@ -17417,7 +17352,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getImageEncodingBITORDR() {
 		if (imageEncodingBITORDREEnum == null) {
-			imageEncodingBITORDREEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(120);
+			imageEncodingBITORDREEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(118);
 		}
 		return imageEncodingBITORDREEnum;
 	}
@@ -17429,7 +17364,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getIDEStructureFLAGS() {
 		if (ideStructureFLAGSEEnum == null) {
-			ideStructureFLAGSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(121);
+			ideStructureFLAGSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(119);
 		}
 		return ideStructureFLAGSEEnum;
 	}
@@ -17441,7 +17376,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getExternalAlgorithmALGTYPE() {
 		if (externalAlgorithmALGTYPEEEnum == null) {
-			externalAlgorithmALGTYPEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(122);
+			externalAlgorithmALGTYPEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(120);
 		}
 		return externalAlgorithmALGTYPEEEnum;
 	}
@@ -17453,7 +17388,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTileSetColorCSPACE() {
 		if (tileSetColorCSPACEEEnum == null) {
-			tileSetColorCSPACEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(123);
+			tileSetColorCSPACEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(121);
 		}
 		return tileSetColorCSPACEEEnum;
 	}
@@ -17465,7 +17400,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPPORGObjType() {
 		if (pporgObjTypeEEnum == null) {
-			pporgObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(124);
+			pporgObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(122);
 		}
 		return pporgObjTypeEEnum;
 	}
@@ -17477,7 +17412,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPPORGProcFlgs() {
 		if (pporgProcFlgsEEnum == null) {
-			pporgProcFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(125);
+			pporgProcFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(123);
 		}
 		return pporgProcFlgsEEnum;
 	}
@@ -17489,7 +17424,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGPRGRGLength() {
 		if (pgprgrgLengthEEnum == null) {
-			pgprgrgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(126);
+			pgprgrgLengthEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(124);
 		}
 		return pgprgrgLengthEEnum;
 	}
@@ -17501,7 +17436,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGPRGPGorient() {
 		if (pgprgpGorientEEnum == null) {
-			pgprgpGorientEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(127);
+			pgprgpGorientEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(125);
 		}
 		return pgprgpGorientEEnum;
 	}
@@ -17513,7 +17448,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGPRGSHside() {
 		if (pgprgsHsideEEnum == null) {
-			pgprgsHsideEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(128);
+			pgprgsHsideEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(126);
 		}
 		return pgprgsHsideEEnum;
 	}
@@ -17525,7 +17460,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPGPRGPgFlgs() {
 		if (pgprgPgFlgsEEnum == null) {
-			pgprgPgFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(129);
+			pgprgPgFlgsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(127);
 		}
 		return pgprgPgFlgsEEnum;
 	}
@@ -17537,7 +17472,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMMCRGkey() {
 		if (mmcrGkeyEEnum == null) {
-			mmcrGkeyEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(130);
+			mmcrGkeyEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(128);
 		}
 		return mmcrGkeyEEnum;
 	}
@@ -17549,7 +17484,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getExternalAlgorithmRGPADBDRY() {
 		if (externalAlgorithmRGPADBDRYEEnum == null) {
-			externalAlgorithmRGPADBDRYEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(131);
+			externalAlgorithmRGPADBDRYEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(129);
 		}
 		return externalAlgorithmRGPADBDRYEEnum;
 	}
@@ -17561,7 +17496,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getExternalAlgorithmRGPADALMT() {
 		if (externalAlgorithmRGPADALMTEEnum == null) {
-			externalAlgorithmRGPADALMTEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(132);
+			externalAlgorithmRGPADALMTEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(130);
 		}
 		return externalAlgorithmRGPADALMTEEnum;
 	}
@@ -17573,7 +17508,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getBeginSegmentCommandLENGTH() {
 		if (beginSegmentCommandLENGTHEEnum == null) {
-			beginSegmentCommandLENGTHEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(133);
+			beginSegmentCommandLENGTHEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(131);
 		}
 		return beginSegmentCommandLENGTHEEnum;
 	}
@@ -17585,7 +17520,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getBeginSegmentCommandFLAG2() {
 		if (beginSegmentCommandFLAG2EEnum == null) {
-			beginSegmentCommandFLAG2EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(134);
+			beginSegmentCommandFLAG2EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(132);
 		}
 		return beginSegmentCommandFLAG2EEnum;
 	}
@@ -17597,7 +17532,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGBARFLAGS() {
 		if (gbarflagsEEnum == null) {
-			gbarflagsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(135);
+			gbarflagsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(133);
 		}
 		return gbarflagsEEnum;
 	}
@@ -17609,7 +17544,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGBIMGFORMAT() {
 		if (gbimgformatEEnum == null) {
-			gbimgformatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(136);
+			gbimgformatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(134);
 		}
 		return gbimgformatEEnum;
 	}
@@ -17621,7 +17556,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGBIMGRES() {
 		if (gbimgresEEnum == null) {
-			gbimgresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(137);
+			gbimgresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(135);
 		}
 		return gbimgresEEnum;
 	}
@@ -17633,7 +17568,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGCBIMGFORMAT() {
 		if (gcbimgformatEEnum == null) {
-			gcbimgformatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(138);
+			gcbimgformatEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(136);
 		}
 		return gcbimgformatEEnum;
 	}
@@ -17645,7 +17580,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGCBIMGRES() {
 		if (gcbimgresEEnum == null) {
-			gcbimgresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(139);
+			gcbimgresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(137);
 		}
 		return gcbimgresEEnum;
 	}
@@ -17657,7 +17592,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGBOXRES() {
 		if (gboxresEEnum == null) {
-			gboxresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(140);
+			gboxresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(138);
 		}
 		return gboxresEEnum;
 	}
@@ -17669,7 +17604,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGCBOXRES() {
 		if (gcboxresEEnum == null) {
-			gcboxresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(141);
+			gcboxresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(139);
 		}
 		return gcboxresEEnum;
 	}
@@ -17681,7 +17616,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGEPROLRES() {
 		if (geprolresEEnum == null) {
-			geprolresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(142);
+			geprolresEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(140);
 		}
 		return geprolresEEnum;
 	}
@@ -17693,7 +17628,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSBMXMODE() {
 		if (gsbmxmodeEEnum == null) {
-			gsbmxmodeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(143);
+			gsbmxmodeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(141);
 		}
 		return gsbmxmodeEEnum;
 	}
@@ -17705,7 +17640,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSCDDIRECTION() {
 		if (gscddirectionEEnum == null) {
-			gscddirectionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(144);
+			gscddirectionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(142);
 		}
 		return gscddirectionEEnum;
 	}
@@ -17717,7 +17652,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSCRPREC() {
 		if (gscrprecEEnum == null) {
-			gscrprecEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(145);
+			gscrprecEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(143);
 		}
 		return gscrprecEEnum;
 	}
@@ -17729,7 +17664,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSCOLCOL() {
 		if (gscolcolEEnum == null) {
-			gscolcolEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(146);
+			gscolcolEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(144);
 		}
 		return gscolcolEEnum;
 	}
@@ -17741,7 +17676,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSLTLINETYPE() {
 		if (gsltlinetypeEEnum == null) {
-			gsltlinetypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(147);
+			gsltlinetypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(145);
 		}
 		return gsltlinetypeEEnum;
 	}
@@ -17753,7 +17688,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSMPPREC() {
 		if (gsmpprecEEnum == null) {
-			gsmpprecEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(148);
+			gsmpprecEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(146);
 		}
 		return gsmpprecEEnum;
 	}
@@ -17765,7 +17700,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSMTMCPT() {
 		if (gsmtmcptEEnum == null) {
-			gsmtmcptEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(149);
+			gsmtmcptEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(147);
 		}
 		return gsmtmcptEEnum;
 	}
@@ -17777,7 +17712,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSMXMODE() {
 		if (gsmxmodeEEnum == null) {
-			gsmxmodeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(150);
+			gsmxmodeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(148);
 		}
 		return gsmxmodeEEnum;
 	}
@@ -17789,7 +17724,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSPSLCID() {
 		if (gspslcidEEnum == null) {
-			gspslcidEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(151);
+			gspslcidEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(149);
 		}
 		return gspslcidEEnum;
 	}
@@ -17801,7 +17736,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSPTPATT() {
 		if (gsptpattEEnum == null) {
-			gsptpattEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(152);
+			gsptpattEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(150);
 		}
 		return gsptpattEEnum;
 	}
@@ -17813,7 +17748,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSPCOLCOLSPCE() {
 		if (gspcolcolspceEEnum == null) {
-			gspcolcolspceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(153);
+			gspcolcolspceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(151);
 		}
 		return gspcolcolspceEEnum;
 	}
@@ -17825,7 +17760,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSLELINEEND() {
 		if (gslelineendEEnum == null) {
-			gslelineendEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(154);
+			gslelineendEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(152);
 		}
 		return gslelineendEEnum;
 	}
@@ -17837,7 +17772,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getGSLJLINEJOIN() {
 		if (gsljlinejoinEEnum == null) {
-			gsljlinejoinEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(155);
+			gsljlinejoinEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(153);
 		}
 		return gsljlinejoinEEnum;
 	}
@@ -17849,7 +17784,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getWindowSpecificationFLAGS() {
 		if (windowSpecificationFLAGSEEnum == null) {
-			windowSpecificationFLAGSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(156);
+			windowSpecificationFLAGSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(154);
 		}
 		return windowSpecificationFLAGSEEnum;
 	}
@@ -17861,7 +17796,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getWindowSpecificationRES3() {
 		if (windowSpecificationRES3EEnum == null) {
-			windowSpecificationRES3EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(157);
+			windowSpecificationRES3EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(155);
 		}
 		return windowSpecificationRES3EEnum;
 	}
@@ -17873,7 +17808,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getWindowSpecificationCFORMAT() {
 		if (windowSpecificationCFORMATEEnum == null) {
-			windowSpecificationCFORMATEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(158);
+			windowSpecificationCFORMATEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(156);
 		}
 		return windowSpecificationCFORMATEEnum;
 	}
@@ -17885,7 +17820,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getWindowSpecificationUBASE() {
 		if (windowSpecificationUBASEEEnum == null) {
-			windowSpecificationUBASEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(159);
+			windowSpecificationUBASEEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(157);
 		}
 		return windowSpecificationUBASEEEnum;
 	}
@@ -17897,7 +17832,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTonerSaverTSvCtrl() {
 		if (tonerSaverTSvCtrlEEnum == null) {
-			tonerSaverTSvCtrlEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(160);
+			tonerSaverTSvCtrlEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(158);
 		}
 		return tonerSaverTSvCtrlEEnum;
 	}
@@ -17909,7 +17844,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getColorFidelityStpCoEx() {
 		if (colorFidelityStpCoExEEnum == null) {
-			colorFidelityStpCoExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(161);
+			colorFidelityStpCoExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(159);
 		}
 		return colorFidelityStpCoExEEnum;
 	}
@@ -17921,7 +17856,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getColorFidelityRepCoEx() {
 		if (colorFidelityRepCoExEEnum == null) {
-			colorFidelityRepCoExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(162);
+			colorFidelityRepCoExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(160);
 		}
 		return colorFidelityRepCoExEEnum;
 	}
@@ -17933,7 +17868,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getColorFidelityColSub() {
 		if (colorFidelityColSubEEnum == null) {
-			colorFidelityColSubEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(163);
+			colorFidelityColSubEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(161);
 		}
 		return colorFidelityColSubEEnum;
 	}
@@ -17945,7 +17880,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFontFidelityStpFntEx() {
 		if (fontFidelityStpFntExEEnum == null) {
-			fontFidelityStpFntExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(164);
+			fontFidelityStpFntExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(162);
 		}
 		return fontFidelityStpFntExEEnum;
 	}
@@ -17957,7 +17892,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTextFidelityStpTxtEx() {
 		if (textFidelityStpTxtExEEnum == null) {
-			textFidelityStpTxtExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(165);
+			textFidelityStpTxtExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(163);
 		}
 		return textFidelityStpTxtExEEnum;
 	}
@@ -17969,7 +17904,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getTextFidelityRepTxtEx() {
 		if (textFidelityRepTxtExEEnum == null) {
-			textFidelityRepTxtExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(166);
+			textFidelityRepTxtExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(164);
 		}
 		return textFidelityRepTxtExEEnum;
 	}
@@ -17981,7 +17916,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMediaFidelityStpMedEx() {
 		if (mediaFidelityStpMedExEEnum == null) {
-			mediaFidelityStpMedExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(167);
+			mediaFidelityStpMedExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(165);
 		}
 		return mediaFidelityStpMedExEEnum;
 	}
@@ -17993,7 +17928,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFinishingFidelityStpFinEx() {
 		if (finishingFidelityStpFinExEEnum == null) {
-			finishingFidelityStpFinExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(168);
+			finishingFidelityStpFinExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(166);
 		}
 		return finishingFidelityStpFinExEEnum;
 	}
@@ -18005,7 +17940,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFinishingFidelityRepFinEx() {
 		if (finishingFidelityRepFinExEEnum == null) {
-			finishingFidelityRepFinExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(169);
+			finishingFidelityRepFinExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(167);
 		}
 		return finishingFidelityRepFinExEEnum;
 	}
@@ -18017,7 +17952,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getCMRFidelityStpCMREx() {
 		if (cmrFidelityStpCMRExEEnum == null) {
-			cmrFidelityStpCMRExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(170);
+			cmrFidelityStpCMRExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(168);
 		}
 		return cmrFidelityStpCMRExEEnum;
 	}
@@ -18029,7 +17964,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getCMRFidelityRepCMREx() {
 		if (cmrFidelityRepCMRExEEnum == null) {
-			cmrFidelityRepCMRExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(171);
+			cmrFidelityRepCMRExEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(169);
 		}
 		return cmrFidelityRepCMRExEEnum;
 	}
@@ -18041,7 +17976,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectCountSubObj() {
 		if (objectCountSubObjEEnum == null) {
-			objectCountSubObjEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(172);
+			objectCountSubObjEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(170);
 		}
 		return objectCountSubObjEEnum;
 	}
@@ -18053,7 +17988,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectOriginIdentifierSystem() {
 		if (objectOriginIdentifierSystemEEnum == null) {
-			objectOriginIdentifierSystemEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(173);
+			objectOriginIdentifierSystemEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(171);
 		}
 		return objectOriginIdentifierSystemEEnum;
 	}
@@ -18065,7 +18000,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getLineDataObjectPositionMigrationTempOrient() {
 		if (lineDataObjectPositionMigrationTempOrientEEnum == null) {
-			lineDataObjectPositionMigrationTempOrientEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(174);
+			lineDataObjectPositionMigrationTempOrientEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(172);
 		}
 		return lineDataObjectPositionMigrationTempOrientEEnum;
 	}
@@ -18077,7 +18012,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getColorManagementResourceDescriptorProcMode() {
 		if (colorManagementResourceDescriptorProcModeEEnum == null) {
-			colorManagementResourceDescriptorProcModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(175);
+			colorManagementResourceDescriptorProcModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(173);
 		}
 		return colorManagementResourceDescriptorProcModeEEnum;
 	}
@@ -18089,7 +18024,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getColorManagementResourceDescriptorCMRScpe() {
 		if (colorManagementResourceDescriptorCMRScpeEEnum == null) {
-			colorManagementResourceDescriptorCMRScpeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(176);
+			colorManagementResourceDescriptorCMRScpeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(174);
 		}
 		return colorManagementResourceDescriptorCMRScpeEEnum;
 	}
@@ -18101,7 +18036,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getImageResolutionXBase() {
 		if (imageResolutionXBaseEEnum == null) {
-			imageResolutionXBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(177);
+			imageResolutionXBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(175);
 		}
 		return imageResolutionXBaseEEnum;
 	}
@@ -18113,7 +18048,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getImageResolutionYBase() {
 		if (imageResolutionYBaseEEnum == null) {
-			imageResolutionYBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(178);
+			imageResolutionYBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(176);
 		}
 		return imageResolutionYBaseEEnum;
 	}
@@ -18125,7 +18060,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getObjectContainerPresentationSpaceSizePDFSize() {
 		if (objectContainerPresentationSpaceSizePDFSizeEEnum == null) {
-			objectContainerPresentationSpaceSizePDFSizeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(179);
+			objectContainerPresentationSpaceSizePDFSizeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(177);
 		}
 		return objectContainerPresentationSpaceSizePDFSizeEEnum;
 	}
@@ -18137,7 +18072,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getExtendedResourceLocalIdentifierResType() {
 		if (extendedResourceLocalIdentifierResTypeEEnum == null) {
-			extendedResourceLocalIdentifierResTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(180);
+			extendedResourceLocalIdentifierResTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(178);
 		}
 		return extendedResourceLocalIdentifierResTypeEEnum;
 	}
@@ -18149,7 +18084,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getMetricAdjustmentUnitBase() {
 		if (metricAdjustmentUnitBaseEEnum == null) {
-			metricAdjustmentUnitBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(181);
+			metricAdjustmentUnitBaseEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(179);
 		}
 		return metricAdjustmentUnitBaseEEnum;
 	}
@@ -18161,7 +18096,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getRenderingIntentReserved() {
 		if (renderingIntentReservedEEnum == null) {
-			renderingIntentReservedEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(182);
+			renderingIntentReservedEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(180);
 		}
 		return renderingIntentReservedEEnum;
 	}
@@ -18173,7 +18108,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getRenderingIntentIOCARI() {
 		if (renderingIntentIOCARIEEnum == null) {
-			renderingIntentIOCARIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(183);
+			renderingIntentIOCARIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(181);
 		}
 		return renderingIntentIOCARIEEnum;
 	}
@@ -18185,7 +18120,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getRenderingIntentOCRI() {
 		if (renderingIntentOCRIEEnum == null) {
-			renderingIntentOCRIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(184);
+			renderingIntentOCRIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(182);
 		}
 		return renderingIntentOCRIEEnum;
 	}
@@ -18197,7 +18132,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getRenderingIntentPTOCRI() {
 		if (renderingIntentPTOCRIEEnum == null) {
-			renderingIntentPTOCRIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(185);
+			renderingIntentPTOCRIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(183);
 		}
 		return renderingIntentPTOCRIEEnum;
 	}
@@ -18209,7 +18144,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getRenderingIntentGOCARI() {
 		if (renderingIntentGOCARIEEnum == null) {
-			renderingIntentGOCARIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(186);
+			renderingIntentGOCARIEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(184);
 		}
 		return renderingIntentGOCARIEEnum;
 	}
@@ -18221,7 +18156,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getRenderingIntentReserved2() {
 		if (renderingIntentReserved2EEnum == null) {
-			renderingIntentReserved2EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(187);
+			renderingIntentReserved2EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(185);
 		}
 		return renderingIntentReserved2EEnum;
 	}
@@ -18233,7 +18168,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFinishingOperationFOpType() {
 		if (finishingOperationFOpTypeEEnum == null) {
-			finishingOperationFOpTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(188);
+			finishingOperationFOpTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(186);
 		}
 		return finishingOperationFOpTypeEEnum;
 	}
@@ -18245,7 +18180,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getFinishingOperationRefEdge() {
 		if (finishingOperationRefEdgeEEnum == null) {
-			finishingOperationRefEdgeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(189);
+			finishingOperationRefEdgeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(187);
 		}
 		return finishingOperationRefEdgeEEnum;
 	}
@@ -18257,7 +18192,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getDeviceAppearanceDevApp() {
 		if (deviceAppearanceDevAppEEnum == null) {
-			deviceAppearanceDevAppEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(190);
+			deviceAppearanceDevAppEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(188);
 		}
 		return deviceAppearanceDevAppEEnum;
 	}
@@ -18269,7 +18204,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getResourceObjectIncludeObjType() {
 		if (resourceObjectIncludeObjTypeEEnum == null) {
-			resourceObjectIncludeObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(191);
+			resourceObjectIncludeObjTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(189);
 		}
 		return resourceObjectIncludeObjTypeEEnum;
 	}
@@ -18281,7 +18216,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getResourceObjectIncludeObOrent() {
 		if (resourceObjectIncludeObOrentEEnum == null) {
-			resourceObjectIncludeObOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(192);
+			resourceObjectIncludeObOrentEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(190);
 		}
 		return resourceObjectIncludeObOrentEEnum;
 	}
@@ -18293,7 +18228,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getPageOverlayConditionalProcessingPgOvType() {
 		if (pageOverlayConditionalProcessingPgOvTypeEEnum == null) {
-			pageOverlayConditionalProcessingPgOvTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(193);
+			pageOverlayConditionalProcessingPgOvTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(191);
 		}
 		return pageOverlayConditionalProcessingPgOvTypeEEnum;
 	}
@@ -18305,7 +18240,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getResourceUsageAttributeFrequency() {
 		if (resourceUsageAttributeFrequencyEEnum == null) {
-			resourceUsageAttributeFrequencyEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(194);
+			resourceUsageAttributeFrequencyEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(192);
 		}
 		return resourceUsageAttributeFrequencyEEnum;
 	}
@@ -18317,7 +18252,7 @@ public class AfplibPackageImpl extends EPackageImpl implements AfplibPackage {
 	 */
 	public EEnum getSFName() {
 		if (sfNameEEnum == null) {
-			sfNameEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(534);
+			sfNameEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AfplibPackage.eNS_URI).getEClassifiers().get(532);
 		}
 		return sfNameEEnum;
 	}

@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.LocalDateAndTimeStamp#getStampType <em>Stamp Type</em>}</li>
  *   <li>{@link org.afplib.afplib.LocalDateAndTimeStamp#getTHunYear <em>THun Year</em>}</li>
@@ -21,7 +22,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.LocalDateAndTimeStamp#getSecond <em>Second</em>}</li>
  *   <li>{@link org.afplib.afplib.LocalDateAndTimeStamp#getHundSec <em>Hund Sec</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getLocalDateAndTimeStamp()
  * @model

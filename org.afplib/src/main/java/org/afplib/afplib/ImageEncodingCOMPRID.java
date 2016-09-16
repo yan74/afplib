@@ -352,6 +352,8 @@ public enum ImageEncodingCOMPRID implements Enumerator {
 	 * Returns the '<em><b>Image Encoding COMPRID</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ImageEncodingCOMPRID get(String literal) {
@@ -368,6 +370,8 @@ public enum ImageEncodingCOMPRID implements Enumerator {
 	 * Returns the '<em><b>Image Encoding COMPRID</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ImageEncodingCOMPRID getByName(String name) {
@@ -384,6 +388,8 @@ public enum ImageEncodingCOMPRID implements Enumerator {
 	 * Returns the '<em><b>Image Encoding COMPRID</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ImageEncodingCOMPRID get(int value) {

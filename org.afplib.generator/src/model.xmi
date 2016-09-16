@@ -2412,6 +2412,17 @@
       displayElement=""
       id="13872009">
     <elements
+        xsi:type="afplib:UNDF"
+        name="FNNData"
+        start="9"
+        stop="32768"
+        optional="true"
+        variableLength="true"/>
+	<!-- FNN is a beast - it can change its structure; for type1 fonts the second
+	FNN will not have IBMFormat or TechnologyFormat and instead of rg it will have rg2
+	Disabling interpretation of FNN for now since saving FNN for a type1 font will
+	most likely end up in garbled data.
+    <elements
         xsi:type="afplib:CODE"
         name="IBMFormat"
         start="9"
@@ -2459,7 +2470,7 @@
         elementLengthOffset="-1"
         idSize="-1"
         lengthSize="-1"
-        type="Unknown"/>
+        type="Unknown"/> -->
   </structuredFields>
   <structuredFields
       name="FNM"
@@ -2898,18 +2909,7 @@
   <structuredFields
       name="IPD"
       id="13889275">
-    <elements
-        xsi:type="afplib:Group"
-        name="sdfs"
-        start="9"
-        stop="32768"
-        optional="true"
-        variableLength="true"
-        elementLength="-1"
-        elementLengthOffset="1"
-        idSize="1"
-        lengthSize="1"
-        type="SDF"/>
+    <elements xsi:type="afplib:UNDF" name="IOCAdat" start="9" stop="32768" optional="true" variableLength="true"/>
   </structuredFields>
   <structuredFields
       name="IPG"

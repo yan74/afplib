@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GCBOX#getRES <em>RES</em>}</li>
  *   <li>{@link org.afplib.afplib.GCBOX#getXPOS1 <em>XPOS1</em>}</li>
@@ -18,7 +19,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.GCBOX#getHAXIS <em>HAXIS</em>}</li>
  *   <li>{@link org.afplib.afplib.GCBOX#getVAXIS <em>VAXIS</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGCBOX()
  * @model

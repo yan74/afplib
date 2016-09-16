@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GSAPImpl#getP <em>P</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSAPImpl#getQ <em>Q</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSAPImpl#getR <em>R</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSAPImpl#getS <em>S</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

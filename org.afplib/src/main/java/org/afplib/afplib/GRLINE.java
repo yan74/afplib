@@ -13,12 +13,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GRLINE#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GRLINE#getYPOS <em>YPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GRLINE#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGRLINE()
  * @model

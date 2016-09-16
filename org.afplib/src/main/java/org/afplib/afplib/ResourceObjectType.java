@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ResourceObjectType#getObjType <em>Obj Type</em>}</li>
  *   <li>{@link org.afplib.afplib.ResourceObjectType#getConData <em>Con Data</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getResourceObjectType()
  * @model

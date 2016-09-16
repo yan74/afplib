@@ -11,10 +11,10 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.DescriptorPosition#getDesPosID <em>Des Pos ID</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getDescriptorPosition()
  * @model

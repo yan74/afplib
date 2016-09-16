@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GSCPImpl#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSCPImpl#getYPOS <em>YPOS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

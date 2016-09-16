@@ -13,11 +13,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MCDRG#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.MCDRG#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMCDRG()
  * @model

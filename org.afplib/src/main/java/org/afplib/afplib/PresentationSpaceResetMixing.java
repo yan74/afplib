@@ -11,10 +11,10 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PresentationSpaceResetMixing#getBgMxFlag <em>Bg Mx Flag</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPresentationSpaceResetMixing()
  * @model

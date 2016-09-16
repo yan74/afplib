@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MPSRG#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.MPSRG#getPsegName <em>Pseg Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMPSRG()
  * @model

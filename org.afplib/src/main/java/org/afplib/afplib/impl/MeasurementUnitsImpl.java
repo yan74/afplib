@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MeasurementUnitsImpl#getXoaBase <em>Xoa Base</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MeasurementUnitsImpl#getYoaBase <em>Yoa Base</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MeasurementUnitsImpl#getXoaUnits <em>Xoa Units</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MeasurementUnitsImpl#getYoaUnits <em>Yoa Units</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

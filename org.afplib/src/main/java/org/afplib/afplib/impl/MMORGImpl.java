@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MMORGImpl#getOVLid <em>OV Lid</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MMORGImpl#getFlags <em>Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MMORGImpl#getOVLname <em>OV Lname</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

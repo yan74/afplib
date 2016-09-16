@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MCCRG#getStartnum <em>Startnum</em>}</li>
  *   <li>{@link org.afplib.afplib.MCCRG#getStopnum <em>Stopnum</em>}</li>
  *   <li>{@link org.afplib.afplib.MCCRG#getMMCid <em>MM Cid</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMCCRG()
  * @model

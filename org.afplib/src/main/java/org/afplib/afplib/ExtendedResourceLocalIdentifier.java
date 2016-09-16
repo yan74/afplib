@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ExtendedResourceLocalIdentifier#getResType <em>Res Type</em>}</li>
  *   <li>{@link org.afplib.afplib.ExtendedResourceLocalIdentifier#getResLID <em>Res LID</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getExtendedResourceLocalIdentifier()
  * @model

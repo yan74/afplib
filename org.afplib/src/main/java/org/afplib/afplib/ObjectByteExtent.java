@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectByteExtent#getByteExt <em>Byte Ext</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectByteExtent#getByteExtHi <em>Byte Ext Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectByteExtent()
  * @model

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FontDescriptorSpecificationImpl#getFtWtClass <em>Ft Wt Class</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FontDescriptorSpecificationImpl#getFtWdClass <em>Ft Wd Class</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.FontDescriptorSpecificationImpl#getFtDsFlags <em>Ft Ds Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FontDescriptorSpecificationImpl#getFtUsFlags <em>Ft Us Flags</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

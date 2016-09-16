@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CMRFidelity#getStpCMREx <em>Stp CMR Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.CMRFidelity#getRepCMREx <em>Rep CMR Ex</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCMRFidelity()
  * @model

@@ -144,6 +144,8 @@ public enum BeginSegmentCommandFLAG2 implements Enumerator {
 	 * Returns the '<em><b>Begin Segment Command FLAG2</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static BeginSegmentCommandFLAG2 get(String literal) {
@@ -160,6 +162,8 @@ public enum BeginSegmentCommandFLAG2 implements Enumerator {
 	 * Returns the '<em><b>Begin Segment Command FLAG2</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static BeginSegmentCommandFLAG2 getByName(String name) {
@@ -176,6 +180,8 @@ public enum BeginSegmentCommandFLAG2 implements Enumerator {
 	 * Returns the '<em><b>Begin Segment Command FLAG2</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static BeginSegmentCommandFLAG2 get(int value) {

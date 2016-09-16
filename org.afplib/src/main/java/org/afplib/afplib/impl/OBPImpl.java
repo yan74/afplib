@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.OBPImpl#getOAPosID <em>OA Pos ID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.OBPImpl#getRGLength <em>RG Length</em>}</li>
@@ -32,7 +33,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.OBPImpl#getYocaOrent <em>Yoca Orent</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.OBPImpl#getRefCSys <em>Ref CSys</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

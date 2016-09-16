@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.TextOrientation#getIAxis <em>IAxis</em>}</li>
  *   <li>{@link org.afplib.afplib.TextOrientation#getBAxis <em>BAxis</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getTextOrientation()
  * @model

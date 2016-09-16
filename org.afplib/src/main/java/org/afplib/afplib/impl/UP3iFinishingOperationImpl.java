@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.UP3iFinishingOperationImpl#getSeqnum <em>Seqnum</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.UP3iFinishingOperationImpl#getUP3iDat <em>UP 3i Dat</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

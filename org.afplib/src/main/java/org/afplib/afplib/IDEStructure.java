@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IDEStructure#getFLAGS <em>FLAGS</em>}</li>
  *   <li>{@link org.afplib.afplib.IDEStructure#getFORMAT <em>FORMAT</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.IDEStructure#getSIZE3 <em>SIZE3</em>}</li>
  *   <li>{@link org.afplib.afplib.IDEStructure#getSIZE4 <em>SIZE4</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIDEStructure()
  * @model

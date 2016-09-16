@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MeasurementUnits#getXoaBase <em>Xoa Base</em>}</li>
  *   <li>{@link org.afplib.afplib.MeasurementUnits#getYoaBase <em>Yoa Base</em>}</li>
  *   <li>{@link org.afplib.afplib.MeasurementUnits#getXoaUnits <em>Xoa Units</em>}</li>
  *   <li>{@link org.afplib.afplib.MeasurementUnits#getYoaUnits <em>Yoa Units</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMeasurementUnits()
  * @model

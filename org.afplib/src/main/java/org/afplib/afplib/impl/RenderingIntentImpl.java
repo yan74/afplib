@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.RenderingIntentImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.RenderingIntentImpl#getIOCARI <em>IOCARI</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.RenderingIntentImpl#getGOCARI <em>GOCARI</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.RenderingIntentImpl#getReserved2 <em>Reserved2</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

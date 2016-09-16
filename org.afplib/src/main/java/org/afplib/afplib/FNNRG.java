@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FNNRG#getGCGID <em>GCGID</em>}</li>
  *   <li>{@link org.afplib.afplib.FNNRG#getTSOffset <em>TS Offset</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFNNRG()
  * @model

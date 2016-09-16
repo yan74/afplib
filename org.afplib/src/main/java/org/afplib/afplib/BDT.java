@@ -14,12 +14,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.BDT#getDocName <em>Doc Name</em>}</li>
  *   <li>{@link org.afplib.afplib.BDT#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.BDT#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getBDT()
  * @model

@@ -14,11 +14,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.EPG#getPageName <em>Page Name</em>}</li>
  *   <li>{@link org.afplib.afplib.EPG#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getEPG()
  * @model

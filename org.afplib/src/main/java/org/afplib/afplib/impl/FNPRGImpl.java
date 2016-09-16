@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FNPRGImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNPRGImpl#getLcHeight <em>Lc Height</em>}</li>
@@ -32,7 +33,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.FNPRGImpl#getUscoreWdf <em>Uscore Wdf</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNPRGImpl#getUscorePos <em>Uscore Pos</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

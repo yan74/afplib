@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectStructuredFieldExtent#getSFExt <em>SF Ext</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectStructuredFieldExtent#getSFExtHi <em>SF Ext Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectStructuredFieldExtent()
  * @model

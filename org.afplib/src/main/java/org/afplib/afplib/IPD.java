@@ -14,11 +14,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
- *   <li>{@link org.afplib.afplib.IPD#getSdfs <em>Sdfs</em>}</li>
+ *   <li>{@link org.afplib.afplib.IPD#getIOCAdat <em>IOC Adat</em>}</li>
  *   <li>{@link org.afplib.afplib.IPD#getImageData <em>Image Data</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIPD()
  * @model
@@ -26,19 +26,29 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface IPD extends SF {
 	/**
-	 * Returns the value of the '<em><b>Sdfs</b></em>' containment reference list.
-	 * The list contents are of type {@link org.afplib.base.Triplet}.
+	 * Returns the value of the '<em><b>IOC Adat</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * <p>optional<br>variable length</p>
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Sdfs</em>' containment reference list.
-	 * @see org.afplib.afplib.AfplibPackage#getIPD_Sdfs()
-	 * @model containment="true" resolveProxies="true"
+	 * @return the value of the '<em>IOC Adat</em>' attribute.
+	 * @see #setIOCAdat(byte[])
+	 * @see org.afplib.afplib.AfplibPackage#getIPD_IOCAdat()
+	 * @model
 	 * @generated
 	 */
-	EList<Triplet> getSdfs();
+	byte[] getIOCAdat();
+
+	/**
+	 * Sets the value of the '{@link org.afplib.afplib.IPD#getIOCAdat <em>IOC Adat</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>IOC Adat</em>' attribute.
+	 * @see #getIOCAdat()
+	 * @generated
+	 */
+	void setIOCAdat(byte[] value);
 
 	/**
 	 * Returns the value of the '<em><b>Image Data</b></em>' attribute.

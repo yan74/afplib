@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.UniversalDateAndTimeStampImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.UniversalDateAndTimeStampImpl#getYearAD <em>Year AD</em>}</li>
@@ -31,7 +32,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.UniversalDateAndTimeStampImpl#getUTCDiffH <em>UTC Diff H</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.UniversalDateAndTimeStampImpl#getUTCDiffM <em>UTC Diff M</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

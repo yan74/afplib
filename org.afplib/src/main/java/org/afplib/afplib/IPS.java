@@ -14,13 +14,13 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IPS#getPsegName <em>Pseg Name</em>}</li>
  *   <li>{@link org.afplib.afplib.IPS#getXpsOset <em>Xps Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.IPS#getYpsOset <em>Yps Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.IPS#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIPS()
  * @model

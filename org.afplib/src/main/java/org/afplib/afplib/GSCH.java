@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GSCH#getHX <em>HX</em>}</li>
  *   <li>{@link org.afplib.afplib.GSCH#getHY <em>HY</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGSCH()
  * @model

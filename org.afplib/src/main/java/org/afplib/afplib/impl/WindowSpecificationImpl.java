@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.WindowSpecificationImpl#getFLAGS <em>FLAGS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.WindowSpecificationImpl#getRES3 <em>RES3</em>}</li>
@@ -32,7 +33,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.WindowSpecificationImpl#getYBWIND <em>YBWIND</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.WindowSpecificationImpl#getYTWIND <em>YTWIND</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CRCResourceManagementImpl#getFmtQual <em>Fmt Qual</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CRCResourceManagementImpl#getRMValue <em>RM Value</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CRCResourceManagementImpl#getResClassFlg <em>Res Class Flg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

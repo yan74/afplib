@@ -25,9 +25,13 @@ public class AfpMappedFile implements Closeable {
 	private MappedByteBuffer afpData;
 	
 	public AfpMappedFile(File afp) throws FileNotFoundException, IOException {
-		try(FileInputStream fis = new FileInputStream(afp)) {
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(afp);
 			long size = afp.length();
 			afpData = fis.getChannel().map(MapMode.READ_ONLY, 0, size);
+		} finally {
+			if(fis != null) fis.close();
 		}
 	}
 	

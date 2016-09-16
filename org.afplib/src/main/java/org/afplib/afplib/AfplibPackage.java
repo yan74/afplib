@@ -7910,40 +7910,13 @@ public interface AfplibPackage extends EPackage {
 	int FNN__CHARSET = BasePackage.SF__CHARSET;
 
 	/**
-	 * The feature id for the '<em><b>IBM Format</b></em>' attribute.
+	 * The feature id for the '<em><b>FNN Data</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FNN__IBM_FORMAT = BasePackage.SF_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Technology Format</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FNN__TECHNOLOGY_FORMAT = BasePackage.SF_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Rg</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FNN__RG = BasePackage.SF_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Rg2</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FNN__RG2 = BasePackage.SF_FEATURE_COUNT + 3;
+	int FNN__FNN_DATA = BasePackage.SF_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>FNN</em>' class.
@@ -7952,7 +7925,7 @@ public interface AfplibPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FNN_FEATURE_COUNT = BasePackage.SF_FEATURE_COUNT + 4;
+	int FNN_FEATURE_COUNT = BasePackage.SF_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.impl.FNMImpl <em>FNM</em>}' class.
@@ -9471,13 +9444,13 @@ public interface AfplibPackage extends EPackage {
 	int IPD__CHARSET = BasePackage.SF__CHARSET;
 
 	/**
-	 * The feature id for the '<em><b>Sdfs</b></em>' containment reference list.
+	 * The feature id for the '<em><b>IOC Adat</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IPD__SDFS = BasePackage.SF_FEATURE_COUNT + 0;
+	int IPD__IOC_ADAT = BasePackage.SF_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Image Data</b></em>' attribute.
@@ -34455,26 +34428,6 @@ public interface AfplibPackage extends EPackage {
 	int FND_FT_DS_FLAGS = 375;
 
 	/**
-	 * The meta object id for the '{@link org.afplib.afplib.FNNIBMFormat <em>FNNIBM Format</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.afplib.afplib.FNNIBMFormat
-	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNNIBMFormat()
-	 * @generated
-	 */
-	int FNNIBM_FORMAT = 376;
-
-	/**
-	 * The meta object id for the '{@link org.afplib.afplib.FNNTechnologyFormat <em>FNN Technology Format</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.afplib.afplib.FNNTechnologyFormat
-	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNNTechnologyFormat()
-	 * @generated
-	 */
-	int FNN_TECHNOLOGY_FORMAT = 377;
-
-	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IDDUNITBASE <em>IDDUNITBASE</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34482,7 +34435,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDDUNITBASE()
 	 * @generated
 	 */
-	int IDDUNITBASE = 378;
+	int IDDUNITBASE = 376;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBObjType <em>IOB Obj Type</em>}' enum.
@@ -34492,7 +34445,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBObjType()
 	 * @generated
 	 */
-	int IOB_OBJ_TYPE = 379;
+	int IOB_OBJ_TYPE = 377;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBXoaOrent <em>IOB Xoa Orent</em>}' enum.
@@ -34502,7 +34455,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBXoaOrent()
 	 * @generated
 	 */
-	int IOB_XOA_ORENT = 380;
+	int IOB_XOA_ORENT = 378;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBYoaOrent <em>IOB Yoa Orent</em>}' enum.
@@ -34512,7 +34465,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBYoaOrent()
 	 * @generated
 	 */
-	int IOB_YOA_ORENT = 381;
+	int IOB_YOA_ORENT = 379;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBRefCSys <em>IOB Ref CSys</em>}' enum.
@@ -34522,7 +34475,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBRefCSys()
 	 * @generated
 	 */
-	int IOB_REF_CSYS = 382;
+	int IOB_REF_CSYS = 380;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IPGIPgFlgs <em>IPGI Pg Flgs</em>}' enum.
@@ -34532,7 +34485,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPGIPgFlgs()
 	 * @generated
 	 */
-	int IPGI_PG_FLGS = 383;
+	int IPGI_PG_FLGS = 381;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IPOOvlyOrent <em>IPO Ovly Orent</em>}' enum.
@@ -34542,7 +34495,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPOOvlyOrent()
 	 * @generated
 	 */
-	int IPO_OVLY_ORENT = 384;
+	int IPO_OVLY_ORENT = 382;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MDDXmBase <em>MDD Xm Base</em>}' enum.
@@ -34552,7 +34505,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDXmBase()
 	 * @generated
 	 */
-	int MDD_XM_BASE = 385;
+	int MDD_XM_BASE = 383;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MDDYmBase <em>MDD Ym Base</em>}' enum.
@@ -34562,7 +34515,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDYmBase()
 	 * @generated
 	 */
-	int MDD_YM_BASE = 386;
+	int MDD_YM_BASE = 384;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MDDMDDFlgs <em>MDDMDD Flgs</em>}' enum.
@@ -34572,7 +34525,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDMDDFlgs()
 	 * @generated
 	 */
-	int MDDMDD_FLGS = 387;
+	int MDDMDD_FLGS = 385;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MFCMFCFlgs <em>MFCMFC Flgs</em>}' enum.
@@ -34582,7 +34535,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMFCFlgs()
 	 * @generated
 	 */
-	int MFCMFC_FLGS = 388;
+	int MFCMFC_FLGS = 386;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MFCMedColl <em>MFC Med Coll</em>}' enum.
@@ -34592,7 +34545,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMedColl()
 	 * @generated
 	 */
-	int MFC_MED_COLL = 389;
+	int MFC_MED_COLL = 387;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MFCMFCScpe <em>MFCMFC Scpe</em>}' enum.
@@ -34602,7 +34555,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMFCScpe()
 	 * @generated
 	 */
-	int MFCMFC_SCPE = 390;
+	int MFCMFC_SCPE = 388;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MMCPARAMETER1 <em>MMCPARAMETER1</em>}' enum.
@@ -34612,7 +34565,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCPARAMETER1()
 	 * @generated
 	 */
-	int MMCPARAMETER1 = 391;
+	int MMCPARAMETER1 = 389;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MMORGLength <em>MMORG Length</em>}' enum.
@@ -34622,7 +34575,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMORGLength()
 	 * @generated
 	 */
-	int MMORG_LENGTH = 392;
+	int MMORG_LENGTH = 390;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MPSRGLength <em>MPSRG Length</em>}' enum.
@@ -34632,7 +34585,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPSRGLength()
 	 * @generated
 	 */
-	int MPSRG_LENGTH = 393;
+	int MPSRG_LENGTH = 391;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPRGLength <em>OBPRG Length</em>}' enum.
@@ -34642,7 +34595,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPRGLength()
 	 * @generated
 	 */
-	int OBPRG_LENGTH = 394;
+	int OBPRG_LENGTH = 392;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPXoaOrent <em>OBP Xoa Orent</em>}' enum.
@@ -34652,7 +34605,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPXoaOrent()
 	 * @generated
 	 */
-	int OBP_XOA_ORENT = 395;
+	int OBP_XOA_ORENT = 393;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPYoaOrent <em>OBP Yoa Orent</em>}' enum.
@@ -34662,7 +34615,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPYoaOrent()
 	 * @generated
 	 */
-	int OBP_YOA_ORENT = 396;
+	int OBP_YOA_ORENT = 394;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPXocaOrent <em>OBP Xoca Orent</em>}' enum.
@@ -34672,7 +34625,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPXocaOrent()
 	 * @generated
 	 */
-	int OBP_XOCA_ORENT = 397;
+	int OBP_XOCA_ORENT = 395;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPYocaOrent <em>OBP Yoca Orent</em>}' enum.
@@ -34682,7 +34635,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPYocaOrent()
 	 * @generated
 	 */
-	int OBP_YOCA_ORENT = 398;
+	int OBP_YOCA_ORENT = 396;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPRefCSys <em>OBP Ref CSys</em>}' enum.
@@ -34692,7 +34645,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPRefCSys()
 	 * @generated
 	 */
-	int OBP_REF_CSYS = 399;
+	int OBP_REF_CSYS = 397;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PFCPFCFlgs <em>PFCPFC Flgs</em>}' enum.
@@ -34702,7 +34655,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPFCPFCFlgs()
 	 * @generated
 	 */
-	int PFCPFC_FLGS = 400;
+	int PFCPFC_FLGS = 398;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGDXpgBase <em>PGD Xpg Base</em>}' enum.
@@ -34712,7 +34665,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGDXpgBase()
 	 * @generated
 	 */
-	int PGD_XPG_BASE = 401;
+	int PGD_XPG_BASE = 399;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGDYpgBase <em>PGD Ypg Base</em>}' enum.
@@ -34722,7 +34675,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGDYpgBase()
 	 * @generated
 	 */
-	int PGD_YPG_BASE = 402;
+	int PGD_YPG_BASE = 400;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPConstant <em>PGP Constant</em>}' enum.
@@ -34732,7 +34685,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPConstant()
 	 * @generated
 	 */
-	int PGP_CONSTANT = 403;
+	int PGP_CONSTANT = 401;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTDXPBASE <em>PTDXPBASE</em>}' enum.
@@ -34742,7 +34695,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTDXPBASE()
 	 * @generated
 	 */
-	int PTDXPBASE = 404;
+	int PTDXPBASE = 402;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTDYPBASE <em>PTDYPBASE</em>}' enum.
@@ -34752,7 +34705,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTDYPBASE()
 	 * @generated
 	 */
-	int PTDYPBASE = 405;
+	int PTDYPBASE = 403;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTD1XPBASE <em>PTD1XPBASE</em>}' enum.
@@ -34762,7 +34715,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1XPBASE()
 	 * @generated
 	 */
-	int PTD1XPBASE = 406;
+	int PTD1XPBASE = 404;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTD1YPBASE <em>PTD1YPBASE</em>}' enum.
@@ -34772,7 +34725,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1YPBASE()
 	 * @generated
 	 */
-	int PTD1YPBASE = 407;
+	int PTD1YPBASE = 405;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OVSBYPSIDEN <em>OVSBYPSIDEN</em>}' enum.
@@ -34782,7 +34735,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOVSBYPSIDEN()
 	 * @generated
 	 */
-	int OVSBYPSIDEN = 408;
+	int OVSBYPSIDEN = 406;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.SECCOLSPCE <em>SECCOLSPCE</em>}' enum.
@@ -34792,7 +34745,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSECCOLSPCE()
 	 * @generated
 	 */
-	int SECCOLSPCE = 409;
+	int SECCOLSPCE = 407;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.SIADIRCTION <em>SIADIRCTION</em>}' enum.
@@ -34802,7 +34755,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSIADIRCTION()
 	 * @generated
 	 */
-	int SIADIRCTION = 410;
+	int SIADIRCTION = 408;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STCFRGCOLOR <em>STCFRGCOLOR</em>}' enum.
@@ -34812,7 +34765,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTCFRGCOLOR()
 	 * @generated
 	 */
-	int STCFRGCOLOR = 411;
+	int STCFRGCOLOR = 409;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STCPRECSION <em>STCPRECSION</em>}' enum.
@@ -34822,7 +34775,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTCPRECSION()
 	 * @generated
 	 */
-	int STCPRECSION = 412;
+	int STCPRECSION = 410;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STOIORNTION <em>STOIORNTION</em>}' enum.
@@ -34832,7 +34785,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTOIORNTION()
 	 * @generated
 	 */
-	int STOIORNTION = 413;
+	int STOIORNTION = 411;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STOBORNTION <em>STOBORNTION</em>}' enum.
@@ -34842,7 +34795,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTOBORNTION()
 	 * @generated
 	 */
-	int STOBORNTION = 414;
+	int STOBORNTION = 412;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TBMDIRCTION <em>TBMDIRCTION</em>}' enum.
@@ -34852,7 +34805,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBMDIRCTION()
 	 * @generated
 	 */
-	int TBMDIRCTION = 415;
+	int TBMDIRCTION = 413;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TBMPRECSION <em>TBMPRECSION</em>}' enum.
@@ -34862,7 +34815,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBMPRECSION()
 	 * @generated
 	 */
-	int TBMPRECSION = 416;
+	int TBMPRECSION = 414;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.USCBYPSIDEN <em>USCBYPSIDEN</em>}' enum.
@@ -34872,7 +34825,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getUSCBYPSIDEN()
 	 * @generated
 	 */
-	int USCBYPSIDEN = 417;
+	int USCBYPSIDEN = 415;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.CRCResourceManagementFmtQual <em>CRC Resource Management Fmt Qual</em>}' enum.
@@ -34882,7 +34835,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCRCResourceManagementFmtQual()
 	 * @generated
 	 */
-	int CRC_RESOURCE_MANAGEMENT_FMT_QUAL = 418;
+	int CRC_RESOURCE_MANAGEMENT_FMT_QUAL = 416;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorSpecificationColSpce <em>Color Specification Col Spce</em>}' enum.
@@ -34892,7 +34845,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorSpecificationColSpce()
 	 * @generated
 	 */
-	int COLOR_SPECIFICATION_COL_SPCE = 419;
+	int COLOR_SPECIFICATION_COL_SPCE = 417;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorFontTech <em>Data Object Font Descriptor Font Tech</em>}' enum.
@@ -34902,7 +34855,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorFontTech()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_FONT_TECH = 420;
+	int DATA_OBJECT_FONT_DESCRIPTOR_FONT_TECH = 418;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorCharRot <em>Data Object Font Descriptor Char Rot</em>}' enum.
@@ -34912,7 +34865,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorCharRot()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_CHAR_ROT = 421;
+	int DATA_OBJECT_FONT_DESCRIPTOR_CHAR_ROT = 419;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorEncEnv <em>Data Object Font Descriptor Enc Env</em>}' enum.
@@ -34922,7 +34875,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorEncEnv()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ENV = 422;
+	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ENV = 420;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorEncID <em>Data Object Font Descriptor Enc ID</em>}' enum.
@@ -34932,7 +34885,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorEncID()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ID = 423;
+	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ID = 421;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.EncodingSchemeIDESidCP <em>Encoding Scheme IDE Sid CP</em>}' enum.
@@ -34942,7 +34895,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeIDESidCP()
 	 * @generated
 	 */
-	int ENCODING_SCHEME_IDE_SID_CP = 424;
+	int ENCODING_SCHEME_IDE_SID_CP = 422;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.EncodingSchemeIDESidUD <em>Encoding Scheme IDE Sid UD</em>}' enum.
@@ -34952,7 +34905,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeIDESidUD()
 	 * @generated
 	 */
-	int ENCODING_SCHEME_IDE_SID_UD = 425;
+	int ENCODING_SCHEME_IDE_SID_UD = 423;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontResolutionMetTech <em>Font Resolution Met Tech</em>}' enum.
@@ -34962,7 +34915,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionMetTech()
 	 * @generated
 	 */
-	int FONT_RESOLUTION_MET_TECH = 426;
+	int FONT_RESOLUTION_MET_TECH = 424;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontResolutionRPuBase <em>Font Resolution RPu Base</em>}' enum.
@@ -34972,7 +34925,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionRPuBase()
 	 * @generated
 	 */
-	int FONT_RESOLUTION_RPU_BASE = 427;
+	int FONT_RESOLUTION_RPU_BASE = 425;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontResolutionRPUnits <em>Font Resolution RP Units</em>}' enum.
@@ -34982,7 +34935,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionRPUnits()
 	 * @generated
 	 */
-	int FONT_RESOLUTION_RP_UNITS = 428;
+	int FONT_RESOLUTION_RP_UNITS = 426;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FullyQualifiedNameFQNType <em>Fully Qualified Name FQN Type</em>}' enum.
@@ -34992,7 +34945,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedNameFQNType()
 	 * @generated
 	 */
-	int FULLY_QUALIFIED_NAME_FQN_TYPE = 429;
+	int FULLY_QUALIFIED_NAME_FQN_TYPE = 427;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FullyQualifiedNameFQNFormat <em>Fully Qualified Name FQN Format</em>}' enum.
@@ -35002,7 +34955,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedNameFQNFormat()
 	 * @generated
 	 */
-	int FULLY_QUALIFIED_NAME_FQN_FORMAT = 430;
+	int FULLY_QUALIFIED_NAME_FQN_FORMAT = 428;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.LocalDateAndTimeStampStampType <em>Local Date And Time Stamp Stamp Type</em>}' enum.
@@ -35012,7 +34965,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLocalDateAndTimeStampStampType()
 	 * @generated
 	 */
-	int LOCAL_DATE_AND_TIME_STAMP_STAMP_TYPE = 431;
+	int LOCAL_DATE_AND_TIME_STAMP_STAMP_TYPE = 429;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MappingOptionMapValue <em>Mapping Option Map Value</em>}' enum.
@@ -35022,7 +34975,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMappingOptionMapValue()
 	 * @generated
 	 */
-	int MAPPING_OPTION_MAP_VALUE = 432;
+	int MAPPING_OPTION_MAP_VALUE = 430;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediaEjectControlReserved <em>Media Eject Control Reserved</em>}' enum.
@@ -35032,7 +34985,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControlReserved()
 	 * @generated
 	 */
-	int MEDIA_EJECT_CONTROL_RESERVED = 433;
+	int MEDIA_EJECT_CONTROL_RESERVED = 431;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediaEjectControlEjCtrl <em>Media Eject Control Ej Ctrl</em>}' enum.
@@ -35042,7 +34995,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControlEjCtrl()
 	 * @generated
 	 */
-	int MEDIA_EJECT_CONTROL_EJ_CTRL = 434;
+	int MEDIA_EJECT_CONTROL_EJ_CTRL = 432;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediumOrientationMedOrient <em>Medium Orientation Med Orient</em>}' enum.
@@ -35052,7 +35005,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediumOrientationMedOrient()
 	 * @generated
 	 */
-	int MEDIUM_ORIENTATION_MED_ORIENT = 435;
+	int MEDIUM_ORIENTATION_MED_ORIENT = 433;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MeasurementUnitsXoaBase <em>Measurement Units Xoa Base</em>}' enum.
@@ -35062,7 +35015,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnitsXoaBase()
 	 * @generated
 	 */
-	int MEASUREMENT_UNITS_XOA_BASE = 436;
+	int MEASUREMENT_UNITS_XOA_BASE = 434;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MeasurementUnitsYoaBase <em>Measurement Units Yoa Base</em>}' enum.
@@ -35072,7 +35025,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnitsYoaBase()
 	 * @generated
 	 */
-	int MEASUREMENT_UNITS_YOA_BASE = 437;
+	int MEASUREMENT_UNITS_YOA_BASE = 435;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MODCAInterchangeSetIStype <em>MODCA Interchange Set IStype</em>}' enum.
@@ -35082,7 +35035,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSetIStype()
 	 * @generated
 	 */
-	int MODCA_INTERCHANGE_SET_ISTYPE = 438;
+	int MODCA_INTERCHANGE_SET_ISTYPE = 436;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MODCAInterchangeSetISid <em>MODCA Interchange Set ISid</em>}' enum.
@@ -35092,7 +35045,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSetISid()
 	 * @generated
 	 */
-	int MODCA_INTERCHANGE_SET_ISID = 439;
+	int MODCA_INTERCHANGE_SET_ISID = 437;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectAreaSizeSizeType <em>Object Area Size Size Type</em>}' enum.
@@ -35102,7 +35055,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectAreaSizeSizeType()
 	 * @generated
 	 */
-	int OBJECT_AREA_SIZE_SIZE_TYPE = 440;
+	int OBJECT_AREA_SIZE_SIZE_TYPE = 438;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectClassificationObjClass <em>Object Classification Obj Class</em>}' enum.
@@ -35112,7 +35065,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassificationObjClass()
 	 * @generated
 	 */
-	int OBJECT_CLASSIFICATION_OBJ_CLASS = 441;
+	int OBJECT_CLASSIFICATION_OBJ_CLASS = 439;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectClassificationStrucFlgs <em>Object Classification Struc Flgs</em>}' enum.
@@ -35122,7 +35075,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassificationStrucFlgs()
 	 * @generated
 	 */
-	int OBJECT_CLASSIFICATION_STRUC_FLGS = 442;
+	int OBJECT_CLASSIFICATION_STRUC_FLGS = 440;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationObjType <em>Object Function Set Specification Obj Type</em>}' enum.
@@ -35132,7 +35085,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationObjType()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_OBJ_TYPE = 443;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_OBJ_TYPE = 441;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationArchVrsn <em>Object Function Set Specification Arch Vrsn</em>}' enum.
@@ -35142,7 +35095,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationArchVrsn()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_ARCH_VRSN = 444;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_ARCH_VRSN = 442;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationDCAFnSet <em>Object Function Set Specification DCA Fn Set</em>}' enum.
@@ -35152,7 +35105,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationDCAFnSet()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_DCA_FN_SET = 445;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_DCA_FN_SET = 443;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationOCAFnSet <em>Object Function Set Specification OCA Fn Set</em>}' enum.
@@ -35162,7 +35115,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationOCAFnSet()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_OCA_FN_SET = 446;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_OCA_FN_SET = 444;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectOffsetObjTpe <em>Object Offset Obj Tpe</em>}' enum.
@@ -35172,7 +35125,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOffsetObjTpe()
 	 * @generated
 	 */
-	int OBJECT_OFFSET_OBJ_TPE = 447;
+	int OBJECT_OFFSET_OBJ_TPE = 445;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceObjectTypeObjType <em>Resource Object Type Obj Type</em>}' enum.
@@ -35182,7 +35135,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectTypeObjType()
 	 * @generated
 	 */
-	int RESOURCE_OBJECT_TYPE_OBJ_TYPE = 448;
+	int RESOURCE_OBJECT_TYPE_OBJ_TYPE = 446;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PresentationControlPRSFlg <em>Presentation Control PRS Flg</em>}' enum.
@@ -35192,7 +35145,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPresentationControlPRSFlg()
 	 * @generated
 	 */
-	int PRESENTATION_CONTROL_PRS_FLG = 449;
+	int PRESENTATION_CONTROL_PRS_FLG = 447;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceLocalIdentifierResType <em>Resource Local Identifier Res Type</em>}' enum.
@@ -35202,7 +35155,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceLocalIdentifierResType()
 	 * @generated
 	 */
-	int RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 450;
+	int RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 448;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextOrientationIAxis <em>Text Orientation IAxis</em>}' enum.
@@ -35212,7 +35165,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientationIAxis()
 	 * @generated
 	 */
-	int TEXT_ORIENTATION_IAXIS = 451;
+	int TEXT_ORIENTATION_IAXIS = 449;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextOrientationBAxis <em>Text Orientation BAxis</em>}' enum.
@@ -35222,7 +35175,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientationBAxis()
 	 * @generated
 	 */
-	int TEXT_ORIENTATION_BAXIS = 452;
+	int TEXT_ORIENTATION_BAXIS = 450;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtWtClass <em>Font Descriptor Specification Ft Wt Class</em>}' enum.
@@ -35232,7 +35185,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtWtClass()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_WT_CLASS = 453;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_WT_CLASS = 451;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtWdClass <em>Font Descriptor Specification Ft Wd Class</em>}' enum.
@@ -35242,7 +35195,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtWdClass()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_WD_CLASS = 454;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_WD_CLASS = 452;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtDsFlags <em>Font Descriptor Specification Ft Ds Flags</em>}' enum.
@@ -35252,7 +35205,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtDsFlags()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_DS_FLAGS = 455;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_DS_FLAGS = 453;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtUsFlags <em>Font Descriptor Specification Ft Us Flags</em>}' enum.
@@ -35262,7 +35215,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtUsFlags()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_US_FLAGS = 456;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_US_FLAGS = 454;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageEncodingCOMPRID <em>Image Encoding COMPRID</em>}' enum.
@@ -35272,7 +35225,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingCOMPRID()
 	 * @generated
 	 */
-	int IMAGE_ENCODING_COMPRID = 457;
+	int IMAGE_ENCODING_COMPRID = 455;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageEncodingRECID <em>Image Encoding RECID</em>}' enum.
@@ -35282,7 +35235,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingRECID()
 	 * @generated
 	 */
-	int IMAGE_ENCODING_RECID = 458;
+	int IMAGE_ENCODING_RECID = 456;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageEncodingBITORDR <em>Image Encoding BITORDR</em>}' enum.
@@ -35292,7 +35245,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingBITORDR()
 	 * @generated
 	 */
-	int IMAGE_ENCODING_BITORDR = 459;
+	int IMAGE_ENCODING_BITORDR = 457;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IDEStructureFLAGS <em>IDE Structure FLAGS</em>}' enum.
@@ -35302,7 +35255,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDEStructureFLAGS()
 	 * @generated
 	 */
-	int IDE_STRUCTURE_FLAGS = 460;
+	int IDE_STRUCTURE_FLAGS = 458;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExternalAlgorithmALGTYPE <em>External Algorithm ALGTYPE</em>}' enum.
@@ -35312,7 +35265,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmALGTYPE()
 	 * @generated
 	 */
-	int EXTERNAL_ALGORITHM_ALGTYPE = 461;
+	int EXTERNAL_ALGORITHM_ALGTYPE = 459;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TileSetColorCSPACE <em>Tile Set Color CSPACE</em>}' enum.
@@ -35322,7 +35275,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileSetColorCSPACE()
 	 * @generated
 	 */
-	int TILE_SET_COLOR_CSPACE = 462;
+	int TILE_SET_COLOR_CSPACE = 460;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PPORGObjType <em>PPORG Obj Type</em>}' enum.
@@ -35332,7 +35285,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORGObjType()
 	 * @generated
 	 */
-	int PPORG_OBJ_TYPE = 463;
+	int PPORG_OBJ_TYPE = 461;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PPORGProcFlgs <em>PPORG Proc Flgs</em>}' enum.
@@ -35342,7 +35295,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORGProcFlgs()
 	 * @generated
 	 */
-	int PPORG_PROC_FLGS = 464;
+	int PPORG_PROC_FLGS = 462;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGRGLength <em>PGPRGRG Length</em>}' enum.
@@ -35352,7 +35305,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGRGLength()
 	 * @generated
 	 */
-	int PGPRGRG_LENGTH = 465;
+	int PGPRGRG_LENGTH = 463;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGPGorient <em>PGPRGP Gorient</em>}' enum.
@@ -35362,7 +35315,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGPGorient()
 	 * @generated
 	 */
-	int PGPRGP_GORIENT = 466;
+	int PGPRGP_GORIENT = 464;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGSHside <em>PGPRGS Hside</em>}' enum.
@@ -35372,7 +35325,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGSHside()
 	 * @generated
 	 */
-	int PGPRGS_HSIDE = 467;
+	int PGPRGS_HSIDE = 465;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGPgFlgs <em>PGPRG Pg Flgs</em>}' enum.
@@ -35382,7 +35335,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGPgFlgs()
 	 * @generated
 	 */
-	int PGPRG_PG_FLGS = 468;
+	int PGPRG_PG_FLGS = 466;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MMCRGkey <em>MMCR Gkey</em>}' enum.
@@ -35392,7 +35345,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCRGkey()
 	 * @generated
 	 */
-	int MMCR_GKEY = 469;
+	int MMCR_GKEY = 467;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExternalAlgorithmRGPADBDRY <em>External Algorithm RGPADBDRY</em>}' enum.
@@ -35402,7 +35355,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRGPADBDRY()
 	 * @generated
 	 */
-	int EXTERNAL_ALGORITHM_RGPADBDRY = 470;
+	int EXTERNAL_ALGORITHM_RGPADBDRY = 468;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExternalAlgorithmRGPADALMT <em>External Algorithm RGPADALMT</em>}' enum.
@@ -35412,7 +35365,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRGPADALMT()
 	 * @generated
 	 */
-	int EXTERNAL_ALGORITHM_RGPADALMT = 471;
+	int EXTERNAL_ALGORITHM_RGPADALMT = 469;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.BeginSegmentCommandLENGTH <em>Begin Segment Command LENGTH</em>}' enum.
@@ -35422,7 +35375,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommandLENGTH()
 	 * @generated
 	 */
-	int BEGIN_SEGMENT_COMMAND_LENGTH = 472;
+	int BEGIN_SEGMENT_COMMAND_LENGTH = 470;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.BeginSegmentCommandFLAG2 <em>Begin Segment Command FLAG2</em>}' enum.
@@ -35432,7 +35385,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommandFLAG2()
 	 * @generated
 	 */
-	int BEGIN_SEGMENT_COMMAND_FLAG2 = 473;
+	int BEGIN_SEGMENT_COMMAND_FLAG2 = 471;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBARFLAGS <em>GBARFLAGS</em>}' enum.
@@ -35442,7 +35395,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBARFLAGS()
 	 * @generated
 	 */
-	int GBARFLAGS = 474;
+	int GBARFLAGS = 472;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBIMGFORMAT <em>GBIMGFORMAT</em>}' enum.
@@ -35452,7 +35405,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMGFORMAT()
 	 * @generated
 	 */
-	int GBIMGFORMAT = 475;
+	int GBIMGFORMAT = 473;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBIMGRES <em>GBIMGRES</em>}' enum.
@@ -35462,7 +35415,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMGRES()
 	 * @generated
 	 */
-	int GBIMGRES = 476;
+	int GBIMGRES = 474;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GCBIMGFORMAT <em>GCBIMGFORMAT</em>}' enum.
@@ -35472,7 +35425,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMGFORMAT()
 	 * @generated
 	 */
-	int GCBIMGFORMAT = 477;
+	int GCBIMGFORMAT = 475;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GCBIMGRES <em>GCBIMGRES</em>}' enum.
@@ -35482,7 +35435,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMGRES()
 	 * @generated
 	 */
-	int GCBIMGRES = 478;
+	int GCBIMGRES = 476;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBOXRES <em>GBOXRES</em>}' enum.
@@ -35492,7 +35445,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBOXRES()
 	 * @generated
 	 */
-	int GBOXRES = 479;
+	int GBOXRES = 477;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GCBOXRES <em>GCBOXRES</em>}' enum.
@@ -35502,7 +35455,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBOXRES()
 	 * @generated
 	 */
-	int GCBOXRES = 480;
+	int GCBOXRES = 478;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GEPROLRES <em>GEPROLRES</em>}' enum.
@@ -35512,7 +35465,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGEPROLRES()
 	 * @generated
 	 */
-	int GEPROLRES = 481;
+	int GEPROLRES = 479;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSBMXMODE <em>GSBMXMODE</em>}' enum.
@@ -35522,7 +35475,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSBMXMODE()
 	 * @generated
 	 */
-	int GSBMXMODE = 482;
+	int GSBMXMODE = 480;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSCDDIRECTION <em>GSCDDIRECTION</em>}' enum.
@@ -35532,7 +35485,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCDDIRECTION()
 	 * @generated
 	 */
-	int GSCDDIRECTION = 483;
+	int GSCDDIRECTION = 481;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSCRPREC <em>GSCRPREC</em>}' enum.
@@ -35542,7 +35495,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCRPREC()
 	 * @generated
 	 */
-	int GSCRPREC = 484;
+	int GSCRPREC = 482;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSCOLCOL <em>GSCOLCOL</em>}' enum.
@@ -35552,7 +35505,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCOLCOL()
 	 * @generated
 	 */
-	int GSCOLCOL = 485;
+	int GSCOLCOL = 483;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSLTLINETYPE <em>GSLTLINETYPE</em>}' enum.
@@ -35562,7 +35515,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLTLINETYPE()
 	 * @generated
 	 */
-	int GSLTLINETYPE = 486;
+	int GSLTLINETYPE = 484;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSMPPREC <em>GSMPPREC</em>}' enum.
@@ -35572,7 +35525,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMPPREC()
 	 * @generated
 	 */
-	int GSMPPREC = 487;
+	int GSMPPREC = 485;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSMTMCPT <em>GSMTMCPT</em>}' enum.
@@ -35582,7 +35535,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMTMCPT()
 	 * @generated
 	 */
-	int GSMTMCPT = 488;
+	int GSMTMCPT = 486;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSMXMODE <em>GSMXMODE</em>}' enum.
@@ -35592,7 +35545,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMXMODE()
 	 * @generated
 	 */
-	int GSMXMODE = 489;
+	int GSMXMODE = 487;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSPSLCID <em>GSPSLCID</em>}' enum.
@@ -35602,7 +35555,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPSLCID()
 	 * @generated
 	 */
-	int GSPSLCID = 490;
+	int GSPSLCID = 488;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSPTPATT <em>GSPTPATT</em>}' enum.
@@ -35612,7 +35565,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPTPATT()
 	 * @generated
 	 */
-	int GSPTPATT = 491;
+	int GSPTPATT = 489;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSPCOLCOLSPCE <em>GSPCOLCOLSPCE</em>}' enum.
@@ -35622,7 +35575,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPCOLCOLSPCE()
 	 * @generated
 	 */
-	int GSPCOLCOLSPCE = 492;
+	int GSPCOLCOLSPCE = 490;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSLELINEEND <em>GSLELINEEND</em>}' enum.
@@ -35632,7 +35585,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLELINEEND()
 	 * @generated
 	 */
-	int GSLELINEEND = 493;
+	int GSLELINEEND = 491;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSLJLINEJOIN <em>GSLJLINEJOIN</em>}' enum.
@@ -35642,7 +35595,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLJLINEJOIN()
 	 * @generated
 	 */
-	int GSLJLINEJOIN = 494;
+	int GSLJLINEJOIN = 492;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationFLAGS <em>Window Specification FLAGS</em>}' enum.
@@ -35652,7 +35605,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationFLAGS()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_FLAGS = 495;
+	int WINDOW_SPECIFICATION_FLAGS = 493;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationRES3 <em>Window Specification RES3</em>}' enum.
@@ -35662,7 +35615,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationRES3()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_RES3 = 496;
+	int WINDOW_SPECIFICATION_RES3 = 494;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationCFORMAT <em>Window Specification CFORMAT</em>}' enum.
@@ -35672,7 +35625,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationCFORMAT()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_CFORMAT = 497;
+	int WINDOW_SPECIFICATION_CFORMAT = 495;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationUBASE <em>Window Specification UBASE</em>}' enum.
@@ -35682,7 +35635,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationUBASE()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_UBASE = 498;
+	int WINDOW_SPECIFICATION_UBASE = 496;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TonerSaverTSvCtrl <em>Toner Saver TSv Ctrl</em>}' enum.
@@ -35692,7 +35645,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTonerSaverTSvCtrl()
 	 * @generated
 	 */
-	int TONER_SAVER_TSV_CTRL = 499;
+	int TONER_SAVER_TSV_CTRL = 497;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorFidelityStpCoEx <em>Color Fidelity Stp Co Ex</em>}' enum.
@@ -35702,7 +35655,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityStpCoEx()
 	 * @generated
 	 */
-	int COLOR_FIDELITY_STP_CO_EX = 500;
+	int COLOR_FIDELITY_STP_CO_EX = 498;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorFidelityRepCoEx <em>Color Fidelity Rep Co Ex</em>}' enum.
@@ -35712,7 +35665,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityRepCoEx()
 	 * @generated
 	 */
-	int COLOR_FIDELITY_REP_CO_EX = 501;
+	int COLOR_FIDELITY_REP_CO_EX = 499;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorFidelityColSub <em>Color Fidelity Col Sub</em>}' enum.
@@ -35722,7 +35675,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityColSub()
 	 * @generated
 	 */
-	int COLOR_FIDELITY_COL_SUB = 502;
+	int COLOR_FIDELITY_COL_SUB = 500;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontFidelityStpFntEx <em>Font Fidelity Stp Fnt Ex</em>}' enum.
@@ -35732,7 +35685,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontFidelityStpFntEx()
 	 * @generated
 	 */
-	int FONT_FIDELITY_STP_FNT_EX = 503;
+	int FONT_FIDELITY_STP_FNT_EX = 501;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextFidelityStpTxtEx <em>Text Fidelity Stp Txt Ex</em>}' enum.
@@ -35742,7 +35695,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelityStpTxtEx()
 	 * @generated
 	 */
-	int TEXT_FIDELITY_STP_TXT_EX = 504;
+	int TEXT_FIDELITY_STP_TXT_EX = 502;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextFidelityRepTxtEx <em>Text Fidelity Rep Txt Ex</em>}' enum.
@@ -35752,7 +35705,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelityRepTxtEx()
 	 * @generated
 	 */
-	int TEXT_FIDELITY_REP_TXT_EX = 505;
+	int TEXT_FIDELITY_REP_TXT_EX = 503;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediaFidelityStpMedEx <em>Media Fidelity Stp Med Ex</em>}' enum.
@@ -35762,7 +35715,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaFidelityStpMedEx()
 	 * @generated
 	 */
-	int MEDIA_FIDELITY_STP_MED_EX = 506;
+	int MEDIA_FIDELITY_STP_MED_EX = 504;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingFidelityStpFinEx <em>Finishing Fidelity Stp Fin Ex</em>}' enum.
@@ -35772,7 +35725,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelityStpFinEx()
 	 * @generated
 	 */
-	int FINISHING_FIDELITY_STP_FIN_EX = 507;
+	int FINISHING_FIDELITY_STP_FIN_EX = 505;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingFidelityRepFinEx <em>Finishing Fidelity Rep Fin Ex</em>}' enum.
@@ -35782,7 +35735,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelityRepFinEx()
 	 * @generated
 	 */
-	int FINISHING_FIDELITY_REP_FIN_EX = 508;
+	int FINISHING_FIDELITY_REP_FIN_EX = 506;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.CMRFidelityStpCMREx <em>CMR Fidelity Stp CMR Ex</em>}' enum.
@@ -35792,7 +35745,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelityStpCMREx()
 	 * @generated
 	 */
-	int CMR_FIDELITY_STP_CMR_EX = 509;
+	int CMR_FIDELITY_STP_CMR_EX = 507;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.CMRFidelityRepCMREx <em>CMR Fidelity Rep CMR Ex</em>}' enum.
@@ -35802,7 +35755,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelityRepCMREx()
 	 * @generated
 	 */
-	int CMR_FIDELITY_REP_CMR_EX = 510;
+	int CMR_FIDELITY_REP_CMR_EX = 508;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectCountSubObj <em>Object Count Sub Obj</em>}' enum.
@@ -35812,7 +35765,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectCountSubObj()
 	 * @generated
 	 */
-	int OBJECT_COUNT_SUB_OBJ = 511;
+	int OBJECT_COUNT_SUB_OBJ = 509;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectOriginIdentifierSystem <em>Object Origin Identifier System</em>}' enum.
@@ -35822,7 +35775,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOriginIdentifierSystem()
 	 * @generated
 	 */
-	int OBJECT_ORIGIN_IDENTIFIER_SYSTEM = 512;
+	int OBJECT_ORIGIN_IDENTIFIER_SYSTEM = 510;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.LineDataObjectPositionMigrationTempOrient <em>Line Data Object Position Migration Temp Orient</em>}' enum.
@@ -35832,7 +35785,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLineDataObjectPositionMigrationTempOrient()
 	 * @generated
 	 */
-	int LINE_DATA_OBJECT_POSITION_MIGRATION_TEMP_ORIENT = 513;
+	int LINE_DATA_OBJECT_POSITION_MIGRATION_TEMP_ORIENT = 511;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorManagementResourceDescriptorProcMode <em>Color Management Resource Descriptor Proc Mode</em>}' enum.
@@ -35842,7 +35795,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptorProcMode()
 	 * @generated
 	 */
-	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_PROC_MODE = 514;
+	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_PROC_MODE = 512;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorManagementResourceDescriptorCMRScpe <em>Color Management Resource Descriptor CMR Scpe</em>}' enum.
@@ -35852,7 +35805,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptorCMRScpe()
 	 * @generated
 	 */
-	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_CMR_SCPE = 515;
+	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_CMR_SCPE = 513;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageResolutionXBase <em>Image Resolution XBase</em>}' enum.
@@ -35862,7 +35815,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolutionXBase()
 	 * @generated
 	 */
-	int IMAGE_RESOLUTION_XBASE = 516;
+	int IMAGE_RESOLUTION_XBASE = 514;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageResolutionYBase <em>Image Resolution YBase</em>}' enum.
@@ -35872,7 +35825,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolutionYBase()
 	 * @generated
 	 */
-	int IMAGE_RESOLUTION_YBASE = 517;
+	int IMAGE_RESOLUTION_YBASE = 515;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectContainerPresentationSpaceSizePDFSize <em>Object Container Presentation Space Size PDF Size</em>}' enum.
@@ -35882,7 +35835,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectContainerPresentationSpaceSizePDFSize()
 	 * @generated
 	 */
-	int OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE_PDF_SIZE = 518;
+	int OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE_PDF_SIZE = 516;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExtendedResourceLocalIdentifierResType <em>Extended Resource Local Identifier Res Type</em>}' enum.
@@ -35892,7 +35845,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExtendedResourceLocalIdentifierResType()
 	 * @generated
 	 */
-	int EXTENDED_RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 519;
+	int EXTENDED_RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 517;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MetricAdjustmentUnitBase <em>Metric Adjustment Unit Base</em>}' enum.
@@ -35902,7 +35855,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMetricAdjustmentUnitBase()
 	 * @generated
 	 */
-	int METRIC_ADJUSTMENT_UNIT_BASE = 520;
+	int METRIC_ADJUSTMENT_UNIT_BASE = 518;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentReserved <em>Rendering Intent Reserved</em>}' enum.
@@ -35912,7 +35865,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentReserved()
 	 * @generated
 	 */
-	int RENDERING_INTENT_RESERVED = 521;
+	int RENDERING_INTENT_RESERVED = 519;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentIOCARI <em>Rendering Intent IOCARI</em>}' enum.
@@ -35922,7 +35875,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentIOCARI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_IOCARI = 522;
+	int RENDERING_INTENT_IOCARI = 520;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentOCRI <em>Rendering Intent OCRI</em>}' enum.
@@ -35932,7 +35885,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentOCRI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_OCRI = 523;
+	int RENDERING_INTENT_OCRI = 521;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentPTOCRI <em>Rendering Intent PTOCRI</em>}' enum.
@@ -35942,7 +35895,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentPTOCRI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_PTOCRI = 524;
+	int RENDERING_INTENT_PTOCRI = 522;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentGOCARI <em>Rendering Intent GOCARI</em>}' enum.
@@ -35952,7 +35905,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentGOCARI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_GOCARI = 525;
+	int RENDERING_INTENT_GOCARI = 523;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentReserved2 <em>Rendering Intent Reserved2</em>}' enum.
@@ -35962,7 +35915,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentReserved2()
 	 * @generated
 	 */
-	int RENDERING_INTENT_RESERVED2 = 526;
+	int RENDERING_INTENT_RESERVED2 = 524;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingOperationFOpType <em>Finishing Operation FOp Type</em>}' enum.
@@ -35972,7 +35925,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperationFOpType()
 	 * @generated
 	 */
-	int FINISHING_OPERATION_FOP_TYPE = 527;
+	int FINISHING_OPERATION_FOP_TYPE = 525;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingOperationRefEdge <em>Finishing Operation Ref Edge</em>}' enum.
@@ -35982,7 +35935,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperationRefEdge()
 	 * @generated
 	 */
-	int FINISHING_OPERATION_REF_EDGE = 528;
+	int FINISHING_OPERATION_REF_EDGE = 526;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DeviceAppearanceDevApp <em>Device Appearance Dev App</em>}' enum.
@@ -35992,7 +35945,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDeviceAppearanceDevApp()
 	 * @generated
 	 */
-	int DEVICE_APPEARANCE_DEV_APP = 529;
+	int DEVICE_APPEARANCE_DEV_APP = 527;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceObjectIncludeObjType <em>Resource Object Include Obj Type</em>}' enum.
@@ -36002,7 +35955,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectIncludeObjType()
 	 * @generated
 	 */
-	int RESOURCE_OBJECT_INCLUDE_OBJ_TYPE = 530;
+	int RESOURCE_OBJECT_INCLUDE_OBJ_TYPE = 528;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceObjectIncludeObOrent <em>Resource Object Include Ob Orent</em>}' enum.
@@ -36012,7 +35965,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectIncludeObOrent()
 	 * @generated
 	 */
-	int RESOURCE_OBJECT_INCLUDE_OB_ORENT = 531;
+	int RESOURCE_OBJECT_INCLUDE_OB_ORENT = 529;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PageOverlayConditionalProcessingPgOvType <em>Page Overlay Conditional Processing Pg Ov Type</em>}' enum.
@@ -36022,7 +35975,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPageOverlayConditionalProcessingPgOvType()
 	 * @generated
 	 */
-	int PAGE_OVERLAY_CONDITIONAL_PROCESSING_PG_OV_TYPE = 532;
+	int PAGE_OVERLAY_CONDITIONAL_PROCESSING_PG_OV_TYPE = 530;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceUsageAttributeFrequency <em>Resource Usage Attribute Frequency</em>}' enum.
@@ -36032,7 +35985,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceUsageAttributeFrequency()
 	 * @generated
 	 */
-	int RESOURCE_USAGE_ATTRIBUTE_FREQUENCY = 533;
+	int RESOURCE_USAGE_ATTRIBUTE_FREQUENCY = 531;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.SFName <em>SF Name</em>}' enum.
@@ -36042,7 +35995,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSFName()
 	 * @generated
 	 */
-	int SF_NAME = 534;
+	int SF_NAME = 532;
 
 
 	/**
@@ -38886,48 +38839,15 @@ public interface AfplibPackage extends EPackage {
 	EClass getFNN();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.afplib.afplib.FNN#getIBMFormat <em>IBM Format</em>}'.
+	 * Returns the meta object for the attribute '{@link org.afplib.afplib.FNN#getFNNData <em>FNN Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>IBM Format</em>'.
-	 * @see org.afplib.afplib.FNN#getIBMFormat()
+	 * @return the meta object for the attribute '<em>FNN Data</em>'.
+	 * @see org.afplib.afplib.FNN#getFNNData()
 	 * @see #getFNN()
 	 * @generated
 	 */
-	EAttribute getFNN_IBMFormat();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.afplib.afplib.FNN#getTechnologyFormat <em>Technology Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Technology Format</em>'.
-	 * @see org.afplib.afplib.FNN#getTechnologyFormat()
-	 * @see #getFNN()
-	 * @generated
-	 */
-	EAttribute getFNN_TechnologyFormat();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.afplib.afplib.FNN#getRg <em>Rg</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Rg</em>'.
-	 * @see org.afplib.afplib.FNN#getRg()
-	 * @see #getFNN()
-	 * @generated
-	 */
-	EReference getFNN_Rg();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.afplib.afplib.FNN#getRg2 <em>Rg2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Rg2</em>'.
-	 * @see org.afplib.afplib.FNN#getRg2()
-	 * @see #getFNN()
-	 * @generated
-	 */
-	EReference getFNN_Rg2();
+	EAttribute getFNN_FNNData();
 
 	/**
 	 * Returns the meta object for class '{@link org.afplib.afplib.FNM <em>FNM</em>}'.
@@ -39621,15 +39541,15 @@ public interface AfplibPackage extends EPackage {
 	EClass getIPD();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.afplib.afplib.IPD#getSdfs <em>Sdfs</em>}'.
+	 * Returns the meta object for the attribute '{@link org.afplib.afplib.IPD#getIOCAdat <em>IOC Adat</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Sdfs</em>'.
-	 * @see org.afplib.afplib.IPD#getSdfs()
+	 * @return the meta object for the attribute '<em>IOC Adat</em>'.
+	 * @see org.afplib.afplib.IPD#getIOCAdat()
 	 * @see #getIPD()
 	 * @generated
 	 */
-	EReference getIPD_Sdfs();
+	EAttribute getIPD_IOCAdat();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.afplib.afplib.IPD#getImageData <em>Image Data</em>}'.
@@ -49638,26 +49558,6 @@ public interface AfplibPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getFNDFtDsFlags();
-
-	/**
-	 * Returns the meta object for enum '{@link org.afplib.afplib.FNNIBMFormat <em>FNNIBM Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>FNNIBM Format</em>'.
-	 * @see org.afplib.afplib.FNNIBMFormat
-	 * @generated
-	 */
-	EEnum getFNNIBMFormat();
-
-	/**
-	 * Returns the meta object for enum '{@link org.afplib.afplib.FNNTechnologyFormat <em>FNN Technology Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>FNN Technology Format</em>'.
-	 * @see org.afplib.afplib.FNNTechnologyFormat
-	 * @generated
-	 */
-	EEnum getFNNTechnologyFormat();
 
 	/**
 	 * Returns the meta object for enum '{@link org.afplib.afplib.IDDUNITBASE <em>IDDUNITBASE</em>}'.

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.LocalDateAndTimeStampImpl#getStampType <em>Stamp Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LocalDateAndTimeStampImpl#getTHunYear <em>THun Year</em>}</li>
@@ -29,7 +30,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.LocalDateAndTimeStampImpl#getSecond <em>Second</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LocalDateAndTimeStampImpl#getHundSec <em>Hund Sec</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

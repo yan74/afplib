@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CPIRG#getGCGID <em>GCGID</em>}</li>
  *   <li>{@link org.afplib.afplib.CPIRG#getPrtFlags <em>Prt Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.CPIRG#getCodePoint <em>Code Point</em>}</li>
  *   <li>{@link org.afplib.afplib.CPIRG#getCount <em>Count</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCPIRG()
  * @model

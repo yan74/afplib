@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CPDImpl#getCPDesc <em>CP Desc</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPDImpl#getGCGIDLen <em>GCGID Len</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.CPDImpl#getCPGID <em>CPGID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPDImpl#getEncScheme <em>Enc Scheme</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -31,76 +31,33 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link org.afplib.afplib.impl.FNNImpl#getIBMFormat <em>IBM Format</em>}</li>
- *   <li>{@link org.afplib.afplib.impl.FNNImpl#getTechnologyFormat <em>Technology Format</em>}</li>
- *   <li>{@link org.afplib.afplib.impl.FNNImpl#getRg <em>Rg</em>}</li>
- *   <li>{@link org.afplib.afplib.impl.FNNImpl#getRg2 <em>Rg2</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link org.afplib.afplib.impl.FNNImpl#getFNNData <em>FNN Data</em>}</li>
+ * </ul>
  *
  * @generated
  */
 public class FNNImpl extends SFImpl implements FNN {
 	/**
-	 * The default value of the '{@link #getIBMFormat() <em>IBM Format</em>}' attribute.
+	 * The default value of the '{@link #getFNNData() <em>FNN Data</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getIBMFormat()
+	 * @see #getFNNData()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer IBM_FORMAT_EDEFAULT = null;
+	protected static final byte[] FNN_DATA_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getIBMFormat() <em>IBM Format</em>}' attribute.
+	 * The cached value of the '{@link #getFNNData() <em>FNN Data</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getIBMFormat()
+	 * @see #getFNNData()
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer ibmFormat = IBM_FORMAT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getTechnologyFormat() <em>Technology Format</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTechnologyFormat()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final Integer TECHNOLOGY_FORMAT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getTechnologyFormat() <em>Technology Format</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTechnologyFormat()
-	 * @generated
-	 * @ordered
-	 */
-	protected Integer technologyFormat = TECHNOLOGY_FORMAT_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRg()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<FNNRG> rg;
-
-	/**
-	 * The cached value of the '{@link #getRg2() <em>Rg2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRg2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Triplet> rg2;
+	protected byte[] fnnData = FNN_DATA_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -126,8 +83,8 @@ public class FNNImpl extends SFImpl implements FNN {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Integer getIBMFormat() {
-		return ibmFormat;
+	public byte[] getFNNData() {
+		return fnnData;
 	}
 
 	/**
@@ -135,72 +92,11 @@ public class FNNImpl extends SFImpl implements FNN {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setIBMFormat(Integer newIBMFormat) {
-		Integer oldIBMFormat = ibmFormat;
-		ibmFormat = newIBMFormat;
+	public void setFNNData(byte[] newFNNData) {
+		byte[] oldFNNData = fnnData;
+		fnnData = newFNNData;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FNN__IBM_FORMAT, oldIBMFormat, ibmFormat));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Integer getTechnologyFormat() {
-		return technologyFormat;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTechnologyFormat(Integer newTechnologyFormat) {
-		Integer oldTechnologyFormat = technologyFormat;
-		technologyFormat = newTechnologyFormat;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FNN__TECHNOLOGY_FORMAT, oldTechnologyFormat, technologyFormat));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<FNNRG> getRg() {
-		if (rg == null) {
-			rg = new EObjectContainmentEList.Resolving<FNNRG>(FNNRG.class, this, AfplibPackage.FNN__RG);
-		}
-		return rg;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Triplet> getRg2() {
-		if (rg2 == null) {
-			rg2 = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.FNN__RG2);
-		}
-		return rg2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AfplibPackage.FNN__RG:
-				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-			case AfplibPackage.FNN__RG2:
-				return ((InternalEList<?>)getRg2()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FNN__FNN_DATA, oldFNNData, fnnData));
 	}
 
 	/**
@@ -211,14 +107,8 @@ public class FNNImpl extends SFImpl implements FNN {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case AfplibPackage.FNN__IBM_FORMAT:
-				return getIBMFormat();
-			case AfplibPackage.FNN__TECHNOLOGY_FORMAT:
-				return getTechnologyFormat();
-			case AfplibPackage.FNN__RG:
-				return getRg();
-			case AfplibPackage.FNN__RG2:
-				return getRg2();
+			case AfplibPackage.FNN__FNN_DATA:
+				return getFNNData();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -232,19 +122,8 @@ public class FNNImpl extends SFImpl implements FNN {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case AfplibPackage.FNN__IBM_FORMAT:
-				setIBMFormat((Integer)newValue);
-				return;
-			case AfplibPackage.FNN__TECHNOLOGY_FORMAT:
-				setTechnologyFormat((Integer)newValue);
-				return;
-			case AfplibPackage.FNN__RG:
-				getRg().clear();
-				getRg().addAll((Collection<? extends FNNRG>)newValue);
-				return;
-			case AfplibPackage.FNN__RG2:
-				getRg2().clear();
-				getRg2().addAll((Collection<? extends Triplet>)newValue);
+			case AfplibPackage.FNN__FNN_DATA:
+				setFNNData((byte[])newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -258,17 +137,8 @@ public class FNNImpl extends SFImpl implements FNN {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case AfplibPackage.FNN__IBM_FORMAT:
-				setIBMFormat(IBM_FORMAT_EDEFAULT);
-				return;
-			case AfplibPackage.FNN__TECHNOLOGY_FORMAT:
-				setTechnologyFormat(TECHNOLOGY_FORMAT_EDEFAULT);
-				return;
-			case AfplibPackage.FNN__RG:
-				getRg().clear();
-				return;
-			case AfplibPackage.FNN__RG2:
-				getRg2().clear();
+			case AfplibPackage.FNN__FNN_DATA:
+				setFNNData(FNN_DATA_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -282,14 +152,8 @@ public class FNNImpl extends SFImpl implements FNN {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case AfplibPackage.FNN__IBM_FORMAT:
-				return IBM_FORMAT_EDEFAULT == null ? ibmFormat != null : !IBM_FORMAT_EDEFAULT.equals(ibmFormat);
-			case AfplibPackage.FNN__TECHNOLOGY_FORMAT:
-				return TECHNOLOGY_FORMAT_EDEFAULT == null ? technologyFormat != null : !TECHNOLOGY_FORMAT_EDEFAULT.equals(technologyFormat);
-			case AfplibPackage.FNN__RG:
-				return rg != null && !rg.isEmpty();
-			case AfplibPackage.FNN__RG2:
-				return rg2 != null && !rg2.isEmpty();
+			case AfplibPackage.FNN__FNN_DATA:
+				return FNN_DATA_EDEFAULT == null ? fnnData != null : !FNN_DATA_EDEFAULT.equals(fnnData);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -304,10 +168,8 @@ public class FNNImpl extends SFImpl implements FNN {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (IBMFormat: ");
-		result.append(ibmFormat);
-		result.append(", TechnologyFormat: ");
-		result.append(technologyFormat);
+		result.append(" (FNNData: ");
+		result.append(fnnData);
 		result.append(')');
 		return result.toString();
 	}

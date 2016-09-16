@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IPSImpl#getPsegName <em>Pseg Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IPSImpl#getXpsOset <em>Xps Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IPSImpl#getYpsOset <em>Yps Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IPSImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

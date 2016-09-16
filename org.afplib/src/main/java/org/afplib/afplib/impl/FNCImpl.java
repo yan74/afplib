@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FNCImpl#getRetired <em>Retired</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNCImpl#getPatTech <em>Pat Tech</em>}</li>
@@ -58,7 +59,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.FNCImpl#getFNNMapCnt <em>FNN Map Cnt</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -14,12 +14,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CFC#getCFIRGLen <em>CFIRG Len</em>}</li>
  *   <li>{@link org.afplib.afplib.CFC#getRetired1 <em>Retired1</em>}</li>
  *   <li>{@link org.afplib.afplib.CFC#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCFC()
  * @model

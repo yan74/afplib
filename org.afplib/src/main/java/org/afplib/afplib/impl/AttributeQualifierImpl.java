@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.AttributeQualifierImpl#getSeqNum <em>Seq Num</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.AttributeQualifierImpl#getLevNum <em>Lev Num</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

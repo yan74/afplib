@@ -482,10 +482,6 @@ public class AfplibFactoryImpl extends EFactoryImpl implements AfplibFactory {
 				return createFNDFtWdClassFromString(eDataType, initialValue);
 			case AfplibPackage.FND_FT_DS_FLAGS:
 				return createFNDFtDsFlagsFromString(eDataType, initialValue);
-			case AfplibPackage.FNNIBM_FORMAT:
-				return createFNNIBMFormatFromString(eDataType, initialValue);
-			case AfplibPackage.FNN_TECHNOLOGY_FORMAT:
-				return createFNNTechnologyFormatFromString(eDataType, initialValue);
 			case AfplibPackage.IDDUNITBASE:
 				return createIDDUNITBASEFromString(eDataType, initialValue);
 			case AfplibPackage.IOB_OBJ_TYPE:
@@ -885,10 +881,6 @@ public class AfplibFactoryImpl extends EFactoryImpl implements AfplibFactory {
 				return convertFNDFtWdClassToString(eDataType, instanceValue);
 			case AfplibPackage.FND_FT_DS_FLAGS:
 				return convertFNDFtDsFlagsToString(eDataType, instanceValue);
-			case AfplibPackage.FNNIBM_FORMAT:
-				return convertFNNIBMFormatToString(eDataType, instanceValue);
-			case AfplibPackage.FNN_TECHNOLOGY_FORMAT:
-				return convertFNNTechnologyFormatToString(eDataType, instanceValue);
 			case AfplibPackage.IDDUNITBASE:
 				return convertIDDUNITBASEToString(eDataType, instanceValue);
 			case AfplibPackage.IOB_OBJ_TYPE:
@@ -5325,46 +5317,6 @@ public class AfplibFactoryImpl extends EFactoryImpl implements AfplibFactory {
 	 * @generated
 	 */
 	public String convertFNDFtDsFlagsToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FNNIBMFormat createFNNIBMFormatFromString(EDataType eDataType, String initialValue) {
-		FNNIBMFormat result = FNNIBMFormat.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertFNNIBMFormatToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FNNTechnologyFormat createFNNTechnologyFormatFromString(EDataType eDataType, String initialValue) {
-		FNNTechnologyFormat result = FNNTechnologyFormat.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertFNNTechnologyFormatToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

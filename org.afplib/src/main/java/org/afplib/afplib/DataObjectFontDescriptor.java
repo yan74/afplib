@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.DataObjectFontDescriptor#getDOFtFlgs <em>DO Ft Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.DataObjectFontDescriptor#getFontTech <em>Font Tech</em>}</li>
@@ -21,7 +22,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.DataObjectFontDescriptor#getEncID <em>Enc ID</em>}</li>
  *   <li>{@link org.afplib.afplib.DataObjectFontDescriptor#getReserved <em>Reserved</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getDataObjectFontDescriptor()
  * @model

@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BDAImpl#getFlags <em>Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BDAImpl#getXoffset <em>Xoffset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BDAImpl#getYoffset <em>Yoffset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BDAImpl#getData <em>Data</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

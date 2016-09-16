@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GRLINERGImpl#getXOSSF <em>XOSSF</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GRLINERGImpl#getYOFFS <em>YOFFS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

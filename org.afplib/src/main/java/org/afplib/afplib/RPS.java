@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.RPS#getRLENGTH <em>RLENGTH</em>}</li>
  *   <li>{@link org.afplib.afplib.RPS#getRPTDATA <em>RPTDATA</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getRPS()
  * @model

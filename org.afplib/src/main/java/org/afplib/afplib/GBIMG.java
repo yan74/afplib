@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GBIMG#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GBIMG#getYPOS <em>YPOS</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.GBIMG#getWIDTH <em>WIDTH</em>}</li>
  *   <li>{@link org.afplib.afplib.GBIMG#getHEIGHT <em>HEIGHT</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGBIMG()
  * @model

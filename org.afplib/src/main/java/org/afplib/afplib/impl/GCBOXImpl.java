@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GCBOXImpl#getRES <em>RES</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCBOXImpl#getXPOS1 <em>XPOS1</em>}</li>
@@ -26,7 +27,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.GCBOXImpl#getHAXIS <em>HAXIS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCBOXImpl#getVAXIS <em>VAXIS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

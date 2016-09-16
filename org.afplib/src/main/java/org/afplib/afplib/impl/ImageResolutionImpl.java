@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ImageResolutionImpl#getXBase <em>XBase</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ImageResolutionImpl#getYBase <em>YBase</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ImageResolutionImpl#getXResol <em>XResol</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ImageResolutionImpl#getYResol <em>YResol</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

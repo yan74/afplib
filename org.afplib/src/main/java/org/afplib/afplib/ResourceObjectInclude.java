@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ResourceObjectInclude#getObjType <em>Obj Type</em>}</li>
  *   <li>{@link org.afplib.afplib.ResourceObjectInclude#getObjName <em>Obj Name</em>}</li>
@@ -18,7 +19,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.ResourceObjectInclude#getYobjOset <em>Yobj Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.ResourceObjectInclude#getObOrent <em>Ob Orent</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getResourceObjectInclude()
  * @model

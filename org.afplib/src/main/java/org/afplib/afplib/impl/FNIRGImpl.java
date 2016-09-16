@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FNIRGImpl#getGCGID <em>GCGID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNIRGImpl#getCharInc <em>Char Inc</em>}</li>
@@ -32,7 +33,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.FNIRGImpl#getReserved2 <em>Reserved2</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNIRGImpl#getBaseOset <em>Base Oset</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

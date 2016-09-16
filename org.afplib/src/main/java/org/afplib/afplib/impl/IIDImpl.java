@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IIDImpl#getConData1 <em>Con Data1</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IIDImpl#getXBase <em>XBase</em>}</li>
@@ -33,7 +34,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.IIDImpl#getConData3 <em>Con Data3</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IIDImpl#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

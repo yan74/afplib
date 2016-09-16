@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PPORG#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.PPORG#getObjType <em>Obj Type</em>}</li>
@@ -21,7 +22,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.PPORG#getYocaOset <em>Yoca Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.PPORG#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPPORG()
  * @model

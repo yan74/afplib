@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PPORGImpl#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PPORGImpl#getObjType <em>Obj Type</em>}</li>
@@ -38,7 +39,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.PPORGImpl#getYocaOset <em>Yoca Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PPORGImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

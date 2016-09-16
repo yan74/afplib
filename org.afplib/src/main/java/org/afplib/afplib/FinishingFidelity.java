@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FinishingFidelity#getStpFinEx <em>Stp Fin Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.FinishingFidelity#getRepFinEx <em>Rep Fin Ex</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFinishingFidelity()
  * @model

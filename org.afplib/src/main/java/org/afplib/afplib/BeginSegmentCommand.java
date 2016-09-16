@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.BeginSegmentCommand#getLENGTH <em>LENGTH</em>}</li>
  *   <li>{@link org.afplib.afplib.BeginSegmentCommand#getNAME <em>NAME</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.BeginSegmentCommand#getSEGL <em>SEGL</em>}</li>
  *   <li>{@link org.afplib.afplib.BeginSegmentCommand#getPSNAME <em>PSNAME</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getBeginSegmentCommand()
  * @model

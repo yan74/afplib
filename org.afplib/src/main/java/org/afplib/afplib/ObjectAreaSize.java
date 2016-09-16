@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectAreaSize#getSizeType <em>Size Type</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectAreaSize#getXoaSize <em>Xoa Size</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectAreaSize#getYoaSize <em>Yoa Size</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize()
  * @model

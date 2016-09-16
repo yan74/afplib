@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PTDImpl#getXPBASE <em>XPBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PTDImpl#getYPBASE <em>YPBASE</em>}</li>
@@ -40,7 +41,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.PTDImpl#getRESERVED <em>RESERVED</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PTDImpl#getCS <em>CS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.DBR#getRLENGTH <em>RLENGTH</em>}</li>
  *   <li>{@link org.afplib.afplib.DBR#getRWIDTH <em>RWIDTH</em>}</li>
  *   <li>{@link org.afplib.afplib.DBR#getRWIDTHFRACTION <em>RWIDTHFRACTION</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getDBR()
  * @model

@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MODCAInterchangeSetImpl#getIStype <em>IStype</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MODCAInterchangeSetImpl#getISid <em>ISid</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GSFLW#getMH <em>MH</em>}</li>
  *   <li>{@link org.afplib.afplib.GSFLW#getMFR <em>MFR</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGSFLW()
  * @model

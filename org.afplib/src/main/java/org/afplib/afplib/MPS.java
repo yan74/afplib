@@ -13,12 +13,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MPS#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.MPS#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.MPS#getFixedLengthRG <em>Fixed Length RG</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMPS()
  * @model

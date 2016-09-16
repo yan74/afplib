@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.SamplingRatiosRGImpl#getHSAMPLE <em>HSAMPLE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.SamplingRatiosRGImpl#getVSAMPLE <em>VSAMPLE</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

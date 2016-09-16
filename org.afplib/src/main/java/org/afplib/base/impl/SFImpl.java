@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.base.impl.SFImpl#getNumber <em>Number</em>}</li>
  *   <li>{@link org.afplib.base.impl.SFImpl#getOffset <em>Offset</em>}</li>
@@ -38,7 +39,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.base.impl.SFImpl#getRawData <em>Raw Data</em>}</li>
  *   <li>{@link org.afplib.base.impl.SFImpl#getCharset <em>Charset</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

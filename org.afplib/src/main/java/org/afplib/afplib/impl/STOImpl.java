@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.STOImpl#getIORNTION <em>IORNTION</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.STOImpl#getBORNTION <em>BORNTION</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

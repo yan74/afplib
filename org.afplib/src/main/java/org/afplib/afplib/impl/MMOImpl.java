@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MMOImpl#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MMOImpl#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

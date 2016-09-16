@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.TileTOCRG#getXOFFSET <em>XOFFSET</em>}</li>
  *   <li>{@link org.afplib.afplib.TileTOCRG#getYOFFSET <em>YOFFSET</em>}</li>
@@ -20,7 +21,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.TileTOCRG#getCOMPR <em>COMPR</em>}</li>
  *   <li>{@link org.afplib.afplib.TileTOCRG#getDATAPOS <em>DATAPOS</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getTileTOCRG()
  * @model

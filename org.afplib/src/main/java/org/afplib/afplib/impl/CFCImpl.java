@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CFCImpl#getCFIRGLen <em>CFIRG Len</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CFCImpl#getRetired1 <em>Retired1</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CFCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

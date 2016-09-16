@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CFIRGImpl#getFCSName <em>FCS Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CFIRGImpl#getCPName <em>CP Name</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.CFIRGImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CFIRGImpl#getSection <em>Section</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

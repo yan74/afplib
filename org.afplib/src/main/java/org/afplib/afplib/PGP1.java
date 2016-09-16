@@ -11,11 +11,11 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PGP1#getXOset <em>XOset</em>}</li>
  *   <li>{@link org.afplib.afplib.PGP1#getYOset <em>YOset</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPGP1()
  * @model

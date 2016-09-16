@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BRGImpl#getRGrpName <em>RGrp Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BRGImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GFLTRG#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GFLTRG#getYPOS <em>YPOS</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGFLTRG()
  * @model

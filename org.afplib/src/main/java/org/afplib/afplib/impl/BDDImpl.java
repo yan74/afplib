@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BDDImpl#getUBASE <em>UBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BDDImpl#getReserved <em>Reserved</em>}</li>
@@ -48,7 +49,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.BDDImpl#getWENE <em>WENE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BDDImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GSCCImpl#getCELLWI <em>CELLWI</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSCCImpl#getCELLHI <em>CELLHI</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSCCImpl#getCELLWFR <em>CELLWFR</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSCCImpl#getCELLHFR <em>CELLHFR</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FontDescriptorSpecification#getFtWtClass <em>Ft Wt Class</em>}</li>
  *   <li>{@link org.afplib.afplib.FontDescriptorSpecification#getFtWdClass <em>Ft Wd Class</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.FontDescriptorSpecification#getFtDsFlags <em>Ft Ds Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.FontDescriptorSpecification#getFtUsFlags <em>Ft Us Flags</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFontDescriptorSpecification()
  * @model

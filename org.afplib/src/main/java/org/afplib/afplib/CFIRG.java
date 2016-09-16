@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CFIRG#getFCSName <em>FCS Name</em>}</li>
  *   <li>{@link org.afplib.afplib.CFIRG#getCPName <em>CP Name</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.CFIRG#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.CFIRG#getSection <em>Section</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCFIRG()
  * @model

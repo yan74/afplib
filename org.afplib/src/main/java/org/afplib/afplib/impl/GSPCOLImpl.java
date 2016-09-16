@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GSPCOLImpl#getRES1 <em>RES1</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSPCOLImpl#getCOLSPCE <em>COLSPCE</em>}</li>
@@ -29,7 +30,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.GSPCOLImpl#getCOLSIZE4 <em>COLSIZE4</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSPCOLImpl#getCOLVALUE <em>COLVALUE</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -57,14 +57,22 @@ public class AfpFile extends RandomAccessFile {
 	}
 	
 	public SF readStructuredField() throws IOException {
-		try(AfpInputStream afpin = new AfpInputStream(new AfpIn(this))) {
+		AfpInputStream afpin = null;
+		try {
+			afpin = new AfpInputStream(new AfpIn(this));
 			return afpin.readStructuredField();
+		} finally {
+			if(afpin != null) afpin.close();
 		}
 	}
 	
 	public void writeStructuredField(SF sf) throws IOException {
-		try(AfpOutputStream afpout = new AfpOutputStream(new AfpOut(this))) {
+		AfpOutputStream afpout = null;
+		try {
+			afpout = new AfpOutputStream(new AfpOut(this));
 			afpout.writeStructuredField(sf);
+		} finally {
+			if(afpout != null) afpout.close();
 		}
 	}
 

@@ -1409,32 +1409,6 @@
 
 	  
 	  
-  	  public enum FNNIBMFormat: Int {
-	      
-	      	
-	        case ConstEBCDICGCGID = 2
-	      	
-	      
-  	  }
-	  
-	  
-	  
-  	  public enum FNNTechnologyFormat: Int {
-	      
-	      	
-	        case ConstFontspecificASCIIcharacternameusedwithType1PFBfonts = 3
-	      	
-	      
-	      	
-	        case ConstCMAPbinarycodepointusedwithCIDkeyedfonts = 5
-	      	
-	      
-  	  }
-	  
-	  
-	  
-	  
-	  
 	  
 
 	  
@@ -7949,23 +7923,7 @@
   	  
 	
 	
-	  public var IBMFormat: Int?
-	
-	
-	
-	  public var TechnologyFormat: Int?
-	
-	
-	
-		
-		public var rg: [FNNRG] = []
-    	
-	
-	
-	
-		
-		public var rg2: [Triplet] = []
-    	
+	  public var FNNData: [UInt8]?
 	
 	
 
@@ -8334,9 +8292,7 @@
   	  
 	
 	
-		
-		public var sdfs: [Triplet] = []
-    	
+	  public var IOCAdat: [UInt8]?
 	
 	
 

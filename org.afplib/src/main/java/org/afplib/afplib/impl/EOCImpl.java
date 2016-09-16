@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EOCImpl#getObjCName <em>Obj CName</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EOCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

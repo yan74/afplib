@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GCPARCImpl#getXCENT <em>XCENT</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCPARCImpl#getYCENT <em>YCENT</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.GCPARCImpl#getSTART <em>START</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCPARCImpl#getSWEEP <em>SWEEP</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

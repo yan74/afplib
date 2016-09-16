@@ -11,10 +11,10 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ESG#getREGName <em>REG Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getESG()
  * @model

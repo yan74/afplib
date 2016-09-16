@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.RenderingIntent#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.RenderingIntent#getIOCARI <em>IOCARI</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.RenderingIntent#getGOCARI <em>GOCARI</em>}</li>
  *   <li>{@link org.afplib.afplib.RenderingIntent#getReserved2 <em>Reserved2</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getRenderingIntent()
  * @model

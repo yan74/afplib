@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CDDImpl#getXocBase <em>Xoc Base</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CDDImpl#getYocBase <em>Yoc Base</em>}</li>
@@ -39,7 +40,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.CDDImpl#getYocSize <em>Yoc Size</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CDDImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

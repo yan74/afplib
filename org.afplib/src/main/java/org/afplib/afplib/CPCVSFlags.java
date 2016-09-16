@@ -92,6 +92,8 @@ public enum CPCVSFlags implements Enumerator {
 	 * Returns the '<em><b>CPCVS Flags</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static CPCVSFlags get(String literal) {
@@ -108,6 +110,8 @@ public enum CPCVSFlags implements Enumerator {
 	 * Returns the '<em><b>CPCVS Flags</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static CPCVSFlags getByName(String name) {
@@ -124,6 +128,8 @@ public enum CPCVSFlags implements Enumerator {
 	 * Returns the '<em><b>CPCVS Flags</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static CPCVSFlags get(int value) {

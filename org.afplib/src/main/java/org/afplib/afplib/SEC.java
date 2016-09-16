@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.SEC#getRESERVED <em>RESERVED</em>}</li>
  *   <li>{@link org.afplib.afplib.SEC#getCOLSPCE <em>COLSPCE</em>}</li>
@@ -20,7 +21,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.SEC#getCOLSIZE4 <em>COLSIZE4</em>}</li>
  *   <li>{@link org.afplib.afplib.SEC#getCOLVALUE <em>COLVALUE</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getSEC()
  * @model

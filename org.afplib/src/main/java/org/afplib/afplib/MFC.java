@@ -14,13 +14,13 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MFC#getMFCFlgs <em>MFC Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.MFC#getMedColl <em>Med Coll</em>}</li>
  *   <li>{@link org.afplib.afplib.MFC#getMFCScpe <em>MFC Scpe</em>}</li>
  *   <li>{@link org.afplib.afplib.MFC#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMFC()
  * @model

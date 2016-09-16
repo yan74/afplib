@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GCPARC#getXCENT <em>XCENT</em>}</li>
  *   <li>{@link org.afplib.afplib.GCPARC#getYCENT <em>YCENT</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.GCPARC#getSTART <em>START</em>}</li>
  *   <li>{@link org.afplib.afplib.GCPARC#getSWEEP <em>SWEEP</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGCPARC()
  * @model

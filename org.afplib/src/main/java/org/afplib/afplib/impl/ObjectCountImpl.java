@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectCountImpl#getSubObj <em>Sub Obj</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectCountImpl#getSObjNum <em>SObj Num</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectCountImpl#getSobjNmHi <em>Sobj Nm Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

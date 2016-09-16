@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ICPImpl#getXCOset <em>XC Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ICPImpl#getYCOset <em>YC Oset</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.ICPImpl#getXFilSize <em>XFil Size</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ICPImpl#getYFilSize <em>YFil Size</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

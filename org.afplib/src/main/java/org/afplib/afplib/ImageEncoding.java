@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ImageEncoding#getCOMPRID <em>COMPRID</em>}</li>
  *   <li>{@link org.afplib.afplib.ImageEncoding#getRECID <em>RECID</em>}</li>
  *   <li>{@link org.afplib.afplib.ImageEncoding#getBITORDR <em>BITORDR</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getImageEncoding()
  * @model

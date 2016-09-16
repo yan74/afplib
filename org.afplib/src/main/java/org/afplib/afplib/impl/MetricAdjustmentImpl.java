@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MetricAdjustmentImpl#getUnitBase <em>Unit Base</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MetricAdjustmentImpl#getXUPUB <em>XUPUB</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.MetricAdjustmentImpl#getHBaselineIncrement <em>HBaseline Increment</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MetricAdjustmentImpl#getVBaselineIncrement <em>VBaseline Increment</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

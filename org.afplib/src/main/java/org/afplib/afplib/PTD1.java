@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PTD1#getXPBASE <em>XPBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.PTD1#getYPBASE <em>YPBASE</em>}</li>
@@ -20,7 +21,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.PTD1#getYPEXTENT <em>YPEXTENT</em>}</li>
  *   <li>{@link org.afplib.afplib.PTD1#getRESERVED <em>RESERVED</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPTD1()
  * @model

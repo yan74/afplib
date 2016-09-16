@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ICP#getXCOset <em>XC Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.ICP#getYCOset <em>YC Oset</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.ICP#getXFilSize <em>XFil Size</em>}</li>
  *   <li>{@link org.afplib.afplib.ICP#getYFilSize <em>YFil Size</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getICP()
  * @model

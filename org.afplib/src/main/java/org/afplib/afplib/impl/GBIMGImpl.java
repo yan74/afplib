@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GBIMGImpl#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GBIMGImpl#getYPOS <em>YPOS</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.GBIMGImpl#getWIDTH <em>WIDTH</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GBIMGImpl#getHEIGHT <em>HEIGHT</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

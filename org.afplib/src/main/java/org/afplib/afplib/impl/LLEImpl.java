@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.LLEImpl#getLnkType <em>Lnk Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LLEImpl#getRG <em>RG</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

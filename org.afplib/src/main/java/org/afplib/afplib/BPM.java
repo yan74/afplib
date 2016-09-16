@@ -11,10 +11,10 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.BPM#getPMName <em>PM Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getBPM()
  * @model

@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectOriginIdentifier#getSystem <em>System</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectOriginIdentifier#getSysID <em>Sys ID</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectOriginIdentifier#getMedID <em>Med ID</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectOriginIdentifier#getDSID <em>DSID</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectOriginIdentifier()
  * @model

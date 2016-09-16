@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.BandImageData#getBANDNUM <em>BANDNUM</em>}</li>
  *   <li>{@link org.afplib.afplib.BandImageData#getRESERVED <em>RESERVED</em>}</li>
  *   <li>{@link org.afplib.afplib.BandImageData#getDATA <em>DATA</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getBandImageData()
  * @model

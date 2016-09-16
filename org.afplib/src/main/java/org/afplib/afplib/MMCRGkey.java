@@ -560,6 +560,8 @@ public enum MMCRGkey implements Enumerator {
 	 * Returns the '<em><b>MMCR Gkey</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static MMCRGkey get(String literal) {
@@ -576,6 +578,8 @@ public enum MMCRGkey implements Enumerator {
 	 * Returns the '<em><b>MMCR Gkey</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static MMCRGkey getByName(String name) {
@@ -592,6 +596,8 @@ public enum MMCRGkey implements Enumerator {
 	 * Returns the '<em><b>MMCR Gkey</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static MMCRGkey get(int value) {

@@ -14,11 +14,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.EMO#getOvlyName <em>Ovly Name</em>}</li>
  *   <li>{@link org.afplib.afplib.EMO#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getEMO()
  * @model

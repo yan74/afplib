@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.UniversalDateAndTimeStamp#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.UniversalDateAndTimeStamp#getYearAD <em>Year AD</em>}</li>
@@ -23,7 +24,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.UniversalDateAndTimeStamp#getUTCDiffH <em>UTC Diff H</em>}</li>
  *   <li>{@link org.afplib.afplib.UniversalDateAndTimeStamp#getUTCDiffM <em>UTC Diff M</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getUniversalDateAndTimeStamp()
  * @model

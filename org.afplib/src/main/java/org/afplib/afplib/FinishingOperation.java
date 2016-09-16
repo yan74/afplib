@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FinishingOperation#getFOpType <em>FOp Type</em>}</li>
  *   <li>{@link org.afplib.afplib.FinishingOperation#getRefEdge <em>Ref Edge</em>}</li>
@@ -18,7 +19,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.FinishingOperation#getAxOffst <em>Ax Offst</em>}</li>
  *   <li>{@link org.afplib.afplib.FinishingOperation#getOpPos <em>Op Pos</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFinishingOperation()
  * @model

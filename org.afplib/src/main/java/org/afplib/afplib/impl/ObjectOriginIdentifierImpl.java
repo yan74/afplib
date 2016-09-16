@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectOriginIdentifierImpl#getSystem <em>System</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectOriginIdentifierImpl#getSysID <em>Sys ID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectOriginIdentifierImpl#getMedID <em>Med ID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectOriginIdentifierImpl#getDSID <em>DSID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

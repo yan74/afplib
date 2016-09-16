@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FullyQualifiedNameImpl#getFQNType <em>FQN Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FullyQualifiedNameImpl#getFQNFormat <em>FQN Format</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FullyQualifiedNameImpl#getFQName <em>FQ Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.LNDImpl#getLNDFlgs <em>LND Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LNDImpl#getIPos <em>IPos</em>}</li>
@@ -50,7 +51,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.LNDImpl#getCCPID <em>CCPID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LNDImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

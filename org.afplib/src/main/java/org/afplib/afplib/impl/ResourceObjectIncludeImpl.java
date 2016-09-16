@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ResourceObjectIncludeImpl#getObjType <em>Obj Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ResourceObjectIncludeImpl#getObjName <em>Obj Name</em>}</li>
@@ -26,7 +27,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.ResourceObjectIncludeImpl#getYobjOset <em>Yobj Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ResourceObjectIncludeImpl#getObOrent <em>Ob Orent</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

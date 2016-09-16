@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ImageResolution#getXBase <em>XBase</em>}</li>
  *   <li>{@link org.afplib.afplib.ImageResolution#getYBase <em>YBase</em>}</li>
  *   <li>{@link org.afplib.afplib.ImageResolution#getXResol <em>XResol</em>}</li>
  *   <li>{@link org.afplib.afplib.ImageResolution#getYResol <em>YResol</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getImageResolution()
  * @model

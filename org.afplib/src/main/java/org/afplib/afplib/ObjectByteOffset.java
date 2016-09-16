@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectByteOffset#getDirByOff <em>Dir By Off</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectByteOffset#getDirByHi <em>Dir By Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectByteOffset()
  * @model

@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CPC#getDefCharID <em>Def Char ID</em>}</li>
  *   <li>{@link org.afplib.afplib.CPC#getPrtFlags <em>Prt Flags</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.CPC#getVSChar <em>VS Char</em>}</li>
  *   <li>{@link org.afplib.afplib.CPC#getVSFlags <em>VS Flags</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCPC()
  * @model

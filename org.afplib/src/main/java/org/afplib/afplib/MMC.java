@@ -13,12 +13,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MMC#getMMCid <em>MM Cid</em>}</li>
  *   <li>{@link org.afplib.afplib.MMC#getPARAMETER1 <em>PARAMETER1</em>}</li>
  *   <li>{@link org.afplib.afplib.MMC#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMMC()
  * @model

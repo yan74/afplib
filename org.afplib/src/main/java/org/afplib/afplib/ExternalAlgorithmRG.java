@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ExternalAlgorithmRG#getDIRCTN <em>DIRCTN</em>}</li>
  *   <li>{@link org.afplib.afplib.ExternalAlgorithmRG#getPADBDRY <em>PADBDRY</em>}</li>
  *   <li>{@link org.afplib.afplib.ExternalAlgorithmRG#getPADALMT <em>PADALMT</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getExternalAlgorithmRG()
  * @model
