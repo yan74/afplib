@@ -84,7 +84,7 @@ public class DeviceAppearanceImpl extends TripletImpl implements DeviceAppearanc
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDeviceAppearance();
+		return AfplibPackage.Literals.DEVICE_APPEARANCE;
 	}
 
 	/**

@@ -84,7 +84,7 @@ public class MODCAInterchangeSetImpl extends TripletImpl implements MODCAInterch
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMODCAInterchangeSet();
+		return AfplibPackage.Literals.MODCA_INTERCHANGE_SET;
 	}
 
 	/**

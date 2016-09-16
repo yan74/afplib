@@ -60,7 +60,7 @@ public class CPIImpl extends SFImpl implements CPI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCPI();
+		return AfplibPackage.Literals.CPI;
 	}
 
 	/**

@@ -60,7 +60,7 @@ public class MMTImpl extends SFImpl implements MMT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMT();
+		return AfplibPackage.Literals.MMT;
 	}
 
 	/**

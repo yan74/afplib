@@ -33,7 +33,7 @@ public class DrawingOrderSubsetImpl extends TripletImpl implements DrawingOrderS
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDrawingOrderSubset();
+		return AfplibPackage.Literals.DRAWING_ORDER_SUBSET;
 	}
 
 } //DrawingOrderSubsetImpl

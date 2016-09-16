@@ -84,7 +84,7 @@ public class GRLINERGImpl extends TripletImpl implements GRLINERG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGRLINERG();
+		return AfplibPackage.Literals.GRLINERG;
 	}
 
 	/**

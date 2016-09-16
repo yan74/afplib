@@ -85,7 +85,7 @@ public class EOCImpl extends SFImpl implements EOC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEOC();
+		return AfplibPackage.Literals.EOC;
 	}
 
 	/**

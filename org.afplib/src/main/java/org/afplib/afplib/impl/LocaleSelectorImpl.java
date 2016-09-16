@@ -168,7 +168,7 @@ public class LocaleSelectorImpl extends TripletImpl implements LocaleSelector {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLocaleSelector();
+		return AfplibPackage.Literals.LOCALE_SELECTOR;
 	}
 
 	/**

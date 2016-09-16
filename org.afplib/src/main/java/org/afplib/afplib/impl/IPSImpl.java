@@ -127,7 +127,7 @@ public class IPSImpl extends SFImpl implements IPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIPS();
+		return AfplibPackage.Literals.IPS;
 	}
 
 	/**

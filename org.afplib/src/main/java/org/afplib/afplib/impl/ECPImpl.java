@@ -63,7 +63,7 @@ public class ECPImpl extends SFImpl implements ECP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getECP();
+		return AfplibPackage.Literals.ECP;
 	}
 
 	/**

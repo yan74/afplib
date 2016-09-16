@@ -84,7 +84,7 @@ public class OVSImpl extends TripletImpl implements OVS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getOVS();
+		return AfplibPackage.Literals.OVS;
 	}
 
 	/**

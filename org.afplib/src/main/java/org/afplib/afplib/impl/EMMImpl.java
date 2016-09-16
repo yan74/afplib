@@ -63,7 +63,7 @@ public class EMMImpl extends SFImpl implements EMM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEMM();
+		return AfplibPackage.Literals.EMM;
 	}
 
 	/**

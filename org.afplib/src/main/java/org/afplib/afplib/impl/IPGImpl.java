@@ -106,7 +106,7 @@ public class IPGImpl extends SFImpl implements IPG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIPG();
+		return AfplibPackage.Literals.IPG;
 	}
 
 	/**

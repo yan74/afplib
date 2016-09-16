@@ -63,7 +63,7 @@ public class IRDImpl extends SFImpl implements IRD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIRD();
+		return AfplibPackage.Literals.IRD;
 	}
 
 	/**

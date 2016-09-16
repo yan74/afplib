@@ -85,7 +85,7 @@ public class ENGImpl extends SFImpl implements ENG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getENG();
+		return AfplibPackage.Literals.ENG;
 	}
 
 	/**

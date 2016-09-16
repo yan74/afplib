@@ -273,7 +273,7 @@ public class FNIRGImpl extends TripletImpl implements FNIRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNIRG();
+		return AfplibPackage.Literals.FNIRG;
 	}
 
 	/**

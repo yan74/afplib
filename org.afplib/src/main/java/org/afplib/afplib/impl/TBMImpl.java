@@ -105,7 +105,7 @@ public class TBMImpl extends TripletImpl implements TBM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTBM();
+		return AfplibPackage.Literals.TBM;
 	}
 
 	/**

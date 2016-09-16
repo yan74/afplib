@@ -85,7 +85,7 @@ public class EMOImpl extends SFImpl implements EMO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEMO();
+		return AfplibPackage.Literals.EMO;
 	}
 
 	/**

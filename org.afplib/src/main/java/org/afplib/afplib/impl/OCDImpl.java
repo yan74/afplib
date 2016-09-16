@@ -63,7 +63,7 @@ public class OCDImpl extends SFImpl implements OCD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getOCD();
+		return AfplibPackage.Literals.OCD;
 	}
 
 	/**

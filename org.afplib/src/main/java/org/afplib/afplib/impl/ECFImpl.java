@@ -63,7 +63,7 @@ public class ECFImpl extends SFImpl implements ECF {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getECF();
+		return AfplibPackage.Literals.ECF;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class BIIImpl extends SFImpl implements BII {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBII();
+		return AfplibPackage.Literals.BII;
 	}
 
 	/**

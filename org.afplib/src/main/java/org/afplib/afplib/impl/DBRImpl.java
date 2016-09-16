@@ -105,7 +105,7 @@ public class DBRImpl extends TripletImpl implements DBR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDBR();
+		return AfplibPackage.Literals.DBR;
 	}
 
 	/**

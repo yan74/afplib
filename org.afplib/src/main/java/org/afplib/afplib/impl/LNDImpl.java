@@ -421,7 +421,7 @@ public class LNDImpl extends SFImpl implements LND {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLND();
+		return AfplibPackage.Literals.LND;
 	}
 
 	/**

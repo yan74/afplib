@@ -84,7 +84,7 @@ public class TextOrientationImpl extends TripletImpl implements TextOrientation 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTextOrientation();
+		return AfplibPackage.Literals.TEXT_ORIENTATION;
 	}
 
 	/**

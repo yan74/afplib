@@ -63,7 +63,7 @@ public class AMBImpl extends TripletImpl implements AMB {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getAMB();
+		return AfplibPackage.Literals.AMB;
 	}
 
 	/**

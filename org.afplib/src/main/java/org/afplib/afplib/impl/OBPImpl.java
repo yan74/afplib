@@ -273,7 +273,7 @@ public class OBPImpl extends SFImpl implements OBP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getOBP();
+		return AfplibPackage.Literals.OBP;
 	}
 
 	/**

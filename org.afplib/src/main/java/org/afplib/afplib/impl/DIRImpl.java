@@ -105,7 +105,7 @@ public class DIRImpl extends TripletImpl implements DIR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDIR();
+		return AfplibPackage.Literals.DIR;
 	}
 
 	/**

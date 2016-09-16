@@ -85,7 +85,7 @@ public class BDIImpl extends SFImpl implements BDI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDI();
+		return AfplibPackage.Literals.BDI;
 	}
 
 	/**

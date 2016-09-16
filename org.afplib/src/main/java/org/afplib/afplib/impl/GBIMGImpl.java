@@ -168,7 +168,7 @@ public class GBIMGImpl extends TripletImpl implements GBIMG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGBIMG();
+		return AfplibPackage.Literals.GBIMG;
 	}
 
 	/**

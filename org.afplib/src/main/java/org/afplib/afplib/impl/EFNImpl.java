@@ -63,7 +63,7 @@ public class EFNImpl extends SFImpl implements EFN {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEFN();
+		return AfplibPackage.Literals.EFN;
 	}
 
 	/**

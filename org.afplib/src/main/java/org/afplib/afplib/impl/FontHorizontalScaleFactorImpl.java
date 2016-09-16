@@ -63,7 +63,7 @@ public class FontHorizontalScaleFactorImpl extends TripletImpl implements FontHo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontHorizontalScaleFactor();
+		return AfplibPackage.Literals.FONT_HORIZONTAL_SCALE_FACTOR;
 	}
 
 	/**

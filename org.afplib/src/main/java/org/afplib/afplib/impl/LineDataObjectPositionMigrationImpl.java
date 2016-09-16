@@ -63,7 +63,7 @@ public class LineDataObjectPositionMigrationImpl extends TripletImpl implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLineDataObjectPositionMigration();
+		return AfplibPackage.Literals.LINE_DATA_OBJECT_POSITION_MIGRATION;
 	}
 
 	/**

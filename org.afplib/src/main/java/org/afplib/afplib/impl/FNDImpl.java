@@ -421,7 +421,7 @@ public class FNDImpl extends SFImpl implements FND {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFND();
+		return AfplibPackage.Literals.FND;
 	}
 
 	/**

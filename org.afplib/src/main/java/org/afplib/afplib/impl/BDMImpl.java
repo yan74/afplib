@@ -106,7 +106,7 @@ public class BDMImpl extends SFImpl implements BDM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDM();
+		return AfplibPackage.Literals.BDM;
 	}
 
 	/**

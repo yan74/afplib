@@ -63,7 +63,7 @@ public class PagePositionInformationImpl extends TripletImpl implements PagePosi
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPagePositionInformation();
+		return AfplibPackage.Literals.PAGE_POSITION_INFORMATION;
 	}
 
 	/**

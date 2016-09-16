@@ -63,7 +63,7 @@ public class EDGImpl extends SFImpl implements EDG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDG();
+		return AfplibPackage.Literals.EDG;
 	}
 
 	/**

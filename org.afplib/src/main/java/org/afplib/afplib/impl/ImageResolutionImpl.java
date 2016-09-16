@@ -126,7 +126,7 @@ public class ImageResolutionImpl extends TripletImpl implements ImageResolution 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageResolution();
+		return AfplibPackage.Literals.IMAGE_RESOLUTION;
 	}
 
 	/**

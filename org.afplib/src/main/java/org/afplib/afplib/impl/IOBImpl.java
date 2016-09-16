@@ -253,7 +253,7 @@ public class IOBImpl extends SFImpl implements IOB {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIOB();
+		return AfplibPackage.Literals.IOB;
 	}
 
 	/**

@@ -84,7 +84,7 @@ public class GCCBEZRGImpl extends TripletImpl implements GCCBEZRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCCBEZRG();
+		return AfplibPackage.Literals.GCCBEZRG;
 	}
 
 	/**

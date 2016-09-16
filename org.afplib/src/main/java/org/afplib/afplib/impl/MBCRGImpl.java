@@ -85,7 +85,7 @@ public class MBCRGImpl extends TripletImpl implements MBCRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMBCRG();
+		return AfplibPackage.Literals.MBCRG;
 	}
 
 	/**

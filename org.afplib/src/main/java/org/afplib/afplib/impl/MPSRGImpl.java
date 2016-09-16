@@ -84,7 +84,7 @@ public class MPSRGImpl extends TripletImpl implements MPSRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMPSRG();
+		return AfplibPackage.Literals.MPSRG;
 	}
 
 	/**

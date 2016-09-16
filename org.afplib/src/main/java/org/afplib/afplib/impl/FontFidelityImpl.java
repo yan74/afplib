@@ -63,7 +63,7 @@ public class FontFidelityImpl extends TripletImpl implements FontFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontFidelity();
+		return AfplibPackage.Literals.FONT_FIDELITY;
 	}
 
 	/**

@@ -33,7 +33,7 @@ public class PresentationSpaceMixingRulesImpl extends TripletImpl implements Pre
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPresentationSpaceMixingRules();
+		return AfplibPackage.Literals.PRESENTATION_SPACE_MIXING_RULES;
 	}
 
 } //PresentationSpaceMixingRulesImpl

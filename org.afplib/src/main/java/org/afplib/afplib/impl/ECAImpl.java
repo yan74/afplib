@@ -85,7 +85,7 @@ public class ECAImpl extends SFImpl implements ECA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getECA();
+		return AfplibPackage.Literals.ECA;
 	}
 
 	/**

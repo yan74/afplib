@@ -211,7 +211,7 @@ public class PGDImpl extends SFImpl implements PGD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGD();
+		return AfplibPackage.Literals.PGD;
 	}
 
 	/**

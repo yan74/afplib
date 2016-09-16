@@ -63,7 +63,7 @@ public class GEARImpl extends TripletImpl implements GEAR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGEAR();
+		return AfplibPackage.Literals.GEAR;
 	}
 
 	/**

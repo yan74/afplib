@@ -60,7 +60,7 @@ public class PPOImpl extends SFImpl implements PPO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPPO();
+		return AfplibPackage.Literals.PPO;
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class ObjectOffsetImpl extends TripletImpl implements ObjectOffset {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectOffset();
+		return AfplibPackage.Literals.OBJECT_OFFSET;
 	}
 
 	/**

@@ -84,7 +84,7 @@ public class EncodingSchemeIDImpl extends TripletImpl implements EncodingSchemeI
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEncodingSchemeID();
+		return AfplibPackage.Literals.ENCODING_SCHEME_ID;
 	}
 
 	/**

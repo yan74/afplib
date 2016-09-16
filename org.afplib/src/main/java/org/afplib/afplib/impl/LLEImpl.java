@@ -84,7 +84,7 @@ public class LLEImpl extends SFImpl implements LLE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLLE();
+		return AfplibPackage.Literals.LLE;
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class ObjectCountImpl extends TripletImpl implements ObjectCount {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectCount();
+		return AfplibPackage.Literals.OBJECT_COUNT;
 	}
 
 	/**

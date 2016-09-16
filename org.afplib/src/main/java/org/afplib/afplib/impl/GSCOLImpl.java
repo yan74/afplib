@@ -63,7 +63,7 @@ public class GSCOLImpl extends TripletImpl implements GSCOL {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCOL();
+		return AfplibPackage.Literals.GSCOL;
 	}
 
 	/**

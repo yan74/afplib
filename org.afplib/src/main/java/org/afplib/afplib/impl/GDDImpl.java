@@ -85,7 +85,7 @@ public class GDDImpl extends SFImpl implements GDD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGDD();
+		return AfplibPackage.Literals.GDD;
 	}
 
 	/**

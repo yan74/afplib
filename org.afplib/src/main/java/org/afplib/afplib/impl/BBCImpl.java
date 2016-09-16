@@ -85,7 +85,7 @@ public class BBCImpl extends SFImpl implements BBC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBBC();
+		return AfplibPackage.Literals.BBC;
 	}
 
 	/**

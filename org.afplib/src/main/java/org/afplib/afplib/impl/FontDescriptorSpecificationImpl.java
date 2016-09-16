@@ -168,7 +168,7 @@ public class FontDescriptorSpecificationImpl extends TripletImpl implements Font
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontDescriptorSpecification();
+		return AfplibPackage.Literals.FONT_DESCRIPTOR_SPECIFICATION;
 	}
 
 	/**

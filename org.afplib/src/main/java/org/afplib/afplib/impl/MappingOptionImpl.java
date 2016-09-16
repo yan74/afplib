@@ -63,7 +63,7 @@ public class MappingOptionImpl extends TripletImpl implements MappingOption {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMappingOption();
+		return AfplibPackage.Literals.MAPPING_OPTION;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class RMIImpl extends TripletImpl implements RMI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getRMI();
+		return AfplibPackage.Literals.RMI;
 	}
 
 	/**

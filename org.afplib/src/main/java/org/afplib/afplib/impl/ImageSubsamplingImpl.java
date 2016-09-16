@@ -61,7 +61,7 @@ public class ImageSubsamplingImpl extends TripletImpl implements ImageSubsamplin
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageSubsampling();
+		return AfplibPackage.Literals.IMAGE_SUBSAMPLING;
 	}
 
 	/**

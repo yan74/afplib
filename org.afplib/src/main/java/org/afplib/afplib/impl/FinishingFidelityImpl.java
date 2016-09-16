@@ -84,7 +84,7 @@ public class FinishingFidelityImpl extends TripletImpl implements FinishingFidel
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFinishingFidelity();
+		return AfplibPackage.Literals.FINISHING_FIDELITY;
 	}
 
 	/**

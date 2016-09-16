@@ -60,7 +60,7 @@ public class GCBEZImpl extends TripletImpl implements GCBEZ {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCBEZ();
+		return AfplibPackage.Literals.GCBEZ;
 	}
 
 	/**

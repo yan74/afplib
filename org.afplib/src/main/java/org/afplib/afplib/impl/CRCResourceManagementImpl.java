@@ -105,7 +105,7 @@ public class CRCResourceManagementImpl extends TripletImpl implements CRCResourc
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCRCResourceManagement();
+		return AfplibPackage.Literals.CRC_RESOURCE_MANAGEMENT;
 	}
 
 	/**

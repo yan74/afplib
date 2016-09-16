@@ -84,7 +84,7 @@ public class GSFLWImpl extends TripletImpl implements GSFLW {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSFLW();
+		return AfplibPackage.Literals.GSFLW;
 	}
 
 	/**

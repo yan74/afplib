@@ -63,7 +63,7 @@ public class BeginImageImpl extends TripletImpl implements BeginImage {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginImage();
+		return AfplibPackage.Literals.BEGIN_IMAGE;
 	}
 
 	/**

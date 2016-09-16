@@ -168,7 +168,7 @@ public class ObjectClassificationImpl extends TripletImpl implements ObjectClass
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectClassification();
+		return AfplibPackage.Literals.OBJECT_CLASSIFICATION;
 	}
 
 	/**

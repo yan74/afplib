@@ -379,7 +379,7 @@ public class BDDImpl extends SFImpl implements BDD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDD();
+		return AfplibPackage.Literals.BDD;
 	}
 
 	/**

@@ -60,7 +60,7 @@ public class FNIImpl extends SFImpl implements FNI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNI();
+		return AfplibPackage.Literals.FNI;
 	}
 
 	/**

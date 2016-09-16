@@ -63,7 +63,7 @@ public class GADImpl extends SFImpl implements GAD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGAD();
+		return AfplibPackage.Literals.GAD;
 	}
 
 	/**

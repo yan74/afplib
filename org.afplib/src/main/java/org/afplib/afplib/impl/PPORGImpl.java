@@ -169,7 +169,7 @@ public class PPORGImpl extends TripletImpl implements PPORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPPORG();
+		return AfplibPackage.Literals.PPORG;
 	}
 
 	/**

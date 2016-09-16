@@ -63,7 +63,7 @@ public class NOPImpl extends SFImpl implements NOP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getNOP();
+		return AfplibPackage.Literals.NOP;
 	}
 
 	/**

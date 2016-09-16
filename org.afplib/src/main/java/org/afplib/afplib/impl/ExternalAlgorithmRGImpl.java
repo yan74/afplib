@@ -105,7 +105,7 @@ public class ExternalAlgorithmRGImpl extends TripletImpl implements ExternalAlgo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExternalAlgorithmRG();
+		return AfplibPackage.Literals.EXTERNAL_ALGORITHM_RG;
 	}
 
 	/**

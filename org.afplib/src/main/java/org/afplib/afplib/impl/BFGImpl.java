@@ -63,7 +63,7 @@ public class BFGImpl extends SFImpl implements BFG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBFG();
+		return AfplibPackage.Literals.BFG;
 	}
 
 	/**

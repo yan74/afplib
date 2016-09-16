@@ -168,7 +168,7 @@ public class CPCImpl extends SFImpl implements CPC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCPC();
+		return AfplibPackage.Literals.CPC;
 	}
 
 	/**

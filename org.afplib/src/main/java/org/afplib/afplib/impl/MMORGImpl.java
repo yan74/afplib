@@ -105,7 +105,7 @@ public class MMORGImpl extends TripletImpl implements MMORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMORG();
+		return AfplibPackage.Literals.MMORG;
 	}
 
 	/**

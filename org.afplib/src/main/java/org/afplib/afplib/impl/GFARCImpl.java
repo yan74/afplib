@@ -126,7 +126,7 @@ public class GFARCImpl extends TripletImpl implements GFARC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGFARC();
+		return AfplibPackage.Literals.GFARC;
 	}
 
 	/**

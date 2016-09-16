@@ -210,7 +210,7 @@ public class GPARCImpl extends TripletImpl implements GPARC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGPARC();
+		return AfplibPackage.Literals.GPARC;
 	}
 
 	/**

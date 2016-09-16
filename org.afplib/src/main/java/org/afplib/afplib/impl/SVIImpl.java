@@ -63,7 +63,7 @@ public class SVIImpl extends TripletImpl implements SVI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSVI();
+		return AfplibPackage.Literals.SVI;
 	}
 
 	/**

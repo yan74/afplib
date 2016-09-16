@@ -126,7 +126,7 @@ public class ObjectFunctionSetSpecificationImpl extends TripletImpl implements O
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectFunctionSetSpecification();
+		return AfplibPackage.Literals.OBJECT_FUNCTION_SET_SPECIFICATION;
 	}
 
 	/**

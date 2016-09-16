@@ -85,7 +85,7 @@ public class EDTImpl extends SFImpl implements EDT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDT();
+		return AfplibPackage.Literals.EDT;
 	}
 
 	/**

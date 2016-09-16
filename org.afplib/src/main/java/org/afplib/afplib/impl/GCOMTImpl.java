@@ -63,7 +63,7 @@ public class GCOMTImpl extends TripletImpl implements GCOMT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCOMT();
+		return AfplibPackage.Literals.GCOMT;
 	}
 
 	/**

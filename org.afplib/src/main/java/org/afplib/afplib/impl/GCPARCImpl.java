@@ -168,7 +168,7 @@ public class GCPARCImpl extends TripletImpl implements GCPARC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCPARC();
+		return AfplibPackage.Literals.GCPARC;
 	}
 
 	/**

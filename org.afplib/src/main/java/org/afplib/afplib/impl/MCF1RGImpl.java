@@ -168,7 +168,7 @@ public class MCF1RGImpl extends TripletImpl implements MCF1RG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCF1RG();
+		return AfplibPackage.Literals.MCF1RG;
 	}
 
 	/**

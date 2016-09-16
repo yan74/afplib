@@ -84,7 +84,7 @@ public class GSCPImpl extends TripletImpl implements GSCP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCP();
+		return AfplibPackage.Literals.GSCP;
 	}
 
 	/**

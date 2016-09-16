@@ -189,7 +189,7 @@ public class MetricAdjustmentImpl extends TripletImpl implements MetricAdjustmen
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMetricAdjustment();
+		return AfplibPackage.Literals.METRIC_ADJUSTMENT;
 	}
 
 	/**

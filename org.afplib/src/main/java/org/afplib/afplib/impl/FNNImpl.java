@@ -63,7 +63,7 @@ public class FNNImpl extends SFImpl implements FNN {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNN();
+		return AfplibPackage.Literals.FNN;
 	}
 
 	/**

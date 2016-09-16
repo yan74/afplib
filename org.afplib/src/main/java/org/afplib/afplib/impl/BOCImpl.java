@@ -85,7 +85,7 @@ public class BOCImpl extends SFImpl implements BOC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBOC();
+		return AfplibPackage.Literals.BOC;
 	}
 
 	/**

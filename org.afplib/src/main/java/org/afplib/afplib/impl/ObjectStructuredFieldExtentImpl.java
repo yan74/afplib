@@ -84,7 +84,7 @@ public class ObjectStructuredFieldExtentImpl extends TripletImpl implements Obje
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectStructuredFieldExtent();
+		return AfplibPackage.Literals.OBJECT_STRUCTURED_FIELD_EXTENT;
 	}
 
 	/**

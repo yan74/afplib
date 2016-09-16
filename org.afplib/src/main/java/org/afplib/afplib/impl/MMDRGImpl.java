@@ -85,7 +85,7 @@ public class MMDRGImpl extends TripletImpl implements MMDRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMDRG();
+		return AfplibPackage.Literals.MMDRG;
 	}
 
 	/**

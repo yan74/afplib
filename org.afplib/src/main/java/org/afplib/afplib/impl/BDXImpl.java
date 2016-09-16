@@ -63,7 +63,7 @@ public class BDXImpl extends SFImpl implements BDX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDX();
+		return AfplibPackage.Literals.BDX;
 	}
 
 	/**

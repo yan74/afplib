@@ -105,7 +105,7 @@ public class FNMRGImpl extends TripletImpl implements FNMRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNMRG();
+		return AfplibPackage.Literals.FNMRG;
 	}
 
 	/**

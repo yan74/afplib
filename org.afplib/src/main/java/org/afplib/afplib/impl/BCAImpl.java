@@ -85,7 +85,7 @@ public class BCAImpl extends SFImpl implements BCA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBCA();
+		return AfplibPackage.Literals.BCA;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class BandImageRGImpl extends TripletImpl implements BandImageRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBandImageRG();
+		return AfplibPackage.Literals.BAND_IMAGE_RG;
 	}
 
 	/**

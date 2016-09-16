@@ -61,7 +61,7 @@ public class IELImpl extends SFImpl implements IEL {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIEL();
+		return AfplibPackage.Literals.IEL;
 	}
 
 	/**

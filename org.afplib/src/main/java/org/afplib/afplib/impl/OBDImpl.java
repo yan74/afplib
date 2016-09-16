@@ -61,7 +61,7 @@ public class OBDImpl extends SFImpl implements OBD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getOBD();
+		return AfplibPackage.Literals.OBD;
 	}
 
 	/**

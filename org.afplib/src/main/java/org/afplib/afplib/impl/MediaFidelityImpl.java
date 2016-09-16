@@ -63,7 +63,7 @@ public class MediaFidelityImpl extends TripletImpl implements MediaFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMediaFidelity();
+		return AfplibPackage.Literals.MEDIA_FIDELITY;
 	}
 
 	/**

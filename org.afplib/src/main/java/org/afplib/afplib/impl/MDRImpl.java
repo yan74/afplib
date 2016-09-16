@@ -60,7 +60,7 @@ public class MDRImpl extends SFImpl implements MDR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMDR();
+		return AfplibPackage.Literals.MDR;
 	}
 
 	/**

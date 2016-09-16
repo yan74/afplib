@@ -85,7 +85,7 @@ public class EBCImpl extends SFImpl implements EBC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEBC();
+		return AfplibPackage.Literals.EBC;
 	}
 
 	/**

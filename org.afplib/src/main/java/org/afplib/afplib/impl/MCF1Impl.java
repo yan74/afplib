@@ -84,7 +84,7 @@ public class MCF1Impl extends SFImpl implements MCF1 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCF1();
+		return AfplibPackage.Literals.MCF1;
 	}
 
 	/**

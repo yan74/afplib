@@ -63,7 +63,7 @@ public class DescriptorPositionImpl extends TripletImpl implements DescriptorPos
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDescriptorPosition();
+		return AfplibPackage.Literals.DESCRIPTOR_POSITION;
 	}
 
 	/**

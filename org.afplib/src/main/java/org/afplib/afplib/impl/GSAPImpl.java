@@ -126,7 +126,7 @@ public class GSAPImpl extends TripletImpl implements GSAP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSAP();
+		return AfplibPackage.Literals.GSAP;
 	}
 
 	/**

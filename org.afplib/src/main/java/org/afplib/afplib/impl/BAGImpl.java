@@ -85,7 +85,7 @@ public class BAGImpl extends SFImpl implements BAG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBAG();
+		return AfplibPackage.Literals.BAG;
 	}
 
 	/**

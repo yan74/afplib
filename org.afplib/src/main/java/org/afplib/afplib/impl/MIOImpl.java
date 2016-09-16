@@ -60,7 +60,7 @@ public class MIOImpl extends SFImpl implements MIO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMIO();
+		return AfplibPackage.Literals.MIO;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class ImageDataImpl extends TripletImpl implements ImageData {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageData();
+		return AfplibPackage.Literals.IMAGE_DATA;
 	}
 
 	/**

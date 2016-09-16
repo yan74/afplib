@@ -84,7 +84,7 @@ public class STCImpl extends TripletImpl implements STC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSTC();
+		return AfplibPackage.Literals.STC;
 	}
 
 	/**

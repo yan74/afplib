@@ -84,7 +84,7 @@ public class GLINERGImpl extends TripletImpl implements GLINERG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGLINERG();
+		return AfplibPackage.Literals.GLINERG;
 	}
 
 	/**

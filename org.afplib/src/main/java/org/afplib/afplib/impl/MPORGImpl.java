@@ -85,7 +85,7 @@ public class MPORGImpl extends TripletImpl implements MPORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMPORG();
+		return AfplibPackage.Literals.MPORG;
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class FullyQualifiedNameImpl extends TripletImpl implements FullyQualifie
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFullyQualifiedName();
+		return AfplibPackage.Literals.FULLY_QUALIFIED_NAME;
 	}
 
 	/**

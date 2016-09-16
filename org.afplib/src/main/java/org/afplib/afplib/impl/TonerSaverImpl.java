@@ -63,7 +63,7 @@ public class TonerSaverImpl extends TripletImpl implements TonerSaver {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTonerSaver();
+		return AfplibPackage.Literals.TONER_SAVER;
 	}
 
 	/**

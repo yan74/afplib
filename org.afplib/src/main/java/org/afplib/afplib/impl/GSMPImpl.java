@@ -63,7 +63,7 @@ public class GSMPImpl extends TripletImpl implements GSMP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSMP();
+		return AfplibPackage.Literals.GSMP;
 	}
 
 	/**

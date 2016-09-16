@@ -60,7 +60,7 @@ public class MSUImpl extends SFImpl implements MSU {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMSU();
+		return AfplibPackage.Literals.MSU;
 	}
 
 	/**

@@ -33,7 +33,7 @@ public class EndTransparencyMaskImpl extends TripletImpl implements EndTranspare
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndTransparencyMask();
+		return AfplibPackage.Literals.END_TRANSPARENCY_MASK;
 	}
 
 } //EndTransparencyMaskImpl

@@ -63,7 +63,7 @@ public class IDESizeImpl extends TripletImpl implements IDESize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIDESize();
+		return AfplibPackage.Literals.IDE_SIZE;
 	}
 
 	/**

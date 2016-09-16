@@ -105,7 +105,7 @@ public class ImageEncodingImpl extends TripletImpl implements ImageEncoding {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageEncoding();
+		return AfplibPackage.Literals.IMAGE_ENCODING;
 	}
 
 	/**

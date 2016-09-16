@@ -168,7 +168,7 @@ public class ICPImpl extends SFImpl implements ICP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getICP();
+		return AfplibPackage.Literals.ICP;
 	}
 
 	/**

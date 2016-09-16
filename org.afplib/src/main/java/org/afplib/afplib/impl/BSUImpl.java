@@ -63,7 +63,7 @@ public class BSUImpl extends TripletImpl implements BSU {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBSU();
+		return AfplibPackage.Literals.BSU;
 	}
 
 	/**

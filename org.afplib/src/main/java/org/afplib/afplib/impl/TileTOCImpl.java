@@ -84,7 +84,7 @@ public class TileTOCImpl extends TripletImpl implements TileTOC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileTOC();
+		return AfplibPackage.Literals.TILE_TOC;
 	}
 
 	/**

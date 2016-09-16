@@ -84,7 +84,7 @@ public class IOCAFunctionSetIdentificationImpl extends TripletImpl implements IO
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIOCAFunctionSetIdentification();
+		return AfplibPackage.Literals.IOCA_FUNCTION_SET_IDENTIFICATION;
 	}
 
 	/**

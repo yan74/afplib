@@ -63,7 +63,7 @@ public class MediumMapPageNumberImpl extends TripletImpl implements MediumMapPag
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMediumMapPageNumber();
+		return AfplibPackage.Literals.MEDIUM_MAP_PAGE_NUMBER;
 	}
 
 	/**

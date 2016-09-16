@@ -85,7 +85,7 @@ public class PMCImpl extends SFImpl implements PMC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPMC();
+		return AfplibPackage.Literals.PMC;
 	}
 
 	/**

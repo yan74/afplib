@@ -63,7 +63,7 @@ public class CommentImpl extends TripletImpl implements Comment {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getComment();
+		return AfplibPackage.Literals.COMMENT;
 	}
 
 	/**

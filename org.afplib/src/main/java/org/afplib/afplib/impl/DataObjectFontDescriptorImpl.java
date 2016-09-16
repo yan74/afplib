@@ -210,7 +210,7 @@ public class DataObjectFontDescriptorImpl extends TripletImpl implements DataObj
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDataObjectFontDescriptor();
+		return AfplibPackage.Literals.DATA_OBJECT_FONT_DESCRIPTOR;
 	}
 
 	/**

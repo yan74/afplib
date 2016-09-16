@@ -190,7 +190,7 @@ public class CDDImpl extends SFImpl implements CDD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCDD();
+		return AfplibPackage.Literals.CDD;
 	}
 
 	/**

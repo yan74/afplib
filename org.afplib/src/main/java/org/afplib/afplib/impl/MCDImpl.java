@@ -60,7 +60,7 @@ public class MCDImpl extends SFImpl implements MCD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCD();
+		return AfplibPackage.Literals.MCD;
 	}
 
 	/**

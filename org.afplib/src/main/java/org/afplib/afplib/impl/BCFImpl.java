@@ -63,7 +63,7 @@ public class BCFImpl extends SFImpl implements BCF {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBCF();
+		return AfplibPackage.Literals.BCF;
 	}
 
 	/**

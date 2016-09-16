@@ -85,7 +85,7 @@ public class BSGImpl extends SFImpl implements BSG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBSG();
+		return AfplibPackage.Literals.BSG;
 	}
 
 	/**

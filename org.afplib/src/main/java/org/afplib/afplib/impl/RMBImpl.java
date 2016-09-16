@@ -63,7 +63,7 @@ public class RMBImpl extends TripletImpl implements RMB {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getRMB();
+		return AfplibPackage.Literals.RMB;
 	}
 
 	/**

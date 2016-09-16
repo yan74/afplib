@@ -84,7 +84,7 @@ public class AttributeValueImpl extends TripletImpl implements AttributeValue {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getAttributeValue();
+		return AfplibPackage.Literals.ATTRIBUTE_VALUE;
 	}
 
 	/**

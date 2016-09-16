@@ -147,7 +147,7 @@ public class FinishingOperationImpl extends TripletImpl implements FinishingOper
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFinishingOperation();
+		return AfplibPackage.Literals.FINISHING_OPERATION;
 	}
 
 	/**

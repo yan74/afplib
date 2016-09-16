@@ -105,7 +105,7 @@ public class MPSImpl extends SFImpl implements MPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMPS();
+		return AfplibPackage.Literals.MPS;
 	}
 
 	/**

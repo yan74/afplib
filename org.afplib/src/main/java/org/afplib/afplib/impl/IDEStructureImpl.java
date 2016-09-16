@@ -168,7 +168,7 @@ public class IDEStructureImpl extends TripletImpl implements IDEStructure {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIDEStructure();
+		return AfplibPackage.Literals.IDE_STRUCTURE;
 	}
 
 	/**

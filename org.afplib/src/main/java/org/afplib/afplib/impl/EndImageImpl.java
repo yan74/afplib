@@ -33,7 +33,7 @@ public class EndImageImpl extends TripletImpl implements EndImage {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndImage();
+		return AfplibPackage.Literals.END_IMAGE;
 	}
 
 } //EndImageImpl

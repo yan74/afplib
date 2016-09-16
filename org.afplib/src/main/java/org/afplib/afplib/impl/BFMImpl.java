@@ -85,7 +85,7 @@ public class BFMImpl extends SFImpl implements BFM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBFM();
+		return AfplibPackage.Literals.BFM;
 	}
 
 	/**

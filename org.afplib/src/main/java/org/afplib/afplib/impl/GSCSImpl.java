@@ -63,7 +63,7 @@ public class GSCSImpl extends TripletImpl implements GSCS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCS();
+		return AfplibPackage.Literals.GSCS;
 	}
 
 	/**

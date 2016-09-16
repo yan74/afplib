@@ -85,7 +85,7 @@ public class BMMImpl extends SFImpl implements BMM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBMM();
+		return AfplibPackage.Literals.BMM;
 	}
 
 	/**

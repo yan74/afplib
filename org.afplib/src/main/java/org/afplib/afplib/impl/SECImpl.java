@@ -189,7 +189,7 @@ public class SECImpl extends TripletImpl implements SEC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSEC();
+		return AfplibPackage.Literals.SEC;
 	}
 
 	/**

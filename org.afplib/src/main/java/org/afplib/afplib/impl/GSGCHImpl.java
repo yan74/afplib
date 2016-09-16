@@ -33,7 +33,7 @@ public class GSGCHImpl extends TripletImpl implements GSGCH {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSGCH();
+		return AfplibPackage.Literals.GSGCH;
 	}
 
 } //GSGCHImpl

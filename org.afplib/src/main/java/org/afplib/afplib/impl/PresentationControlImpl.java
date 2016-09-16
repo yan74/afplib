@@ -63,7 +63,7 @@ public class PresentationControlImpl extends TripletImpl implements Presentation
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPresentationControl();
+		return AfplibPackage.Literals.PRESENTATION_CONTROL;
 	}
 
 	/**

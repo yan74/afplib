@@ -47,7 +47,7 @@ public class RepeatingGroupTest {
 
 	/**
 	 * repeatingGroupVariableLength.afp looks like this:
-	 * BRG 
+	 * BRG
 	 * 	 BRS
 	 *     BMO
 	 *     BAG
@@ -57,19 +57,19 @@ public class RepeatingGroupTest {
 	 *     EAG
 	 *     EMO
 	 *   ERS
-	 * ERG 
+	 * ERG
 	 * @throws IOException
 	 */
 	@Test
 	public void testRepeatingGroup() throws IOException {
-		
+
 		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream("testdata/repeatingGroupVariableLength.afp"))) {
 			SF sf = afpin.readStructuredField();
 			assertTrue(sf instanceof BRG);
-			
+
 			sf = afpin.readStructuredField();
 			assertTrue(sf instanceof BRS);
-		
+
 			sf = afpin.readStructuredField();
 			assertTrue(sf instanceof BMO);
 
@@ -78,10 +78,10 @@ public class RepeatingGroupTest {
 
 			sf = afpin.readStructuredField();
 			assertTrue(sf instanceof MCF);
-			
+
 			MCF mcf = (MCF) sf;
 			assertEquals(4, mcf.getRG().size());
-			
+
 			assertEquals(6, mcf.getRG().get(0).getTriplets().size());
 			assertTrue(mcf.getRG().get(0).getTriplets().get(0) instanceof FullyQualifiedName);
 			assertTrue(mcf.getRG().get(0).getTriplets().get(1) instanceof FullyQualifiedName);
@@ -89,16 +89,16 @@ public class RepeatingGroupTest {
 			assertTrue(mcf.getRG().get(0).getTriplets().get(3) instanceof ResourceLocalIdentifier);
 			assertTrue(mcf.getRG().get(0).getTriplets().get(4) instanceof CharacterRotation);
 			assertTrue(mcf.getRG().get(0).getTriplets().get(5) instanceof TextOrientation);
-			
+
 			sf = afpin.readStructuredField();
 			assertTrue(sf instanceof MPS);
-			
+
 			MPS mps = (MPS) sf;
 			assertEquals(1, mps.getFixedLengthRG().size());
 			assertEquals("S1EX002A", mps.getFixedLengthRG().get(0).getPsegName());
 
 		}
-		
+
 	}
 
 	@Test
@@ -111,31 +111,31 @@ public class RepeatingGroupTest {
 		fqn.setFQNFormat(FullyQualifiedNameFQNFormat.CONST_CHARACTERSTRING_VALUE);
 		fqn.setFQNType(FullyQualifiedNameFQNType.CONST_CODE_PAGE_NAME_REFERENCE_VALUE);
 		rg.getTriplets().add(fqn);
-		
+
 		fqn = AfplibFactory.eINSTANCE.createFullyQualifiedName();
 		fqn.setFQName("C0000000");
 		fqn.setFQNFormat(FullyQualifiedNameFQNFormat.CONST_CHARACTERSTRING_VALUE);
 		fqn.setFQNType(FullyQualifiedNameFQNType.CONST_FONT_CHARACTER_SET_NAME_REFERENCE_VALUE);
 		rg.getTriplets().add(fqn);
-		
+
 		ResourceSectionNumber section = AfplibFactory.eINSTANCE.createResourceSectionNumber();
 		section.setResSNum(0);
 		rg.getTriplets().add(section);
-		
+
 		ResourceLocalIdentifier lid = AfplibFactory.eINSTANCE.createResourceLocalIdentifier();
 		lid.setResLID(1);
 		lid.setResType(ResourceLocalIdentifierResType.CONST_CODED_FONT_VALUE);
 		rg.getTriplets().add(lid);
-		
+
 		CharacterRotation rot = AfplibFactory.eINSTANCE.createCharacterRotation();
 		rot.setCharRot(0);
 		rg.getTriplets().add(rot);
-		
+
 		TextOrientation orent = AfplibFactory.eINSTANCE.createTextOrientation();
 		orent.setIAxis(TextOrientationIAxis.CONST0DEGREES_VALUE);
 		orent.setBAxis(TextOrientationBAxis.CONST90DEGREES_VALUE);
 		rg.getTriplets().add(orent);
-		
+
 		File ftmp = File.createTempFile("tmp", ".afp");
 		ftmp.deleteOnExit();
 		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
@@ -157,9 +157,9 @@ public class RepeatingGroupTest {
 			assertTrue(mcf.getRG().get(0).getTriplets().get(5) instanceof TextOrientation);
 
 		}
-		
+
 	}
-	
+
 	@Test
 	public void testRGSaveWithFixedLength() throws IOException {
 		MPS mps = AfplibFactory.eINSTANCE.createMPS();
@@ -178,22 +178,23 @@ public class RepeatingGroupTest {
 		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
 			afpout.writeStructuredField(mps);
 		}
-		
+
 		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
 			mps = (MPS) afpin.readStructuredField();
-			
+
 			assertEquals(MPSRGLength.CONST_LENGTH12_VALUE, mps.getRGLength().intValue());
-			
+
 			assertEquals(2, mps.getFixedLengthRG().size());
 			assertEquals("S1EX002A", mps.getFixedLengthRG().get(0).getPsegName());
 			assertEquals("S1EX002B", mps.getFixedLengthRG().get(1).getPsegName());
- 
+
 		}
 
 	}
-	
+
 	@Test
 	public void testMCDRGSaveWithKindaFixedLength() throws IOException {
+		System.out.println(AfplibPackage.MCD);
 		MCD mcd = new AfpBuilder()
 			.withMember(new AfpBuilder()
 				.withMember(new AfpBuilder()
@@ -201,20 +202,21 @@ public class RepeatingGroupTest {
 				.create(MappingOption.class))
 			.create(MCDRG.class))
 		.create(MCD.class);
-		
+		System.out.println(mcd.eClass().getClassifierID());
+
 		File ftmp = File.createTempFile("tmp", ".afp");
 		ftmp.deleteOnExit();
 		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
 			afpout.writeStructuredField(mcd);
 		}
-		
+
 		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
 			mcd = (MCD) afpin.readStructuredField();
-			
+
 			assertEquals(5, mcd.getRG().get(0).getRGLength().intValue());
 		}
 	}
-	
+
 	@Test
 	public void testMDRSave() throws IOException {
 		MDR mdr = new AfpBuilder()
@@ -247,21 +249,21 @@ public class RepeatingGroupTest {
 					.create(FullyQualifiedName.class)) // size = 5
 				.create(MDRRG.class))
 			.create(MDR.class);
-		
+
 		File ftmp = File.createTempFile("tmp", ".afp");
 		ftmp.deleteOnExit();
 		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
 			afpout.writeStructuredField(mdr);
 		}
-		
+
 		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
 			mdr = (MDR) afpin.readStructuredField();
-			
+
 			assertEquals(9 + 5 + 2, mdr.getRG().get(0).getRGLength().intValue());
 			assertEquals(6+ 16 + 5 + 2, mdr.getRG().get(1).getRGLength().intValue());
 		}
 	}
-	
+
 	@Test
 	public void testMIORGLength() throws IOException {
 		MIO mio = new AfpBuilder()
@@ -278,10 +280,10 @@ public class RepeatingGroupTest {
 		try (AfpOutputStream afpout = new AfpOutputStream(new FileOutputStream(ftmp))) {
 			afpout.writeStructuredField(mio);
 		}
-		
+
 		try (AfpInputStream afpin = new AfpInputStream(new FileInputStream(ftmp))) {
 			mio = (MIO) afpin.readStructuredField();
-			
+
 			assertEquals(5, mio.getRG().get(0).getRGLength().intValue());
 		}
 	}

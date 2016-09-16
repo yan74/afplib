@@ -84,7 +84,7 @@ public class CMRFidelityImpl extends TripletImpl implements CMRFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCMRFidelity();
+		return AfplibPackage.Literals.CMR_FIDELITY;
 	}
 
 	/**

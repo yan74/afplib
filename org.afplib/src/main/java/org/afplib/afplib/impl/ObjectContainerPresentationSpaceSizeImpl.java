@@ -63,7 +63,7 @@ public class ObjectContainerPresentationSpaceSizeImpl extends TripletImpl implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectContainerPresentationSpaceSize();
+		return AfplibPackage.Literals.OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE;
 	}
 
 	/**

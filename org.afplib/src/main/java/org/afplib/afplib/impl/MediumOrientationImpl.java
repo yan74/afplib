@@ -63,7 +63,7 @@ public class MediumOrientationImpl extends TripletImpl implements MediumOrientat
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMediumOrientation();
+		return AfplibPackage.Literals.MEDIUM_ORIENTATION;
 	}
 
 	/**

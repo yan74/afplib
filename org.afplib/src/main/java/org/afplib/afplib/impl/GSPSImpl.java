@@ -63,7 +63,7 @@ public class GSPSImpl extends TripletImpl implements GSPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSPS();
+		return AfplibPackage.Literals.GSPS;
 	}
 
 	/**

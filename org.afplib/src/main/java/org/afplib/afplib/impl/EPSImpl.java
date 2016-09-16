@@ -63,7 +63,7 @@ public class EPSImpl extends SFImpl implements EPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPS();
+		return AfplibPackage.Literals.EPS;
 	}
 
 	/**

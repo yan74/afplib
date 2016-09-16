@@ -168,7 +168,7 @@ public class ColorSpecificationImpl extends TripletImpl implements ColorSpecific
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getColorSpecification();
+		return AfplibPackage.Literals.COLOR_SPECIFICATION;
 	}
 
 	/**

@@ -85,7 +85,7 @@ public class MGORGImpl extends TripletImpl implements MGORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMGORG();
+		return AfplibPackage.Literals.MGORG;
 	}
 
 	/**

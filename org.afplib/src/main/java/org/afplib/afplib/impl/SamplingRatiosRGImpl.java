@@ -84,7 +84,7 @@ public class SamplingRatiosRGImpl extends TripletImpl implements SamplingRatiosR
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSamplingRatiosRG();
+		return AfplibPackage.Literals.SAMPLING_RATIOS_RG;
 	}
 
 	/**

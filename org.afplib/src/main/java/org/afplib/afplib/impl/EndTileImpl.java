@@ -33,7 +33,7 @@ public class EndTileImpl extends TripletImpl implements EndTile {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndTile();
+		return AfplibPackage.Literals.END_TILE;
 	}
 
 } //EndTileImpl

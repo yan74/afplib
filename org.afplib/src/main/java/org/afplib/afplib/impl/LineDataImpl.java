@@ -63,7 +63,7 @@ public class LineDataImpl extends SFImpl implements LineData {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLineData();
+		return AfplibPackage.Literals.LINE_DATA;
 	}
 
 	/**

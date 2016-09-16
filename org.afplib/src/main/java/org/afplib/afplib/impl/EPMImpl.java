@@ -63,7 +63,7 @@ public class EPMImpl extends SFImpl implements EPM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPM();
+		return AfplibPackage.Literals.EPM;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class ResourceSectionNumberImpl extends TripletImpl implements ResourceSe
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceSectionNumber();
+		return AfplibPackage.Literals.RESOURCE_SECTION_NUMBER;
 	}
 
 	/**

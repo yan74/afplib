@@ -63,7 +63,7 @@ public class ESGImpl extends SFImpl implements ESG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getESG();
+		return AfplibPackage.Literals.ESG;
 	}
 
 	/**

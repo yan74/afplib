@@ -148,7 +148,7 @@ public class IPOImpl extends SFImpl implements IPO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIPO();
+		return AfplibPackage.Literals.IPO;
 	}
 
 	/**

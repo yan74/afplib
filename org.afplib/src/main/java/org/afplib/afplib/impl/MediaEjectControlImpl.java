@@ -84,7 +84,7 @@ public class MediaEjectControlImpl extends TripletImpl implements MediaEjectCont
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMediaEjectControl();
+		return AfplibPackage.Literals.MEDIA_EJECT_CONTROL;
 	}
 
 	/**

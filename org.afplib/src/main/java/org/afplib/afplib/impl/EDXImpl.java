@@ -63,7 +63,7 @@ public class EDXImpl extends SFImpl implements EDX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDX();
+		return AfplibPackage.Literals.EDX;
 	}
 
 	/**

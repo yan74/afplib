@@ -33,7 +33,7 @@ public class DXDImpl extends SFImpl implements DXD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDXD();
+		return AfplibPackage.Literals.DXD;
 	}
 
 } //DXDImpl

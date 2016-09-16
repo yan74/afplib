@@ -63,7 +63,7 @@ public class TRNImpl extends TripletImpl implements TRN {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTRN();
+		return AfplibPackage.Literals.TRN;
 	}
 
 	/**

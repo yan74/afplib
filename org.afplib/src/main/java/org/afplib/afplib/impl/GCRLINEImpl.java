@@ -60,7 +60,7 @@ public class GCRLINEImpl extends TripletImpl implements GCRLINE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCRLINE();
+		return AfplibPackage.Literals.GCRLINE;
 	}
 
 	/**

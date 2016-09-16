@@ -147,7 +147,7 @@ public class ResourceObjectIncludeImpl extends TripletImpl implements ResourceOb
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceObjectInclude();
+		return AfplibPackage.Literals.RESOURCE_OBJECT_INCLUDE;
 	}
 
 	/**

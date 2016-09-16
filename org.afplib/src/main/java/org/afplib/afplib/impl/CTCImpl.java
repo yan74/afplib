@@ -63,7 +63,7 @@ public class CTCImpl extends SFImpl implements CTC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCTC();
+		return AfplibPackage.Literals.CTC;
 	}
 
 	/**

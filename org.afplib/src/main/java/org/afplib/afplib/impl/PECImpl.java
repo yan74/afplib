@@ -61,7 +61,7 @@ public class PECImpl extends SFImpl implements PEC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPEC();
+		return AfplibPackage.Literals.PEC;
 	}
 
 	/**

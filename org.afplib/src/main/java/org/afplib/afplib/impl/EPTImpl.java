@@ -85,7 +85,7 @@ public class EPTImpl extends SFImpl implements EPT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPT();
+		return AfplibPackage.Literals.EPT;
 	}
 
 	/**

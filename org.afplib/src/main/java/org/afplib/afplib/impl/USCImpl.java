@@ -63,7 +63,7 @@ public class USCImpl extends TripletImpl implements USC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getUSC();
+		return AfplibPackage.Literals.USC;
 	}
 
 	/**

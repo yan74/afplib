@@ -106,7 +106,7 @@ public class CFCImpl extends SFImpl implements CFC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCFC();
+		return AfplibPackage.Literals.CFC;
 	}
 
 	/**

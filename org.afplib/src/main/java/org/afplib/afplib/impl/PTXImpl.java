@@ -61,7 +61,7 @@ public class PTXImpl extends SFImpl implements PTX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPTX();
+		return AfplibPackage.Literals.PTX;
 	}
 
 	/**

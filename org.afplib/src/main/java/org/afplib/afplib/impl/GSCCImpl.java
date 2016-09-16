@@ -126,7 +126,7 @@ public class GSCCImpl extends TripletImpl implements GSCC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCC();
+		return AfplibPackage.Literals.GSCC;
 	}
 
 	/**

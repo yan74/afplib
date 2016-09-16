@@ -84,7 +84,7 @@ public class TextFidelityImpl extends TripletImpl implements TextFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTextFidelity();
+		return AfplibPackage.Literals.TEXT_FIDELITY;
 	}
 
 	/**

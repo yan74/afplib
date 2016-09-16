@@ -84,7 +84,7 @@ public class CGCSGIDImpl extends TripletImpl implements CGCSGID {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCGCSGID();
+		return AfplibPackage.Literals.CGCSGID;
 	}
 
 	/**

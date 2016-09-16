@@ -63,7 +63,7 @@ public class GBARImpl extends TripletImpl implements GBAR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGBAR();
+		return AfplibPackage.Literals.GBAR;
 	}
 
 	/**

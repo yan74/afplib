@@ -85,7 +85,7 @@ public class IMMImpl extends SFImpl implements IMM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIMM();
+		return AfplibPackage.Literals.IMM;
 	}
 
 	/**

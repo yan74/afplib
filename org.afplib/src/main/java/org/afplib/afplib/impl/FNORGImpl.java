@@ -336,7 +336,7 @@ public class FNORGImpl extends TripletImpl implements FNORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNORG();
+		return AfplibPackage.Literals.FNORG;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class GSCRImpl extends TripletImpl implements GSCR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCR();
+		return AfplibPackage.Literals.GSCR;
 	}
 
 	/**

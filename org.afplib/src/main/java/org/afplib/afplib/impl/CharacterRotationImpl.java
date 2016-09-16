@@ -63,7 +63,7 @@ public class CharacterRotationImpl extends TripletImpl implements CharacterRotat
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCharacterRotation();
+		return AfplibPackage.Literals.CHARACTER_ROTATION;
 	}
 
 	/**

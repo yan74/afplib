@@ -84,7 +84,7 @@ public class STOImpl extends TripletImpl implements STO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSTO();
+		return AfplibPackage.Literals.STO;
 	}
 
 	/**

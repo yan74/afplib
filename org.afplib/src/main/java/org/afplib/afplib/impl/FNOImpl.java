@@ -60,7 +60,7 @@ public class FNOImpl extends SFImpl implements FNO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNO();
+		return AfplibPackage.Literals.FNO;
 	}
 
 	/**

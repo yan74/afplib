@@ -84,7 +84,7 @@ public class ColorManagementResourceDescriptorImpl extends TripletImpl implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getColorManagementResourceDescriptor();
+		return AfplibPackage.Literals.COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR;
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class SetBiLevelImageColorImpl extends TripletImpl implements SetBiLevelI
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSetBiLevelImageColor();
+		return AfplibPackage.Literals.SET_BI_LEVEL_IMAGE_COLOR;
 	}
 
 	/**

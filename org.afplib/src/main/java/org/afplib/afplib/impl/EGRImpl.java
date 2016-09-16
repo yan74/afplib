@@ -85,7 +85,7 @@ public class EGRImpl extends SFImpl implements EGR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEGR();
+		return AfplibPackage.Literals.EGR;
 	}
 
 	/**

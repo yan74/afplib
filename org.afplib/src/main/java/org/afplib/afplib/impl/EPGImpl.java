@@ -85,7 +85,7 @@ public class EPGImpl extends SFImpl implements EPG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPG();
+		return AfplibPackage.Literals.EPG;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class GIMDImpl extends TripletImpl implements GIMD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGIMD();
+		return AfplibPackage.Literals.GIMD;
 	}
 
 	/**

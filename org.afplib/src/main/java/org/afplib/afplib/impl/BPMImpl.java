@@ -63,7 +63,7 @@ public class BPMImpl extends SFImpl implements BPM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBPM();
+		return AfplibPackage.Literals.BPM;
 	}
 
 	/**

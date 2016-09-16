@@ -85,7 +85,7 @@ public class BPSImpl extends SFImpl implements BPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBPS();
+		return AfplibPackage.Literals.BPS;
 	}
 
 	/**

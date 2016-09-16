@@ -63,7 +63,7 @@ public class GCCHSTImpl extends TripletImpl implements GCCHST {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCCHST();
+		return AfplibPackage.Literals.GCCHST;
 	}
 
 	/**

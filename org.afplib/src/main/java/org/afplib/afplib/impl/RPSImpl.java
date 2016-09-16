@@ -84,7 +84,7 @@ public class RPSImpl extends TripletImpl implements RPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getRPS();
+		return AfplibPackage.Literals.RPS;
 	}
 
 	/**

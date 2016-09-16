@@ -84,7 +84,7 @@ public class PGP1Impl extends SFImpl implements PGP1 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGP1();
+		return AfplibPackage.Literals.PGP1;
 	}
 
 	/**

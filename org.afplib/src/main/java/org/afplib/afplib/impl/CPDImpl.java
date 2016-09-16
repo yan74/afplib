@@ -168,7 +168,7 @@ public class CPDImpl extends SFImpl implements CPD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCPD();
+		return AfplibPackage.Literals.CPD;
 	}
 
 	/**

@@ -210,7 +210,7 @@ public class LocalDateAndTimeStampImpl extends TripletImpl implements LocalDateA
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLocalDateAndTimeStamp();
+		return AfplibPackage.Literals.LOCAL_DATE_AND_TIME_STAMP;
 	}
 
 	/**

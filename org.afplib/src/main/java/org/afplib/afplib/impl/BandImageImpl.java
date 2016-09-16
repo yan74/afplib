@@ -84,7 +84,7 @@ public class BandImageImpl extends TripletImpl implements BandImage {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBandImage();
+		return AfplibPackage.Literals.BAND_IMAGE;
 	}
 
 	/**

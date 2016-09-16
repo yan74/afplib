@@ -63,7 +63,7 @@ public class GEIMGImpl extends TripletImpl implements GEIMG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGEIMG();
+		return AfplibPackage.Literals.GEIMG;
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class MMCImpl extends SFImpl implements MMC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMC();
+		return AfplibPackage.Literals.MMC;
 	}
 
 	/**

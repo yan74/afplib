@@ -105,7 +105,7 @@ public class FontResolutionImpl extends TripletImpl implements FontResolution {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontResolution();
+		return AfplibPackage.Literals.FONT_RESOLUTION;
 	}
 
 	/**

@@ -84,7 +84,7 @@ public class PageOverlayConditionalProcessingImpl extends TripletImpl implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPageOverlayConditionalProcessing();
+		return AfplibPackage.Literals.PAGE_OVERLAY_CONDITIONAL_PROCESSING;
 	}
 
 	/**

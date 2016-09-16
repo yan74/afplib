@@ -273,7 +273,7 @@ public class FNPRGImpl extends TripletImpl implements FNPRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNPRG();
+		return AfplibPackage.Literals.FNPRG;
 	}
 
 	/**

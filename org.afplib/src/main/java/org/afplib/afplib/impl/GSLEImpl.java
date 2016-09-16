@@ -63,7 +63,7 @@ public class GSLEImpl extends TripletImpl implements GSLE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSLE();
+		return AfplibPackage.Literals.GSLE;
 	}
 
 	/**

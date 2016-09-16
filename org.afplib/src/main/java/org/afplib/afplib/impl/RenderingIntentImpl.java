@@ -168,7 +168,7 @@ public class RenderingIntentImpl extends TripletImpl implements RenderingIntent 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getRenderingIntent();
+		return AfplibPackage.Literals.RENDERING_INTENT;
 	}
 
 	/**

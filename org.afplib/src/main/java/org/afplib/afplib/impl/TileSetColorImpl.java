@@ -252,7 +252,7 @@ public class TileSetColorImpl extends TripletImpl implements TileSetColor {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileSetColor();
+		return AfplibPackage.Literals.TILE_SET_COLOR;
 	}
 
 	/**

@@ -189,7 +189,7 @@ public class TileTOCRGImpl extends TripletImpl implements TileTOCRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileTOCRG();
+		return AfplibPackage.Literals.TILE_TOCRG;
 	}
 
 	/**

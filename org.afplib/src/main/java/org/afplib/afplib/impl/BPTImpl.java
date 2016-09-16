@@ -85,7 +85,7 @@ public class BPTImpl extends SFImpl implements BPT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBPT();
+		return AfplibPackage.Literals.BPT;
 	}
 
 	/**

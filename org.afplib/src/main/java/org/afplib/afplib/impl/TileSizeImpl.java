@@ -105,7 +105,7 @@ public class TileSizeImpl extends TripletImpl implements TileSize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileSize();
+		return AfplibPackage.Literals.TILE_SIZE;
 	}
 
 	/**

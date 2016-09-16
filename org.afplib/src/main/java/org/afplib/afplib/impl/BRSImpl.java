@@ -85,7 +85,7 @@ public class BRSImpl extends SFImpl implements BRS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBRS();
+		return AfplibPackage.Literals.BRS;
 	}
 
 	/**

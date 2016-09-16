@@ -273,7 +273,7 @@ public class WindowSpecificationImpl extends TripletImpl implements WindowSpecif
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getWindowSpecification();
+		return AfplibPackage.Literals.WINDOW_SPECIFICATION;
 	}
 
 	/**

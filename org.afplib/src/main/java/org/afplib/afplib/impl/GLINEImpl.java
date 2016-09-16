@@ -60,7 +60,7 @@ public class GLINEImpl extends TripletImpl implements GLINE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGLINE();
+		return AfplibPackage.Literals.GLINE;
 	}
 
 	/**

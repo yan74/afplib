@@ -63,7 +63,7 @@ public class EFGImpl extends SFImpl implements EFG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEFG();
+		return AfplibPackage.Literals.EFG;
 	}
 
 	/**

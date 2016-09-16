@@ -60,7 +60,7 @@ public class CFIImpl extends SFImpl implements CFI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCFI();
+		return AfplibPackage.Literals.CFI;
 	}
 
 	/**

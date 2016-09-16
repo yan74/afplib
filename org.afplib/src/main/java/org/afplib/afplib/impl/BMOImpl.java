@@ -85,7 +85,7 @@ public class BMOImpl extends SFImpl implements BMO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBMO();
+		return AfplibPackage.Literals.BMO;
 	}
 
 	/**

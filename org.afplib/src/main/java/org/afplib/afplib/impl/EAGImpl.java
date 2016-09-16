@@ -63,7 +63,7 @@ public class EAGImpl extends SFImpl implements EAG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEAG();
+		return AfplibPackage.Literals.EAG;
 	}
 
 	/**

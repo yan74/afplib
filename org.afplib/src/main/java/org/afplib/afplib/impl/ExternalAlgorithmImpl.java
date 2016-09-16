@@ -84,7 +84,7 @@ public class ExternalAlgorithmImpl extends TripletImpl implements ExternalAlgori
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExternalAlgorithm();
+		return AfplibPackage.Literals.EXTERNAL_ALGORITHM;
 	}
 
 	/**

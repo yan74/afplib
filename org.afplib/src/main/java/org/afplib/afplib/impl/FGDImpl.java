@@ -63,7 +63,7 @@ public class FGDImpl extends SFImpl implements FGD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFGD();
+		return AfplibPackage.Literals.FGD;
 	}
 
 	/**

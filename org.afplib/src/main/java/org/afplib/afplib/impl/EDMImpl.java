@@ -63,7 +63,7 @@ public class EDMImpl extends SFImpl implements EDM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDM();
+		return AfplibPackage.Literals.EDM;
 	}
 
 	/**

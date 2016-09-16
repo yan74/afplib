@@ -105,7 +105,7 @@ public class BandImageDataImpl extends TripletImpl implements BandImageData {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBandImageData();
+		return AfplibPackage.Literals.BAND_IMAGE_DATA;
 	}
 
 	/**

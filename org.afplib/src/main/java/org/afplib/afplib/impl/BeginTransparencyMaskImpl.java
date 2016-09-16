@@ -33,7 +33,7 @@ public class BeginTransparencyMaskImpl extends TripletImpl implements BeginTrans
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginTransparencyMask();
+		return AfplibPackage.Literals.BEGIN_TRANSPARENCY_MASK;
 	}
 
 } //BeginTransparencyMaskImpl

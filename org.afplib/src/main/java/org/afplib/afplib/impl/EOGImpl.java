@@ -63,7 +63,7 @@ public class EOGImpl extends SFImpl implements EOG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEOG();
+		return AfplibPackage.Literals.EOG;
 	}
 
 	/**

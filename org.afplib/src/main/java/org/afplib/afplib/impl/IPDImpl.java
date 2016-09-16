@@ -84,7 +84,7 @@ public class IPDImpl extends SFImpl implements IPD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIPD();
+		return AfplibPackage.Literals.IPD;
 	}
 
 	/**

@@ -33,7 +33,7 @@ public class BLNImpl extends TripletImpl implements BLN {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBLN();
+		return AfplibPackage.Literals.BLN;
 	}
 
 } //BLNImpl

@@ -63,7 +63,7 @@ public class FNGImpl extends SFImpl implements FNG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNG();
+		return AfplibPackage.Literals.FNG;
 	}
 
 	/**

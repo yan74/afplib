@@ -106,7 +106,7 @@ public class LLERGImpl extends TripletImpl implements LLERG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLLERG();
+		return AfplibPackage.Literals.LLERG;
 	}
 
 	/**

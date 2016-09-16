@@ -126,7 +126,7 @@ public class CPIRGImpl extends TripletImpl implements CPIRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCPIRG();
+		return AfplibPackage.Literals.CPIRG;
 	}
 
 	/**

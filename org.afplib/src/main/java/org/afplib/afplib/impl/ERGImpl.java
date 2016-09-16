@@ -85,7 +85,7 @@ public class ERGImpl extends SFImpl implements ERG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getERG();
+		return AfplibPackage.Literals.ERG;
 	}
 
 	/**

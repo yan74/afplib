@@ -63,7 +63,7 @@ public class ESUImpl extends TripletImpl implements ESU {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getESU();
+		return AfplibPackage.Literals.ESU;
 	}
 
 	/**

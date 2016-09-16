@@ -105,7 +105,7 @@ public class MSURGImpl extends TripletImpl implements MSURG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMSURG();
+		return AfplibPackage.Literals.MSURG;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class GSMSImpl extends TripletImpl implements GSMS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSMS();
+		return AfplibPackage.Literals.GSMS;
 	}
 
 	/**

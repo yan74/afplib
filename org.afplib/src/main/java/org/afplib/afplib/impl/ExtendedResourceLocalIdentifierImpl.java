@@ -84,7 +84,7 @@ public class ExtendedResourceLocalIdentifierImpl extends TripletImpl implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExtendedResourceLocalIdentifier();
+		return AfplibPackage.Literals.EXTENDED_RESOURCE_LOCAL_IDENTIFIER;
 	}
 
 	/**

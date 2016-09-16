@@ -60,7 +60,7 @@ public class FNMImpl extends SFImpl implements FNM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNM();
+		return AfplibPackage.Literals.FNM;
 	}
 
 	/**

@@ -189,7 +189,7 @@ public class PGPRGImpl extends TripletImpl implements PGPRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGPRG();
+		return AfplibPackage.Literals.PGPRG;
 	}
 
 	/**

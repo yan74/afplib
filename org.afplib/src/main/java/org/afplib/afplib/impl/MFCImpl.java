@@ -127,7 +127,7 @@ public class MFCImpl extends SFImpl implements MFC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMFC();
+		return AfplibPackage.Literals.MFC;
 	}
 
 	/**

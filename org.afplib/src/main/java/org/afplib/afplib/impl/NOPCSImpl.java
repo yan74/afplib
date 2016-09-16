@@ -63,7 +63,7 @@ public class NOPCSImpl extends TripletImpl implements NOPCS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getNOPCS();
+		return AfplibPackage.Literals.NOPCS;
 	}
 
 	/**

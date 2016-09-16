@@ -105,7 +105,7 @@ public class ColorFidelityImpl extends TripletImpl implements ColorFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getColorFidelity();
+		return AfplibPackage.Literals.COLOR_FIDELITY;
 	}
 
 	/**

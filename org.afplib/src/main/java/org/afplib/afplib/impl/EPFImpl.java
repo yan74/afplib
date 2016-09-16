@@ -85,7 +85,7 @@ public class EPFImpl extends SFImpl implements EPF {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPF();
+		return AfplibPackage.Literals.EPF;
 	}
 
 	/**

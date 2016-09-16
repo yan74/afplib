@@ -85,7 +85,7 @@ public class BNGImpl extends SFImpl implements BNG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBNG();
+		return AfplibPackage.Literals.BNG;
 	}
 
 	/**

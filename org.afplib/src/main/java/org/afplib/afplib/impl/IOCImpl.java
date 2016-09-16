@@ -210,7 +210,7 @@ public class IOCImpl extends SFImpl implements IOC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIOC();
+		return AfplibPackage.Literals.IOC;
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class ObjectAreaSizeImpl extends TripletImpl implements ObjectAreaSize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectAreaSize();
+		return AfplibPackage.Literals.OBJECT_AREA_SIZE;
 	}
 
 	/**

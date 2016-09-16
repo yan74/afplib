@@ -63,7 +63,7 @@ public class GSMXImpl extends TripletImpl implements GSMX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSMX();
+		return AfplibPackage.Literals.GSMX;
 	}
 
 	/**

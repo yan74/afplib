@@ -33,7 +33,7 @@ public class EndSegmentCommandImpl extends TripletImpl implements EndSegmentComm
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndSegmentCommand();
+		return AfplibPackage.Literals.END_SEGMENT_COMMAND;
 	}
 
 } //EndSegmentCommandImpl

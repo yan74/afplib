@@ -63,7 +63,7 @@ public class IncludeTileImpl extends TripletImpl implements IncludeTile {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIncludeTile();
+		return AfplibPackage.Literals.INCLUDE_TILE;
 	}
 
 	/**

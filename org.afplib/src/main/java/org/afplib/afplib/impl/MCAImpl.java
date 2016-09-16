@@ -60,7 +60,7 @@ public class MCAImpl extends SFImpl implements MCA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCA();
+		return AfplibPackage.Literals.MCA;
 	}
 
 	/**

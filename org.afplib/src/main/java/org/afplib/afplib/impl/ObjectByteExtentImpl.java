@@ -84,7 +84,7 @@ public class ObjectByteExtentImpl extends TripletImpl implements ObjectByteExten
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectByteExtent();
+		return AfplibPackage.Literals.OBJECT_BYTE_EXTENT;
 	}
 
 	/**

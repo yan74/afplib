@@ -63,7 +63,7 @@ public class GSBMXImpl extends TripletImpl implements GSBMX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSBMX();
+		return AfplibPackage.Literals.GSBMX;
 	}
 
 	/**

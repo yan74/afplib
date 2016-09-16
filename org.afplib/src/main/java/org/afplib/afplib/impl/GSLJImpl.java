@@ -63,7 +63,7 @@ public class GSLJImpl extends TripletImpl implements GSLJ {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSLJ();
+		return AfplibPackage.Literals.GSLJ;
 	}
 
 	/**

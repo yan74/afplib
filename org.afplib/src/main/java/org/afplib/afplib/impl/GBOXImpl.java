@@ -189,7 +189,7 @@ public class GBOXImpl extends TripletImpl implements GBOX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGBOX();
+		return AfplibPackage.Literals.GBOX;
 	}
 
 	/**

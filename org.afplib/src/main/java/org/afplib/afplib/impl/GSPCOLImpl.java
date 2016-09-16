@@ -210,7 +210,7 @@ public class GSPCOLImpl extends TripletImpl implements GSPCOL {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSPCOL();
+		return AfplibPackage.Literals.GSPCOL;
 	}
 
 	/**

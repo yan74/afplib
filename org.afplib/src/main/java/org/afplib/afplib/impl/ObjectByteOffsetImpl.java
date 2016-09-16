@@ -84,7 +84,7 @@ public class ObjectByteOffsetImpl extends TripletImpl implements ObjectByteOffse
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectByteOffset();
+		return AfplibPackage.Literals.OBJECT_BYTE_OFFSET;
 	}
 
 	/**

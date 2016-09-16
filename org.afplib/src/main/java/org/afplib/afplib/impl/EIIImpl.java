@@ -63,7 +63,7 @@ public class EIIImpl extends SFImpl implements EII {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEII();
+		return AfplibPackage.Literals.EII;
 	}
 
 	/**

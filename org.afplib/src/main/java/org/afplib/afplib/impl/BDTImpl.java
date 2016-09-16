@@ -106,7 +106,7 @@ public class BDTImpl extends SFImpl implements BDT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDT();
+		return AfplibPackage.Literals.BDT;
 	}
 
 	/**

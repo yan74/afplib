@@ -60,7 +60,7 @@ public class GCFLTImpl extends TripletImpl implements GCFLT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCFLT();
+		return AfplibPackage.Literals.GCFLT;
 	}
 
 	/**

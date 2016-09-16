@@ -126,7 +126,7 @@ public class MeasurementUnitsImpl extends TripletImpl implements MeasurementUnit
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMeasurementUnits();
+		return AfplibPackage.Literals.MEASUREMENT_UNITS;
 	}
 
 	/**

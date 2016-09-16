@@ -60,7 +60,7 @@ public class GCMRKImpl extends TripletImpl implements GCMRK {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCMRK();
+		return AfplibPackage.Literals.GCMRK;
 	}
 
 	/**

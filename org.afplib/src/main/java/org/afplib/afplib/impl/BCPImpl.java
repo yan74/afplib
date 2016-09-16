@@ -85,7 +85,7 @@ public class BCPImpl extends SFImpl implements BCP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBCP();
+		return AfplibPackage.Literals.BCP;
 	}
 
 	/**

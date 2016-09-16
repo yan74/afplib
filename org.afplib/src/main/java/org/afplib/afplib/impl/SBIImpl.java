@@ -63,7 +63,7 @@ public class SBIImpl extends TripletImpl implements SBI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSBI();
+		return AfplibPackage.Literals.SBI;
 	}
 
 	/**

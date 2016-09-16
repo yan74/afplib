@@ -60,7 +60,7 @@ public class MPOImpl extends SFImpl implements MPO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMPO();
+		return AfplibPackage.Literals.MPO;
 	}
 
 	/**

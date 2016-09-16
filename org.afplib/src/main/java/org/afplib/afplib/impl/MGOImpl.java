@@ -60,7 +60,7 @@ public class MGOImpl extends SFImpl implements MGO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMGO();
+		return AfplibPackage.Literals.MGO;
 	}
 
 	/**

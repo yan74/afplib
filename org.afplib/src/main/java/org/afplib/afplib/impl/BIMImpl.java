@@ -85,7 +85,7 @@ public class BIMImpl extends SFImpl implements BIM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBIM();
+		return AfplibPackage.Literals.BIM;
 	}
 
 	/**

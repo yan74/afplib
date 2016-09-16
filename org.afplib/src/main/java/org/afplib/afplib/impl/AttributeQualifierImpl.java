@@ -84,7 +84,7 @@ public class AttributeQualifierImpl extends TripletImpl implements AttributeQual
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getAttributeQualifier();
+		return AfplibPackage.Literals.ATTRIBUTE_QUALIFIER;
 	}
 
 	/**

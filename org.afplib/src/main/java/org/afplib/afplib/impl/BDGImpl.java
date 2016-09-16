@@ -85,7 +85,7 @@ public class BDGImpl extends SFImpl implements BDG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDG();
+		return AfplibPackage.Literals.BDG;
 	}
 
 	/**

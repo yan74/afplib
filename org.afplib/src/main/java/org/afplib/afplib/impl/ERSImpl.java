@@ -63,7 +63,7 @@ public class ERSImpl extends SFImpl implements ERS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getERS();
+		return AfplibPackage.Literals.ERS;
 	}
 
 	/**

@@ -84,7 +84,7 @@ public class GCFARCImpl extends TripletImpl implements GCFARC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCFARC();
+		return AfplibPackage.Literals.GCFARC;
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class BeginSegmentImpl extends TripletImpl implements BeginSegment {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginSegment();
+		return AfplibPackage.Literals.BEGIN_SEGMENT;
 	}
 
 	/**

@@ -84,7 +84,7 @@ public class GSCHImpl extends TripletImpl implements GSCH {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCH();
+		return AfplibPackage.Literals.GSCH;
 	}
 
 	/**

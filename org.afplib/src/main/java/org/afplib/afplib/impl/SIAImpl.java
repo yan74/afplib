@@ -84,7 +84,7 @@ public class SIAImpl extends TripletImpl implements SIA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSIA();
+		return AfplibPackage.Literals.SIA;
 	}
 
 	/**

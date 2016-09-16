@@ -63,7 +63,7 @@ public class CATImpl extends SFImpl implements CAT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCAT();
+		return AfplibPackage.Literals.CAT;
 	}
 
 	/**

@@ -85,7 +85,7 @@ public class BFNImpl extends SFImpl implements BFN {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBFN();
+		return AfplibPackage.Literals.BFN;
 	}
 
 	/**

@@ -85,7 +85,7 @@ public class EDIImpl extends SFImpl implements EDI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDI();
+		return AfplibPackage.Literals.EDI;
 	}
 
 	/**

@@ -85,7 +85,7 @@ public class EIMImpl extends SFImpl implements EIM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEIM();
+		return AfplibPackage.Literals.EIM;
 	}
 
 	/**

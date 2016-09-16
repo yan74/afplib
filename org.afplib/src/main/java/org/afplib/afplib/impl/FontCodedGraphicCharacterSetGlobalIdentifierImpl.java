@@ -84,7 +84,7 @@ public class FontCodedGraphicCharacterSetGlobalIdentifierImpl extends TripletImp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier();
+		return AfplibPackage.Literals.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER;
 	}
 
 	/**

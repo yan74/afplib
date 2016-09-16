@@ -85,7 +85,7 @@ public class MIORGImpl extends TripletImpl implements MIORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMIORG();
+		return AfplibPackage.Literals.MIORG;
 	}
 
 	/**

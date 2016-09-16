@@ -126,7 +126,7 @@ public class BDAImpl extends SFImpl implements BDA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDA();
+		return AfplibPackage.Literals.BDA;
 	}
 
 	/**

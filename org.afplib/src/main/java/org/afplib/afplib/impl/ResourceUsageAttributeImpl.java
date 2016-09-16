@@ -63,7 +63,7 @@ public class ResourceUsageAttributeImpl extends TripletImpl implements ResourceU
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceUsageAttribute();
+		return AfplibPackage.Literals.RESOURCE_USAGE_ATTRIBUTE;
 	}
 
 	/**

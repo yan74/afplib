@@ -63,7 +63,7 @@ public class ExtensionFontImpl extends TripletImpl implements ExtensionFont {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExtensionFont();
+		return AfplibPackage.Literals.EXTENSION_FONT;
 	}
 
 	/**

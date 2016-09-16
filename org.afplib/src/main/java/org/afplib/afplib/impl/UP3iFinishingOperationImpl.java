@@ -84,7 +84,7 @@ public class UP3iFinishingOperationImpl extends TripletImpl implements UP3iFinis
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getUP3iFinishingOperation();
+		return AfplibPackage.Literals.UP_3I_FINISHING_OPERATION;
 	}
 
 	/**

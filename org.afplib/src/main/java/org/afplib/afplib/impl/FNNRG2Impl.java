@@ -84,7 +84,7 @@ public class FNNRG2Impl extends TripletImpl implements FNNRG2 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNNRG2();
+		return AfplibPackage.Literals.FNNRG2;
 	}
 
 	/**

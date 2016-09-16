@@ -63,7 +63,7 @@ public class ImageLUTIDImpl extends TripletImpl implements ImageLUTID {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageLUTID();
+		return AfplibPackage.Literals.IMAGE_LUTID;
 	}
 
 	/**

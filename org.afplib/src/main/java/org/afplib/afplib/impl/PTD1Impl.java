@@ -189,7 +189,7 @@ public class PTD1Impl extends SFImpl implements PTD1 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPTD1();
+		return AfplibPackage.Literals.PTD1;
 	}
 
 	/**

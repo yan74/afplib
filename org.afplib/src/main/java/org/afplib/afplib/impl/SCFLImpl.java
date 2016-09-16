@@ -63,7 +63,7 @@ public class SCFLImpl extends TripletImpl implements SCFL {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSCFL();
+		return AfplibPackage.Literals.SCFL;
 	}
 
 	/**

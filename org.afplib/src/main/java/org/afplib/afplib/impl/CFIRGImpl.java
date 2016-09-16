@@ -168,7 +168,7 @@ public class CFIRGImpl extends TripletImpl implements CFIRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCFIRG();
+		return AfplibPackage.Literals.CFIRG;
 	}
 
 	/**

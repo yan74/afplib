@@ -63,7 +63,7 @@ public class AMIImpl extends TripletImpl implements AMI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getAMI();
+		return AfplibPackage.Literals.AMI;
 	}
 
 	/**

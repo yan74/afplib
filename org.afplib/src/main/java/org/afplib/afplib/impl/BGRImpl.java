@@ -85,7 +85,7 @@ public class BGRImpl extends SFImpl implements BGR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBGR();
+		return AfplibPackage.Literals.BGR;
 	}
 
 	/**

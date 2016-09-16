@@ -63,7 +63,7 @@ public class LNCImpl extends SFImpl implements LNC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLNC();
+		return AfplibPackage.Literals.LNC;
 	}
 
 	/**

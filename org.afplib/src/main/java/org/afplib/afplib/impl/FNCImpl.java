@@ -589,7 +589,7 @@ public class FNCImpl extends SFImpl implements FNC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNC();
+		return AfplibPackage.Literals.FNC;
 	}
 
 	/**

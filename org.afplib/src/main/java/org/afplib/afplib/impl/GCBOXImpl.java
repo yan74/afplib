@@ -147,7 +147,7 @@ public class GCBOXImpl extends TripletImpl implements GCBOX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCBOX();
+		return AfplibPackage.Literals.GCBOX;
 	}
 
 	/**

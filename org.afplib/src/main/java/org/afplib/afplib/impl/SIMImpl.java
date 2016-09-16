@@ -63,7 +63,7 @@ public class SIMImpl extends TripletImpl implements SIM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSIM();
+		return AfplibPackage.Literals.SIM;
 	}
 
 	/**

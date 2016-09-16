@@ -294,7 +294,7 @@ public class IIDImpl extends SFImpl implements IID {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIID();
+		return AfplibPackage.Literals.IID;
 	}
 
 	/**

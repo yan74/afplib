@@ -63,7 +63,7 @@ public class GEPROLImpl extends TripletImpl implements GEPROL {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGEPROL();
+		return AfplibPackage.Literals.GEPROL;
 	}
 
 	/**

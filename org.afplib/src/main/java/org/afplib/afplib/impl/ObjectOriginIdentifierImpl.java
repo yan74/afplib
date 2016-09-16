@@ -126,7 +126,7 @@ public class ObjectOriginIdentifierImpl extends TripletImpl implements ObjectOri
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectOriginIdentifier();
+		return AfplibPackage.Literals.OBJECT_ORIGIN_IDENTIFIER;
 	}
 
 	/**

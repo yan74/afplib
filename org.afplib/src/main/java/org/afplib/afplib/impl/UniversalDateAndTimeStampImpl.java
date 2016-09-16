@@ -252,7 +252,7 @@ public class UniversalDateAndTimeStampImpl extends TripletImpl implements Univer
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getUniversalDateAndTimeStamp();
+		return AfplibPackage.Literals.UNIVERSAL_DATE_AND_TIME_STAMP;
 	}
 
 	/**

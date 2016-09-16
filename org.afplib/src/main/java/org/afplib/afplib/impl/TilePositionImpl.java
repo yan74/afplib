@@ -84,7 +84,7 @@ public class TilePositionImpl extends TripletImpl implements TilePosition {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTilePosition();
+		return AfplibPackage.Literals.TILE_POSITION;
 	}
 
 	/**

@@ -85,7 +85,7 @@ public class PFCImpl extends SFImpl implements PFC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPFC();
+		return AfplibPackage.Literals.PFC;
 	}
 
 	/**

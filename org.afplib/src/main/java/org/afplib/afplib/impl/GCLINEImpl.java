@@ -60,7 +60,7 @@ public class GCLINEImpl extends TripletImpl implements GCLINE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCLINE();
+		return AfplibPackage.Literals.GCLINE;
 	}
 
 	/**

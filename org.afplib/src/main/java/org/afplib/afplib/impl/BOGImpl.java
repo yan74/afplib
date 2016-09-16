@@ -85,7 +85,7 @@ public class BOGImpl extends SFImpl implements BOG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBOG();
+		return AfplibPackage.Literals.BOG;
 	}
 
 	/**

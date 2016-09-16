@@ -84,7 +84,7 @@ public class ObjectStructuredFieldOffsetImpl extends TripletImpl implements Obje
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectStructuredFieldOffset();
+		return AfplibPackage.Literals.OBJECT_STRUCTURED_FIELD_OFFSET;
 	}
 
 	/**

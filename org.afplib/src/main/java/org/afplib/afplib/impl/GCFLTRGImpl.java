@@ -84,7 +84,7 @@ public class GCFLTRGImpl extends TripletImpl implements GCFLTRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCFLTRG();
+		return AfplibPackage.Literals.GCFLTRG;
 	}
 
 	/**

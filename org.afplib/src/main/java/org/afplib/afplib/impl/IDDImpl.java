@@ -169,7 +169,7 @@ public class IDDImpl extends SFImpl implements IDD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIDD();
+		return AfplibPackage.Literals.IDD;
 	}
 
 	/**

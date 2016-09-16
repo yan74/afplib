@@ -33,7 +33,7 @@ public class BeginTileImpl extends TripletImpl implements BeginTile {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginTile();
+		return AfplibPackage.Literals.BEGIN_TILE;
 	}
 
 } //BeginTileImpl

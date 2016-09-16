@@ -60,7 +60,7 @@ public class MCCImpl extends SFImpl implements MCC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCC();
+		return AfplibPackage.Literals.MCC;
 	}
 
 	/**

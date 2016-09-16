@@ -105,7 +105,7 @@ public class GRLINEImpl extends TripletImpl implements GRLINE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGRLINE();
+		return AfplibPackage.Literals.GRLINE;
 	}
 
 	/**

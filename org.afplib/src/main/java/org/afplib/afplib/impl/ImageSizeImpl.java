@@ -147,7 +147,7 @@ public class ImageSizeImpl extends TripletImpl implements ImageSize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageSize();
+		return AfplibPackage.Literals.IMAGE_SIZE;
 	}
 
 	/**

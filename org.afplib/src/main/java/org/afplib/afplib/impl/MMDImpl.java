@@ -60,7 +60,7 @@ public class MMDImpl extends SFImpl implements MMD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMD();
+		return AfplibPackage.Literals.MMD;
 	}
 
 	/**

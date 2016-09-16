@@ -84,7 +84,7 @@ public class MMOImpl extends SFImpl implements MMO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMO();
+		return AfplibPackage.Literals.MMO;
 	}
 
 	/**

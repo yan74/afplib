@@ -211,7 +211,7 @@ public class MDDImpl extends SFImpl implements MDD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMDD();
+		return AfplibPackage.Literals.MDD;
 	}
 
 	/**

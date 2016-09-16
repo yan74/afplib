@@ -84,7 +84,7 @@ public class GSCAImpl extends TripletImpl implements GSCA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSCA();
+		return AfplibPackage.Literals.GSCA;
 	}
 
 	/**

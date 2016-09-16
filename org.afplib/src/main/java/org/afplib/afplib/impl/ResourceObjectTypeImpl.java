@@ -84,7 +84,7 @@ public class ResourceObjectTypeImpl extends TripletImpl implements ResourceObjec
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceObjectType();
+		return AfplibPackage.Literals.RESOURCE_OBJECT_TYPE;
 	}
 
 	/**

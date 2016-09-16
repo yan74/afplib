@@ -60,7 +60,7 @@ public class MPGImpl extends SFImpl implements MPG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMPG();
+		return AfplibPackage.Literals.MPG;
 	}
 
 	/**

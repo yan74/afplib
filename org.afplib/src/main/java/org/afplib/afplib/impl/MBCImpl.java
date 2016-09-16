@@ -60,7 +60,7 @@ public class MBCImpl extends SFImpl implements MBC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMBC();
+		return AfplibPackage.Literals.MBC;
 	}
 
 	/**

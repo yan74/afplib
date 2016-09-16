@@ -33,7 +33,7 @@ public class GNOP1Impl extends TripletImpl implements GNOP1 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGNOP1();
+		return AfplibPackage.Literals.GNOP1;
 	}
 
 } //GNOP1Impl
