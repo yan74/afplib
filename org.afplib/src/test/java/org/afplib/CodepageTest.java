@@ -151,4 +151,39 @@ public class CodepageTest {
 		testString = new String(data, data.length-4, 4, Charset.forName("IBM500"));
 		assertEquals(" abc", testString);
 	}
+	
+   @Test
+   public void testCP1141SupportOnTLE() throws IOException {
+       
+       final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+       final AfpOutputStream aout = new AfpOutputStream(baos);
+       final String TEST_VALUE = "[abcd]";
+       
+       try {
+       
+           final TLE tle = AfplibFactory.eINSTANCE.createTLE();
+    
+           final CGCSGID cgcsgid = AfplibFactory.eINSTANCE.createCGCSGID();
+           cgcsgid.setCPGID(1141);
+           cgcsgid.setGCSGID(695);
+           tle.getTriplets().add(cgcsgid);
+
+           final AttributeValue value = AfplibFactory.eINSTANCE.createAttributeValue();
+           value.setAttVal(TEST_VALUE);
+
+           tle.getTriplets().add(value);
+           aout.writeStructuredField(tle); 
+           
+           
+           byte[] data = baos.toByteArray();
+           final String testString = new String(data, data.length - TEST_VALUE.length(), TEST_VALUE.length(), Charset.forName("CP1141"));
+           
+           assertEquals(TEST_VALUE, testString);
+           
+       } finally {
+           aout.close();
+       }
+   }
+
+	
 }
