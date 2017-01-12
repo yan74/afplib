@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BMOImpl#getOvlyName <em>Ovly Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BMOImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BMOImpl extends SFImpl implements BMO {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBMO();
+		return AfplibPackage.Literals.BMO;
 	}
 
 	/**

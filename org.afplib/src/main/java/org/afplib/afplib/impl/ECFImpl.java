@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ECFImpl#getRSName <em>RS Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class ECFImpl extends SFImpl implements ECF {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getECF();
+		return AfplibPackage.Literals.ECF;
 	}
 
 	/**

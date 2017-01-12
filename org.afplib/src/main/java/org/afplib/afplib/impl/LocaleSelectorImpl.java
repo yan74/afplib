@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.LocaleSelectorImpl#getLocFlgs <em>Loc Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LocaleSelectorImpl#getLangCode <em>Lang Code</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.LocaleSelectorImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.LocaleSelectorImpl#getVarCde <em>Var Cde</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class LocaleSelectorImpl extends TripletImpl implements LocaleSelector {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLocaleSelector();
+		return AfplibPackage.Literals.LOCALE_SELECTOR;
 	}
 
 	/**

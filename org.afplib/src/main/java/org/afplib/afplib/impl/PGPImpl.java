@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PGPImpl#getConstant <em>Constant</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PGPImpl#getRG <em>RG</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class PGPImpl extends SFImpl implements PGP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGP();
+		return AfplibPackage.Literals.PGP;
 	}
 
 	/**

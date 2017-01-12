@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectStructuredFieldOffsetImpl#getSFOff <em>SF Off</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectStructuredFieldOffsetImpl#getSFOffHi <em>SF Off Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ObjectStructuredFieldOffsetImpl extends TripletImpl implements Obje
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectStructuredFieldOffset();
+		return AfplibPackage.Literals.OBJECT_STRUCTURED_FIELD_OFFSET;
 	}
 
 	/**

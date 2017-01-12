@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.DBRImpl#getRLENGTH <em>RLENGTH</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.DBRImpl#getRWIDTH <em>RWIDTH</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.DBRImpl#getRWIDTHFRACTION <em>RWIDTHFRACTION</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class DBRImpl extends TripletImpl implements DBR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDBR();
+		return AfplibPackage.Literals.DBR;
 	}
 
 	/**

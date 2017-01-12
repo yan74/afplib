@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MCF1RG#getCFLid <em>CF Lid</em>}</li>
  *   <li>{@link org.afplib.afplib.MCF1RG#getSectid <em>Sectid</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.MCF1RG#getFCSName <em>FCS Name</em>}</li>
  *   <li>{@link org.afplib.afplib.MCF1RG#getCharRot <em>Char Rot</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMCF1RG()
  * @model

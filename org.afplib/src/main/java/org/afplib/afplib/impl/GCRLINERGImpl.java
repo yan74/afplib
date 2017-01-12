@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GCRLINERGImpl#getXOSSF <em>XOSSF</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCRLINERGImpl#getYOFFS <em>YOFFS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class GCRLINERGImpl extends TripletImpl implements GCRLINERG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCRLINERG();
+		return AfplibPackage.Literals.GCRLINERG;
 	}
 
 	/**

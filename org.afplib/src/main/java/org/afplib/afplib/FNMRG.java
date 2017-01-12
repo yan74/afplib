@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FNMRG#getCharBoxWd <em>Char Box Wd</em>}</li>
  *   <li>{@link org.afplib.afplib.FNMRG#getCharBoxHt <em>Char Box Ht</em>}</li>
  *   <li>{@link org.afplib.afplib.FNMRG#getPatDOset <em>Pat DOset</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFNMRG()
  * @model

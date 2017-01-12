@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.base.SF#getNumber <em>Number</em>}</li>
  *   <li>{@link org.afplib.base.SF#getOffset <em>Offset</em>}</li>
@@ -24,7 +25,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.afplib.base.SF#getRawData <em>Raw Data</em>}</li>
  *   <li>{@link org.afplib.base.SF#getCharset <em>Charset</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.base.BasePackage#getSF()
  * @model abstract="true"

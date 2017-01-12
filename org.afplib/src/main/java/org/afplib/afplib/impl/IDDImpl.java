@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IDDImpl#getUNITBASE <em>UNITBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IDDImpl#getXRESOL <em>XRESOL</em>}</li>
@@ -38,7 +39,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.IDDImpl#getYSIZE <em>YSIZE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IDDImpl#getSDFS <em>SDFS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -169,7 +169,7 @@ public class IDDImpl extends SFImpl implements IDD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIDD();
+		return AfplibPackage.Literals.IDD;
 	}
 
 	/**

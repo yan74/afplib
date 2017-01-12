@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CGCSGIDImpl#getGCSGID <em>GCSGID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CGCSGIDImpl#getCPGID <em>CPGID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class CGCSGIDImpl extends TripletImpl implements CGCSGID {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCGCSGID();
+		return AfplibPackage.Literals.CGCSGID;
 	}
 
 	/**

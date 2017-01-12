@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MIORGImpl#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MIORGImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class MIORGImpl extends TripletImpl implements MIORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMIORG();
+		return AfplibPackage.Literals.MIORG;
 	}
 
 	/**

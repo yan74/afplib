@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IOCAFunctionSetIdentification#getCATEGORY <em>CATEGORY</em>}</li>
  *   <li>{@link org.afplib.afplib.IOCAFunctionSetIdentification#getFCNSET <em>FCNSET</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIOCAFunctionSetIdentification()
  * @model

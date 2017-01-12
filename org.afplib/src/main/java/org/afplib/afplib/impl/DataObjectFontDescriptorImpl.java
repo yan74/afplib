@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.DataObjectFontDescriptorImpl#getDOFtFlgs <em>DO Ft Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.DataObjectFontDescriptorImpl#getFontTech <em>Font Tech</em>}</li>
@@ -29,7 +30,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.DataObjectFontDescriptorImpl#getEncID <em>Enc ID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.DataObjectFontDescriptorImpl#getReserved <em>Reserved</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -210,7 +210,7 @@ public class DataObjectFontDescriptorImpl extends TripletImpl implements DataObj
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDataObjectFontDescriptor();
+		return AfplibPackage.Literals.DATA_OBJECT_FONT_DESCRIPTOR;
 	}
 
 	/**

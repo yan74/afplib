@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.TBM#getDIRCTION <em>DIRCTION</em>}</li>
  *   <li>{@link org.afplib.afplib.TBM#getPRECSION <em>PRECSION</em>}</li>
  *   <li>{@link org.afplib.afplib.TBM#getINCRMENT <em>INCRMENT</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getTBM()
  * @model

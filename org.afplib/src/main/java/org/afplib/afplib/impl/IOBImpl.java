@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IOBImpl#getObjName <em>Obj Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IOBImpl#getObjType <em>Obj Type</em>}</li>
@@ -42,7 +43,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.IOBImpl#getRefCSys <em>Ref CSys</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IOBImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -253,7 +253,7 @@ public class IOBImpl extends SFImpl implements IOB {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIOB();
+		return AfplibPackage.Literals.IOB;
 	}
 
 	/**

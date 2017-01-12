@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectContainerPresentationSpaceSizeImpl#getPDFSize <em>PDF Size</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class ObjectContainerPresentationSpaceSizeImpl extends TripletImpl implem
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectContainerPresentationSpaceSize();
+		return AfplibPackage.Literals.OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE;
 	}
 
 	/**

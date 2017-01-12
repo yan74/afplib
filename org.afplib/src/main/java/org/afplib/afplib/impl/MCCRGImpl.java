@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MCCRGImpl#getStartnum <em>Startnum</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MCCRGImpl#getStopnum <em>Stopnum</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MCCRGImpl#getMMCid <em>MM Cid</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class MCCRGImpl extends TripletImpl implements MCCRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCCRG();
+		return AfplibPackage.Literals.MCCRG;
 	}
 
 	/**

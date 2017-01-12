@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GBOXImpl#getRES <em>RES</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GBOXImpl#getXPOS0 <em>XPOS0</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.GBOXImpl#getHAXIS <em>HAXIS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GBOXImpl#getVAXIS <em>VAXIS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -189,7 +189,7 @@ public class GBOXImpl extends TripletImpl implements GBOX {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGBOX();
+		return AfplibPackage.Literals.GBOX;
 	}
 
 	/**

@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BGRImpl#getGdoName <em>Gdo Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BGRImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BGRImpl extends SFImpl implements BGR {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBGR();
+		return AfplibPackage.Literals.BGR;
 	}
 
 	/**

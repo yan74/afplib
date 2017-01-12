@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TextFidelityImpl#getStpTxtEx <em>Stp Txt Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TextFidelityImpl#getRepTxtEx <em>Rep Txt Ex</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class TextFidelityImpl extends TripletImpl implements TextFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTextFidelity();
+		return AfplibPackage.Literals.TEXT_FIDELITY;
 	}
 
 	/**

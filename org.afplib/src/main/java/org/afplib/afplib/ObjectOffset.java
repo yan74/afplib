@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectOffset#getObjTpe <em>Obj Tpe</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectOffset#getObjOset <em>Obj Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectOffset#getObjOstHi <em>Obj Ost Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectOffset()
  * @model

@@ -13,8 +13,6 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>End Transparency Mask</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -35,7 +33,7 @@ public class EndTransparencyMaskImpl extends TripletImpl implements EndTranspare
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndTransparencyMask();
+		return AfplibPackage.Literals.END_TRANSPARENCY_MASK;
 	}
 
 } //EndTransparencyMaskImpl

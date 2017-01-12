@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BCPImpl#getRSName <em>RS Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BCPImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BCPImpl extends SFImpl implements BCP {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBCP();
+		return AfplibPackage.Literals.BCP;
 	}
 
 	/**

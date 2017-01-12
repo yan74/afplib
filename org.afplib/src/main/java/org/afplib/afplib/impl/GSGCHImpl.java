@@ -13,8 +13,6 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>GSGCH</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -35,7 +33,7 @@ public class GSGCHImpl extends TripletImpl implements GSGCH {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSGCH();
+		return AfplibPackage.Literals.GSGCH;
 	}
 
 } //GSGCHImpl

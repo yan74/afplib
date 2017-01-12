@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CPD#getCPDesc <em>CP Desc</em>}</li>
  *   <li>{@link org.afplib.afplib.CPD#getGCGIDLen <em>GCGID Len</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.CPD#getCPGID <em>CPGID</em>}</li>
  *   <li>{@link org.afplib.afplib.CPD#getEncScheme <em>Enc Scheme</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCPD()
  * @model

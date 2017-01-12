@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BeginSegmentCommandImpl#getLENGTH <em>LENGTH</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BeginSegmentCommandImpl#getNAME <em>NAME</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.BeginSegmentCommandImpl#getSEGL <em>SEGL</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BeginSegmentCommandImpl#getPSNAME <em>PSNAME</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class BeginSegmentCommandImpl extends TripletImpl implements BeginSegment
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginSegmentCommand();
+		return AfplibPackage.Literals.BEGIN_SEGMENT_COMMAND;
 	}
 
 	/**

@@ -92,6 +92,8 @@ public enum FontDescriptorSpecificationFtUsFlags implements Enumerator {
 	 * Returns the '<em><b>Font Descriptor Specification Ft Us Flags</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static FontDescriptorSpecificationFtUsFlags get(String literal) {
@@ -108,6 +110,8 @@ public enum FontDescriptorSpecificationFtUsFlags implements Enumerator {
 	 * Returns the '<em><b>Font Descriptor Specification Ft Us Flags</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static FontDescriptorSpecificationFtUsFlags getByName(String name) {
@@ -124,6 +128,8 @@ public enum FontDescriptorSpecificationFtUsFlags implements Enumerator {
 	 * Returns the '<em><b>Font Descriptor Specification Ft Us Flags</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static FontDescriptorSpecificationFtUsFlags get(int value) {

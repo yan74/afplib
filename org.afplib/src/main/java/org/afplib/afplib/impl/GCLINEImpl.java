@@ -26,10 +26,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GCLINEImpl#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -60,7 +60,7 @@ public class GCLINEImpl extends TripletImpl implements GCLINE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCLINE();
+		return AfplibPackage.Literals.GCLINE;
 	}
 
 	/**

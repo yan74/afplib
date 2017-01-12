@@ -26,10 +26,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MBCImpl#getRG <em>RG</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -60,7 +60,7 @@ public class MBCImpl extends SFImpl implements MBC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMBC();
+		return AfplibPackage.Literals.MBC;
 	}
 
 	/**

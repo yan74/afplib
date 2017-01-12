@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BOCImpl#getObjCName <em>Obj CName</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BOCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BOCImpl extends SFImpl implements BOC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBOC();
+		return AfplibPackage.Literals.BOC;
 	}
 
 	/**

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.SECImpl#getRESERVED <em>RESERVED</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.SECImpl#getCOLSPCE <em>COLSPCE</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.SECImpl#getCOLSIZE4 <em>COLSIZE4</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.SECImpl#getCOLVALUE <em>COLVALUE</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -189,7 +189,7 @@ public class SECImpl extends TripletImpl implements SEC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSEC();
+		return AfplibPackage.Literals.SEC;
 	}
 
 	/**

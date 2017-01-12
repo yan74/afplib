@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PFCImpl#getPFCFlgs <em>PFC Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PFCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class PFCImpl extends SFImpl implements PFC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPFC();
+		return AfplibPackage.Literals.PFC;
 	}
 
 	/**

@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FontResolutionImpl#getMetTech <em>Met Tech</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FontResolutionImpl#getRPuBase <em>RPu Base</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FontResolutionImpl#getRPUnits <em>RP Units</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class FontResolutionImpl extends TripletImpl implements FontResolution {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontResolution();
+		return AfplibPackage.Literals.FONT_RESOLUTION;
 	}
 
 	/**

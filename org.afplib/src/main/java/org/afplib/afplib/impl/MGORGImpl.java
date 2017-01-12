@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MGORGImpl#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MGORGImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class MGORGImpl extends TripletImpl implements MGORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMGORG();
+		return AfplibPackage.Literals.MGORG;
 	}
 
 	/**

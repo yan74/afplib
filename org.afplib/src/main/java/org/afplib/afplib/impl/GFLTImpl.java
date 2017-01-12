@@ -26,10 +26,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GFLTImpl#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -60,7 +60,7 @@ public class GFLTImpl extends TripletImpl implements GFLT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGFLT();
+		return AfplibPackage.Literals.GFLT;
 	}
 
 	/**

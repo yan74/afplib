@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectClassificationImpl#getObjClass <em>Obj Class</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectClassificationImpl#getStrucFlgs <em>Struc Flgs</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.ObjectClassificationImpl#getObjLev <em>Obj Lev</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectClassificationImpl#getCompName <em>Comp Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class ObjectClassificationImpl extends TripletImpl implements ObjectClass
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectClassification();
+		return AfplibPackage.Literals.OBJECT_CLASSIFICATION;
 	}
 
 	/**

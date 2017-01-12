@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FontHorizontalScaleFactorImpl#getHscale <em>Hscale</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class FontHorizontalScaleFactorImpl extends TripletImpl implements FontHo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontHorizontalScaleFactor();
+		return AfplibPackage.Literals.FONT_HORIZONTAL_SCALE_FACTOR;
 	}
 
 	/**

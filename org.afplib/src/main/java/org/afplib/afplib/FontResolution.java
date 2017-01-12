@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FontResolution#getMetTech <em>Met Tech</em>}</li>
  *   <li>{@link org.afplib.afplib.FontResolution#getRPuBase <em>RPu Base</em>}</li>
  *   <li>{@link org.afplib.afplib.FontResolution#getRPUnits <em>RP Units</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFontResolution()
  * @model

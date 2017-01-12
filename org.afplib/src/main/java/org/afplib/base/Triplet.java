@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.base.Triplet#getLabel <em>Label</em>}</li>
  *   <li>{@link org.afplib.base.Triplet#getCharset <em>Charset</em>}</li>
@@ -21,7 +22,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.afplib.base.Triplet#getTripletId <em>Triplet Id</em>}</li>
  *   <li>{@link org.afplib.base.Triplet#getTripletNumber <em>Triplet Number</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.base.BasePackage#getTriplet()
  * @model abstract="true"

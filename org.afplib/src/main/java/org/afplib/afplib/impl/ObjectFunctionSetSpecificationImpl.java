@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectFunctionSetSpecificationImpl#getObjType <em>Obj Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectFunctionSetSpecificationImpl#getArchVrsn <em>Arch Vrsn</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectFunctionSetSpecificationImpl#getDCAFnSet <em>DCA Fn Set</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectFunctionSetSpecificationImpl#getOCAFnSet <em>OCA Fn Set</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -126,7 +126,7 @@ public class ObjectFunctionSetSpecificationImpl extends TripletImpl implements O
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectFunctionSetSpecification();
+		return AfplibPackage.Literals.OBJECT_FUNCTION_SET_SPECIFICATION;
 	}
 
 	/**

@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PGD#getXpgBase <em>Xpg Base</em>}</li>
  *   <li>{@link org.afplib.afplib.PGD#getYpgBase <em>Ypg Base</em>}</li>
@@ -24,7 +25,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.PGD#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.PGD#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPGD()
  * @model

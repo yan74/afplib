@@ -92,6 +92,8 @@ public enum PGDYpgBase implements Enumerator {
 	 * Returns the '<em><b>PGD Ypg Base</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static PGDYpgBase get(String literal) {
@@ -108,6 +110,8 @@ public enum PGDYpgBase implements Enumerator {
 	 * Returns the '<em><b>PGD Ypg Base</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static PGDYpgBase getByName(String name) {
@@ -124,6 +128,8 @@ public enum PGDYpgBase implements Enumerator {
 	 * Returns the '<em><b>PGD Ypg Base</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static PGDYpgBase get(int value) {

@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ImageLUTIDImpl#getLUTID <em>LUTID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class ImageLUTIDImpl extends TripletImpl implements ImageLUTID {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageLUTID();
+		return AfplibPackage.Literals.IMAGE_LUTID;
 	}
 
 	/**

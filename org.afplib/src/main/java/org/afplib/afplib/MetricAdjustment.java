@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MetricAdjustment#getUnitBase <em>Unit Base</em>}</li>
  *   <li>{@link org.afplib.afplib.MetricAdjustment#getXUPUB <em>XUPUB</em>}</li>
@@ -20,7 +21,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.MetricAdjustment#getHBaselineIncrement <em>HBaseline Increment</em>}</li>
  *   <li>{@link org.afplib.afplib.MetricAdjustment#getVBaselineIncrement <em>VBaseline Increment</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMetricAdjustment()
  * @model

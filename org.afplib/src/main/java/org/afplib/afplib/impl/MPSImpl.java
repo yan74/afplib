@@ -29,12 +29,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MPSImpl#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MPSImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MPSImpl#getFixedLengthRG <em>Fixed Length RG</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class MPSImpl extends SFImpl implements MPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMPS();
+		return AfplibPackage.Literals.MPS;
 	}
 
 	/**

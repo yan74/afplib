@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IOC#getXoaOset <em>Xoa Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.IOC#getYoaOset <em>Yoa Oset</em>}</li>
@@ -21,7 +22,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.IOC#getYMap <em>YMap</em>}</li>
  *   <li>{@link org.afplib.afplib.IOC#getConData2 <em>Con Data2</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIOC()
  * @model

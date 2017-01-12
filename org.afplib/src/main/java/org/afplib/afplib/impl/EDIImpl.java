@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EDIImpl#getIndxName <em>Indx Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EDIImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class EDIImpl extends SFImpl implements EDI {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDI();
+		return AfplibPackage.Literals.EDI;
 	}
 
 	/**

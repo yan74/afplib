@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectStructuredFieldExtentImpl#getSFExt <em>SF Ext</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectStructuredFieldExtentImpl#getSFExtHi <em>SF Ext Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ObjectStructuredFieldExtentImpl extends TripletImpl implements Obje
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectStructuredFieldExtent();
+		return AfplibPackage.Literals.OBJECT_STRUCTURED_FIELD_EXTENT;
 	}
 
 	/**

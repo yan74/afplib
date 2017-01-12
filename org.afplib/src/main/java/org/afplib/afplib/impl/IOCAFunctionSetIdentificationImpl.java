@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IOCAFunctionSetIdentificationImpl#getCATEGORY <em>CATEGORY</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IOCAFunctionSetIdentificationImpl#getFCNSET <em>FCNSET</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class IOCAFunctionSetIdentificationImpl extends TripletImpl implements IO
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIOCAFunctionSetIdentification();
+		return AfplibPackage.Literals.IOCA_FUNCTION_SET_IDENTIFICATION;
 	}
 
 	/**

@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PGDImpl#getXpgBase <em>Xpg Base</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PGDImpl#getYpgBase <em>Ypg Base</em>}</li>
@@ -40,7 +41,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.afplib.afplib.impl.PGDImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PGDImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -211,7 +211,7 @@ public class PGDImpl extends SFImpl implements PGD {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGD();
+		return AfplibPackage.Literals.PGD;
 	}
 
 	/**

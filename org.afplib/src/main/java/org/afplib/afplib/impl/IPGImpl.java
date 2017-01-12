@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IPGImpl#getPgName <em>Pg Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IPGImpl#getIPgFlgs <em>IPg Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IPGImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -106,7 +106,7 @@ public class IPGImpl extends SFImpl implements IPG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIPG();
+		return AfplibPackage.Literals.IPG;
 	}
 
 	/**

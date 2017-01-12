@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ColorSpecificationImpl#getColSpce <em>Col Spce</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ColorSpecificationImpl#getColSize1 <em>Col Size1</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.ColorSpecificationImpl#getColSize4 <em>Col Size4</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ColorSpecificationImpl#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class ColorSpecificationImpl extends TripletImpl implements ColorSpecific
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getColorSpecification();
+		return AfplibPackage.Literals.COLOR_SPECIFICATION;
 	}
 
 	/**

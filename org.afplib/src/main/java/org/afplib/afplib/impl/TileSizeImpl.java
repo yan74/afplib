@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TileSizeImpl#getTHSIZE <em>THSIZE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TileSizeImpl#getTVSIZE <em>TVSIZE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TileSizeImpl#getRELRES <em>RELRES</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class TileSizeImpl extends TripletImpl implements TileSize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileSize();
+		return AfplibPackage.Literals.TILE_SIZE;
 	}
 
 	/**

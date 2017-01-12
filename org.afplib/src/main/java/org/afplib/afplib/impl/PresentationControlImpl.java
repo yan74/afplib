@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PresentationControlImpl#getPRSFlg <em>PRS Flg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class PresentationControlImpl extends TripletImpl implements Presentation
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPresentationControl();
+		return AfplibPackage.Literals.PRESENTATION_CONTROL;
 	}
 
 	/**

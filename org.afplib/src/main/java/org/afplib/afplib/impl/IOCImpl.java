@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IOCImpl#getXoaOset <em>Xoa Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IOCImpl#getYoaOset <em>Yoa Oset</em>}</li>
@@ -29,7 +30,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.IOCImpl#getYMap <em>YMap</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IOCImpl#getConData2 <em>Con Data2</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -210,7 +210,7 @@ public class IOCImpl extends SFImpl implements IOC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIOC();
+		return AfplibPackage.Literals.IOC;
 	}
 
 	/**

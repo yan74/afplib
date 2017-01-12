@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FNORGImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNORGImpl#getCharRot <em>Char Rot</em>}</li>
@@ -35,7 +36,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.FNORGImpl#getDefBInc <em>Def BInc</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNORGImpl#getMinASp <em>Min ASp</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -336,7 +336,7 @@ public class FNORGImpl extends TripletImpl implements FNORG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNORG();
+		return AfplibPackage.Literals.FNORG;
 	}
 
 	/**

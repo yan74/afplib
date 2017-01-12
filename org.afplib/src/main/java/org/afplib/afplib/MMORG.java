@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MMORG#getOVLid <em>OV Lid</em>}</li>
  *   <li>{@link org.afplib.afplib.MMORG#getFlags <em>Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.MMORG#getOVLname <em>OV Lname</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMMORG()
  * @model

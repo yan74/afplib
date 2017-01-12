@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.IDEStructureImpl#getFLAGS <em>FLAGS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IDEStructureImpl#getFORMAT <em>FORMAT</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.IDEStructureImpl#getSIZE3 <em>SIZE3</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.IDEStructureImpl#getSIZE4 <em>SIZE4</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class IDEStructureImpl extends TripletImpl implements IDEStructure {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getIDEStructure();
+		return AfplibPackage.Literals.IDE_STRUCTURE;
 	}
 
 	/**

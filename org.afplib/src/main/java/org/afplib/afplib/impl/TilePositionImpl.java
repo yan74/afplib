@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TilePositionImpl#getXOFFSET <em>XOFFSET</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TilePositionImpl#getYOFFSET <em>YOFFSET</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class TilePositionImpl extends TripletImpl implements TilePosition {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTilePosition();
+		return AfplibPackage.Literals.TILE_POSITION;
 	}
 
 	/**

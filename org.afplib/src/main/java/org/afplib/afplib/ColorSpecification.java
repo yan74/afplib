@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ColorSpecification#getColSpce <em>Col Spce</em>}</li>
  *   <li>{@link org.afplib.afplib.ColorSpecification#getColSize1 <em>Col Size1</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.ColorSpecification#getColSize4 <em>Col Size4</em>}</li>
  *   <li>{@link org.afplib.afplib.ColorSpecification#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getColorSpecification()
  * @model

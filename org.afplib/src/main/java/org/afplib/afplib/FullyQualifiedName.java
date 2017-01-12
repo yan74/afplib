@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FullyQualifiedName#getFQNType <em>FQN Type</em>}</li>
  *   <li>{@link org.afplib.afplib.FullyQualifiedName#getFQNFormat <em>FQN Format</em>}</li>
  *   <li>{@link org.afplib.afplib.FullyQualifiedName#getFQName <em>FQ Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFullyQualifiedName()
  * @model

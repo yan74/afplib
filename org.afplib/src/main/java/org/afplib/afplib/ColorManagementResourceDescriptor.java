@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ColorManagementResourceDescriptor#getProcMode <em>Proc Mode</em>}</li>
  *   <li>{@link org.afplib.afplib.ColorManagementResourceDescriptor#getCMRScpe <em>CMR Scpe</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getColorManagementResourceDescriptor()
  * @model

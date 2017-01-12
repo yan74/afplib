@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GCBIMG#getFORMAT <em>FORMAT</em>}</li>
  *   <li>{@link org.afplib.afplib.GCBIMG#getRES <em>RES</em>}</li>
  *   <li>{@link org.afplib.afplib.GCBIMG#getWIDTH <em>WIDTH</em>}</li>
  *   <li>{@link org.afplib.afplib.GCBIMG#getHEIGHT <em>HEIGHT</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGCBIMG()
  * @model

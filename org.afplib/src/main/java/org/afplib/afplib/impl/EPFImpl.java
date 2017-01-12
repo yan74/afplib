@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EPFImpl#getPFName <em>PF Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EPFImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class EPFImpl extends SFImpl implements EPF {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPF();
+		return AfplibPackage.Literals.EPF;
 	}
 
 	/**

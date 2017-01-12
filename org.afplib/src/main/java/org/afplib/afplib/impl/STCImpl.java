@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.STCImpl#getFRGCOLOR <em>FRGCOLOR</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.STCImpl#getPRECSION <em>PRECSION</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class STCImpl extends TripletImpl implements STC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSTC();
+		return AfplibPackage.Literals.STC;
 	}
 
 	/**

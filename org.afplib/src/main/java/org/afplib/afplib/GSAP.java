@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GSAP#getP <em>P</em>}</li>
  *   <li>{@link org.afplib.afplib.GSAP#getQ <em>Q</em>}</li>
  *   <li>{@link org.afplib.afplib.GSAP#getR <em>R</em>}</li>
  *   <li>{@link org.afplib.afplib.GSAP#getS <em>S</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGSAP()
  * @model

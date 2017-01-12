@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ImageSizeImpl#getUNITBASE <em>UNITBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ImageSizeImpl#getHRESOL <em>HRESOL</em>}</li>
@@ -26,7 +27,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.ImageSizeImpl#getHSIZE <em>HSIZE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ImageSizeImpl#getVSIZE <em>VSIZE</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -147,7 +147,7 @@ public class ImageSizeImpl extends TripletImpl implements ImageSize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageSize();
+		return AfplibPackage.Literals.IMAGE_SIZE;
 	}
 
 	/**

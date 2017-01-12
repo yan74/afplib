@@ -13,11 +13,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ExternalAlgorithm#getALGTYPE <em>ALGTYPE</em>}</li>
  *   <li>{@link org.afplib.afplib.ExternalAlgorithm#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getExternalAlgorithm()
  * @model

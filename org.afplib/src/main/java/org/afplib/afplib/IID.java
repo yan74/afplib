@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IID#getConData1 <em>Con Data1</em>}</li>
  *   <li>{@link org.afplib.afplib.IID#getXBase <em>XBase</em>}</li>
@@ -25,7 +26,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.IID#getConData3 <em>Con Data3</em>}</li>
  *   <li>{@link org.afplib.afplib.IID#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIID()
  * @model

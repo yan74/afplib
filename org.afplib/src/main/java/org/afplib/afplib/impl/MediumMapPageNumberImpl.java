@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MediumMapPageNumberImpl#getPageNum <em>Page Num</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class MediumMapPageNumberImpl extends TripletImpl implements MediumMapPag
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMediumMapPageNumber();
+		return AfplibPackage.Literals.MEDIUM_MAP_PAGE_NUMBER;
 	}
 
 	/**

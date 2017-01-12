@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MDD#getXmBase <em>Xm Base</em>}</li>
  *   <li>{@link org.afplib.afplib.MDD#getYmBase <em>Ym Base</em>}</li>
@@ -24,7 +25,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.MDD#getMDDFlgs <em>MDD Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.MDD#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMDD()
  * @model

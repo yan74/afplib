@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ResourceSectionNumberImpl#getResSNum <em>Res SNum</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class ResourceSectionNumberImpl extends TripletImpl implements ResourceSe
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceSectionNumber();
+		return AfplibPackage.Literals.RESOURCE_SECTION_NUMBER;
 	}
 
 	/**

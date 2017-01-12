@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PagePositionInformationImpl#getPGPRG <em>PGPRG</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class PagePositionInformationImpl extends TripletImpl implements PagePosi
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPagePositionInformation();
+		return AfplibPackage.Literals.PAGE_POSITION_INFORMATION;
 	}
 
 	/**

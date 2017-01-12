@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FNIRG#getGCGID <em>GCGID</em>}</li>
  *   <li>{@link org.afplib.afplib.FNIRG#getCharInc <em>Char Inc</em>}</li>
@@ -24,7 +25,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.FNIRG#getReserved2 <em>Reserved2</em>}</li>
  *   <li>{@link org.afplib.afplib.FNIRG#getBaseOset <em>Base Oset</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFNIRG()
  * @model
@@ -86,12 +86,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Ascend Ht</em>' attribute.
 	 * @see #setAscendHt(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_AscendHt()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getAscendHt();
@@ -111,12 +111,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Descend Dp</em>' attribute.
 	 * @see #setDescendDp(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_DescendDp()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getDescendDp();
@@ -136,12 +136,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Reserved</em>' attribute.
 	 * @see #setReserved(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_Reserved()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getReserved();
@@ -161,12 +161,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>FNM Cnt</em>' attribute.
 	 * @see #setFNMCnt(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_FNMCnt()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getFNMCnt();
@@ -186,12 +186,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ASpace</em>' attribute.
 	 * @see #setASpace(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_ASpace()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getASpace();
@@ -211,12 +211,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>BSpace</em>' attribute.
 	 * @see #setBSpace(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_BSpace()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getBSpace();
@@ -236,12 +236,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>CSpace</em>' attribute.
 	 * @see #setCSpace(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_CSpace()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getCSpace();
@@ -261,12 +261,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Reserved2</em>' attribute.
 	 * @see #setReserved2(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_Reserved2()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getReserved2();
@@ -286,12 +286,12 @@ public interface FNIRG extends Triplet {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Base Oset</em>' attribute.
 	 * @see #setBaseOset(Integer)
 	 * @see org.afplib.afplib.AfplibPackage#getFNIRG_BaseOset()
-	 * @model required="true"
+	 * @model
 	 * @generated
 	 */
 	Integer getBaseOset();

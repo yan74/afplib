@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectByteOffsetImpl#getDirByOff <em>Dir By Off</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectByteOffsetImpl#getDirByHi <em>Dir By Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ObjectByteOffsetImpl extends TripletImpl implements ObjectByteOffse
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectByteOffset();
+		return AfplibPackage.Literals.OBJECT_BYTE_OFFSET;
 	}
 
 	/**

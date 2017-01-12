@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ExtensionFontImpl#getGCSGID <em>GCSGID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class ExtensionFontImpl extends TripletImpl implements ExtensionFont {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExtensionFont();
+		return AfplibPackage.Literals.EXTENSION_FONT;
 	}
 
 	/**

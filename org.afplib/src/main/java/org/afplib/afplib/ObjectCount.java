@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectCount#getSubObj <em>Sub Obj</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectCount#getSObjNum <em>SObj Num</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectCount#getSobjNmHi <em>Sobj Nm Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectCount()
  * @model

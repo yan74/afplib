@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BeginImageImpl#getOBJTYPE <em>OBJTYPE</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class BeginImageImpl extends TripletImpl implements BeginImage {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginImage();
+		return AfplibPackage.Literals.BEGIN_IMAGE;
 	}
 
 	/**

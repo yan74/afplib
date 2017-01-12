@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TonerSaverImpl#getTSvCtrl <em>TSv Ctrl</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class TonerSaverImpl extends TripletImpl implements TonerSaver {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTonerSaver();
+		return AfplibPackage.Literals.TONER_SAVER;
 	}
 
 	/**

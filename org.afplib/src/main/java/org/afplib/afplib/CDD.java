@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CDD#getXocBase <em>Xoc Base</em>}</li>
  *   <li>{@link org.afplib.afplib.CDD#getYocBase <em>Yoc Base</em>}</li>
@@ -23,7 +24,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.CDD#getYocSize <em>Yoc Size</em>}</li>
  *   <li>{@link org.afplib.afplib.CDD#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCDD()
  * @model

@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.EncodingSchemeID#getESidCP <em>ESid CP</em>}</li>
  *   <li>{@link org.afplib.afplib.EncodingSchemeID#getESidUD <em>ESid UD</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getEncodingSchemeID()
  * @model

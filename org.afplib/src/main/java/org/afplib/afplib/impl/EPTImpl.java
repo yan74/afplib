@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EPTImpl#getPTdoName <em>PTdo Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EPTImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class EPTImpl extends SFImpl implements EPT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEPT();
+		return AfplibPackage.Literals.EPT;
 	}
 
 	/**

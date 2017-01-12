@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PTD#getXPBASE <em>XPBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.PTD#getYPBASE <em>YPBASE</em>}</li>
@@ -24,7 +25,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.PTD#getRESERVED <em>RESERVED</em>}</li>
  *   <li>{@link org.afplib.afplib.PTD#getCS <em>CS</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPTD()
  * @model

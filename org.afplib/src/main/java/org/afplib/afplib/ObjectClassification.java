@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectClassification#getObjClass <em>Obj Class</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectClassification#getStrucFlgs <em>Struc Flgs</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.ObjectClassification#getObjLev <em>Obj Lev</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectClassification#getCompName <em>Comp Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectClassification()
  * @model

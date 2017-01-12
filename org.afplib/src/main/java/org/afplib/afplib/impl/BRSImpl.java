@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BRSImpl#getRSName <em>RS Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BRSImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BRSImpl extends SFImpl implements BRS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBRS();
+		return AfplibPackage.Literals.BRS;
 	}
 
 	/**

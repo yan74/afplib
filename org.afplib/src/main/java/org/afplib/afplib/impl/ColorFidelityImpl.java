@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ColorFidelityImpl#getStpCoEx <em>Stp Co Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ColorFidelityImpl#getRepCoEx <em>Rep Co Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ColorFidelityImpl#getColSub <em>Col Sub</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class ColorFidelityImpl extends TripletImpl implements ColorFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getColorFidelity();
+		return AfplibPackage.Literals.COLOR_FIDELITY;
 	}
 
 	/**

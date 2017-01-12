@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TileTOCRGImpl#getXOFFSET <em>XOFFSET</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TileTOCRGImpl#getYOFFSET <em>YOFFSET</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.TileTOCRGImpl#getCOMPR <em>COMPR</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TileTOCRGImpl#getDATAPOS <em>DATAPOS</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -189,7 +189,7 @@ public class TileTOCRGImpl extends TripletImpl implements TileTOCRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileTOCRG();
+		return AfplibPackage.Literals.TILE_TOCRG;
 	}
 
 	/**

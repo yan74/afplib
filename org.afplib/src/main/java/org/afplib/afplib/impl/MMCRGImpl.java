@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MMCRGImpl#getKey <em>Key</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MMCRGImpl#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class MMCRGImpl extends TripletImpl implements MMCRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMCRG();
+		return AfplibPackage.Literals.MMCRG;
 	}
 
 	/**

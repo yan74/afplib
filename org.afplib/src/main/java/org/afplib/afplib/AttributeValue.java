@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.AttributeValue#getReserved0 <em>Reserved0</em>}</li>
  *   <li>{@link org.afplib.afplib.AttributeValue#getAttVal <em>Att Val</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getAttributeValue()
  * @model

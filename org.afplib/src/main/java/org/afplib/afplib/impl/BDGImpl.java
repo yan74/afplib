@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BDGImpl#getDEGName <em>DEG Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BDGImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BDGImpl extends SFImpl implements BDG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBDG();
+		return AfplibPackage.Literals.BDG;
 	}
 
 	/**

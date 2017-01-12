@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.base.impl.TripletImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link org.afplib.base.impl.TripletImpl#getCharset <em>Charset</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link org.afplib.base.impl.TripletImpl#getTripletId <em>Triplet Id</em>}</li>
  *   <li>{@link org.afplib.base.impl.TripletImpl#getTripletNumber <em>Triplet Number</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

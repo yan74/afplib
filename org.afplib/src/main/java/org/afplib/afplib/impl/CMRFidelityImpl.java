@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CMRFidelityImpl#getStpCMREx <em>Stp CMR Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CMRFidelityImpl#getRepCMREx <em>Rep CMR Ex</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class CMRFidelityImpl extends TripletImpl implements CMRFidelity {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCMRFidelity();
+		return AfplibPackage.Literals.CMR_FIDELITY;
 	}
 
 	/**

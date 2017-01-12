@@ -13,11 +13,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PGP#getConstant <em>Constant</em>}</li>
  *   <li>{@link org.afplib.afplib.PGP#getRG <em>RG</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPGP()
  * @model

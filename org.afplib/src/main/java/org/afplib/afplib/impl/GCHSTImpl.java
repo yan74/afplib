@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GCHSTImpl#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCHSTImpl#getYPOS <em>YPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GCHSTImpl#getCP <em>CP</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class GCHSTImpl extends TripletImpl implements GCHST {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGCHST();
+		return AfplibPackage.Literals.GCHST;
 	}
 
 	/**

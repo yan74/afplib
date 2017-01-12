@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GSPCOL#getRES1 <em>RES1</em>}</li>
  *   <li>{@link org.afplib.afplib.GSPCOL#getCOLSPCE <em>COLSPCE</em>}</li>
@@ -21,7 +22,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.GSPCOL#getCOLSIZE4 <em>COLSIZE4</em>}</li>
  *   <li>{@link org.afplib.afplib.GSPCOL#getCOLVALUE <em>COLVALUE</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGSPCOL()
  * @model

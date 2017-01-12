@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GSFLWImpl#getMH <em>MH</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GSFLWImpl#getMFR <em>MFR</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class GSFLWImpl extends TripletImpl implements GSFLW {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGSFLW();
+		return AfplibPackage.Literals.GSFLW;
 	}
 
 	/**

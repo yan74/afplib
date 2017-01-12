@@ -92,6 +92,8 @@ public enum FontFidelityStpFntEx implements Enumerator {
 	 * Returns the '<em><b>Font Fidelity Stp Fnt Ex</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static FontFidelityStpFntEx get(String literal) {
@@ -108,6 +110,8 @@ public enum FontFidelityStpFntEx implements Enumerator {
 	 * Returns the '<em><b>Font Fidelity Stp Fnt Ex</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static FontFidelityStpFntEx getByName(String name) {
@@ -124,6 +128,8 @@ public enum FontFidelityStpFntEx implements Enumerator {
 	 * Returns the '<em><b>Font Fidelity Stp Fnt Ex</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static FontFidelityStpFntEx get(int value) {

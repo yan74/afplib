@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FNNRGImpl#getGCGID <em>GCGID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNNRGImpl#getTSOffset <em>TS Offset</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class FNNRGImpl extends TripletImpl implements FNNRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNNRG();
+		return AfplibPackage.Literals.FNNRG;
 	}
 
 	/**

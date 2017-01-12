@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ExternalAlgorithmRGImpl#getDIRCTN <em>DIRCTN</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ExternalAlgorithmRGImpl#getPADBDRY <em>PADBDRY</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ExternalAlgorithmRGImpl#getPADALMT <em>PADALMT</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class ExternalAlgorithmRGImpl extends TripletImpl implements ExternalAlgo
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExternalAlgorithmRG();
+		return AfplibPackage.Literals.EXTERNAL_ALGORITHM_RG;
 	}
 
 	/**

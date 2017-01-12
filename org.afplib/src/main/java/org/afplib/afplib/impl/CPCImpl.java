@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CPCImpl#getDefCharID <em>Def Char ID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPCImpl#getPrtFlags <em>Prt Flags</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.CPCImpl#getVSChar <em>VS Char</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPCImpl#getVSFlags <em>VS Flags</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class CPCImpl extends SFImpl implements CPC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCPC();
+		return AfplibPackage.Literals.CPC;
 	}
 
 	/**

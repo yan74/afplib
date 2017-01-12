@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PGPRGImpl#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PGPRGImpl#getXmOset <em>Xm Oset</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.PGPRGImpl#getPgFlgs <em>Pg Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PGPRGImpl#getPMCid <em>PM Cid</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -189,7 +189,7 @@ public class PGPRGImpl extends TripletImpl implements PGPRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGPRG();
+		return AfplibPackage.Literals.PGPRG;
 	}
 
 	/**

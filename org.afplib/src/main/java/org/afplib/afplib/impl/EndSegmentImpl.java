@@ -13,8 +13,6 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>End Segment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -35,7 +33,7 @@ public class EndSegmentImpl extends TripletImpl implements EndSegment {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndSegment();
+		return AfplibPackage.Literals.END_SEGMENT;
 	}
 
 } //EndSegmentImpl

@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GSCC#getCELLWI <em>CELLWI</em>}</li>
  *   <li>{@link org.afplib.afplib.GSCC#getCELLHI <em>CELLHI</em>}</li>
  *   <li>{@link org.afplib.afplib.GSCC#getCELLWFR <em>CELLWFR</em>}</li>
  *   <li>{@link org.afplib.afplib.GSCC#getCELLHFR <em>CELLHFR</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGSCC()
  * @model

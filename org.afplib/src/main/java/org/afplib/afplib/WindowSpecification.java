@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.WindowSpecification#getFLAGS <em>FLAGS</em>}</li>
  *   <li>{@link org.afplib.afplib.WindowSpecification#getRES3 <em>RES3</em>}</li>
@@ -24,7 +25,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.WindowSpecification#getYBWIND <em>YBWIND</em>}</li>
  *   <li>{@link org.afplib.afplib.WindowSpecification#getYTWIND <em>YTWIND</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getWindowSpecification()
  * @model

@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ExternalAlgorithmImpl#getALGTYPE <em>ALGTYPE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ExternalAlgorithmImpl#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ExternalAlgorithmImpl extends TripletImpl implements ExternalAlgori
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getExternalAlgorithm();
+		return AfplibPackage.Literals.EXTERNAL_ALGORITHM;
 	}
 
 	/**

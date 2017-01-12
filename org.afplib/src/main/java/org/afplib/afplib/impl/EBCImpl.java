@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EBCImpl#getBCdoName <em>BCdo Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EBCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class EBCImpl extends SFImpl implements EBC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEBC();
+		return AfplibPackage.Literals.EBC;
 	}
 
 	/**

@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.CPIRGImpl#getGCGID <em>GCGID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPIRGImpl#getPrtFlags <em>Prt Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPIRGImpl#getCodePoint <em>Code Point</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.CPIRGImpl#getCount <em>Count</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -126,7 +126,7 @@ public class CPIRGImpl extends TripletImpl implements CPIRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getCPIRG();
+		return AfplibPackage.Literals.CPIRG;
 	}
 
 	/**

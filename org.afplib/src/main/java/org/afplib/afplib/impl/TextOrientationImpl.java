@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TextOrientationImpl#getIAxis <em>IAxis</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TextOrientationImpl#getBAxis <em>BAxis</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class TextOrientationImpl extends TripletImpl implements TextOrientation 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTextOrientation();
+		return AfplibPackage.Literals.TEXT_ORIENTATION;
 	}
 
 	/**

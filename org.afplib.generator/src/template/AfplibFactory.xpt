@@ -24,7 +24,6 @@ import org.eclipse.emf.ecore.EObject;
 
 class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
-    int missingImageData = 0;
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 	Stack<Charset> charsets = new Stack<Charset>();
 	FNC fnc;
@@ -36,25 +35,17 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		«FOREACH structuredFields AS sf»
 		case «sf.id»: {
 			«sf.name» obj = AfplibFactory.eINSTANCE.create«sf.name»();
-			«IF isBegin(sf.id)»		
+			«IF isBegin(sf.id)»
 			charsets.push(charset);
 			charset = CodepageHelper.CHARSET_IBM500;
 			«ENDIF»
 			«IF isEnd(sf.id)»
-			if(!charsets.isEmpty())	
+			if(!charsets.isEmpty())
 				charset = charsets.pop();
 			else
 				charset = CodepageHelper.CHARSET_IBM500;
 			«ENDIF»
-			«IF sf.name == "IPD"»
-				if(missingImageData > 0) {
-					int imlength = Math.min(stop + 1 - (pos + 9), missingImageData);
-					obj.setImageData(Arrays.copyOfRange(buffer, pos + 9, pos + 9 + imlength));
-					missingImageData -= imlength;
-					sf = obj;
-					break;
-				}
-			«ELSEIF sf.name == "FNC"»
+			«IF sf.name == "FNC"»
 				this.fnc = (FNC) obj;
 			«ELSEIF sf.name == "EFN"»
 				this.fnc = null;
@@ -64,8 +55,8 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			sf = obj;
 			break;
 		}«ENDFOREACH»
-		default: 
-				sf = BaseFactory.eINSTANCE.createUNKNSF(); 
+		default:
+				sf = BaseFactory.eINSTANCE.createUNKNSF();
 				byte[] data = new byte[stop - pos + 1 + 2];
 				System.arraycopy(buffer, pos, data, 0, stop - pos + 1 + 2);
 				((UNKNSF)sf).setRawData(data);
@@ -74,7 +65,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		sf.setId(id);
 		return sf;
 	}
-	
+
 	void triplet(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		while(pos + 1 <= bufstop) {
@@ -83,7 +74,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			int id = buffer[pos + 1] & 0xff;
 			int stop = pos + length - 1;
 			if(stop > bufstop) break;
-			
+
 			switch(id) {
 			«FOREACH groupMembers AS t»
 			«IF t.type.toString() == "Triplet"»
@@ -102,7 +93,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 						Integer lid = Data.toUnsigned(buffer, pos + 4, pos + 4);
 						obj.setFQName(lid.toString());
 					}
-					
+
 				}
 				«ENDIF»
 				break;
@@ -117,9 +108,9 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		int lengthSize, lengthOffset, idSize, lengthAddition;
-				
+
 		while(pos + 1 <= bufstop) {
-		
+
 			if(0xfe == Integer.valueOf(Data.toHex(buffer, pos, 1), 16)) {
 				lengthSize = 2;
 				lengthOffset = 2;
@@ -131,15 +122,15 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				idSize = 1;
 				lengthAddition = 2;
 			}
-	
+
 			int id = Integer.valueOf(Data.toHex(buffer, pos, idSize), 16);
-		
+
 			int length = Data.toUnsigned(buffer, pos + lengthOffset, pos + lengthOffset - 1 + lengthSize);
 			length += lengthAddition;
-			
+
 			int stop = pos + length - 1;
 			if(stop > bufstop) break;
-			
+
 			switch(id) {
 			«FOREACH groupMembers AS t»
 			«IF t.type.toString() == "SDF"»
@@ -147,10 +138,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
 				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
-				«IF t.name == "ImageData"»
-						int dataLength = stop + 1 - (pos + 4);
-						missingImageData = length - lengthAddition - dataLength;
-				«ENDIF»
 				triplets.add(obj);
 				break;
 			}
@@ -160,7 +147,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			pos+=length;
 		}
 	}
-	
+
 	Triplet cs(byte[] buffer, int pos, int stop, int id) {
 		switch(id) {
 		«FOREACH groupMembers AS t»
@@ -176,10 +163,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 		return null;
 	}
-	
+
 	«FOREACH structuredFields AS sf»«EXPAND fixedGroup FOR sf»«ENDFOREACH»
 	«FOREACH groupMembers AS t»«EXPAND fixedGroup FOR t»«ENDFOREACH»
-	
+
 	«FOREACH groupMembers AS t»
 	«IF t.type.toString() == "Fixed"»
 	«t.name» _«t.name»(byte[] buffer, int pos, int stop) {
@@ -188,7 +175,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 		return obj;
 	}
-	
+
 	int _«t.name»(«t.name» obj, byte[] buffer, int start) {
 		int length = 0;
 		«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
@@ -201,7 +188,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	int binary_triplets(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
-		
+
 		for(Triplet m : triplets) {
 			int length = 0;
 			switch(m.eClass().getClassifierID()) {
@@ -226,13 +213,13 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			}
 			start += length;
 		}
-		
+
 		return start - bstart;
 	}
 
 	int binary_sdf(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
-		
+
 		for(Triplet m : triplets) {
 			int length = 0;
 			switch(m.eClass().getClassifierID()) {
@@ -250,12 +237,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					byte[] bLength = Data.toUnsignedShort(length - 4);
 					buffer[start] = bId[0];
 					buffer[start + 1] = bId[1];
-					buffer[start + 2] = bLength[0];										
-					buffer[start + 3] = bLength[1];										
+					buffer[start + 2] = bLength[0];
+					buffer[start + 3] = bLength[1];
 				} else {
 					if(length == 0) length = 2;
 					buffer[start] = Data.toUnsignedByte(«t.id»)[0];
-					buffer[start + 1] = Data.toUnsignedByte(length - 2)[0];					
+					buffer[start + 1] = Data.toUnsignedByte(length - 2)[0];
 				}
 				break;
 			}
@@ -264,28 +251,28 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			}
 			start += length;
 		}
-		
+
 		return start - bstart;
 	}
 
 	int binary_cs(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
-		
+
 		boolean nextCSisUnChained = true;
 		Triplet lastTriplet = triplets.size() == 0 ? null : triplets.get(triplets.size() - 1);
-		
+
 		for(Triplet m : triplets) {
 			int length = 0;
-			
+
 			if(nextCSisUnChained) {
 				buffer[start] = (byte) 0x2b;
 				buffer[start + 1] = (byte) 0xd3;
 				start += 2;
 				nextCSisUnChained = false;
-			}		
-			
+			}
+
 			start++; // length is not considered to be part of cs -> model error
-			
+
 			switch(m.eClass().getClassifierID()) {
 			«FOREACH groupMembers AS t»
 			«IF t.type.toString() == "CS"»
@@ -310,10 +297,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			}
 			start += length;
 		}
-		
+
 		return start - bstart;
 	}
-	
+
 	public int binary(byte[] buffer, int start, SF sf) {
 		int length = 9;
 		if(sf instanceof UNKNSF) {
@@ -326,12 +313,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		case AfplibPackage.«sf.name»: {
 			sf.setId(«sf.id»);
 			«sf.name» obj = («sf.name») sf;
-			«IF isBegin(sf.id)»		
+			«IF isBegin(sf.id)»
 			charsets.push(charset);
 			charset = CodepageHelper.CHARSET_IBM500;
 			«ENDIF»
 			«IF isEnd(sf.id)»
-			if(!charsets.isEmpty())	
+			if(!charsets.isEmpty())
 				charset = charsets.pop();
 			else
 				charset = CodepageHelper.CHARSET_IBM500;
@@ -339,16 +326,6 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«FOREACH sf.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
 			«FOREACH sf.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
 			«REM»«IF optional»«ENDREM»
-			«IF sf.name == "IPD"»
-			if(obj.getSdfs() == null || obj.getSdfs().size() == 0) {
-				if(obj.getRawData() != null && obj.getRawData().length > 0) {
-					byte[] b = java.util.Arrays.copyOfRange(obj.getRawData(), 9, obj.getRawData().length - 1);
-					Saver.save(buffer, start + 9, start + 9 + b.length - 1,
-							b);
-					length = obj.getRawData().length;
-				}
-			}
-			«ENDIF»
 			«REM»«ENDIF»«ENDREM»
 
 			return length;
@@ -357,7 +334,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			default: throw new IllegalArgumentException("unknown sf: "+sf);
 		}
 	}
-	
+
 }
 «ENDFILE»
 «ENDDEFINE»
@@ -391,15 +368,15 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«ENDIF»
 			«REM»
 			int size = GroupMemberFactory.getInstance().save(
-			buffer, start + «start», «((Group)e).elementLength», 
-			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
+			buffer, start + «start», «((Group)e).elementLength»,
+			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize»,
 			«((Group)e).elementIdOffset», obj.«getter()»(), "«((Group)e).type»", environment);
 			if(«start» + size > length) length = «start» + size;«ENDREM»
 			}«REM»
 		«ELSE»
 			GroupMemberFactory.getInstance().save(
-			buffer, start + «start», «((Group)e).elementLength», 
-			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize», 
+			buffer, start + «start», «((Group)e).elementLength»,
+			«((Group)e).lengthSize», «((Group)e).elementLengthOffset», «((Group)e).idSize»,
 			«((Group)e).elementIdOffset», obj.«getter()»(), "«((Group)e).type»", environment);
 			if(«stop» + 1 > length) length = «stop» + 1;
 		«ENDIF»«ENDREM»
@@ -408,7 +385,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		«ELSE»
 			if(«stop» + 1 > length) length = «stop» + 1;
 		«ENDIF»
-	«ENDIF»			
+	«ENDIF»
 	«IF optional»
 		}
 	«ENDIF»
@@ -466,7 +443,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«ENDIF»
 			if(«stop» + 1 > length) length = «stop» + 1;
 		«ENDIF»
-	«ENDIF»			
+	«ENDIF»
 		}«REM»moved out of optional if, cause see above «ENDREM»
 «ENDDEFINE»
 
@@ -498,12 +475,12 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	int binary_«name»RG(byte[] buffer, int bstart, List<«name»RG> triplets) {
 		int start = bstart;
-		
+
 		for(«name»RG obj : triplets) {
 			int length = _«name»RG(obj, buffer, start);
 			start += length;
 		}
-		
+
 		return start - bstart;
 	}
 «ENDIF»
@@ -512,16 +489,16 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 «DEFINE setter FOR TYPE»
     {
-	int sstop = pos+«stop»;		
+	int sstop = pos+«stop»;
 	«IF optional == true»
-		«IF variableLength == true»		
+		«IF variableLength == true»
 			if(stop >= pos+«start») {
 				sstop = stop;
 		«ELSE»
 			if(stop >= pos+«stop») {
 		«ENDIF»
 	«ELSE»
-		«IF variableLength == true»		
+		«IF variableLength == true»
 				sstop = stop;
 				if(sstop >= pos + «start»)
 		«ELSE»
@@ -562,13 +539,13 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	«REM»
 	«IF type.toString() == "Fixed"»
 //	obj.«getter()»().addAll(GroupMemberFactory.getInstance().create(
-//	buffer, pos+«start», sstop + 1, «elementLength», 
-//	«lengthSize», «isLengthFixed», «elementLengthOffset», «idSize», 
+//	buffer, pos+«start», sstop + 1, «elementLength»,
+//	«lengthSize», «isLengthFixed», «elementLengthOffset», «idSize»,
 //	«elementIdOffset», «((TYPEContainer)eContainer).name»RG.class, obj, environment));
 	«ELSE»
 //	obj.«getter()»().addAll(Arrays.asList(GroupMemberFactory.getInstance().create(
-//	buffer, pos+«start», sstop + 1, «elementLength», 
-//	«lengthSize», «isLengthFixed», «elementLengthOffset», «idSize», 
+//	buffer, pos+«start», sstop + 1, «elementLength»,
+//	«lengthSize», «isLengthFixed», «elementLengthOffset», «idSize»,
 //	«elementIdOffset», "«type»", obj, environment)));
 	«ENDIF»
 «ENDREM»}«ENDDEFINE»

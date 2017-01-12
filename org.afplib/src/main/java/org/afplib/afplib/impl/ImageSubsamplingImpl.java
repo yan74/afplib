@@ -27,10 +27,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ImageSubsamplingImpl#getSdfs <em>Sdfs</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -61,7 +61,7 @@ public class ImageSubsamplingImpl extends TripletImpl implements ImageSubsamplin
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getImageSubsampling();
+		return AfplibPackage.Literals.IMAGE_SUBSAMPLING;
 	}
 
 	/**

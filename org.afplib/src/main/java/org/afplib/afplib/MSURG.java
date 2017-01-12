@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MSURG#getSUPname <em>SU Pname</em>}</li>
  *   <li>{@link org.afplib.afplib.MSURG#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.MSURG#getSUPid <em>SU Pid</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMSURG()
  * @model

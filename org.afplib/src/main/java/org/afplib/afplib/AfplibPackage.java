@@ -7910,40 +7910,13 @@ public interface AfplibPackage extends EPackage {
 	int FNN__CHARSET = BasePackage.SF__CHARSET;
 
 	/**
-	 * The feature id for the '<em><b>IBM Format</b></em>' attribute.
+	 * The feature id for the '<em><b>FNN Data</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FNN__IBM_FORMAT = BasePackage.SF_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Technology Format</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FNN__TECHNOLOGY_FORMAT = BasePackage.SF_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Rg</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FNN__RG = BasePackage.SF_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Rg2</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FNN__RG2 = BasePackage.SF_FEATURE_COUNT + 3;
+	int FNN__FNN_DATA = BasePackage.SF_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>FNN</em>' class.
@@ -7952,7 +7925,7 @@ public interface AfplibPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FNN_FEATURE_COUNT = BasePackage.SF_FEATURE_COUNT + 4;
+	int FNN_FEATURE_COUNT = BasePackage.SF_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.impl.FNMImpl <em>FNM</em>}' class.
@@ -9471,13 +9444,13 @@ public interface AfplibPackage extends EPackage {
 	int IPD__CHARSET = BasePackage.SF__CHARSET;
 
 	/**
-	 * The feature id for the '<em><b>Sdfs</b></em>' containment reference list.
+	 * The feature id for the '<em><b>IOC Adat</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IPD__SDFS = BasePackage.SF_FEATURE_COUNT + 0;
+	int IPD__IOC_ADAT = BasePackage.SF_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Image Data</b></em>' attribute.
@@ -34455,26 +34428,6 @@ public interface AfplibPackage extends EPackage {
 	int FND_FT_DS_FLAGS = 375;
 
 	/**
-	 * The meta object id for the '{@link org.afplib.afplib.FNNIBMFormat <em>FNNIBM Format</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.afplib.afplib.FNNIBMFormat
-	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNNIBMFormat()
-	 * @generated
-	 */
-	int FNNIBM_FORMAT = 376;
-
-	/**
-	 * The meta object id for the '{@link org.afplib.afplib.FNNTechnologyFormat <em>FNN Technology Format</em>}' enum.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.afplib.afplib.FNNTechnologyFormat
-	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNNTechnologyFormat()
-	 * @generated
-	 */
-	int FNN_TECHNOLOGY_FORMAT = 377;
-
-	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IDDUNITBASE <em>IDDUNITBASE</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34482,7 +34435,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDDUNITBASE()
 	 * @generated
 	 */
-	int IDDUNITBASE = 378;
+	int IDDUNITBASE = 376;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBObjType <em>IOB Obj Type</em>}' enum.
@@ -34492,7 +34445,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBObjType()
 	 * @generated
 	 */
-	int IOB_OBJ_TYPE = 379;
+	int IOB_OBJ_TYPE = 377;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBXoaOrent <em>IOB Xoa Orent</em>}' enum.
@@ -34502,7 +34455,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBXoaOrent()
 	 * @generated
 	 */
-	int IOB_XOA_ORENT = 380;
+	int IOB_XOA_ORENT = 378;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBYoaOrent <em>IOB Yoa Orent</em>}' enum.
@@ -34512,7 +34465,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBYoaOrent()
 	 * @generated
 	 */
-	int IOB_YOA_ORENT = 381;
+	int IOB_YOA_ORENT = 379;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IOBRefCSys <em>IOB Ref CSys</em>}' enum.
@@ -34522,7 +34475,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBRefCSys()
 	 * @generated
 	 */
-	int IOB_REF_CSYS = 382;
+	int IOB_REF_CSYS = 380;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IPGIPgFlgs <em>IPGI Pg Flgs</em>}' enum.
@@ -34532,7 +34485,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPGIPgFlgs()
 	 * @generated
 	 */
-	int IPGI_PG_FLGS = 383;
+	int IPGI_PG_FLGS = 381;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IPOOvlyOrent <em>IPO Ovly Orent</em>}' enum.
@@ -34542,7 +34495,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPOOvlyOrent()
 	 * @generated
 	 */
-	int IPO_OVLY_ORENT = 384;
+	int IPO_OVLY_ORENT = 382;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MDDXmBase <em>MDD Xm Base</em>}' enum.
@@ -34552,7 +34505,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDXmBase()
 	 * @generated
 	 */
-	int MDD_XM_BASE = 385;
+	int MDD_XM_BASE = 383;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MDDYmBase <em>MDD Ym Base</em>}' enum.
@@ -34562,7 +34515,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDYmBase()
 	 * @generated
 	 */
-	int MDD_YM_BASE = 386;
+	int MDD_YM_BASE = 384;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MDDMDDFlgs <em>MDDMDD Flgs</em>}' enum.
@@ -34572,7 +34525,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDMDDFlgs()
 	 * @generated
 	 */
-	int MDDMDD_FLGS = 387;
+	int MDDMDD_FLGS = 385;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MFCMFCFlgs <em>MFCMFC Flgs</em>}' enum.
@@ -34582,7 +34535,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMFCFlgs()
 	 * @generated
 	 */
-	int MFCMFC_FLGS = 388;
+	int MFCMFC_FLGS = 386;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MFCMedColl <em>MFC Med Coll</em>}' enum.
@@ -34592,7 +34545,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMedColl()
 	 * @generated
 	 */
-	int MFC_MED_COLL = 389;
+	int MFC_MED_COLL = 387;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MFCMFCScpe <em>MFCMFC Scpe</em>}' enum.
@@ -34602,7 +34555,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMFCScpe()
 	 * @generated
 	 */
-	int MFCMFC_SCPE = 390;
+	int MFCMFC_SCPE = 388;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MMCPARAMETER1 <em>MMCPARAMETER1</em>}' enum.
@@ -34612,7 +34565,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCPARAMETER1()
 	 * @generated
 	 */
-	int MMCPARAMETER1 = 391;
+	int MMCPARAMETER1 = 389;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MMORGLength <em>MMORG Length</em>}' enum.
@@ -34622,7 +34575,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMORGLength()
 	 * @generated
 	 */
-	int MMORG_LENGTH = 392;
+	int MMORG_LENGTH = 390;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MPSRGLength <em>MPSRG Length</em>}' enum.
@@ -34632,7 +34585,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPSRGLength()
 	 * @generated
 	 */
-	int MPSRG_LENGTH = 393;
+	int MPSRG_LENGTH = 391;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPRGLength <em>OBPRG Length</em>}' enum.
@@ -34642,7 +34595,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPRGLength()
 	 * @generated
 	 */
-	int OBPRG_LENGTH = 394;
+	int OBPRG_LENGTH = 392;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPXoaOrent <em>OBP Xoa Orent</em>}' enum.
@@ -34652,7 +34605,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPXoaOrent()
 	 * @generated
 	 */
-	int OBP_XOA_ORENT = 395;
+	int OBP_XOA_ORENT = 393;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPYoaOrent <em>OBP Yoa Orent</em>}' enum.
@@ -34662,7 +34615,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPYoaOrent()
 	 * @generated
 	 */
-	int OBP_YOA_ORENT = 396;
+	int OBP_YOA_ORENT = 394;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPXocaOrent <em>OBP Xoca Orent</em>}' enum.
@@ -34672,7 +34625,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPXocaOrent()
 	 * @generated
 	 */
-	int OBP_XOCA_ORENT = 397;
+	int OBP_XOCA_ORENT = 395;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPYocaOrent <em>OBP Yoca Orent</em>}' enum.
@@ -34682,7 +34635,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPYocaOrent()
 	 * @generated
 	 */
-	int OBP_YOCA_ORENT = 398;
+	int OBP_YOCA_ORENT = 396;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OBPRefCSys <em>OBP Ref CSys</em>}' enum.
@@ -34692,7 +34645,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPRefCSys()
 	 * @generated
 	 */
-	int OBP_REF_CSYS = 399;
+	int OBP_REF_CSYS = 397;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PFCPFCFlgs <em>PFCPFC Flgs</em>}' enum.
@@ -34702,7 +34655,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPFCPFCFlgs()
 	 * @generated
 	 */
-	int PFCPFC_FLGS = 400;
+	int PFCPFC_FLGS = 398;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGDXpgBase <em>PGD Xpg Base</em>}' enum.
@@ -34712,7 +34665,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGDXpgBase()
 	 * @generated
 	 */
-	int PGD_XPG_BASE = 401;
+	int PGD_XPG_BASE = 399;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGDYpgBase <em>PGD Ypg Base</em>}' enum.
@@ -34722,7 +34675,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGDYpgBase()
 	 * @generated
 	 */
-	int PGD_YPG_BASE = 402;
+	int PGD_YPG_BASE = 400;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPConstant <em>PGP Constant</em>}' enum.
@@ -34732,7 +34685,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPConstant()
 	 * @generated
 	 */
-	int PGP_CONSTANT = 403;
+	int PGP_CONSTANT = 401;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTDXPBASE <em>PTDXPBASE</em>}' enum.
@@ -34742,7 +34695,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTDXPBASE()
 	 * @generated
 	 */
-	int PTDXPBASE = 404;
+	int PTDXPBASE = 402;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTDYPBASE <em>PTDYPBASE</em>}' enum.
@@ -34752,7 +34705,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTDYPBASE()
 	 * @generated
 	 */
-	int PTDYPBASE = 405;
+	int PTDYPBASE = 403;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTD1XPBASE <em>PTD1XPBASE</em>}' enum.
@@ -34762,7 +34715,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1XPBASE()
 	 * @generated
 	 */
-	int PTD1XPBASE = 406;
+	int PTD1XPBASE = 404;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PTD1YPBASE <em>PTD1YPBASE</em>}' enum.
@@ -34772,7 +34725,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1YPBASE()
 	 * @generated
 	 */
-	int PTD1YPBASE = 407;
+	int PTD1YPBASE = 405;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.OVSBYPSIDEN <em>OVSBYPSIDEN</em>}' enum.
@@ -34782,7 +34735,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOVSBYPSIDEN()
 	 * @generated
 	 */
-	int OVSBYPSIDEN = 408;
+	int OVSBYPSIDEN = 406;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.SECCOLSPCE <em>SECCOLSPCE</em>}' enum.
@@ -34792,7 +34745,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSECCOLSPCE()
 	 * @generated
 	 */
-	int SECCOLSPCE = 409;
+	int SECCOLSPCE = 407;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.SIADIRCTION <em>SIADIRCTION</em>}' enum.
@@ -34802,7 +34755,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSIADIRCTION()
 	 * @generated
 	 */
-	int SIADIRCTION = 410;
+	int SIADIRCTION = 408;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STCFRGCOLOR <em>STCFRGCOLOR</em>}' enum.
@@ -34812,7 +34765,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTCFRGCOLOR()
 	 * @generated
 	 */
-	int STCFRGCOLOR = 411;
+	int STCFRGCOLOR = 409;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STCPRECSION <em>STCPRECSION</em>}' enum.
@@ -34822,7 +34775,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTCPRECSION()
 	 * @generated
 	 */
-	int STCPRECSION = 412;
+	int STCPRECSION = 410;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STOIORNTION <em>STOIORNTION</em>}' enum.
@@ -34832,7 +34785,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTOIORNTION()
 	 * @generated
 	 */
-	int STOIORNTION = 413;
+	int STOIORNTION = 411;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.STOBORNTION <em>STOBORNTION</em>}' enum.
@@ -34842,7 +34795,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTOBORNTION()
 	 * @generated
 	 */
-	int STOBORNTION = 414;
+	int STOBORNTION = 412;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TBMDIRCTION <em>TBMDIRCTION</em>}' enum.
@@ -34852,7 +34805,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBMDIRCTION()
 	 * @generated
 	 */
-	int TBMDIRCTION = 415;
+	int TBMDIRCTION = 413;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TBMPRECSION <em>TBMPRECSION</em>}' enum.
@@ -34862,7 +34815,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBMPRECSION()
 	 * @generated
 	 */
-	int TBMPRECSION = 416;
+	int TBMPRECSION = 414;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.USCBYPSIDEN <em>USCBYPSIDEN</em>}' enum.
@@ -34872,7 +34825,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getUSCBYPSIDEN()
 	 * @generated
 	 */
-	int USCBYPSIDEN = 417;
+	int USCBYPSIDEN = 415;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.CRCResourceManagementFmtQual <em>CRC Resource Management Fmt Qual</em>}' enum.
@@ -34882,7 +34835,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCRCResourceManagementFmtQual()
 	 * @generated
 	 */
-	int CRC_RESOURCE_MANAGEMENT_FMT_QUAL = 418;
+	int CRC_RESOURCE_MANAGEMENT_FMT_QUAL = 416;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorSpecificationColSpce <em>Color Specification Col Spce</em>}' enum.
@@ -34892,7 +34845,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorSpecificationColSpce()
 	 * @generated
 	 */
-	int COLOR_SPECIFICATION_COL_SPCE = 419;
+	int COLOR_SPECIFICATION_COL_SPCE = 417;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorFontTech <em>Data Object Font Descriptor Font Tech</em>}' enum.
@@ -34902,7 +34855,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorFontTech()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_FONT_TECH = 420;
+	int DATA_OBJECT_FONT_DESCRIPTOR_FONT_TECH = 418;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorCharRot <em>Data Object Font Descriptor Char Rot</em>}' enum.
@@ -34912,7 +34865,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorCharRot()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_CHAR_ROT = 421;
+	int DATA_OBJECT_FONT_DESCRIPTOR_CHAR_ROT = 419;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorEncEnv <em>Data Object Font Descriptor Enc Env</em>}' enum.
@@ -34922,7 +34875,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorEncEnv()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ENV = 422;
+	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ENV = 420;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DataObjectFontDescriptorEncID <em>Data Object Font Descriptor Enc ID</em>}' enum.
@@ -34932,7 +34885,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorEncID()
 	 * @generated
 	 */
-	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ID = 423;
+	int DATA_OBJECT_FONT_DESCRIPTOR_ENC_ID = 421;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.EncodingSchemeIDESidCP <em>Encoding Scheme IDE Sid CP</em>}' enum.
@@ -34942,7 +34895,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeIDESidCP()
 	 * @generated
 	 */
-	int ENCODING_SCHEME_IDE_SID_CP = 424;
+	int ENCODING_SCHEME_IDE_SID_CP = 422;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.EncodingSchemeIDESidUD <em>Encoding Scheme IDE Sid UD</em>}' enum.
@@ -34952,7 +34905,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeIDESidUD()
 	 * @generated
 	 */
-	int ENCODING_SCHEME_IDE_SID_UD = 425;
+	int ENCODING_SCHEME_IDE_SID_UD = 423;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontResolutionMetTech <em>Font Resolution Met Tech</em>}' enum.
@@ -34962,7 +34915,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionMetTech()
 	 * @generated
 	 */
-	int FONT_RESOLUTION_MET_TECH = 426;
+	int FONT_RESOLUTION_MET_TECH = 424;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontResolutionRPuBase <em>Font Resolution RPu Base</em>}' enum.
@@ -34972,7 +34925,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionRPuBase()
 	 * @generated
 	 */
-	int FONT_RESOLUTION_RPU_BASE = 427;
+	int FONT_RESOLUTION_RPU_BASE = 425;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontResolutionRPUnits <em>Font Resolution RP Units</em>}' enum.
@@ -34982,7 +34935,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionRPUnits()
 	 * @generated
 	 */
-	int FONT_RESOLUTION_RP_UNITS = 428;
+	int FONT_RESOLUTION_RP_UNITS = 426;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FullyQualifiedNameFQNType <em>Fully Qualified Name FQN Type</em>}' enum.
@@ -34992,7 +34945,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedNameFQNType()
 	 * @generated
 	 */
-	int FULLY_QUALIFIED_NAME_FQN_TYPE = 429;
+	int FULLY_QUALIFIED_NAME_FQN_TYPE = 427;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FullyQualifiedNameFQNFormat <em>Fully Qualified Name FQN Format</em>}' enum.
@@ -35002,7 +34955,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedNameFQNFormat()
 	 * @generated
 	 */
-	int FULLY_QUALIFIED_NAME_FQN_FORMAT = 430;
+	int FULLY_QUALIFIED_NAME_FQN_FORMAT = 428;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.LocalDateAndTimeStampStampType <em>Local Date And Time Stamp Stamp Type</em>}' enum.
@@ -35012,7 +34965,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLocalDateAndTimeStampStampType()
 	 * @generated
 	 */
-	int LOCAL_DATE_AND_TIME_STAMP_STAMP_TYPE = 431;
+	int LOCAL_DATE_AND_TIME_STAMP_STAMP_TYPE = 429;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MappingOptionMapValue <em>Mapping Option Map Value</em>}' enum.
@@ -35022,7 +34975,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMappingOptionMapValue()
 	 * @generated
 	 */
-	int MAPPING_OPTION_MAP_VALUE = 432;
+	int MAPPING_OPTION_MAP_VALUE = 430;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediaEjectControlReserved <em>Media Eject Control Reserved</em>}' enum.
@@ -35032,7 +34985,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControlReserved()
 	 * @generated
 	 */
-	int MEDIA_EJECT_CONTROL_RESERVED = 433;
+	int MEDIA_EJECT_CONTROL_RESERVED = 431;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediaEjectControlEjCtrl <em>Media Eject Control Ej Ctrl</em>}' enum.
@@ -35042,7 +34995,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControlEjCtrl()
 	 * @generated
 	 */
-	int MEDIA_EJECT_CONTROL_EJ_CTRL = 434;
+	int MEDIA_EJECT_CONTROL_EJ_CTRL = 432;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediumOrientationMedOrient <em>Medium Orientation Med Orient</em>}' enum.
@@ -35052,7 +35005,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediumOrientationMedOrient()
 	 * @generated
 	 */
-	int MEDIUM_ORIENTATION_MED_ORIENT = 435;
+	int MEDIUM_ORIENTATION_MED_ORIENT = 433;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MeasurementUnitsXoaBase <em>Measurement Units Xoa Base</em>}' enum.
@@ -35062,7 +35015,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnitsXoaBase()
 	 * @generated
 	 */
-	int MEASUREMENT_UNITS_XOA_BASE = 436;
+	int MEASUREMENT_UNITS_XOA_BASE = 434;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MeasurementUnitsYoaBase <em>Measurement Units Yoa Base</em>}' enum.
@@ -35072,7 +35025,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnitsYoaBase()
 	 * @generated
 	 */
-	int MEASUREMENT_UNITS_YOA_BASE = 437;
+	int MEASUREMENT_UNITS_YOA_BASE = 435;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MODCAInterchangeSetIStype <em>MODCA Interchange Set IStype</em>}' enum.
@@ -35082,7 +35035,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSetIStype()
 	 * @generated
 	 */
-	int MODCA_INTERCHANGE_SET_ISTYPE = 438;
+	int MODCA_INTERCHANGE_SET_ISTYPE = 436;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MODCAInterchangeSetISid <em>MODCA Interchange Set ISid</em>}' enum.
@@ -35092,7 +35045,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSetISid()
 	 * @generated
 	 */
-	int MODCA_INTERCHANGE_SET_ISID = 439;
+	int MODCA_INTERCHANGE_SET_ISID = 437;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectAreaSizeSizeType <em>Object Area Size Size Type</em>}' enum.
@@ -35102,7 +35055,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectAreaSizeSizeType()
 	 * @generated
 	 */
-	int OBJECT_AREA_SIZE_SIZE_TYPE = 440;
+	int OBJECT_AREA_SIZE_SIZE_TYPE = 438;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectClassificationObjClass <em>Object Classification Obj Class</em>}' enum.
@@ -35112,7 +35065,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassificationObjClass()
 	 * @generated
 	 */
-	int OBJECT_CLASSIFICATION_OBJ_CLASS = 441;
+	int OBJECT_CLASSIFICATION_OBJ_CLASS = 439;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectClassificationStrucFlgs <em>Object Classification Struc Flgs</em>}' enum.
@@ -35122,7 +35075,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassificationStrucFlgs()
 	 * @generated
 	 */
-	int OBJECT_CLASSIFICATION_STRUC_FLGS = 442;
+	int OBJECT_CLASSIFICATION_STRUC_FLGS = 440;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationObjType <em>Object Function Set Specification Obj Type</em>}' enum.
@@ -35132,7 +35085,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationObjType()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_OBJ_TYPE = 443;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_OBJ_TYPE = 441;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationArchVrsn <em>Object Function Set Specification Arch Vrsn</em>}' enum.
@@ -35142,7 +35095,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationArchVrsn()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_ARCH_VRSN = 444;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_ARCH_VRSN = 442;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationDCAFnSet <em>Object Function Set Specification DCA Fn Set</em>}' enum.
@@ -35152,7 +35105,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationDCAFnSet()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_DCA_FN_SET = 445;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_DCA_FN_SET = 443;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationOCAFnSet <em>Object Function Set Specification OCA Fn Set</em>}' enum.
@@ -35162,7 +35115,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationOCAFnSet()
 	 * @generated
 	 */
-	int OBJECT_FUNCTION_SET_SPECIFICATION_OCA_FN_SET = 446;
+	int OBJECT_FUNCTION_SET_SPECIFICATION_OCA_FN_SET = 444;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectOffsetObjTpe <em>Object Offset Obj Tpe</em>}' enum.
@@ -35172,7 +35125,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOffsetObjTpe()
 	 * @generated
 	 */
-	int OBJECT_OFFSET_OBJ_TPE = 447;
+	int OBJECT_OFFSET_OBJ_TPE = 445;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceObjectTypeObjType <em>Resource Object Type Obj Type</em>}' enum.
@@ -35182,7 +35135,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectTypeObjType()
 	 * @generated
 	 */
-	int RESOURCE_OBJECT_TYPE_OBJ_TYPE = 448;
+	int RESOURCE_OBJECT_TYPE_OBJ_TYPE = 446;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PresentationControlPRSFlg <em>Presentation Control PRS Flg</em>}' enum.
@@ -35192,7 +35145,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPresentationControlPRSFlg()
 	 * @generated
 	 */
-	int PRESENTATION_CONTROL_PRS_FLG = 449;
+	int PRESENTATION_CONTROL_PRS_FLG = 447;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceLocalIdentifierResType <em>Resource Local Identifier Res Type</em>}' enum.
@@ -35202,7 +35155,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceLocalIdentifierResType()
 	 * @generated
 	 */
-	int RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 450;
+	int RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 448;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextOrientationIAxis <em>Text Orientation IAxis</em>}' enum.
@@ -35212,7 +35165,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientationIAxis()
 	 * @generated
 	 */
-	int TEXT_ORIENTATION_IAXIS = 451;
+	int TEXT_ORIENTATION_IAXIS = 449;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextOrientationBAxis <em>Text Orientation BAxis</em>}' enum.
@@ -35222,7 +35175,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientationBAxis()
 	 * @generated
 	 */
-	int TEXT_ORIENTATION_BAXIS = 452;
+	int TEXT_ORIENTATION_BAXIS = 450;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtWtClass <em>Font Descriptor Specification Ft Wt Class</em>}' enum.
@@ -35232,7 +35185,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtWtClass()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_WT_CLASS = 453;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_WT_CLASS = 451;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtWdClass <em>Font Descriptor Specification Ft Wd Class</em>}' enum.
@@ -35242,7 +35195,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtWdClass()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_WD_CLASS = 454;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_WD_CLASS = 452;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtDsFlags <em>Font Descriptor Specification Ft Ds Flags</em>}' enum.
@@ -35252,7 +35205,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtDsFlags()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_DS_FLAGS = 455;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_DS_FLAGS = 453;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtUsFlags <em>Font Descriptor Specification Ft Us Flags</em>}' enum.
@@ -35262,7 +35215,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtUsFlags()
 	 * @generated
 	 */
-	int FONT_DESCRIPTOR_SPECIFICATION_FT_US_FLAGS = 456;
+	int FONT_DESCRIPTOR_SPECIFICATION_FT_US_FLAGS = 454;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageEncodingCOMPRID <em>Image Encoding COMPRID</em>}' enum.
@@ -35272,7 +35225,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingCOMPRID()
 	 * @generated
 	 */
-	int IMAGE_ENCODING_COMPRID = 457;
+	int IMAGE_ENCODING_COMPRID = 455;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageEncodingRECID <em>Image Encoding RECID</em>}' enum.
@@ -35282,7 +35235,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingRECID()
 	 * @generated
 	 */
-	int IMAGE_ENCODING_RECID = 458;
+	int IMAGE_ENCODING_RECID = 456;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageEncodingBITORDR <em>Image Encoding BITORDR</em>}' enum.
@@ -35292,7 +35245,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingBITORDR()
 	 * @generated
 	 */
-	int IMAGE_ENCODING_BITORDR = 459;
+	int IMAGE_ENCODING_BITORDR = 457;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.IDEStructureFLAGS <em>IDE Structure FLAGS</em>}' enum.
@@ -35302,7 +35255,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDEStructureFLAGS()
 	 * @generated
 	 */
-	int IDE_STRUCTURE_FLAGS = 460;
+	int IDE_STRUCTURE_FLAGS = 458;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExternalAlgorithmALGTYPE <em>External Algorithm ALGTYPE</em>}' enum.
@@ -35312,7 +35265,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmALGTYPE()
 	 * @generated
 	 */
-	int EXTERNAL_ALGORITHM_ALGTYPE = 461;
+	int EXTERNAL_ALGORITHM_ALGTYPE = 459;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TileSetColorCSPACE <em>Tile Set Color CSPACE</em>}' enum.
@@ -35322,7 +35275,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileSetColorCSPACE()
 	 * @generated
 	 */
-	int TILE_SET_COLOR_CSPACE = 462;
+	int TILE_SET_COLOR_CSPACE = 460;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PPORGObjType <em>PPORG Obj Type</em>}' enum.
@@ -35332,7 +35285,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORGObjType()
 	 * @generated
 	 */
-	int PPORG_OBJ_TYPE = 463;
+	int PPORG_OBJ_TYPE = 461;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PPORGProcFlgs <em>PPORG Proc Flgs</em>}' enum.
@@ -35342,7 +35295,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORGProcFlgs()
 	 * @generated
 	 */
-	int PPORG_PROC_FLGS = 464;
+	int PPORG_PROC_FLGS = 462;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGRGLength <em>PGPRGRG Length</em>}' enum.
@@ -35352,7 +35305,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGRGLength()
 	 * @generated
 	 */
-	int PGPRGRG_LENGTH = 465;
+	int PGPRGRG_LENGTH = 463;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGPGorient <em>PGPRGP Gorient</em>}' enum.
@@ -35362,7 +35315,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGPGorient()
 	 * @generated
 	 */
-	int PGPRGP_GORIENT = 466;
+	int PGPRGP_GORIENT = 464;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGSHside <em>PGPRGS Hside</em>}' enum.
@@ -35372,7 +35325,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGSHside()
 	 * @generated
 	 */
-	int PGPRGS_HSIDE = 467;
+	int PGPRGS_HSIDE = 465;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PGPRGPgFlgs <em>PGPRG Pg Flgs</em>}' enum.
@@ -35382,7 +35335,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGPgFlgs()
 	 * @generated
 	 */
-	int PGPRG_PG_FLGS = 468;
+	int PGPRG_PG_FLGS = 466;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MMCRGkey <em>MMCR Gkey</em>}' enum.
@@ -35392,7 +35345,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCRGkey()
 	 * @generated
 	 */
-	int MMCR_GKEY = 469;
+	int MMCR_GKEY = 467;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExternalAlgorithmRGPADBDRY <em>External Algorithm RGPADBDRY</em>}' enum.
@@ -35402,7 +35355,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRGPADBDRY()
 	 * @generated
 	 */
-	int EXTERNAL_ALGORITHM_RGPADBDRY = 470;
+	int EXTERNAL_ALGORITHM_RGPADBDRY = 468;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExternalAlgorithmRGPADALMT <em>External Algorithm RGPADALMT</em>}' enum.
@@ -35412,7 +35365,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRGPADALMT()
 	 * @generated
 	 */
-	int EXTERNAL_ALGORITHM_RGPADALMT = 471;
+	int EXTERNAL_ALGORITHM_RGPADALMT = 469;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.BeginSegmentCommandLENGTH <em>Begin Segment Command LENGTH</em>}' enum.
@@ -35422,7 +35375,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommandLENGTH()
 	 * @generated
 	 */
-	int BEGIN_SEGMENT_COMMAND_LENGTH = 472;
+	int BEGIN_SEGMENT_COMMAND_LENGTH = 470;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.BeginSegmentCommandFLAG2 <em>Begin Segment Command FLAG2</em>}' enum.
@@ -35432,7 +35385,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommandFLAG2()
 	 * @generated
 	 */
-	int BEGIN_SEGMENT_COMMAND_FLAG2 = 473;
+	int BEGIN_SEGMENT_COMMAND_FLAG2 = 471;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBARFLAGS <em>GBARFLAGS</em>}' enum.
@@ -35442,7 +35395,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBARFLAGS()
 	 * @generated
 	 */
-	int GBARFLAGS = 474;
+	int GBARFLAGS = 472;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBIMGFORMAT <em>GBIMGFORMAT</em>}' enum.
@@ -35452,7 +35405,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMGFORMAT()
 	 * @generated
 	 */
-	int GBIMGFORMAT = 475;
+	int GBIMGFORMAT = 473;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBIMGRES <em>GBIMGRES</em>}' enum.
@@ -35462,7 +35415,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMGRES()
 	 * @generated
 	 */
-	int GBIMGRES = 476;
+	int GBIMGRES = 474;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GCBIMGFORMAT <em>GCBIMGFORMAT</em>}' enum.
@@ -35472,7 +35425,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMGFORMAT()
 	 * @generated
 	 */
-	int GCBIMGFORMAT = 477;
+	int GCBIMGFORMAT = 475;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GCBIMGRES <em>GCBIMGRES</em>}' enum.
@@ -35482,7 +35435,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMGRES()
 	 * @generated
 	 */
-	int GCBIMGRES = 478;
+	int GCBIMGRES = 476;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GBOXRES <em>GBOXRES</em>}' enum.
@@ -35492,7 +35445,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBOXRES()
 	 * @generated
 	 */
-	int GBOXRES = 479;
+	int GBOXRES = 477;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GCBOXRES <em>GCBOXRES</em>}' enum.
@@ -35502,7 +35455,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBOXRES()
 	 * @generated
 	 */
-	int GCBOXRES = 480;
+	int GCBOXRES = 478;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GEPROLRES <em>GEPROLRES</em>}' enum.
@@ -35512,7 +35465,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGEPROLRES()
 	 * @generated
 	 */
-	int GEPROLRES = 481;
+	int GEPROLRES = 479;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSBMXMODE <em>GSBMXMODE</em>}' enum.
@@ -35522,7 +35475,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSBMXMODE()
 	 * @generated
 	 */
-	int GSBMXMODE = 482;
+	int GSBMXMODE = 480;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSCDDIRECTION <em>GSCDDIRECTION</em>}' enum.
@@ -35532,7 +35485,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCDDIRECTION()
 	 * @generated
 	 */
-	int GSCDDIRECTION = 483;
+	int GSCDDIRECTION = 481;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSCRPREC <em>GSCRPREC</em>}' enum.
@@ -35542,7 +35495,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCRPREC()
 	 * @generated
 	 */
-	int GSCRPREC = 484;
+	int GSCRPREC = 482;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSCOLCOL <em>GSCOLCOL</em>}' enum.
@@ -35552,7 +35505,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCOLCOL()
 	 * @generated
 	 */
-	int GSCOLCOL = 485;
+	int GSCOLCOL = 483;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSLTLINETYPE <em>GSLTLINETYPE</em>}' enum.
@@ -35562,7 +35515,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLTLINETYPE()
 	 * @generated
 	 */
-	int GSLTLINETYPE = 486;
+	int GSLTLINETYPE = 484;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSMPPREC <em>GSMPPREC</em>}' enum.
@@ -35572,7 +35525,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMPPREC()
 	 * @generated
 	 */
-	int GSMPPREC = 487;
+	int GSMPPREC = 485;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSMTMCPT <em>GSMTMCPT</em>}' enum.
@@ -35582,7 +35535,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMTMCPT()
 	 * @generated
 	 */
-	int GSMTMCPT = 488;
+	int GSMTMCPT = 486;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSMXMODE <em>GSMXMODE</em>}' enum.
@@ -35592,7 +35545,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMXMODE()
 	 * @generated
 	 */
-	int GSMXMODE = 489;
+	int GSMXMODE = 487;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSPSLCID <em>GSPSLCID</em>}' enum.
@@ -35602,7 +35555,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPSLCID()
 	 * @generated
 	 */
-	int GSPSLCID = 490;
+	int GSPSLCID = 488;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSPTPATT <em>GSPTPATT</em>}' enum.
@@ -35612,7 +35565,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPTPATT()
 	 * @generated
 	 */
-	int GSPTPATT = 491;
+	int GSPTPATT = 489;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSPCOLCOLSPCE <em>GSPCOLCOLSPCE</em>}' enum.
@@ -35622,7 +35575,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPCOLCOLSPCE()
 	 * @generated
 	 */
-	int GSPCOLCOLSPCE = 492;
+	int GSPCOLCOLSPCE = 490;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSLELINEEND <em>GSLELINEEND</em>}' enum.
@@ -35632,7 +35585,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLELINEEND()
 	 * @generated
 	 */
-	int GSLELINEEND = 493;
+	int GSLELINEEND = 491;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.GSLJLINEJOIN <em>GSLJLINEJOIN</em>}' enum.
@@ -35642,7 +35595,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLJLINEJOIN()
 	 * @generated
 	 */
-	int GSLJLINEJOIN = 494;
+	int GSLJLINEJOIN = 492;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationFLAGS <em>Window Specification FLAGS</em>}' enum.
@@ -35652,7 +35605,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationFLAGS()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_FLAGS = 495;
+	int WINDOW_SPECIFICATION_FLAGS = 493;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationRES3 <em>Window Specification RES3</em>}' enum.
@@ -35662,7 +35615,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationRES3()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_RES3 = 496;
+	int WINDOW_SPECIFICATION_RES3 = 494;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationCFORMAT <em>Window Specification CFORMAT</em>}' enum.
@@ -35672,7 +35625,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationCFORMAT()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_CFORMAT = 497;
+	int WINDOW_SPECIFICATION_CFORMAT = 495;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.WindowSpecificationUBASE <em>Window Specification UBASE</em>}' enum.
@@ -35682,7 +35635,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationUBASE()
 	 * @generated
 	 */
-	int WINDOW_SPECIFICATION_UBASE = 498;
+	int WINDOW_SPECIFICATION_UBASE = 496;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TonerSaverTSvCtrl <em>Toner Saver TSv Ctrl</em>}' enum.
@@ -35692,7 +35645,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTonerSaverTSvCtrl()
 	 * @generated
 	 */
-	int TONER_SAVER_TSV_CTRL = 499;
+	int TONER_SAVER_TSV_CTRL = 497;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorFidelityStpCoEx <em>Color Fidelity Stp Co Ex</em>}' enum.
@@ -35702,7 +35655,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityStpCoEx()
 	 * @generated
 	 */
-	int COLOR_FIDELITY_STP_CO_EX = 500;
+	int COLOR_FIDELITY_STP_CO_EX = 498;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorFidelityRepCoEx <em>Color Fidelity Rep Co Ex</em>}' enum.
@@ -35712,7 +35665,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityRepCoEx()
 	 * @generated
 	 */
-	int COLOR_FIDELITY_REP_CO_EX = 501;
+	int COLOR_FIDELITY_REP_CO_EX = 499;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorFidelityColSub <em>Color Fidelity Col Sub</em>}' enum.
@@ -35722,7 +35675,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityColSub()
 	 * @generated
 	 */
-	int COLOR_FIDELITY_COL_SUB = 502;
+	int COLOR_FIDELITY_COL_SUB = 500;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FontFidelityStpFntEx <em>Font Fidelity Stp Fnt Ex</em>}' enum.
@@ -35732,7 +35685,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontFidelityStpFntEx()
 	 * @generated
 	 */
-	int FONT_FIDELITY_STP_FNT_EX = 503;
+	int FONT_FIDELITY_STP_FNT_EX = 501;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextFidelityStpTxtEx <em>Text Fidelity Stp Txt Ex</em>}' enum.
@@ -35742,7 +35695,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelityStpTxtEx()
 	 * @generated
 	 */
-	int TEXT_FIDELITY_STP_TXT_EX = 504;
+	int TEXT_FIDELITY_STP_TXT_EX = 502;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.TextFidelityRepTxtEx <em>Text Fidelity Rep Txt Ex</em>}' enum.
@@ -35752,7 +35705,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelityRepTxtEx()
 	 * @generated
 	 */
-	int TEXT_FIDELITY_REP_TXT_EX = 505;
+	int TEXT_FIDELITY_REP_TXT_EX = 503;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MediaFidelityStpMedEx <em>Media Fidelity Stp Med Ex</em>}' enum.
@@ -35762,7 +35715,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaFidelityStpMedEx()
 	 * @generated
 	 */
-	int MEDIA_FIDELITY_STP_MED_EX = 506;
+	int MEDIA_FIDELITY_STP_MED_EX = 504;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingFidelityStpFinEx <em>Finishing Fidelity Stp Fin Ex</em>}' enum.
@@ -35772,7 +35725,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelityStpFinEx()
 	 * @generated
 	 */
-	int FINISHING_FIDELITY_STP_FIN_EX = 507;
+	int FINISHING_FIDELITY_STP_FIN_EX = 505;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingFidelityRepFinEx <em>Finishing Fidelity Rep Fin Ex</em>}' enum.
@@ -35782,7 +35735,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelityRepFinEx()
 	 * @generated
 	 */
-	int FINISHING_FIDELITY_REP_FIN_EX = 508;
+	int FINISHING_FIDELITY_REP_FIN_EX = 506;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.CMRFidelityStpCMREx <em>CMR Fidelity Stp CMR Ex</em>}' enum.
@@ -35792,7 +35745,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelityStpCMREx()
 	 * @generated
 	 */
-	int CMR_FIDELITY_STP_CMR_EX = 509;
+	int CMR_FIDELITY_STP_CMR_EX = 507;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.CMRFidelityRepCMREx <em>CMR Fidelity Rep CMR Ex</em>}' enum.
@@ -35802,7 +35755,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelityRepCMREx()
 	 * @generated
 	 */
-	int CMR_FIDELITY_REP_CMR_EX = 510;
+	int CMR_FIDELITY_REP_CMR_EX = 508;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectCountSubObj <em>Object Count Sub Obj</em>}' enum.
@@ -35812,7 +35765,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectCountSubObj()
 	 * @generated
 	 */
-	int OBJECT_COUNT_SUB_OBJ = 511;
+	int OBJECT_COUNT_SUB_OBJ = 509;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectOriginIdentifierSystem <em>Object Origin Identifier System</em>}' enum.
@@ -35822,7 +35775,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOriginIdentifierSystem()
 	 * @generated
 	 */
-	int OBJECT_ORIGIN_IDENTIFIER_SYSTEM = 512;
+	int OBJECT_ORIGIN_IDENTIFIER_SYSTEM = 510;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.LineDataObjectPositionMigrationTempOrient <em>Line Data Object Position Migration Temp Orient</em>}' enum.
@@ -35832,7 +35785,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLineDataObjectPositionMigrationTempOrient()
 	 * @generated
 	 */
-	int LINE_DATA_OBJECT_POSITION_MIGRATION_TEMP_ORIENT = 513;
+	int LINE_DATA_OBJECT_POSITION_MIGRATION_TEMP_ORIENT = 511;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorManagementResourceDescriptorProcMode <em>Color Management Resource Descriptor Proc Mode</em>}' enum.
@@ -35842,7 +35795,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptorProcMode()
 	 * @generated
 	 */
-	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_PROC_MODE = 514;
+	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_PROC_MODE = 512;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ColorManagementResourceDescriptorCMRScpe <em>Color Management Resource Descriptor CMR Scpe</em>}' enum.
@@ -35852,7 +35805,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptorCMRScpe()
 	 * @generated
 	 */
-	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_CMR_SCPE = 515;
+	int COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_CMR_SCPE = 513;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageResolutionXBase <em>Image Resolution XBase</em>}' enum.
@@ -35862,7 +35815,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolutionXBase()
 	 * @generated
 	 */
-	int IMAGE_RESOLUTION_XBASE = 516;
+	int IMAGE_RESOLUTION_XBASE = 514;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ImageResolutionYBase <em>Image Resolution YBase</em>}' enum.
@@ -35872,7 +35825,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolutionYBase()
 	 * @generated
 	 */
-	int IMAGE_RESOLUTION_YBASE = 517;
+	int IMAGE_RESOLUTION_YBASE = 515;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ObjectContainerPresentationSpaceSizePDFSize <em>Object Container Presentation Space Size PDF Size</em>}' enum.
@@ -35882,7 +35835,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectContainerPresentationSpaceSizePDFSize()
 	 * @generated
 	 */
-	int OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE_PDF_SIZE = 518;
+	int OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE_PDF_SIZE = 516;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ExtendedResourceLocalIdentifierResType <em>Extended Resource Local Identifier Res Type</em>}' enum.
@@ -35892,7 +35845,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExtendedResourceLocalIdentifierResType()
 	 * @generated
 	 */
-	int EXTENDED_RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 519;
+	int EXTENDED_RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = 517;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.MetricAdjustmentUnitBase <em>Metric Adjustment Unit Base</em>}' enum.
@@ -35902,7 +35855,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMetricAdjustmentUnitBase()
 	 * @generated
 	 */
-	int METRIC_ADJUSTMENT_UNIT_BASE = 520;
+	int METRIC_ADJUSTMENT_UNIT_BASE = 518;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentReserved <em>Rendering Intent Reserved</em>}' enum.
@@ -35912,7 +35865,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentReserved()
 	 * @generated
 	 */
-	int RENDERING_INTENT_RESERVED = 521;
+	int RENDERING_INTENT_RESERVED = 519;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentIOCARI <em>Rendering Intent IOCARI</em>}' enum.
@@ -35922,7 +35875,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentIOCARI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_IOCARI = 522;
+	int RENDERING_INTENT_IOCARI = 520;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentOCRI <em>Rendering Intent OCRI</em>}' enum.
@@ -35932,7 +35885,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentOCRI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_OCRI = 523;
+	int RENDERING_INTENT_OCRI = 521;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentPTOCRI <em>Rendering Intent PTOCRI</em>}' enum.
@@ -35942,7 +35895,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentPTOCRI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_PTOCRI = 524;
+	int RENDERING_INTENT_PTOCRI = 522;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentGOCARI <em>Rendering Intent GOCARI</em>}' enum.
@@ -35952,7 +35905,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentGOCARI()
 	 * @generated
 	 */
-	int RENDERING_INTENT_GOCARI = 525;
+	int RENDERING_INTENT_GOCARI = 523;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.RenderingIntentReserved2 <em>Rendering Intent Reserved2</em>}' enum.
@@ -35962,7 +35915,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentReserved2()
 	 * @generated
 	 */
-	int RENDERING_INTENT_RESERVED2 = 526;
+	int RENDERING_INTENT_RESERVED2 = 524;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingOperationFOpType <em>Finishing Operation FOp Type</em>}' enum.
@@ -35972,7 +35925,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperationFOpType()
 	 * @generated
 	 */
-	int FINISHING_OPERATION_FOP_TYPE = 527;
+	int FINISHING_OPERATION_FOP_TYPE = 525;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.FinishingOperationRefEdge <em>Finishing Operation Ref Edge</em>}' enum.
@@ -35982,7 +35935,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperationRefEdge()
 	 * @generated
 	 */
-	int FINISHING_OPERATION_REF_EDGE = 528;
+	int FINISHING_OPERATION_REF_EDGE = 526;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.DeviceAppearanceDevApp <em>Device Appearance Dev App</em>}' enum.
@@ -35992,7 +35945,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDeviceAppearanceDevApp()
 	 * @generated
 	 */
-	int DEVICE_APPEARANCE_DEV_APP = 529;
+	int DEVICE_APPEARANCE_DEV_APP = 527;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceObjectIncludeObjType <em>Resource Object Include Obj Type</em>}' enum.
@@ -36002,7 +35955,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectIncludeObjType()
 	 * @generated
 	 */
-	int RESOURCE_OBJECT_INCLUDE_OBJ_TYPE = 530;
+	int RESOURCE_OBJECT_INCLUDE_OBJ_TYPE = 528;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceObjectIncludeObOrent <em>Resource Object Include Ob Orent</em>}' enum.
@@ -36012,7 +35965,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectIncludeObOrent()
 	 * @generated
 	 */
-	int RESOURCE_OBJECT_INCLUDE_OB_ORENT = 531;
+	int RESOURCE_OBJECT_INCLUDE_OB_ORENT = 529;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.PageOverlayConditionalProcessingPgOvType <em>Page Overlay Conditional Processing Pg Ov Type</em>}' enum.
@@ -36022,7 +35975,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPageOverlayConditionalProcessingPgOvType()
 	 * @generated
 	 */
-	int PAGE_OVERLAY_CONDITIONAL_PROCESSING_PG_OV_TYPE = 532;
+	int PAGE_OVERLAY_CONDITIONAL_PROCESSING_PG_OV_TYPE = 530;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.ResourceUsageAttributeFrequency <em>Resource Usage Attribute Frequency</em>}' enum.
@@ -36032,7 +35985,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceUsageAttributeFrequency()
 	 * @generated
 	 */
-	int RESOURCE_USAGE_ATTRIBUTE_FREQUENCY = 533;
+	int RESOURCE_USAGE_ATTRIBUTE_FREQUENCY = 531;
 
 	/**
 	 * The meta object id for the '{@link org.afplib.afplib.SFName <em>SF Name</em>}' enum.
@@ -36042,7 +35995,7 @@ public interface AfplibPackage extends EPackage {
 	 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSFName()
 	 * @generated
 	 */
-	int SF_NAME = 534;
+	int SF_NAME = 532;
 
 
 	/**
@@ -38886,48 +38839,15 @@ public interface AfplibPackage extends EPackage {
 	EClass getFNN();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.afplib.afplib.FNN#getIBMFormat <em>IBM Format</em>}'.
+	 * Returns the meta object for the attribute '{@link org.afplib.afplib.FNN#getFNNData <em>FNN Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>IBM Format</em>'.
-	 * @see org.afplib.afplib.FNN#getIBMFormat()
+	 * @return the meta object for the attribute '<em>FNN Data</em>'.
+	 * @see org.afplib.afplib.FNN#getFNNData()
 	 * @see #getFNN()
 	 * @generated
 	 */
-	EAttribute getFNN_IBMFormat();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.afplib.afplib.FNN#getTechnologyFormat <em>Technology Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Technology Format</em>'.
-	 * @see org.afplib.afplib.FNN#getTechnologyFormat()
-	 * @see #getFNN()
-	 * @generated
-	 */
-	EAttribute getFNN_TechnologyFormat();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.afplib.afplib.FNN#getRg <em>Rg</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Rg</em>'.
-	 * @see org.afplib.afplib.FNN#getRg()
-	 * @see #getFNN()
-	 * @generated
-	 */
-	EReference getFNN_Rg();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.afplib.afplib.FNN#getRg2 <em>Rg2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Rg2</em>'.
-	 * @see org.afplib.afplib.FNN#getRg2()
-	 * @see #getFNN()
-	 * @generated
-	 */
-	EReference getFNN_Rg2();
+	EAttribute getFNN_FNNData();
 
 	/**
 	 * Returns the meta object for class '{@link org.afplib.afplib.FNM <em>FNM</em>}'.
@@ -39621,15 +39541,15 @@ public interface AfplibPackage extends EPackage {
 	EClass getIPD();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.afplib.afplib.IPD#getSdfs <em>Sdfs</em>}'.
+	 * Returns the meta object for the attribute '{@link org.afplib.afplib.IPD#getIOCAdat <em>IOC Adat</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Sdfs</em>'.
-	 * @see org.afplib.afplib.IPD#getSdfs()
+	 * @return the meta object for the attribute '<em>IOC Adat</em>'.
+	 * @see org.afplib.afplib.IPD#getIOCAdat()
 	 * @see #getIPD()
 	 * @generated
 	 */
-	EReference getIPD_Sdfs();
+	EAttribute getIPD_IOCAdat();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.afplib.afplib.IPD#getImageData <em>Image Data</em>}'.
@@ -49640,26 +49560,6 @@ public interface AfplibPackage extends EPackage {
 	EEnum getFNDFtDsFlags();
 
 	/**
-	 * Returns the meta object for enum '{@link org.afplib.afplib.FNNIBMFormat <em>FNNIBM Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>FNNIBM Format</em>'.
-	 * @see org.afplib.afplib.FNNIBMFormat
-	 * @generated
-	 */
-	EEnum getFNNIBMFormat();
-
-	/**
-	 * Returns the meta object for enum '{@link org.afplib.afplib.FNNTechnologyFormat <em>FNN Technology Format</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>FNN Technology Format</em>'.
-	 * @see org.afplib.afplib.FNNTechnologyFormat
-	 * @generated
-	 */
-	EEnum getFNNTechnologyFormat();
-
-	/**
 	 * Returns the meta object for enum '{@link org.afplib.afplib.IDDUNITBASE <em>IDDUNITBASE</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51237,5 +51137,12478 @@ public interface AfplibPackage extends EPackage {
 	 * @generated
 	 */
 	AfplibFactory getAfplibFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LineDataImpl <em>Line Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LineDataImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLineData()
+		 * @generated
+		 */
+		EClass LINE_DATA = eINSTANCE.getLineData();
+
+		/**
+		 * The meta object literal for the '<em><b>Linedata</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LINE_DATA__LINEDATA = eINSTANCE.getLineData_Linedata();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BAGImpl <em>BAG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BAGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBAG()
+		 * @generated
+		 */
+		EClass BAG = eINSTANCE.getBAG();
+
+		/**
+		 * The meta object literal for the '<em><b>AEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BAG__AEG_NAME = eINSTANCE.getBAG_AEGName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BAG__TRIPLETS = eINSTANCE.getBAG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BBCImpl <em>BBC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BBCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBBC()
+		 * @generated
+		 */
+		EClass BBC = eINSTANCE.getBBC();
+
+		/**
+		 * The meta object literal for the '<em><b>BCdo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BBC__BCDO_NAME = eINSTANCE.getBBC_BCdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BBC__TRIPLETS = eINSTANCE.getBBC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BCAImpl <em>BCA</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BCAImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBCA()
+		 * @generated
+		 */
+		EClass BCA = eINSTANCE.getBCA();
+
+		/**
+		 * The meta object literal for the '<em><b>CAT Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BCA__CAT_NAME = eINSTANCE.getBCA_CATName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BCA__TRIPLETS = eINSTANCE.getBCA_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BCFImpl <em>BCF</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BCFImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBCF()
+		 * @generated
+		 */
+		EClass BCF = eINSTANCE.getBCF();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BCF__RS_NAME = eINSTANCE.getBCF_RSName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BCPImpl <em>BCP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BCPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBCP()
+		 * @generated
+		 */
+		EClass BCP = eINSTANCE.getBCP();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BCP__RS_NAME = eINSTANCE.getBCP_RSName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BCP__TRIPLETS = eINSTANCE.getBCP_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDAImpl <em>BDA</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDAImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDA()
+		 * @generated
+		 */
+		EClass BDA = eINSTANCE.getBDA();
+
+		/**
+		 * The meta object literal for the '<em><b>Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDA__FLAGS = eINSTANCE.getBDA_Flags();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoffset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDA__XOFFSET = eINSTANCE.getBDA_Xoffset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoffset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDA__YOFFSET = eINSTANCE.getBDA_Yoffset();
+
+		/**
+		 * The meta object literal for the '<em><b>Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDA__DATA = eINSTANCE.getBDA_Data();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDDImpl <em>BDD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDD()
+		 * @generated
+		 */
+		EClass BDD = eINSTANCE.getBDD();
+
+		/**
+		 * The meta object literal for the '<em><b>UBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__UBASE = eINSTANCE.getBDD_UBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__RESERVED = eINSTANCE.getBDD_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>XUPUB</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__XUPUB = eINSTANCE.getBDD_XUPUB();
+
+		/**
+		 * The meta object literal for the '<em><b>YUPUB</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__YUPUB = eINSTANCE.getBDD_YUPUB();
+
+		/**
+		 * The meta object literal for the '<em><b>XEXTENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__XEXTENT = eINSTANCE.getBDD_XEXTENT();
+
+		/**
+		 * The meta object literal for the '<em><b>YEXTENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__YEXTENT = eINSTANCE.getBDD_YEXTENT();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__RESERVED2 = eINSTANCE.getBDD_Reserved2();
+
+		/**
+		 * The meta object literal for the '<em><b>TYPE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__TYPE = eINSTANCE.getBDD_TYPE();
+
+		/**
+		 * The meta object literal for the '<em><b>MOD</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__MOD = eINSTANCE.getBDD_MOD();
+
+		/**
+		 * The meta object literal for the '<em><b>LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__LID = eINSTANCE.getBDD_LID();
+
+		/**
+		 * The meta object literal for the '<em><b>COLOR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__COLOR = eINSTANCE.getBDD_COLOR();
+
+		/**
+		 * The meta object literal for the '<em><b>MODULEWIDTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__MODULEWIDTH = eINSTANCE.getBDD_MODULEWIDTH();
+
+		/**
+		 * The meta object literal for the '<em><b>ELEMENTHEIGHT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__ELEMENTHEIGHT = eINSTANCE.getBDD_ELEMENTHEIGHT();
+
+		/**
+		 * The meta object literal for the '<em><b>MULT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__MULT = eINSTANCE.getBDD_MULT();
+
+		/**
+		 * The meta object literal for the '<em><b>WENE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDD__WENE = eINSTANCE.getBDD_WENE();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BDD__TRIPLETS = eINSTANCE.getBDD_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDGImpl <em>BDG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDG()
+		 * @generated
+		 */
+		EClass BDG = eINSTANCE.getBDG();
+
+		/**
+		 * The meta object literal for the '<em><b>DEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDG__DEG_NAME = eINSTANCE.getBDG_DEGName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BDG__TRIPLETS = eINSTANCE.getBDG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDIImpl <em>BDI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDI()
+		 * @generated
+		 */
+		EClass BDI = eINSTANCE.getBDI();
+
+		/**
+		 * The meta object literal for the '<em><b>Indx Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDI__INDX_NAME = eINSTANCE.getBDI_IndxName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BDI__TRIPLETS = eINSTANCE.getBDI_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDMImpl <em>BDM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDM()
+		 * @generated
+		 */
+		EClass BDM = eINSTANCE.getBDM();
+
+		/**
+		 * The meta object literal for the '<em><b>DM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDM__DM_NAME = eINSTANCE.getBDM_DMName();
+
+		/**
+		 * The meta object literal for the '<em><b>Dat Fmt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDM__DAT_FMT = eINSTANCE.getBDM_DatFmt();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BDM__TRIPLETS = eINSTANCE.getBDM_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDTImpl <em>BDT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDT()
+		 * @generated
+		 */
+		EClass BDT = eINSTANCE.getBDT();
+
+		/**
+		 * The meta object literal for the '<em><b>Doc Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDT__DOC_NAME = eINSTANCE.getBDT_DocName();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDT__RESERVED = eINSTANCE.getBDT_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BDT__TRIPLETS = eINSTANCE.getBDT_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BDXImpl <em>BDX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BDXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDX()
+		 * @generated
+		 */
+		EClass BDX = eINSTANCE.getBDX();
+
+		/**
+		 * The meta object literal for the '<em><b>DMX Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BDX__DMX_NAME = eINSTANCE.getBDX_DMXName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BFGImpl <em>BFG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BFGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBFG()
+		 * @generated
+		 */
+		EClass BFG = eINSTANCE.getBFG();
+
+		/**
+		 * The meta object literal for the '<em><b>FEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BFG__FEG_NAME = eINSTANCE.getBFG_FEGName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BFMImpl <em>BFM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BFMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBFM()
+		 * @generated
+		 */
+		EClass BFM = eINSTANCE.getBFM();
+
+		/**
+		 * The meta object literal for the '<em><b>FM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BFM__FM_NAME = eINSTANCE.getBFM_FMName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BFM__TRIPLETS = eINSTANCE.getBFM_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BFNImpl <em>BFN</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BFNImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBFN()
+		 * @generated
+		 */
+		EClass BFN = eINSTANCE.getBFN();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BFN__RS_NAME = eINSTANCE.getBFN_RSName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BFN__TRIPLETS = eINSTANCE.getBFN_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BGRImpl <em>BGR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BGRImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBGR()
+		 * @generated
+		 */
+		EClass BGR = eINSTANCE.getBGR();
+
+		/**
+		 * The meta object literal for the '<em><b>Gdo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BGR__GDO_NAME = eINSTANCE.getBGR_GdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BGR__TRIPLETS = eINSTANCE.getBGR_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BIIImpl <em>BII</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BIIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBII()
+		 * @generated
+		 */
+		EClass BII = eINSTANCE.getBII();
+
+		/**
+		 * The meta object literal for the '<em><b>Imo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BII__IMO_NAME = eINSTANCE.getBII_ImoName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BIMImpl <em>BIM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BIMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBIM()
+		 * @generated
+		 */
+		EClass BIM = eINSTANCE.getBIM();
+
+		/**
+		 * The meta object literal for the '<em><b>Ido Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BIM__IDO_NAME = eINSTANCE.getBIM_IdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BIM__TRIPLETS = eINSTANCE.getBIM_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BMMImpl <em>BMM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BMMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBMM()
+		 * @generated
+		 */
+		EClass BMM = eINSTANCE.getBMM();
+
+		/**
+		 * The meta object literal for the '<em><b>MM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BMM__MM_NAME = eINSTANCE.getBMM_MMName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BMM__TRIPLETS = eINSTANCE.getBMM_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BMOImpl <em>BMO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BMOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBMO()
+		 * @generated
+		 */
+		EClass BMO = eINSTANCE.getBMO();
+
+		/**
+		 * The meta object literal for the '<em><b>Ovly Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BMO__OVLY_NAME = eINSTANCE.getBMO_OvlyName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BMO__TRIPLETS = eINSTANCE.getBMO_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BNGImpl <em>BNG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BNGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBNG()
+		 * @generated
+		 */
+		EClass BNG = eINSTANCE.getBNG();
+
+		/**
+		 * The meta object literal for the '<em><b>PGrp Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BNG__PGRP_NAME = eINSTANCE.getBNG_PGrpName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BNG__TRIPLETS = eINSTANCE.getBNG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BOCImpl <em>BOC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BOCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBOC()
+		 * @generated
+		 */
+		EClass BOC = eINSTANCE.getBOC();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj CName</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BOC__OBJ_CNAME = eINSTANCE.getBOC_ObjCName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BOC__TRIPLETS = eINSTANCE.getBOC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BOGImpl <em>BOG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BOGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBOG()
+		 * @generated
+		 */
+		EClass BOG = eINSTANCE.getBOG();
+
+		/**
+		 * The meta object literal for the '<em><b>OEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BOG__OEG_NAME = eINSTANCE.getBOG_OEGName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BOG__TRIPLETS = eINSTANCE.getBOG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BPFImpl <em>BPF</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BPFImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBPF()
+		 * @generated
+		 */
+		EClass BPF = eINSTANCE.getBPF();
+
+		/**
+		 * The meta object literal for the '<em><b>PF Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BPF__PF_NAME = eINSTANCE.getBPF_PFName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BPF__TRIPLETS = eINSTANCE.getBPF_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BPGImpl <em>BPG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BPGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBPG()
+		 * @generated
+		 */
+		EClass BPG = eINSTANCE.getBPG();
+
+		/**
+		 * The meta object literal for the '<em><b>Page Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BPG__PAGE_NAME = eINSTANCE.getBPG_PageName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BPG__TRIPLETS = eINSTANCE.getBPG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BPMImpl <em>BPM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BPMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBPM()
+		 * @generated
+		 */
+		EClass BPM = eINSTANCE.getBPM();
+
+		/**
+		 * The meta object literal for the '<em><b>PM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BPM__PM_NAME = eINSTANCE.getBPM_PMName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BPSImpl <em>BPS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BPSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBPS()
+		 * @generated
+		 */
+		EClass BPS = eINSTANCE.getBPS();
+
+		/**
+		 * The meta object literal for the '<em><b>Pseg Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BPS__PSEG_NAME = eINSTANCE.getBPS_PsegName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BPS__TRIPLETS = eINSTANCE.getBPS_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BPTImpl <em>BPT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BPTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBPT()
+		 * @generated
+		 */
+		EClass BPT = eINSTANCE.getBPT();
+
+		/**
+		 * The meta object literal for the '<em><b>PTdo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BPT__PTDO_NAME = eINSTANCE.getBPT_PTdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BPT__TRIPLETS = eINSTANCE.getBPT_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BRGImpl <em>BRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBRG()
+		 * @generated
+		 */
+		EClass BRG = eINSTANCE.getBRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RGrp Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BRG__RGRP_NAME = eINSTANCE.getBRG_RGrpName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BRG__TRIPLETS = eINSTANCE.getBRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BRSImpl <em>BRS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BRSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBRS()
+		 * @generated
+		 */
+		EClass BRS = eINSTANCE.getBRS();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BRS__RS_NAME = eINSTANCE.getBRS_RSName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BRS__TRIPLETS = eINSTANCE.getBRS_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BSGImpl <em>BSG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BSGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBSG()
+		 * @generated
+		 */
+		EClass BSG = eINSTANCE.getBSG();
+
+		/**
+		 * The meta object literal for the '<em><b>REG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BSG__REG_NAME = eINSTANCE.getBSG_REGName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BSG__TRIPLETS = eINSTANCE.getBSG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CATImpl <em>CAT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CATImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCAT()
+		 * @generated
+		 */
+		EClass CAT = eINSTANCE.getCAT();
+
+		/**
+		 * The meta object literal for the '<em><b>CAT Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CAT__CAT_DATA = eINSTANCE.getCAT_CATData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CDDImpl <em>CDD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CDDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCDD()
+		 * @generated
+		 */
+		EClass CDD = eINSTANCE.getCDD();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoc Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CDD__XOC_BASE = eINSTANCE.getCDD_XocBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoc Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CDD__YOC_BASE = eINSTANCE.getCDD_YocBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoc Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CDD__XOC_UNITS = eINSTANCE.getCDD_XocUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoc Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CDD__YOC_UNITS = eINSTANCE.getCDD_YocUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoc Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CDD__XOC_SIZE = eINSTANCE.getCDD_XocSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoc Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CDD__YOC_SIZE = eINSTANCE.getCDD_YocSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CDD__TRIPLETS = eINSTANCE.getCDD_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CFCImpl <em>CFC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CFCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCFC()
+		 * @generated
+		 */
+		EClass CFC = eINSTANCE.getCFC();
+
+		/**
+		 * The meta object literal for the '<em><b>CFIRG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFC__CFIRG_LEN = eINSTANCE.getCFC_CFIRGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>Retired1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFC__RETIRED1 = eINSTANCE.getCFC_Retired1();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CFC__TRIPLETS = eINSTANCE.getCFC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CFIImpl <em>CFI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CFIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCFI()
+		 * @generated
+		 */
+		EClass CFI = eINSTANCE.getCFI();
+
+		/**
+		 * The meta object literal for the '<em><b>Fixed Length RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CFI__FIXED_LENGTH_RG = eINSTANCE.getCFI_FixedLengthRG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CPCImpl <em>CPC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CPCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPC()
+		 * @generated
+		 */
+		EClass CPC = eINSTANCE.getCPC();
+
+		/**
+		 * The meta object literal for the '<em><b>Def Char ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPC__DEF_CHAR_ID = eINSTANCE.getCPC_DefCharID();
+
+		/**
+		 * The meta object literal for the '<em><b>Prt Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPC__PRT_FLAGS = eINSTANCE.getCPC_PrtFlags();
+
+		/**
+		 * The meta object literal for the '<em><b>CPIRG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPC__CPIRG_LEN = eINSTANCE.getCPC_CPIRGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>VS Char SN</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPC__VS_CHAR_SN = eINSTANCE.getCPC_VSCharSN();
+
+		/**
+		 * The meta object literal for the '<em><b>VS Char</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPC__VS_CHAR = eINSTANCE.getCPC_VSChar();
+
+		/**
+		 * The meta object literal for the '<em><b>VS Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPC__VS_FLAGS = eINSTANCE.getCPC_VSFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CPDImpl <em>CPD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CPDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPD()
+		 * @generated
+		 */
+		EClass CPD = eINSTANCE.getCPD();
+
+		/**
+		 * The meta object literal for the '<em><b>CP Desc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPD__CP_DESC = eINSTANCE.getCPD_CPDesc();
+
+		/**
+		 * The meta object literal for the '<em><b>GCGID Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPD__GCGID_LEN = eINSTANCE.getCPD_GCGIDLen();
+
+		/**
+		 * The meta object literal for the '<em><b>Num Cd Pts</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPD__NUM_CD_PTS = eINSTANCE.getCPD_NumCdPts();
+
+		/**
+		 * The meta object literal for the '<em><b>GCSGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPD__GCSGID = eINSTANCE.getCPD_GCSGID();
+
+		/**
+		 * The meta object literal for the '<em><b>CPGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPD__CPGID = eINSTANCE.getCPD_CPGID();
+
+		/**
+		 * The meta object literal for the '<em><b>Enc Scheme</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPD__ENC_SCHEME = eINSTANCE.getCPD_EncScheme();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CPIImpl <em>CPI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CPIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPI()
+		 * @generated
+		 */
+		EClass CPI = eINSTANCE.getCPI();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CPI__RG = eINSTANCE.getCPI_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CTCImpl <em>CTC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CTCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCTC()
+		 * @generated
+		 */
+		EClass CTC = eINSTANCE.getCTC();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CTC__CON_DATA = eINSTANCE.getCTC_ConData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DXDImpl <em>DXD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DXDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDXD()
+		 * @generated
+		 */
+		EClass DXD = eINSTANCE.getDXD();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EAGImpl <em>EAG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EAGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEAG()
+		 * @generated
+		 */
+		EClass EAG = eINSTANCE.getEAG();
+
+		/**
+		 * The meta object literal for the '<em><b>AEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EAG__AEG_NAME = eINSTANCE.getEAG_AEGName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EBCImpl <em>EBC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EBCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEBC()
+		 * @generated
+		 */
+		EClass EBC = eINSTANCE.getEBC();
+
+		/**
+		 * The meta object literal for the '<em><b>BCdo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EBC__BCDO_NAME = eINSTANCE.getEBC_BCdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EBC__TRIPLETS = eINSTANCE.getEBC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ECAImpl <em>ECA</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ECAImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getECA()
+		 * @generated
+		 */
+		EClass ECA = eINSTANCE.getECA();
+
+		/**
+		 * The meta object literal for the '<em><b>CAT Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ECA__CAT_NAME = eINSTANCE.getECA_CATName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ECA__TRIPLETS = eINSTANCE.getECA_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ECFImpl <em>ECF</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ECFImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getECF()
+		 * @generated
+		 */
+		EClass ECF = eINSTANCE.getECF();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ECF__RS_NAME = eINSTANCE.getECF_RSName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ECPImpl <em>ECP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ECPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getECP()
+		 * @generated
+		 */
+		EClass ECP = eINSTANCE.getECP();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ECP__RS_NAME = eINSTANCE.getECP_RSName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EDGImpl <em>EDG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EDGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEDG()
+		 * @generated
+		 */
+		EClass EDG = eINSTANCE.getEDG();
+
+		/**
+		 * The meta object literal for the '<em><b>DEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EDG__DEG_NAME = eINSTANCE.getEDG_DEGName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EDIImpl <em>EDI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EDIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEDI()
+		 * @generated
+		 */
+		EClass EDI = eINSTANCE.getEDI();
+
+		/**
+		 * The meta object literal for the '<em><b>Indx Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EDI__INDX_NAME = eINSTANCE.getEDI_IndxName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EDI__TRIPLETS = eINSTANCE.getEDI_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EDMImpl <em>EDM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EDMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEDM()
+		 * @generated
+		 */
+		EClass EDM = eINSTANCE.getEDM();
+
+		/**
+		 * The meta object literal for the '<em><b>DM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EDM__DM_NAME = eINSTANCE.getEDM_DMName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EDTImpl <em>EDT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EDTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEDT()
+		 * @generated
+		 */
+		EClass EDT = eINSTANCE.getEDT();
+
+		/**
+		 * The meta object literal for the '<em><b>Doc Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EDT__DOC_NAME = eINSTANCE.getEDT_DocName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EDT__TRIPLETS = eINSTANCE.getEDT_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EDXImpl <em>EDX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EDXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEDX()
+		 * @generated
+		 */
+		EClass EDX = eINSTANCE.getEDX();
+
+		/**
+		 * The meta object literal for the '<em><b>DMX Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EDX__DMX_NAME = eINSTANCE.getEDX_DMXName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EFGImpl <em>EFG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EFGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEFG()
+		 * @generated
+		 */
+		EClass EFG = eINSTANCE.getEFG();
+
+		/**
+		 * The meta object literal for the '<em><b>FEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EFG__FEG_NAME = eINSTANCE.getEFG_FEGName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EFMImpl <em>EFM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EFMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEFM()
+		 * @generated
+		 */
+		EClass EFM = eINSTANCE.getEFM();
+
+		/**
+		 * The meta object literal for the '<em><b>FM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EFM__FM_NAME = eINSTANCE.getEFM_FMName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EFNImpl <em>EFN</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EFNImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEFN()
+		 * @generated
+		 */
+		EClass EFN = eINSTANCE.getEFN();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EFN__RS_NAME = eINSTANCE.getEFN_RSName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EGRImpl <em>EGR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EGRImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEGR()
+		 * @generated
+		 */
+		EClass EGR = eINSTANCE.getEGR();
+
+		/**
+		 * The meta object literal for the '<em><b>Gdo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EGR__GDO_NAME = eINSTANCE.getEGR_GdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EGR__TRIPLETS = eINSTANCE.getEGR_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EIIImpl <em>EII</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EIIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEII()
+		 * @generated
+		 */
+		EClass EII = eINSTANCE.getEII();
+
+		/**
+		 * The meta object literal for the '<em><b>Imo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EII__IMO_NAME = eINSTANCE.getEII_ImoName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EIMImpl <em>EIM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EIMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEIM()
+		 * @generated
+		 */
+		EClass EIM = eINSTANCE.getEIM();
+
+		/**
+		 * The meta object literal for the '<em><b>Ido Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EIM__IDO_NAME = eINSTANCE.getEIM_IdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EIM__TRIPLETS = eINSTANCE.getEIM_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EMMImpl <em>EMM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EMMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEMM()
+		 * @generated
+		 */
+		EClass EMM = eINSTANCE.getEMM();
+
+		/**
+		 * The meta object literal for the '<em><b>MM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMM__MM_NAME = eINSTANCE.getEMM_MMName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EMOImpl <em>EMO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EMOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEMO()
+		 * @generated
+		 */
+		EClass EMO = eINSTANCE.getEMO();
+
+		/**
+		 * The meta object literal for the '<em><b>Ovly Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMO__OVLY_NAME = eINSTANCE.getEMO_OvlyName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EMO__TRIPLETS = eINSTANCE.getEMO_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ENGImpl <em>ENG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ENGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getENG()
+		 * @generated
+		 */
+		EClass ENG = eINSTANCE.getENG();
+
+		/**
+		 * The meta object literal for the '<em><b>PGrp Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENG__PGRP_NAME = eINSTANCE.getENG_PGrpName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ENG__TRIPLETS = eINSTANCE.getENG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EOCImpl <em>EOC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EOCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEOC()
+		 * @generated
+		 */
+		EClass EOC = eINSTANCE.getEOC();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj CName</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EOC__OBJ_CNAME = eINSTANCE.getEOC_ObjCName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EOC__TRIPLETS = eINSTANCE.getEOC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EOGImpl <em>EOG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EOGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEOG()
+		 * @generated
+		 */
+		EClass EOG = eINSTANCE.getEOG();
+
+		/**
+		 * The meta object literal for the '<em><b>OEG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EOG__OEG_NAME = eINSTANCE.getEOG_OEGName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EPFImpl <em>EPF</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EPFImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEPF()
+		 * @generated
+		 */
+		EClass EPF = eINSTANCE.getEPF();
+
+		/**
+		 * The meta object literal for the '<em><b>PF Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EPF__PF_NAME = eINSTANCE.getEPF_PFName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EPF__TRIPLETS = eINSTANCE.getEPF_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EPGImpl <em>EPG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EPGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEPG()
+		 * @generated
+		 */
+		EClass EPG = eINSTANCE.getEPG();
+
+		/**
+		 * The meta object literal for the '<em><b>Page Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EPG__PAGE_NAME = eINSTANCE.getEPG_PageName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EPG__TRIPLETS = eINSTANCE.getEPG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EPMImpl <em>EPM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EPMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEPM()
+		 * @generated
+		 */
+		EClass EPM = eINSTANCE.getEPM();
+
+		/**
+		 * The meta object literal for the '<em><b>PM Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EPM__PM_NAME = eINSTANCE.getEPM_PMName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EPSImpl <em>EPS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EPSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEPS()
+		 * @generated
+		 */
+		EClass EPS = eINSTANCE.getEPS();
+
+		/**
+		 * The meta object literal for the '<em><b>Pseg Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EPS__PSEG_NAME = eINSTANCE.getEPS_PsegName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EPTImpl <em>EPT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EPTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEPT()
+		 * @generated
+		 */
+		EClass EPT = eINSTANCE.getEPT();
+
+		/**
+		 * The meta object literal for the '<em><b>PTdo Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EPT__PTDO_NAME = eINSTANCE.getEPT_PTdoName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EPT__TRIPLETS = eINSTANCE.getEPT_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ERGImpl <em>ERG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ERGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getERG()
+		 * @generated
+		 */
+		EClass ERG = eINSTANCE.getERG();
+
+		/**
+		 * The meta object literal for the '<em><b>RGrp Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ERG__RGRP_NAME = eINSTANCE.getERG_RGrpName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ERG__TRIPLETS = eINSTANCE.getERG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ERSImpl <em>ERS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ERSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getERS()
+		 * @generated
+		 */
+		EClass ERS = eINSTANCE.getERS();
+
+		/**
+		 * The meta object literal for the '<em><b>RS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ERS__RS_NAME = eINSTANCE.getERS_RSName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ESGImpl <em>ESG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ESGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getESG()
+		 * @generated
+		 */
+		EClass ESG = eINSTANCE.getESG();
+
+		/**
+		 * The meta object literal for the '<em><b>REG Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ESG__REG_NAME = eINSTANCE.getESG_REGName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNCImpl <em>FNC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNC()
+		 * @generated
+		 */
+		EClass FNC = eINSTANCE.getFNC();
+
+		/**
+		 * The meta object literal for the '<em><b>Retired</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__RETIRED = eINSTANCE.getFNC_Retired();
+
+		/**
+		 * The meta object literal for the '<em><b>Pat Tech</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__PAT_TECH = eINSTANCE.getFNC_PatTech();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__RESERVED1 = eINSTANCE.getFNC_Reserved1();
+
+		/**
+		 * The meta object literal for the '<em><b>Fnt Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNT_FLAGS = eINSTANCE.getFNC_FntFlags();
+
+		/**
+		 * The meta object literal for the '<em><b>XUnit Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__XUNIT_BASE = eINSTANCE.getFNC_XUnitBase();
+
+		/**
+		 * The meta object literal for the '<em><b>YUnit Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__YUNIT_BASE = eINSTANCE.getFNC_YUnitBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Xft Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__XFT_UNITS = eINSTANCE.getFNC_XftUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Yft Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__YFT_UNITS = eINSTANCE.getFNC_YftUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Box Wd</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__MAX_BOX_WD = eINSTANCE.getFNC_MaxBoxWd();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Box Ht</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__MAX_BOX_HT = eINSTANCE.getFNC_MaxBoxHt();
+
+		/**
+		 * The meta object literal for the '<em><b>FNORG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNORG_LEN = eINSTANCE.getFNC_FNORGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>FNIRG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNIRG_LEN = eINSTANCE.getFNC_FNIRGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>Pat Align</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__PAT_ALIGN = eINSTANCE.getFNC_PatAlign();
+
+		/**
+		 * The meta object literal for the '<em><b>RPat DCnt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__RPAT_DCNT = eINSTANCE.getFNC_RPatDCnt();
+
+		/**
+		 * The meta object literal for the '<em><b>FNPRG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNPRG_LEN = eINSTANCE.getFNC_FNPRGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>FNMRG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNMRG_LEN = eINSTANCE.getFNC_FNMRGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>Res XU Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__RES_XU_BASE = eINSTANCE.getFNC_ResXUBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Res YU Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__RES_YU_BASE = eINSTANCE.getFNC_ResYUBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Xfr Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__XFR_UNITS = eINSTANCE.getFNC_XfrUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Yfr Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__YFR_UNITS = eINSTANCE.getFNC_YfrUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>OPat DCnt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__OPAT_DCNT = eINSTANCE.getFNC_OPatDCnt();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__RESERVED2 = eINSTANCE.getFNC_Reserved2();
+
+		/**
+		 * The meta object literal for the '<em><b>FNNRG Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNNRG_LEN = eINSTANCE.getFNC_FNNRGLen();
+
+		/**
+		 * The meta object literal for the '<em><b>FNND Cnt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNND_CNT = eINSTANCE.getFNC_FNNDCnt();
+
+		/**
+		 * The meta object literal for the '<em><b>FNN Map Cnt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNC__FNN_MAP_CNT = eINSTANCE.getFNC_FNNMapCnt();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FNC__TRIPLETS = eINSTANCE.getFNC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNDImpl <em>FND</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFND()
+		 * @generated
+		 */
+		EClass FND = eINSTANCE.getFND();
+
+		/**
+		 * The meta object literal for the '<em><b>Type Fc Desc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__TYPE_FC_DESC = eINSTANCE.getFND_TypeFcDesc();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Wt Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__FT_WT_CLASS = eINSTANCE.getFND_FtWtClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Wd Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__FT_WD_CLASS = eINSTANCE.getFND_FtWdClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Pt Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__MAX_PT_SIZE = eINSTANCE.getFND_MaxPtSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Nom Pt Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__NOM_PT_SIZE = eINSTANCE.getFND_NomPtSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Pt Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__MIN_PT_SIZE = eINSTANCE.getFND_MinPtSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Max HSize</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__MAX_HSIZE = eINSTANCE.getFND_MaxHSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Nom HSize</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__NOM_HSIZE = eINSTANCE.getFND_NomHSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Min HSize</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__MIN_HSIZE = eINSTANCE.getFND_MinHSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Dsn Gen Cls</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__DSN_GEN_CLS = eINSTANCE.getFND_DsnGenCls();
+
+		/**
+		 * The meta object literal for the '<em><b>Dsn Sub Cls</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__DSN_SUB_CLS = eINSTANCE.getFND_DsnSubCls();
+
+		/**
+		 * The meta object literal for the '<em><b>Dsn Spc Grp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__DSN_SPC_GRP = eINSTANCE.getFND_DsnSpcGrp();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__RESERVED1 = eINSTANCE.getFND_Reserved1();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Ds Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__FT_DS_FLAGS = eINSTANCE.getFND_FtDsFlags();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__RESERVED2 = eINSTANCE.getFND_Reserved2();
+
+		/**
+		 * The meta object literal for the '<em><b>GCSID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__GCSID = eINSTANCE.getFND_GCSID();
+
+		/**
+		 * The meta object literal for the '<em><b>FGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FND__FGID = eINSTANCE.getFND_FGID();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FND__TRIPLETS = eINSTANCE.getFND_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNGImpl <em>FNG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNG()
+		 * @generated
+		 */
+		EClass FNG = eINSTANCE.getFNG();
+
+		/**
+		 * The meta object literal for the '<em><b>Pat Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNG__PAT_DATA = eINSTANCE.getFNG_PatData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNIImpl <em>FNI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNI()
+		 * @generated
+		 */
+		EClass FNI = eINSTANCE.getFNI();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FNI__RG = eINSTANCE.getFNI_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNNImpl <em>FNN</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNNImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNN()
+		 * @generated
+		 */
+		EClass FNN = eINSTANCE.getFNN();
+
+		/**
+		 * The meta object literal for the '<em><b>FNN Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNN__FNN_DATA = eINSTANCE.getFNN_FNNData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNMImpl <em>FNM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNM()
+		 * @generated
+		 */
+		EClass FNM = eINSTANCE.getFNM();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FNM__RG = eINSTANCE.getFNM_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNOImpl <em>FNO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNO()
+		 * @generated
+		 */
+		EClass FNO = eINSTANCE.getFNO();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FNO__RG = eINSTANCE.getFNO_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNPImpl <em>FNP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNP()
+		 * @generated
+		 */
+		EClass FNP = eINSTANCE.getFNP();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FNP__RG = eINSTANCE.getFNP_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GADImpl <em>GAD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GADImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGAD()
+		 * @generated
+		 */
+		EClass GAD = eINSTANCE.getGAD();
+
+		/**
+		 * The meta object literal for the '<em><b>GOC Adat</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GAD__GOC_ADAT = eINSTANCE.getGAD_GOCAdat();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GDDImpl <em>GDD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GDDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGDD()
+		 * @generated
+		 */
+		EClass GDD = eINSTANCE.getGDD();
+
+		/**
+		 * The meta object literal for the '<em><b>GOC Ades</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GDD__GOC_ADES = eINSTANCE.getGDD_GOCAdes();
+
+		/**
+		 * The meta object literal for the '<em><b>Commands</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GDD__COMMANDS = eINSTANCE.getGDD_Commands();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ICPImpl <em>ICP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ICPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getICP()
+		 * @generated
+		 */
+		EClass ICP = eINSTANCE.getICP();
+
+		/**
+		 * The meta object literal for the '<em><b>XC Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ICP__XC_OSET = eINSTANCE.getICP_XCOset();
+
+		/**
+		 * The meta object literal for the '<em><b>YC Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ICP__YC_OSET = eINSTANCE.getICP_YCOset();
+
+		/**
+		 * The meta object literal for the '<em><b>XC Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ICP__XC_SIZE = eINSTANCE.getICP_XCSize();
+
+		/**
+		 * The meta object literal for the '<em><b>YC Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ICP__YC_SIZE = eINSTANCE.getICP_YCSize();
+
+		/**
+		 * The meta object literal for the '<em><b>XFil Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ICP__XFIL_SIZE = eINSTANCE.getICP_XFilSize();
+
+		/**
+		 * The meta object literal for the '<em><b>YFil Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ICP__YFIL_SIZE = eINSTANCE.getICP_YFilSize();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IDDImpl <em>IDD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IDDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDD()
+		 * @generated
+		 */
+		EClass IDD = eINSTANCE.getIDD();
+
+		/**
+		 * The meta object literal for the '<em><b>UNITBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDD__UNITBASE = eINSTANCE.getIDD_UNITBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>XRESOL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDD__XRESOL = eINSTANCE.getIDD_XRESOL();
+
+		/**
+		 * The meta object literal for the '<em><b>YRESOL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDD__YRESOL = eINSTANCE.getIDD_YRESOL();
+
+		/**
+		 * The meta object literal for the '<em><b>XSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDD__XSIZE = eINSTANCE.getIDD_XSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>YSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDD__YSIZE = eINSTANCE.getIDD_YSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>SDFS</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IDD__SDFS = eINSTANCE.getIDD_SDFS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IELImpl <em>IEL</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IELImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIEL()
+		 * @generated
+		 */
+		EClass IEL = eINSTANCE.getIEL();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IEL__TRIPLETS = eINSTANCE.getIEL_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IIDImpl <em>IID</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IIDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIID()
+		 * @generated
+		 */
+		EClass IID = eINSTANCE.getIID();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__CON_DATA1 = eINSTANCE.getIID_ConData1();
+
+		/**
+		 * The meta object literal for the '<em><b>XBase</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__XBASE = eINSTANCE.getIID_XBase();
+
+		/**
+		 * The meta object literal for the '<em><b>YBase</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__YBASE = eINSTANCE.getIID_YBase();
+
+		/**
+		 * The meta object literal for the '<em><b>XUnits</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__XUNITS = eINSTANCE.getIID_XUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>YUnits</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__YUNITS = eINSTANCE.getIID_YUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>XSize</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__XSIZE = eINSTANCE.getIID_XSize();
+
+		/**
+		 * The meta object literal for the '<em><b>YSize</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__YSIZE = eINSTANCE.getIID_YSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__CON_DATA2 = eINSTANCE.getIID_ConData2();
+
+		/**
+		 * The meta object literal for the '<em><b>XC Size D</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__XC_SIZE_D = eINSTANCE.getIID_XCSizeD();
+
+		/**
+		 * The meta object literal for the '<em><b>YC Size D</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__YC_SIZE_D = eINSTANCE.getIID_YCSizeD();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__CON_DATA3 = eINSTANCE.getIID_ConData3();
+
+		/**
+		 * The meta object literal for the '<em><b>Color</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IID__COLOR = eINSTANCE.getIID_Color();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IMMImpl <em>IMM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IMMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIMM()
+		 * @generated
+		 */
+		EClass IMM = eINSTANCE.getIMM();
+
+		/**
+		 * The meta object literal for the '<em><b>MMP Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMM__MMP_NAME = eINSTANCE.getIMM_MMPName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMM__TRIPLETS = eINSTANCE.getIMM_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IOBImpl <em>IOB</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IOBImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOB()
+		 * @generated
+		 */
+		EClass IOB = eINSTANCE.getIOB();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__OBJ_NAME = eINSTANCE.getIOB_ObjName();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__OBJ_TYPE = eINSTANCE.getIOB_ObjType();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__XOA_OSET = eINSTANCE.getIOB_XoaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__YOA_OSET = eINSTANCE.getIOB_YoaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__XOA_ORENT = eINSTANCE.getIOB_XoaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__YOA_ORENT = eINSTANCE.getIOB_YoaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoca Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__XOCA_OSET = eINSTANCE.getIOB_XocaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoca Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__YOCA_OSET = eINSTANCE.getIOB_YocaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref CSys</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOB__REF_CSYS = eINSTANCE.getIOB_RefCSys();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IOB__TRIPLETS = eINSTANCE.getIOB_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IOCImpl <em>IOC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IOCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOC()
+		 * @generated
+		 */
+		EClass IOC = eINSTANCE.getIOC();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__XOA_OSET = eINSTANCE.getIOC_XoaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__YOA_OSET = eINSTANCE.getIOC_YoaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__XOA_ORENT = eINSTANCE.getIOC_XoaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__YOA_ORENT = eINSTANCE.getIOC_YoaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__CON_DATA1 = eINSTANCE.getIOC_ConData1();
+
+		/**
+		 * The meta object literal for the '<em><b>XMap</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__XMAP = eINSTANCE.getIOC_XMap();
+
+		/**
+		 * The meta object literal for the '<em><b>YMap</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__YMAP = eINSTANCE.getIOC_YMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOC__CON_DATA2 = eINSTANCE.getIOC_ConData2();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IPDImpl <em>IPD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IPDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPD()
+		 * @generated
+		 */
+		EClass IPD = eINSTANCE.getIPD();
+
+		/**
+		 * The meta object literal for the '<em><b>IOC Adat</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPD__IOC_ADAT = eINSTANCE.getIPD_IOCAdat();
+
+		/**
+		 * The meta object literal for the '<em><b>Image Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPD__IMAGE_DATA = eINSTANCE.getIPD_ImageData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IPGImpl <em>IPG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IPGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPG()
+		 * @generated
+		 */
+		EClass IPG = eINSTANCE.getIPG();
+
+		/**
+		 * The meta object literal for the '<em><b>Pg Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPG__PG_NAME = eINSTANCE.getIPG_PgName();
+
+		/**
+		 * The meta object literal for the '<em><b>IPg Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPG__IPG_FLGS = eINSTANCE.getIPG_IPgFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IPG__TRIPLETS = eINSTANCE.getIPG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IPOImpl <em>IPO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IPOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPO()
+		 * @generated
+		 */
+		EClass IPO = eINSTANCE.getIPO();
+
+		/**
+		 * The meta object literal for the '<em><b>Ovly Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPO__OVLY_NAME = eINSTANCE.getIPO_OvlyName();
+
+		/**
+		 * The meta object literal for the '<em><b>Xol Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPO__XOL_OSET = eINSTANCE.getIPO_XolOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yol Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPO__YOL_OSET = eINSTANCE.getIPO_YolOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Ovly Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPO__OVLY_ORENT = eINSTANCE.getIPO_OvlyOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IPO__TRIPLETS = eINSTANCE.getIPO_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IPSImpl <em>IPS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IPSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPS()
+		 * @generated
+		 */
+		EClass IPS = eINSTANCE.getIPS();
+
+		/**
+		 * The meta object literal for the '<em><b>Pseg Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPS__PSEG_NAME = eINSTANCE.getIPS_PsegName();
+
+		/**
+		 * The meta object literal for the '<em><b>Xps Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPS__XPS_OSET = eINSTANCE.getIPS_XpsOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yps Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IPS__YPS_OSET = eINSTANCE.getIPS_YpsOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IPS__TRIPLETS = eINSTANCE.getIPS_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IRDImpl <em>IRD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IRDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIRD()
+		 * @generated
+		 */
+		EClass IRD = eINSTANCE.getIRD();
+
+		/**
+		 * The meta object literal for the '<em><b>IMdata</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IRD__IMDATA = eINSTANCE.getIRD_IMdata();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LLEImpl <em>LLE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LLEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLLE()
+		 * @generated
+		 */
+		EClass LLE = eINSTANCE.getLLE();
+
+		/**
+		 * The meta object literal for the '<em><b>Lnk Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LLE__LNK_TYPE = eINSTANCE.getLLE_LnkType();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LLE__RG = eINSTANCE.getLLE_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LNCImpl <em>LNC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LNCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLNC()
+		 * @generated
+		 */
+		EClass LNC = eINSTANCE.getLNC();
+
+		/**
+		 * The meta object literal for the '<em><b>Num DSC</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LNC__NUM_DSC = eINSTANCE.getLNC_NumDSC();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LNDImpl <em>LND</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LNDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLND()
+		 * @generated
+		 */
+		EClass LND = eINSTANCE.getLND();
+
+		/**
+		 * The meta object literal for the '<em><b>LND Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__LND_FLGS = eINSTANCE.getLND_LNDFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>IPos</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__IPOS = eINSTANCE.getLND_IPos();
+
+		/**
+		 * The meta object literal for the '<em><b>BPos</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__BPOS = eINSTANCE.getLND_BPos();
+
+		/**
+		 * The meta object literal for the '<em><b>Txt Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__TXT_ORENT = eINSTANCE.getLND_TxtOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Fnt LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__FNT_LID = eINSTANCE.getLND_FntLID();
+
+		/**
+		 * The meta object literal for the '<em><b>Chnl Cde</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__CHNL_CDE = eINSTANCE.getLND_ChnlCde();
+
+		/**
+		 * The meta object literal for the '<em><b>NLN Dskp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__NLN_DSKP = eINSTANCE.getLND_NLNDskp();
+
+		/**
+		 * The meta object literal for the '<em><b>NLN Dsp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__NLN_DSP = eINSTANCE.getLND_NLNDsp();
+
+		/**
+		 * The meta object literal for the '<em><b>NLN Dreu</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__NLN_DREU = eINSTANCE.getLND_NLNDreu();
+
+		/**
+		 * The meta object literal for the '<em><b>Sup Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__SUP_NAME = eINSTANCE.getLND_SupName();
+
+		/**
+		 * The meta object literal for the '<em><b>SO Lid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__SO_LID = eINSTANCE.getLND_SOLid();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Strt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__DATA_STRT = eINSTANCE.getLND_DataStrt();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Lgth</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__DATA_LGTH = eINSTANCE.getLND_DataLgth();
+
+		/**
+		 * The meta object literal for the '<em><b>Txt Color</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__TXT_COLOR = eINSTANCE.getLND_TxtColor();
+
+		/**
+		 * The meta object literal for the '<em><b>NLN Dccp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__NLN_DCCP = eINSTANCE.getLND_NLNDccp();
+
+		/**
+		 * The meta object literal for the '<em><b>Subpg ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__SUBPG_ID = eINSTANCE.getLND_SubpgID();
+
+		/**
+		 * The meta object literal for the '<em><b>CCPID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LND__CCPID = eINSTANCE.getLND_CCPID();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LND__TRIPLETS = eINSTANCE.getLND_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MBCImpl <em>MBC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MBCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMBC()
+		 * @generated
+		 */
+		EClass MBC = eINSTANCE.getMBC();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MBC__RG = eINSTANCE.getMBC_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCAImpl <em>MCA</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCAImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCA()
+		 * @generated
+		 */
+		EClass MCA = eINSTANCE.getMCA();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCA__RG = eINSTANCE.getMCA_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCCImpl <em>MCC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCC()
+		 * @generated
+		 */
+		EClass MCC = eINSTANCE.getMCC();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCC__RG = eINSTANCE.getMCC_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCDImpl <em>MCD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCD()
+		 * @generated
+		 */
+		EClass MCD = eINSTANCE.getMCD();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCD__RG = eINSTANCE.getMCD_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCFImpl <em>MCF</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCFImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCF()
+		 * @generated
+		 */
+		EClass MCF = eINSTANCE.getMCF();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCF__RG = eINSTANCE.getMCF_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCF1Impl <em>MCF1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCF1Impl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCF1()
+		 * @generated
+		 */
+		EClass MCF1 = eINSTANCE.getMCF1();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1__RG_LENGTH = eINSTANCE.getMCF1_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCF1__RG = eINSTANCE.getMCF1_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MDDImpl <em>MDD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MDDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDD()
+		 * @generated
+		 */
+		EClass MDD = eINSTANCE.getMDD();
+
+		/**
+		 * The meta object literal for the '<em><b>Xm Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__XM_BASE = eINSTANCE.getMDD_XmBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Ym Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__YM_BASE = eINSTANCE.getMDD_YmBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Xm Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__XM_UNITS = eINSTANCE.getMDD_XmUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Ym Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__YM_UNITS = eINSTANCE.getMDD_YmUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Xm Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__XM_SIZE = eINSTANCE.getMDD_XmSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Ym Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__YM_SIZE = eINSTANCE.getMDD_YmSize();
+
+		/**
+		 * The meta object literal for the '<em><b>MDD Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDD__MDD_FLGS = eINSTANCE.getMDD_MDDFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MDD__TRIPLETS = eINSTANCE.getMDD_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MDRImpl <em>MDR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MDRImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDR()
+		 * @generated
+		 */
+		EClass MDR = eINSTANCE.getMDR();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MDR__RG = eINSTANCE.getMDR_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MFCImpl <em>MFC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MFCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFC()
+		 * @generated
+		 */
+		EClass MFC = eINSTANCE.getMFC();
+
+		/**
+		 * The meta object literal for the '<em><b>MFC Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFC__MFC_FLGS = eINSTANCE.getMFC_MFCFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Med Coll</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFC__MED_COLL = eINSTANCE.getMFC_MedColl();
+
+		/**
+		 * The meta object literal for the '<em><b>MFC Scpe</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFC__MFC_SCPE = eINSTANCE.getMFC_MFCScpe();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MFC__TRIPLETS = eINSTANCE.getMFC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MGOImpl <em>MGO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MGOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMGO()
+		 * @generated
+		 */
+		EClass MGO = eINSTANCE.getMGO();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MGO__RG = eINSTANCE.getMGO_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MIOImpl <em>MIO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MIOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMIO()
+		 * @generated
+		 */
+		EClass MIO = eINSTANCE.getMIO();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MIO__RG = eINSTANCE.getMIO_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMCImpl <em>MMC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMC()
+		 * @generated
+		 */
+		EClass MMC = eINSTANCE.getMMC();
+
+		/**
+		 * The meta object literal for the '<em><b>MM Cid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMC__MM_CID = eINSTANCE.getMMC_MMCid();
+
+		/**
+		 * The meta object literal for the '<em><b>PARAMETER1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMC__PARAMETER1 = eINSTANCE.getMMC_PARAMETER1();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MMC__RG = eINSTANCE.getMMC_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMDImpl <em>MMD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMD()
+		 * @generated
+		 */
+		EClass MMD = eINSTANCE.getMMD();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MMD__RG = eINSTANCE.getMMD_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMOImpl <em>MMO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMO()
+		 * @generated
+		 */
+		EClass MMO = eINSTANCE.getMMO();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMO__RG_LENGTH = eINSTANCE.getMMO_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MMO__RG = eINSTANCE.getMMO_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMTImpl <em>MMT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMT()
+		 * @generated
+		 */
+		EClass MMT = eINSTANCE.getMMT();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MMT__RG = eINSTANCE.getMMT_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MPGImpl <em>MPG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MPGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPG()
+		 * @generated
+		 */
+		EClass MPG = eINSTANCE.getMPG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MPG__RG = eINSTANCE.getMPG_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MPOImpl <em>MPO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MPOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPO()
+		 * @generated
+		 */
+		EClass MPO = eINSTANCE.getMPO();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MPO__RG = eINSTANCE.getMPO_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MPSImpl <em>MPS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MPSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPS()
+		 * @generated
+		 */
+		EClass MPS = eINSTANCE.getMPS();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPS__RG_LENGTH = eINSTANCE.getMPS_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPS__RESERVED = eINSTANCE.getMPS_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Fixed Length RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MPS__FIXED_LENGTH_RG = eINSTANCE.getMPS_FixedLengthRG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MSUImpl <em>MSU</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MSUImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMSU()
+		 * @generated
+		 */
+		EClass MSU = eINSTANCE.getMSU();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MSU__RG = eINSTANCE.getMSU_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.NOPImpl <em>NOP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.NOPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getNOP()
+		 * @generated
+		 */
+		EClass NOP = eINSTANCE.getNOP();
+
+		/**
+		 * The meta object literal for the '<em><b>Undf Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NOP__UNDF_DATA = eINSTANCE.getNOP_UndfData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.OBDImpl <em>OBD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.OBDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBD()
+		 * @generated
+		 */
+		EClass OBD = eINSTANCE.getOBD();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBD__TRIPLETS = eINSTANCE.getOBD_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.OBPImpl <em>OBP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.OBPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBP()
+		 * @generated
+		 */
+		EClass OBP = eINSTANCE.getOBP();
+
+		/**
+		 * The meta object literal for the '<em><b>OA Pos ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__OA_POS_ID = eINSTANCE.getOBP_OAPosID();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__RG_LENGTH = eINSTANCE.getOBP_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__XOA_OSET = eINSTANCE.getOBP_XoaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__YOA_OSET = eINSTANCE.getOBP_YoaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__XOA_ORENT = eINSTANCE.getOBP_XoaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__YOA_ORENT = eINSTANCE.getOBP_YoaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoca Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__XOCA_OSET = eINSTANCE.getOBP_XocaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoca Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__YOCA_OSET = eINSTANCE.getOBP_YocaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoca Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__XOCA_ORENT = eINSTANCE.getOBP_XocaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoca Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__YOCA_ORENT = eINSTANCE.getOBP_YocaOrent();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref CSys</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBP__REF_CSYS = eINSTANCE.getOBP_RefCSys();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.OCDImpl <em>OCD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.OCDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOCD()
+		 * @generated
+		 */
+		EClass OCD = eINSTANCE.getOCD();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Cdat</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OCD__OBJ_CDAT = eINSTANCE.getOCD_ObjCdat();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PECImpl <em>PEC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PECImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPEC()
+		 * @generated
+		 */
+		EClass PEC = eINSTANCE.getPEC();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PEC__TRIPLETS = eINSTANCE.getPEC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PFCImpl <em>PFC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PFCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPFC()
+		 * @generated
+		 */
+		EClass PFC = eINSTANCE.getPFC();
+
+		/**
+		 * The meta object literal for the '<em><b>PFC Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PFC__PFC_FLGS = eINSTANCE.getPFC_PFCFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PFC__TRIPLETS = eINSTANCE.getPFC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PGDImpl <em>PGD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PGDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGD()
+		 * @generated
+		 */
+		EClass PGD = eINSTANCE.getPGD();
+
+		/**
+		 * The meta object literal for the '<em><b>Xpg Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__XPG_BASE = eINSTANCE.getPGD_XpgBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Ypg Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__YPG_BASE = eINSTANCE.getPGD_YpgBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Xpg Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__XPG_UNITS = eINSTANCE.getPGD_XpgUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Ypg Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__YPG_UNITS = eINSTANCE.getPGD_YpgUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Xpg Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__XPG_SIZE = eINSTANCE.getPGD_XpgSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Ypg Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__YPG_SIZE = eINSTANCE.getPGD_YpgSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGD__RESERVED = eINSTANCE.getPGD_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PGD__TRIPLETS = eINSTANCE.getPGD_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PGPImpl <em>PGP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PGPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGP()
+		 * @generated
+		 */
+		EClass PGP = eINSTANCE.getPGP();
+
+		/**
+		 * The meta object literal for the '<em><b>Constant</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGP__CONSTANT = eINSTANCE.getPGP_Constant();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PGP__RG = eINSTANCE.getPGP_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PGP1Impl <em>PGP1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PGP1Impl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGP1()
+		 * @generated
+		 */
+		EClass PGP1 = eINSTANCE.getPGP1();
+
+		/**
+		 * The meta object literal for the '<em><b>XOset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGP1__XOSET = eINSTANCE.getPGP1_XOset();
+
+		/**
+		 * The meta object literal for the '<em><b>YOset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGP1__YOSET = eINSTANCE.getPGP1_YOset();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PMCImpl <em>PMC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PMCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPMC()
+		 * @generated
+		 */
+		EClass PMC = eINSTANCE.getPMC();
+
+		/**
+		 * The meta object literal for the '<em><b>PM Cid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PMC__PM_CID = eINSTANCE.getPMC_PMCid();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PMC__TRIPLETS = eINSTANCE.getPMC_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PPOImpl <em>PPO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PPOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPO()
+		 * @generated
+		 */
+		EClass PPO = eINSTANCE.getPPO();
+
+		/**
+		 * The meta object literal for the '<em><b>RG</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PPO__RG = eINSTANCE.getPPO_RG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PTDImpl <em>PTD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PTDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD()
+		 * @generated
+		 */
+		EClass PTD = eINSTANCE.getPTD();
+
+		/**
+		 * The meta object literal for the '<em><b>XPBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__XPBASE = eINSTANCE.getPTD_XPBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>YPBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__YPBASE = eINSTANCE.getPTD_YPBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>XPUNITVL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__XPUNITVL = eINSTANCE.getPTD_XPUNITVL();
+
+		/**
+		 * The meta object literal for the '<em><b>YPUNITVL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__YPUNITVL = eINSTANCE.getPTD_YPUNITVL();
+
+		/**
+		 * The meta object literal for the '<em><b>XPEXTENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__XPEXTENT = eINSTANCE.getPTD_XPEXTENT();
+
+		/**
+		 * The meta object literal for the '<em><b>YPEXTENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__YPEXTENT = eINSTANCE.getPTD_YPEXTENT();
+
+		/**
+		 * The meta object literal for the '<em><b>RESERVED</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD__RESERVED = eINSTANCE.getPTD_RESERVED();
+
+		/**
+		 * The meta object literal for the '<em><b>CS</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PTD__CS = eINSTANCE.getPTD_CS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PTD1Impl <em>PTD1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PTD1Impl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1()
+		 * @generated
+		 */
+		EClass PTD1 = eINSTANCE.getPTD1();
+
+		/**
+		 * The meta object literal for the '<em><b>XPBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__XPBASE = eINSTANCE.getPTD1_XPBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>YPBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__YPBASE = eINSTANCE.getPTD1_YPBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>XPUNITVL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__XPUNITVL = eINSTANCE.getPTD1_XPUNITVL();
+
+		/**
+		 * The meta object literal for the '<em><b>YPUNITVL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__YPUNITVL = eINSTANCE.getPTD1_YPUNITVL();
+
+		/**
+		 * The meta object literal for the '<em><b>XPEXTENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__XPEXTENT = eINSTANCE.getPTD1_XPEXTENT();
+
+		/**
+		 * The meta object literal for the '<em><b>YPEXTENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__YPEXTENT = eINSTANCE.getPTD1_YPEXTENT();
+
+		/**
+		 * The meta object literal for the '<em><b>RESERVED</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PTD1__RESERVED = eINSTANCE.getPTD1_RESERVED();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PTXImpl <em>PTX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PTXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTX()
+		 * @generated
+		 */
+		EClass PTX = eINSTANCE.getPTX();
+
+		/**
+		 * The meta object literal for the '<em><b>CS</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PTX__CS = eINSTANCE.getPTX_CS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TLEImpl <em>TLE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TLEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTLE()
+		 * @generated
+		 */
+		EClass TLE = eINSTANCE.getTLE();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TLE__TRIPLETS = eINSTANCE.getTLE_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FGDImpl <em>FGD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FGDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFGD()
+		 * @generated
+		 */
+		EClass FGD = eINSTANCE.getFGD();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FGD__CON_DATA = eINSTANCE.getFGD_ConData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.AMBImpl <em>AMB</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.AMBImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getAMB()
+		 * @generated
+		 */
+		EClass AMB = eINSTANCE.getAMB();
+
+		/**
+		 * The meta object literal for the '<em><b>DSPLCMNT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AMB__DSPLCMNT = eINSTANCE.getAMB_DSPLCMNT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.AMIImpl <em>AMI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.AMIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getAMI()
+		 * @generated
+		 */
+		EClass AMI = eINSTANCE.getAMI();
+
+		/**
+		 * The meta object literal for the '<em><b>DSPLCMNT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AMI__DSPLCMNT = eINSTANCE.getAMI_DSPLCMNT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BLNImpl <em>BLN</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BLNImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBLN()
+		 * @generated
+		 */
+		EClass BLN = eINSTANCE.getBLN();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BSUImpl <em>BSU</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BSUImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBSU()
+		 * @generated
+		 */
+		EClass BSU = eINSTANCE.getBSU();
+
+		/**
+		 * The meta object literal for the '<em><b>LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BSU__LID = eINSTANCE.getBSU_LID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DBRImpl <em>DBR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DBRImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDBR()
+		 * @generated
+		 */
+		EClass DBR = eINSTANCE.getDBR();
+
+		/**
+		 * The meta object literal for the '<em><b>RLENGTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DBR__RLENGTH = eINSTANCE.getDBR_RLENGTH();
+
+		/**
+		 * The meta object literal for the '<em><b>RWIDTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DBR__RWIDTH = eINSTANCE.getDBR_RWIDTH();
+
+		/**
+		 * The meta object literal for the '<em><b>RWIDTHFRACTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DBR__RWIDTHFRACTION = eINSTANCE.getDBR_RWIDTHFRACTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DIRImpl <em>DIR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DIRImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDIR()
+		 * @generated
+		 */
+		EClass DIR = eINSTANCE.getDIR();
+
+		/**
+		 * The meta object literal for the '<em><b>RLENGTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DIR__RLENGTH = eINSTANCE.getDIR_RLENGTH();
+
+		/**
+		 * The meta object literal for the '<em><b>RWIDTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DIR__RWIDTH = eINSTANCE.getDIR_RWIDTH();
+
+		/**
+		 * The meta object literal for the '<em><b>RWIDTHFRACTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DIR__RWIDTHFRACTION = eINSTANCE.getDIR_RWIDTHFRACTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ESUImpl <em>ESU</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ESUImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getESU()
+		 * @generated
+		 */
+		EClass ESU = eINSTANCE.getESU();
+
+		/**
+		 * The meta object literal for the '<em><b>LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ESU__LID = eINSTANCE.getESU_LID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.NOPCSImpl <em>NOPCS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.NOPCSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getNOPCS()
+		 * @generated
+		 */
+		EClass NOPCS = eINSTANCE.getNOPCS();
+
+		/**
+		 * The meta object literal for the '<em><b>IGNDATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NOPCS__IGNDATA = eINSTANCE.getNOPCS_IGNDATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.OVSImpl <em>OVS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.OVSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOVS()
+		 * @generated
+		 */
+		EClass OVS = eINSTANCE.getOVS();
+
+		/**
+		 * The meta object literal for the '<em><b>BYPSIDEN</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OVS__BYPSIDEN = eINSTANCE.getOVS_BYPSIDEN();
+
+		/**
+		 * The meta object literal for the '<em><b>OVERCHAR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OVS__OVERCHAR = eINSTANCE.getOVS_OVERCHAR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.RMBImpl <em>RMB</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.RMBImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRMB()
+		 * @generated
+		 */
+		EClass RMB = eINSTANCE.getRMB();
+
+		/**
+		 * The meta object literal for the '<em><b>INCRMENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RMB__INCRMENT = eINSTANCE.getRMB_INCRMENT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.RMIImpl <em>RMI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.RMIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRMI()
+		 * @generated
+		 */
+		EClass RMI = eINSTANCE.getRMI();
+
+		/**
+		 * The meta object literal for the '<em><b>INCRMENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RMI__INCRMENT = eINSTANCE.getRMI_INCRMENT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.RPSImpl <em>RPS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.RPSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRPS()
+		 * @generated
+		 */
+		EClass RPS = eINSTANCE.getRPS();
+
+		/**
+		 * The meta object literal for the '<em><b>RLENGTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RPS__RLENGTH = eINSTANCE.getRPS_RLENGTH();
+
+		/**
+		 * The meta object literal for the '<em><b>RPTDATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RPS__RPTDATA = eINSTANCE.getRPS_RPTDATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SBIImpl <em>SBI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SBIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSBI()
+		 * @generated
+		 */
+		EClass SBI = eINSTANCE.getSBI();
+
+		/**
+		 * The meta object literal for the '<em><b>INCRMENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SBI__INCRMENT = eINSTANCE.getSBI_INCRMENT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SCFLImpl <em>SCFL</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SCFLImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSCFL()
+		 * @generated
+		 */
+		EClass SCFL = eINSTANCE.getSCFL();
+
+		/**
+		 * The meta object literal for the '<em><b>LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SCFL__LID = eINSTANCE.getSCFL_LID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SECImpl <em>SEC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SECImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSEC()
+		 * @generated
+		 */
+		EClass SEC = eINSTANCE.getSEC();
+
+		/**
+		 * The meta object literal for the '<em><b>RESERVED</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__RESERVED = eINSTANCE.getSEC_RESERVED();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSPCE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__COLSPCE = eINSTANCE.getSEC_COLSPCE();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__COLSIZE1 = eINSTANCE.getSEC_COLSIZE1();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__COLSIZE2 = eINSTANCE.getSEC_COLSIZE2();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__COLSIZE3 = eINSTANCE.getSEC_COLSIZE3();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE4</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__COLSIZE4 = eINSTANCE.getSEC_COLSIZE4();
+
+		/**
+		 * The meta object literal for the '<em><b>COLVALUE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SEC__COLVALUE = eINSTANCE.getSEC_COLVALUE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SIAImpl <em>SIA</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SIAImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSIA()
+		 * @generated
+		 */
+		EClass SIA = eINSTANCE.getSIA();
+
+		/**
+		 * The meta object literal for the '<em><b>ADJSTMNT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIA__ADJSTMNT = eINSTANCE.getSIA_ADJSTMNT();
+
+		/**
+		 * The meta object literal for the '<em><b>DIRCTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIA__DIRCTION = eINSTANCE.getSIA_DIRCTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SIMImpl <em>SIM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SIMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSIM()
+		 * @generated
+		 */
+		EClass SIM = eINSTANCE.getSIM();
+
+		/**
+		 * The meta object literal for the '<em><b>DSPLCMNT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIM__DSPLCMNT = eINSTANCE.getSIM_DSPLCMNT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.STCImpl <em>STC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.STCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTC()
+		 * @generated
+		 */
+		EClass STC = eINSTANCE.getSTC();
+
+		/**
+		 * The meta object literal for the '<em><b>FRGCOLOR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STC__FRGCOLOR = eINSTANCE.getSTC_FRGCOLOR();
+
+		/**
+		 * The meta object literal for the '<em><b>PRECSION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STC__PRECSION = eINSTANCE.getSTC_PRECSION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.STOImpl <em>STO</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.STOImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTO()
+		 * @generated
+		 */
+		EClass STO = eINSTANCE.getSTO();
+
+		/**
+		 * The meta object literal for the '<em><b>IORNTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STO__IORNTION = eINSTANCE.getSTO_IORNTION();
+
+		/**
+		 * The meta object literal for the '<em><b>BORNTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STO__BORNTION = eINSTANCE.getSTO_BORNTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SVIImpl <em>SVI</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SVIImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSVI()
+		 * @generated
+		 */
+		EClass SVI = eINSTANCE.getSVI();
+
+		/**
+		 * The meta object literal for the '<em><b>INCRMENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SVI__INCRMENT = eINSTANCE.getSVI_INCRMENT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TBMImpl <em>TBM</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TBMImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBM()
+		 * @generated
+		 */
+		EClass TBM = eINSTANCE.getTBM();
+
+		/**
+		 * The meta object literal for the '<em><b>DIRCTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TBM__DIRCTION = eINSTANCE.getTBM_DIRCTION();
+
+		/**
+		 * The meta object literal for the '<em><b>PRECSION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TBM__PRECSION = eINSTANCE.getTBM_PRECSION();
+
+		/**
+		 * The meta object literal for the '<em><b>INCRMENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TBM__INCRMENT = eINSTANCE.getTBM_INCRMENT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TRNImpl <em>TRN</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TRNImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTRN()
+		 * @generated
+		 */
+		EClass TRN = eINSTANCE.getTRN();
+
+		/**
+		 * The meta object literal for the '<em><b>TRNDATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRN__TRNDATA = eINSTANCE.getTRN_TRNDATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.USCImpl <em>USC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.USCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getUSC()
+		 * @generated
+		 */
+		EClass USC = eINSTANCE.getUSC();
+
+		/**
+		 * The meta object literal for the '<em><b>BYPSIDEN</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USC__BYPSIDEN = eINSTANCE.getUSC_BYPSIDEN();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.AttributeQualifierImpl <em>Attribute Qualifier</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.AttributeQualifierImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getAttributeQualifier()
+		 * @generated
+		 */
+		EClass ATTRIBUTE_QUALIFIER = eINSTANCE.getAttributeQualifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Seq Num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_QUALIFIER__SEQ_NUM = eINSTANCE.getAttributeQualifier_SeqNum();
+
+		/**
+		 * The meta object literal for the '<em><b>Lev Num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_QUALIFIER__LEV_NUM = eINSTANCE.getAttributeQualifier_LevNum();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.AttributeValueImpl <em>Attribute Value</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.AttributeValueImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getAttributeValue()
+		 * @generated
+		 */
+		EClass ATTRIBUTE_VALUE = eINSTANCE.getAttributeValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved0</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_VALUE__RESERVED0 = eINSTANCE.getAttributeValue_Reserved0();
+
+		/**
+		 * The meta object literal for the '<em><b>Att Val</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_VALUE__ATT_VAL = eINSTANCE.getAttributeValue_AttVal();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CGCSGIDImpl <em>CGCSGID</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CGCSGIDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCGCSGID()
+		 * @generated
+		 */
+		EClass CGCSGID = eINSTANCE.getCGCSGID();
+
+		/**
+		 * The meta object literal for the '<em><b>GCSGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CGCSGID__GCSGID = eINSTANCE.getCGCSGID_GCSGID();
+
+		/**
+		 * The meta object literal for the '<em><b>CPGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CGCSGID__CPGID = eINSTANCE.getCGCSGID_CPGID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CRCResourceManagementImpl <em>CRC Resource Management</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CRCResourceManagementImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCRCResourceManagement()
+		 * @generated
+		 */
+		EClass CRC_RESOURCE_MANAGEMENT = eINSTANCE.getCRCResourceManagement();
+
+		/**
+		 * The meta object literal for the '<em><b>Fmt Qual</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CRC_RESOURCE_MANAGEMENT__FMT_QUAL = eINSTANCE.getCRCResourceManagement_FmtQual();
+
+		/**
+		 * The meta object literal for the '<em><b>RM Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CRC_RESOURCE_MANAGEMENT__RM_VALUE = eINSTANCE.getCRCResourceManagement_RMValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Res Class Flg</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG = eINSTANCE.getCRCResourceManagement_ResClassFlg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CharacterRotationImpl <em>Character Rotation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CharacterRotationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCharacterRotation()
+		 * @generated
+		 */
+		EClass CHARACTER_ROTATION = eINSTANCE.getCharacterRotation();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Rot</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CHARACTER_ROTATION__CHAR_ROT = eINSTANCE.getCharacterRotation_CharRot();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ColorSpecificationImpl <em>Color Specification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ColorSpecificationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorSpecification()
+		 * @generated
+		 */
+		EClass COLOR_SPECIFICATION = eINSTANCE.getColorSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>Col Spce</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_SPECIFICATION__COL_SPCE = eINSTANCE.getColorSpecification_ColSpce();
+
+		/**
+		 * The meta object literal for the '<em><b>Col Size1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_SPECIFICATION__COL_SIZE1 = eINSTANCE.getColorSpecification_ColSize1();
+
+		/**
+		 * The meta object literal for the '<em><b>Col Size2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_SPECIFICATION__COL_SIZE2 = eINSTANCE.getColorSpecification_ColSize2();
+
+		/**
+		 * The meta object literal for the '<em><b>Col Size3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_SPECIFICATION__COL_SIZE3 = eINSTANCE.getColorSpecification_ColSize3();
+
+		/**
+		 * The meta object literal for the '<em><b>Col Size4</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_SPECIFICATION__COL_SIZE4 = eINSTANCE.getColorSpecification_ColSize4();
+
+		/**
+		 * The meta object literal for the '<em><b>Color</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_SPECIFICATION__COLOR = eINSTANCE.getColorSpecification_Color();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CommentImpl <em>Comment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CommentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getComment()
+		 * @generated
+		 */
+		EClass COMMENT = eINSTANCE.getComment();
+
+		/**
+		 * The meta object literal for the '<em><b>Comment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COMMENT__COMMENT = eINSTANCE.getComment_Comment();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DataObjectFontDescriptorImpl <em>Data Object Font Descriptor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DataObjectFontDescriptorImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptor()
+		 * @generated
+		 */
+		EClass DATA_OBJECT_FONT_DESCRIPTOR = eINSTANCE.getDataObjectFontDescriptor();
+
+		/**
+		 * The meta object literal for the '<em><b>DO Ft Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__DO_FT_FLGS = eINSTANCE.getDataObjectFontDescriptor_DOFtFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Font Tech</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__FONT_TECH = eINSTANCE.getDataObjectFontDescriptor_FontTech();
+
+		/**
+		 * The meta object literal for the '<em><b>VFS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__VFS = eINSTANCE.getDataObjectFontDescriptor_VFS();
+
+		/**
+		 * The meta object literal for the '<em><b>HFS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__HFS = eINSTANCE.getDataObjectFontDescriptor_HFS();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Rot</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__CHAR_ROT = eINSTANCE.getDataObjectFontDescriptor_CharRot();
+
+		/**
+		 * The meta object literal for the '<em><b>Enc Env</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__ENC_ENV = eINSTANCE.getDataObjectFontDescriptor_EncEnv();
+
+		/**
+		 * The meta object literal for the '<em><b>Enc ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__ENC_ID = eINSTANCE.getDataObjectFontDescriptor_EncID();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_OBJECT_FONT_DESCRIPTOR__RESERVED = eINSTANCE.getDataObjectFontDescriptor_Reserved();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DescriptorPositionImpl <em>Descriptor Position</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DescriptorPositionImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDescriptorPosition()
+		 * @generated
+		 */
+		EClass DESCRIPTOR_POSITION = eINSTANCE.getDescriptorPosition();
+
+		/**
+		 * The meta object literal for the '<em><b>Des Pos ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DESCRIPTOR_POSITION__DES_POS_ID = eINSTANCE.getDescriptorPosition_DesPosID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EncodingSchemeIDImpl <em>Encoding Scheme ID</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EncodingSchemeIDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeID()
+		 * @generated
+		 */
+		EClass ENCODING_SCHEME_ID = eINSTANCE.getEncodingSchemeID();
+
+		/**
+		 * The meta object literal for the '<em><b>ESid CP</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENCODING_SCHEME_ID__ESID_CP = eINSTANCE.getEncodingSchemeID_ESidCP();
+
+		/**
+		 * The meta object literal for the '<em><b>ESid UD</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ENCODING_SCHEME_ID__ESID_UD = eINSTANCE.getEncodingSchemeID_ESidUD();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FontResolutionImpl <em>Font Resolution</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FontResolutionImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolution()
+		 * @generated
+		 */
+		EClass FONT_RESOLUTION = eINSTANCE.getFontResolution();
+
+		/**
+		 * The meta object literal for the '<em><b>Met Tech</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_RESOLUTION__MET_TECH = eINSTANCE.getFontResolution_MetTech();
+
+		/**
+		 * The meta object literal for the '<em><b>RPu Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_RESOLUTION__RPU_BASE = eINSTANCE.getFontResolution_RPuBase();
+
+		/**
+		 * The meta object literal for the '<em><b>RP Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_RESOLUTION__RP_UNITS = eINSTANCE.getFontResolution_RPUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FullyQualifiedNameImpl <em>Fully Qualified Name</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FullyQualifiedNameImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedName()
+		 * @generated
+		 */
+		EClass FULLY_QUALIFIED_NAME = eINSTANCE.getFullyQualifiedName();
+
+		/**
+		 * The meta object literal for the '<em><b>FQN Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FULLY_QUALIFIED_NAME__FQN_TYPE = eINSTANCE.getFullyQualifiedName_FQNType();
+
+		/**
+		 * The meta object literal for the '<em><b>FQN Format</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FULLY_QUALIFIED_NAME__FQN_FORMAT = eINSTANCE.getFullyQualifiedName_FQNFormat();
+
+		/**
+		 * The meta object literal for the '<em><b>FQ Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FULLY_QUALIFIED_NAME__FQ_NAME = eINSTANCE.getFullyQualifiedName_FQName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LocalDateAndTimeStampImpl <em>Local Date And Time Stamp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LocalDateAndTimeStampImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLocalDateAndTimeStamp()
+		 * @generated
+		 */
+		EClass LOCAL_DATE_AND_TIME_STAMP = eINSTANCE.getLocalDateAndTimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Stamp Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__STAMP_TYPE = eINSTANCE.getLocalDateAndTimeStamp_StampType();
+
+		/**
+		 * The meta object literal for the '<em><b>THun Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__THUN_YEAR = eINSTANCE.getLocalDateAndTimeStamp_THunYear();
+
+		/**
+		 * The meta object literal for the '<em><b>Ten Year</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__TEN_YEAR = eINSTANCE.getLocalDateAndTimeStamp_TenYear();
+
+		/**
+		 * The meta object literal for the '<em><b>Day</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__DAY = eINSTANCE.getLocalDateAndTimeStamp_Day();
+
+		/**
+		 * The meta object literal for the '<em><b>Hour</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__HOUR = eINSTANCE.getLocalDateAndTimeStamp_Hour();
+
+		/**
+		 * The meta object literal for the '<em><b>Minute</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__MINUTE = eINSTANCE.getLocalDateAndTimeStamp_Minute();
+
+		/**
+		 * The meta object literal for the '<em><b>Second</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__SECOND = eINSTANCE.getLocalDateAndTimeStamp_Second();
+
+		/**
+		 * The meta object literal for the '<em><b>Hund Sec</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCAL_DATE_AND_TIME_STAMP__HUND_SEC = eINSTANCE.getLocalDateAndTimeStamp_HundSec();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.UniversalDateAndTimeStampImpl <em>Universal Date And Time Stamp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.UniversalDateAndTimeStampImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getUniversalDateAndTimeStamp()
+		 * @generated
+		 */
+		EClass UNIVERSAL_DATE_AND_TIME_STAMP = eINSTANCE.getUniversalDateAndTimeStamp();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__RESERVED = eINSTANCE.getUniversalDateAndTimeStamp_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Year AD</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__YEAR_AD = eINSTANCE.getUniversalDateAndTimeStamp_YearAD();
+
+		/**
+		 * The meta object literal for the '<em><b>Month</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__MONTH = eINSTANCE.getUniversalDateAndTimeStamp_Month();
+
+		/**
+		 * The meta object literal for the '<em><b>Day</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__DAY = eINSTANCE.getUniversalDateAndTimeStamp_Day();
+
+		/**
+		 * The meta object literal for the '<em><b>Hour</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__HOUR = eINSTANCE.getUniversalDateAndTimeStamp_Hour();
+
+		/**
+		 * The meta object literal for the '<em><b>Minute</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__MINUTE = eINSTANCE.getUniversalDateAndTimeStamp_Minute();
+
+		/**
+		 * The meta object literal for the '<em><b>Second</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__SECOND = eINSTANCE.getUniversalDateAndTimeStamp_Second();
+
+		/**
+		 * The meta object literal for the '<em><b>Time Zone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__TIME_ZONE = eINSTANCE.getUniversalDateAndTimeStamp_TimeZone();
+
+		/**
+		 * The meta object literal for the '<em><b>UTC Diff H</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__UTC_DIFF_H = eINSTANCE.getUniversalDateAndTimeStamp_UTCDiffH();
+
+		/**
+		 * The meta object literal for the '<em><b>UTC Diff M</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UNIVERSAL_DATE_AND_TIME_STAMP__UTC_DIFF_M = eINSTANCE.getUniversalDateAndTimeStamp_UTCDiffM();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MappingOptionImpl <em>Mapping Option</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MappingOptionImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMappingOption()
+		 * @generated
+		 */
+		EClass MAPPING_OPTION = eINSTANCE.getMappingOption();
+
+		/**
+		 * The meta object literal for the '<em><b>Map Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MAPPING_OPTION__MAP_VALUE = eINSTANCE.getMappingOption_MapValue();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MediaEjectControlImpl <em>Media Eject Control</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MediaEjectControlImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControl()
+		 * @generated
+		 */
+		EClass MEDIA_EJECT_CONTROL = eINSTANCE.getMediaEjectControl();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEDIA_EJECT_CONTROL__RESERVED = eINSTANCE.getMediaEjectControl_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Ej Ctrl</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEDIA_EJECT_CONTROL__EJ_CTRL = eINSTANCE.getMediaEjectControl_EjCtrl();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MediumMapPageNumberImpl <em>Medium Map Page Number</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MediumMapPageNumberImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediumMapPageNumber()
+		 * @generated
+		 */
+		EClass MEDIUM_MAP_PAGE_NUMBER = eINSTANCE.getMediumMapPageNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Page Num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM = eINSTANCE.getMediumMapPageNumber_PageNum();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MediumOrientationImpl <em>Medium Orientation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MediumOrientationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediumOrientation()
+		 * @generated
+		 */
+		EClass MEDIUM_ORIENTATION = eINSTANCE.getMediumOrientation();
+
+		/**
+		 * The meta object literal for the '<em><b>Med Orient</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEDIUM_ORIENTATION__MED_ORIENT = eINSTANCE.getMediumOrientation_MedOrient();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MeasurementUnitsImpl <em>Measurement Units</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MeasurementUnitsImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnits()
+		 * @generated
+		 */
+		EClass MEASUREMENT_UNITS = eINSTANCE.getMeasurementUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEASUREMENT_UNITS__XOA_BASE = eINSTANCE.getMeasurementUnits_XoaBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEASUREMENT_UNITS__YOA_BASE = eINSTANCE.getMeasurementUnits_YoaBase();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEASUREMENT_UNITS__XOA_UNITS = eINSTANCE.getMeasurementUnits_XoaUnits();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Units</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEASUREMENT_UNITS__YOA_UNITS = eINSTANCE.getMeasurementUnits_YoaUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MODCAInterchangeSetImpl <em>MODCA Interchange Set</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MODCAInterchangeSetImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSet()
+		 * @generated
+		 */
+		EClass MODCA_INTERCHANGE_SET = eINSTANCE.getMODCAInterchangeSet();
+
+		/**
+		 * The meta object literal for the '<em><b>IStype</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODCA_INTERCHANGE_SET__ISTYPE = eINSTANCE.getMODCAInterchangeSet_IStype();
+
+		/**
+		 * The meta object literal for the '<em><b>ISid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODCA_INTERCHANGE_SET__ISID = eINSTANCE.getMODCAInterchangeSet_ISid();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectAreaSizeImpl <em>Object Area Size</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectAreaSizeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectAreaSize()
+		 * @generated
+		 */
+		EClass OBJECT_AREA_SIZE = eINSTANCE.getObjectAreaSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Size Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_AREA_SIZE__SIZE_TYPE = eINSTANCE.getObjectAreaSize_SizeType();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoa Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_AREA_SIZE__XOA_SIZE = eINSTANCE.getObjectAreaSize_XoaSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoa Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_AREA_SIZE__YOA_SIZE = eINSTANCE.getObjectAreaSize_YoaSize();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectClassificationImpl <em>Object Classification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectClassificationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassification()
+		 * @generated
+		 */
+		EClass OBJECT_CLASSIFICATION = eINSTANCE.getObjectClassification();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CLASSIFICATION__OBJ_CLASS = eINSTANCE.getObjectClassification_ObjClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Struc Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CLASSIFICATION__STRUC_FLGS = eINSTANCE.getObjectClassification_StrucFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Reg Obj Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CLASSIFICATION__REG_OBJ_ID = eINSTANCE.getObjectClassification_RegObjId();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Tp Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CLASSIFICATION__OBJ_TP_NAME = eINSTANCE.getObjectClassification_ObjTpName();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Lev</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CLASSIFICATION__OBJ_LEV = eINSTANCE.getObjectClassification_ObjLev();
+
+		/**
+		 * The meta object literal for the '<em><b>Comp Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CLASSIFICATION__COMP_NAME = eINSTANCE.getObjectClassification_CompName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectFunctionSetSpecificationImpl <em>Object Function Set Specification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectFunctionSetSpecificationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecification()
+		 * @generated
+		 */
+		EClass OBJECT_FUNCTION_SET_SPECIFICATION = eINSTANCE.getObjectFunctionSetSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_FUNCTION_SET_SPECIFICATION__OBJ_TYPE = eINSTANCE.getObjectFunctionSetSpecification_ObjType();
+
+		/**
+		 * The meta object literal for the '<em><b>Arch Vrsn</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_FUNCTION_SET_SPECIFICATION__ARCH_VRSN = eINSTANCE.getObjectFunctionSetSpecification_ArchVrsn();
+
+		/**
+		 * The meta object literal for the '<em><b>DCA Fn Set</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_FUNCTION_SET_SPECIFICATION__DCA_FN_SET = eINSTANCE.getObjectFunctionSetSpecification_DCAFnSet();
+
+		/**
+		 * The meta object literal for the '<em><b>OCA Fn Set</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_FUNCTION_SET_SPECIFICATION__OCA_FN_SET = eINSTANCE.getObjectFunctionSetSpecification_OCAFnSet();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectOffsetImpl <em>Object Offset</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectOffsetImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOffset()
+		 * @generated
+		 */
+		EClass OBJECT_OFFSET = eINSTANCE.getObjectOffset();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Tpe</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_OFFSET__OBJ_TPE = eINSTANCE.getObjectOffset_ObjTpe();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_OFFSET__OBJ_OSET = eINSTANCE.getObjectOffset_ObjOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Ost Hi</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_OFFSET__OBJ_OST_HI = eINSTANCE.getObjectOffset_ObjOstHi();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ResourceObjectTypeImpl <em>Resource Object Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ResourceObjectTypeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectType()
+		 * @generated
+		 */
+		EClass RESOURCE_OBJECT_TYPE = eINSTANCE.getResourceObjectType();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_TYPE__OBJ_TYPE = eINSTANCE.getResourceObjectType_ObjType();
+
+		/**
+		 * The meta object literal for the '<em><b>Con Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_TYPE__CON_DATA = eINSTANCE.getResourceObjectType_ConData();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PagePositionInformationImpl <em>Page Position Information</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PagePositionInformationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPagePositionInformation()
+		 * @generated
+		 */
+		EClass PAGE_POSITION_INFORMATION = eINSTANCE.getPagePositionInformation();
+
+		/**
+		 * The meta object literal for the '<em><b>PGPRG</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAGE_POSITION_INFORMATION__PGPRG = eINSTANCE.getPagePositionInformation_PGPRG();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PresentationControlImpl <em>Presentation Control</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PresentationControlImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPresentationControl()
+		 * @generated
+		 */
+		EClass PRESENTATION_CONTROL = eINSTANCE.getPresentationControl();
+
+		/**
+		 * The meta object literal for the '<em><b>PRS Flg</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRESENTATION_CONTROL__PRS_FLG = eINSTANCE.getPresentationControl_PRSFlg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PresentationSpaceResetMixingImpl <em>Presentation Space Reset Mixing</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PresentationSpaceResetMixingImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPresentationSpaceResetMixing()
+		 * @generated
+		 */
+		EClass PRESENTATION_SPACE_RESET_MIXING = eINSTANCE.getPresentationSpaceResetMixing();
+
+		/**
+		 * The meta object literal for the '<em><b>Bg Mx Flag</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG = eINSTANCE.getPresentationSpaceResetMixing_BgMxFlag();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PresentationSpaceMixingRulesImpl <em>Presentation Space Mixing Rules</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PresentationSpaceMixingRulesImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPresentationSpaceMixingRules()
+		 * @generated
+		 */
+		EClass PRESENTATION_SPACE_MIXING_RULES = eINSTANCE.getPresentationSpaceMixingRules();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ResourceLocalIdentifierImpl <em>Resource Local Identifier</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ResourceLocalIdentifierImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceLocalIdentifier()
+		 * @generated
+		 */
+		EClass RESOURCE_LOCAL_IDENTIFIER = eINSTANCE.getResourceLocalIdentifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Res Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_LOCAL_IDENTIFIER__RES_TYPE = eINSTANCE.getResourceLocalIdentifier_ResType();
+
+		/**
+		 * The meta object literal for the '<em><b>Res LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_LOCAL_IDENTIFIER__RES_LID = eINSTANCE.getResourceLocalIdentifier_ResLID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ResourceSectionNumberImpl <em>Resource Section Number</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ResourceSectionNumberImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceSectionNumber()
+		 * @generated
+		 */
+		EClass RESOURCE_SECTION_NUMBER = eINSTANCE.getResourceSectionNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Res SNum</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_SECTION_NUMBER__RES_SNUM = eINSTANCE.getResourceSectionNumber_ResSNum();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TextOrientationImpl <em>Text Orientation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TextOrientationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientation()
+		 * @generated
+		 */
+		EClass TEXT_ORIENTATION = eINSTANCE.getTextOrientation();
+
+		/**
+		 * The meta object literal for the '<em><b>IAxis</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEXT_ORIENTATION__IAXIS = eINSTANCE.getTextOrientation_IAxis();
+
+		/**
+		 * The meta object literal for the '<em><b>BAxis</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEXT_ORIENTATION__BAXIS = eINSTANCE.getTextOrientation_BAxis();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FontHorizontalScaleFactorImpl <em>Font Horizontal Scale Factor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FontHorizontalScaleFactorImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontHorizontalScaleFactor()
+		 * @generated
+		 */
+		EClass FONT_HORIZONTAL_SCALE_FACTOR = eINSTANCE.getFontHorizontalScaleFactor();
+
+		/**
+		 * The meta object literal for the '<em><b>Hscale</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_HORIZONTAL_SCALE_FACTOR__HSCALE = eINSTANCE.getFontHorizontalScaleFactor_Hscale();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FontDescriptorSpecificationImpl <em>Font Descriptor Specification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FontDescriptorSpecificationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecification()
+		 * @generated
+		 */
+		EClass FONT_DESCRIPTOR_SPECIFICATION = eINSTANCE.getFontDescriptorSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Wt Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_DESCRIPTOR_SPECIFICATION__FT_WT_CLASS = eINSTANCE.getFontDescriptorSpecification_FtWtClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Wd Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_DESCRIPTOR_SPECIFICATION__FT_WD_CLASS = eINSTANCE.getFontDescriptorSpecification_FtWdClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Height</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_DESCRIPTOR_SPECIFICATION__FT_HEIGHT = eINSTANCE.getFontDescriptorSpecification_FtHeight();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Width</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_DESCRIPTOR_SPECIFICATION__FT_WIDTH = eINSTANCE.getFontDescriptorSpecification_FtWidth();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Ds Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_DESCRIPTOR_SPECIFICATION__FT_DS_FLAGS = eINSTANCE.getFontDescriptorSpecification_FtDsFlags();
+
+		/**
+		 * The meta object literal for the '<em><b>Ft Us Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_DESCRIPTOR_SPECIFICATION__FT_US_FLAGS = eINSTANCE.getFontDescriptorSpecification_FtUsFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BeginSegmentImpl <em>Begin Segment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BeginSegmentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegment()
+		 * @generated
+		 */
+		EClass BEGIN_SEGMENT = eINSTANCE.getBeginSegment();
+
+		/**
+		 * The meta object literal for the '<em><b>SEGNAME</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT__SEGNAME = eINSTANCE.getBeginSegment_SEGNAME();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EndSegmentImpl <em>End Segment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EndSegmentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEndSegment()
+		 * @generated
+		 */
+		EClass END_SEGMENT = eINSTANCE.getEndSegment();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BeginTileImpl <em>Begin Tile</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BeginTileImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginTile()
+		 * @generated
+		 */
+		EClass BEGIN_TILE = eINSTANCE.getBeginTile();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EndTileImpl <em>End Tile</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EndTileImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEndTile()
+		 * @generated
+		 */
+		EClass END_TILE = eINSTANCE.getEndTile();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BeginTransparencyMaskImpl <em>Begin Transparency Mask</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BeginTransparencyMaskImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginTransparencyMask()
+		 * @generated
+		 */
+		EClass BEGIN_TRANSPARENCY_MASK = eINSTANCE.getBeginTransparencyMask();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EndTransparencyMaskImpl <em>End Transparency Mask</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EndTransparencyMaskImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEndTransparencyMask()
+		 * @generated
+		 */
+		EClass END_TRANSPARENCY_MASK = eINSTANCE.getEndTransparencyMask();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BeginImageImpl <em>Begin Image</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BeginImageImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginImage()
+		 * @generated
+		 */
+		EClass BEGIN_IMAGE = eINSTANCE.getBeginImage();
+
+		/**
+		 * The meta object literal for the '<em><b>OBJTYPE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_IMAGE__OBJTYPE = eINSTANCE.getBeginImage_OBJTYPE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EndImageImpl <em>End Image</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EndImageImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEndImage()
+		 * @generated
+		 */
+		EClass END_IMAGE = eINSTANCE.getEndImage();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ImageSizeImpl <em>Image Size</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ImageSizeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageSize()
+		 * @generated
+		 */
+		EClass IMAGE_SIZE = eINSTANCE.getImageSize();
+
+		/**
+		 * The meta object literal for the '<em><b>UNITBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_SIZE__UNITBASE = eINSTANCE.getImageSize_UNITBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>HRESOL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_SIZE__HRESOL = eINSTANCE.getImageSize_HRESOL();
+
+		/**
+		 * The meta object literal for the '<em><b>VRESOL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_SIZE__VRESOL = eINSTANCE.getImageSize_VRESOL();
+
+		/**
+		 * The meta object literal for the '<em><b>HSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_SIZE__HSIZE = eINSTANCE.getImageSize_HSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>VSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_SIZE__VSIZE = eINSTANCE.getImageSize_VSIZE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ImageEncodingImpl <em>Image Encoding</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ImageEncodingImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncoding()
+		 * @generated
+		 */
+		EClass IMAGE_ENCODING = eINSTANCE.getImageEncoding();
+
+		/**
+		 * The meta object literal for the '<em><b>COMPRID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_ENCODING__COMPRID = eINSTANCE.getImageEncoding_COMPRID();
+
+		/**
+		 * The meta object literal for the '<em><b>RECID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_ENCODING__RECID = eINSTANCE.getImageEncoding_RECID();
+
+		/**
+		 * The meta object literal for the '<em><b>BITORDR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_ENCODING__BITORDR = eINSTANCE.getImageEncoding_BITORDR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IDESizeImpl <em>IDE Size</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IDESizeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDESize()
+		 * @generated
+		 */
+		EClass IDE_SIZE = eINSTANCE.getIDESize();
+
+		/**
+		 * The meta object literal for the '<em><b>IDESZ</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_SIZE__IDESZ = eINSTANCE.getIDESize_IDESZ();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ImageLUTIDImpl <em>Image LUTID</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ImageLUTIDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageLUTID()
+		 * @generated
+		 */
+		EClass IMAGE_LUTID = eINSTANCE.getImageLUTID();
+
+		/**
+		 * The meta object literal for the '<em><b>LUTID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_LUTID__LUTID = eINSTANCE.getImageLUTID_LUTID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BandImageImpl <em>Band Image</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BandImageImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBandImage()
+		 * @generated
+		 */
+		EClass BAND_IMAGE = eINSTANCE.getBandImage();
+
+		/**
+		 * The meta object literal for the '<em><b>BCOUNT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BAND_IMAGE__BCOUNT = eINSTANCE.getBandImage_BCOUNT();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BAND_IMAGE__RG = eINSTANCE.getBandImage_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IDEStructureImpl <em>IDE Structure</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IDEStructureImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDEStructure()
+		 * @generated
+		 */
+		EClass IDE_STRUCTURE = eINSTANCE.getIDEStructure();
+
+		/**
+		 * The meta object literal for the '<em><b>FLAGS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_STRUCTURE__FLAGS = eINSTANCE.getIDEStructure_FLAGS();
+
+		/**
+		 * The meta object literal for the '<em><b>FORMAT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_STRUCTURE__FORMAT = eINSTANCE.getIDEStructure_FORMAT();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_STRUCTURE__SIZE1 = eINSTANCE.getIDEStructure_SIZE1();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_STRUCTURE__SIZE2 = eINSTANCE.getIDEStructure_SIZE2();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_STRUCTURE__SIZE3 = eINSTANCE.getIDEStructure_SIZE3();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE4</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IDE_STRUCTURE__SIZE4 = eINSTANCE.getIDEStructure_SIZE4();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ExternalAlgorithmImpl <em>External Algorithm</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ExternalAlgorithmImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithm()
+		 * @generated
+		 */
+		EClass EXTERNAL_ALGORITHM = eINSTANCE.getExternalAlgorithm();
+
+		/**
+		 * The meta object literal for the '<em><b>ALGTYPE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTERNAL_ALGORITHM__ALGTYPE = eINSTANCE.getExternalAlgorithm_ALGTYPE();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EXTERNAL_ALGORITHM__RG = eINSTANCE.getExternalAlgorithm_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TilePositionImpl <em>Tile Position</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TilePositionImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTilePosition()
+		 * @generated
+		 */
+		EClass TILE_POSITION = eINSTANCE.getTilePosition();
+
+		/**
+		 * The meta object literal for the '<em><b>XOFFSET</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_POSITION__XOFFSET = eINSTANCE.getTilePosition_XOFFSET();
+
+		/**
+		 * The meta object literal for the '<em><b>YOFFSET</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_POSITION__YOFFSET = eINSTANCE.getTilePosition_YOFFSET();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TileSizeImpl <em>Tile Size</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TileSizeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileSize()
+		 * @generated
+		 */
+		EClass TILE_SIZE = eINSTANCE.getTileSize();
+
+		/**
+		 * The meta object literal for the '<em><b>THSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SIZE__THSIZE = eINSTANCE.getTileSize_THSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>TVSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SIZE__TVSIZE = eINSTANCE.getTileSize_TVSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>RELRES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SIZE__RELRES = eINSTANCE.getTileSize_RELRES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TileSetColorImpl <em>Tile Set Color</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TileSetColorImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileSetColor()
+		 * @generated
+		 */
+		EClass TILE_SET_COLOR = eINSTANCE.getTileSetColor();
+
+		/**
+		 * The meta object literal for the '<em><b>CSPACE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__CSPACE = eINSTANCE.getTileSetColor_CSPACE();
+
+		/**
+		 * The meta object literal for the '<em><b>RESERVED</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__RESERVED = eINSTANCE.getTileSetColor_RESERVED();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__SIZE1 = eINSTANCE.getTileSetColor_SIZE1();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__SIZE2 = eINSTANCE.getTileSetColor_SIZE2();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__SIZE3 = eINSTANCE.getTileSetColor_SIZE3();
+
+		/**
+		 * The meta object literal for the '<em><b>SIZE4</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__SIZE4 = eINSTANCE.getTileSetColor_SIZE4();
+
+		/**
+		 * The meta object literal for the '<em><b>CVAL1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__CVAL1 = eINSTANCE.getTileSetColor_CVAL1();
+
+		/**
+		 * The meta object literal for the '<em><b>CVAL2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__CVAL2 = eINSTANCE.getTileSetColor_CVAL2();
+
+		/**
+		 * The meta object literal for the '<em><b>CVAL3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__CVAL3 = eINSTANCE.getTileSetColor_CVAL3();
+
+		/**
+		 * The meta object literal for the '<em><b>CVAL4</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_SET_COLOR__CVAL4 = eINSTANCE.getTileSetColor_CVAL4();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SetBiLevelImageColorImpl <em>Set Bi Level Image Color</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SetBiLevelImageColorImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSetBiLevelImageColor()
+		 * @generated
+		 */
+		EClass SET_BI_LEVEL_IMAGE_COLOR = eINSTANCE.getSetBiLevelImageColor();
+
+		/**
+		 * The meta object literal for the '<em><b>AREA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SET_BI_LEVEL_IMAGE_COLOR__AREA = eINSTANCE.getSetBiLevelImageColor_AREA();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SET_BI_LEVEL_IMAGE_COLOR__RESERVED = eINSTANCE.getSetBiLevelImageColor_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>NAMECOLR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SET_BI_LEVEL_IMAGE_COLOR__NAMECOLR = eINSTANCE.getSetBiLevelImageColor_NAMECOLR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IOCAFunctionSetIdentificationImpl <em>IOCA Function Set Identification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IOCAFunctionSetIdentificationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOCAFunctionSetIdentification()
+		 * @generated
+		 */
+		EClass IOCA_FUNCTION_SET_IDENTIFICATION = eINSTANCE.getIOCAFunctionSetIdentification();
+
+		/**
+		 * The meta object literal for the '<em><b>CATEGORY</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY = eINSTANCE.getIOCAFunctionSetIdentification_CATEGORY();
+
+		/**
+		 * The meta object literal for the '<em><b>FCNSET</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET = eINSTANCE.getIOCAFunctionSetIdentification_FCNSET();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ImageDataImpl <em>Image Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ImageDataImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageData()
+		 * @generated
+		 */
+		EClass IMAGE_DATA = eINSTANCE.getImageData();
+
+		/**
+		 * The meta object literal for the '<em><b>DATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_DATA__DATA = eINSTANCE.getImageData_DATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BandImageDataImpl <em>Band Image Data</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BandImageDataImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBandImageData()
+		 * @generated
+		 */
+		EClass BAND_IMAGE_DATA = eINSTANCE.getBandImageData();
+
+		/**
+		 * The meta object literal for the '<em><b>BANDNUM</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BAND_IMAGE_DATA__BANDNUM = eINSTANCE.getBandImageData_BANDNUM();
+
+		/**
+		 * The meta object literal for the '<em><b>RESERVED</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BAND_IMAGE_DATA__RESERVED = eINSTANCE.getBandImageData_RESERVED();
+
+		/**
+		 * The meta object literal for the '<em><b>DATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BAND_IMAGE_DATA__DATA = eINSTANCE.getBandImageData_DATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.IncludeTileImpl <em>Include Tile</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.IncludeTileImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIncludeTile()
+		 * @generated
+		 */
+		EClass INCLUDE_TILE = eINSTANCE.getIncludeTile();
+
+		/**
+		 * The meta object literal for the '<em><b>TIRID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INCLUDE_TILE__TIRID = eINSTANCE.getIncludeTile_TIRID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ImageSubsamplingImpl <em>Image Subsampling</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ImageSubsamplingImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageSubsampling()
+		 * @generated
+		 */
+		EClass IMAGE_SUBSAMPLING = eINSTANCE.getImageSubsampling();
+
+		/**
+		 * The meta object literal for the '<em><b>Sdfs</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference IMAGE_SUBSAMPLING__SDFS = eINSTANCE.getImageSubsampling_Sdfs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SamplingRatiosImpl <em>Sampling Ratios</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SamplingRatiosImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSamplingRatios()
+		 * @generated
+		 */
+		EClass SAMPLING_RATIOS = eINSTANCE.getSamplingRatios();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SAMPLING_RATIOS__RG = eINSTANCE.getSamplingRatios_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TileTOCImpl <em>Tile TOC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TileTOCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileTOC()
+		 * @generated
+		 */
+		EClass TILE_TOC = eINSTANCE.getTileTOC();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOC__RESERVED = eINSTANCE.getTileTOC_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TILE_TOC__RG = eINSTANCE.getTileTOC_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CPIRGImpl <em>CPIRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CPIRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPIRG()
+		 * @generated
+		 */
+		EClass CPIRG = eINSTANCE.getCPIRG();
+
+		/**
+		 * The meta object literal for the '<em><b>GCGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPIRG__GCGID = eINSTANCE.getCPIRG_GCGID();
+
+		/**
+		 * The meta object literal for the '<em><b>Prt Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPIRG__PRT_FLAGS = eINSTANCE.getCPIRG_PrtFlags();
+
+		/**
+		 * The meta object literal for the '<em><b>Code Point</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPIRG__CODE_POINT = eINSTANCE.getCPIRG_CodePoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Count</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CPIRG__COUNT = eINSTANCE.getCPIRG_Count();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CFIRGImpl <em>CFIRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CFIRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCFIRG()
+		 * @generated
+		 */
+		EClass CFIRG = eINSTANCE.getCFIRG();
+
+		/**
+		 * The meta object literal for the '<em><b>FCS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFIRG__FCS_NAME = eINSTANCE.getCFIRG_FCSName();
+
+		/**
+		 * The meta object literal for the '<em><b>CP Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFIRG__CP_NAME = eINSTANCE.getCFIRG_CPName();
+
+		/**
+		 * The meta object literal for the '<em><b>SV Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFIRG__SV_SIZE = eINSTANCE.getCFIRG_SVSize();
+
+		/**
+		 * The meta object literal for the '<em><b>SH Scale</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFIRG__SH_SCALE = eINSTANCE.getCFIRG_SHScale();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFIRG__RESERVED = eINSTANCE.getCFIRG_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Section</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CFIRG__SECTION = eINSTANCE.getCFIRG_Section();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNIRGImpl <em>FNIRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNIRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNIRG()
+		 * @generated
+		 */
+		EClass FNIRG = eINSTANCE.getFNIRG();
+
+		/**
+		 * The meta object literal for the '<em><b>GCGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__GCGID = eINSTANCE.getFNIRG_GCGID();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Inc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__CHAR_INC = eINSTANCE.getFNIRG_CharInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Ascend Ht</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__ASCEND_HT = eINSTANCE.getFNIRG_AscendHt();
+
+		/**
+		 * The meta object literal for the '<em><b>Descend Dp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__DESCEND_DP = eINSTANCE.getFNIRG_DescendDp();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__RESERVED = eINSTANCE.getFNIRG_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>FNM Cnt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__FNM_CNT = eINSTANCE.getFNIRG_FNMCnt();
+
+		/**
+		 * The meta object literal for the '<em><b>ASpace</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__ASPACE = eINSTANCE.getFNIRG_ASpace();
+
+		/**
+		 * The meta object literal for the '<em><b>BSpace</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__BSPACE = eINSTANCE.getFNIRG_BSpace();
+
+		/**
+		 * The meta object literal for the '<em><b>CSpace</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__CSPACE = eINSTANCE.getFNIRG_CSpace();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__RESERVED2 = eINSTANCE.getFNIRG_Reserved2();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNIRG__BASE_OSET = eINSTANCE.getFNIRG_BaseOset();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNMRGImpl <em>FNMRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNMRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNMRG()
+		 * @generated
+		 */
+		EClass FNMRG = eINSTANCE.getFNMRG();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Box Wd</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNMRG__CHAR_BOX_WD = eINSTANCE.getFNMRG_CharBoxWd();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Box Ht</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNMRG__CHAR_BOX_HT = eINSTANCE.getFNMRG_CharBoxHt();
+
+		/**
+		 * The meta object literal for the '<em><b>Pat DOset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNMRG__PAT_DOSET = eINSTANCE.getFNMRG_PatDOset();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LLERGImpl <em>LLERG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LLERGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLLERG()
+		 * @generated
+		 */
+		EClass LLERG = eINSTANCE.getLLERG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LLERG__RG_LENGTH = eINSTANCE.getLLERG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Funct</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LLERG__RG_FUNCT = eINSTANCE.getLLERG_RGFunct();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LLERG__TRIPLETS = eINSTANCE.getLLERG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MPSRGImpl <em>MPSRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MPSRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPSRG()
+		 * @generated
+		 */
+		EClass MPSRG = eINSTANCE.getMPSRG();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPSRG__RESERVED = eINSTANCE.getMPSRG_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Pseg Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPSRG__PSEG_NAME = eINSTANCE.getMPSRG_PsegName();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCFRGImpl <em>MCFRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCFRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCFRG()
+		 * @generated
+		 */
+		EClass MCFRG = eINSTANCE.getMCFRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCFRG__RG_LENGTH = eINSTANCE.getMCFRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCFRG__TRIPLETS = eINSTANCE.getMCFRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MBCRGImpl <em>MBCRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MBCRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMBCRG()
+		 * @generated
+		 */
+		EClass MBCRG = eINSTANCE.getMBCRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MBCRG__RG_LENGTH = eINSTANCE.getMBCRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MBCRG__TRIPLETS = eINSTANCE.getMBCRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCARGImpl <em>MCARG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCARGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCARG()
+		 * @generated
+		 */
+		EClass MCARG = eINSTANCE.getMCARG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCARG__RG_LENGTH = eINSTANCE.getMCARG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCARG__TRIPLETS = eINSTANCE.getMCARG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCDRGImpl <em>MCDRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCDRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCDRG()
+		 * @generated
+		 */
+		EClass MCDRG = eINSTANCE.getMCDRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCDRG__RG_LENGTH = eINSTANCE.getMCDRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCDRG__TRIPLETS = eINSTANCE.getMCDRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MDRRGImpl <em>MDRRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MDRRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDRRG()
+		 * @generated
+		 */
+		EClass MDRRG = eINSTANCE.getMDRRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MDRRG__RG_LENGTH = eINSTANCE.getMDRRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MDRRG__TRIPLETS = eINSTANCE.getMDRRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MGORGImpl <em>MGORG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MGORGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMGORG()
+		 * @generated
+		 */
+		EClass MGORG = eINSTANCE.getMGORG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MGORG__RG_LENGTH = eINSTANCE.getMGORG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MGORG__TRIPLETS = eINSTANCE.getMGORG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MIORGImpl <em>MIORG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MIORGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMIORG()
+		 * @generated
+		 */
+		EClass MIORG = eINSTANCE.getMIORG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MIORG__RG_LENGTH = eINSTANCE.getMIORG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MIORG__TRIPLETS = eINSTANCE.getMIORG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMDRGImpl <em>MMDRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMDRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMDRG()
+		 * @generated
+		 */
+		EClass MMDRG = eINSTANCE.getMMDRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMDRG__RG_LENGTH = eINSTANCE.getMMDRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MMDRG__TRIPLETS = eINSTANCE.getMMDRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMTRGImpl <em>MMTRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMTRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMTRG()
+		 * @generated
+		 */
+		EClass MMTRG = eINSTANCE.getMMTRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMTRG__RG_LENGTH = eINSTANCE.getMMTRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MMTRG__TRIPLETS = eINSTANCE.getMMTRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MPGRGImpl <em>MPGRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MPGRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPGRG()
+		 * @generated
+		 */
+		EClass MPGRG = eINSTANCE.getMPGRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPGRG__RG_LENGTH = eINSTANCE.getMPGRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MPGRG__TRIPLETS = eINSTANCE.getMPGRG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MPORGImpl <em>MPORG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MPORGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPORG()
+		 * @generated
+		 */
+		EClass MPORG = eINSTANCE.getMPORG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPORG__RG_LENGTH = eINSTANCE.getMPORG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MPORG__TRIPLETS = eINSTANCE.getMPORG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PPORGImpl <em>PPORG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PPORGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORG()
+		 * @generated
+		 */
+		EClass PPORG = eINSTANCE.getPPORG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PPORG__RG_LENGTH = eINSTANCE.getPPORG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PPORG__OBJ_TYPE = eINSTANCE.getPPORG_ObjType();
+
+		/**
+		 * The meta object literal for the '<em><b>Proc Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PPORG__PROC_FLGS = eINSTANCE.getPPORG_ProcFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Xoca Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PPORG__XOCA_OSET = eINSTANCE.getPPORG_XocaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yoca Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PPORG__YOCA_OSET = eINSTANCE.getPPORG_YocaOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Triplets</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PPORG__TRIPLETS = eINSTANCE.getPPORG_Triplets();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PGPRGImpl <em>PGPRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PGPRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRG()
+		 * @generated
+		 */
+		EClass PGPRG = eINSTANCE.getPGPRG();
+
+		/**
+		 * The meta object literal for the '<em><b>RG Length</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__RG_LENGTH = eINSTANCE.getPGPRG_RGLength();
+
+		/**
+		 * The meta object literal for the '<em><b>Xm Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__XM_OSET = eINSTANCE.getPGPRG_XmOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Ym Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__YM_OSET = eINSTANCE.getPGPRG_YmOset();
+
+		/**
+		 * The meta object literal for the '<em><b>PGorient</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__PGORIENT = eINSTANCE.getPGPRG_PGorient();
+
+		/**
+		 * The meta object literal for the '<em><b>SHside</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__SHSIDE = eINSTANCE.getPGPRG_SHside();
+
+		/**
+		 * The meta object literal for the '<em><b>Pg Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__PG_FLGS = eINSTANCE.getPGPRG_PgFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>PM Cid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PGPRG__PM_CID = eINSTANCE.getPGPRG_PMCid();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCCRGImpl <em>MCCRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCCRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCCRG()
+		 * @generated
+		 */
+		EClass MCCRG = eINSTANCE.getMCCRG();
+
+		/**
+		 * The meta object literal for the '<em><b>Startnum</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCCRG__STARTNUM = eINSTANCE.getMCCRG_Startnum();
+
+		/**
+		 * The meta object literal for the '<em><b>Stopnum</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCCRG__STOPNUM = eINSTANCE.getMCCRG_Stopnum();
+
+		/**
+		 * The meta object literal for the '<em><b>MM Cid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCCRG__MM_CID = eINSTANCE.getMCCRG_MMCid();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMORGImpl <em>MMORG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMORGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMORG()
+		 * @generated
+		 */
+		EClass MMORG = eINSTANCE.getMMORG();
+
+		/**
+		 * The meta object literal for the '<em><b>OV Lid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMORG__OV_LID = eINSTANCE.getMMORG_OVLid();
+
+		/**
+		 * The meta object literal for the '<em><b>Flags</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMORG__FLAGS = eINSTANCE.getMMORG_Flags();
+
+		/**
+		 * The meta object literal for the '<em><b>OV Lname</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMORG__OV_LNAME = eINSTANCE.getMMORG_OVLname();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BandImageRGImpl <em>Band Image RG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BandImageRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBandImageRG()
+		 * @generated
+		 */
+		EClass BAND_IMAGE_RG = eINSTANCE.getBandImageRG();
+
+		/**
+		 * The meta object literal for the '<em><b>BITCNT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BAND_IMAGE_RG__BITCNT = eINSTANCE.getBandImageRG_BITCNT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MCF1RGImpl <em>MCF1RG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MCF1RGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMCF1RG()
+		 * @generated
+		 */
+		EClass MCF1RG = eINSTANCE.getMCF1RG();
+
+		/**
+		 * The meta object literal for the '<em><b>CF Lid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1RG__CF_LID = eINSTANCE.getMCF1RG_CFLid();
+
+		/**
+		 * The meta object literal for the '<em><b>Sectid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1RG__SECTID = eINSTANCE.getMCF1RG_Sectid();
+
+		/**
+		 * The meta object literal for the '<em><b>CF Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1RG__CF_NAME = eINSTANCE.getMCF1RG_CFName();
+
+		/**
+		 * The meta object literal for the '<em><b>CP Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1RG__CP_NAME = eINSTANCE.getMCF1RG_CPName();
+
+		/**
+		 * The meta object literal for the '<em><b>FCS Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1RG__FCS_NAME = eINSTANCE.getMCF1RG_FCSName();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Rot</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCF1RG__CHAR_ROT = eINSTANCE.getMCF1RG_CharRot();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MMCRGImpl <em>MMCRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MMCRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCRG()
+		 * @generated
+		 */
+		EClass MMCRG = eINSTANCE.getMMCRG();
+
+		/**
+		 * The meta object literal for the '<em><b>Key</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMCRG__KEY = eINSTANCE.getMMCRG_Key();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MMCRG__VALUE = eINSTANCE.getMMCRG_Value();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNORGImpl <em>FNORG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNORGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNORG()
+		 * @generated
+		 */
+		EClass FNORG = eINSTANCE.getFNORG();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__RESERVED = eINSTANCE.getFNORG_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Char Rot</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__CHAR_ROT = eINSTANCE.getFNORG_CharRot();
+
+		/**
+		 * The meta object literal for the '<em><b>Max BOset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__MAX_BOSET = eINSTANCE.getFNORG_MaxBOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Char Inc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__MAX_CHAR_INC = eINSTANCE.getFNORG_MaxCharInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Sp Char Inc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__SP_CHAR_INC = eINSTANCE.getFNORG_SpCharInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Max BExt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__MAX_BEXT = eINSTANCE.getFNORG_MaxBExt();
+
+		/**
+		 * The meta object literal for the '<em><b>Ornt Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__ORNT_FLGS = eINSTANCE.getFNORG_OrntFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__RESERVED2 = eINSTANCE.getFNORG_Reserved2();
+
+		/**
+		 * The meta object literal for the '<em><b>Em Sp Inc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__EM_SP_INC = eINSTANCE.getFNORG_EmSpInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__RESERVED3 = eINSTANCE.getFNORG_Reserved3();
+
+		/**
+		 * The meta object literal for the '<em><b>Fig Sp Inc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__FIG_SP_INC = eINSTANCE.getFNORG_FigSpInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Nom Char Inc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__NOM_CHAR_INC = eINSTANCE.getFNORG_NomCharInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Def BInc</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__DEF_BINC = eINSTANCE.getFNORG_DefBInc();
+
+		/**
+		 * The meta object literal for the '<em><b>Min ASp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNORG__MIN_ASP = eINSTANCE.getFNORG_MinASp();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNPRGImpl <em>FNPRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNPRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNPRG()
+		 * @generated
+		 */
+		EClass FNPRG = eINSTANCE.getFNPRG();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__RESERVED = eINSTANCE.getFNPRG_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Lc Height</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__LC_HEIGHT = eINSTANCE.getFNPRG_LcHeight();
+
+		/**
+		 * The meta object literal for the '<em><b>Cap MHt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__CAP_MHT = eINSTANCE.getFNPRG_CapMHt();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Asc Ht</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__MAX_ASC_HT = eINSTANCE.getFNPRG_MaxAscHt();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Des Dp</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__MAX_DES_DP = eINSTANCE.getFNPRG_MaxDesDp();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__RESERVED2 = eINSTANCE.getFNPRG_Reserved2();
+
+		/**
+		 * The meta object literal for the '<em><b>Retired</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__RETIRED = eINSTANCE.getFNPRG_Retired();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__RESERVED3 = eINSTANCE.getFNPRG_Reserved3();
+
+		/**
+		 * The meta object literal for the '<em><b>Uscore Wd</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__USCORE_WD = eINSTANCE.getFNPRG_UscoreWd();
+
+		/**
+		 * The meta object literal for the '<em><b>Uscore Wdf</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__USCORE_WDF = eINSTANCE.getFNPRG_UscoreWdf();
+
+		/**
+		 * The meta object literal for the '<em><b>Uscore Pos</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNPRG__USCORE_POS = eINSTANCE.getFNPRG_UscorePos();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TileTOCRGImpl <em>Tile TOCRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TileTOCRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileTOCRG()
+		 * @generated
+		 */
+		EClass TILE_TOCRG = eINSTANCE.getTileTOCRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XOFFSET</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__XOFFSET = eINSTANCE.getTileTOCRG_XOFFSET();
+
+		/**
+		 * The meta object literal for the '<em><b>YOFFSET</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__YOFFSET = eINSTANCE.getTileTOCRG_YOFFSET();
+
+		/**
+		 * The meta object literal for the '<em><b>THSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__THSIZE = eINSTANCE.getTileTOCRG_THSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>TVSIZE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__TVSIZE = eINSTANCE.getTileTOCRG_TVSIZE();
+
+		/**
+		 * The meta object literal for the '<em><b>RELRES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__RELRES = eINSTANCE.getTileTOCRG_RELRES();
+
+		/**
+		 * The meta object literal for the '<em><b>COMPR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__COMPR = eINSTANCE.getTileTOCRG_COMPR();
+
+		/**
+		 * The meta object literal for the '<em><b>DATAPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TILE_TOCRG__DATAPOS = eINSTANCE.getTileTOCRG_DATAPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.SamplingRatiosRGImpl <em>Sampling Ratios RG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.SamplingRatiosRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSamplingRatiosRG()
+		 * @generated
+		 */
+		EClass SAMPLING_RATIOS_RG = eINSTANCE.getSamplingRatiosRG();
+
+		/**
+		 * The meta object literal for the '<em><b>HSAMPLE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SAMPLING_RATIOS_RG__HSAMPLE = eINSTANCE.getSamplingRatiosRG_HSAMPLE();
+
+		/**
+		 * The meta object literal for the '<em><b>VSAMPLE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SAMPLING_RATIOS_RG__VSAMPLE = eINSTANCE.getSamplingRatiosRG_VSAMPLE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ExternalAlgorithmRGImpl <em>External Algorithm RG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ExternalAlgorithmRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRG()
+		 * @generated
+		 */
+		EClass EXTERNAL_ALGORITHM_RG = eINSTANCE.getExternalAlgorithmRG();
+
+		/**
+		 * The meta object literal for the '<em><b>DIRCTN</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTERNAL_ALGORITHM_RG__DIRCTN = eINSTANCE.getExternalAlgorithmRG_DIRCTN();
+
+		/**
+		 * The meta object literal for the '<em><b>PADBDRY</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTERNAL_ALGORITHM_RG__PADBDRY = eINSTANCE.getExternalAlgorithmRG_PADBDRY();
+
+		/**
+		 * The meta object literal for the '<em><b>PADALMT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTERNAL_ALGORITHM_RG__PADALMT = eINSTANCE.getExternalAlgorithmRG_PADALMT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNNRGImpl <em>FNNRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNNRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNNRG()
+		 * @generated
+		 */
+		EClass FNNRG = eINSTANCE.getFNNRG();
+
+		/**
+		 * The meta object literal for the '<em><b>GCGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNNRG__GCGID = eINSTANCE.getFNNRG_GCGID();
+
+		/**
+		 * The meta object literal for the '<em><b>TS Offset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNNRG__TS_OFFSET = eINSTANCE.getFNNRG_TSOffset();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FNNRG2Impl <em>FNNRG2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FNNRG2Impl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNNRG2()
+		 * @generated
+		 */
+		EClass FNNRG2 = eINSTANCE.getFNNRG2();
+
+		/**
+		 * The meta object literal for the '<em><b>TSID Len</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNNRG2__TSID_LEN = eINSTANCE.getFNNRG2_TSIDLen();
+
+		/**
+		 * The meta object literal for the '<em><b>TSID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FNNRG2__TSID = eINSTANCE.getFNNRG2_TSID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.BeginSegmentCommandImpl <em>Begin Segment Command</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.BeginSegmentCommandImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommand()
+		 * @generated
+		 */
+		EClass BEGIN_SEGMENT_COMMAND = eINSTANCE.getBeginSegmentCommand();
+
+		/**
+		 * The meta object literal for the '<em><b>LENGTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT_COMMAND__LENGTH = eINSTANCE.getBeginSegmentCommand_LENGTH();
+
+		/**
+		 * The meta object literal for the '<em><b>NAME</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT_COMMAND__NAME = eINSTANCE.getBeginSegmentCommand_NAME();
+
+		/**
+		 * The meta object literal for the '<em><b>FLAG1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT_COMMAND__FLAG1 = eINSTANCE.getBeginSegmentCommand_FLAG1();
+
+		/**
+		 * The meta object literal for the '<em><b>FLAG2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT_COMMAND__FLAG2 = eINSTANCE.getBeginSegmentCommand_FLAG2();
+
+		/**
+		 * The meta object literal for the '<em><b>SEGL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT_COMMAND__SEGL = eINSTANCE.getBeginSegmentCommand_SEGL();
+
+		/**
+		 * The meta object literal for the '<em><b>PSNAME</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEGIN_SEGMENT_COMMAND__PSNAME = eINSTANCE.getBeginSegmentCommand_PSNAME();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.EndSegmentCommandImpl <em>End Segment Command</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.EndSegmentCommandImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEndSegmentCommand()
+		 * @generated
+		 */
+		EClass END_SEGMENT_COMMAND = eINSTANCE.getEndSegmentCommand();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GBARImpl <em>GBAR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GBARImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBAR()
+		 * @generated
+		 */
+		EClass GBAR = eINSTANCE.getGBAR();
+
+		/**
+		 * The meta object literal for the '<em><b>FLAGS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBAR__FLAGS = eINSTANCE.getGBAR_FLAGS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GBIMGImpl <em>GBIMG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GBIMGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMG()
+		 * @generated
+		 */
+		EClass GBIMG = eINSTANCE.getGBIMG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBIMG__XPOS = eINSTANCE.getGBIMG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBIMG__YPOS = eINSTANCE.getGBIMG_YPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>FORMAT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBIMG__FORMAT = eINSTANCE.getGBIMG_FORMAT();
+
+		/**
+		 * The meta object literal for the '<em><b>RES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBIMG__RES = eINSTANCE.getGBIMG_RES();
+
+		/**
+		 * The meta object literal for the '<em><b>WIDTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBIMG__WIDTH = eINSTANCE.getGBIMG_WIDTH();
+
+		/**
+		 * The meta object literal for the '<em><b>HEIGHT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBIMG__HEIGHT = eINSTANCE.getGBIMG_HEIGHT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCBIMGImpl <em>GCBIMG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCBIMGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMG()
+		 * @generated
+		 */
+		EClass GCBIMG = eINSTANCE.getGCBIMG();
+
+		/**
+		 * The meta object literal for the '<em><b>FORMAT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBIMG__FORMAT = eINSTANCE.getGCBIMG_FORMAT();
+
+		/**
+		 * The meta object literal for the '<em><b>RES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBIMG__RES = eINSTANCE.getGCBIMG_RES();
+
+		/**
+		 * The meta object literal for the '<em><b>WIDTH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBIMG__WIDTH = eINSTANCE.getGCBIMG_WIDTH();
+
+		/**
+		 * The meta object literal for the '<em><b>HEIGHT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBIMG__HEIGHT = eINSTANCE.getGCBIMG_HEIGHT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GBOXImpl <em>GBOX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GBOXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBOX()
+		 * @generated
+		 */
+		EClass GBOX = eINSTANCE.getGBOX();
+
+		/**
+		 * The meta object literal for the '<em><b>RES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__RES = eINSTANCE.getGBOX_RES();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS0</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__XPOS0 = eINSTANCE.getGBOX_XPOS0();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS0</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__YPOS0 = eINSTANCE.getGBOX_YPOS0();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__XPOS1 = eINSTANCE.getGBOX_XPOS1();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__YPOS1 = eINSTANCE.getGBOX_YPOS1();
+
+		/**
+		 * The meta object literal for the '<em><b>HAXIS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__HAXIS = eINSTANCE.getGBOX_HAXIS();
+
+		/**
+		 * The meta object literal for the '<em><b>VAXIS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GBOX__VAXIS = eINSTANCE.getGBOX_VAXIS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCBOXImpl <em>GCBOX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCBOXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBOX()
+		 * @generated
+		 */
+		EClass GCBOX = eINSTANCE.getGCBOX();
+
+		/**
+		 * The meta object literal for the '<em><b>RES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBOX__RES = eINSTANCE.getGCBOX_RES();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBOX__XPOS1 = eINSTANCE.getGCBOX_XPOS1();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBOX__YPOS1 = eINSTANCE.getGCBOX_YPOS1();
+
+		/**
+		 * The meta object literal for the '<em><b>HAXIS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBOX__HAXIS = eINSTANCE.getGCBOX_HAXIS();
+
+		/**
+		 * The meta object literal for the '<em><b>VAXIS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBOX__VAXIS = eINSTANCE.getGCBOX_VAXIS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCHSTImpl <em>GCHST</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCHSTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCHST()
+		 * @generated
+		 */
+		EClass GCHST = eINSTANCE.getGCHST();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCHST__XPOS = eINSTANCE.getGCHST_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCHST__YPOS = eINSTANCE.getGCHST_YPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>CP</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCHST__CP = eINSTANCE.getGCHST_CP();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCCHSTImpl <em>GCCHST</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCCHSTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCCHST()
+		 * @generated
+		 */
+		EClass GCCHST = eINSTANCE.getGCCHST();
+
+		/**
+		 * The meta object literal for the '<em><b>CP</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCCHST__CP = eINSTANCE.getGCCHST_CP();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCOMTImpl <em>GCOMT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCOMTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCOMT()
+		 * @generated
+		 */
+		EClass GCOMT = eINSTANCE.getGCOMT();
+
+		/**
+		 * The meta object literal for the '<em><b>DATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCOMT__DATA = eINSTANCE.getGCOMT_DATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GEARImpl <em>GEAR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GEARImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGEAR()
+		 * @generated
+		 */
+		EClass GEAR = eINSTANCE.getGEAR();
+
+		/**
+		 * The meta object literal for the '<em><b>DATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GEAR__DATA = eINSTANCE.getGEAR_DATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GEIMGImpl <em>GEIMG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GEIMGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGEIMG()
+		 * @generated
+		 */
+		EClass GEIMG = eINSTANCE.getGEIMG();
+
+		/**
+		 * The meta object literal for the '<em><b>DATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GEIMG__DATA = eINSTANCE.getGEIMG_DATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GEPROLImpl <em>GEPROL</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GEPROLImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGEPROL()
+		 * @generated
+		 */
+		EClass GEPROL = eINSTANCE.getGEPROL();
+
+		/**
+		 * The meta object literal for the '<em><b>RES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GEPROL__RES = eINSTANCE.getGEPROL_RES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GFLTImpl <em>GFLT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GFLTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGFLT()
+		 * @generated
+		 */
+		EClass GFLT = eINSTANCE.getGFLT();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GFLT__RG = eINSTANCE.getGFLT_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCFLTImpl <em>GCFLT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCFLTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCFLT()
+		 * @generated
+		 */
+		EClass GCFLT = eINSTANCE.getGCFLT();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GCFLT__RG = eINSTANCE.getGCFLT_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GFARCImpl <em>GFARC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GFARCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGFARC()
+		 * @generated
+		 */
+		EClass GFARC = eINSTANCE.getGFARC();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GFARC__XPOS = eINSTANCE.getGFARC_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GFARC__YPOS = eINSTANCE.getGFARC_YPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>MH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GFARC__MH = eINSTANCE.getGFARC_MH();
+
+		/**
+		 * The meta object literal for the '<em><b>MFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GFARC__MFR = eINSTANCE.getGFARC_MFR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCFARCImpl <em>GCFARC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCFARCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCFARC()
+		 * @generated
+		 */
+		EClass GCFARC = eINSTANCE.getGCFARC();
+
+		/**
+		 * The meta object literal for the '<em><b>MH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCFARC__MH = eINSTANCE.getGCFARC_MH();
+
+		/**
+		 * The meta object literal for the '<em><b>MFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCFARC__MFR = eINSTANCE.getGCFARC_MFR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GIMDImpl <em>GIMD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GIMDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGIMD()
+		 * @generated
+		 */
+		EClass GIMD = eINSTANCE.getGIMD();
+
+		/**
+		 * The meta object literal for the '<em><b>DATA</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GIMD__DATA = eINSTANCE.getGIMD_DATA();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GLINEImpl <em>GLINE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GLINEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGLINE()
+		 * @generated
+		 */
+		EClass GLINE = eINSTANCE.getGLINE();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GLINE__RG = eINSTANCE.getGLINE_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCLINEImpl <em>GCLINE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCLINEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCLINE()
+		 * @generated
+		 */
+		EClass GCLINE = eINSTANCE.getGCLINE();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GCLINE__RG = eINSTANCE.getGCLINE_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GMRKImpl <em>GMRK</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GMRKImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGMRK()
+		 * @generated
+		 */
+		EClass GMRK = eINSTANCE.getGMRK();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GMRK__RG = eINSTANCE.getGMRK_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCMRKImpl <em>GCMRK</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCMRKImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCMRK()
+		 * @generated
+		 */
+		EClass GCMRK = eINSTANCE.getGCMRK();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GCMRK__RG = eINSTANCE.getGCMRK_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GNOP1Impl <em>GNOP1</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GNOP1Impl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGNOP1()
+		 * @generated
+		 */
+		EClass GNOP1 = eINSTANCE.getGNOP1();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GPARCImpl <em>GPARC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GPARCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGPARC()
+		 * @generated
+		 */
+		EClass GPARC = eINSTANCE.getGPARC();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__XPOS = eINSTANCE.getGPARC_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__YPOS = eINSTANCE.getGPARC_YPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>XCENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__XCENT = eINSTANCE.getGPARC_XCENT();
+
+		/**
+		 * The meta object literal for the '<em><b>YCENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__YCENT = eINSTANCE.getGPARC_YCENT();
+
+		/**
+		 * The meta object literal for the '<em><b>MH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__MH = eINSTANCE.getGPARC_MH();
+
+		/**
+		 * The meta object literal for the '<em><b>MFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__MFR = eINSTANCE.getGPARC_MFR();
+
+		/**
+		 * The meta object literal for the '<em><b>START</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__START = eINSTANCE.getGPARC_START();
+
+		/**
+		 * The meta object literal for the '<em><b>SWEEP</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GPARC__SWEEP = eINSTANCE.getGPARC_SWEEP();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCPARCImpl <em>GCPARC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCPARCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCPARC()
+		 * @generated
+		 */
+		EClass GCPARC = eINSTANCE.getGCPARC();
+
+		/**
+		 * The meta object literal for the '<em><b>XCENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCPARC__XCENT = eINSTANCE.getGCPARC_XCENT();
+
+		/**
+		 * The meta object literal for the '<em><b>YCENT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCPARC__YCENT = eINSTANCE.getGCPARC_YCENT();
+
+		/**
+		 * The meta object literal for the '<em><b>MH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCPARC__MH = eINSTANCE.getGCPARC_MH();
+
+		/**
+		 * The meta object literal for the '<em><b>MFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCPARC__MFR = eINSTANCE.getGCPARC_MFR();
+
+		/**
+		 * The meta object literal for the '<em><b>START</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCPARC__START = eINSTANCE.getGCPARC_START();
+
+		/**
+		 * The meta object literal for the '<em><b>SWEEP</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCPARC__SWEEP = eINSTANCE.getGCPARC_SWEEP();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GRLINEImpl <em>GRLINE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GRLINEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGRLINE()
+		 * @generated
+		 */
+		EClass GRLINE = eINSTANCE.getGRLINE();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GRLINE__XPOS = eINSTANCE.getGRLINE_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GRLINE__YPOS = eINSTANCE.getGRLINE_YPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GRLINE__RG = eINSTANCE.getGRLINE_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCRLINEImpl <em>GCRLINE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCRLINEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCRLINE()
+		 * @generated
+		 */
+		EClass GCRLINE = eINSTANCE.getGCRLINE();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GCRLINE__RG = eINSTANCE.getGCRLINE_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSGCHImpl <em>GSGCH</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSGCHImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSGCH()
+		 * @generated
+		 */
+		EClass GSGCH = eINSTANCE.getGSGCH();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSAPImpl <em>GSAP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSAPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSAP()
+		 * @generated
+		 */
+		EClass GSAP = eINSTANCE.getGSAP();
+
+		/**
+		 * The meta object literal for the '<em><b>P</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSAP__P = eINSTANCE.getGSAP_P();
+
+		/**
+		 * The meta object literal for the '<em><b>Q</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSAP__Q = eINSTANCE.getGSAP_Q();
+
+		/**
+		 * The meta object literal for the '<em><b>R</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSAP__R = eINSTANCE.getGSAP_R();
+
+		/**
+		 * The meta object literal for the '<em><b>S</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSAP__S = eINSTANCE.getGSAP_S();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSBMXImpl <em>GSBMX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSBMXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSBMX()
+		 * @generated
+		 */
+		EClass GSBMX = eINSTANCE.getGSBMX();
+
+		/**
+		 * The meta object literal for the '<em><b>MODE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSBMX__MODE = eINSTANCE.getGSBMX_MODE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCAImpl <em>GSCA</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCAImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCA()
+		 * @generated
+		 */
+		EClass GSCA = eINSTANCE.getGSCA();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCA__XPOS = eINSTANCE.getGSCA_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCA__YPOS = eINSTANCE.getGSCA_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCCImpl <em>GSCC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCC()
+		 * @generated
+		 */
+		EClass GSCC = eINSTANCE.getGSCC();
+
+		/**
+		 * The meta object literal for the '<em><b>CELLWI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCC__CELLWI = eINSTANCE.getGSCC_CELLWI();
+
+		/**
+		 * The meta object literal for the '<em><b>CELLHI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCC__CELLHI = eINSTANCE.getGSCC_CELLHI();
+
+		/**
+		 * The meta object literal for the '<em><b>CELLWFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCC__CELLWFR = eINSTANCE.getGSCC_CELLWFR();
+
+		/**
+		 * The meta object literal for the '<em><b>CELLHFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCC__CELLHFR = eINSTANCE.getGSCC_CELLHFR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCDImpl <em>GSCD</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCDImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCD()
+		 * @generated
+		 */
+		EClass GSCD = eINSTANCE.getGSCD();
+
+		/**
+		 * The meta object literal for the '<em><b>DIRECTION</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCD__DIRECTION = eINSTANCE.getGSCD_DIRECTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCRImpl <em>GSCR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCRImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCR()
+		 * @generated
+		 */
+		EClass GSCR = eINSTANCE.getGSCR();
+
+		/**
+		 * The meta object literal for the '<em><b>PREC</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCR__PREC = eINSTANCE.getGSCR_PREC();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCSImpl <em>GSCS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCS()
+		 * @generated
+		 */
+		EClass GSCS = eINSTANCE.getGSCS();
+
+		/**
+		 * The meta object literal for the '<em><b>LCID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCS__LCID = eINSTANCE.getGSCS_LCID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCHImpl <em>GSCH</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCHImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCH()
+		 * @generated
+		 */
+		EClass GSCH = eINSTANCE.getGSCH();
+
+		/**
+		 * The meta object literal for the '<em><b>HX</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCH__HX = eINSTANCE.getGSCH_HX();
+
+		/**
+		 * The meta object literal for the '<em><b>HY</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCH__HY = eINSTANCE.getGSCH_HY();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCOLImpl <em>GSCOL</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCOLImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCOL()
+		 * @generated
+		 */
+		EClass GSCOL = eINSTANCE.getGSCOL();
+
+		/**
+		 * The meta object literal for the '<em><b>COL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCOL__COL = eINSTANCE.getGSCOL_COL();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSCPImpl <em>GSCP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSCPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCP()
+		 * @generated
+		 */
+		EClass GSCP = eINSTANCE.getGSCP();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCP__XPOS = eINSTANCE.getGSCP_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSCP__YPOS = eINSTANCE.getGSCP_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSECOLImpl <em>GSECOL</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSECOLImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSECOL()
+		 * @generated
+		 */
+		EClass GSECOL = eINSTANCE.getGSECOL();
+
+		/**
+		 * The meta object literal for the '<em><b>COLOR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSECOL__COLOR = eINSTANCE.getGSECOL_COLOR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSFLWImpl <em>GSFLW</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSFLWImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSFLW()
+		 * @generated
+		 */
+		EClass GSFLW = eINSTANCE.getGSFLW();
+
+		/**
+		 * The meta object literal for the '<em><b>MH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSFLW__MH = eINSTANCE.getGSFLW_MH();
+
+		/**
+		 * The meta object literal for the '<em><b>MFR</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSFLW__MFR = eINSTANCE.getGSFLW_MFR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSLTImpl <em>GSLT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSLTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLT()
+		 * @generated
+		 */
+		EClass GSLT = eINSTANCE.getGSLT();
+
+		/**
+		 * The meta object literal for the '<em><b>LINETYPE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSLT__LINETYPE = eINSTANCE.getGSLT_LINETYPE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSLWImpl <em>GSLW</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSLWImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLW()
+		 * @generated
+		 */
+		EClass GSLW = eINSTANCE.getGSLW();
+
+		/**
+		 * The meta object literal for the '<em><b>MH</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSLW__MH = eINSTANCE.getGSLW_MH();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSMCImpl <em>GSMC</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSMCImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMC()
+		 * @generated
+		 */
+		EClass GSMC = eINSTANCE.getGSMC();
+
+		/**
+		 * The meta object literal for the '<em><b>CELLWI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSMC__CELLWI = eINSTANCE.getGSMC_CELLWI();
+
+		/**
+		 * The meta object literal for the '<em><b>CELLHI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSMC__CELLHI = eINSTANCE.getGSMC_CELLHI();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSMPImpl <em>GSMP</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSMPImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMP()
+		 * @generated
+		 */
+		EClass GSMP = eINSTANCE.getGSMP();
+
+		/**
+		 * The meta object literal for the '<em><b>PREC</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSMP__PREC = eINSTANCE.getGSMP_PREC();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSMSImpl <em>GSMS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSMSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMS()
+		 * @generated
+		 */
+		EClass GSMS = eINSTANCE.getGSMS();
+
+		/**
+		 * The meta object literal for the '<em><b>LCID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSMS__LCID = eINSTANCE.getGSMS_LCID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSMTImpl <em>GSMT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSMTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMT()
+		 * @generated
+		 */
+		EClass GSMT = eINSTANCE.getGSMT();
+
+		/**
+		 * The meta object literal for the '<em><b>MCPT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSMT__MCPT = eINSTANCE.getGSMT_MCPT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSMXImpl <em>GSMX</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSMXImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMX()
+		 * @generated
+		 */
+		EClass GSMX = eINSTANCE.getGSMX();
+
+		/**
+		 * The meta object literal for the '<em><b>MODE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSMX__MODE = eINSTANCE.getGSMX_MODE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSPSImpl <em>GSPS</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSPSImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPS()
+		 * @generated
+		 */
+		EClass GSPS = eINSTANCE.getGSPS();
+
+		/**
+		 * The meta object literal for the '<em><b>LCID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPS__LCID = eINSTANCE.getGSPS_LCID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSPTImpl <em>GSPT</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSPTImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPT()
+		 * @generated
+		 */
+		EClass GSPT = eINSTANCE.getGSPT();
+
+		/**
+		 * The meta object literal for the '<em><b>PATT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPT__PATT = eINSTANCE.getGSPT_PATT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSPCOLImpl <em>GSPCOL</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSPCOLImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPCOL()
+		 * @generated
+		 */
+		EClass GSPCOL = eINSTANCE.getGSPCOL();
+
+		/**
+		 * The meta object literal for the '<em><b>RES1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__RES1 = eINSTANCE.getGSPCOL_RES1();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSPCE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__COLSPCE = eINSTANCE.getGSPCOL_COLSPCE();
+
+		/**
+		 * The meta object literal for the '<em><b>RES2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__RES2 = eINSTANCE.getGSPCOL_RES2();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE1</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__COLSIZE1 = eINSTANCE.getGSPCOL_COLSIZE1();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__COLSIZE2 = eINSTANCE.getGSPCOL_COLSIZE2();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__COLSIZE3 = eINSTANCE.getGSPCOL_COLSIZE3();
+
+		/**
+		 * The meta object literal for the '<em><b>COLSIZE4</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__COLSIZE4 = eINSTANCE.getGSPCOL_COLSIZE4();
+
+		/**
+		 * The meta object literal for the '<em><b>COLVALUE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSPCOL__COLVALUE = eINSTANCE.getGSPCOL_COLVALUE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSLEImpl <em>GSLE</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSLEImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLE()
+		 * @generated
+		 */
+		EClass GSLE = eINSTANCE.getGSLE();
+
+		/**
+		 * The meta object literal for the '<em><b>LINEEND</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSLE__LINEEND = eINSTANCE.getGSLE_LINEEND();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GSLJImpl <em>GSLJ</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GSLJImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLJ()
+		 * @generated
+		 */
+		EClass GSLJ = eINSTANCE.getGSLJ();
+
+		/**
+		 * The meta object literal for the '<em><b>LINEJOIN</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GSLJ__LINEJOIN = eINSTANCE.getGSLJ_LINEJOIN();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCBEZImpl <em>GCBEZ</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCBEZImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBEZ()
+		 * @generated
+		 */
+		EClass GCBEZ = eINSTANCE.getGCBEZ();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GCBEZ__RG = eINSTANCE.getGCBEZ_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCCBEZImpl <em>GCCBEZ</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCCBEZImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCCBEZ()
+		 * @generated
+		 */
+		EClass GCCBEZ = eINSTANCE.getGCCBEZ();
+
+		/**
+		 * The meta object literal for the '<em><b>Rg</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GCCBEZ__RG = eINSTANCE.getGCCBEZ_Rg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.WindowSpecificationImpl <em>Window Specification</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.WindowSpecificationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecification()
+		 * @generated
+		 */
+		EClass WINDOW_SPECIFICATION = eINSTANCE.getWindowSpecification();
+
+		/**
+		 * The meta object literal for the '<em><b>FLAGS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__FLAGS = eINSTANCE.getWindowSpecification_FLAGS();
+
+		/**
+		 * The meta object literal for the '<em><b>RES3</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__RES3 = eINSTANCE.getWindowSpecification_RES3();
+
+		/**
+		 * The meta object literal for the '<em><b>CFORMAT</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__CFORMAT = eINSTANCE.getWindowSpecification_CFORMAT();
+
+		/**
+		 * The meta object literal for the '<em><b>UBASE</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__UBASE = eINSTANCE.getWindowSpecification_UBASE();
+
+		/**
+		 * The meta object literal for the '<em><b>XRESOL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__XRESOL = eINSTANCE.getWindowSpecification_XRESOL();
+
+		/**
+		 * The meta object literal for the '<em><b>YRESOL</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__YRESOL = eINSTANCE.getWindowSpecification_YRESOL();
+
+		/**
+		 * The meta object literal for the '<em><b>IMGXYRES</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__IMGXYRES = eINSTANCE.getWindowSpecification_IMGXYRES();
+
+		/**
+		 * The meta object literal for the '<em><b>XLWIND</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__XLWIND = eINSTANCE.getWindowSpecification_XLWIND();
+
+		/**
+		 * The meta object literal for the '<em><b>XRWIND</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__XRWIND = eINSTANCE.getWindowSpecification_XRWIND();
+
+		/**
+		 * The meta object literal for the '<em><b>YBWIND</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__YBWIND = eINSTANCE.getWindowSpecification_YBWIND();
+
+		/**
+		 * The meta object literal for the '<em><b>YTWIND</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WINDOW_SPECIFICATION__YTWIND = eINSTANCE.getWindowSpecification_YTWIND();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DrawingOrderSubsetImpl <em>Drawing Order Subset</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DrawingOrderSubsetImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDrawingOrderSubset()
+		 * @generated
+		 */
+		EClass DRAWING_ORDER_SUBSET = eINSTANCE.getDrawingOrderSubset();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCBEZRGImpl <em>GCBEZRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCBEZRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBEZRG()
+		 * @generated
+		 */
+		EClass GCBEZRG = eINSTANCE.getGCBEZRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBEZRG__XPOS = eINSTANCE.getGCBEZRG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCBEZRG__YPOS = eINSTANCE.getGCBEZRG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCCBEZRGImpl <em>GCCBEZRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCCBEZRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCCBEZRG()
+		 * @generated
+		 */
+		EClass GCCBEZRG = eINSTANCE.getGCCBEZRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCCBEZRG__XPOS = eINSTANCE.getGCCBEZRG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCCBEZRG__YPOS = eINSTANCE.getGCCBEZRG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GFLTRGImpl <em>GFLTRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GFLTRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGFLTRG()
+		 * @generated
+		 */
+		EClass GFLTRG = eINSTANCE.getGFLTRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GFLTRG__XPOS = eINSTANCE.getGFLTRG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GFLTRG__YPOS = eINSTANCE.getGFLTRG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCFLTRGImpl <em>GCFLTRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCFLTRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCFLTRG()
+		 * @generated
+		 */
+		EClass GCFLTRG = eINSTANCE.getGCFLTRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCFLTRG__XPOS = eINSTANCE.getGCFLTRG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCFLTRG__YPOS = eINSTANCE.getGCFLTRG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GLINERGImpl <em>GLINERG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GLINERGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGLINERG()
+		 * @generated
+		 */
+		EClass GLINERG = eINSTANCE.getGLINERG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GLINERG__XPOS = eINSTANCE.getGLINERG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GLINERG__YPOS = eINSTANCE.getGLINERG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCLINERGImpl <em>GCLINERG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCLINERGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCLINERG()
+		 * @generated
+		 */
+		EClass GCLINERG = eINSTANCE.getGCLINERG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCLINERG__XPOS = eINSTANCE.getGCLINERG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCLINERG__YPOS = eINSTANCE.getGCLINERG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GMRKRGImpl <em>GMRKRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GMRKRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGMRKRG()
+		 * @generated
+		 */
+		EClass GMRKRG = eINSTANCE.getGMRKRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GMRKRG__XPOS = eINSTANCE.getGMRKRG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GMRKRG__YPOS = eINSTANCE.getGMRKRG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCMRKRGImpl <em>GCMRKRG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCMRKRGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCMRKRG()
+		 * @generated
+		 */
+		EClass GCMRKRG = eINSTANCE.getGCMRKRG();
+
+		/**
+		 * The meta object literal for the '<em><b>XPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCMRKRG__XPOS = eINSTANCE.getGCMRKRG_XPOS();
+
+		/**
+		 * The meta object literal for the '<em><b>YPOS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCMRKRG__YPOS = eINSTANCE.getGCMRKRG_YPOS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GRLINERGImpl <em>GRLINERG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GRLINERGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGRLINERG()
+		 * @generated
+		 */
+		EClass GRLINERG = eINSTANCE.getGRLINERG();
+
+		/**
+		 * The meta object literal for the '<em><b>XOSSF</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GRLINERG__XOSSF = eINSTANCE.getGRLINERG_XOSSF();
+
+		/**
+		 * The meta object literal for the '<em><b>YOFFS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GRLINERG__YOFFS = eINSTANCE.getGRLINERG_YOFFS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.GCRLINERGImpl <em>GCRLINERG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.GCRLINERGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCRLINERG()
+		 * @generated
+		 */
+		EClass GCRLINERG = eINSTANCE.getGCRLINERG();
+
+		/**
+		 * The meta object literal for the '<em><b>XOSSF</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCRLINERG__XOSSF = eINSTANCE.getGCRLINERG_XOSSF();
+
+		/**
+		 * The meta object literal for the '<em><b>YOFFS</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GCRLINERG__YOFFS = eINSTANCE.getGCRLINERG_YOFFS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TonerSaverImpl <em>Toner Saver</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TonerSaverImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTonerSaver()
+		 * @generated
+		 */
+		EClass TONER_SAVER = eINSTANCE.getTonerSaver();
+
+		/**
+		 * The meta object literal for the '<em><b>TSv Ctrl</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TONER_SAVER__TSV_CTRL = eINSTANCE.getTonerSaver_TSvCtrl();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ColorFidelityImpl <em>Color Fidelity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ColorFidelityImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelity()
+		 * @generated
+		 */
+		EClass COLOR_FIDELITY = eINSTANCE.getColorFidelity();
+
+		/**
+		 * The meta object literal for the '<em><b>Stp Co Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_FIDELITY__STP_CO_EX = eINSTANCE.getColorFidelity_StpCoEx();
+
+		/**
+		 * The meta object literal for the '<em><b>Rep Co Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_FIDELITY__REP_CO_EX = eINSTANCE.getColorFidelity_RepCoEx();
+
+		/**
+		 * The meta object literal for the '<em><b>Col Sub</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_FIDELITY__COL_SUB = eINSTANCE.getColorFidelity_ColSub();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FontFidelityImpl <em>Font Fidelity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FontFidelityImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontFidelity()
+		 * @generated
+		 */
+		EClass FONT_FIDELITY = eINSTANCE.getFontFidelity();
+
+		/**
+		 * The meta object literal for the '<em><b>Stp Fnt Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_FIDELITY__STP_FNT_EX = eINSTANCE.getFontFidelity_StpFntEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.TextFidelityImpl <em>Text Fidelity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.TextFidelityImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelity()
+		 * @generated
+		 */
+		EClass TEXT_FIDELITY = eINSTANCE.getTextFidelity();
+
+		/**
+		 * The meta object literal for the '<em><b>Stp Txt Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEXT_FIDELITY__STP_TXT_EX = eINSTANCE.getTextFidelity_StpTxtEx();
+
+		/**
+		 * The meta object literal for the '<em><b>Rep Txt Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEXT_FIDELITY__REP_TXT_EX = eINSTANCE.getTextFidelity_RepTxtEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MediaFidelityImpl <em>Media Fidelity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MediaFidelityImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaFidelity()
+		 * @generated
+		 */
+		EClass MEDIA_FIDELITY = eINSTANCE.getMediaFidelity();
+
+		/**
+		 * The meta object literal for the '<em><b>Stp Med Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEDIA_FIDELITY__STP_MED_EX = eINSTANCE.getMediaFidelity_StpMedEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FinishingFidelityImpl <em>Finishing Fidelity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FinishingFidelityImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelity()
+		 * @generated
+		 */
+		EClass FINISHING_FIDELITY = eINSTANCE.getFinishingFidelity();
+
+		/**
+		 * The meta object literal for the '<em><b>Stp Fin Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_FIDELITY__STP_FIN_EX = eINSTANCE.getFinishingFidelity_StpFinEx();
+
+		/**
+		 * The meta object literal for the '<em><b>Rep Fin Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_FIDELITY__REP_FIN_EX = eINSTANCE.getFinishingFidelity_RepFinEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.CMRFidelityImpl <em>CMR Fidelity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.CMRFidelityImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelity()
+		 * @generated
+		 */
+		EClass CMR_FIDELITY = eINSTANCE.getCMRFidelity();
+
+		/**
+		 * The meta object literal for the '<em><b>Stp CMR Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CMR_FIDELITY__STP_CMR_EX = eINSTANCE.getCMRFidelity_StpCMREx();
+
+		/**
+		 * The meta object literal for the '<em><b>Rep CMR Ex</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CMR_FIDELITY__REP_CMR_EX = eINSTANCE.getCMRFidelity_RepCMREx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectByteExtentImpl <em>Object Byte Extent</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectByteExtentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectByteExtent()
+		 * @generated
+		 */
+		EClass OBJECT_BYTE_EXTENT = eINSTANCE.getObjectByteExtent();
+
+		/**
+		 * The meta object literal for the '<em><b>Byte Ext</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_BYTE_EXTENT__BYTE_EXT = eINSTANCE.getObjectByteExtent_ByteExt();
+
+		/**
+		 * The meta object literal for the '<em><b>Byte Ext Hi</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_BYTE_EXTENT__BYTE_EXT_HI = eINSTANCE.getObjectByteExtent_ByteExtHi();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectByteOffsetImpl <em>Object Byte Offset</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectByteOffsetImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectByteOffset()
+		 * @generated
+		 */
+		EClass OBJECT_BYTE_OFFSET = eINSTANCE.getObjectByteOffset();
+
+		/**
+		 * The meta object literal for the '<em><b>Dir By Off</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_BYTE_OFFSET__DIR_BY_OFF = eINSTANCE.getObjectByteOffset_DirByOff();
+
+		/**
+		 * The meta object literal for the '<em><b>Dir By Hi</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_BYTE_OFFSET__DIR_BY_HI = eINSTANCE.getObjectByteOffset_DirByHi();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectStructuredFieldExtentImpl <em>Object Structured Field Extent</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectStructuredFieldExtentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectStructuredFieldExtent()
+		 * @generated
+		 */
+		EClass OBJECT_STRUCTURED_FIELD_EXTENT = eINSTANCE.getObjectStructuredFieldExtent();
+
+		/**
+		 * The meta object literal for the '<em><b>SF Ext</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_STRUCTURED_FIELD_EXTENT__SF_EXT = eINSTANCE.getObjectStructuredFieldExtent_SFExt();
+
+		/**
+		 * The meta object literal for the '<em><b>SF Ext Hi</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_STRUCTURED_FIELD_EXTENT__SF_EXT_HI = eINSTANCE.getObjectStructuredFieldExtent_SFExtHi();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectStructuredFieldOffsetImpl <em>Object Structured Field Offset</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectStructuredFieldOffsetImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectStructuredFieldOffset()
+		 * @generated
+		 */
+		EClass OBJECT_STRUCTURED_FIELD_OFFSET = eINSTANCE.getObjectStructuredFieldOffset();
+
+		/**
+		 * The meta object literal for the '<em><b>SF Off</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_STRUCTURED_FIELD_OFFSET__SF_OFF = eINSTANCE.getObjectStructuredFieldOffset_SFOff();
+
+		/**
+		 * The meta object literal for the '<em><b>SF Off Hi</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_STRUCTURED_FIELD_OFFSET__SF_OFF_HI = eINSTANCE.getObjectStructuredFieldOffset_SFOffHi();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectCountImpl <em>Object Count</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectCountImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectCount()
+		 * @generated
+		 */
+		EClass OBJECT_COUNT = eINSTANCE.getObjectCount();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub Obj</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_COUNT__SUB_OBJ = eINSTANCE.getObjectCount_SubObj();
+
+		/**
+		 * The meta object literal for the '<em><b>SObj Num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_COUNT__SOBJ_NUM = eINSTANCE.getObjectCount_SObjNum();
+
+		/**
+		 * The meta object literal for the '<em><b>Sobj Nm Hi</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_COUNT__SOBJ_NM_HI = eINSTANCE.getObjectCount_SobjNmHi();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectOriginIdentifierImpl <em>Object Origin Identifier</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectOriginIdentifierImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOriginIdentifier()
+		 * @generated
+		 */
+		EClass OBJECT_ORIGIN_IDENTIFIER = eINSTANCE.getObjectOriginIdentifier();
+
+		/**
+		 * The meta object literal for the '<em><b>System</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_ORIGIN_IDENTIFIER__SYSTEM = eINSTANCE.getObjectOriginIdentifier_System();
+
+		/**
+		 * The meta object literal for the '<em><b>Sys ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_ORIGIN_IDENTIFIER__SYS_ID = eINSTANCE.getObjectOriginIdentifier_SysID();
+
+		/**
+		 * The meta object literal for the '<em><b>Med ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_ORIGIN_IDENTIFIER__MED_ID = eINSTANCE.getObjectOriginIdentifier_MedID();
+
+		/**
+		 * The meta object literal for the '<em><b>DSID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_ORIGIN_IDENTIFIER__DSID = eINSTANCE.getObjectOriginIdentifier_DSID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LineDataObjectPositionMigrationImpl <em>Line Data Object Position Migration</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LineDataObjectPositionMigrationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLineDataObjectPositionMigration()
+		 * @generated
+		 */
+		EClass LINE_DATA_OBJECT_POSITION_MIGRATION = eINSTANCE.getLineDataObjectPositionMigration();
+
+		/**
+		 * The meta object literal for the '<em><b>Temp Orient</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT = eINSTANCE.getLineDataObjectPositionMigration_TempOrient();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ColorManagementResourceDescriptorImpl <em>Color Management Resource Descriptor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ColorManagementResourceDescriptorImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptor()
+		 * @generated
+		 */
+		EClass COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR = eINSTANCE.getColorManagementResourceDescriptor();
+
+		/**
+		 * The meta object literal for the '<em><b>Proc Mode</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR__PROC_MODE = eINSTANCE.getColorManagementResourceDescriptor_ProcMode();
+
+		/**
+		 * The meta object literal for the '<em><b>CMR Scpe</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR__CMR_SCPE = eINSTANCE.getColorManagementResourceDescriptor_CMRScpe();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MSURGImpl <em>MSURG</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MSURGImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMSURG()
+		 * @generated
+		 */
+		EClass MSURG = eINSTANCE.getMSURG();
+
+		/**
+		 * The meta object literal for the '<em><b>SU Pname</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MSURG__SU_PNAME = eINSTANCE.getMSURG_SUPname();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MSURG__RESERVED = eINSTANCE.getMSURG_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>SU Pid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MSURG__SU_PID = eINSTANCE.getMSURG_SUPid();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ImageResolutionImpl <em>Image Resolution</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ImageResolutionImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolution()
+		 * @generated
+		 */
+		EClass IMAGE_RESOLUTION = eINSTANCE.getImageResolution();
+
+		/**
+		 * The meta object literal for the '<em><b>XBase</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_RESOLUTION__XBASE = eINSTANCE.getImageResolution_XBase();
+
+		/**
+		 * The meta object literal for the '<em><b>YBase</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_RESOLUTION__YBASE = eINSTANCE.getImageResolution_YBase();
+
+		/**
+		 * The meta object literal for the '<em><b>XResol</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_RESOLUTION__XRESOL = eINSTANCE.getImageResolution_XResol();
+
+		/**
+		 * The meta object literal for the '<em><b>YResol</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute IMAGE_RESOLUTION__YRESOL = eINSTANCE.getImageResolution_YResol();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ObjectContainerPresentationSpaceSizeImpl <em>Object Container Presentation Space Size</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ObjectContainerPresentationSpaceSizeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectContainerPresentationSpaceSize()
+		 * @generated
+		 */
+		EClass OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE = eINSTANCE.getObjectContainerPresentationSpaceSize();
+
+		/**
+		 * The meta object literal for the '<em><b>PDF Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE__PDF_SIZE = eINSTANCE.getObjectContainerPresentationSpaceSize_PDFSize();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ExtendedResourceLocalIdentifierImpl <em>Extended Resource Local Identifier</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ExtendedResourceLocalIdentifierImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExtendedResourceLocalIdentifier()
+		 * @generated
+		 */
+		EClass EXTENDED_RESOURCE_LOCAL_IDENTIFIER = eINSTANCE.getExtendedResourceLocalIdentifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Res Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTENDED_RESOURCE_LOCAL_IDENTIFIER__RES_TYPE = eINSTANCE.getExtendedResourceLocalIdentifier_ResType();
+
+		/**
+		 * The meta object literal for the '<em><b>Res LID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTENDED_RESOURCE_LOCAL_IDENTIFIER__RES_LID = eINSTANCE.getExtendedResourceLocalIdentifier_ResLID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.MetricAdjustmentImpl <em>Metric Adjustment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.MetricAdjustmentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMetricAdjustment()
+		 * @generated
+		 */
+		EClass METRIC_ADJUSTMENT = eINSTANCE.getMetricAdjustment();
+
+		/**
+		 * The meta object literal for the '<em><b>Unit Base</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__UNIT_BASE = eINSTANCE.getMetricAdjustment_UnitBase();
+
+		/**
+		 * The meta object literal for the '<em><b>XUPUB</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__XUPUB = eINSTANCE.getMetricAdjustment_XUPUB();
+
+		/**
+		 * The meta object literal for the '<em><b>YUPUB</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__YUPUB = eINSTANCE.getMetricAdjustment_YUPUB();
+
+		/**
+		 * The meta object literal for the '<em><b>HUniform Increment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__HUNIFORM_INCREMENT = eINSTANCE.getMetricAdjustment_HUniformIncrement();
+
+		/**
+		 * The meta object literal for the '<em><b>VUniform Increment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__VUNIFORM_INCREMENT = eINSTANCE.getMetricAdjustment_VUniformIncrement();
+
+		/**
+		 * The meta object literal for the '<em><b>HBaseline Increment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__HBASELINE_INCREMENT = eINSTANCE.getMetricAdjustment_HBaselineIncrement();
+
+		/**
+		 * The meta object literal for the '<em><b>VBaseline Increment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METRIC_ADJUSTMENT__VBASELINE_INCREMENT = eINSTANCE.getMetricAdjustment_VBaselineIncrement();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ExtensionFontImpl <em>Extension Font</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ExtensionFontImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExtensionFont()
+		 * @generated
+		 */
+		EClass EXTENSION_FONT = eINSTANCE.getExtensionFont();
+
+		/**
+		 * The meta object literal for the '<em><b>GCSGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXTENSION_FONT__GCSGID = eINSTANCE.getExtensionFont_GCSGID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.RenderingIntentImpl <em>Rendering Intent</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.RenderingIntentImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntent()
+		 * @generated
+		 */
+		EClass RENDERING_INTENT = eINSTANCE.getRenderingIntent();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENDERING_INTENT__RESERVED = eINSTANCE.getRenderingIntent_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>IOCARI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENDERING_INTENT__IOCARI = eINSTANCE.getRenderingIntent_IOCARI();
+
+		/**
+		 * The meta object literal for the '<em><b>OCRI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENDERING_INTENT__OCRI = eINSTANCE.getRenderingIntent_OCRI();
+
+		/**
+		 * The meta object literal for the '<em><b>PTOCRI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENDERING_INTENT__PTOCRI = eINSTANCE.getRenderingIntent_PTOCRI();
+
+		/**
+		 * The meta object literal for the '<em><b>GOCARI</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENDERING_INTENT__GOCARI = eINSTANCE.getRenderingIntent_GOCARI();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved2</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RENDERING_INTENT__RESERVED2 = eINSTANCE.getRenderingIntent_Reserved2();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FontCodedGraphicCharacterSetGlobalIdentifierImpl <em>Font Coded Graphic Character Set Global Identifier</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FontCodedGraphicCharacterSetGlobalIdentifierImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontCodedGraphicCharacterSetGlobalIdentifier()
+		 * @generated
+		 */
+		EClass FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER = eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier();
+
+		/**
+		 * The meta object literal for the '<em><b>GCSGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID = eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier_GCSGID();
+
+		/**
+		 * The meta object literal for the '<em><b>CPGID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID = eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier_CPGID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.LocaleSelectorImpl <em>Locale Selector</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.LocaleSelectorImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLocaleSelector()
+		 * @generated
+		 */
+		EClass LOCALE_SELECTOR = eINSTANCE.getLocaleSelector();
+
+		/**
+		 * The meta object literal for the '<em><b>Loc Flgs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALE_SELECTOR__LOC_FLGS = eINSTANCE.getLocaleSelector_LocFlgs();
+
+		/**
+		 * The meta object literal for the '<em><b>Lang Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALE_SELECTOR__LANG_CODE = eINSTANCE.getLocaleSelector_LangCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Scrpt Cde</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALE_SELECTOR__SCRPT_CDE = eINSTANCE.getLocaleSelector_ScrptCde();
+
+		/**
+		 * The meta object literal for the '<em><b>Reg Cde</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALE_SELECTOR__REG_CDE = eINSTANCE.getLocaleSelector_RegCde();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALE_SELECTOR__RESERVED = eINSTANCE.getLocaleSelector_Reserved();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Cde</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOCALE_SELECTOR__VAR_CDE = eINSTANCE.getLocaleSelector_VarCde();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.FinishingOperationImpl <em>Finishing Operation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.FinishingOperationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperation()
+		 * @generated
+		 */
+		EClass FINISHING_OPERATION = eINSTANCE.getFinishingOperation();
+
+		/**
+		 * The meta object literal for the '<em><b>FOp Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_OPERATION__FOP_TYPE = eINSTANCE.getFinishingOperation_FOpType();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref Edge</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_OPERATION__REF_EDGE = eINSTANCE.getFinishingOperation_RefEdge();
+
+		/**
+		 * The meta object literal for the '<em><b>FOp Cnt</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_OPERATION__FOP_CNT = eINSTANCE.getFinishingOperation_FOpCnt();
+
+		/**
+		 * The meta object literal for the '<em><b>Ax Offst</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_OPERATION__AX_OFFST = eINSTANCE.getFinishingOperation_AxOffst();
+
+		/**
+		 * The meta object literal for the '<em><b>Op Pos</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FINISHING_OPERATION__OP_POS = eINSTANCE.getFinishingOperation_OpPos();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.UP3iFinishingOperationImpl <em>UP 3i Finishing Operation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.UP3iFinishingOperationImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getUP3iFinishingOperation()
+		 * @generated
+		 */
+		EClass UP_3I_FINISHING_OPERATION = eINSTANCE.getUP3iFinishingOperation();
+
+		/**
+		 * The meta object literal for the '<em><b>Seqnum</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UP_3I_FINISHING_OPERATION__SEQNUM = eINSTANCE.getUP3iFinishingOperation_Seqnum();
+
+		/**
+		 * The meta object literal for the '<em><b>UP 3i Dat</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UP_3I_FINISHING_OPERATION__UP_3I_DAT = eINSTANCE.getUP3iFinishingOperation_UP3iDat();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.DeviceAppearanceImpl <em>Device Appearance</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.DeviceAppearanceImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDeviceAppearance()
+		 * @generated
+		 */
+		EClass DEVICE_APPEARANCE = eINSTANCE.getDeviceAppearance();
+
+		/**
+		 * The meta object literal for the '<em><b>Dev App</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_APPEARANCE__DEV_APP = eINSTANCE.getDeviceAppearance_DevApp();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DEVICE_APPEARANCE__RESERVED = eINSTANCE.getDeviceAppearance_Reserved();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ResourceObjectIncludeImpl <em>Resource Object Include</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ResourceObjectIncludeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectInclude()
+		 * @generated
+		 */
+		EClass RESOURCE_OBJECT_INCLUDE = eINSTANCE.getResourceObjectInclude();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_INCLUDE__OBJ_TYPE = eINSTANCE.getResourceObjectInclude_ObjType();
+
+		/**
+		 * The meta object literal for the '<em><b>Obj Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_INCLUDE__OBJ_NAME = eINSTANCE.getResourceObjectInclude_ObjName();
+
+		/**
+		 * The meta object literal for the '<em><b>Xobj Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_INCLUDE__XOBJ_OSET = eINSTANCE.getResourceObjectInclude_XobjOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Yobj Oset</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_INCLUDE__YOBJ_OSET = eINSTANCE.getResourceObjectInclude_YobjOset();
+
+		/**
+		 * The meta object literal for the '<em><b>Ob Orent</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_OBJECT_INCLUDE__OB_ORENT = eINSTANCE.getResourceObjectInclude_ObOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.PageOverlayConditionalProcessingImpl <em>Page Overlay Conditional Processing</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.PageOverlayConditionalProcessingImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPageOverlayConditionalProcessing()
+		 * @generated
+		 */
+		EClass PAGE_OVERLAY_CONDITIONAL_PROCESSING = eINSTANCE.getPageOverlayConditionalProcessing();
+
+		/**
+		 * The meta object literal for the '<em><b>Pg Ov Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAGE_OVERLAY_CONDITIONAL_PROCESSING__PG_OV_TYPE = eINSTANCE.getPageOverlayConditionalProcessing_PgOvType();
+
+		/**
+		 * The meta object literal for the '<em><b>Level</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAGE_OVERLAY_CONDITIONAL_PROCESSING__LEVEL = eINSTANCE.getPageOverlayConditionalProcessing_Level();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.impl.ResourceUsageAttributeImpl <em>Resource Usage Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.impl.ResourceUsageAttributeImpl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceUsageAttribute()
+		 * @generated
+		 */
+		EClass RESOURCE_USAGE_ATTRIBUTE = eINSTANCE.getResourceUsageAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Frequency</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RESOURCE_USAGE_ATTRIBUTE__FREQUENCY = eINSTANCE.getResourceUsageAttribute_Frequency();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDAFlags <em>BDA Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDAFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDAFlags()
+		 * @generated
+		 */
+		EEnum BDA_FLAGS = eINSTANCE.getBDAFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDDUBASE <em>BDDUBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDDUBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDDUBASE()
+		 * @generated
+		 */
+		EEnum BDDUBASE = eINSTANCE.getBDDUBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDDReserved <em>BDD Reserved</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDDReserved
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDDReserved()
+		 * @generated
+		 */
+		EEnum BDD_RESERVED = eINSTANCE.getBDDReserved();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDDReserved2 <em>BDD Reserved2</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDDReserved2
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDDReserved2()
+		 * @generated
+		 */
+		EEnum BDD_RESERVED2 = eINSTANCE.getBDDReserved2();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDDTYPE <em>BDDTYPE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDDTYPE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDDTYPE()
+		 * @generated
+		 */
+		EEnum BDDTYPE = eINSTANCE.getBDDTYPE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDDCOLOR <em>BDDCOLOR</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDDCOLOR
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDDCOLOR()
+		 * @generated
+		 */
+		EEnum BDDCOLOR = eINSTANCE.getBDDCOLOR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BDMDatFmt <em>BDM Dat Fmt</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BDMDatFmt
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBDMDatFmt()
+		 * @generated
+		 */
+		EEnum BDM_DAT_FMT = eINSTANCE.getBDMDatFmt();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CDDXocBase <em>CDD Xoc Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CDDXocBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCDDXocBase()
+		 * @generated
+		 */
+		EEnum CDD_XOC_BASE = eINSTANCE.getCDDXocBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CDDYocBase <em>CDD Yoc Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CDDYocBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCDDYocBase()
+		 * @generated
+		 */
+		EEnum CDD_YOC_BASE = eINSTANCE.getCDDYocBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CFCCFIRGLen <em>CFCCFIRG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CFCCFIRGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCFCCFIRGLen()
+		 * @generated
+		 */
+		EEnum CFCCFIRG_LEN = eINSTANCE.getCFCCFIRGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CFCRetired1 <em>CFC Retired1</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CFCRetired1
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCFCRetired1()
+		 * @generated
+		 */
+		EEnum CFC_RETIRED1 = eINSTANCE.getCFCRetired1();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CPCPrtFlags <em>CPC Prt Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CPCPrtFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPCPrtFlags()
+		 * @generated
+		 */
+		EEnum CPC_PRT_FLAGS = eINSTANCE.getCPCPrtFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CPCCPIRGLen <em>CPCCPIRG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CPCCPIRGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPCCPIRGLen()
+		 * @generated
+		 */
+		EEnum CPCCPIRG_LEN = eINSTANCE.getCPCCPIRGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CPCVSFlags <em>CPCVS Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CPCVSFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPCVSFlags()
+		 * @generated
+		 */
+		EEnum CPCVS_FLAGS = eINSTANCE.getCPCVSFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CPDGCGIDLen <em>CPDGCGID Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CPDGCGIDLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPDGCGIDLen()
+		 * @generated
+		 */
+		EEnum CPDGCGID_LEN = eINSTANCE.getCPDGCGIDLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CPDEncScheme <em>CPD Enc Scheme</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CPDEncScheme
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCPDEncScheme()
+		 * @generated
+		 */
+		EEnum CPD_ENC_SCHEME = eINSTANCE.getCPDEncScheme();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCRetired <em>FNC Retired</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCRetired
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCRetired()
+		 * @generated
+		 */
+		EEnum FNC_RETIRED = eINSTANCE.getFNCRetired();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCPatTech <em>FNC Pat Tech</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCPatTech
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCPatTech()
+		 * @generated
+		 */
+		EEnum FNC_PAT_TECH = eINSTANCE.getFNCPatTech();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCFntFlags <em>FNC Fnt Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCFntFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCFntFlags()
+		 * @generated
+		 */
+		EEnum FNC_FNT_FLAGS = eINSTANCE.getFNCFntFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCXUnitBase <em>FNCX Unit Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCXUnitBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCXUnitBase()
+		 * @generated
+		 */
+		EEnum FNCX_UNIT_BASE = eINSTANCE.getFNCXUnitBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCYUnitBase <em>FNCY Unit Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCYUnitBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCYUnitBase()
+		 * @generated
+		 */
+		EEnum FNCY_UNIT_BASE = eINSTANCE.getFNCYUnitBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCXftUnits <em>FNC Xft Units</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCXftUnits
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCXftUnits()
+		 * @generated
+		 */
+		EEnum FNC_XFT_UNITS = eINSTANCE.getFNCXftUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCYftUnits <em>FNC Yft Units</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCYftUnits
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCYftUnits()
+		 * @generated
+		 */
+		EEnum FNC_YFT_UNITS = eINSTANCE.getFNCYftUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCFNORGLen <em>FNCFNORG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCFNORGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCFNORGLen()
+		 * @generated
+		 */
+		EEnum FNCFNORG_LEN = eINSTANCE.getFNCFNORGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCFNIRGLen <em>FNCFNIRG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCFNIRGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCFNIRGLen()
+		 * @generated
+		 */
+		EEnum FNCFNIRG_LEN = eINSTANCE.getFNCFNIRGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCPatAlign <em>FNC Pat Align</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCPatAlign
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCPatAlign()
+		 * @generated
+		 */
+		EEnum FNC_PAT_ALIGN = eINSTANCE.getFNCPatAlign();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCFNPRGLen <em>FNCFNPRG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCFNPRGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCFNPRGLen()
+		 * @generated
+		 */
+		EEnum FNCFNPRG_LEN = eINSTANCE.getFNCFNPRGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCFNMRGLen <em>FNCFNMRG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCFNMRGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCFNMRGLen()
+		 * @generated
+		 */
+		EEnum FNCFNMRG_LEN = eINSTANCE.getFNCFNMRGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCResXUBase <em>FNC Res XU Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCResXUBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCResXUBase()
+		 * @generated
+		 */
+		EEnum FNC_RES_XU_BASE = eINSTANCE.getFNCResXUBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCResYUBase <em>FNC Res YU Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCResYUBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCResYUBase()
+		 * @generated
+		 */
+		EEnum FNC_RES_YU_BASE = eINSTANCE.getFNCResYUBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCXfrUnits <em>FNC Xfr Units</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCXfrUnits
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCXfrUnits()
+		 * @generated
+		 */
+		EEnum FNC_XFR_UNITS = eINSTANCE.getFNCXfrUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCYfrUnits <em>FNC Yfr Units</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCYfrUnits
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCYfrUnits()
+		 * @generated
+		 */
+		EEnum FNC_YFR_UNITS = eINSTANCE.getFNCYfrUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNCFNNRGLen <em>FNCFNNRG Len</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNCFNNRGLen
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNCFNNRGLen()
+		 * @generated
+		 */
+		EEnum FNCFNNRG_LEN = eINSTANCE.getFNCFNNRGLen();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNDFtWtClass <em>FND Ft Wt Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNDFtWtClass
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNDFtWtClass()
+		 * @generated
+		 */
+		EEnum FND_FT_WT_CLASS = eINSTANCE.getFNDFtWtClass();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNDFtWdClass <em>FND Ft Wd Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNDFtWdClass
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNDFtWdClass()
+		 * @generated
+		 */
+		EEnum FND_FT_WD_CLASS = eINSTANCE.getFNDFtWdClass();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FNDFtDsFlags <em>FND Ft Ds Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FNDFtDsFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFNDFtDsFlags()
+		 * @generated
+		 */
+		EEnum FND_FT_DS_FLAGS = eINSTANCE.getFNDFtDsFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IDDUNITBASE <em>IDDUNITBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IDDUNITBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDDUNITBASE()
+		 * @generated
+		 */
+		EEnum IDDUNITBASE = eINSTANCE.getIDDUNITBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IOBObjType <em>IOB Obj Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IOBObjType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBObjType()
+		 * @generated
+		 */
+		EEnum IOB_OBJ_TYPE = eINSTANCE.getIOBObjType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IOBXoaOrent <em>IOB Xoa Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IOBXoaOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBXoaOrent()
+		 * @generated
+		 */
+		EEnum IOB_XOA_ORENT = eINSTANCE.getIOBXoaOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IOBYoaOrent <em>IOB Yoa Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IOBYoaOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBYoaOrent()
+		 * @generated
+		 */
+		EEnum IOB_YOA_ORENT = eINSTANCE.getIOBYoaOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IOBRefCSys <em>IOB Ref CSys</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IOBRefCSys
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIOBRefCSys()
+		 * @generated
+		 */
+		EEnum IOB_REF_CSYS = eINSTANCE.getIOBRefCSys();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IPGIPgFlgs <em>IPGI Pg Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IPGIPgFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPGIPgFlgs()
+		 * @generated
+		 */
+		EEnum IPGI_PG_FLGS = eINSTANCE.getIPGIPgFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IPOOvlyOrent <em>IPO Ovly Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IPOOvlyOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIPOOvlyOrent()
+		 * @generated
+		 */
+		EEnum IPO_OVLY_ORENT = eINSTANCE.getIPOOvlyOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MDDXmBase <em>MDD Xm Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MDDXmBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDXmBase()
+		 * @generated
+		 */
+		EEnum MDD_XM_BASE = eINSTANCE.getMDDXmBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MDDYmBase <em>MDD Ym Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MDDYmBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDYmBase()
+		 * @generated
+		 */
+		EEnum MDD_YM_BASE = eINSTANCE.getMDDYmBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MDDMDDFlgs <em>MDDMDD Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MDDMDDFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMDDMDDFlgs()
+		 * @generated
+		 */
+		EEnum MDDMDD_FLGS = eINSTANCE.getMDDMDDFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MFCMFCFlgs <em>MFCMFC Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MFCMFCFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMFCFlgs()
+		 * @generated
+		 */
+		EEnum MFCMFC_FLGS = eINSTANCE.getMFCMFCFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MFCMedColl <em>MFC Med Coll</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MFCMedColl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMedColl()
+		 * @generated
+		 */
+		EEnum MFC_MED_COLL = eINSTANCE.getMFCMedColl();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MFCMFCScpe <em>MFCMFC Scpe</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MFCMFCScpe
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMFCMFCScpe()
+		 * @generated
+		 */
+		EEnum MFCMFC_SCPE = eINSTANCE.getMFCMFCScpe();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MMCPARAMETER1 <em>MMCPARAMETER1</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MMCPARAMETER1
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCPARAMETER1()
+		 * @generated
+		 */
+		EEnum MMCPARAMETER1 = eINSTANCE.getMMCPARAMETER1();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MMORGLength <em>MMORG Length</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MMORGLength
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMORGLength()
+		 * @generated
+		 */
+		EEnum MMORG_LENGTH = eINSTANCE.getMMORGLength();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MPSRGLength <em>MPSRG Length</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MPSRGLength
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMPSRGLength()
+		 * @generated
+		 */
+		EEnum MPSRG_LENGTH = eINSTANCE.getMPSRGLength();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OBPRGLength <em>OBPRG Length</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OBPRGLength
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPRGLength()
+		 * @generated
+		 */
+		EEnum OBPRG_LENGTH = eINSTANCE.getOBPRGLength();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OBPXoaOrent <em>OBP Xoa Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OBPXoaOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPXoaOrent()
+		 * @generated
+		 */
+		EEnum OBP_XOA_ORENT = eINSTANCE.getOBPXoaOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OBPYoaOrent <em>OBP Yoa Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OBPYoaOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPYoaOrent()
+		 * @generated
+		 */
+		EEnum OBP_YOA_ORENT = eINSTANCE.getOBPYoaOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OBPXocaOrent <em>OBP Xoca Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OBPXocaOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPXocaOrent()
+		 * @generated
+		 */
+		EEnum OBP_XOCA_ORENT = eINSTANCE.getOBPXocaOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OBPYocaOrent <em>OBP Yoca Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OBPYocaOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPYocaOrent()
+		 * @generated
+		 */
+		EEnum OBP_YOCA_ORENT = eINSTANCE.getOBPYocaOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OBPRefCSys <em>OBP Ref CSys</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OBPRefCSys
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOBPRefCSys()
+		 * @generated
+		 */
+		EEnum OBP_REF_CSYS = eINSTANCE.getOBPRefCSys();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PFCPFCFlgs <em>PFCPFC Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PFCPFCFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPFCPFCFlgs()
+		 * @generated
+		 */
+		EEnum PFCPFC_FLGS = eINSTANCE.getPFCPFCFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGDXpgBase <em>PGD Xpg Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGDXpgBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGDXpgBase()
+		 * @generated
+		 */
+		EEnum PGD_XPG_BASE = eINSTANCE.getPGDXpgBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGDYpgBase <em>PGD Ypg Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGDYpgBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGDYpgBase()
+		 * @generated
+		 */
+		EEnum PGD_YPG_BASE = eINSTANCE.getPGDYpgBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGPConstant <em>PGP Constant</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGPConstant
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPConstant()
+		 * @generated
+		 */
+		EEnum PGP_CONSTANT = eINSTANCE.getPGPConstant();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PTDXPBASE <em>PTDXPBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PTDXPBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTDXPBASE()
+		 * @generated
+		 */
+		EEnum PTDXPBASE = eINSTANCE.getPTDXPBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PTDYPBASE <em>PTDYPBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PTDYPBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTDYPBASE()
+		 * @generated
+		 */
+		EEnum PTDYPBASE = eINSTANCE.getPTDYPBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PTD1XPBASE <em>PTD1XPBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PTD1XPBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1XPBASE()
+		 * @generated
+		 */
+		EEnum PTD1XPBASE = eINSTANCE.getPTD1XPBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PTD1YPBASE <em>PTD1YPBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PTD1YPBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPTD1YPBASE()
+		 * @generated
+		 */
+		EEnum PTD1YPBASE = eINSTANCE.getPTD1YPBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.OVSBYPSIDEN <em>OVSBYPSIDEN</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.OVSBYPSIDEN
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getOVSBYPSIDEN()
+		 * @generated
+		 */
+		EEnum OVSBYPSIDEN = eINSTANCE.getOVSBYPSIDEN();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.SECCOLSPCE <em>SECCOLSPCE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.SECCOLSPCE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSECCOLSPCE()
+		 * @generated
+		 */
+		EEnum SECCOLSPCE = eINSTANCE.getSECCOLSPCE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.SIADIRCTION <em>SIADIRCTION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.SIADIRCTION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSIADIRCTION()
+		 * @generated
+		 */
+		EEnum SIADIRCTION = eINSTANCE.getSIADIRCTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.STCFRGCOLOR <em>STCFRGCOLOR</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.STCFRGCOLOR
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTCFRGCOLOR()
+		 * @generated
+		 */
+		EEnum STCFRGCOLOR = eINSTANCE.getSTCFRGCOLOR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.STCPRECSION <em>STCPRECSION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.STCPRECSION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTCPRECSION()
+		 * @generated
+		 */
+		EEnum STCPRECSION = eINSTANCE.getSTCPRECSION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.STOIORNTION <em>STOIORNTION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.STOIORNTION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTOIORNTION()
+		 * @generated
+		 */
+		EEnum STOIORNTION = eINSTANCE.getSTOIORNTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.STOBORNTION <em>STOBORNTION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.STOBORNTION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSTOBORNTION()
+		 * @generated
+		 */
+		EEnum STOBORNTION = eINSTANCE.getSTOBORNTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TBMDIRCTION <em>TBMDIRCTION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TBMDIRCTION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBMDIRCTION()
+		 * @generated
+		 */
+		EEnum TBMDIRCTION = eINSTANCE.getTBMDIRCTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TBMPRECSION <em>TBMPRECSION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TBMPRECSION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTBMPRECSION()
+		 * @generated
+		 */
+		EEnum TBMPRECSION = eINSTANCE.getTBMPRECSION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.USCBYPSIDEN <em>USCBYPSIDEN</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.USCBYPSIDEN
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getUSCBYPSIDEN()
+		 * @generated
+		 */
+		EEnum USCBYPSIDEN = eINSTANCE.getUSCBYPSIDEN();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CRCResourceManagementFmtQual <em>CRC Resource Management Fmt Qual</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CRCResourceManagementFmtQual
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCRCResourceManagementFmtQual()
+		 * @generated
+		 */
+		EEnum CRC_RESOURCE_MANAGEMENT_FMT_QUAL = eINSTANCE.getCRCResourceManagementFmtQual();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ColorSpecificationColSpce <em>Color Specification Col Spce</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ColorSpecificationColSpce
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorSpecificationColSpce()
+		 * @generated
+		 */
+		EEnum COLOR_SPECIFICATION_COL_SPCE = eINSTANCE.getColorSpecificationColSpce();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.DataObjectFontDescriptorFontTech <em>Data Object Font Descriptor Font Tech</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.DataObjectFontDescriptorFontTech
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorFontTech()
+		 * @generated
+		 */
+		EEnum DATA_OBJECT_FONT_DESCRIPTOR_FONT_TECH = eINSTANCE.getDataObjectFontDescriptorFontTech();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.DataObjectFontDescriptorCharRot <em>Data Object Font Descriptor Char Rot</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.DataObjectFontDescriptorCharRot
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorCharRot()
+		 * @generated
+		 */
+		EEnum DATA_OBJECT_FONT_DESCRIPTOR_CHAR_ROT = eINSTANCE.getDataObjectFontDescriptorCharRot();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.DataObjectFontDescriptorEncEnv <em>Data Object Font Descriptor Enc Env</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.DataObjectFontDescriptorEncEnv
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorEncEnv()
+		 * @generated
+		 */
+		EEnum DATA_OBJECT_FONT_DESCRIPTOR_ENC_ENV = eINSTANCE.getDataObjectFontDescriptorEncEnv();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.DataObjectFontDescriptorEncID <em>Data Object Font Descriptor Enc ID</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.DataObjectFontDescriptorEncID
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDataObjectFontDescriptorEncID()
+		 * @generated
+		 */
+		EEnum DATA_OBJECT_FONT_DESCRIPTOR_ENC_ID = eINSTANCE.getDataObjectFontDescriptorEncID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.EncodingSchemeIDESidCP <em>Encoding Scheme IDE Sid CP</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.EncodingSchemeIDESidCP
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeIDESidCP()
+		 * @generated
+		 */
+		EEnum ENCODING_SCHEME_IDE_SID_CP = eINSTANCE.getEncodingSchemeIDESidCP();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.EncodingSchemeIDESidUD <em>Encoding Scheme IDE Sid UD</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.EncodingSchemeIDESidUD
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getEncodingSchemeIDESidUD()
+		 * @generated
+		 */
+		EEnum ENCODING_SCHEME_IDE_SID_UD = eINSTANCE.getEncodingSchemeIDESidUD();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontResolutionMetTech <em>Font Resolution Met Tech</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontResolutionMetTech
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionMetTech()
+		 * @generated
+		 */
+		EEnum FONT_RESOLUTION_MET_TECH = eINSTANCE.getFontResolutionMetTech();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontResolutionRPuBase <em>Font Resolution RPu Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontResolutionRPuBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionRPuBase()
+		 * @generated
+		 */
+		EEnum FONT_RESOLUTION_RPU_BASE = eINSTANCE.getFontResolutionRPuBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontResolutionRPUnits <em>Font Resolution RP Units</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontResolutionRPUnits
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontResolutionRPUnits()
+		 * @generated
+		 */
+		EEnum FONT_RESOLUTION_RP_UNITS = eINSTANCE.getFontResolutionRPUnits();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FullyQualifiedNameFQNType <em>Fully Qualified Name FQN Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FullyQualifiedNameFQNType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedNameFQNType()
+		 * @generated
+		 */
+		EEnum FULLY_QUALIFIED_NAME_FQN_TYPE = eINSTANCE.getFullyQualifiedNameFQNType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FullyQualifiedNameFQNFormat <em>Fully Qualified Name FQN Format</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FullyQualifiedNameFQNFormat
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFullyQualifiedNameFQNFormat()
+		 * @generated
+		 */
+		EEnum FULLY_QUALIFIED_NAME_FQN_FORMAT = eINSTANCE.getFullyQualifiedNameFQNFormat();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.LocalDateAndTimeStampStampType <em>Local Date And Time Stamp Stamp Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.LocalDateAndTimeStampStampType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLocalDateAndTimeStampStampType()
+		 * @generated
+		 */
+		EEnum LOCAL_DATE_AND_TIME_STAMP_STAMP_TYPE = eINSTANCE.getLocalDateAndTimeStampStampType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MappingOptionMapValue <em>Mapping Option Map Value</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MappingOptionMapValue
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMappingOptionMapValue()
+		 * @generated
+		 */
+		EEnum MAPPING_OPTION_MAP_VALUE = eINSTANCE.getMappingOptionMapValue();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MediaEjectControlReserved <em>Media Eject Control Reserved</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MediaEjectControlReserved
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControlReserved()
+		 * @generated
+		 */
+		EEnum MEDIA_EJECT_CONTROL_RESERVED = eINSTANCE.getMediaEjectControlReserved();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MediaEjectControlEjCtrl <em>Media Eject Control Ej Ctrl</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MediaEjectControlEjCtrl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaEjectControlEjCtrl()
+		 * @generated
+		 */
+		EEnum MEDIA_EJECT_CONTROL_EJ_CTRL = eINSTANCE.getMediaEjectControlEjCtrl();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MediumOrientationMedOrient <em>Medium Orientation Med Orient</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MediumOrientationMedOrient
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediumOrientationMedOrient()
+		 * @generated
+		 */
+		EEnum MEDIUM_ORIENTATION_MED_ORIENT = eINSTANCE.getMediumOrientationMedOrient();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MeasurementUnitsXoaBase <em>Measurement Units Xoa Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MeasurementUnitsXoaBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnitsXoaBase()
+		 * @generated
+		 */
+		EEnum MEASUREMENT_UNITS_XOA_BASE = eINSTANCE.getMeasurementUnitsXoaBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MeasurementUnitsYoaBase <em>Measurement Units Yoa Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MeasurementUnitsYoaBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMeasurementUnitsYoaBase()
+		 * @generated
+		 */
+		EEnum MEASUREMENT_UNITS_YOA_BASE = eINSTANCE.getMeasurementUnitsYoaBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MODCAInterchangeSetIStype <em>MODCA Interchange Set IStype</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MODCAInterchangeSetIStype
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSetIStype()
+		 * @generated
+		 */
+		EEnum MODCA_INTERCHANGE_SET_ISTYPE = eINSTANCE.getMODCAInterchangeSetIStype();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MODCAInterchangeSetISid <em>MODCA Interchange Set ISid</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MODCAInterchangeSetISid
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMODCAInterchangeSetISid()
+		 * @generated
+		 */
+		EEnum MODCA_INTERCHANGE_SET_ISID = eINSTANCE.getMODCAInterchangeSetISid();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectAreaSizeSizeType <em>Object Area Size Size Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectAreaSizeSizeType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectAreaSizeSizeType()
+		 * @generated
+		 */
+		EEnum OBJECT_AREA_SIZE_SIZE_TYPE = eINSTANCE.getObjectAreaSizeSizeType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectClassificationObjClass <em>Object Classification Obj Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectClassificationObjClass
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassificationObjClass()
+		 * @generated
+		 */
+		EEnum OBJECT_CLASSIFICATION_OBJ_CLASS = eINSTANCE.getObjectClassificationObjClass();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectClassificationStrucFlgs <em>Object Classification Struc Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectClassificationStrucFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectClassificationStrucFlgs()
+		 * @generated
+		 */
+		EEnum OBJECT_CLASSIFICATION_STRUC_FLGS = eINSTANCE.getObjectClassificationStrucFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationObjType <em>Object Function Set Specification Obj Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectFunctionSetSpecificationObjType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationObjType()
+		 * @generated
+		 */
+		EEnum OBJECT_FUNCTION_SET_SPECIFICATION_OBJ_TYPE = eINSTANCE.getObjectFunctionSetSpecificationObjType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationArchVrsn <em>Object Function Set Specification Arch Vrsn</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectFunctionSetSpecificationArchVrsn
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationArchVrsn()
+		 * @generated
+		 */
+		EEnum OBJECT_FUNCTION_SET_SPECIFICATION_ARCH_VRSN = eINSTANCE.getObjectFunctionSetSpecificationArchVrsn();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationDCAFnSet <em>Object Function Set Specification DCA Fn Set</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectFunctionSetSpecificationDCAFnSet
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationDCAFnSet()
+		 * @generated
+		 */
+		EEnum OBJECT_FUNCTION_SET_SPECIFICATION_DCA_FN_SET = eINSTANCE.getObjectFunctionSetSpecificationDCAFnSet();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectFunctionSetSpecificationOCAFnSet <em>Object Function Set Specification OCA Fn Set</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectFunctionSetSpecificationOCAFnSet
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectFunctionSetSpecificationOCAFnSet()
+		 * @generated
+		 */
+		EEnum OBJECT_FUNCTION_SET_SPECIFICATION_OCA_FN_SET = eINSTANCE.getObjectFunctionSetSpecificationOCAFnSet();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectOffsetObjTpe <em>Object Offset Obj Tpe</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectOffsetObjTpe
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOffsetObjTpe()
+		 * @generated
+		 */
+		EEnum OBJECT_OFFSET_OBJ_TPE = eINSTANCE.getObjectOffsetObjTpe();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ResourceObjectTypeObjType <em>Resource Object Type Obj Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ResourceObjectTypeObjType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectTypeObjType()
+		 * @generated
+		 */
+		EEnum RESOURCE_OBJECT_TYPE_OBJ_TYPE = eINSTANCE.getResourceObjectTypeObjType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PresentationControlPRSFlg <em>Presentation Control PRS Flg</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PresentationControlPRSFlg
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPresentationControlPRSFlg()
+		 * @generated
+		 */
+		EEnum PRESENTATION_CONTROL_PRS_FLG = eINSTANCE.getPresentationControlPRSFlg();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ResourceLocalIdentifierResType <em>Resource Local Identifier Res Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ResourceLocalIdentifierResType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceLocalIdentifierResType()
+		 * @generated
+		 */
+		EEnum RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = eINSTANCE.getResourceLocalIdentifierResType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TextOrientationIAxis <em>Text Orientation IAxis</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TextOrientationIAxis
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientationIAxis()
+		 * @generated
+		 */
+		EEnum TEXT_ORIENTATION_IAXIS = eINSTANCE.getTextOrientationIAxis();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TextOrientationBAxis <em>Text Orientation BAxis</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TextOrientationBAxis
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextOrientationBAxis()
+		 * @generated
+		 */
+		EEnum TEXT_ORIENTATION_BAXIS = eINSTANCE.getTextOrientationBAxis();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtWtClass <em>Font Descriptor Specification Ft Wt Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontDescriptorSpecificationFtWtClass
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtWtClass()
+		 * @generated
+		 */
+		EEnum FONT_DESCRIPTOR_SPECIFICATION_FT_WT_CLASS = eINSTANCE.getFontDescriptorSpecificationFtWtClass();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtWdClass <em>Font Descriptor Specification Ft Wd Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontDescriptorSpecificationFtWdClass
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtWdClass()
+		 * @generated
+		 */
+		EEnum FONT_DESCRIPTOR_SPECIFICATION_FT_WD_CLASS = eINSTANCE.getFontDescriptorSpecificationFtWdClass();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtDsFlags <em>Font Descriptor Specification Ft Ds Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontDescriptorSpecificationFtDsFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtDsFlags()
+		 * @generated
+		 */
+		EEnum FONT_DESCRIPTOR_SPECIFICATION_FT_DS_FLAGS = eINSTANCE.getFontDescriptorSpecificationFtDsFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontDescriptorSpecificationFtUsFlags <em>Font Descriptor Specification Ft Us Flags</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontDescriptorSpecificationFtUsFlags
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontDescriptorSpecificationFtUsFlags()
+		 * @generated
+		 */
+		EEnum FONT_DESCRIPTOR_SPECIFICATION_FT_US_FLAGS = eINSTANCE.getFontDescriptorSpecificationFtUsFlags();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ImageEncodingCOMPRID <em>Image Encoding COMPRID</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ImageEncodingCOMPRID
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingCOMPRID()
+		 * @generated
+		 */
+		EEnum IMAGE_ENCODING_COMPRID = eINSTANCE.getImageEncodingCOMPRID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ImageEncodingRECID <em>Image Encoding RECID</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ImageEncodingRECID
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingRECID()
+		 * @generated
+		 */
+		EEnum IMAGE_ENCODING_RECID = eINSTANCE.getImageEncodingRECID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ImageEncodingBITORDR <em>Image Encoding BITORDR</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ImageEncodingBITORDR
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageEncodingBITORDR()
+		 * @generated
+		 */
+		EEnum IMAGE_ENCODING_BITORDR = eINSTANCE.getImageEncodingBITORDR();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.IDEStructureFLAGS <em>IDE Structure FLAGS</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.IDEStructureFLAGS
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getIDEStructureFLAGS()
+		 * @generated
+		 */
+		EEnum IDE_STRUCTURE_FLAGS = eINSTANCE.getIDEStructureFLAGS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ExternalAlgorithmALGTYPE <em>External Algorithm ALGTYPE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ExternalAlgorithmALGTYPE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmALGTYPE()
+		 * @generated
+		 */
+		EEnum EXTERNAL_ALGORITHM_ALGTYPE = eINSTANCE.getExternalAlgorithmALGTYPE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TileSetColorCSPACE <em>Tile Set Color CSPACE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TileSetColorCSPACE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTileSetColorCSPACE()
+		 * @generated
+		 */
+		EEnum TILE_SET_COLOR_CSPACE = eINSTANCE.getTileSetColorCSPACE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PPORGObjType <em>PPORG Obj Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PPORGObjType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORGObjType()
+		 * @generated
+		 */
+		EEnum PPORG_OBJ_TYPE = eINSTANCE.getPPORGObjType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PPORGProcFlgs <em>PPORG Proc Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PPORGProcFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPPORGProcFlgs()
+		 * @generated
+		 */
+		EEnum PPORG_PROC_FLGS = eINSTANCE.getPPORGProcFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGPRGRGLength <em>PGPRGRG Length</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGPRGRGLength
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGRGLength()
+		 * @generated
+		 */
+		EEnum PGPRGRG_LENGTH = eINSTANCE.getPGPRGRGLength();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGPRGPGorient <em>PGPRGP Gorient</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGPRGPGorient
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGPGorient()
+		 * @generated
+		 */
+		EEnum PGPRGP_GORIENT = eINSTANCE.getPGPRGPGorient();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGPRGSHside <em>PGPRGS Hside</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGPRGSHside
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGSHside()
+		 * @generated
+		 */
+		EEnum PGPRGS_HSIDE = eINSTANCE.getPGPRGSHside();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PGPRGPgFlgs <em>PGPRG Pg Flgs</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PGPRGPgFlgs
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPGPRGPgFlgs()
+		 * @generated
+		 */
+		EEnum PGPRG_PG_FLGS = eINSTANCE.getPGPRGPgFlgs();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MMCRGkey <em>MMCR Gkey</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MMCRGkey
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMMCRGkey()
+		 * @generated
+		 */
+		EEnum MMCR_GKEY = eINSTANCE.getMMCRGkey();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ExternalAlgorithmRGPADBDRY <em>External Algorithm RGPADBDRY</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ExternalAlgorithmRGPADBDRY
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRGPADBDRY()
+		 * @generated
+		 */
+		EEnum EXTERNAL_ALGORITHM_RGPADBDRY = eINSTANCE.getExternalAlgorithmRGPADBDRY();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ExternalAlgorithmRGPADALMT <em>External Algorithm RGPADALMT</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ExternalAlgorithmRGPADALMT
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExternalAlgorithmRGPADALMT()
+		 * @generated
+		 */
+		EEnum EXTERNAL_ALGORITHM_RGPADALMT = eINSTANCE.getExternalAlgorithmRGPADALMT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BeginSegmentCommandLENGTH <em>Begin Segment Command LENGTH</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BeginSegmentCommandLENGTH
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommandLENGTH()
+		 * @generated
+		 */
+		EEnum BEGIN_SEGMENT_COMMAND_LENGTH = eINSTANCE.getBeginSegmentCommandLENGTH();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.BeginSegmentCommandFLAG2 <em>Begin Segment Command FLAG2</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.BeginSegmentCommandFLAG2
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getBeginSegmentCommandFLAG2()
+		 * @generated
+		 */
+		EEnum BEGIN_SEGMENT_COMMAND_FLAG2 = eINSTANCE.getBeginSegmentCommandFLAG2();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GBARFLAGS <em>GBARFLAGS</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GBARFLAGS
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBARFLAGS()
+		 * @generated
+		 */
+		EEnum GBARFLAGS = eINSTANCE.getGBARFLAGS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GBIMGFORMAT <em>GBIMGFORMAT</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GBIMGFORMAT
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMGFORMAT()
+		 * @generated
+		 */
+		EEnum GBIMGFORMAT = eINSTANCE.getGBIMGFORMAT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GBIMGRES <em>GBIMGRES</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GBIMGRES
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBIMGRES()
+		 * @generated
+		 */
+		EEnum GBIMGRES = eINSTANCE.getGBIMGRES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GCBIMGFORMAT <em>GCBIMGFORMAT</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GCBIMGFORMAT
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMGFORMAT()
+		 * @generated
+		 */
+		EEnum GCBIMGFORMAT = eINSTANCE.getGCBIMGFORMAT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GCBIMGRES <em>GCBIMGRES</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GCBIMGRES
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBIMGRES()
+		 * @generated
+		 */
+		EEnum GCBIMGRES = eINSTANCE.getGCBIMGRES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GBOXRES <em>GBOXRES</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GBOXRES
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGBOXRES()
+		 * @generated
+		 */
+		EEnum GBOXRES = eINSTANCE.getGBOXRES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GCBOXRES <em>GCBOXRES</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GCBOXRES
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGCBOXRES()
+		 * @generated
+		 */
+		EEnum GCBOXRES = eINSTANCE.getGCBOXRES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GEPROLRES <em>GEPROLRES</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GEPROLRES
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGEPROLRES()
+		 * @generated
+		 */
+		EEnum GEPROLRES = eINSTANCE.getGEPROLRES();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSBMXMODE <em>GSBMXMODE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSBMXMODE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSBMXMODE()
+		 * @generated
+		 */
+		EEnum GSBMXMODE = eINSTANCE.getGSBMXMODE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSCDDIRECTION <em>GSCDDIRECTION</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSCDDIRECTION
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCDDIRECTION()
+		 * @generated
+		 */
+		EEnum GSCDDIRECTION = eINSTANCE.getGSCDDIRECTION();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSCRPREC <em>GSCRPREC</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSCRPREC
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCRPREC()
+		 * @generated
+		 */
+		EEnum GSCRPREC = eINSTANCE.getGSCRPREC();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSCOLCOL <em>GSCOLCOL</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSCOLCOL
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSCOLCOL()
+		 * @generated
+		 */
+		EEnum GSCOLCOL = eINSTANCE.getGSCOLCOL();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSLTLINETYPE <em>GSLTLINETYPE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSLTLINETYPE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLTLINETYPE()
+		 * @generated
+		 */
+		EEnum GSLTLINETYPE = eINSTANCE.getGSLTLINETYPE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSMPPREC <em>GSMPPREC</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSMPPREC
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMPPREC()
+		 * @generated
+		 */
+		EEnum GSMPPREC = eINSTANCE.getGSMPPREC();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSMTMCPT <em>GSMTMCPT</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSMTMCPT
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMTMCPT()
+		 * @generated
+		 */
+		EEnum GSMTMCPT = eINSTANCE.getGSMTMCPT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSMXMODE <em>GSMXMODE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSMXMODE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSMXMODE()
+		 * @generated
+		 */
+		EEnum GSMXMODE = eINSTANCE.getGSMXMODE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSPSLCID <em>GSPSLCID</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSPSLCID
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPSLCID()
+		 * @generated
+		 */
+		EEnum GSPSLCID = eINSTANCE.getGSPSLCID();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSPTPATT <em>GSPTPATT</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSPTPATT
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPTPATT()
+		 * @generated
+		 */
+		EEnum GSPTPATT = eINSTANCE.getGSPTPATT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSPCOLCOLSPCE <em>GSPCOLCOLSPCE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSPCOLCOLSPCE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSPCOLCOLSPCE()
+		 * @generated
+		 */
+		EEnum GSPCOLCOLSPCE = eINSTANCE.getGSPCOLCOLSPCE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSLELINEEND <em>GSLELINEEND</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSLELINEEND
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLELINEEND()
+		 * @generated
+		 */
+		EEnum GSLELINEEND = eINSTANCE.getGSLELINEEND();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.GSLJLINEJOIN <em>GSLJLINEJOIN</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.GSLJLINEJOIN
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getGSLJLINEJOIN()
+		 * @generated
+		 */
+		EEnum GSLJLINEJOIN = eINSTANCE.getGSLJLINEJOIN();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.WindowSpecificationFLAGS <em>Window Specification FLAGS</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.WindowSpecificationFLAGS
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationFLAGS()
+		 * @generated
+		 */
+		EEnum WINDOW_SPECIFICATION_FLAGS = eINSTANCE.getWindowSpecificationFLAGS();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.WindowSpecificationRES3 <em>Window Specification RES3</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.WindowSpecificationRES3
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationRES3()
+		 * @generated
+		 */
+		EEnum WINDOW_SPECIFICATION_RES3 = eINSTANCE.getWindowSpecificationRES3();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.WindowSpecificationCFORMAT <em>Window Specification CFORMAT</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.WindowSpecificationCFORMAT
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationCFORMAT()
+		 * @generated
+		 */
+		EEnum WINDOW_SPECIFICATION_CFORMAT = eINSTANCE.getWindowSpecificationCFORMAT();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.WindowSpecificationUBASE <em>Window Specification UBASE</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.WindowSpecificationUBASE
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getWindowSpecificationUBASE()
+		 * @generated
+		 */
+		EEnum WINDOW_SPECIFICATION_UBASE = eINSTANCE.getWindowSpecificationUBASE();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TonerSaverTSvCtrl <em>Toner Saver TSv Ctrl</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TonerSaverTSvCtrl
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTonerSaverTSvCtrl()
+		 * @generated
+		 */
+		EEnum TONER_SAVER_TSV_CTRL = eINSTANCE.getTonerSaverTSvCtrl();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ColorFidelityStpCoEx <em>Color Fidelity Stp Co Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ColorFidelityStpCoEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityStpCoEx()
+		 * @generated
+		 */
+		EEnum COLOR_FIDELITY_STP_CO_EX = eINSTANCE.getColorFidelityStpCoEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ColorFidelityRepCoEx <em>Color Fidelity Rep Co Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ColorFidelityRepCoEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityRepCoEx()
+		 * @generated
+		 */
+		EEnum COLOR_FIDELITY_REP_CO_EX = eINSTANCE.getColorFidelityRepCoEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ColorFidelityColSub <em>Color Fidelity Col Sub</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ColorFidelityColSub
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorFidelityColSub()
+		 * @generated
+		 */
+		EEnum COLOR_FIDELITY_COL_SUB = eINSTANCE.getColorFidelityColSub();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FontFidelityStpFntEx <em>Font Fidelity Stp Fnt Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FontFidelityStpFntEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFontFidelityStpFntEx()
+		 * @generated
+		 */
+		EEnum FONT_FIDELITY_STP_FNT_EX = eINSTANCE.getFontFidelityStpFntEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TextFidelityStpTxtEx <em>Text Fidelity Stp Txt Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TextFidelityStpTxtEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelityStpTxtEx()
+		 * @generated
+		 */
+		EEnum TEXT_FIDELITY_STP_TXT_EX = eINSTANCE.getTextFidelityStpTxtEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.TextFidelityRepTxtEx <em>Text Fidelity Rep Txt Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.TextFidelityRepTxtEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getTextFidelityRepTxtEx()
+		 * @generated
+		 */
+		EEnum TEXT_FIDELITY_REP_TXT_EX = eINSTANCE.getTextFidelityRepTxtEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MediaFidelityStpMedEx <em>Media Fidelity Stp Med Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MediaFidelityStpMedEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMediaFidelityStpMedEx()
+		 * @generated
+		 */
+		EEnum MEDIA_FIDELITY_STP_MED_EX = eINSTANCE.getMediaFidelityStpMedEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FinishingFidelityStpFinEx <em>Finishing Fidelity Stp Fin Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FinishingFidelityStpFinEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelityStpFinEx()
+		 * @generated
+		 */
+		EEnum FINISHING_FIDELITY_STP_FIN_EX = eINSTANCE.getFinishingFidelityStpFinEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FinishingFidelityRepFinEx <em>Finishing Fidelity Rep Fin Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FinishingFidelityRepFinEx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingFidelityRepFinEx()
+		 * @generated
+		 */
+		EEnum FINISHING_FIDELITY_REP_FIN_EX = eINSTANCE.getFinishingFidelityRepFinEx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CMRFidelityStpCMREx <em>CMR Fidelity Stp CMR Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CMRFidelityStpCMREx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelityStpCMREx()
+		 * @generated
+		 */
+		EEnum CMR_FIDELITY_STP_CMR_EX = eINSTANCE.getCMRFidelityStpCMREx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.CMRFidelityRepCMREx <em>CMR Fidelity Rep CMR Ex</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.CMRFidelityRepCMREx
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getCMRFidelityRepCMREx()
+		 * @generated
+		 */
+		EEnum CMR_FIDELITY_REP_CMR_EX = eINSTANCE.getCMRFidelityRepCMREx();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectCountSubObj <em>Object Count Sub Obj</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectCountSubObj
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectCountSubObj()
+		 * @generated
+		 */
+		EEnum OBJECT_COUNT_SUB_OBJ = eINSTANCE.getObjectCountSubObj();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectOriginIdentifierSystem <em>Object Origin Identifier System</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectOriginIdentifierSystem
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectOriginIdentifierSystem()
+		 * @generated
+		 */
+		EEnum OBJECT_ORIGIN_IDENTIFIER_SYSTEM = eINSTANCE.getObjectOriginIdentifierSystem();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.LineDataObjectPositionMigrationTempOrient <em>Line Data Object Position Migration Temp Orient</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.LineDataObjectPositionMigrationTempOrient
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getLineDataObjectPositionMigrationTempOrient()
+		 * @generated
+		 */
+		EEnum LINE_DATA_OBJECT_POSITION_MIGRATION_TEMP_ORIENT = eINSTANCE.getLineDataObjectPositionMigrationTempOrient();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ColorManagementResourceDescriptorProcMode <em>Color Management Resource Descriptor Proc Mode</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ColorManagementResourceDescriptorProcMode
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptorProcMode()
+		 * @generated
+		 */
+		EEnum COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_PROC_MODE = eINSTANCE.getColorManagementResourceDescriptorProcMode();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ColorManagementResourceDescriptorCMRScpe <em>Color Management Resource Descriptor CMR Scpe</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ColorManagementResourceDescriptorCMRScpe
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getColorManagementResourceDescriptorCMRScpe()
+		 * @generated
+		 */
+		EEnum COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR_CMR_SCPE = eINSTANCE.getColorManagementResourceDescriptorCMRScpe();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ImageResolutionXBase <em>Image Resolution XBase</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ImageResolutionXBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolutionXBase()
+		 * @generated
+		 */
+		EEnum IMAGE_RESOLUTION_XBASE = eINSTANCE.getImageResolutionXBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ImageResolutionYBase <em>Image Resolution YBase</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ImageResolutionYBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getImageResolutionYBase()
+		 * @generated
+		 */
+		EEnum IMAGE_RESOLUTION_YBASE = eINSTANCE.getImageResolutionYBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ObjectContainerPresentationSpaceSizePDFSize <em>Object Container Presentation Space Size PDF Size</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ObjectContainerPresentationSpaceSizePDFSize
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getObjectContainerPresentationSpaceSizePDFSize()
+		 * @generated
+		 */
+		EEnum OBJECT_CONTAINER_PRESENTATION_SPACE_SIZE_PDF_SIZE = eINSTANCE.getObjectContainerPresentationSpaceSizePDFSize();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ExtendedResourceLocalIdentifierResType <em>Extended Resource Local Identifier Res Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ExtendedResourceLocalIdentifierResType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getExtendedResourceLocalIdentifierResType()
+		 * @generated
+		 */
+		EEnum EXTENDED_RESOURCE_LOCAL_IDENTIFIER_RES_TYPE = eINSTANCE.getExtendedResourceLocalIdentifierResType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.MetricAdjustmentUnitBase <em>Metric Adjustment Unit Base</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.MetricAdjustmentUnitBase
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getMetricAdjustmentUnitBase()
+		 * @generated
+		 */
+		EEnum METRIC_ADJUSTMENT_UNIT_BASE = eINSTANCE.getMetricAdjustmentUnitBase();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.RenderingIntentReserved <em>Rendering Intent Reserved</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.RenderingIntentReserved
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentReserved()
+		 * @generated
+		 */
+		EEnum RENDERING_INTENT_RESERVED = eINSTANCE.getRenderingIntentReserved();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.RenderingIntentIOCARI <em>Rendering Intent IOCARI</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.RenderingIntentIOCARI
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentIOCARI()
+		 * @generated
+		 */
+		EEnum RENDERING_INTENT_IOCARI = eINSTANCE.getRenderingIntentIOCARI();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.RenderingIntentOCRI <em>Rendering Intent OCRI</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.RenderingIntentOCRI
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentOCRI()
+		 * @generated
+		 */
+		EEnum RENDERING_INTENT_OCRI = eINSTANCE.getRenderingIntentOCRI();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.RenderingIntentPTOCRI <em>Rendering Intent PTOCRI</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.RenderingIntentPTOCRI
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentPTOCRI()
+		 * @generated
+		 */
+		EEnum RENDERING_INTENT_PTOCRI = eINSTANCE.getRenderingIntentPTOCRI();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.RenderingIntentGOCARI <em>Rendering Intent GOCARI</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.RenderingIntentGOCARI
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentGOCARI()
+		 * @generated
+		 */
+		EEnum RENDERING_INTENT_GOCARI = eINSTANCE.getRenderingIntentGOCARI();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.RenderingIntentReserved2 <em>Rendering Intent Reserved2</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.RenderingIntentReserved2
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getRenderingIntentReserved2()
+		 * @generated
+		 */
+		EEnum RENDERING_INTENT_RESERVED2 = eINSTANCE.getRenderingIntentReserved2();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FinishingOperationFOpType <em>Finishing Operation FOp Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FinishingOperationFOpType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperationFOpType()
+		 * @generated
+		 */
+		EEnum FINISHING_OPERATION_FOP_TYPE = eINSTANCE.getFinishingOperationFOpType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.FinishingOperationRefEdge <em>Finishing Operation Ref Edge</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.FinishingOperationRefEdge
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getFinishingOperationRefEdge()
+		 * @generated
+		 */
+		EEnum FINISHING_OPERATION_REF_EDGE = eINSTANCE.getFinishingOperationRefEdge();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.DeviceAppearanceDevApp <em>Device Appearance Dev App</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.DeviceAppearanceDevApp
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getDeviceAppearanceDevApp()
+		 * @generated
+		 */
+		EEnum DEVICE_APPEARANCE_DEV_APP = eINSTANCE.getDeviceAppearanceDevApp();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ResourceObjectIncludeObjType <em>Resource Object Include Obj Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ResourceObjectIncludeObjType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectIncludeObjType()
+		 * @generated
+		 */
+		EEnum RESOURCE_OBJECT_INCLUDE_OBJ_TYPE = eINSTANCE.getResourceObjectIncludeObjType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ResourceObjectIncludeObOrent <em>Resource Object Include Ob Orent</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ResourceObjectIncludeObOrent
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceObjectIncludeObOrent()
+		 * @generated
+		 */
+		EEnum RESOURCE_OBJECT_INCLUDE_OB_ORENT = eINSTANCE.getResourceObjectIncludeObOrent();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.PageOverlayConditionalProcessingPgOvType <em>Page Overlay Conditional Processing Pg Ov Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.PageOverlayConditionalProcessingPgOvType
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getPageOverlayConditionalProcessingPgOvType()
+		 * @generated
+		 */
+		EEnum PAGE_OVERLAY_CONDITIONAL_PROCESSING_PG_OV_TYPE = eINSTANCE.getPageOverlayConditionalProcessingPgOvType();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.ResourceUsageAttributeFrequency <em>Resource Usage Attribute Frequency</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.ResourceUsageAttributeFrequency
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getResourceUsageAttributeFrequency()
+		 * @generated
+		 */
+		EEnum RESOURCE_USAGE_ATTRIBUTE_FREQUENCY = eINSTANCE.getResourceUsageAttributeFrequency();
+
+		/**
+		 * The meta object literal for the '{@link org.afplib.afplib.SFName <em>SF Name</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.afplib.afplib.SFName
+		 * @see org.afplib.afplib.impl.AfplibPackageImpl#getSFName()
+		 * @generated
+		 */
+		EEnum SF_NAME = eINSTANCE.getSFName();
+
+	}
 
 } //AfplibPackage

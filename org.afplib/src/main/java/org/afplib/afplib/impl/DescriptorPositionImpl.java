@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.DescriptorPositionImpl#getDesPosID <em>Des Pos ID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class DescriptorPositionImpl extends TripletImpl implements DescriptorPos
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getDescriptorPosition();
+		return AfplibPackage.Literals.DESCRIPTOR_POSITION;
 	}
 
 	/**

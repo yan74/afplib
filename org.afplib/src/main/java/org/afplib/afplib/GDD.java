@@ -14,11 +14,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GDD#getGOCAdes <em>GOC Ades</em>}</li>
  *   <li>{@link org.afplib.afplib.GDD#getCommands <em>Commands</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGDD()
  * @model

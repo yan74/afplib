@@ -11,13 +11,13 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.BDA#getFlags <em>Flags</em>}</li>
  *   <li>{@link org.afplib.afplib.BDA#getXoffset <em>Xoffset</em>}</li>
  *   <li>{@link org.afplib.afplib.BDA#getYoffset <em>Yoffset</em>}</li>
  *   <li>{@link org.afplib.afplib.BDA#getData <em>Data</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getBDA()
  * @model

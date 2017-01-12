@@ -6,7 +6,7 @@ import Foundation
         var result:Int = Int(UnsafePointer<Int8>(data).memory)
         var p = data.successor()
         
-        for i in 1..<length {
+        for _ in 1..<length {
             result = result << 8
             result |= Int(p.memory)
             p = p.successor()
@@ -19,7 +19,7 @@ import Foundation
         var result = 0
         var p = data
         
-        for i in 0..<length {
+        for _ in 0..<length {
             result = result << 8
             result |= ((Int(p.memory & 0xff)) & 0xff)
             p = p.successor()
@@ -30,30 +30,30 @@ import Foundation
     
     func toString(data: UnsafePointer<UInt8>, length: Int, cpgid: Int) -> String {
         if cpgid == 850 {
-            var result = NSString(bytes: data, length: length, encoding: NSASCIIStringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSASCIIStringEncoding)
             return result! as String
         } else if cpgid == 1200 {
-            var result = NSString(bytes: data, length: length, encoding: NSUTF16StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSUTF16StringEncoding)
             return result! as String
         } else if cpgid == 1250 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1250StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1250StringEncoding)
             return result! as String
         } else if cpgid == 1251 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1251StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1251StringEncoding)
             return result! as String
         } else if cpgid == 1252 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1252StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1252StringEncoding)
             return result! as String
         } else if cpgid == 1253 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1253StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1253StringEncoding)
             return result! as String
         } else if cpgid == 1254 {
-            var result = NSString(bytes: data, length: length, encoding: NSWindowsCP1254StringEncoding)
+            let result = NSString(bytes: data, length: length, encoding: NSWindowsCP1254StringEncoding)
             return result! as String
         } else {
-            let bytes = ebcdic2ascii(toBytes(data, length))
+            let bytes = ebcdic2ascii(toBytes(data, length: length))
             let p = UnsafePointer<Void>(bytes)
-            var result = NSString(bytes: p, length: length, encoding: NSASCIIStringEncoding)
+            let result = NSString(bytes: p, length: length, encoding: NSASCIIStringEncoding)
             return result! as String
         }
     }
@@ -63,7 +63,7 @@ import Foundation
 
         var p = data
         
-        for i in 0..<length {
+        for _ in 0..<length {
             result.append(p.memory)
             p = p.successor()
         }
@@ -3187,44 +3187,12 @@ obj.TypeFcDesc = toString(data.advancedBy(9), l, 500) // ibm500
 			obj.rawData = toBytes(data, length)
 			
 			
-				
-		if(11 < length) {
-		  let l = length - 11 // < 32758 ? length - 11 : 32758
-		
- 	
-	
-	
-	obj.rg = c_FNNRG(data.advancedBy(11), dataSize: l, rgLength: 12);
-	
-	
-
- 	} 
-
-
-				
-		if(65537 < length) {
-		  let l = length - 65537 // < 1 ? length - 65537 : 1
-		
- 	
-	
-
- 	} 
-
-
 			
-		
+				
 		if(9 < length) {
-		  let l = 1
+		  let l = length - 9 // < 32760 ? length - 9 : 32760
 		
- 	obj.IBMFormat = toUnsigned(data.advancedBy(9), l)
- 	} 
-
-
-		
-		if(10 < length) {
-		  let l = 1
-		
- 	obj.TechnologyFormat = toUnsigned(data.advancedBy(10), l)
+ 	obj.FNNData = toBytes(data.advancedBy(9), l)
  	} 
 
 
@@ -3828,19 +3796,15 @@ obj.ObjName = toString(data.advancedBy(9), l, 500) // ibm500
 			
 			
 			
+			
 				
 		if(9 < length) {
 		  let l = length - 9 // < 32760 ? length - 9 : 32760
 		
- 	
-	
-	obj.sdfs = sdf(data.advancedBy(9), sdfLength: l);
-	
-
+ 	obj.IOCAdat = toBytes(data.advancedBy(9), l)
  	} 
 
 
-			
 			return obj
 	}
 	
@@ -10446,27 +10410,6 @@ obj.CP = toString(data.advancedBy(2), l, cpgid) // charset
 	} 
 
 
-
-
-
-
-
-
-	func c_FNNRG(rgData: UnsafePointer<UInt8>, dataSize: Int, rgLength: Int) -> [FNNRG] {
-		if rgLength == 0 { return [] }
-
-		var result: [FNNRG] = []
-		var data = rgData
-		var available = dataSize
-		let length = rgLength
-		
-		while available >= rgLength {
-			result.append(_FNNRG(data, length: length))
-			available -= rgLength
-			data = data.advancedBy(rgLength)
-		}
-		return result 
-	} 
 
 
 

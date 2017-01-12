@@ -214,14 +214,6 @@
     <eLiterals name="Solid" value="8" literal="Solid"/>
     <eLiterals name="Overstruck" value="16" literal="Overstruck"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="FNNIBMFormat">
-    <eLiterals name="ConstEBCDICGCGID" value="2" literal="ConstEBCDICGCGID"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="FNNTechnologyFormat">
-    <eLiterals name="ConstFontspecificASCIIcharacternameusedwithType1PFBfonts" value="3"
-        literal="ConstFontspecificASCIIcharacternameusedwithType1PFBfonts"/>
-    <eLiterals name="ConstCMAPbinarycodepointusedwithCIDkeyedfonts" value="5" literal="ConstCMAPbinarycodepointusedwithCIDkeyedfonts"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="IDDUNITBASE">
     <eLiterals name="Const10inches" literal="Const10inches"/>
     <eLiterals name="Const10centimeters" value="1" literal="Const10centimeters"/>
@@ -278,7 +270,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MFCMFCScpe">
     <eLiterals name="ConstPrintLevel" value="1" literal="ConstPrintLevel"/>
-    <eLiterals name="ConstDocumentLevelAll" value="1" literal="ConstDocumentLevelAll"/>
+    <eLiterals name="ConstDocumentLevelAll" value="2" literal="ConstDocumentLevelAll"/>
     <eLiterals name="ConstDocumentLevelSelected" value="3" literal="ConstDocumentLevelSelected"/>
     <eLiterals name="ConstMediumLeveleach" value="4" literal="ConstMediumLeveleach"/>
     <eLiterals name="ConstMediumLevelcollection" value="5" literal="ConstMediumLevelcollection"/>
@@ -1553,14 +1545,7 @@
         eType="#//FNIRG" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FNN" eSuperTypes="http://afplib.org/afplibbase#//SF">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IBMFormat" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="TechnologyFormat" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rg" upperBound="-1" eType="#//FNNRG"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="rg2" upperBound="-1" eType="ecore:EClass http://afplib.org/afplibbase#//Triplet"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FNNData" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FNM" eSuperTypes="http://afplib.org/afplibbase#//SF">
     <eStructuralFeatures xsi:type="ecore:EReference" name="rg" lowerBound="1" upperBound="-1"
@@ -1680,8 +1665,7 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IPD" eSuperTypes="http://afplib.org/afplibbase#//SF">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sdfs" upperBound="-1" eType="ecore:EClass http://afplib.org/afplibbase#//Triplet"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IOCAdat" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageData" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="IPG" eSuperTypes="http://afplib.org/afplibbase#//SF">
@@ -2493,24 +2477,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="GCGID" lowerBound="1" eType="ecore:EDataType http://afplib.org/afplibbase#//ModcaString8"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="CharInc" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AscendHt" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DescendDp" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FNMCnt" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ASpace" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BSpace" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CSpace" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved2" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BaseOset" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AscendHt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DescendDp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FNMCnt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ASpace" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BSpace" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CSpace" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BaseOset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FNMRG" eSuperTypes="http://afplib.org/afplibbase#//Triplet">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="CharBoxWd" lowerBound="1"

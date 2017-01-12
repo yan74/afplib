@@ -13,8 +13,6 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Begin Transparency Mask</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -35,7 +33,7 @@ public class BeginTransparencyMaskImpl extends TripletImpl implements BeginTrans
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBeginTransparencyMask();
+		return AfplibPackage.Literals.BEGIN_TRANSPARENCY_MASK;
 	}
 
 } //BeginTransparencyMaskImpl

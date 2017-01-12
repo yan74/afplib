@@ -13,8 +13,6 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>End Tile</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -35,7 +33,7 @@ public class EndTileImpl extends TripletImpl implements EndTile {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEndTile();
+		return AfplibPackage.Literals.END_TILE;
 	}
 
 } //EndTileImpl

@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FNPRG#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.FNPRG#getLcHeight <em>Lc Height</em>}</li>
@@ -24,7 +25,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.FNPRG#getUscoreWdf <em>Uscore Wdf</em>}</li>
  *   <li>{@link org.afplib.afplib.FNPRG#getUscorePos <em>Uscore Pos</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFNPRG()
  * @model

@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ResourceLocalIdentifierImpl#getResType <em>Res Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ResourceLocalIdentifierImpl#getResLID <em>Res LID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ResourceLocalIdentifierImpl extends TripletImpl implements Resource
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceLocalIdentifier();
+		return AfplibPackage.Literals.RESOURCE_LOCAL_IDENTIFIER;
 	}
 
 	/**

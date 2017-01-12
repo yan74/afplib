@@ -144,6 +144,8 @@ public enum STOIORNTION implements Enumerator {
 	 * Returns the '<em><b>STOIORNTION</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static STOIORNTION get(String literal) {
@@ -160,6 +162,8 @@ public enum STOIORNTION implements Enumerator {
 	 * Returns the '<em><b>STOIORNTION</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static STOIORNTION getByName(String name) {
@@ -176,6 +180,8 @@ public enum STOIORNTION implements Enumerator {
 	 * Returns the '<em><b>STOIORNTION</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static STOIORNTION get(int value) {

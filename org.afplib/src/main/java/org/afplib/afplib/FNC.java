@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FNC#getRetired <em>Retired</em>}</li>
  *   <li>{@link org.afplib.afplib.FNC#getPatTech <em>Pat Tech</em>}</li>
@@ -42,7 +43,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.FNC#getFNNMapCnt <em>FNN Map Cnt</em>}</li>
  *   <li>{@link org.afplib.afplib.FNC#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFNC()
  * @model
@@ -579,7 +579,7 @@ public interface FNC extends SF {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * <p>optional<br>variable length</p>
+	 * <p>optional<br>fixed length</p>
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Reserved2</em>' attribute.
 	 * @see #setReserved2(byte[])

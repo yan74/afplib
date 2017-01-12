@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.RPSImpl#getRLENGTH <em>RLENGTH</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.RPSImpl#getRPTDATA <em>RPTDATA</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class RPSImpl extends TripletImpl implements RPS {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getRPS();
+		return AfplibPackage.Literals.RPS;
 	}
 
 	/**

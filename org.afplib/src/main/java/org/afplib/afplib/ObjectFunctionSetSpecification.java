@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ObjectFunctionSetSpecification#getObjType <em>Obj Type</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectFunctionSetSpecification#getArchVrsn <em>Arch Vrsn</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectFunctionSetSpecification#getDCAFnSet <em>DCA Fn Set</em>}</li>
  *   <li>{@link org.afplib.afplib.ObjectFunctionSetSpecification#getOCAFnSet <em>OCA Fn Set</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getObjectFunctionSetSpecification()
  * @model

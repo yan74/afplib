@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FNMRGImpl#getCharBoxWd <em>Char Box Wd</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNMRGImpl#getCharBoxHt <em>Char Box Ht</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FNMRGImpl#getPatDOset <em>Pat DOset</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class FNMRGImpl extends TripletImpl implements FNMRG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFNMRG();
+		return AfplibPackage.Literals.FNMRG;
 	}
 
 	/**

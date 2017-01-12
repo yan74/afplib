@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.SetBiLevelImageColorImpl#getAREA <em>AREA</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.SetBiLevelImageColorImpl#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.SetBiLevelImageColorImpl#getNAMECOLR <em>NAMECOLR</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class SetBiLevelImageColorImpl extends TripletImpl implements SetBiLevelI
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSetBiLevelImageColor();
+		return AfplibPackage.Literals.SET_BI_LEVEL_IMAGE_COLOR;
 	}
 
 	/**

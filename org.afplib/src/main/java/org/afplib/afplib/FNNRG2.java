@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FNNRG2#getTSIDLen <em>TSID Len</em>}</li>
  *   <li>{@link org.afplib.afplib.FNNRG2#getTSID <em>TSID</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFNNRG2()
  * @model

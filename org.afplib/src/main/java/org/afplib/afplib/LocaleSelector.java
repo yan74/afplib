@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.LocaleSelector#getLocFlgs <em>Loc Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.LocaleSelector#getLangCode <em>Lang Code</em>}</li>
@@ -19,7 +20,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.LocaleSelector#getReserved <em>Reserved</em>}</li>
  *   <li>{@link org.afplib.afplib.LocaleSelector#getVarCde <em>Var Cde</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getLocaleSelector()
  * @model

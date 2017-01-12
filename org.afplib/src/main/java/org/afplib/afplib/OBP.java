@@ -11,6 +11,7 @@ import org.afplib.base.SF;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.OBP#getOAPosID <em>OA Pos ID</em>}</li>
  *   <li>{@link org.afplib.afplib.OBP#getRGLength <em>RG Length</em>}</li>
@@ -24,7 +25,6 @@ import org.afplib.base.SF;
  *   <li>{@link org.afplib.afplib.OBP#getYocaOrent <em>Yoca Orent</em>}</li>
  *   <li>{@link org.afplib.afplib.OBP#getRefCSys <em>Ref CSys</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getOBP()
  * @model

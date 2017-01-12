@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.STO#getIORNTION <em>IORNTION</em>}</li>
  *   <li>{@link org.afplib.afplib.STO#getBORNTION <em>BORNTION</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getSTO()
  * @model

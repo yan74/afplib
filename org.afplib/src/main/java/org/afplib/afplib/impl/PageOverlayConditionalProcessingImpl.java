@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PageOverlayConditionalProcessingImpl#getPgOvType <em>Pg Ov Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PageOverlayConditionalProcessingImpl#getLevel <em>Level</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class PageOverlayConditionalProcessingImpl extends TripletImpl implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPageOverlayConditionalProcessing();
+		return AfplibPackage.Literals.PAGE_OVERLAY_CONDITIONAL_PROCESSING;
 	}
 
 	/**

@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.FND#getTypeFcDesc <em>Type Fc Desc</em>}</li>
  *   <li>{@link org.afplib.afplib.FND#getFtWtClass <em>Ft Wt Class</em>}</li>
@@ -34,7 +35,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.FND#getFGID <em>FGID</em>}</li>
  *   <li>{@link org.afplib.afplib.FND#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getFND()
  * @model

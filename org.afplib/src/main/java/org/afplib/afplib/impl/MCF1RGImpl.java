@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MCF1RGImpl#getCFLid <em>CF Lid</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MCF1RGImpl#getSectid <em>Sectid</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.MCF1RGImpl#getFCSName <em>FCS Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MCF1RGImpl#getCharRot <em>Char Rot</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -168,7 +168,7 @@ public class MCF1RGImpl extends TripletImpl implements MCF1RG {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMCF1RG();
+		return AfplibPackage.Literals.MCF1RG;
 	}
 
 	/**

@@ -11,13 +11,13 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GFARC#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GFARC#getYPOS <em>YPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GFARC#getMH <em>MH</em>}</li>
  *   <li>{@link org.afplib.afplib.GFARC#getMFR <em>MFR</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGFARC()
  * @model

@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectOffsetImpl#getObjTpe <em>Obj Tpe</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectOffsetImpl#getObjOset <em>Obj Oset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectOffsetImpl#getObjOstHi <em>Obj Ost Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class ObjectOffsetImpl extends TripletImpl implements ObjectOffset {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectOffset();
+		return AfplibPackage.Literals.OBJECT_OFFSET;
 	}
 
 	/**

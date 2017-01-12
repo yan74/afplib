@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.TileSetColorImpl#getCSPACE <em>CSPACE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TileSetColorImpl#getRESERVED <em>RESERVED</em>}</li>
@@ -31,7 +32,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.TileSetColorImpl#getCVAL3 <em>CVAL3</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.TileSetColorImpl#getCVAL4 <em>CVAL4</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -252,7 +252,7 @@ public class TileSetColorImpl extends TripletImpl implements TileSetColor {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getTileSetColor();
+		return AfplibPackage.Literals.TILE_SET_COLOR;
 	}
 
 	/**

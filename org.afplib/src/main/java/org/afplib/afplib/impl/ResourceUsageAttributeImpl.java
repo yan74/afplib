@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ResourceUsageAttributeImpl#getFrequency <em>Frequency</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class ResourceUsageAttributeImpl extends TripletImpl implements ResourceU
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getResourceUsageAttribute();
+		return AfplibPackage.Literals.RESOURCE_USAGE_ATTRIBUTE;
 	}
 
 	/**

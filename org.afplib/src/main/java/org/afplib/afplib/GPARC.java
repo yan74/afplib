@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.GPARC#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.GPARC#getYPOS <em>YPOS</em>}</li>
@@ -21,7 +22,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.GPARC#getSTART <em>START</em>}</li>
  *   <li>{@link org.afplib.afplib.GPARC#getSWEEP <em>SWEEP</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getGPARC()
  * @model

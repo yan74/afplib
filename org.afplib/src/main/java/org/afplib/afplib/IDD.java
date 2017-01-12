@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IDD#getUNITBASE <em>UNITBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.IDD#getXRESOL <em>XRESOL</em>}</li>
@@ -22,7 +23,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.IDD#getYSIZE <em>YSIZE</em>}</li>
  *   <li>{@link org.afplib.afplib.IDD#getSDFS <em>SDFS</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIDD()
  * @model

@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.CRCResourceManagement#getFmtQual <em>Fmt Qual</em>}</li>
  *   <li>{@link org.afplib.afplib.CRCResourceManagement#getRMValue <em>RM Value</em>}</li>
  *   <li>{@link org.afplib.afplib.CRCResourceManagement#getResClassFlg <em>Res Class Flg</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getCRCResourceManagement()
  * @model

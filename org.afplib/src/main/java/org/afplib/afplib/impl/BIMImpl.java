@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.BIMImpl#getIdoName <em>Ido Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.BIMImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class BIMImpl extends SFImpl implements BIM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getBIM();
+		return AfplibPackage.Literals.BIM;
 	}
 
 	/**

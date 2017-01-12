@@ -6,20 +6,20 @@
 «FILE "afplib.swift"»
 
  import Cocoa
- 
+
  enum SFID: Int {
  «FOREACH structuredFields AS sf»case «sf.name» = «sf.id»
  «ENDFOREACH»
  }
-  
+
  public class SF {
     var id: Int
-    
+
     init(id: Int) {
         self.id = id
     }
   }
-  
+
  public class Triplet {
   }
   «EXPAND dataType FOREACH structuredFields»
@@ -38,15 +38,15 @@
   «ENDIF»
   }
   «ENDFOREACH»
-  
+
   «FOREACH groupMembers AS gm»
   public class «gm.name» : Triplet {
-  
+
   	  «EXPAND member FOR gm»
 
   }
   «ENDFOREACH»
-  
+
 «ENDFILE»
 
 «ENDDEFINE»
@@ -79,7 +79,7 @@
 	      	«ENDIF»
 	      «ENDFOREACH»
 	  }
-  
+
   	  «ELSEIF e.validValues.size > 0 && e.validValues.get(0).metaType == IntEnum && ((IntEnum)e.validValues.get(0)).name != null && "".compareTo(((IntEnum)e.validValues.get(0)).name) != 0»
   	  public enum «name»«e.name»: Int {
 	      «FOREACH e.validValues AS v»

@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MFCImpl#getMFCFlgs <em>MFC Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MFCImpl#getMedColl <em>Med Coll</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MFCImpl#getMFCScpe <em>MFC Scpe</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MFCImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -127,7 +127,7 @@ public class MFCImpl extends SFImpl implements MFC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMFC();
+		return AfplibPackage.Literals.MFC;
 	}
 
 	/**

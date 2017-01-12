@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MediumOrientationImpl#getMedOrient <em>Med Orient</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class MediumOrientationImpl extends TripletImpl implements MediumOrientat
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMediumOrientation();
+		return AfplibPackage.Literals.MEDIUM_ORIENTATION;
 	}
 
 	/**

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PTD1Impl#getXPBASE <em>XPBASE</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PTD1Impl#getYPBASE <em>YPBASE</em>}</li>
@@ -28,7 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.PTD1Impl#getYPEXTENT <em>YPEXTENT</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PTD1Impl#getRESERVED <em>RESERVED</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -189,7 +189,7 @@ public class PTD1Impl extends SFImpl implements PTD1 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPTD1();
+		return AfplibPackage.Literals.PTD1;
 	}
 
 	/**

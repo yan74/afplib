@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ColorManagementResourceDescriptorImpl#getProcMode <em>Proc Mode</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ColorManagementResourceDescriptorImpl#getCMRScpe <em>CMR Scpe</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ColorManagementResourceDescriptorImpl extends TripletImpl implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getColorManagementResourceDescriptor();
+		return AfplibPackage.Literals.COLOR_MANAGEMENT_RESOURCE_DESCRIPTOR;
 	}
 
 	/**

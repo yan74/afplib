@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EIMImpl#getIdoName <em>Ido Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EIMImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class EIMImpl extends SFImpl implements EIM {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEIM();
+		return AfplibPackage.Literals.EIM;
 	}
 
 	/**

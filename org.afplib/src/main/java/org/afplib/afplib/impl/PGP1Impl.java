@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.PGP1Impl#getXOset <em>XOset</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.PGP1Impl#getYOset <em>YOset</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class PGP1Impl extends SFImpl implements PGP1 {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getPGP1();
+		return AfplibPackage.Literals.PGP1;
 	}
 
 	/**

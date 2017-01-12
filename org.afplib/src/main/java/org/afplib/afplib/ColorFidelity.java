@@ -11,12 +11,12 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.ColorFidelity#getStpCoEx <em>Stp Co Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.ColorFidelity#getRepCoEx <em>Rep Co Ex</em>}</li>
  *   <li>{@link org.afplib.afplib.ColorFidelity#getColSub <em>Col Sub</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getColorFidelity()
  * @model

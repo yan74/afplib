@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.IPO#getOvlyName <em>Ovly Name</em>}</li>
  *   <li>{@link org.afplib.afplib.IPO#getXolOset <em>Xol Oset</em>}</li>
@@ -21,7 +22,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.afplib.afplib.IPO#getOvlyOrent <em>Ovly Orent</em>}</li>
  *   <li>{@link org.afplib.afplib.IPO#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getIPO()
  * @model

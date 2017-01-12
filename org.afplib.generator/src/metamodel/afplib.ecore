@@ -1417,32 +1417,6 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="FNNIBMFormat">	  
-	      
-	      	
-    <eLiterals name="ConstEBCDICGCGID" value="2" literal="ConstEBCDICGCGID"/>
-	      	
-	      
-  </eClassifiers>
-	  
-	  
-	  
-  <eClassifiers xsi:type="ecore:EEnum" name="FNNTechnologyFormat">	  
-	      
-	      	
-    <eLiterals name="ConstFontspecificASCIIcharacternameusedwithType1PFBfonts" value="3" literal="ConstFontspecificASCIIcharacternameusedwithType1PFBfonts"/>
-	      	
-	      
-	      	
-    <eLiterals name="ConstCMAPbinarycodepointusedwithCIDkeyedfonts" value="5" literal="ConstCMAPbinarycodepointusedwithCIDkeyedfonts"/>
-	      	
-	      
-  </eClassifiers>
-	  
-	  
-	  
-	  
-	  
 	  
 	  
 
@@ -9146,35 +9120,7 @@
   	  
 	
 	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IBMFormat" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
-	
-	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
-      </eAnnotations>
-	</eStructuralFeatures>
-	
-	
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="TechnologyFormat" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
-	
-	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
-      </eAnnotations>
-	</eStructuralFeatures>
-	
-	
-		
-			<eStructuralFeatures xsi:type="ecore:EReference" name="rg"  upperBound="-1" eType="ecore:EClass #//FNNRG" containment="true">
-    	
-	
-	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="&lt;p>optional&lt;br>variable length&lt;/p>"/>
-      </eAnnotations>
-	</eStructuralFeatures>
-	
-	
-		
-    		<eStructuralFeatures xsi:type="ecore:EReference" name="rg2"  upperBound="-1" eType="ecore:EClass base.ecore#//Triplet" containment="true">
-    	
+	<eStructuralFeatures xsi:type="ecore:EAttribute" name="FNNData"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="&lt;p>optional&lt;br>variable length&lt;/p>"/>
@@ -9714,9 +9660,7 @@
   	  
 	
 	
-		
-    		<eStructuralFeatures xsi:type="ecore:EReference" name="sdfs"  upperBound="-1" eType="ecore:EClass base.ecore#//Triplet" containment="true">
-    	
+	<eStructuralFeatures xsi:type="ecore:EAttribute" name="IOCAdat"  eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="&lt;p>optional&lt;br>variable length&lt;/p>"/>

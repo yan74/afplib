@@ -29,12 +29,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.GRLINEImpl#getXPOS <em>XPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GRLINEImpl#getYPOS <em>YPOS</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.GRLINEImpl#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class GRLINEImpl extends TripletImpl implements GRLINE {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getGRLINE();
+		return AfplibPackage.Literals.GRLINE;
 	}
 
 	/**

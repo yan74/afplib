@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.SIAImpl#getADJSTMNT <em>ADJSTMNT</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.SIAImpl#getDIRCTION <em>DIRCTION</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class SIAImpl extends TripletImpl implements SIA {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getSIA();
+		return AfplibPackage.Literals.SIA;
 	}
 
 	/**

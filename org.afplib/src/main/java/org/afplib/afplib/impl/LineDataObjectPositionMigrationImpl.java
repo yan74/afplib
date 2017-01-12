@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.LineDataObjectPositionMigrationImpl#getTempOrient <em>Temp Orient</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -63,7 +63,7 @@ public class LineDataObjectPositionMigrationImpl extends TripletImpl implements 
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getLineDataObjectPositionMigration();
+		return AfplibPackage.Literals.LINE_DATA_OBJECT_POSITION_MIGRATION;
 	}
 
 	/**

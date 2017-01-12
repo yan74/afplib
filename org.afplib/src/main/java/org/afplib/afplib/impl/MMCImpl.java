@@ -29,12 +29,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.MMCImpl#getMMCid <em>MM Cid</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MMCImpl#getPARAMETER1 <em>PARAMETER1</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.MMCImpl#getRg <em>Rg</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class MMCImpl extends SFImpl implements MMC {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getMMC();
+		return AfplibPackage.Literals.MMC;
 	}
 
 	/**

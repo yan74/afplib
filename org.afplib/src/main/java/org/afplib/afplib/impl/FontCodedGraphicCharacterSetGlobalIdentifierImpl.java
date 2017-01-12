@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FontCodedGraphicCharacterSetGlobalIdentifierImpl#getGCSGID <em>GCSGID</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FontCodedGraphicCharacterSetGlobalIdentifierImpl#getCPGID <em>CPGID</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class FontCodedGraphicCharacterSetGlobalIdentifierImpl extends TripletImp
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier();
+		return AfplibPackage.Literals.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER;
 	}
 
 	/**

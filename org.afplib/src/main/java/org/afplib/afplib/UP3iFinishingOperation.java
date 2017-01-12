@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.UP3iFinishingOperation#getSeqnum <em>Seqnum</em>}</li>
  *   <li>{@link org.afplib.afplib.UP3iFinishingOperation#getUP3iDat <em>UP 3i Dat</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getUP3iFinishingOperation()
  * @model

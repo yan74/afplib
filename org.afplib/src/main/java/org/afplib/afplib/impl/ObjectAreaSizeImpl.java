@@ -19,12 +19,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectAreaSizeImpl#getSizeType <em>Size Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectAreaSizeImpl#getXoaSize <em>Xoa Size</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectAreaSizeImpl#getYoaSize <em>Yoa Size</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -105,7 +105,7 @@ public class ObjectAreaSizeImpl extends TripletImpl implements ObjectAreaSize {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectAreaSize();
+		return AfplibPackage.Literals.OBJECT_AREA_SIZE;
 	}
 
 	/**

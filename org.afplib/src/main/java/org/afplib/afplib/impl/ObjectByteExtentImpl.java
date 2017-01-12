@@ -19,11 +19,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.ObjectByteExtentImpl#getByteExt <em>Byte Ext</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.ObjectByteExtentImpl#getByteExtHi <em>Byte Ext Hi</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -84,7 +84,7 @@ public class ObjectByteExtentImpl extends TripletImpl implements ObjectByteExten
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getObjectByteExtent();
+		return AfplibPackage.Literals.OBJECT_BYTE_EXTENT;
 	}
 
 	/**

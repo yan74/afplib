@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.afplib;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: org.afplib.jar
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
@@ -13,7 +12,5 @@ Export-Package: org.afplib.afplib,
  org.afplib.base,
  org.afplib.base.impl,
  org.afplib.base.util
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.emf.ecore.xmi;visibility:=reexport
 Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .

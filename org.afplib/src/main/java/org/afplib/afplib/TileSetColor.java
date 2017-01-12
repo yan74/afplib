@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.TileSetColor#getCSPACE <em>CSPACE</em>}</li>
  *   <li>{@link org.afplib.afplib.TileSetColor#getRESERVED <em>RESERVED</em>}</li>
@@ -23,7 +24,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.TileSetColor#getCVAL3 <em>CVAL3</em>}</li>
  *   <li>{@link org.afplib.afplib.TileSetColor#getCVAL4 <em>CVAL4</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getTileSetColor()
  * @model

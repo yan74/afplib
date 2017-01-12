@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.EDTImpl#getDocName <em>Doc Name</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.EDTImpl#getTriplets <em>Triplets</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -85,7 +85,7 @@ public class EDTImpl extends SFImpl implements EDT {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getEDT();
+		return AfplibPackage.Literals.EDT;
 	}
 
 	/**

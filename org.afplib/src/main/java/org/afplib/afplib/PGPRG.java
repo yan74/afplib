@@ -11,6 +11,7 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.PGPRG#getRGLength <em>RG Length</em>}</li>
  *   <li>{@link org.afplib.afplib.PGPRG#getXmOset <em>Xm Oset</em>}</li>
@@ -20,7 +21,6 @@ import org.afplib.base.Triplet;
  *   <li>{@link org.afplib.afplib.PGPRG#getPgFlgs <em>Pg Flgs</em>}</li>
  *   <li>{@link org.afplib.afplib.PGPRG#getPMCid <em>PM Cid</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getPGPRG()
  * @model

@@ -11,11 +11,11 @@ import org.afplib.base.Triplet;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.MMCRG#getKey <em>Key</em>}</li>
  *   <li>{@link org.afplib.afplib.MMCRG#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.afplib.afplib.AfplibPackage#getMMCRG()
  * @model

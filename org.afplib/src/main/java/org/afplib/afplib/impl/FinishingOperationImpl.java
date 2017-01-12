@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.afplib.afplib.impl.FinishingOperationImpl#getFOpType <em>FOp Type</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FinishingOperationImpl#getRefEdge <em>Ref Edge</em>}</li>
@@ -26,7 +27,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.afplib.afplib.impl.FinishingOperationImpl#getAxOffst <em>Ax Offst</em>}</li>
  *   <li>{@link org.afplib.afplib.impl.FinishingOperationImpl#getOpPos <em>Op Pos</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -147,7 +147,7 @@ public class FinishingOperationImpl extends TripletImpl implements FinishingOper
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.eINSTANCE.getFinishingOperation();
+		return AfplibPackage.Literals.FINISHING_OPERATION;
 	}
 
 	/**
