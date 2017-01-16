@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.afplib</groupId>
-	<artifactId>afplib</artifactId>
-	<version>0.0.12-SNAPSHOT</version>
+	<artifactId>afplib-JAVA1.6</artifactId>
+	<version>0.0.12</version>
 	<name>AFP Library</name>
 	<description>Java object library able to read and write AFP (Advanced Function Presentation) files.</description>
 	<url>https://github.com/yan74/afplib</url>
