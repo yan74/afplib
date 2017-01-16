@@ -11,6 +11,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 import org.afplib.base.SF;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Passes the structured fields of an AFP file through a series of
@@ -19,6 +21,8 @@ import org.afplib.base.SF;
  *
  */
 public class AfpFilterChain {
+
+	private static Logger log = LoggerFactory.getLogger(AfpFilterChain.class);
 
 	private final File in;
 	private final File out;
@@ -65,17 +69,35 @@ public class AfpFilterChain {
 					currentIn.delete();
 				}
 				currentIn = currentOut;
+			} else {
+				doRead(currentIn, twoPassLink); // FIXME this is still wrong
 			}
 
-			doRead(currentIn, twoPassLink);
 			links.removeAll(toFilter);
 
 		} while(!links.isEmpty());
-
+		
+		copy(currentOut, out);
 
 	}
 
+	private void copy(File fin, File fout) throws IOException {
+		BufferedInputStream bin = new BufferedInputStream(new FileInputStream(fin));
+		BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(fout));
+		
+		log.debug("copying {} to {}", fin.getAbsolutePath(), fout.getAbsolutePath());
+		
+		byte[] buffer = new byte[8196];
+		int len;
+		while((len = bin.read(buffer, 0, buffer.length)) > 0) {
+			bout.write(buffer, 0, len);
+		}
+		bin.close();
+		bout.close();
+	}
+
 	private void doRead(File file, ChainLink link) throws FileNotFoundException, IOException {
+		log.debug("first pass {}", link.getClass().getSimpleName());
 		AfpInputStream ain = new AfpInputStream(new BufferedInputStream(new FileInputStream(file)));
 		try {
 			SF sf;
@@ -88,9 +110,21 @@ public class AfpFilterChain {
 	}
 
 	private void doFilter(File inFile, File outFile, final ChainLink...chainLinks) throws FileNotFoundException, IOException {
+
+		if(log.isDebugEnabled()) {
+			String s = "";
+			for(ChainLink l : chainLinks) {
+				if(s.length() > 0) s += ", ";
+				s += l.getClass().getSimpleName();
+			}
+			log.debug("filtering {}", s);
+		}
+
 		final AfpInputStream ain = new AfpInputStream(new BufferedInputStream(new FileInputStream(inFile)));
 		final AfpOutputStream aout = new AfpOutputStream(new BufferedOutputStream(new FileOutputStream(outFile)));
-		
+
+		log.debug("reading {} -> writing {}", inFile.getAbsolutePath(), outFile.getAbsolutePath());
+
 		try {
 
 			Chain chain = new Chain() {
@@ -104,6 +138,7 @@ public class AfpFilterChain {
 							for(SF sf : sfs) {
 								while(i<chainLinks.length-1 && finished.contains(chainLinks[i])) i++;
 								if(i>=chainLinks.length) {
+									log.trace("write {}", sf);
 									aout.writeStructuredField(sf);
 								} else {
 									if(!chainLinks[i].onStructuredField(this, sf)) {
