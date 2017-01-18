@@ -34,8 +34,9 @@ public class AfpFilterChainTest {
 			}
 		});
 
-		try(AfpInputStream a1 = new AfpInputStream(new FileInputStream(in));
-				AfpInputStream a2 = new AfpInputStream(new FileInputStream(out))) {
+		AfpInputStream a1 = new AfpInputStream(new FileInputStream(in));
+		AfpInputStream a2 = new AfpInputStream(new FileInputStream(out));
+		try {
 
 			SF sf1, sf2;
 			while((sf1 = a1.readStructuredField()) != null) {
@@ -43,6 +44,9 @@ public class AfpFilterChainTest {
 				assertTrue(EcoreUtil.equals(sf1, sf2));
 			}
 
+		} finally {
+			a1.close();
+			a2.close();
 		}
 	}
 

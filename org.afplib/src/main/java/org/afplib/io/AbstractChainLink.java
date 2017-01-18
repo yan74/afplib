@@ -8,7 +8,7 @@ import org.afplib.base.SF;
 
 public abstract class AbstractChainLink implements ChainLink {
 
-	protected List<SF> sfBuffer = new ArrayList<>();
+	protected List<SF> sfBuffer = new ArrayList<SF>();
 	protected Chain chain;
 
 	@Override
@@ -30,7 +30,7 @@ public abstract class AbstractChainLink implements ChainLink {
 		return true;
 	}
 
-	protected abstract boolean onStructuredField(SF sf);
+	protected abstract boolean onStructuredField(SF sf) throws IOException;
 
 	protected void commit() throws IOException {
 		if(sfBuffer.isEmpty()) return;
