@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EReference;
 
 /**
  * Identifies an AFP resource.
- * 
+ *
  * @author Yan Hackl-Feldbusch <yan@hcsystems.de>
  *
  */
@@ -60,7 +60,7 @@ public class ResourceKey {
 	private void init(int type, String name, String objId) {
 		this.type = type;
 		this.name = name;
-		this.objId = objId;    	
+		this.objId = objId;
     }
 
 	public int getType() {
@@ -77,42 +77,56 @@ public class ResourceKey {
 
 	public boolean matches(BRS brs) {
 		if(brs == null) return false;
-		
+
 		int brsType = -1;
 		String rsName = brs.getRSName();
-		String rsObjId = null;
-		
+		ObjectClassification clazz = null;
+
 		for(Object m : brs.getTriplets()) {
 			if(m instanceof ResourceObjectType) {
 				brsType = ((ResourceObjectType)m).getObjType();
 			}
-			if(m instanceof FullyQualifiedName 
+			if(m instanceof FullyQualifiedName
 					&& ((FullyQualifiedName) m).getFQNType() == FullyQualifiedNameFQNType.CONST_REPLACE_FIRST_GID_NAME_VALUE) {
 				rsName = ((FullyQualifiedName)m).getFQName();
 			}
 			if(m instanceof ObjectClassification) {
-				rsObjId = "";
-				for(byte o : ((ObjectClassification)m).getRegObjId())
-					rsObjId+=String.format("%02x", o);
+				clazz = (ObjectClassification) m;
 			}
 		}
-		
+
+		if (type != brsType) {
+			return false;
+		}
+
 		if (name == null) {
-			if (rsName != null)
+			if (rsName != null) {
 				return false;
-		} else if (!name.equals(rsName))
+			}
+		} else if (!name.equals(rsName)) {
 			return false;
+		}
+
 		if (objId == null) {
-			if (rsObjId != null)
+			if (clazz != null) {
 				return false;
-		} else if (!objId.equals(rsObjId))
-			return false;
-		if (type != brsType)
-			return false;
+			}
+		} else {
+			if(clazz == null) return false;
+			String rsObjId = null;
+			rsObjId = "";
+			for(byte o : clazz.getRegObjId()) {
+				rsObjId+=String.format("%02x", o);
+			}
+
+			if (!objId.equals(rsObjId)) {
+				return false;
+			}
+		}
 
 		return true;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -155,16 +169,16 @@ public class ResourceKey {
 
 	public static ResourceKey toResourceKey(BRS brs) {
 		if(brs == null) return null;
-		
+
 		int brsType = -1;
 		String rsName = brs.getRSName();
 		String rsObjId = null;
-		
+
 		for(Object m : brs.getTriplets()) {
 			if(m instanceof ResourceObjectType) {
 				brsType = ((ResourceObjectType)m).getObjType();
 			}
-			if(m instanceof FullyQualifiedName 
+			if(m instanceof FullyQualifiedName
 					&& ((FullyQualifiedName) m).getFQNType() == FullyQualifiedNameFQNType.CONST_REPLACE_FIRST_GID_NAME_VALUE) {
 				rsName = ((FullyQualifiedName)m).getFQName();
 			}
@@ -194,12 +208,12 @@ public class ResourceKey {
 	public static ResourceKey toResourceKey(IOB iob) {
 		IOBObjType type = IOBObjType.get(iob.getObjType());
 		if(type == null) return null;
-		
+
 		ResourceKey key = null;
 		String objName = iob.getObjName();
-		
+
 		objName = overrideGID(iob, objName);
-		
+
 		switch(type) {
 		case CONST_BAR_CODE_BCOCA:
 			key = new ResourceKey(ResourceObjectTypeObjType.CONST_BCOCA, objName);
@@ -223,7 +237,7 @@ public class ResourceKey {
 			key = new ResourceKey(ResourceObjectTypeObjType.CONST_PAGE_SEGMENT, objName);
 			break;
 		}
-		
+
 		return key;
 	}
 
@@ -242,5 +256,5 @@ public class ResourceKey {
 		}
 		return objName;
 	}
-	
+
 }
