@@ -138,7 +138,7 @@ public class AfpFilterChain {
 						if(link == chainLinks[i]) {
 							i++;
 							for(SF sf : sfs) {
-								while(i<chainLinks.length-1 && finished.contains(chainLinks[i])) i++;
+								while(i<chainLinks.length && finished.contains(chainLinks[i])) i++;
 								if(i>=chainLinks.length) {
 									log.trace("write {}", sf);
 									if(aout != null) aout.writeStructuredField(sf);
@@ -154,9 +154,14 @@ public class AfpFilterChain {
 			};
 
 			SF sf;
+			boolean firstisdone = false;
 			while((sf = ain.readStructuredField()) != null) {
 
-				chainLinks[0].onStructuredField(chain, sf);
+				if(firstisdone) {
+					chain.commit(chainLinks[0], sf);
+				} else if(!chainLinks[0].onStructuredField(chain, sf)) {
+					firstisdone = true;
+				}
 
 			}
 

@@ -71,4 +71,70 @@ public class AfpFilterChainTest {
 
 	}
 
+	@Test
+	public void testFilterStop() throws IOException {
+		File in = new File("testdata/asciiComment.afp");
+
+		AfpFilterChain chain = new AfpFilterChain(in, null);
+		chain.filter(new ChainLink() {
+
+			private boolean once = false;
+
+			@Override
+			public boolean onStructuredField(Chain chain, SF sf) throws IOException {
+				if(once) throw new IllegalAccessError();
+				chain.commit(this, sf);
+				once = true;
+				return false;
+			}
+
+			@Override
+			public boolean needTwoPass() {
+				return false;
+			}
+		});
+
+	}
+
+	@Test
+	public void testTwoFilterStop() throws IOException {
+		File in = new File("testdata/asciiComment.afp");
+
+		AfpFilterChain chain = new AfpFilterChain(in, null);
+		chain.filter(new ChainLink() {
+
+			private boolean once = false;
+
+			@Override
+			public boolean onStructuredField(Chain chain, SF sf) throws IOException {
+				if(once) throw new IllegalAccessError();
+				chain.commit(this, sf);
+				once = true;
+				return false;
+			}
+
+			@Override
+			public boolean needTwoPass() {
+				return false;
+			}
+		},new ChainLink() {
+
+			private boolean once = false;
+
+			@Override
+			public boolean onStructuredField(Chain chain, SF sf) throws IOException {
+				if(once) throw new IllegalAccessError();
+				chain.commit(this, sf);
+				once = true;
+				return false;
+			}
+
+			@Override
+			public boolean needTwoPass() {
+				return false;
+			}
+		});
+
+	}
+
 }
