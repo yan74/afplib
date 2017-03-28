@@ -50,4 +50,25 @@ public class AfpFilterChainTest {
 		}
 	}
 
+	@Test
+	public void testNoOutput() throws IOException {
+		File in = new File("testdata/asciiComment.afp");
+
+		AfpFilterChain chain = new AfpFilterChain(in, null);
+		chain.filter(new ChainLink() {
+
+			@Override
+			public boolean onStructuredField(Chain chain, SF sf) throws IOException {
+				chain.commit(this, sf);
+				return true;
+			}
+
+			@Override
+			public boolean needTwoPass() {
+				return false;
+			}
+		});
+
+	}
+
 }

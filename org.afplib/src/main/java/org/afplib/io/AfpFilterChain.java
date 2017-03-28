@@ -76,17 +76,19 @@ public class AfpFilterChain {
 			links.removeAll(toFilter);
 
 		} while(!links.isEmpty());
-		
+
 		copy(currentOut, out);
 
 	}
 
 	private void copy(File fin, File fout) throws IOException {
+		if(fout == null) return;
+
 		BufferedInputStream bin = new BufferedInputStream(new FileInputStream(fin));
 		BufferedOutputStream bout = new BufferedOutputStream(new FileOutputStream(fout));
-		
+
 		log.debug("copying {} to {}", fin.getAbsolutePath(), fout.getAbsolutePath());
-		
+
 		byte[] buffer = new byte[8196];
 		int len;
 		while((len = bin.read(buffer, 0, buffer.length)) > 0) {
@@ -121,9 +123,9 @@ public class AfpFilterChain {
 		}
 
 		final AfpInputStream ain = new AfpInputStream(new BufferedInputStream(new FileInputStream(inFile)));
-		final AfpOutputStream aout = new AfpOutputStream(new BufferedOutputStream(new FileOutputStream(outFile)));
+		final AfpOutputStream aout = outFile == null ? null :  new AfpOutputStream(new BufferedOutputStream(new FileOutputStream(outFile)));
 
-		log.debug("reading {} -> writing {}", inFile.getAbsolutePath(), outFile.getAbsolutePath());
+		log.debug("reading {} -> writing {}", inFile.getAbsolutePath(), outFile == null ? null : outFile.getAbsolutePath());
 
 		try {
 
@@ -139,7 +141,7 @@ public class AfpFilterChain {
 								while(i<chainLinks.length-1 && finished.contains(chainLinks[i])) i++;
 								if(i>=chainLinks.length) {
 									log.trace("write {}", sf);
-									aout.writeStructuredField(sf);
+									if(aout != null) aout.writeStructuredField(sf);
 								} else {
 									if(!chainLinks[i].onStructuredField(this, sf)) {
 										finished.add(chainLinks[i]);
@@ -160,7 +162,7 @@ public class AfpFilterChain {
 
 		} finally {
 			ain.close();
-			aout.close();
+			if(aout != null) aout.close();
 		}
 	}
 
