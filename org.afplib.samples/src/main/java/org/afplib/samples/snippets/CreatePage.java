@@ -33,6 +33,8 @@ import org.afplib.afplib.PTX;
 import org.afplib.afplib.ResourceLocalIdentifier;
 import org.afplib.afplib.ResourceLocalIdentifierResType;
 import org.afplib.afplib.SCFL;
+import org.afplib.afplib.SEC;
+import org.afplib.afplib.SECCOLSPCE;
 import org.afplib.afplib.STC;
 import org.afplib.afplib.STCFRGCOLOR;
 import org.afplib.afplib.STO;
@@ -123,8 +125,13 @@ public class CreatePage {
 						.with(AfplibPackage.AMI__DSPLCMNT, 720)				// Text Cursor to 0.5 inches from left edge of the paper
 						.create(AMI.class))
 				.withMember(new AfpBuilder()								// Text Color
-						.with(AfplibPackage.STC__FRGCOLOR, STCFRGCOLOR.CONST_BLUE_VALUE)
-						.create(STC.class))
+						.with(AfplibPackage.SEC__COLSPCE, SECCOLSPCE.CONST_CMYK_VALUE)
+						.with(AfplibPackage.SEC__COLSIZE1, 8)
+						.with(AfplibPackage.SEC__COLSIZE2, 8)
+						.with(AfplibPackage.SEC__COLSIZE3, 8)
+						.with(AfplibPackage.SEC__COLSIZE4, 8)
+						.with(AfplibPackage.SEC__COLVALUE, new byte[] { (byte) 0x90, (byte) 0xB2, 0x00, 0x00} )
+						.create(SEC.class))
 				.withMember(new AfpBuilder()
 						.with(AfplibPackage.SCFL__LID, 1)					// identifier mapped in MCF above
 						.create(SCFL.class))
