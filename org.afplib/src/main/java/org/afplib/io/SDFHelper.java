@@ -1,5 +1,7 @@
 package org.afplib.io;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -35,6 +37,24 @@ public class SDFHelper {
 		ipds.add(createIPD(iddbuffer, pos));
 
 		return (IPD[]) ipds.toArray(new IPD[ipds.size()]);
+	}
+
+	public static Triplet[] ipds2sdf(List<IPD> ipds) {
+		List<Triplet> result = new LinkedList<>();
+
+		ByteArrayOutputStream bout = new ByteArrayOutputStream();
+		for(IPD ipd : ipds) {
+			try {
+				bout.write(ipd.getIOCAdat());
+			} catch (IOException e) {}
+		}
+
+		byte[] buffer = bout.toByteArray();
+
+		StructuredFieldFactory factory = new StructuredFieldFactory();
+		factory.sdf(result, buffer, 0, buffer.length);
+
+		return (Triplet[]) result.toArray(new Triplet[result.size()]);
 	}
 
 	private static IPD createIPD(byte[] iddbuffer, int pos) {
