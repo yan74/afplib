@@ -148,6 +148,44 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	void cmd(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+		int pos = start;
+
+		while(pos + 1 <= bufstop) {
+
+			int id = Data.toUnsigned(buffer, pos, pos);
+			int length = 0;
+
+			if(0x0 == id) {
+				length = 1;
+			} else if((id & 0x88) == 0x08) {
+				length = 2;
+			} else if(id == 0xfe) {
+			  // unsupported
+			} else {
+				length = Data.toUnsigned(buffer, pos + 1, pos + 1) + 2;
+			}
+
+			int stop = pos + length - 1;
+			if(stop > bufstop) break;
+
+			switch(id) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "GOCACmd"»
+			case «t.id»: {
+				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
+				triplets.add(obj);
+				break;
+			}
+			«ENDIF»
+			«ENDFOREACH»
+			}
+			pos+=length;
+		}
+	}
+
 	Triplet cs(byte[] buffer, int pos, int stop, int id) {
 		switch(id) {
 		«FOREACH groupMembers AS t»
@@ -244,6 +282,44 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					buffer[start] = Data.toUnsignedByte(«t.id»)[0];
 					buffer[start + 1] = Data.toUnsignedByte(length - 2)[0];
 				}
+				break;
+			}
+			«ENDIF»«ENDFOREACH»
+			default: throw new IllegalArgumentException("unknown triplet: "+m);
+			}
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
+	int binary_cmd(byte[] buffer, int bstart, List<Triplet> triplets) {
+		int start = bstart;
+
+		for(Triplet m : triplets) {
+			int length = 0;
+			switch(m.eClass().getClassifierID()) {
+			«FOREACH groupMembers AS t»
+			«IF t.type.toString() == "GOCACmd"»
+			case AfplibPackage.«camelCase2Constant(t.name)»: {
+				m.setTripletId(«t.id»);
+				«t.name» obj = («t.name») m;
+				«FOREACH t.elements AS e»«EXPAND groupSaver FOR e»«ENDFOREACH»
+				«FOREACH t.elements AS e»«EXPAND propertySaver FOR e»«ENDFOREACH»
+
+				«IF t.id == 0»
+					buffer[start] = 0;
+				«ELSE»
+					if((«t.id» & 0x88) == 0x08) {
+						buffer[start] = (byte) «t.id»;
+					} else if(«t.id» == 0xfe) {
+						// extended - unsupported
+					} else {
+						if(length == 0) length = 2;
+						buffer[start] = (byte) «t.id»;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+				«ENDIF»
 				break;
 			}
 			«ENDIF»«ENDFOREACH»

@@ -7849,6 +7849,1609 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
+	void cmd(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+		int pos = start;
+
+		while (pos + 1 <= bufstop) {
+
+			int id = Data.toUnsigned(buffer, pos, pos);
+			int length = 0;
+
+			if (0x0 == id) {
+				length = 1;
+			} else if ((id & 0x88) == 0x08) {
+				length = 2;
+			} else if (id == 0xfe) {
+				// unsupported
+			} else {
+				length = Data.toUnsigned(buffer, pos + 1, pos + 1) + 2;
+			}
+
+			int stop = pos + length - 1;
+			if (stop > bufstop)
+				break;
+
+			switch (id) {
+
+				case 112 : {
+					BeginSegmentCommand obj = AfplibFactory.eINSTANCE.createBeginSegmentCommand();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLENGTH(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setNAME(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setFLAG1(Data.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setFLAG2(Data.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setSEGL(Data.toUnsigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 13;
+
+						if (sstop <= stop)
+
+							obj.setPSNAME(new String(buffer, pos + 10, sstop - pos - 10 + 1, charset));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 113 : {
+					EndSegmentCommand obj = AfplibFactory.eINSTANCE.createEndSegmentCommand();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 104 : {
+					GBAR obj = AfplibFactory.eINSTANCE.createGBAR();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setFLAGS(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 209 : {
+					GBIMG obj = AfplibFactory.eINSTANCE.createGBIMG();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setFORMAT(Data.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setRES(Data.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setWIDTH(Data.toUnsigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setHEIGHT(Data.toUnsigned(buffer, pos + 10, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 145 : {
+					GCBIMG obj = AfplibFactory.eINSTANCE.createGCBIMG();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setFORMAT(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setRES(Data.toUnsigned(buffer, pos + 3, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setWIDTH(Data.toUnsigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setHEIGHT(Data.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 192 : {
+					GBOX obj = AfplibFactory.eINSTANCE.createGBOX();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setRES(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setXPOS0(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setYPOS0(Data.toSigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setXPOS1(Data.toSigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setYPOS1(Data.toSigned(buffer, pos + 10, sstop));
+
+					}
+
+					{
+						int sstop = pos + 13;
+
+						if (stop >= pos + 13) {
+
+							obj.setHAXIS(Data.toUnsigned(buffer, pos + 12, sstop));
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 15;
+
+						if (stop >= pos + 15) {
+
+							obj.setVAXIS(Data.toUnsigned(buffer, pos + 14, sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 128 : {
+					GCBOX obj = AfplibFactory.eINSTANCE.createGCBOX();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setRES(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setXPOS1(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setYPOS1(Data.toSigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (stop >= pos + 9) {
+
+							obj.setHAXIS(Data.toUnsigned(buffer, pos + 8, sstop));
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (stop >= pos + 11) {
+
+							obj.setVAXIS(Data.toUnsigned(buffer, pos + 10, sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 195 : {
+					GCHST obj = AfplibFactory.eINSTANCE.createGCHST();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 32767;
+
+						sstop = stop;
+						if (sstop >= pos + 6)
+
+							obj.setCP(new String(buffer, pos + 6, sstop - pos - 6 + 1, charset));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 131 : {
+					GCCHST obj = AfplibFactory.eINSTANCE.createGCCHST();
+
+					{
+						int sstop = pos + 32767;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+							obj.setCP(new String(buffer, pos + 2, sstop - pos - 2 + 1, charset));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 1 : {
+					GCOMT obj = AfplibFactory.eINSTANCE.createGCOMT();
+
+					{
+						int sstop = pos + 32767;
+
+						if (stop >= pos + 2) {
+							sstop = stop;
+
+							obj.setDATA(Arrays.copyOfRange(buffer, pos + 2, sstop + 1));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 96 : {
+					GEAR obj = AfplibFactory.eINSTANCE.createGEAR();
+
+					{
+						int sstop = pos + 32767;
+
+						if (stop >= pos + 2) {
+							sstop = stop;
+
+							obj.setDATA(Arrays.copyOfRange(buffer, pos + 2, sstop + 1));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 147 : {
+					GEIMG obj = AfplibFactory.eINSTANCE.createGEIMG();
+
+					{
+						int sstop = pos + 32767;
+
+						if (stop >= pos + 2) {
+							sstop = stop;
+
+							obj.setDATA(Arrays.copyOfRange(buffer, pos + 2, sstop + 1));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 62 : {
+					GEPROL obj = AfplibFactory.eINSTANCE.createGEPROL();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setRES(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 197 : {
+					GFLT obj = AfplibFactory.eINSTANCE.createGFLT();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GFLTRG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 133 : {
+					GCFLT obj = AfplibFactory.eINSTANCE.createGCFLT();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GCFLTRG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 199 : {
+					GFARC obj = AfplibFactory.eINSTANCE.createGFARC();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setMH(Data.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setMFR(Data.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 135 : {
+					GCFARC obj = AfplibFactory.eINSTANCE.createGCFARC();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setMH(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setMFR(Data.toUnsigned(buffer, pos + 3, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 146 : {
+					GIMD obj = AfplibFactory.eINSTANCE.createGIMD();
+
+					{
+						int sstop = pos + 3768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+							obj.setDATA(Arrays.copyOfRange(buffer, pos + 2, sstop + 1));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 193 : {
+					GLINE obj = AfplibFactory.eINSTANCE.createGLINE();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GLINERG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 129 : {
+					GCLINE obj = AfplibFactory.eINSTANCE.createGCLINE();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GCLINERG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 194 : {
+					GMRK obj = AfplibFactory.eINSTANCE.createGMRK();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GMRKRG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 130 : {
+					GCMRK obj = AfplibFactory.eINSTANCE.createGCMRK();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GCMRKRG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 0 : {
+					GNOP1 obj = AfplibFactory.eINSTANCE.createGNOP1();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 227 : {
+					GPARC obj = AfplibFactory.eINSTANCE.createGPARC();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setXCENT(Data.toSigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setYCENT(Data.toSigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 10;
+
+						if (sstop <= stop)
+
+							obj.setMH(Data.toUnsigned(buffer, pos + 10, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setMFR(Data.toUnsigned(buffer, pos + 11, sstop));
+
+					}
+
+					{
+						int sstop = pos + 15;
+
+						if (sstop <= stop)
+
+							obj.setSTART(Data.toSigned(buffer, pos + 12, sstop));
+
+					}
+
+					{
+						int sstop = pos + 19;
+
+						if (sstop <= stop)
+
+							obj.setSWEEP(Data.toSigned(buffer, pos + 16, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 163 : {
+					GCPARC obj = AfplibFactory.eINSTANCE.createGCPARC();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXCENT(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYCENT(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setMH(Data.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setMFR(Data.toUnsigned(buffer, pos + 7, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setSTART(Data.toSigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 15;
+
+						if (sstop <= stop)
+
+							obj.setSWEEP(Data.toSigned(buffer, pos + 12, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 225 : {
+					GRLINE obj = AfplibFactory.eINSTANCE.createGRLINE();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 6)
+
+						{
+
+							GRLINERG(obj.getRg(), buffer, pos + 6, sstop, 2);
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 161 : {
+					GCRLINE obj = AfplibFactory.eINSTANCE.createGCRLINE();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GCRLINERG(obj.getRg(), buffer, pos + 2, sstop, 2);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 4 : {
+					GSGCH obj = AfplibFactory.eINSTANCE.createGSGCH();
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 34 : {
+					GSAP obj = AfplibFactory.eINSTANCE.createGSAP();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setP(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setQ(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setR(Data.toSigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setS(Data.toSigned(buffer, pos + 8, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 13 : {
+					GSBMX obj = AfplibFactory.eINSTANCE.createGSBMX();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setMODE(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 52 : {
+					GSCA obj = AfplibFactory.eINSTANCE.createGSCA();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 51 : {
+					GSCC obj = AfplibFactory.eINSTANCE.createGSCC();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setCELLWI(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setCELLHI(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (stop >= pos + 7) {
+
+							obj.setCELLWFR(Data.toUnsigned(buffer, pos + 6, sstop));
+
+						}
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (stop >= pos + 9) {
+
+							obj.setCELLHFR(Data.toUnsigned(buffer, pos + 8, sstop));
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 58 : {
+					GSCD obj = AfplibFactory.eINSTANCE.createGSCD();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setDIRECTION(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 57 : {
+					GSCR obj = AfplibFactory.eINSTANCE.createGSCR();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setPREC(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 56 : {
+					GSCS obj = AfplibFactory.eINSTANCE.createGSCS();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLCID(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 53 : {
+					GSCH obj = AfplibFactory.eINSTANCE.createGSCH();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setHX(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setHY(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 10 : {
+					GSCOL obj = AfplibFactory.eINSTANCE.createGSCOL();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setCOL(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 33 : {
+					GSCP obj = AfplibFactory.eINSTANCE.createGSCP();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setXPOS(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setYPOS(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 38 : {
+					GSECOL obj = AfplibFactory.eINSTANCE.createGSECOL();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setCOLOR(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 17 : {
+					GSFLW obj = AfplibFactory.eINSTANCE.createGSFLW();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setMH(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setMFR(Data.toUnsigned(buffer, pos + 3, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 24 : {
+					GSLT obj = AfplibFactory.eINSTANCE.createGSLT();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLINETYPE(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 25 : {
+					GSLW obj = AfplibFactory.eINSTANCE.createGSLW();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setMH(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 55 : {
+					GSMC obj = AfplibFactory.eINSTANCE.createGSMC();
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setCELLWI(Data.toSigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setCELLHI(Data.toSigned(buffer, pos + 4, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 59 : {
+					GSMP obj = AfplibFactory.eINSTANCE.createGSMP();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setPREC(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 60 : {
+					GSMS obj = AfplibFactory.eINSTANCE.createGSMS();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLCID(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 41 : {
+					GSMT obj = AfplibFactory.eINSTANCE.createGSMT();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setMCPT(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 12 : {
+					GSMX obj = AfplibFactory.eINSTANCE.createGSMX();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setMODE(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 8 : {
+					GSPS obj = AfplibFactory.eINSTANCE.createGSPS();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLCID(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 40 : {
+					GSPT obj = AfplibFactory.eINSTANCE.createGSPT();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setPATT(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 178 : {
+					GSPCOL obj = AfplibFactory.eINSTANCE.createGSPCOL();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setRES1(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setCOLSPCE(Data.toUnsigned(buffer, pos + 3, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setRES2(Data.toUnsigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 8;
+
+						if (sstop <= stop)
+
+							obj.setCOLSIZE1(Data.toUnsigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setCOLSIZE2(Data.toUnsigned(buffer, pos + 9, sstop));
+
+					}
+
+					{
+						int sstop = pos + 10;
+
+						if (sstop <= stop)
+
+							obj.setCOLSIZE3(Data.toUnsigned(buffer, pos + 10, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setCOLSIZE4(Data.toUnsigned(buffer, pos + 11, sstop));
+
+					}
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 12)
+
+							obj.setCOLVALUE(Arrays.copyOfRange(buffer, pos + 12, sstop + 1));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 26 : {
+					GSLE obj = AfplibFactory.eINSTANCE.createGSLE();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLINEEND(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 27 : {
+					GSLJ obj = AfplibFactory.eINSTANCE.createGSLJ();
+
+					{
+						int sstop = pos + 1;
+
+						if (sstop <= stop)
+
+							obj.setLINEJOIN(Data.toUnsigned(buffer, pos + 1, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 229 : {
+					GCBEZ obj = AfplibFactory.eINSTANCE.createGCBEZ();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GCBEZRG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 165 : {
+					GCCBEZ obj = AfplibFactory.eINSTANCE.createGCCBEZ();
+
+					{
+						int sstop = pos + 32768;
+
+						sstop = stop;
+						if (sstop >= pos + 2)
+
+						{
+
+							GCCBEZRG(obj.getRg(), buffer, pos + 2, sstop, 4);
+
+						}
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 246 : {
+					WindowSpecification obj = AfplibFactory.eINSTANCE.createWindowSpecification();
+
+					{
+						int sstop = pos + 2;
+
+						if (sstop <= stop)
+
+							obj.setFLAGS(Data.toUnsigned(buffer, pos + 2, sstop));
+
+					}
+
+					{
+						int sstop = pos + 3;
+
+						if (sstop <= stop)
+
+							obj.setRES3(Data.toUnsigned(buffer, pos + 3, sstop));
+
+					}
+
+					{
+						int sstop = pos + 4;
+
+						if (sstop <= stop)
+
+							obj.setCFORMAT(Data.toUnsigned(buffer, pos + 4, sstop));
+
+					}
+
+					{
+						int sstop = pos + 5;
+
+						if (sstop <= stop)
+
+							obj.setUBASE(Data.toUnsigned(buffer, pos + 5, sstop));
+
+					}
+
+					{
+						int sstop = pos + 7;
+
+						if (sstop <= stop)
+
+							obj.setXRESOL(Data.toUnsigned(buffer, pos + 6, sstop));
+
+					}
+
+					{
+						int sstop = pos + 9;
+
+						if (sstop <= stop)
+
+							obj.setYRESOL(Data.toUnsigned(buffer, pos + 8, sstop));
+
+					}
+
+					{
+						int sstop = pos + 11;
+
+						if (sstop <= stop)
+
+							obj.setIMGXYRES(Data.toUnsigned(buffer, pos + 10, sstop));
+
+					}
+
+					{
+						int sstop = pos + 13;
+
+						if (sstop <= stop)
+
+							obj.setXLWIND(Data.toSigned(buffer, pos + 12, sstop));
+
+					}
+
+					{
+						int sstop = pos + 15;
+
+						if (sstop <= stop)
+
+							obj.setXRWIND(Data.toSigned(buffer, pos + 14, sstop));
+
+					}
+
+					{
+						int sstop = pos + 17;
+
+						if (sstop <= stop)
+
+							obj.setYBWIND(Data.toSigned(buffer, pos + 16, sstop));
+
+					}
+
+					{
+						int sstop = pos + 19;
+
+						if (sstop <= stop)
+
+							obj.setYTWIND(Data.toSigned(buffer, pos + 18, sstop));
+
+					}
+
+					triplets.add(obj);
+					break;
+				}
+
+				case 247 : {
+					DrawingOrderSubset obj = AfplibFactory.eINSTANCE.createDrawingOrderSubset();
+
+					triplets.add(obj);
+					break;
+				}
+
+			}
+			pos += length;
+		}
+	}
+
 	Triplet cs(byte[] buffer, int pos, int stop, int id) {
 		switch (id) {
 
@@ -17223,6 +18826,2605 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 						buffer[start] = Data.toUnsignedByte(65211)[0];
 						buffer[start + 1] = Data.toUnsignedByte(length - 2)[0];
 					}
+					break;
+				}
+
+				default :
+					throw new IllegalArgumentException("unknown triplet: " + m);
+			}
+			start += length;
+		}
+
+		return start - bstart;
+	}
+
+	int binary_cmd(byte[] buffer, int bstart, List<Triplet> triplets) {
+		int start = bstart;
+
+		for (Triplet m : triplets) {
+			int length = 0;
+			switch (m.eClass().getClassifierID()) {
+
+				case AfplibPackage.BEGIN_SEGMENT_COMMAND : {
+					m.setTripletId(112);
+					BeginSegmentCommand obj = (BeginSegmentCommand) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (6 + 1 > length)
+						length = 6 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (13 + 1 > length)
+						length = 13 + 1;
+
+					if (obj.getLENGTH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLENGTH());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if (obj.getNAME() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 5, obj.getNAME());
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getFLAG1() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 6, obj.getFLAG1());
+
+						if (6 + 1 > length)
+							length = 6 + 1;
+
+					}
+
+					if (obj.getFLAG2() != null) {
+
+						Saver.saveUnsigned(buffer, start + 7, start + 7, obj.getFLAG2());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getSEGL() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getSEGL());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getPSNAME() != null) {
+
+						if (obj.getPSNAME() != null) {
+							Saver.save(buffer, start + 10, start + 13, obj.getPSNAME(), charset);
+						}
+
+						if (13 + 1 > length)
+							length = 13 + 1;
+
+					}
+
+					if ((112 & 0x88) == 0x08) {
+						buffer[start] = (byte) 112;
+					} else if (112 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 112;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.END_SEGMENT_COMMAND : {
+					m.setTripletId(113);
+					EndSegmentCommand obj = (EndSegmentCommand) m;
+
+					if ((113 & 0x88) == 0x08) {
+						buffer[start] = (byte) 113;
+					} else if (113 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 113;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GBAR : {
+					m.setTripletId(104);
+					GBAR obj = (GBAR) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getFLAGS() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getFLAGS());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((104 & 0x88) == 0x08) {
+						buffer[start] = (byte) 104;
+					} else if (104 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 104;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GBIMG : {
+					m.setTripletId(209);
+					GBIMG obj = (GBIMG) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (6 + 1 > length)
+						length = 6 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getFORMAT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 6, obj.getFORMAT());
+
+						if (6 + 1 > length)
+							length = 6 + 1;
+
+					}
+
+					if (obj.getRES() != null) {
+
+						Saver.saveUnsigned(buffer, start + 7, start + 7, obj.getRES());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getWIDTH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getWIDTH());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getHEIGHT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 10, start + 11, obj.getHEIGHT());
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if ((209 & 0x88) == 0x08) {
+						buffer[start] = (byte) 209;
+					} else if (209 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 209;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCBIMG : {
+					m.setTripletId(145);
+					GCBIMG obj = (GCBIMG) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (obj.getFORMAT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getFORMAT());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getRES() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3, obj.getRES());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getWIDTH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 4, start + 5, obj.getWIDTH());
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getHEIGHT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 7, obj.getHEIGHT());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if ((145 & 0x88) == 0x08) {
+						buffer[start] = (byte) 145;
+					} else if (145 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 145;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GBOX : {
+					m.setTripletId(192);
+					GBOX obj = (GBOX) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+					if (obj.getHAXIS() != null) {
+
+						if (13 + 1 > length)
+							length = 13 + 1;
+
+					}
+
+					if (obj.getVAXIS() != null) {
+
+						if (15 + 1 > length)
+							length = 15 + 1;
+
+					}
+
+					if (obj.getRES() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 3, obj.getRES());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getXPOS0() != null) {
+
+						if (obj.getXPOS0() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getXPOS0());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getYPOS0() != null) {
+
+						if (obj.getYPOS0() != null) {
+							Saver.saveSigned(buffer, start + 6, start + 7, obj.getYPOS0());
+						}
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getXPOS1() != null) {
+
+						if (obj.getXPOS1() != null) {
+							Saver.saveSigned(buffer, start + 8, start + 9, obj.getXPOS1());
+						}
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getYPOS1() != null) {
+
+						if (obj.getYPOS1() != null) {
+							Saver.saveSigned(buffer, start + 10, start + 11, obj.getYPOS1());
+						}
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if (obj.getHAXIS() != null) {
+
+						Saver.saveUnsigned(buffer, start + 12, start + 13, obj.getHAXIS());
+
+						if (13 + 1 > length)
+							length = 13 + 1;
+
+					}
+
+					if (obj.getVAXIS() != null) {
+
+						Saver.saveUnsigned(buffer, start + 14, start + 15, obj.getVAXIS());
+
+						if (15 + 1 > length)
+							length = 15 + 1;
+
+					}
+
+					if ((192 & 0x88) == 0x08) {
+						buffer[start] = (byte) 192;
+					} else if (192 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 192;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCBOX : {
+					m.setTripletId(128);
+					GCBOX obj = (GCBOX) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (obj.getHAXIS() != null) {
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getVAXIS() != null) {
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if (obj.getRES() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 3, obj.getRES());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getXPOS1() != null) {
+
+						if (obj.getXPOS1() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getXPOS1());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getYPOS1() != null) {
+
+						if (obj.getYPOS1() != null) {
+							Saver.saveSigned(buffer, start + 6, start + 7, obj.getYPOS1());
+						}
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getHAXIS() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getHAXIS());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getVAXIS() != null) {
+
+						Saver.saveUnsigned(buffer, start + 10, start + 11, obj.getVAXIS());
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if ((128 & 0x88) == 0x08) {
+						buffer[start] = (byte) 128;
+					} else if (128 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 128;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCHST : {
+					m.setTripletId(195);
+					GCHST obj = (GCHST) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getCP() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 6, obj.getCP(), charset);
+							if (6 + size > length)
+								length = 6 + size;
+						}
+
+					}
+
+					if ((195 & 0x88) == 0x08) {
+						buffer[start] = (byte) 195;
+					} else if (195 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 195;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCCHST : {
+					m.setTripletId(131);
+					GCCHST obj = (GCCHST) m;
+
+					if (obj.getCP() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 2, obj.getCP(), charset);
+							if (2 + size > length)
+								length = 2 + size;
+						}
+
+					}
+
+					if ((131 & 0x88) == 0x08) {
+						buffer[start] = (byte) 131;
+					} else if (131 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 131;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCOMT : {
+					m.setTripletId(1);
+					GCOMT obj = (GCOMT) m;
+
+					if (obj.getDATA() != null) {
+
+					}
+
+					if (obj.getDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 2, obj.getDATA());
+							if (2 + size > length)
+								length = 2 + size;
+						}
+
+					}
+
+					if ((1 & 0x88) == 0x08) {
+						buffer[start] = (byte) 1;
+					} else if (1 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 1;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GEAR : {
+					m.setTripletId(96);
+					GEAR obj = (GEAR) m;
+
+					if (obj.getDATA() != null) {
+
+					}
+
+					if (obj.getDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 2, obj.getDATA());
+							if (2 + size > length)
+								length = 2 + size;
+						}
+
+					}
+
+					if ((96 & 0x88) == 0x08) {
+						buffer[start] = (byte) 96;
+					} else if (96 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 96;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GEIMG : {
+					m.setTripletId(147);
+					GEIMG obj = (GEIMG) m;
+
+					if (obj.getDATA() != null) {
+
+					}
+
+					if (obj.getDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 2, obj.getDATA());
+							if (2 + size > length)
+								length = 2 + size;
+						}
+
+					}
+
+					if ((147 & 0x88) == 0x08) {
+						buffer[start] = (byte) 147;
+					} else if (147 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 147;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GEPROL : {
+					m.setTripletId(62);
+					GEPROL obj = (GEPROL) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getRES() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getRES());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((62 & 0x88) == 0x08) {
+						buffer[start] = (byte) 62;
+					} else if (62 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 62;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GFLT : {
+					m.setTripletId(197);
+					GFLT obj = (GFLT) m;
+
+					{
+
+						int size = binary_GFLTRG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((197 & 0x88) == 0x08) {
+						buffer[start] = (byte) 197;
+					} else if (197 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 197;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCFLT : {
+					m.setTripletId(133);
+					GCFLT obj = (GCFLT) m;
+
+					{
+
+						int size = binary_GCFLTRG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((133 & 0x88) == 0x08) {
+						buffer[start] = (byte) 133;
+					} else if (133 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 133;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GFARC : {
+					m.setTripletId(199);
+					GFARC obj = (GFARC) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (6 + 1 > length)
+						length = 6 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getMH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 6, obj.getMH());
+
+						if (6 + 1 > length)
+							length = 6 + 1;
+
+					}
+
+					if (obj.getMFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 7, start + 7, obj.getMFR());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if ((199 & 0x88) == 0x08) {
+						buffer[start] = (byte) 199;
+					} else if (199 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 199;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCFARC : {
+					m.setTripletId(135);
+					GCFARC obj = (GCFARC) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (obj.getMH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getMH());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getMFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3, obj.getMFR());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if ((135 & 0x88) == 0x08) {
+						buffer[start] = (byte) 135;
+					} else if (135 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 135;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GIMD : {
+					m.setTripletId(146);
+					GIMD obj = (GIMD) m;
+
+					if (obj.getDATA() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 2, obj.getDATA());
+							if (2 + size > length)
+								length = 2 + size;
+						}
+
+					}
+
+					if ((146 & 0x88) == 0x08) {
+						buffer[start] = (byte) 146;
+					} else if (146 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 146;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GLINE : {
+					m.setTripletId(193);
+					GLINE obj = (GLINE) m;
+
+					{
+
+						int size = binary_GLINERG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((193 & 0x88) == 0x08) {
+						buffer[start] = (byte) 193;
+					} else if (193 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 193;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCLINE : {
+					m.setTripletId(129);
+					GCLINE obj = (GCLINE) m;
+
+					{
+
+						int size = binary_GCLINERG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((129 & 0x88) == 0x08) {
+						buffer[start] = (byte) 129;
+					} else if (129 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 129;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GMRK : {
+					m.setTripletId(194);
+					GMRK obj = (GMRK) m;
+
+					{
+
+						int size = binary_GMRKRG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((194 & 0x88) == 0x08) {
+						buffer[start] = (byte) 194;
+					} else if (194 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 194;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCMRK : {
+					m.setTripletId(130);
+					GCMRK obj = (GCMRK) m;
+
+					{
+
+						int size = binary_GCMRKRG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((130 & 0x88) == 0x08) {
+						buffer[start] = (byte) 130;
+					} else if (130 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 130;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GNOP1 : {
+					m.setTripletId(0);
+					GNOP1 obj = (GNOP1) m;
+
+					buffer[start] = 0;
+
+					break;
+				}
+
+				case AfplibPackage.GPARC : {
+					m.setTripletId(227);
+					GPARC obj = (GPARC) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+					if (15 + 1 > length)
+						length = 15 + 1;
+
+					if (19 + 1 > length)
+						length = 19 + 1;
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getXCENT() != null) {
+
+						if (obj.getXCENT() != null) {
+							Saver.saveSigned(buffer, start + 6, start + 7, obj.getXCENT());
+						}
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getYCENT() != null) {
+
+						if (obj.getYCENT() != null) {
+							Saver.saveSigned(buffer, start + 8, start + 9, obj.getYCENT());
+						}
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getMH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 10, start + 10, obj.getMH());
+
+						if (10 + 1 > length)
+							length = 10 + 1;
+
+					}
+
+					if (obj.getMFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 11, start + 11, obj.getMFR());
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if (obj.getSTART() != null) {
+
+						if (obj.getSTART() != null) {
+							Saver.saveSigned(buffer, start + 12, start + 15, obj.getSTART());
+						}
+
+						if (15 + 1 > length)
+							length = 15 + 1;
+
+					}
+
+					if (obj.getSWEEP() != null) {
+
+						if (obj.getSWEEP() != null) {
+							Saver.saveSigned(buffer, start + 16, start + 19, obj.getSWEEP());
+						}
+
+						if (19 + 1 > length)
+							length = 19 + 1;
+
+					}
+
+					if ((227 & 0x88) == 0x08) {
+						buffer[start] = (byte) 227;
+					} else if (227 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 227;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCPARC : {
+					m.setTripletId(163);
+					GCPARC obj = (GCPARC) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (6 + 1 > length)
+						length = 6 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+					if (15 + 1 > length)
+						length = 15 + 1;
+
+					if (obj.getXCENT() != null) {
+
+						if (obj.getXCENT() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXCENT());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYCENT() != null) {
+
+						if (obj.getYCENT() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYCENT());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getMH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 6, obj.getMH());
+
+						if (6 + 1 > length)
+							length = 6 + 1;
+
+					}
+
+					if (obj.getMFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 7, start + 7, obj.getMFR());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getSTART() != null) {
+
+						if (obj.getSTART() != null) {
+							Saver.saveSigned(buffer, start + 8, start + 11, obj.getSTART());
+						}
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if (obj.getSWEEP() != null) {
+
+						if (obj.getSWEEP() != null) {
+							Saver.saveSigned(buffer, start + 12, start + 15, obj.getSWEEP());
+						}
+
+						if (15 + 1 > length)
+							length = 15 + 1;
+
+					}
+
+					if ((163 & 0x88) == 0x08) {
+						buffer[start] = (byte) 163;
+					} else if (163 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 163;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GRLINE : {
+					m.setTripletId(225);
+					GRLINE obj = (GRLINE) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					{
+
+						int size = binary_GRLINERG(buffer, start + 6, obj.getRg());
+						if (6 + size > length)
+							length = 6 + size;
+
+					}
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((225 & 0x88) == 0x08) {
+						buffer[start] = (byte) 225;
+					} else if (225 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 225;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCRLINE : {
+					m.setTripletId(161);
+					GCRLINE obj = (GCRLINE) m;
+
+					{
+
+						int size = binary_GCRLINERG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((161 & 0x88) == 0x08) {
+						buffer[start] = (byte) 161;
+					} else if (161 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 161;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSGCH : {
+					m.setTripletId(4);
+					GSGCH obj = (GSGCH) m;
+
+					if ((4 & 0x88) == 0x08) {
+						buffer[start] = (byte) 4;
+					} else if (4 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 4;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSAP : {
+					m.setTripletId(34);
+					GSAP obj = (GSAP) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (obj.getP() != null) {
+
+						if (obj.getP() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getP());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getQ() != null) {
+
+						if (obj.getQ() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getQ());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getR() != null) {
+
+						if (obj.getR() != null) {
+							Saver.saveSigned(buffer, start + 6, start + 7, obj.getR());
+						}
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getS() != null) {
+
+						if (obj.getS() != null) {
+							Saver.saveSigned(buffer, start + 8, start + 9, obj.getS());
+						}
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if ((34 & 0x88) == 0x08) {
+						buffer[start] = (byte) 34;
+					} else if (34 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 34;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSBMX : {
+					m.setTripletId(13);
+					GSBMX obj = (GSBMX) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getMODE() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getMODE());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((13 & 0x88) == 0x08) {
+						buffer[start] = (byte) 13;
+					} else if (13 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 13;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCA : {
+					m.setTripletId(52);
+					GSCA obj = (GSCA) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if ((52 & 0x88) == 0x08) {
+						buffer[start] = (byte) 52;
+					} else if (52 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 52;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCC : {
+					m.setTripletId(51);
+					GSCC obj = (GSCC) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (obj.getCELLWFR() != null) {
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getCELLHFR() != null) {
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getCELLWI() != null) {
+
+						if (obj.getCELLWI() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getCELLWI());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getCELLHI() != null) {
+
+						if (obj.getCELLHI() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getCELLHI());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getCELLWFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 7, obj.getCELLWFR());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getCELLHFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getCELLHFR());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if ((51 & 0x88) == 0x08) {
+						buffer[start] = (byte) 51;
+					} else if (51 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 51;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCD : {
+					m.setTripletId(58);
+					GSCD obj = (GSCD) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getDIRECTION() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getDIRECTION());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((58 & 0x88) == 0x08) {
+						buffer[start] = (byte) 58;
+					} else if (58 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 58;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCR : {
+					m.setTripletId(57);
+					GSCR obj = (GSCR) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getPREC() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getPREC());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((57 & 0x88) == 0x08) {
+						buffer[start] = (byte) 57;
+					} else if (57 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 57;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCS : {
+					m.setTripletId(56);
+					GSCS obj = (GSCS) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLCID() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLCID());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((56 & 0x88) == 0x08) {
+						buffer[start] = (byte) 56;
+					} else if (56 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 56;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCH : {
+					m.setTripletId(53);
+					GSCH obj = (GSCH) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (obj.getHX() != null) {
+
+						if (obj.getHX() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getHX());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getHY() != null) {
+
+						if (obj.getHY() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getHY());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if ((53 & 0x88) == 0x08) {
+						buffer[start] = (byte) 53;
+					} else if (53 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 53;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCOL : {
+					m.setTripletId(10);
+					GSCOL obj = (GSCOL) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getCOL() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getCOL());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((10 & 0x88) == 0x08) {
+						buffer[start] = (byte) 10;
+					} else if (10 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 10;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSCP : {
+					m.setTripletId(33);
+					GSCP obj = (GSCP) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (obj.getXPOS() != null) {
+
+						if (obj.getXPOS() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getXPOS());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getYPOS() != null) {
+
+						if (obj.getYPOS() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getYPOS());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if ((33 & 0x88) == 0x08) {
+						buffer[start] = (byte) 33;
+					} else if (33 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 33;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSECOL : {
+					m.setTripletId(38);
+					GSECOL obj = (GSECOL) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (obj.getCOLOR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 3, obj.getCOLOR());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if ((38 & 0x88) == 0x08) {
+						buffer[start] = (byte) 38;
+					} else if (38 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 38;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSFLW : {
+					m.setTripletId(17);
+					GSFLW obj = (GSFLW) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (obj.getMH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getMH());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getMFR() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3, obj.getMFR());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if ((17 & 0x88) == 0x08) {
+						buffer[start] = (byte) 17;
+					} else if (17 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 17;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSLT : {
+					m.setTripletId(24);
+					GSLT obj = (GSLT) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLINETYPE() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLINETYPE());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((24 & 0x88) == 0x08) {
+						buffer[start] = (byte) 24;
+					} else if (24 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 24;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSLW : {
+					m.setTripletId(25);
+					GSLW obj = (GSLW) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getMH() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getMH());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((25 & 0x88) == 0x08) {
+						buffer[start] = (byte) 25;
+					} else if (25 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 25;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSMC : {
+					m.setTripletId(55);
+					GSMC obj = (GSMC) m;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (obj.getCELLWI() != null) {
+
+						if (obj.getCELLWI() != null) {
+							Saver.saveSigned(buffer, start + 2, start + 3, obj.getCELLWI());
+						}
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getCELLHI() != null) {
+
+						if (obj.getCELLHI() != null) {
+							Saver.saveSigned(buffer, start + 4, start + 5, obj.getCELLHI());
+						}
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if ((55 & 0x88) == 0x08) {
+						buffer[start] = (byte) 55;
+					} else if (55 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 55;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSMP : {
+					m.setTripletId(59);
+					GSMP obj = (GSMP) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getPREC() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getPREC());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((59 & 0x88) == 0x08) {
+						buffer[start] = (byte) 59;
+					} else if (59 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 59;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSMS : {
+					m.setTripletId(60);
+					GSMS obj = (GSMS) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLCID() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLCID());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((60 & 0x88) == 0x08) {
+						buffer[start] = (byte) 60;
+					} else if (60 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 60;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSMT : {
+					m.setTripletId(41);
+					GSMT obj = (GSMT) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getMCPT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getMCPT());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((41 & 0x88) == 0x08) {
+						buffer[start] = (byte) 41;
+					} else if (41 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 41;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSMX : {
+					m.setTripletId(12);
+					GSMX obj = (GSMX) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getMODE() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getMODE());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((12 & 0x88) == 0x08) {
+						buffer[start] = (byte) 12;
+					} else if (12 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 12;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSPS : {
+					m.setTripletId(8);
+					GSPS obj = (GSPS) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLCID() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLCID());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((8 & 0x88) == 0x08) {
+						buffer[start] = (byte) 8;
+					} else if (8 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 8;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSPT : {
+					m.setTripletId(40);
+					GSPT obj = (GSPT) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getPATT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getPATT());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((40 & 0x88) == 0x08) {
+						buffer[start] = (byte) 40;
+					} else if (40 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 40;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSPCOL : {
+					m.setTripletId(178);
+					GSPCOL obj = (GSPCOL) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (8 + 1 > length)
+						length = 8 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (10 + 1 > length)
+						length = 10 + 1;
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+					if (obj.getRES1() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getRES1());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getCOLSPCE() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3, obj.getCOLSPCE());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getRES2() != null) {
+
+						Saver.saveUnsigned(buffer, start + 4, start + 7, obj.getRES2());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getCOLSIZE1() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 8, obj.getCOLSIZE1());
+
+						if (8 + 1 > length)
+							length = 8 + 1;
+
+					}
+
+					if (obj.getCOLSIZE2() != null) {
+
+						Saver.saveUnsigned(buffer, start + 9, start + 9, obj.getCOLSIZE2());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getCOLSIZE3() != null) {
+
+						Saver.saveUnsigned(buffer, start + 10, start + 10, obj.getCOLSIZE3());
+
+						if (10 + 1 > length)
+							length = 10 + 1;
+
+					}
+
+					if (obj.getCOLSIZE4() != null) {
+
+						Saver.saveUnsigned(buffer, start + 11, start + 11, obj.getCOLSIZE4());
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if (obj.getCOLVALUE() != null) {
+
+						{
+							int size = Saver.save(buffer, start + 12, obj.getCOLVALUE());
+							if (12 + size > length)
+								length = 12 + size;
+						}
+
+					}
+
+					if ((178 & 0x88) == 0x08) {
+						buffer[start] = (byte) 178;
+					} else if (178 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 178;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSLE : {
+					m.setTripletId(26);
+					GSLE obj = (GSLE) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLINEEND() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLINEEND());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((26 & 0x88) == 0x08) {
+						buffer[start] = (byte) 26;
+					} else if (26 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 26;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GSLJ : {
+					m.setTripletId(27);
+					GSLJ obj = (GSLJ) m;
+
+					if (1 + 1 > length)
+						length = 1 + 1;
+
+					if (obj.getLINEJOIN() != null) {
+
+						Saver.saveUnsigned(buffer, start + 1, start + 1, obj.getLINEJOIN());
+
+						if (1 + 1 > length)
+							length = 1 + 1;
+
+					}
+
+					if ((27 & 0x88) == 0x08) {
+						buffer[start] = (byte) 27;
+					} else if (27 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 27;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCBEZ : {
+					m.setTripletId(229);
+					GCBEZ obj = (GCBEZ) m;
+
+					{
+
+						int size = binary_GCBEZRG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((229 & 0x88) == 0x08) {
+						buffer[start] = (byte) 229;
+					} else if (229 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 229;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.GCCBEZ : {
+					m.setTripletId(165);
+					GCCBEZ obj = (GCCBEZ) m;
+
+					{
+
+						int size = binary_GCCBEZRG(buffer, start + 2, obj.getRg());
+						if (2 + size > length)
+							length = 2 + size;
+
+					}
+
+					if (obj.getRg() != null) {
+
+					}
+
+					if ((165 & 0x88) == 0x08) {
+						buffer[start] = (byte) 165;
+					} else if (165 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 165;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.WINDOW_SPECIFICATION : {
+					m.setTripletId(246);
+					WindowSpecification obj = (WindowSpecification) m;
+
+					if (2 + 1 > length)
+						length = 2 + 1;
+
+					if (3 + 1 > length)
+						length = 3 + 1;
+
+					if (4 + 1 > length)
+						length = 4 + 1;
+
+					if (5 + 1 > length)
+						length = 5 + 1;
+
+					if (7 + 1 > length)
+						length = 7 + 1;
+
+					if (9 + 1 > length)
+						length = 9 + 1;
+
+					if (11 + 1 > length)
+						length = 11 + 1;
+
+					if (13 + 1 > length)
+						length = 13 + 1;
+
+					if (15 + 1 > length)
+						length = 15 + 1;
+
+					if (17 + 1 > length)
+						length = 17 + 1;
+
+					if (19 + 1 > length)
+						length = 19 + 1;
+
+					if (obj.getFLAGS() != null) {
+
+						Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getFLAGS());
+
+						if (2 + 1 > length)
+							length = 2 + 1;
+
+					}
+
+					if (obj.getRES3() != null) {
+
+						Saver.saveUnsigned(buffer, start + 3, start + 3, obj.getRES3());
+
+						if (3 + 1 > length)
+							length = 3 + 1;
+
+					}
+
+					if (obj.getCFORMAT() != null) {
+
+						Saver.saveUnsigned(buffer, start + 4, start + 4, obj.getCFORMAT());
+
+						if (4 + 1 > length)
+							length = 4 + 1;
+
+					}
+
+					if (obj.getUBASE() != null) {
+
+						Saver.saveUnsigned(buffer, start + 5, start + 5, obj.getUBASE());
+
+						if (5 + 1 > length)
+							length = 5 + 1;
+
+					}
+
+					if (obj.getXRESOL() != null) {
+
+						Saver.saveUnsigned(buffer, start + 6, start + 7, obj.getXRESOL());
+
+						if (7 + 1 > length)
+							length = 7 + 1;
+
+					}
+
+					if (obj.getYRESOL() != null) {
+
+						Saver.saveUnsigned(buffer, start + 8, start + 9, obj.getYRESOL());
+
+						if (9 + 1 > length)
+							length = 9 + 1;
+
+					}
+
+					if (obj.getIMGXYRES() != null) {
+
+						Saver.saveUnsigned(buffer, start + 10, start + 11, obj.getIMGXYRES());
+
+						if (11 + 1 > length)
+							length = 11 + 1;
+
+					}
+
+					if (obj.getXLWIND() != null) {
+
+						if (obj.getXLWIND() != null) {
+							Saver.saveSigned(buffer, start + 12, start + 13, obj.getXLWIND());
+						}
+
+						if (13 + 1 > length)
+							length = 13 + 1;
+
+					}
+
+					if (obj.getXRWIND() != null) {
+
+						if (obj.getXRWIND() != null) {
+							Saver.saveSigned(buffer, start + 14, start + 15, obj.getXRWIND());
+						}
+
+						if (15 + 1 > length)
+							length = 15 + 1;
+
+					}
+
+					if (obj.getYBWIND() != null) {
+
+						if (obj.getYBWIND() != null) {
+							Saver.saveSigned(buffer, start + 16, start + 17, obj.getYBWIND());
+						}
+
+						if (17 + 1 > length)
+							length = 17 + 1;
+
+					}
+
+					if (obj.getYTWIND() != null) {
+
+						if (obj.getYTWIND() != null) {
+							Saver.saveSigned(buffer, start + 18, start + 19, obj.getYTWIND());
+						}
+
+						if (19 + 1 > length)
+							length = 19 + 1;
+
+					}
+
+					if ((246 & 0x88) == 0x08) {
+						buffer[start] = (byte) 246;
+					} else if (246 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 246;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
+					break;
+				}
+
+				case AfplibPackage.DRAWING_ORDER_SUBSET : {
+					m.setTripletId(247);
+					DrawingOrderSubset obj = (DrawingOrderSubset) m;
+
+					if ((247 & 0x88) == 0x08) {
+						buffer[start] = (byte) 247;
+					} else if (247 == 0xfe) {
+						// extended - unsupported
+					} else {
+						if (length == 0)
+							length = 2;
+						buffer[start] = (byte) 247;
+						buffer[start + 1] = (byte) (length - 2);
+					}
+
 					break;
 				}
 

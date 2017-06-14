@@ -1,7 +1,7 @@
 
 
  import Cocoa
- 
+
  enum SFID: Int {
  case BAG = 13871305
  case BBC = 13871339
@@ -134,15 +134,15 @@
  case FGD = 13870789
  
  }
-  
+
  public class SF {
     var id: Int
-    
+
     init(id: Int) {
         self.id = id
     }
   }
-  
+
  public class Triplet {
   }
   
@@ -207,7 +207,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -710,7 +710,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -751,7 +751,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 
@@ -1020,7 +1020,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -1387,7 +1387,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -1636,7 +1636,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -1807,7 +1807,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -1840,7 +1840,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -2097,7 +2097,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -2321,7 +2321,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -2632,7 +2632,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 
@@ -3317,7 +3317,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -3486,7 +3486,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 
@@ -3703,7 +3703,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -3718,7 +3718,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 
@@ -3873,7 +3873,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -4178,7 +4178,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -4295,7 +4295,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -4572,7 +4572,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -4599,7 +4599,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 
@@ -5362,7 +5362,7 @@
 	      	
 	      
 	  }
-  
+
   	  
 	  
 	  
@@ -9308,10 +9308,10 @@
   
   }
   
-  
+
   
   public class AMB : Triplet {
-  
+
   	  
 	
 	
@@ -9323,7 +9323,7 @@
   }
   
   public class AMI : Triplet {
-  
+
   	  
 	
 	
@@ -9335,7 +9335,7 @@
   }
   
   public class BLN : Triplet {
-  
+
   	  
 	
 
@@ -9343,7 +9343,7 @@
   }
   
   public class BSU : Triplet {
-  
+
   	  
 	
 	
@@ -9355,7 +9355,7 @@
   }
   
   public class DBR : Triplet {
-  
+
   	  
 	
 	
@@ -9375,7 +9375,7 @@
   }
   
   public class DIR : Triplet {
-  
+
   	  
 	
 	
@@ -9395,7 +9395,7 @@
   }
   
   public class ESU : Triplet {
-  
+
   	  
 	
 	
@@ -9407,7 +9407,7 @@
   }
   
   public class NOPCS : Triplet {
-  
+
   	  
 	
 	
@@ -9419,7 +9419,7 @@
   }
   
   public class OVS : Triplet {
-  
+
   	  
 	
 	
@@ -9435,7 +9435,7 @@
   }
   
   public class RMB : Triplet {
-  
+
   	  
 	
 	
@@ -9447,7 +9447,7 @@
   }
   
   public class RMI : Triplet {
-  
+
   	  
 	
 	
@@ -9459,7 +9459,7 @@
   }
   
   public class RPS : Triplet {
-  
+
   	  
 	
 	
@@ -9475,7 +9475,7 @@
   }
   
   public class SBI : Triplet {
-  
+
   	  
 	
 	
@@ -9487,7 +9487,7 @@
   }
   
   public class SCFL : Triplet {
-  
+
   	  
 	
 	
@@ -9499,7 +9499,7 @@
   }
   
   public class SEC : Triplet {
-  
+
   	  
 	
 	
@@ -9535,7 +9535,7 @@
   }
   
   public class SIA : Triplet {
-  
+
   	  
 	
 	
@@ -9551,7 +9551,7 @@
   }
   
   public class SIM : Triplet {
-  
+
   	  
 	
 	
@@ -9563,7 +9563,7 @@
   }
   
   public class STC : Triplet {
-  
+
   	  
 	
 	
@@ -9579,7 +9579,7 @@
   }
   
   public class STO : Triplet {
-  
+
   	  
 	
 	
@@ -9595,7 +9595,7 @@
   }
   
   public class SVI : Triplet {
-  
+
   	  
 	
 	
@@ -9607,7 +9607,7 @@
   }
   
   public class TBM : Triplet {
-  
+
   	  
 	
 	
@@ -9627,7 +9627,7 @@
   }
   
   public class TRN : Triplet {
-  
+
   	  
 	
 	
@@ -9639,7 +9639,7 @@
   }
   
   public class USC : Triplet {
-  
+
   	  
 	
 	
@@ -9651,7 +9651,7 @@
   }
   
   public class AttributeQualifier : Triplet {
-  
+
   	  
 	
 	
@@ -9667,7 +9667,7 @@
   }
   
   public class AttributeValue : Triplet {
-  
+
   	  
 	
 	
@@ -9683,7 +9683,7 @@
   }
   
   public class CGCSGID : Triplet {
-  
+
   	  
 	
 	
@@ -9699,7 +9699,7 @@
   }
   
   public class CRCResourceManagement : Triplet {
-  
+
   	  
 	
 	
@@ -9719,7 +9719,7 @@
   }
   
   public class CharacterRotation : Triplet {
-  
+
   	  
 	
 	
@@ -9731,7 +9731,7 @@
   }
   
   public class ColorSpecification : Triplet {
-  
+
   	  
 	
 	
@@ -9763,7 +9763,7 @@
   }
   
   public class Comment : Triplet {
-  
+
   	  
 	
 	
@@ -9775,7 +9775,7 @@
   }
   
   public class DataObjectFontDescriptor : Triplet {
-  
+
   	  
 	
 	
@@ -9815,7 +9815,7 @@
   }
   
   public class DescriptorPosition : Triplet {
-  
+
   	  
 	
 	
@@ -9827,7 +9827,7 @@
   }
   
   public class EncodingSchemeID : Triplet {
-  
+
   	  
 	
 	
@@ -9843,7 +9843,7 @@
   }
   
   public class FontResolution : Triplet {
-  
+
   	  
 	
 	
@@ -9863,7 +9863,7 @@
   }
   
   public class FullyQualifiedName : Triplet {
-  
+
   	  
 	
 	
@@ -9883,7 +9883,7 @@
   }
   
   public class LocalDateAndTimeStamp : Triplet {
-  
+
   	  
 	
 	
@@ -9923,7 +9923,7 @@
   }
   
   public class UniversalDateAndTimeStamp : Triplet {
-  
+
   	  
 	
 	
@@ -9971,7 +9971,7 @@
   }
   
   public class MappingOption : Triplet {
-  
+
   	  
 	
 	
@@ -9983,7 +9983,7 @@
   }
   
   public class MediaEjectControl : Triplet {
-  
+
   	  
 	
 	
@@ -9999,7 +9999,7 @@
   }
   
   public class MediumMapPageNumber : Triplet {
-  
+
   	  
 	
 	
@@ -10011,7 +10011,7 @@
   }
   
   public class MediumOrientation : Triplet {
-  
+
   	  
 	
 	
@@ -10023,7 +10023,7 @@
   }
   
   public class MeasurementUnits : Triplet {
-  
+
   	  
 	
 	
@@ -10047,7 +10047,7 @@
   }
   
   public class MODCAInterchangeSet : Triplet {
-  
+
   	  
 	
 	
@@ -10063,7 +10063,7 @@
   }
   
   public class ObjectAreaSize : Triplet {
-  
+
   	  
 	
 	
@@ -10083,7 +10083,7 @@
   }
   
   public class ObjectClassification : Triplet {
-  
+
   	  
 	
 	
@@ -10115,7 +10115,7 @@
   }
   
   public class ObjectFunctionSetSpecification : Triplet {
-  
+
   	  
 	
 	
@@ -10139,7 +10139,7 @@
   }
   
   public class ObjectOffset : Triplet {
-  
+
   	  
 	
 	
@@ -10159,7 +10159,7 @@
   }
   
   public class ResourceObjectType : Triplet {
-  
+
   	  
 	
 	
@@ -10175,7 +10175,7 @@
   }
   
   public class PagePositionInformation : Triplet {
-  
+
   	  
 	
 	
@@ -10187,7 +10187,7 @@
   }
   
   public class PresentationControl : Triplet {
-  
+
   	  
 	
 	
@@ -10199,7 +10199,7 @@
   }
   
   public class PresentationSpaceResetMixing : Triplet {
-  
+
   	  
 	
 	
@@ -10211,7 +10211,7 @@
   }
   
   public class PresentationSpaceMixingRules : Triplet {
-  
+
   	  
 	
 
@@ -10219,7 +10219,7 @@
   }
   
   public class ResourceLocalIdentifier : Triplet {
-  
+
   	  
 	
 	
@@ -10235,7 +10235,7 @@
   }
   
   public class ResourceSectionNumber : Triplet {
-  
+
   	  
 	
 	
@@ -10247,7 +10247,7 @@
   }
   
   public class TextOrientation : Triplet {
-  
+
   	  
 	
 	
@@ -10263,7 +10263,7 @@
   }
   
   public class FontHorizontalScaleFactor : Triplet {
-  
+
   	  
 	
 	
@@ -10275,7 +10275,7 @@
   }
   
   public class FontDescriptorSpecification : Triplet {
-  
+
   	  
 	
 	
@@ -10307,7 +10307,7 @@
   }
   
   public class BeginSegment : Triplet {
-  
+
   	  
 	
 	
@@ -10319,7 +10319,7 @@
   }
   
   public class EndSegment : Triplet {
-  
+
   	  
 	
 
@@ -10327,7 +10327,7 @@
   }
   
   public class BeginTile : Triplet {
-  
+
   	  
 	
 
@@ -10335,7 +10335,7 @@
   }
   
   public class EndTile : Triplet {
-  
+
   	  
 	
 
@@ -10343,7 +10343,7 @@
   }
   
   public class BeginTransparencyMask : Triplet {
-  
+
   	  
 	
 
@@ -10351,7 +10351,7 @@
   }
   
   public class EndTransparencyMask : Triplet {
-  
+
   	  
 	
 
@@ -10359,7 +10359,7 @@
   }
   
   public class BeginImage : Triplet {
-  
+
   	  
 	
 	
@@ -10371,7 +10371,7 @@
   }
   
   public class EndImage : Triplet {
-  
+
   	  
 	
 
@@ -10379,7 +10379,7 @@
   }
   
   public class ImageSize : Triplet {
-  
+
   	  
 	
 	
@@ -10407,7 +10407,7 @@
   }
   
   public class ImageEncoding : Triplet {
-  
+
   	  
 	
 	
@@ -10427,7 +10427,7 @@
   }
   
   public class IDESize : Triplet {
-  
+
   	  
 	
 	
@@ -10439,7 +10439,7 @@
   }
   
   public class ImageLUTID : Triplet {
-  
+
   	  
 	
 	
@@ -10451,7 +10451,7 @@
   }
   
   public class BandImage : Triplet {
-  
+
   	  
 	
 	
@@ -10469,7 +10469,7 @@
   }
   
   public class IDEStructure : Triplet {
-  
+
   	  
 	
 	
@@ -10501,7 +10501,7 @@
   }
   
   public class ExternalAlgorithm : Triplet {
-  
+
   	  
 	
 	
@@ -10519,7 +10519,7 @@
   }
   
   public class TilePosition : Triplet {
-  
+
   	  
 	
 	
@@ -10535,7 +10535,7 @@
   }
   
   public class TileSize : Triplet {
-  
+
   	  
 	
 	
@@ -10555,7 +10555,7 @@
   }
   
   public class TileSetColor : Triplet {
-  
+
   	  
 	
 	
@@ -10603,7 +10603,7 @@
   }
   
   public class SetBiLevelImageColor : Triplet {
-  
+
   	  
 	
 	
@@ -10623,7 +10623,7 @@
   }
   
   public class IOCAFunctionSetIdentification : Triplet {
-  
+
   	  
 	
 	
@@ -10639,7 +10639,7 @@
   }
   
   public class ImageData : Triplet {
-  
+
   	  
 	
 	
@@ -10651,7 +10651,7 @@
   }
   
   public class BandImageData : Triplet {
-  
+
   	  
 	
 	
@@ -10671,7 +10671,7 @@
   }
   
   public class IncludeTile : Triplet {
-  
+
   	  
 	
 	
@@ -10683,7 +10683,7 @@
   }
   
   public class ImageSubsampling : Triplet {
-  
+
   	  
 	
 	
@@ -10697,7 +10697,7 @@
   }
   
   public class SamplingRatios : Triplet {
-  
+
   	  
 	
 	
@@ -10711,7 +10711,7 @@
   }
   
   public class TileTOC : Triplet {
-  
+
   	  
 	
 	
@@ -10729,7 +10729,7 @@
   }
   
   public class CPIRG : Triplet {
-  
+
   	  
 	
 	
@@ -10753,7 +10753,7 @@
   }
   
   public class CFIRG : Triplet {
-  
+
   	  
 	
 	
@@ -10785,7 +10785,7 @@
   }
   
   public class FNIRG : Triplet {
-  
+
   	  
 	
 	
@@ -10837,7 +10837,7 @@
   }
   
   public class FNMRG : Triplet {
-  
+
   	  
 	
 	
@@ -10857,7 +10857,7 @@
   }
   
   public class LLERG : Triplet {
-  
+
   	  
 	
 	
@@ -10879,7 +10879,7 @@
   }
   
   public class MPSRG : Triplet {
-  
+
   	  
 	
 	
@@ -10895,7 +10895,7 @@
   }
   
   public class MCFRG : Triplet {
-  
+
   	  
 	
 	
@@ -10913,7 +10913,7 @@
   }
   
   public class MBCRG : Triplet {
-  
+
   	  
 	
 	
@@ -10931,7 +10931,7 @@
   }
   
   public class MCARG : Triplet {
-  
+
   	  
 	
 	
@@ -10949,7 +10949,7 @@
   }
   
   public class MCDRG : Triplet {
-  
+
   	  
 	
 	
@@ -10967,7 +10967,7 @@
   }
   
   public class MDRRG : Triplet {
-  
+
   	  
 	
 	
@@ -10985,7 +10985,7 @@
   }
   
   public class MGORG : Triplet {
-  
+
   	  
 	
 	
@@ -11003,7 +11003,7 @@
   }
   
   public class MIORG : Triplet {
-  
+
   	  
 	
 	
@@ -11021,7 +11021,7 @@
   }
   
   public class MMDRG : Triplet {
-  
+
   	  
 	
 	
@@ -11039,7 +11039,7 @@
   }
   
   public class MMTRG : Triplet {
-  
+
   	  
 	
 	
@@ -11057,7 +11057,7 @@
   }
   
   public class MPGRG : Triplet {
-  
+
   	  
 	
 	
@@ -11075,7 +11075,7 @@
   }
   
   public class MPORG : Triplet {
-  
+
   	  
 	
 	
@@ -11093,7 +11093,7 @@
   }
   
   public class PPORG : Triplet {
-  
+
   	  
 	
 	
@@ -11127,7 +11127,7 @@
   }
   
   public class PGPRG : Triplet {
-  
+
   	  
 	
 	
@@ -11163,7 +11163,7 @@
   }
   
   public class MCCRG : Triplet {
-  
+
   	  
 	
 	
@@ -11183,7 +11183,7 @@
   }
   
   public class MMORG : Triplet {
-  
+
   	  
 	
 	
@@ -11203,7 +11203,7 @@
   }
   
   public class BandImageRG : Triplet {
-  
+
   	  
 	
 	
@@ -11215,7 +11215,7 @@
   }
   
   public class MCF1RG : Triplet {
-  
+
   	  
 	
 	
@@ -11247,7 +11247,7 @@
   }
   
   public class MMCRG : Triplet {
-  
+
   	  
 	
 	
@@ -11263,7 +11263,7 @@
   }
   
   public class FNORG : Triplet {
-  
+
   	  
 	
 	
@@ -11327,7 +11327,7 @@
   }
   
   public class FNPRG : Triplet {
-  
+
   	  
 	
 	
@@ -11379,7 +11379,7 @@
   }
   
   public class TileTOCRG : Triplet {
-  
+
   	  
 	
 	
@@ -11415,7 +11415,7 @@
   }
   
   public class SamplingRatiosRG : Triplet {
-  
+
   	  
 	
 	
@@ -11431,7 +11431,7 @@
   }
   
   public class ExternalAlgorithmRG : Triplet {
-  
+
   	  
 	
 	
@@ -11451,7 +11451,7 @@
   }
   
   public class FNNRG : Triplet {
-  
+
   	  
 	
 	
@@ -11467,7 +11467,7 @@
   }
   
   public class FNNRG2 : Triplet {
-  
+
   	  
 	
 	
@@ -11483,7 +11483,7 @@
   }
   
   public class BeginSegmentCommand : Triplet {
-  
+
   	  
 	
 	
@@ -11515,7 +11515,7 @@
   }
   
   public class EndSegmentCommand : Triplet {
-  
+
   	  
 	
 
@@ -11523,7 +11523,7 @@
   }
   
   public class GBAR : Triplet {
-  
+
   	  
 	
 	
@@ -11535,7 +11535,7 @@
   }
   
   public class GBIMG : Triplet {
-  
+
   	  
 	
 	
@@ -11567,7 +11567,7 @@
   }
   
   public class GCBIMG : Triplet {
-  
+
   	  
 	
 	
@@ -11591,7 +11591,7 @@
   }
   
   public class GBOX : Triplet {
-  
+
   	  
 	
 	
@@ -11627,7 +11627,7 @@
   }
   
   public class GCBOX : Triplet {
-  
+
   	  
 	
 	
@@ -11655,7 +11655,7 @@
   }
   
   public class GCHST : Triplet {
-  
+
   	  
 	
 	
@@ -11675,7 +11675,7 @@
   }
   
   public class GCCHST : Triplet {
-  
+
   	  
 	
 	
@@ -11687,7 +11687,7 @@
   }
   
   public class GCOMT : Triplet {
-  
+
   	  
 	
 	
@@ -11699,7 +11699,7 @@
   }
   
   public class GEAR : Triplet {
-  
+
   	  
 	
 	
@@ -11711,7 +11711,7 @@
   }
   
   public class GEIMG : Triplet {
-  
+
   	  
 	
 	
@@ -11723,7 +11723,7 @@
   }
   
   public class GEPROL : Triplet {
-  
+
   	  
 	
 	
@@ -11735,7 +11735,7 @@
   }
   
   public class GFLT : Triplet {
-  
+
   	  
 	
 	
@@ -11749,7 +11749,7 @@
   }
   
   public class GCFLT : Triplet {
-  
+
   	  
 	
 	
@@ -11763,7 +11763,7 @@
   }
   
   public class GFARC : Triplet {
-  
+
   	  
 	
 	
@@ -11787,7 +11787,7 @@
   }
   
   public class GCFARC : Triplet {
-  
+
   	  
 	
 	
@@ -11803,7 +11803,7 @@
   }
   
   public class GIMD : Triplet {
-  
+
   	  
 	
 	
@@ -11815,7 +11815,7 @@
   }
   
   public class GLINE : Triplet {
-  
+
   	  
 	
 	
@@ -11829,7 +11829,7 @@
   }
   
   public class GCLINE : Triplet {
-  
+
   	  
 	
 	
@@ -11843,7 +11843,7 @@
   }
   
   public class GMRK : Triplet {
-  
+
   	  
 	
 	
@@ -11857,7 +11857,7 @@
   }
   
   public class GCMRK : Triplet {
-  
+
   	  
 	
 	
@@ -11871,7 +11871,7 @@
   }
   
   public class GNOP1 : Triplet {
-  
+
   	  
 	
 
@@ -11879,7 +11879,7 @@
   }
   
   public class GPARC : Triplet {
-  
+
   	  
 	
 	
@@ -11919,7 +11919,7 @@
   }
   
   public class GCPARC : Triplet {
-  
+
   	  
 	
 	
@@ -11951,7 +11951,7 @@
   }
   
   public class GRLINE : Triplet {
-  
+
   	  
 	
 	
@@ -11973,7 +11973,7 @@
   }
   
   public class GCRLINE : Triplet {
-  
+
   	  
 	
 	
@@ -11987,7 +11987,7 @@
   }
   
   public class GSGCH : Triplet {
-  
+
   	  
 	
 
@@ -11995,7 +11995,7 @@
   }
   
   public class GSAP : Triplet {
-  
+
   	  
 	
 	
@@ -12019,7 +12019,7 @@
   }
   
   public class GSBMX : Triplet {
-  
+
   	  
 	
 	
@@ -12031,7 +12031,7 @@
   }
   
   public class GSCA : Triplet {
-  
+
   	  
 	
 	
@@ -12047,7 +12047,7 @@
   }
   
   public class GSCC : Triplet {
-  
+
   	  
 	
 	
@@ -12071,7 +12071,7 @@
   }
   
   public class GSCD : Triplet {
-  
+
   	  
 	
 	
@@ -12083,7 +12083,7 @@
   }
   
   public class GSCR : Triplet {
-  
+
   	  
 	
 	
@@ -12095,7 +12095,7 @@
   }
   
   public class GSCS : Triplet {
-  
+
   	  
 	
 	
@@ -12107,7 +12107,7 @@
   }
   
   public class GSCH : Triplet {
-  
+
   	  
 	
 	
@@ -12123,7 +12123,7 @@
   }
   
   public class GSCOL : Triplet {
-  
+
   	  
 	
 	
@@ -12135,7 +12135,7 @@
   }
   
   public class GSCP : Triplet {
-  
+
   	  
 	
 	
@@ -12151,7 +12151,7 @@
   }
   
   public class GSECOL : Triplet {
-  
+
   	  
 	
 	
@@ -12163,7 +12163,7 @@
   }
   
   public class GSFLW : Triplet {
-  
+
   	  
 	
 	
@@ -12179,7 +12179,7 @@
   }
   
   public class GSLT : Triplet {
-  
+
   	  
 	
 	
@@ -12191,7 +12191,7 @@
   }
   
   public class GSLW : Triplet {
-  
+
   	  
 	
 	
@@ -12203,7 +12203,7 @@
   }
   
   public class GSMC : Triplet {
-  
+
   	  
 	
 	
@@ -12219,7 +12219,7 @@
   }
   
   public class GSMP : Triplet {
-  
+
   	  
 	
 	
@@ -12231,7 +12231,7 @@
   }
   
   public class GSMS : Triplet {
-  
+
   	  
 	
 	
@@ -12243,7 +12243,7 @@
   }
   
   public class GSMT : Triplet {
-  
+
   	  
 	
 	
@@ -12255,7 +12255,7 @@
   }
   
   public class GSMX : Triplet {
-  
+
   	  
 	
 	
@@ -12267,7 +12267,7 @@
   }
   
   public class GSPS : Triplet {
-  
+
   	  
 	
 	
@@ -12279,7 +12279,7 @@
   }
   
   public class GSPT : Triplet {
-  
+
   	  
 	
 	
@@ -12291,7 +12291,7 @@
   }
   
   public class GSPCOL : Triplet {
-  
+
   	  
 	
 	
@@ -12331,7 +12331,7 @@
   }
   
   public class GSLE : Triplet {
-  
+
   	  
 	
 	
@@ -12343,7 +12343,7 @@
   }
   
   public class GSLJ : Triplet {
-  
+
   	  
 	
 	
@@ -12355,7 +12355,7 @@
   }
   
   public class GCBEZ : Triplet {
-  
+
   	  
 	
 	
@@ -12369,7 +12369,7 @@
   }
   
   public class GCCBEZ : Triplet {
-  
+
   	  
 	
 	
@@ -12383,7 +12383,7 @@
   }
   
   public class WindowSpecification : Triplet {
-  
+
   	  
 	
 	
@@ -12435,7 +12435,7 @@
   }
   
   public class DrawingOrderSubset : Triplet {
-  
+
   	  
 	
 
@@ -12443,7 +12443,7 @@
   }
   
   public class GCBEZRG : Triplet {
-  
+
   	  
 	
 	
@@ -12459,7 +12459,7 @@
   }
   
   public class GCCBEZRG : Triplet {
-  
+
   	  
 	
 	
@@ -12475,7 +12475,7 @@
   }
   
   public class GFLTRG : Triplet {
-  
+
   	  
 	
 	
@@ -12491,7 +12491,7 @@
   }
   
   public class GCFLTRG : Triplet {
-  
+
   	  
 	
 	
@@ -12507,7 +12507,7 @@
   }
   
   public class GLINERG : Triplet {
-  
+
   	  
 	
 	
@@ -12523,7 +12523,7 @@
   }
   
   public class GCLINERG : Triplet {
-  
+
   	  
 	
 	
@@ -12539,7 +12539,7 @@
   }
   
   public class GMRKRG : Triplet {
-  
+
   	  
 	
 	
@@ -12555,7 +12555,7 @@
   }
   
   public class GCMRKRG : Triplet {
-  
+
   	  
 	
 	
@@ -12571,7 +12571,7 @@
   }
   
   public class GRLINERG : Triplet {
-  
+
   	  
 	
 	
@@ -12587,7 +12587,7 @@
   }
   
   public class GCRLINERG : Triplet {
-  
+
   	  
 	
 	
@@ -12603,7 +12603,7 @@
   }
   
   public class TonerSaver : Triplet {
-  
+
   	  
 	
 	
@@ -12615,7 +12615,7 @@
   }
   
   public class ColorFidelity : Triplet {
-  
+
   	  
 	
 	
@@ -12635,7 +12635,7 @@
   }
   
   public class FontFidelity : Triplet {
-  
+
   	  
 	
 	
@@ -12647,7 +12647,7 @@
   }
   
   public class TextFidelity : Triplet {
-  
+
   	  
 	
 	
@@ -12663,7 +12663,7 @@
   }
   
   public class MediaFidelity : Triplet {
-  
+
   	  
 	
 	
@@ -12675,7 +12675,7 @@
   }
   
   public class FinishingFidelity : Triplet {
-  
+
   	  
 	
 	
@@ -12691,7 +12691,7 @@
   }
   
   public class CMRFidelity : Triplet {
-  
+
   	  
 	
 	
@@ -12707,7 +12707,7 @@
   }
   
   public class ObjectByteExtent : Triplet {
-  
+
   	  
 	
 	
@@ -12723,7 +12723,7 @@
   }
   
   public class ObjectByteOffset : Triplet {
-  
+
   	  
 	
 	
@@ -12739,7 +12739,7 @@
   }
   
   public class ObjectStructuredFieldExtent : Triplet {
-  
+
   	  
 	
 	
@@ -12755,7 +12755,7 @@
   }
   
   public class ObjectStructuredFieldOffset : Triplet {
-  
+
   	  
 	
 	
@@ -12771,7 +12771,7 @@
   }
   
   public class ObjectCount : Triplet {
-  
+
   	  
 	
 	
@@ -12791,7 +12791,7 @@
   }
   
   public class ObjectOriginIdentifier : Triplet {
-  
+
   	  
 	
 	
@@ -12815,7 +12815,7 @@
   }
   
   public class LineDataObjectPositionMigration : Triplet {
-  
+
   	  
 	
 	
@@ -12827,7 +12827,7 @@
   }
   
   public class ColorManagementResourceDescriptor : Triplet {
-  
+
   	  
 	
 	
@@ -12843,7 +12843,7 @@
   }
   
   public class MSURG : Triplet {
-  
+
   	  
 	
 	
@@ -12863,7 +12863,7 @@
   }
   
   public class ImageResolution : Triplet {
-  
+
   	  
 	
 	
@@ -12887,7 +12887,7 @@
   }
   
   public class ObjectContainerPresentationSpaceSize : Triplet {
-  
+
   	  
 	
 	
@@ -12899,7 +12899,7 @@
   }
   
   public class ExtendedResourceLocalIdentifier : Triplet {
-  
+
   	  
 	
 	
@@ -12915,7 +12915,7 @@
   }
   
   public class MetricAdjustment : Triplet {
-  
+
   	  
 	
 	
@@ -12951,7 +12951,7 @@
   }
   
   public class ExtensionFont : Triplet {
-  
+
   	  
 	
 	
@@ -12963,7 +12963,7 @@
   }
   
   public class RenderingIntent : Triplet {
-  
+
   	  
 	
 	
@@ -12995,7 +12995,7 @@
   }
   
   public class FontCodedGraphicCharacterSetGlobalIdentifier : Triplet {
-  
+
   	  
 	
 	
@@ -13011,7 +13011,7 @@
   }
   
   public class LocaleSelector : Triplet {
-  
+
   	  
 	
 	
@@ -13043,7 +13043,7 @@
   }
   
   public class FinishingOperation : Triplet {
-  
+
   	  
 	
 	
@@ -13071,7 +13071,7 @@
   }
   
   public class UP3iFinishingOperation : Triplet {
-  
+
   	  
 	
 	
@@ -13087,7 +13087,7 @@
   }
   
   public class DeviceAppearance : Triplet {
-  
+
   	  
 	
 	
@@ -13103,7 +13103,7 @@
   }
   
   public class ResourceObjectInclude : Triplet {
-  
+
   	  
 	
 	
@@ -13131,7 +13131,7 @@
   }
   
   public class PageOverlayConditionalProcessing : Triplet {
-  
+
   	  
 	
 	
@@ -13147,7 +13147,7 @@
   }
   
   public class ResourceUsageAttribute : Triplet {
-  
+
   	  
 	
 	
@@ -13158,4 +13158,4 @@
 
   }
   
-  
+
