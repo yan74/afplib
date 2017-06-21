@@ -10,19 +10,27 @@ import org.afplib.base.SF;
 public class AfpInputStream extends FilterInputStream {
 
 	StructuredFieldFactory factory = new StructuredFieldFactory();
+	byte[] header = new byte[5];
 	byte[] data = new byte[32768];
 	int length;
 	
 	int number = 0;
 	long offset = 0;
 	int leadingLengthBytes = -1;
+	boolean has5a = true;
 	
 	public AfpInputStream(InputStream in) {
 		super(in);
+		try {
+            super.read(header, 0, header.length);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 	}
 
 	public AfpInputStream(InputStream in, int leadingBytesToIgnorePerSF) {
-		super(in);
+	    this(in);
 		leadingLengthBytes = leadingBytesToIgnorePerSF;
 	}
 
@@ -35,7 +43,7 @@ public class AfpInputStream extends FilterInputStream {
 	 */
 	public SF readStructuredField() throws IOException {
 		
-		int buf;
+		int buf = 0;
 		
 		long thisOffset = offset;
 
@@ -48,25 +56,47 @@ public class AfpInputStream extends FilterInputStream {
 				leadingLength++;
 			} while((buf & 0xff) != 0x5a && buf != -1 && leadingLength < 5);
 			
+			if((buf & 0xff) != 0x5a) {
+			    has5a = false;
+			    leadingLength = 1;
+			    // so try if byte 3 is 0xd3 -> so this would be an afp without 5a magic byte
+			    offset = 2;
+			    buf = read();
+			    if((buf & 0xff) != 0xd3) {
+		            throw new IOException("cannot find 5a magic byte nor d3 -> this is no AFP");			        
+			    }
+			    offset = 0;
+			}
+			
 			leadingLengthBytes = leadingLength-1;
 			
 //			if(buf == -1 && leadingLength > 1)
 //				throw new IOException("found trailing garbage at the end of file.");
 		} else {
 			if(leadingLengthBytes > 0) read(data, 0, leadingLengthBytes); // just throw away those
-			buf = read(); offset++;
+			if(has5a) {
+			    buf = read();
+			    offset++;
+			}
 		}
 		
-		if(buf == -1)
+		if(buf == -1) {
 			return null;
+		}
 		
-		if((buf & 0xff) != 0x5a)
+		if(has5a && (buf & 0xff) != 0x5a) {
 			throw new IOException("cannot find 5a magic byte");
-		data[0] = (byte) (buf & 0xff);
+		}
+		data[0] = 0x5a; // (byte) (buf & 0xff);
 		
 		buf = read(); offset++;
-		if(buf == -1)
+		if(buf == -1 && !has5a) {
+		    return null; 
+		}
+		
+		if(buf == -1) {
 			throw new IOException("premature end of file.");
+		}
 		data[1] = (byte) (buf & 0xff);
 
 		length = (byte) buf << 8;
@@ -95,6 +125,27 @@ public class AfpInputStream extends FilterInputStream {
 		sf.setNumber(number++);
 		
 		return sf;
+	}
+	
+	@Override
+	public int read() throws IOException {
+	    if(offset < header.length) {
+	        return header[(int) offset];
+	    }
+	    return super.read();
+	}
+	
+	@Override
+	public int read(byte[] b, int off, int len) throws IOException {
+	    if(offset < header.length) {
+	        int bytesToReadFromHeaderBuffer = Math.min(header.length - (int) offset, len);
+            System.arraycopy(header, (int) offset, b, off, bytesToReadFromHeaderBuffer);
+	        if(offset + len <= header.length) return len;
+	        
+	        int res = super.read(b, off + bytesToReadFromHeaderBuffer, len - bytesToReadFromHeaderBuffer);
+	        return res + bytesToReadFromHeaderBuffer;
+	    }
+	    return super.read(b, off, len);
 	}
 	
 	/**
