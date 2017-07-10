@@ -11,6 +11,17 @@ public abstract class AbstractChainLink implements ChainLink {
 	protected List<SF> sfBuffer = new ArrayList<SF>();
 	protected Chain chain;
 
+	private long nsFirstPass = 0;
+	private long nsSecondPass = 0;
+
+	public long getNsFirstPass() {
+		return nsFirstPass;
+	}
+
+	public long getNsSecondPass() {
+		return nsSecondPass;
+	}
+
 	@Override
 	public boolean needTwoPass() {
 		return false;
@@ -18,16 +29,30 @@ public abstract class AbstractChainLink implements ChainLink {
 
 	@Override
 	public final boolean onStructuredField(Chain chain, SF sf) throws IOException {
-		if(chain == null) return read(sf);
+		long time = System.nanoTime();
 
-		this.chain = chain;
-		sfBuffer.add(sf);
-		if(!onStructuredField(sf)) {
-			commit();
-			return false;
+		if(chain == null) {
+			try {
+				return read(sf);
+			} finally {
+				time = System.nanoTime() - time;
+				nsFirstPass += time;
+			}
 		}
 
-		return true;
+		try {
+			this.chain = chain;
+			sfBuffer.add(sf);
+			if(!onStructuredField(sf)) {
+				commit();
+				return false;
+			}
+
+			return true;
+		} finally {
+			time = System.nanoTime() - time;
+			nsSecondPass += time;
+		}
 	}
 
 	protected abstract boolean onStructuredField(SF sf) throws IOException;
