@@ -62,6 +62,7 @@ public class AfpInputStream extends FilterInputStream {
 			    // so try if byte 3 is 0xd3 -> so this would be an afp without 5a magic byte
 			    offset = 2;
 			    buf = read();
+			    if(buf == -1) return null;
 			    if((buf & 0xff) != 0xd3) {
 		            throw new IOException("cannot find 5a magic byte nor d3 -> this is no AFP");			        
 			    }

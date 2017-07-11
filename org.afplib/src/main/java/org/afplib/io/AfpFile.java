@@ -12,6 +12,8 @@ import org.afplib.base.SF;
 
 public class AfpFile extends RandomAccessFile {
 
+	int leadingLengthBytes = -1;
+
 	private final class AfpIn extends InputStream {
 		private AfpFile afpFile;
 
@@ -59,8 +61,10 @@ public class AfpFile extends RandomAccessFile {
 	public SF readStructuredField() throws IOException {
 		AfpInputStream afpin = null;
 		try {
-			afpin = new AfpInputStream(new AfpIn(this));
-			return afpin.readStructuredField();
+			afpin = new AfpInputStream(new AfpIn(this), leadingLengthBytes);
+			SF sf = afpin.readStructuredField();
+			if(leadingLengthBytes == -1) leadingLengthBytes = afpin.getLeadingLengthBytes();
+			return sf;
 		} finally {
 			if(afpin != null) afpin.close();
 		}
