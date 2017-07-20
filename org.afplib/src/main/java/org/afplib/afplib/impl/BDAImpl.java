@@ -31,296 +31,296 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class BDAImpl extends SFImpl implements BDA {
 	/**
-	 * The default value of the '{@link #getFlags() <em>Flags</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getFlags() <em>Flags</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFlags()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getFlags()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer FLAGS_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getFlags() <em>Flags</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getFlags() <em>Flags</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFlags()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getFlags()
+     * @generated
+     * @ordered
+     */
 	protected Integer flags = FLAGS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getXoffset() <em>Xoffset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getXoffset() <em>Xoffset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getXoffset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getXoffset()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer XOFFSET_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getXoffset() <em>Xoffset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getXoffset() <em>Xoffset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getXoffset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getXoffset()
+     * @generated
+     * @ordered
+     */
 	protected Integer xoffset = XOFFSET_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getYoffset() <em>Yoffset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getYoffset() <em>Yoffset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getYoffset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getYoffset()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer YOFFSET_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getYoffset() <em>Yoffset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getYoffset() <em>Yoffset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getYoffset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getYoffset()
+     * @generated
+     * @ordered
+     */
 	protected Integer yoffset = YOFFSET_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getData() <em>Data</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getData() <em>Data</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getData()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getData()
+     * @generated
+     * @ordered
+     */
 	protected static final byte[] DATA_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getData() <em>Data</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getData() <em>Data</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getData()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getData()
+     * @generated
+     * @ordered
+     */
 	protected byte[] data = DATA_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BDAImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.BDA;
-	}
+        return AfplibPackage.eINSTANCE.getBDA();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getFlags() {
-		return flags;
-	}
+        return flags;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setFlags(Integer newFlags) {
-		Integer oldFlags = flags;
-		flags = newFlags;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__FLAGS, oldFlags, flags));
-	}
+        Integer oldFlags = flags;
+        flags = newFlags;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__FLAGS, oldFlags, flags));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getXoffset() {
-		return xoffset;
-	}
+        return xoffset;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setXoffset(Integer newXoffset) {
-		Integer oldXoffset = xoffset;
-		xoffset = newXoffset;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__XOFFSET, oldXoffset, xoffset));
-	}
+        Integer oldXoffset = xoffset;
+        xoffset = newXoffset;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__XOFFSET, oldXoffset, xoffset));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getYoffset() {
-		return yoffset;
-	}
+        return yoffset;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setYoffset(Integer newYoffset) {
-		Integer oldYoffset = yoffset;
-		yoffset = newYoffset;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__YOFFSET, oldYoffset, yoffset));
-	}
+        Integer oldYoffset = yoffset;
+        yoffset = newYoffset;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__YOFFSET, oldYoffset, yoffset));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public byte[] getData() {
-		return data;
-	}
+        return data;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setData(byte[] newData) {
-		byte[] oldData = data;
-		data = newData;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__DATA, oldData, data));
-	}
+        byte[] oldData = data;
+        data = newData;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BDA__DATA, oldData, data));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.BDA__FLAGS:
-				return getFlags();
-			case AfplibPackage.BDA__XOFFSET:
-				return getXoffset();
-			case AfplibPackage.BDA__YOFFSET:
-				return getYoffset();
-			case AfplibPackage.BDA__DATA:
-				return getData();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.BDA__FLAGS:
+                return getFlags();
+            case AfplibPackage.BDA__XOFFSET:
+                return getXoffset();
+            case AfplibPackage.BDA__YOFFSET:
+                return getYoffset();
+            case AfplibPackage.BDA__DATA:
+                return getData();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.BDA__FLAGS:
-				setFlags((Integer)newValue);
-				return;
-			case AfplibPackage.BDA__XOFFSET:
-				setXoffset((Integer)newValue);
-				return;
-			case AfplibPackage.BDA__YOFFSET:
-				setYoffset((Integer)newValue);
-				return;
-			case AfplibPackage.BDA__DATA:
-				setData((byte[])newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.BDA__FLAGS:
+                setFlags((Integer)newValue);
+                return;
+            case AfplibPackage.BDA__XOFFSET:
+                setXoffset((Integer)newValue);
+                return;
+            case AfplibPackage.BDA__YOFFSET:
+                setYoffset((Integer)newValue);
+                return;
+            case AfplibPackage.BDA__DATA:
+                setData((byte[])newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BDA__FLAGS:
-				setFlags(FLAGS_EDEFAULT);
-				return;
-			case AfplibPackage.BDA__XOFFSET:
-				setXoffset(XOFFSET_EDEFAULT);
-				return;
-			case AfplibPackage.BDA__YOFFSET:
-				setYoffset(YOFFSET_EDEFAULT);
-				return;
-			case AfplibPackage.BDA__DATA:
-				setData(DATA_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BDA__FLAGS:
+                setFlags(FLAGS_EDEFAULT);
+                return;
+            case AfplibPackage.BDA__XOFFSET:
+                setXoffset(XOFFSET_EDEFAULT);
+                return;
+            case AfplibPackage.BDA__YOFFSET:
+                setYoffset(YOFFSET_EDEFAULT);
+                return;
+            case AfplibPackage.BDA__DATA:
+                setData(DATA_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BDA__FLAGS:
-				return FLAGS_EDEFAULT == null ? flags != null : !FLAGS_EDEFAULT.equals(flags);
-			case AfplibPackage.BDA__XOFFSET:
-				return XOFFSET_EDEFAULT == null ? xoffset != null : !XOFFSET_EDEFAULT.equals(xoffset);
-			case AfplibPackage.BDA__YOFFSET:
-				return YOFFSET_EDEFAULT == null ? yoffset != null : !YOFFSET_EDEFAULT.equals(yoffset);
-			case AfplibPackage.BDA__DATA:
-				return DATA_EDEFAULT == null ? data != null : !DATA_EDEFAULT.equals(data);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BDA__FLAGS:
+                return FLAGS_EDEFAULT == null ? flags != null : !FLAGS_EDEFAULT.equals(flags);
+            case AfplibPackage.BDA__XOFFSET:
+                return XOFFSET_EDEFAULT == null ? xoffset != null : !XOFFSET_EDEFAULT.equals(xoffset);
+            case AfplibPackage.BDA__YOFFSET:
+                return YOFFSET_EDEFAULT == null ? yoffset != null : !YOFFSET_EDEFAULT.equals(yoffset);
+            case AfplibPackage.BDA__DATA:
+                return DATA_EDEFAULT == null ? data != null : !DATA_EDEFAULT.equals(data);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (Flags: ");
-		result.append(flags);
-		result.append(", Xoffset: ");
-		result.append(xoffset);
-		result.append(", Yoffset: ");
-		result.append(yoffset);
-		result.append(", Data: ");
-		result.append(data);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (Flags: ");
+        result.append(flags);
+        result.append(", Xoffset: ");
+        result.append(xoffset);
+        result.append(", Yoffset: ");
+        result.append(yoffset);
+        result.append(", Data: ");
+        result.append(data);
+        result.append(')');
+        return result.toString();
+    }
 
 } //BDAImpl

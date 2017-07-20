@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GSCHImpl extends TripletImpl implements GSCH {
 	/**
-	 * The default value of the '{@link #getHX() <em>HX</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getHX() <em>HX</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHX()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getHX()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer HX_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getHX() <em>HX</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getHX() <em>HX</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHX()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getHX()
+     * @generated
+     * @ordered
+     */
 	protected Integer hx = HX_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getHY() <em>HY</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getHY() <em>HY</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHY()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getHY()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer HY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getHY() <em>HY</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getHY() <em>HY</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHY()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getHY()
+     * @generated
+     * @ordered
+     */
 	protected Integer hy = HY_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected GSCHImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.GSCH;
-	}
+        return AfplibPackage.eINSTANCE.getGSCH();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getHX() {
-		return hx;
-	}
+        return hx;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setHX(Integer newHX) {
-		Integer oldHX = hx;
-		hx = newHX;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCH__HX, oldHX, hx));
-	}
+        Integer oldHX = hx;
+        hx = newHX;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCH__HX, oldHX, hx));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getHY() {
-		return hy;
-	}
+        return hy;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setHY(Integer newHY) {
-		Integer oldHY = hy;
-		hy = newHY;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCH__HY, oldHY, hy));
-	}
+        Integer oldHY = hy;
+        hy = newHY;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCH__HY, oldHY, hy));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.GSCH__HX:
-				return getHX();
-			case AfplibPackage.GSCH__HY:
-				return getHY();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCH__HX:
+                return getHX();
+            case AfplibPackage.GSCH__HY:
+                return getHY();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.GSCH__HX:
-				setHX((Integer)newValue);
-				return;
-			case AfplibPackage.GSCH__HY:
-				setHY((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCH__HX:
+                setHX((Integer)newValue);
+                return;
+            case AfplibPackage.GSCH__HY:
+                setHY((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.GSCH__HX:
-				setHX(HX_EDEFAULT);
-				return;
-			case AfplibPackage.GSCH__HY:
-				setHY(HY_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCH__HX:
+                setHX(HX_EDEFAULT);
+                return;
+            case AfplibPackage.GSCH__HY:
+                setHY(HY_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.GSCH__HX:
-				return HX_EDEFAULT == null ? hx != null : !HX_EDEFAULT.equals(hx);
-			case AfplibPackage.GSCH__HY:
-				return HY_EDEFAULT == null ? hy != null : !HY_EDEFAULT.equals(hy);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCH__HX:
+                return HX_EDEFAULT == null ? hx != null : !HX_EDEFAULT.equals(hx);
+            case AfplibPackage.GSCH__HY:
+                return HY_EDEFAULT == null ? hy != null : !HY_EDEFAULT.equals(hy);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (HX: ");
-		result.append(hx);
-		result.append(", HY: ");
-		result.append(hy);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (HX: ");
+        result.append(hx);
+        result.append(", HY: ");
+        result.append(hy);
+        result.append(')');
+        return result.toString();
+    }
 
 } //GSCHImpl

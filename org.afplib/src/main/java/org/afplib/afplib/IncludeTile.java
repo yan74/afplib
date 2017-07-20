@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface IncludeTile extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>TIRID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>TIRID</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>TIRID</em>' attribute.
-	 * @see #setTIRID(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getIncludeTile_TIRID()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>TIRID</em>' attribute.
+     * @see #setTIRID(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getIncludeTile_TIRID()
+     * @model required="true"
+     * @generated
+     */
 	Integer getTIRID();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.IncludeTile#getTIRID <em>TIRID</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.IncludeTile#getTIRID <em>TIRID</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>TIRID</em>' attribute.
-	 * @see #getTIRID()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>TIRID</em>' attribute.
+     * @see #getTIRID()
+     * @generated
+     */
 	void setTIRID(Integer value);
 
 } // IncludeTile

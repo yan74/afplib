@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface MediumMapPageNumber extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>Page Num</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Page Num</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Page Num</em>' attribute.
-	 * @see #setPageNum(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getMediumMapPageNumber_PageNum()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Page Num</em>' attribute.
+     * @see #setPageNum(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getMediumMapPageNumber_PageNum()
+     * @model required="true"
+     * @generated
+     */
 	Integer getPageNum();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.MediumMapPageNumber#getPageNum <em>Page Num</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.MediumMapPageNumber#getPageNum <em>Page Num</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Page Num</em>' attribute.
-	 * @see #getPageNum()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Page Num</em>' attribute.
+     * @see #getPageNum()
+     * @generated
+     */
 	void setPageNum(Integer value);
 
 } // MediumMapPageNumber

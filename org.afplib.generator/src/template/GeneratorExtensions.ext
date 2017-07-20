@@ -12,6 +12,9 @@ int pow(double a, double b) :
 int sbin(int in, int size) :
 	JAVA org.afplib.generator.util.Math.sbin(java.lang.Integer, java.lang.Integer);	
 
+int calculateFlagValue(int size, int bit) :
+    JAVA org.afplib.generator.util.Math.calculateFlagValue(java.lang.Integer, java.lang.Integer);
+
 boolean isBegin(int id) :
 	JAVA org.afplib.generator.util.BeginHelper.isBegin(java.lang.Integer);
 

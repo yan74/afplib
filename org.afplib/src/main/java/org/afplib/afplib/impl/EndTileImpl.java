@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class EndTileImpl extends TripletImpl implements EndTile {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EndTileImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.END_TILE;
-	}
+        return AfplibPackage.eINSTANCE.getEndTile();
+    }
 
 } //EndTileImpl

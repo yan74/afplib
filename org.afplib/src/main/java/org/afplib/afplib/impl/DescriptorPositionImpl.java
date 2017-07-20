@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class DescriptorPositionImpl extends TripletImpl implements DescriptorPosition {
 	/**
-	 * The default value of the '{@link #getDesPosID() <em>Des Pos ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getDesPosID() <em>Des Pos ID</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDesPosID()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDesPosID()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer DES_POS_ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDesPosID() <em>Des Pos ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getDesPosID() <em>Des Pos ID</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDesPosID()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDesPosID()
+     * @generated
+     * @ordered
+     */
 	protected Integer desPosID = DES_POS_ID_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected DescriptorPositionImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.DESCRIPTOR_POSITION;
-	}
+        return AfplibPackage.eINSTANCE.getDescriptorPosition();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getDesPosID() {
-		return desPosID;
-	}
+        return desPosID;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setDesPosID(Integer newDesPosID) {
-		Integer oldDesPosID = desPosID;
-		desPosID = newDesPosID;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID, oldDesPosID, desPosID));
-	}
+        Integer oldDesPosID = desPosID;
+        desPosID = newDesPosID;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID, oldDesPosID, desPosID));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
-				return getDesPosID();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
+                return getDesPosID();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
-				setDesPosID((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
+                setDesPosID((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
-				setDesPosID(DES_POS_ID_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
+                setDesPosID(DES_POS_ID_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
-				return DES_POS_ID_EDEFAULT == null ? desPosID != null : !DES_POS_ID_EDEFAULT.equals(desPosID);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.DESCRIPTOR_POSITION__DES_POS_ID:
+                return DES_POS_ID_EDEFAULT == null ? desPosID != null : !DES_POS_ID_EDEFAULT.equals(desPosID);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (DesPosID: ");
-		result.append(desPosID);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (DesPosID: ");
+        result.append(desPosID);
+        result.append(')');
+        return result.toString();
+    }
 
 } //DescriptorPositionImpl

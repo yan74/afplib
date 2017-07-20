@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class EOGImpl extends SFImpl implements EOG {
 	/**
-	 * The default value of the '{@link #getOEGName() <em>OEG Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getOEGName() <em>OEG Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOEGName()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getOEGName()
+     * @generated
+     * @ordered
+     */
 	protected static final String OEG_NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getOEGName() <em>OEG Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getOEGName() <em>OEG Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOEGName()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getOEGName()
+     * @generated
+     * @ordered
+     */
 	protected String oegName = OEG_NAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EOGImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.EOG;
-	}
+        return AfplibPackage.eINSTANCE.getEOG();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getOEGName() {
-		return oegName;
-	}
+        return oegName;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setOEGName(String newOEGName) {
-		String oldOEGName = oegName;
-		oegName = newOEGName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EOG__OEG_NAME, oldOEGName, oegName));
-	}
+        String oldOEGName = oegName;
+        oegName = newOEGName;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EOG__OEG_NAME, oldOEGName, oegName));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.EOG__OEG_NAME:
-				return getOEGName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.EOG__OEG_NAME:
+                return getOEGName();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.EOG__OEG_NAME:
-				setOEGName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.EOG__OEG_NAME:
+                setOEGName((String)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.EOG__OEG_NAME:
-				setOEGName(OEG_NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.EOG__OEG_NAME:
+                setOEGName(OEG_NAME_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.EOG__OEG_NAME:
-				return OEG_NAME_EDEFAULT == null ? oegName != null : !OEG_NAME_EDEFAULT.equals(oegName);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.EOG__OEG_NAME:
+                return OEG_NAME_EDEFAULT == null ? oegName != null : !OEG_NAME_EDEFAULT.equals(oegName);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (OEGName: ");
-		result.append(oegName);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (OEGName: ");
+        result.append(oegName);
+        result.append(')');
+        return result.toString();
+    }
 
 } //EOGImpl

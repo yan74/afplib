@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface PagePositionInformation extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>PGPRG</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>PGPRG</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>PGPRG</em>' attribute.
-	 * @see #setPGPRG(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getPagePositionInformation_PGPRG()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>PGPRG</em>' attribute.
+     * @see #setPGPRG(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getPagePositionInformation_PGPRG()
+     * @model required="true"
+     * @generated
+     */
 	Integer getPGPRG();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.PagePositionInformation#getPGPRG <em>PGPRG</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.PagePositionInformation#getPGPRG <em>PGPRG</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>PGPRG</em>' attribute.
-	 * @see #getPGPRG()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>PGPRG</em>' attribute.
+     * @see #getPGPRG()
+     * @generated
+     */
 	void setPGPRG(Integer value);
 
 } // PagePositionInformation

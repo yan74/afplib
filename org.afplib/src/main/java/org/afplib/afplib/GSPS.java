@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GSPS extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>LCID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>LCID</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>LCID</em>' attribute.
-	 * @see #setLCID(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getGSPS_LCID()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>LCID</em>' attribute.
+     * @see #setLCID(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getGSPS_LCID()
+     * @model required="true"
+     * @generated
+     */
 	Integer getLCID();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GSPS#getLCID <em>LCID</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GSPS#getLCID <em>LCID</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>LCID</em>' attribute.
-	 * @see #getLCID()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>LCID</em>' attribute.
+     * @see #getLCID()
+     * @generated
+     */
 	void setLCID(Integer value);
 
 } // GSPS

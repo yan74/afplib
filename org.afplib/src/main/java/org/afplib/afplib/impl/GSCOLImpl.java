@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GSCOLImpl extends TripletImpl implements GSCOL {
 	/**
-	 * The default value of the '{@link #getCOL() <em>COL</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getCOL() <em>COL</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCOL()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getCOL()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer COL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getCOL() <em>COL</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getCOL() <em>COL</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCOL()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getCOL()
+     * @generated
+     * @ordered
+     */
 	protected Integer col = COL_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected GSCOLImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.GSCOL;
-	}
+        return AfplibPackage.eINSTANCE.getGSCOL();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getCOL() {
-		return col;
-	}
+        return col;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setCOL(Integer newCOL) {
-		Integer oldCOL = col;
-		col = newCOL;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCOL__COL, oldCOL, col));
-	}
+        Integer oldCOL = col;
+        col = newCOL;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCOL__COL, oldCOL, col));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.GSCOL__COL:
-				return getCOL();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCOL__COL:
+                return getCOL();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.GSCOL__COL:
-				setCOL((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCOL__COL:
+                setCOL((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.GSCOL__COL:
-				setCOL(COL_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCOL__COL:
+                setCOL(COL_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.GSCOL__COL:
-				return COL_EDEFAULT == null ? col != null : !COL_EDEFAULT.equals(col);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.GSCOL__COL:
+                return COL_EDEFAULT == null ? col != null : !COL_EDEFAULT.equals(col);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (COL: ");
-		result.append(col);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (COL: ");
+        result.append(col);
+        result.append(')');
+        return result.toString();
+    }
 
 } //GSCOLImpl

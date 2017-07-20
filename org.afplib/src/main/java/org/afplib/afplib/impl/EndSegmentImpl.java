@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class EndSegmentImpl extends TripletImpl implements EndSegment {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EndSegmentImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.END_SEGMENT;
-	}
+        return AfplibPackage.eINSTANCE.getEndSegment();
+    }
 
 } //EndSegmentImpl

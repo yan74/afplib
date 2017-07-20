@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface EDG extends SF {
 	/**
-	 * Returns the value of the '<em><b>DEG Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>DEG Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>DEG Name</em>' attribute.
-	 * @see #setDEGName(String)
-	 * @see org.afplib.afplib.AfplibPackage#getEDG_DEGName()
-	 * @model dataType="org.afplib.base.ModcaString8"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>DEG Name</em>' attribute.
+     * @see #setDEGName(String)
+     * @see org.afplib.afplib.AfplibPackage#getEDG_DEGName()
+     * @model dataType="org.afplib.base.ModcaString8"
+     * @generated
+     */
 	String getDEGName();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.EDG#getDEGName <em>DEG Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.EDG#getDEGName <em>DEG Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>DEG Name</em>' attribute.
-	 * @see #getDEGName()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>DEG Name</em>' attribute.
+     * @see #getDEGName()
+     * @generated
+     */
 	void setDEGName(String value);
 
 } // EDG

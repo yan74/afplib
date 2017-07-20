@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class DXDImpl extends SFImpl implements DXD {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected DXDImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.DXD;
-	}
+        return AfplibPackage.eINSTANCE.getDXD();
+    }
 
 } //DXDImpl

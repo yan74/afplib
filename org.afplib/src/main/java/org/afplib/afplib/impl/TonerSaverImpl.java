@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class TonerSaverImpl extends TripletImpl implements TonerSaver {
 	/**
-	 * The default value of the '{@link #getTSvCtrl() <em>TSv Ctrl</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getTSvCtrl() <em>TSv Ctrl</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTSvCtrl()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getTSvCtrl()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer TSV_CTRL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTSvCtrl() <em>TSv Ctrl</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getTSvCtrl() <em>TSv Ctrl</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTSvCtrl()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getTSvCtrl()
+     * @generated
+     * @ordered
+     */
 	protected Integer tSvCtrl = TSV_CTRL_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected TonerSaverImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.TONER_SAVER;
-	}
+        return AfplibPackage.eINSTANCE.getTonerSaver();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getTSvCtrl() {
-		return tSvCtrl;
-	}
+        return tSvCtrl;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setTSvCtrl(Integer newTSvCtrl) {
-		Integer oldTSvCtrl = tSvCtrl;
-		tSvCtrl = newTSvCtrl;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TONER_SAVER__TSV_CTRL, oldTSvCtrl, tSvCtrl));
-	}
+        Integer oldTSvCtrl = tSvCtrl;
+        tSvCtrl = newTSvCtrl;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TONER_SAVER__TSV_CTRL, oldTSvCtrl, tSvCtrl));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.TONER_SAVER__TSV_CTRL:
-				return getTSvCtrl();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.TONER_SAVER__TSV_CTRL:
+                return getTSvCtrl();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.TONER_SAVER__TSV_CTRL:
-				setTSvCtrl((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.TONER_SAVER__TSV_CTRL:
+                setTSvCtrl((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.TONER_SAVER__TSV_CTRL:
-				setTSvCtrl(TSV_CTRL_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.TONER_SAVER__TSV_CTRL:
+                setTSvCtrl(TSV_CTRL_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.TONER_SAVER__TSV_CTRL:
-				return TSV_CTRL_EDEFAULT == null ? tSvCtrl != null : !TSV_CTRL_EDEFAULT.equals(tSvCtrl);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.TONER_SAVER__TSV_CTRL:
+                return TSV_CTRL_EDEFAULT == null ? tSvCtrl != null : !TSV_CTRL_EDEFAULT.equals(tSvCtrl);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (TSvCtrl: ");
-		result.append(tSvCtrl);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (TSvCtrl: ");
+        result.append(tSvCtrl);
+        result.append(')');
+        return result.toString();
+    }
 
 } //TonerSaverImpl

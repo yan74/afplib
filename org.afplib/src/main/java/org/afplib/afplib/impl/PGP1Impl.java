@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class PGP1Impl extends SFImpl implements PGP1 {
 	/**
-	 * The default value of the '{@link #getXOset() <em>XOset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getXOset() <em>XOset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getXOset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getXOset()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer XOSET_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getXOset() <em>XOset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getXOset() <em>XOset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getXOset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getXOset()
+     * @generated
+     * @ordered
+     */
 	protected Integer xOset = XOSET_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getYOset() <em>YOset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getYOset() <em>YOset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getYOset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getYOset()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer YOSET_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getYOset() <em>YOset</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getYOset() <em>YOset</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getYOset()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getYOset()
+     * @generated
+     * @ordered
+     */
 	protected Integer yOset = YOSET_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PGP1Impl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.PGP1;
-	}
+        return AfplibPackage.eINSTANCE.getPGP1();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getXOset() {
-		return xOset;
-	}
+        return xOset;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setXOset(Integer newXOset) {
-		Integer oldXOset = xOset;
-		xOset = newXOset;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PGP1__XOSET, oldXOset, xOset));
-	}
+        Integer oldXOset = xOset;
+        xOset = newXOset;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PGP1__XOSET, oldXOset, xOset));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getYOset() {
-		return yOset;
-	}
+        return yOset;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setYOset(Integer newYOset) {
-		Integer oldYOset = yOset;
-		yOset = newYOset;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PGP1__YOSET, oldYOset, yOset));
-	}
+        Integer oldYOset = yOset;
+        yOset = newYOset;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PGP1__YOSET, oldYOset, yOset));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.PGP1__XOSET:
-				return getXOset();
-			case AfplibPackage.PGP1__YOSET:
-				return getYOset();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.PGP1__XOSET:
+                return getXOset();
+            case AfplibPackage.PGP1__YOSET:
+                return getYOset();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.PGP1__XOSET:
-				setXOset((Integer)newValue);
-				return;
-			case AfplibPackage.PGP1__YOSET:
-				setYOset((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.PGP1__XOSET:
+                setXOset((Integer)newValue);
+                return;
+            case AfplibPackage.PGP1__YOSET:
+                setYOset((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.PGP1__XOSET:
-				setXOset(XOSET_EDEFAULT);
-				return;
-			case AfplibPackage.PGP1__YOSET:
-				setYOset(YOSET_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.PGP1__XOSET:
+                setXOset(XOSET_EDEFAULT);
+                return;
+            case AfplibPackage.PGP1__YOSET:
+                setYOset(YOSET_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.PGP1__XOSET:
-				return XOSET_EDEFAULT == null ? xOset != null : !XOSET_EDEFAULT.equals(xOset);
-			case AfplibPackage.PGP1__YOSET:
-				return YOSET_EDEFAULT == null ? yOset != null : !YOSET_EDEFAULT.equals(yOset);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.PGP1__XOSET:
+                return XOSET_EDEFAULT == null ? xOset != null : !XOSET_EDEFAULT.equals(xOset);
+            case AfplibPackage.PGP1__YOSET:
+                return YOSET_EDEFAULT == null ? yOset != null : !YOSET_EDEFAULT.equals(yOset);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (XOset: ");
-		result.append(xOset);
-		result.append(", YOset: ");
-		result.append(yOset);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (XOset: ");
+        result.append(xOset);
+        result.append(", YOset: ");
+        result.append(yOset);
+        result.append(')');
+        return result.toString();
+    }
 
 } //PGP1Impl

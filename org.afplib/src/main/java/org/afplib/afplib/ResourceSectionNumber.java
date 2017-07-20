@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface ResourceSectionNumber extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>Res SNum</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Res SNum</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Res SNum</em>' attribute.
-	 * @see #setResSNum(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getResourceSectionNumber_ResSNum()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Res SNum</em>' attribute.
+     * @see #setResSNum(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getResourceSectionNumber_ResSNum()
+     * @model required="true"
+     * @generated
+     */
 	Integer getResSNum();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.ResourceSectionNumber#getResSNum <em>Res SNum</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.ResourceSectionNumber#getResSNum <em>Res SNum</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Res SNum</em>' attribute.
-	 * @see #getResSNum()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Res SNum</em>' attribute.
+     * @see #getResSNum()
+     * @generated
+     */
 	void setResSNum(Integer value);
 
 } // ResourceSectionNumber

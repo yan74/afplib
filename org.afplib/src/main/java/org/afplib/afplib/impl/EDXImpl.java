@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class EDXImpl extends SFImpl implements EDX {
 	/**
-	 * The default value of the '{@link #getDMXName() <em>DMX Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getDMXName() <em>DMX Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDMXName()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDMXName()
+     * @generated
+     * @ordered
+     */
 	protected static final String DMX_NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDMXName() <em>DMX Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getDMXName() <em>DMX Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDMXName()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDMXName()
+     * @generated
+     * @ordered
+     */
 	protected String dmxName = DMX_NAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EDXImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.EDX;
-	}
+        return AfplibPackage.eINSTANCE.getEDX();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getDMXName() {
-		return dmxName;
-	}
+        return dmxName;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setDMXName(String newDMXName) {
-		String oldDMXName = dmxName;
-		dmxName = newDMXName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EDX__DMX_NAME, oldDMXName, dmxName));
-	}
+        String oldDMXName = dmxName;
+        dmxName = newDMXName;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EDX__DMX_NAME, oldDMXName, dmxName));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.EDX__DMX_NAME:
-				return getDMXName();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.EDX__DMX_NAME:
+                return getDMXName();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.EDX__DMX_NAME:
-				setDMXName((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.EDX__DMX_NAME:
+                setDMXName((String)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.EDX__DMX_NAME:
-				setDMXName(DMX_NAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.EDX__DMX_NAME:
+                setDMXName(DMX_NAME_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.EDX__DMX_NAME:
-				return DMX_NAME_EDEFAULT == null ? dmxName != null : !DMX_NAME_EDEFAULT.equals(dmxName);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.EDX__DMX_NAME:
+                return DMX_NAME_EDEFAULT == null ? dmxName != null : !DMX_NAME_EDEFAULT.equals(dmxName);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (DMXName: ");
-		result.append(dmxName);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (DMXName: ");
+        result.append(dmxName);
+        result.append(')');
+        return result.toString();
+    }
 
 } //EDXImpl

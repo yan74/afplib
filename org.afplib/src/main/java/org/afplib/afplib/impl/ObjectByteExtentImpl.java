@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ObjectByteExtentImpl extends TripletImpl implements ObjectByteExtent {
 	/**
-	 * The default value of the '{@link #getByteExt() <em>Byte Ext</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getByteExt() <em>Byte Ext</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getByteExt()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getByteExt()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer BYTE_EXT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getByteExt() <em>Byte Ext</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getByteExt() <em>Byte Ext</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getByteExt()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getByteExt()
+     * @generated
+     * @ordered
+     */
 	protected Integer byteExt = BYTE_EXT_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getByteExtHi() <em>Byte Ext Hi</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getByteExtHi() <em>Byte Ext Hi</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getByteExtHi()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getByteExtHi()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer BYTE_EXT_HI_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getByteExtHi() <em>Byte Ext Hi</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getByteExtHi() <em>Byte Ext Hi</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getByteExtHi()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getByteExtHi()
+     * @generated
+     * @ordered
+     */
 	protected Integer byteExtHi = BYTE_EXT_HI_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ObjectByteExtentImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.OBJECT_BYTE_EXTENT;
-	}
+        return AfplibPackage.eINSTANCE.getObjectByteExtent();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getByteExt() {
-		return byteExt;
-	}
+        return byteExt;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setByteExt(Integer newByteExt) {
-		Integer oldByteExt = byteExt;
-		byteExt = newByteExt;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT, oldByteExt, byteExt));
-	}
+        Integer oldByteExt = byteExt;
+        byteExt = newByteExt;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT, oldByteExt, byteExt));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getByteExtHi() {
-		return byteExtHi;
-	}
+        return byteExtHi;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setByteExtHi(Integer newByteExtHi) {
-		Integer oldByteExtHi = byteExtHi;
-		byteExtHi = newByteExtHi;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI, oldByteExtHi, byteExtHi));
-	}
+        Integer oldByteExtHi = byteExtHi;
+        byteExtHi = newByteExtHi;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI, oldByteExtHi, byteExtHi));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
-				return getByteExt();
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
-				return getByteExtHi();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
+                return getByteExt();
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
+                return getByteExtHi();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
-				setByteExt((Integer)newValue);
-				return;
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
-				setByteExtHi((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
+                setByteExt((Integer)newValue);
+                return;
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
+                setByteExtHi((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
-				setByteExt(BYTE_EXT_EDEFAULT);
-				return;
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
-				setByteExtHi(BYTE_EXT_HI_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
+                setByteExt(BYTE_EXT_EDEFAULT);
+                return;
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
+                setByteExtHi(BYTE_EXT_HI_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
-				return BYTE_EXT_EDEFAULT == null ? byteExt != null : !BYTE_EXT_EDEFAULT.equals(byteExt);
-			case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
-				return BYTE_EXT_HI_EDEFAULT == null ? byteExtHi != null : !BYTE_EXT_HI_EDEFAULT.equals(byteExtHi);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT:
+                return BYTE_EXT_EDEFAULT == null ? byteExt != null : !BYTE_EXT_EDEFAULT.equals(byteExt);
+            case AfplibPackage.OBJECT_BYTE_EXTENT__BYTE_EXT_HI:
+                return BYTE_EXT_HI_EDEFAULT == null ? byteExtHi != null : !BYTE_EXT_HI_EDEFAULT.equals(byteExtHi);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (ByteExt: ");
-		result.append(byteExt);
-		result.append(", ByteExtHi: ");
-		result.append(byteExtHi);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (ByteExt: ");
+        result.append(byteExt);
+        result.append(", ByteExtHi: ");
+        result.append(byteExtHi);
+        result.append(')');
+        return result.toString();
+    }
 
 } //ObjectByteExtentImpl

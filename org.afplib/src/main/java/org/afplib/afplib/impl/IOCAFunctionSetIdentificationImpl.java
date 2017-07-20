@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class IOCAFunctionSetIdentificationImpl extends TripletImpl implements IOCAFunctionSetIdentification {
 	/**
-	 * The default value of the '{@link #getCATEGORY() <em>CATEGORY</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getCATEGORY() <em>CATEGORY</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCATEGORY()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getCATEGORY()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer CATEGORY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getCATEGORY() <em>CATEGORY</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getCATEGORY() <em>CATEGORY</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCATEGORY()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getCATEGORY()
+     * @generated
+     * @ordered
+     */
 	protected Integer category = CATEGORY_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getFCNSET() <em>FCNSET</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getFCNSET() <em>FCNSET</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFCNSET()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getFCNSET()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer FCNSET_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getFCNSET() <em>FCNSET</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getFCNSET() <em>FCNSET</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFCNSET()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getFCNSET()
+     * @generated
+     * @ordered
+     */
 	protected Integer fcnset = FCNSET_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected IOCAFunctionSetIdentificationImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.IOCA_FUNCTION_SET_IDENTIFICATION;
-	}
+        return AfplibPackage.eINSTANCE.getIOCAFunctionSetIdentification();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getCATEGORY() {
-		return category;
-	}
+        return category;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setCATEGORY(Integer newCATEGORY) {
-		Integer oldCATEGORY = category;
-		category = newCATEGORY;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY, oldCATEGORY, category));
-	}
+        Integer oldCATEGORY = category;
+        category = newCATEGORY;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY, oldCATEGORY, category));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getFCNSET() {
-		return fcnset;
-	}
+        return fcnset;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setFCNSET(Integer newFCNSET) {
-		Integer oldFCNSET = fcnset;
-		fcnset = newFCNSET;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET, oldFCNSET, fcnset));
-	}
+        Integer oldFCNSET = fcnset;
+        fcnset = newFCNSET;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET, oldFCNSET, fcnset));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
-				return getCATEGORY();
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
-				return getFCNSET();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
+                return getCATEGORY();
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
+                return getFCNSET();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
-				setCATEGORY((Integer)newValue);
-				return;
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
-				setFCNSET((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
+                setCATEGORY((Integer)newValue);
+                return;
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
+                setFCNSET((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
-				setCATEGORY(CATEGORY_EDEFAULT);
-				return;
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
-				setFCNSET(FCNSET_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
+                setCATEGORY(CATEGORY_EDEFAULT);
+                return;
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
+                setFCNSET(FCNSET_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
-				return CATEGORY_EDEFAULT == null ? category != null : !CATEGORY_EDEFAULT.equals(category);
-			case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
-				return FCNSET_EDEFAULT == null ? fcnset != null : !FCNSET_EDEFAULT.equals(fcnset);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__CATEGORY:
+                return CATEGORY_EDEFAULT == null ? category != null : !CATEGORY_EDEFAULT.equals(category);
+            case AfplibPackage.IOCA_FUNCTION_SET_IDENTIFICATION__FCNSET:
+                return FCNSET_EDEFAULT == null ? fcnset != null : !FCNSET_EDEFAULT.equals(fcnset);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (CATEGORY: ");
-		result.append(category);
-		result.append(", FCNSET: ");
-		result.append(fcnset);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (CATEGORY: ");
+        result.append(category);
+        result.append(", FCNSET: ");
+        result.append(fcnset);
+        result.append(')');
+        return result.toString();
+    }
 
 } //IOCAFunctionSetIdentificationImpl

@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class OCDImpl extends SFImpl implements OCD {
 	/**
-	 * The default value of the '{@link #getObjCdat() <em>Obj Cdat</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getObjCdat() <em>Obj Cdat</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getObjCdat()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getObjCdat()
+     * @generated
+     * @ordered
+     */
 	protected static final byte[] OBJ_CDAT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getObjCdat() <em>Obj Cdat</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getObjCdat() <em>Obj Cdat</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getObjCdat()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getObjCdat()
+     * @generated
+     * @ordered
+     */
 	protected byte[] objCdat = OBJ_CDAT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OCDImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.OCD;
-	}
+        return AfplibPackage.eINSTANCE.getOCD();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public byte[] getObjCdat() {
-		return objCdat;
-	}
+        return objCdat;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setObjCdat(byte[] newObjCdat) {
-		byte[] oldObjCdat = objCdat;
-		objCdat = newObjCdat;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.OCD__OBJ_CDAT, oldObjCdat, objCdat));
-	}
+        byte[] oldObjCdat = objCdat;
+        objCdat = newObjCdat;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.OCD__OBJ_CDAT, oldObjCdat, objCdat));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.OCD__OBJ_CDAT:
-				return getObjCdat();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.OCD__OBJ_CDAT:
+                return getObjCdat();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.OCD__OBJ_CDAT:
-				setObjCdat((byte[])newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.OCD__OBJ_CDAT:
+                setObjCdat((byte[])newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.OCD__OBJ_CDAT:
-				setObjCdat(OBJ_CDAT_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.OCD__OBJ_CDAT:
+                setObjCdat(OBJ_CDAT_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.OCD__OBJ_CDAT:
-				return OBJ_CDAT_EDEFAULT == null ? objCdat != null : !OBJ_CDAT_EDEFAULT.equals(objCdat);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.OCD__OBJ_CDAT:
+                return OBJ_CDAT_EDEFAULT == null ? objCdat != null : !OBJ_CDAT_EDEFAULT.equals(objCdat);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (ObjCdat: ");
-		result.append(objCdat);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (ObjCdat: ");
+        result.append(objCdat);
+        result.append(')');
+        return result.toString();
+    }
 
 } //OCDImpl

@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GSMT extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>MCPT</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>MCPT</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>MCPT</em>' attribute.
-	 * @see #setMCPT(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getGSMT_MCPT()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>MCPT</em>' attribute.
+     * @see #setMCPT(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getGSMT_MCPT()
+     * @model required="true"
+     * @generated
+     */
 	Integer getMCPT();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GSMT#getMCPT <em>MCPT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GSMT#getMCPT <em>MCPT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>MCPT</em>' attribute.
-	 * @see #getMCPT()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>MCPT</em>' attribute.
+     * @see #getMCPT()
+     * @generated
+     */
 	void setMCPT(Integer value);
 
 } // GSMT

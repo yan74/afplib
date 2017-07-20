@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GSLE extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>LINEEND</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>LINEEND</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>LINEEND</em>' attribute.
-	 * @see #setLINEEND(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getGSLE_LINEEND()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>LINEEND</em>' attribute.
+     * @see #setLINEEND(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getGSLE_LINEEND()
+     * @model required="true"
+     * @generated
+     */
 	Integer getLINEEND();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GSLE#getLINEEND <em>LINEEND</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GSLE#getLINEEND <em>LINEEND</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>LINEEND</em>' attribute.
-	 * @see #getLINEEND()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>LINEEND</em>' attribute.
+     * @see #getLINEEND()
+     * @generated
+     */
 	void setLINEEND(Integer value);
 
 } // GSLE

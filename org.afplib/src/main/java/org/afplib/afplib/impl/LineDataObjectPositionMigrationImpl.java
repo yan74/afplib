@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class LineDataObjectPositionMigrationImpl extends TripletImpl implements LineDataObjectPositionMigration {
 	/**
-	 * The default value of the '{@link #getTempOrient() <em>Temp Orient</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getTempOrient() <em>Temp Orient</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTempOrient()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getTempOrient()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer TEMP_ORIENT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTempOrient() <em>Temp Orient</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getTempOrient() <em>Temp Orient</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTempOrient()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getTempOrient()
+     * @generated
+     * @ordered
+     */
 	protected Integer tempOrient = TEMP_ORIENT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected LineDataObjectPositionMigrationImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.LINE_DATA_OBJECT_POSITION_MIGRATION;
-	}
+        return AfplibPackage.eINSTANCE.getLineDataObjectPositionMigration();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getTempOrient() {
-		return tempOrient;
-	}
+        return tempOrient;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setTempOrient(Integer newTempOrient) {
-		Integer oldTempOrient = tempOrient;
-		tempOrient = newTempOrient;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT, oldTempOrient, tempOrient));
-	}
+        Integer oldTempOrient = tempOrient;
+        tempOrient = newTempOrient;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT, oldTempOrient, tempOrient));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
-				return getTempOrient();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
+                return getTempOrient();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
-				setTempOrient((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
+                setTempOrient((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
-				setTempOrient(TEMP_ORIENT_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
+                setTempOrient(TEMP_ORIENT_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
-				return TEMP_ORIENT_EDEFAULT == null ? tempOrient != null : !TEMP_ORIENT_EDEFAULT.equals(tempOrient);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA_OBJECT_POSITION_MIGRATION__TEMP_ORIENT:
+                return TEMP_ORIENT_EDEFAULT == null ? tempOrient != null : !TEMP_ORIENT_EDEFAULT.equals(tempOrient);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (TempOrient: ");
-		result.append(tempOrient);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (TempOrient: ");
+        result.append(tempOrient);
+        result.append(')');
+        return result.toString();
+    }
 
 } //LineDataObjectPositionMigrationImpl

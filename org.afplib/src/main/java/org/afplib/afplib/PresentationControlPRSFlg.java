@@ -19,196 +19,196 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum PresentationControlPRSFlg implements Enumerator {
 	/**
-	 * The '<em><b>Objectviewcontrol</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Objectviewcontrol</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #OBJECTVIEWCONTROL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	OBJECTVIEWCONTROL(1, "Objectviewcontrol", "Objectviewcontrol"),
+     * @see #OBJECTVIEWCONTROL_VALUE
+     * @generated
+     * @ordered
+     */
+	OBJECTVIEWCONTROL(128, "Objectviewcontrol", "Objectviewcontrol"),
 
 	/**
-	 * The '<em><b>Objectindexingcontrol</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Objectindexingcontrol</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #OBJECTINDEXINGCONTROL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	OBJECTINDEXINGCONTROL(2, "Objectindexingcontrol", "Objectindexingcontrol");
+     * @see #OBJECTINDEXINGCONTROL_VALUE
+     * @generated
+     * @ordered
+     */
+	OBJECTINDEXINGCONTROL(64, "Objectindexingcontrol", "Objectindexingcontrol");
 
 	/**
-	 * The '<em><b>Objectviewcontrol</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Objectviewcontrol</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Objectviewcontrol</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #OBJECTVIEWCONTROL
-	 * @model name="Objectviewcontrol"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int OBJECTVIEWCONTROL_VALUE = 1;
+     * @see #OBJECTVIEWCONTROL
+     * @model name="Objectviewcontrol"
+     * @generated
+     * @ordered
+     */
+	public static final int OBJECTVIEWCONTROL_VALUE = 128;
 
 	/**
-	 * The '<em><b>Objectindexingcontrol</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Objectindexingcontrol</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Objectindexingcontrol</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #OBJECTINDEXINGCONTROL
-	 * @model name="Objectindexingcontrol"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int OBJECTINDEXINGCONTROL_VALUE = 2;
+     * @see #OBJECTINDEXINGCONTROL
+     * @model name="Objectindexingcontrol"
+     * @generated
+     * @ordered
+     */
+	public static final int OBJECTINDEXINGCONTROL_VALUE = 64;
 
 	/**
-	 * An array of all the '<em><b>Presentation Control PRS Flg</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+     * An array of all the '<em><b>Presentation Control PRS Flg</b></em>' enumerators.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private static final PresentationControlPRSFlg[] VALUES_ARRAY =
 		new PresentationControlPRSFlg[] {
-			OBJECTVIEWCONTROL,
-			OBJECTINDEXINGCONTROL,
-		};
+            OBJECTVIEWCONTROL,
+            OBJECTINDEXINGCONTROL,
+        };
 
 	/**
-	 * A public read-only list of all the '<em><b>Presentation Control PRS Flg</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+     * A public read-only list of all the '<em><b>Presentation Control PRS Flg</b></em>' enumerators.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public static final List<PresentationControlPRSFlg> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Presentation Control PRS Flg</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>Presentation Control PRS Flg</b></em>' literal with the specified literal value.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static PresentationControlPRSFlg get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			PresentationControlPRSFlg result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            PresentationControlPRSFlg result = VALUES_ARRAY[i];
+            if (result.toString().equals(literal)) {
+                return result;
+            }
+        }
+        return null;
+    }
 
 	/**
-	 * Returns the '<em><b>Presentation Control PRS Flg</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>Presentation Control PRS Flg</b></em>' literal with the specified name.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static PresentationControlPRSFlg getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			PresentationControlPRSFlg result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            PresentationControlPRSFlg result = VALUES_ARRAY[i];
+            if (result.getName().equals(name)) {
+                return result;
+            }
+        }
+        return null;
+    }
 
 	/**
-	 * Returns the '<em><b>Presentation Control PRS Flg</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>Presentation Control PRS Flg</b></em>' literal with the specified integer value.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static PresentationControlPRSFlg get(int value) {
-		switch (value) {
-			case OBJECTVIEWCONTROL_VALUE: return OBJECTVIEWCONTROL;
-			case OBJECTINDEXINGCONTROL_VALUE: return OBJECTINDEXINGCONTROL;
-		}
-		return null;
-	}
+        switch (value) {
+            case OBJECTVIEWCONTROL_VALUE: return OBJECTVIEWCONTROL;
+            case OBJECTINDEXINGCONTROL_VALUE: return OBJECTINDEXINGCONTROL;
+        }
+        return null;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+     * Only this class can construct instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private PresentationControlPRSFlg(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+        this.value = value;
+        this.name = name;
+        this.literal = literal;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getValue() {
-	  return value;
-	}
+      return value;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getName() {
-	  return name;
-	}
+      return name;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getLiteral() {
-	  return literal;
-	}
+      return literal;
+    }
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+     * Returns the literal value of the enumerator, which is its string representation.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		return literal;
-	}
+        return literal;
+    }
 	
 } //PresentationControlPRSFlg

@@ -39,185 +39,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class MMOImpl extends SFImpl implements MMO {
 	/**
-	 * The default value of the '{@link #getRGLength() <em>RG Length</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getRGLength() <em>RG Length</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRGLength()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRGLength()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer RG_LENGTH_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRGLength() <em>RG Length</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRGLength() <em>RG Length</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRGLength()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRGLength()
+     * @generated
+     * @ordered
+     */
 	protected Integer rgLength = RG_LENGTH_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRg()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRg()
+     * @generated
+     * @ordered
+     */
 	protected EList<MMORG> rg;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected MMOImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.MMO;
-	}
+        return AfplibPackage.eINSTANCE.getMMO();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getRGLength() {
-		return rgLength;
-	}
+        return rgLength;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setRGLength(Integer newRGLength) {
-		Integer oldRGLength = rgLength;
-		rgLength = newRGLength;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMO__RG_LENGTH, oldRGLength, rgLength));
-	}
+        Integer oldRGLength = rgLength;
+        rgLength = newRGLength;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMO__RG_LENGTH, oldRGLength, rgLength));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<MMORG> getRg() {
-		if (rg == null) {
-			rg = new EObjectContainmentEList.Resolving<MMORG>(MMORG.class, this, AfplibPackage.MMO__RG);
-		}
-		return rg;
-	}
+        if (rg == null) {
+            rg = new EObjectContainmentEList.Resolving<MMORG>(MMORG.class, this, AfplibPackage.MMO__RG);
+        }
+        return rg;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AfplibPackage.MMO__RG:
-				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case AfplibPackage.MMO__RG:
+                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.MMO__RG_LENGTH:
-				return getRGLength();
-			case AfplibPackage.MMO__RG:
-				return getRg();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.MMO__RG_LENGTH:
+                return getRGLength();
+            case AfplibPackage.MMO__RG:
+                return getRg();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.MMO__RG_LENGTH:
-				setRGLength((Integer)newValue);
-				return;
-			case AfplibPackage.MMO__RG:
-				getRg().clear();
-				getRg().addAll((Collection<? extends MMORG>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.MMO__RG_LENGTH:
+                setRGLength((Integer)newValue);
+                return;
+            case AfplibPackage.MMO__RG:
+                getRg().clear();
+                getRg().addAll((Collection<? extends MMORG>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.MMO__RG_LENGTH:
-				setRGLength(RG_LENGTH_EDEFAULT);
-				return;
-			case AfplibPackage.MMO__RG:
-				getRg().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.MMO__RG_LENGTH:
+                setRGLength(RG_LENGTH_EDEFAULT);
+                return;
+            case AfplibPackage.MMO__RG:
+                getRg().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.MMO__RG_LENGTH:
-				return RG_LENGTH_EDEFAULT == null ? rgLength != null : !RG_LENGTH_EDEFAULT.equals(rgLength);
-			case AfplibPackage.MMO__RG:
-				return rg != null && !rg.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.MMO__RG_LENGTH:
+                return RG_LENGTH_EDEFAULT == null ? rgLength != null : !RG_LENGTH_EDEFAULT.equals(rgLength);
+            case AfplibPackage.MMO__RG:
+                return rg != null && !rg.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (RGLength: ");
-		result.append(rgLength);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (RGLength: ");
+        result.append(rgLength);
+        result.append(')');
+        return result.toString();
+    }
 
 } //MMOImpl

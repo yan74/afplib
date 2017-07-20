@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface FNG extends SF {
 	/**
-	 * Returns the value of the '<em><b>Pat Data</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Pat Data</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>variable length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Pat Data</em>' attribute.
-	 * @see #setPatData(byte[])
-	 * @see org.afplib.afplib.AfplibPackage#getFNG_PatData()
-	 * @model
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>variable length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Pat Data</em>' attribute.
+     * @see #setPatData(byte[])
+     * @see org.afplib.afplib.AfplibPackage#getFNG_PatData()
+     * @model
+     * @generated
+     */
 	byte[] getPatData();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.FNG#getPatData <em>Pat Data</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.FNG#getPatData <em>Pat Data</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pat Data</em>' attribute.
-	 * @see #getPatData()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Pat Data</em>' attribute.
+     * @see #getPatData()
+     * @generated
+     */
 	void setPatData(byte[] value);
 
 } // FNG

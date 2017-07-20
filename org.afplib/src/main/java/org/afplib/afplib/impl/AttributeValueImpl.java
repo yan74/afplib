@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class AttributeValueImpl extends TripletImpl implements AttributeValue {
 	/**
-	 * The default value of the '{@link #getReserved0() <em>Reserved0</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getReserved0() <em>Reserved0</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReserved0()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getReserved0()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer RESERVED0_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getReserved0() <em>Reserved0</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getReserved0() <em>Reserved0</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReserved0()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getReserved0()
+     * @generated
+     * @ordered
+     */
 	protected Integer reserved0 = RESERVED0_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getAttVal() <em>Att Val</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getAttVal() <em>Att Val</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttVal()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getAttVal()
+     * @generated
+     * @ordered
+     */
 	protected static final String ATT_VAL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getAttVal() <em>Att Val</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getAttVal() <em>Att Val</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttVal()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getAttVal()
+     * @generated
+     * @ordered
+     */
 	protected String attVal = ATT_VAL_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected AttributeValueImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.ATTRIBUTE_VALUE;
-	}
+        return AfplibPackage.eINSTANCE.getAttributeValue();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getReserved0() {
-		return reserved0;
-	}
+        return reserved0;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setReserved0(Integer newReserved0) {
-		Integer oldReserved0 = reserved0;
-		reserved0 = newReserved0;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.ATTRIBUTE_VALUE__RESERVED0, oldReserved0, reserved0));
-	}
+        Integer oldReserved0 = reserved0;
+        reserved0 = newReserved0;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.ATTRIBUTE_VALUE__RESERVED0, oldReserved0, reserved0));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getAttVal() {
-		return attVal;
-	}
+        return attVal;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setAttVal(String newAttVal) {
-		String oldAttVal = attVal;
-		attVal = newAttVal;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL, oldAttVal, attVal));
-	}
+        String oldAttVal = attVal;
+        attVal = newAttVal;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL, oldAttVal, attVal));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
-				return getReserved0();
-			case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
-				return getAttVal();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
+                return getReserved0();
+            case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
+                return getAttVal();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
-				setReserved0((Integer)newValue);
-				return;
-			case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
-				setAttVal((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
+                setReserved0((Integer)newValue);
+                return;
+            case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
+                setAttVal((String)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
-				setReserved0(RESERVED0_EDEFAULT);
-				return;
-			case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
-				setAttVal(ATT_VAL_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
+                setReserved0(RESERVED0_EDEFAULT);
+                return;
+            case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
+                setAttVal(ATT_VAL_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
-				return RESERVED0_EDEFAULT == null ? reserved0 != null : !RESERVED0_EDEFAULT.equals(reserved0);
-			case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
-				return ATT_VAL_EDEFAULT == null ? attVal != null : !ATT_VAL_EDEFAULT.equals(attVal);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.ATTRIBUTE_VALUE__RESERVED0:
+                return RESERVED0_EDEFAULT == null ? reserved0 != null : !RESERVED0_EDEFAULT.equals(reserved0);
+            case AfplibPackage.ATTRIBUTE_VALUE__ATT_VAL:
+                return ATT_VAL_EDEFAULT == null ? attVal != null : !ATT_VAL_EDEFAULT.equals(attVal);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (Reserved0: ");
-		result.append(reserved0);
-		result.append(", AttVal: ");
-		result.append(attVal);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (Reserved0: ");
+        result.append(reserved0);
+        result.append(", AttVal: ");
+        result.append(attVal);
+        result.append(')');
+        return result.toString();
+    }
 
 } //AttributeValueImpl

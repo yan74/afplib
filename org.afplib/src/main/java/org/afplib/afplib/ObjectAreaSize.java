@@ -24,78 +24,78 @@ import org.afplib.base.Triplet;
  */
 public interface ObjectAreaSize extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>Size Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Size Type</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Size Type</em>' attribute.
-	 * @see #setSizeType(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize_SizeType()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Size Type</em>' attribute.
+     * @see #setSizeType(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize_SizeType()
+     * @model required="true"
+     * @generated
+     */
 	Integer getSizeType();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.ObjectAreaSize#getSizeType <em>Size Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.ObjectAreaSize#getSizeType <em>Size Type</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Size Type</em>' attribute.
-	 * @see #getSizeType()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Size Type</em>' attribute.
+     * @see #getSizeType()
+     * @generated
+     */
 	void setSizeType(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Xoa Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Xoa Size</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Xoa Size</em>' attribute.
-	 * @see #setXoaSize(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize_XoaSize()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Xoa Size</em>' attribute.
+     * @see #setXoaSize(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize_XoaSize()
+     * @model required="true"
+     * @generated
+     */
 	Integer getXoaSize();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.ObjectAreaSize#getXoaSize <em>Xoa Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.ObjectAreaSize#getXoaSize <em>Xoa Size</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Xoa Size</em>' attribute.
-	 * @see #getXoaSize()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Xoa Size</em>' attribute.
+     * @see #getXoaSize()
+     * @generated
+     */
 	void setXoaSize(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Yoa Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Yoa Size</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Yoa Size</em>' attribute.
-	 * @see #setYoaSize(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize_YoaSize()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Yoa Size</em>' attribute.
+     * @see #setYoaSize(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getObjectAreaSize_YoaSize()
+     * @model required="true"
+     * @generated
+     */
 	Integer getYoaSize();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.ObjectAreaSize#getYoaSize <em>Yoa Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.ObjectAreaSize#getYoaSize <em>Yoa Size</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Yoa Size</em>' attribute.
-	 * @see #getYoaSize()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Yoa Size</em>' attribute.
+     * @see #getYoaSize()
+     * @generated
+     */
 	void setYoaSize(Integer value);
 
 } // ObjectAreaSize

@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class BandImageRGImpl extends TripletImpl implements BandImageRG {
 	/**
-	 * The default value of the '{@link #getBITCNT() <em>BITCNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getBITCNT() <em>BITCNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBITCNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBITCNT()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer BITCNT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getBITCNT() <em>BITCNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getBITCNT() <em>BITCNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBITCNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBITCNT()
+     * @generated
+     * @ordered
+     */
 	protected Integer bitcnt = BITCNT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BandImageRGImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.BAND_IMAGE_RG;
-	}
+        return AfplibPackage.eINSTANCE.getBandImageRG();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getBITCNT() {
-		return bitcnt;
-	}
+        return bitcnt;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setBITCNT(Integer newBITCNT) {
-		Integer oldBITCNT = bitcnt;
-		bitcnt = newBITCNT;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BAND_IMAGE_RG__BITCNT, oldBITCNT, bitcnt));
-	}
+        Integer oldBITCNT = bitcnt;
+        bitcnt = newBITCNT;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BAND_IMAGE_RG__BITCNT, oldBITCNT, bitcnt));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE_RG__BITCNT:
-				return getBITCNT();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE_RG__BITCNT:
+                return getBITCNT();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE_RG__BITCNT:
-				setBITCNT((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE_RG__BITCNT:
+                setBITCNT((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE_RG__BITCNT:
-				setBITCNT(BITCNT_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE_RG__BITCNT:
+                setBITCNT(BITCNT_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE_RG__BITCNT:
-				return BITCNT_EDEFAULT == null ? bitcnt != null : !BITCNT_EDEFAULT.equals(bitcnt);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE_RG__BITCNT:
+                return BITCNT_EDEFAULT == null ? bitcnt != null : !BITCNT_EDEFAULT.equals(bitcnt);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (BITCNT: ");
-		result.append(bitcnt);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (BITCNT: ");
+        result.append(bitcnt);
+        result.append(')');
+        return result.toString();
+    }
 
 } //BandImageRGImpl

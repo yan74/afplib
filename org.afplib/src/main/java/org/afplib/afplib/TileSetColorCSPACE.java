@@ -19,196 +19,196 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TileSetColorCSPACE implements Enumerator {
 	/**
-	 * The '<em><b>Const CMYK</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const CMYK</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CONST_CMYK_VALUE
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST_CMYK_VALUE
+     * @generated
+     * @ordered
+     */
 	CONST_CMYK(4, "ConstCMYK", "ConstCMYK"),
 
 	/**
-	 * The '<em><b>Const CIE Lab</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const CIE Lab</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CONST_CIE_LAB_VALUE
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST_CIE_LAB_VALUE
+     * @generated
+     * @ordered
+     */
 	CONST_CIE_LAB(8, "ConstCIELab", "ConstCIELab");
 
 	/**
-	 * The '<em><b>Const CMYK</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const CMYK</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const CMYK</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CONST_CMYK
-	 * @model name="ConstCMYK"
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST_CMYK
+     * @model name="ConstCMYK"
+     * @generated
+     * @ordered
+     */
 	public static final int CONST_CMYK_VALUE = 4;
 
 	/**
-	 * The '<em><b>Const CIE Lab</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const CIE Lab</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const CIE Lab</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CONST_CIE_LAB
-	 * @model name="ConstCIELab"
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST_CIE_LAB
+     * @model name="ConstCIELab"
+     * @generated
+     * @ordered
+     */
 	public static final int CONST_CIE_LAB_VALUE = 8;
 
 	/**
-	 * An array of all the '<em><b>Tile Set Color CSPACE</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+     * An array of all the '<em><b>Tile Set Color CSPACE</b></em>' enumerators.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private static final TileSetColorCSPACE[] VALUES_ARRAY =
 		new TileSetColorCSPACE[] {
-			CONST_CMYK,
-			CONST_CIE_LAB,
-		};
+            CONST_CMYK,
+            CONST_CIE_LAB,
+        };
 
 	/**
-	 * A public read-only list of all the '<em><b>Tile Set Color CSPACE</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+     * A public read-only list of all the '<em><b>Tile Set Color CSPACE</b></em>' enumerators.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public static final List<TileSetColorCSPACE> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Tile Set Color CSPACE</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>Tile Set Color CSPACE</b></em>' literal with the specified literal value.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static TileSetColorCSPACE get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			TileSetColorCSPACE result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            TileSetColorCSPACE result = VALUES_ARRAY[i];
+            if (result.toString().equals(literal)) {
+                return result;
+            }
+        }
+        return null;
+    }
 
 	/**
-	 * Returns the '<em><b>Tile Set Color CSPACE</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>Tile Set Color CSPACE</b></em>' literal with the specified name.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static TileSetColorCSPACE getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			TileSetColorCSPACE result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            TileSetColorCSPACE result = VALUES_ARRAY[i];
+            if (result.getName().equals(name)) {
+                return result;
+            }
+        }
+        return null;
+    }
 
 	/**
-	 * Returns the '<em><b>Tile Set Color CSPACE</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>Tile Set Color CSPACE</b></em>' literal with the specified integer value.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static TileSetColorCSPACE get(int value) {
-		switch (value) {
-			case CONST_CMYK_VALUE: return CONST_CMYK;
-			case CONST_CIE_LAB_VALUE: return CONST_CIE_LAB;
-		}
-		return null;
-	}
+        switch (value) {
+            case CONST_CMYK_VALUE: return CONST_CMYK;
+            case CONST_CIE_LAB_VALUE: return CONST_CIE_LAB;
+        }
+        return null;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+     * Only this class can construct instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private TileSetColorCSPACE(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+        this.value = value;
+        this.name = name;
+        this.literal = literal;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getValue() {
-	  return value;
-	}
+      return value;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getName() {
-	  return name;
-	}
+      return name;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getLiteral() {
-	  return literal;
-	}
+      return literal;
+    }
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+     * Returns the literal value of the enumerator, which is its string representation.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		return literal;
-	}
+        return literal;
+    }
 	
 } //TileSetColorCSPACE

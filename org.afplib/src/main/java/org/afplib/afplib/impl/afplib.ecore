@@ -5,12 +5,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="linedata" eType="ecore:EDataType http://afplib.org/afplibbase#//ModcaString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="BDAFlags">
-    <eLiterals name="HRI" value="1" literal="HRI"/>
-    <eLiterals name="Position1" value="2" literal="Position1"/>
-    <eLiterals name="Position2" value="4" literal="Position2"/>
-    <eLiterals name="SSCAST" value="8" literal="SSCAST"/>
-    <eLiterals name="SupressBC" value="32" literal="SupressBC"/>
-    <eLiterals name="SupressBlanks" value="64" literal="SupressBlanks"/>
+    <eLiterals name="HRI" value="128" literal="HRI"/>
+    <eLiterals name="Position1" value="64" literal="Position1"/>
+    <eLiterals name="Position2" value="32" literal="Position2"/>
+    <eLiterals name="SSCAST" value="16" literal="SSCAST"/>
+    <eLiterals name="SupressBC" value="4" literal="SupressBC"/>
+    <eLiterals name="SupressBlanks" value="2" literal="SupressBlanks"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="BDDUBASE">
     <eLiterals name="Const10in" literal="Const10in"/>
@@ -90,9 +90,9 @@
     <eLiterals name="ConstRetired1" value="1" literal="ConstRetired1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CPCPrtFlags">
-    <eLiterals name="Invalid" value="1" literal="Invalid"/>
-    <eLiterals name="Presentation" value="2" literal="Presentation"/>
-    <eLiterals name="Increment" value="4" literal="Increment"/>
+    <eLiterals name="Invalid" value="128" literal="Invalid"/>
+    <eLiterals name="Presentation" value="64" literal="Presentation"/>
+    <eLiterals name="Increment" value="32" literal="Increment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CPCCPIRGLen">
     <eLiterals name="ConstSingleByte" value="10" literal="ConstSingleByte"/>
@@ -101,8 +101,8 @@
     <eLiterals name="ConstDoubleByteWithUnicodeScalar" value="221" literal="ConstDoubleByteWithUnicodeScalar"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CPCVSFlags">
-    <eLiterals name="SortOrder" value="1" literal="SortOrder"/>
-    <eLiterals name="VariableSpace" value="16" literal="VariableSpace"/>
+    <eLiterals name="SortOrder" value="128" literal="SortOrder"/>
+    <eLiterals name="VariableSpace" value="8" literal="VariableSpace"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CPDGCGIDLen">
     <eLiterals name="ConstGCGIDLen" value="8" literal="ConstGCGIDLen"/>
@@ -125,10 +125,10 @@
     <eLiterals name="ConstPFBType1" value="31" literal="ConstPFBType1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FNCFntFlags">
-    <eLiterals name="PrintingType" value="1" literal="PrintingType"/>
-    <eLiterals name="ExtensionType" value="2" literal="ExtensionType"/>
-    <eLiterals name="Retired" value="16" literal="Retired"/>
-    <eLiterals name="UniformCharacterBoxFont" value="64" literal="UniformCharacterBoxFont"/>
+    <eLiterals name="PrintingType" value="128" literal="PrintingType"/>
+    <eLiterals name="ExtensionType" value="64" literal="ExtensionType"/>
+    <eLiterals name="Retired" value="8" literal="Retired"/>
+    <eLiterals name="UniformCharacterBoxFont" value="2" literal="UniformCharacterBoxFont"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FNCXUnitBase">
     <eLiterals name="ConstFixedMetric10inches" literal="ConstFixedMetric10inches"/>
@@ -209,10 +209,10 @@
     <eLiterals name="ConstUltraexpanded" value="9" literal="ConstUltraexpanded"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FNDFtDsFlags">
-    <eLiterals name="Italic" value="1" literal="Italic"/>
-    <eLiterals name="Underscored" value="2" literal="Underscored"/>
-    <eLiterals name="Solid" value="8" literal="Solid"/>
-    <eLiterals name="Overstruck" value="16" literal="Overstruck"/>
+    <eLiterals name="Italic" value="32768" literal="Italic"/>
+    <eLiterals name="Underscored" value="16384" literal="Underscored"/>
+    <eLiterals name="Solid" value="4096" literal="Solid"/>
+    <eLiterals name="Overstruck" value="2048" literal="Overstruck"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="IDDUNITBASE">
     <eLiterals name="Const10inches" literal="Const10inches"/>
@@ -241,7 +241,7 @@
     <eLiterals name="ConstPageoroverlaycoordinatesystem" value="1" literal="ConstPageoroverlaycoordinatesystem"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="IPGIPgFlgs">
-    <eLiterals name="Format" value="1" literal="Format"/>
+    <eLiterals name="Format" value="128" literal="Format"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="IPOOvlyOrent">
     <eLiterals name="Const0degrees" literal="Const0degrees"/>
@@ -258,10 +258,10 @@
     <eLiterals name="Const10cm" value="1" literal="Const10cm"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MDDMDDFlgs">
-    <eLiterals name="CutSheetOrientation" value="1" literal="CutSheetOrientation"/>
+    <eLiterals name="CutSheetOrientation" value="128" literal="CutSheetOrientation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MFCMFCFlgs">
-    <eLiterals name="ActivateMediumFinishControl" value="1" literal="ActivateMediumFinishControl"/>
+    <eLiterals name="ActivateMediumFinishControl" value="128" literal="ActivateMediumFinishControl"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MFCMedColl">
     <eLiterals name="ConstNosheetcollection" literal="ConstNosheetcollection"/>
@@ -312,7 +312,7 @@
     <eLiterals name="ConstRetired" value="5" literal="ConstRetired"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PFCPFCFlgs">
-    <eLiterals name="Reset" value="1" literal="Reset"/>
+    <eLiterals name="Reset" value="128" literal="Reset"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PGDXpgBase">
     <eLiterals name="Const10inches" literal="Const10inches"/>
@@ -338,10 +338,10 @@
     <eLiterals name="ConstTeninches" literal="ConstTeninches"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="OVSBYPSIDEN">
-    <eLiterals name="BypassRelativeMoveInline" value="16" literal="BypassRelativeMoveInline"/>
-    <eLiterals name="BypassAbsoluteMoveInline" value="32" literal="BypassAbsoluteMoveInline"/>
-    <eLiterals name="Bypassspacecharacters" value="64" literal="Bypassspacecharacters"/>
-    <eLiterals name="NoBypassinEffect" value="128" literal="NoBypassinEffect"/>
+    <eLiterals name="BypassRelativeMoveInline" value="8" literal="BypassRelativeMoveInline"/>
+    <eLiterals name="BypassAbsoluteMoveInline" value="4" literal="BypassAbsoluteMoveInline"/>
+    <eLiterals name="Bypassspacecharacters" value="2" literal="Bypassspacecharacters"/>
+    <eLiterals name="NoBypassinEffect" value="1" literal="NoBypassinEffect"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SECCOLSPCE">
     <eLiterals name="ConstRGB" value="1" literal="ConstRGB"/>
@@ -402,10 +402,10 @@
     <eLiterals name="ConstMaybesimulated" value="1" literal="ConstMaybesimulated"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="USCBYPSIDEN">
-    <eLiterals name="BypassRelativeMoveInline" value="16" literal="BypassRelativeMoveInline"/>
-    <eLiterals name="BypassAbsoluteMoveInline" value="32" literal="BypassAbsoluteMoveInline"/>
-    <eLiterals name="Bypassspacecharacters" value="64" literal="Bypassspacecharacters"/>
-    <eLiterals name="NoBypassinEffect" value="128" literal="NoBypassinEffect"/>
+    <eLiterals name="BypassRelativeMoveInline" value="8" literal="BypassRelativeMoveInline"/>
+    <eLiterals name="BypassAbsoluteMoveInline" value="4" literal="BypassAbsoluteMoveInline"/>
+    <eLiterals name="Bypassspacecharacters" value="2" literal="Bypassspacecharacters"/>
+    <eLiterals name="NoBypassinEffect" value="1" literal="NoBypassinEffect"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CRCResourceManagementFmtQual">
     <eLiterals name="ConstObjectCyclicRedundancyCheck" value="1" literal="ConstObjectCyclicRedundancyCheck"/>
@@ -551,12 +551,12 @@
     <eLiterals name="ConstDataobjectfont" value="65" literal="ConstDataobjectfont"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ObjectClassificationStrucFlgs">
-    <eLiterals name="ObjectContainer" value="1" literal="ObjectContainer"/>
-    <eLiterals name="ObjectContainer2" value="2" literal="ObjectContainer2"/>
-    <eLiterals name="ObjectEnvironmentGroup" value="4" literal="ObjectEnvironmentGroup"/>
-    <eLiterals name="ObjectEnvironmentGroup2" value="8" literal="ObjectEnvironmentGroup2"/>
-    <eLiterals name="ObjectContainerData" value="16" literal="ObjectContainerData"/>
-    <eLiterals name="ObjectContainerData2" value="32" literal="ObjectContainerData2"/>
+    <eLiterals name="ObjectContainer" value="32768" literal="ObjectContainer"/>
+    <eLiterals name="ObjectContainer2" value="16384" literal="ObjectContainer2"/>
+    <eLiterals name="ObjectEnvironmentGroup" value="8192" literal="ObjectEnvironmentGroup"/>
+    <eLiterals name="ObjectEnvironmentGroup2" value="4096" literal="ObjectEnvironmentGroup2"/>
+    <eLiterals name="ObjectContainerData" value="2048" literal="ObjectContainerData"/>
+    <eLiterals name="ObjectContainerData2" value="1024" literal="ObjectContainerData2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ObjectFunctionSetSpecificationObjType">
     <eLiterals name="ConstPresentationText" value="2" literal="ConstPresentationText"/>
@@ -594,8 +594,8 @@
     <eLiterals name="ConstFormMap" value="254" literal="ConstFormMap"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PresentationControlPRSFlg">
-    <eLiterals name="Objectviewcontrol" value="1" literal="Objectviewcontrol"/>
-    <eLiterals name="Objectindexingcontrol" value="2" literal="Objectindexingcontrol"/>
+    <eLiterals name="Objectviewcontrol" value="128" literal="Objectviewcontrol"/>
+    <eLiterals name="Objectindexingcontrol" value="64" literal="Objectindexingcontrol"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ResourceLocalIdentifierResType">
     <eLiterals name="ConstUsageDependent" literal="ConstUsageDependent"/>
@@ -639,17 +639,17 @@
     <eLiterals name="ConstUltraexpanded" value="9" literal="ConstUltraexpanded"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FontDescriptorSpecificationFtDsFlags">
-    <eLiterals name="Italic" value="1" literal="Italic"/>
-    <eLiterals name="Underscored" value="2" literal="Underscored"/>
-    <eLiterals name="Solid" value="8" literal="Solid"/>
-    <eLiterals name="Overstruck" value="16" literal="Overstruck"/>
-    <eLiterals name="Proportionallyspaced" value="32" literal="Proportionallyspaced"/>
-    <eLiterals name="Pairwisekerned" value="64" literal="Pairwisekerned"/>
-    <eLiterals name="Parameterisspecified" value="128" literal="Parameterisspecified"/>
+    <eLiterals name="Italic" value="128" literal="Italic"/>
+    <eLiterals name="Underscored" value="64" literal="Underscored"/>
+    <eLiterals name="Solid" value="16" literal="Solid"/>
+    <eLiterals name="Overstruck" value="8" literal="Overstruck"/>
+    <eLiterals name="Proportionallyspaced" value="4" literal="Proportionallyspaced"/>
+    <eLiterals name="Pairwisekerned" value="2" literal="Pairwisekerned"/>
+    <eLiterals name="Parameterisspecified" value="1" literal="Parameterisspecified"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="FontDescriptorSpecificationFtUsFlags">
-    <eLiterals name="OutlineFont" value="2" literal="OutlineFont"/>
-    <eLiterals name="Transformable" value="4" literal="Transformable"/>
+    <eLiterals name="OutlineFont" value="64" literal="OutlineFont"/>
+    <eLiterals name="Transformable" value="32" literal="Transformable"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ImageEncodingCOMPRID">
     <eLiterals name="ConstIBMMMR" value="1" literal="ConstIBMMMR"/>
@@ -676,8 +676,8 @@
     <eLiterals name="ConstRighttoleft" value="1" literal="ConstRighttoleft"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="IDEStructureFLAGS">
-    <eLiterals name="Subtractive" value="1" literal="Subtractive"/>
-    <eLiterals name="GrayCoding" value="2" literal="GrayCoding"/>
+    <eLiterals name="Subtractive" value="128" literal="Subtractive"/>
+    <eLiterals name="GrayCoding" value="64" literal="GrayCoding"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ExternalAlgorithmALGTYPE">
     <eLiterals name="ConstRecordingalgorithm" literal="ConstRecordingalgorithm"/>
@@ -693,11 +693,11 @@
     <eLiterals name="ConstIOCAImage" value="251" literal="ConstIOCAImage"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PPORGProcFlgs">
-    <eLiterals name="Degree0" value="1" literal="Degree0"/>
-    <eLiterals name="Degree90" value="2" literal="Degree90"/>
-    <eLiterals name="Degree180" value="4" literal="Degree180"/>
-    <eLiterals name="Degree270" value="8" literal="Degree270"/>
-    <eLiterals name="PreprocessAll" value="16" literal="PreprocessAll"/>
+    <eLiterals name="Degree0" value="128" literal="Degree0"/>
+    <eLiterals name="Degree90" value="64" literal="Degree90"/>
+    <eLiterals name="Degree180" value="32" literal="Degree180"/>
+    <eLiterals name="Degree270" value="16" literal="Degree270"/>
+    <eLiterals name="PreprocessAll" value="8" literal="PreprocessAll"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PGPRGRGLength">
     <eLiterals name="ConstLength10" value="10" literal="ConstLength10"/>
@@ -722,10 +722,10 @@
     <eLiterals name="ConstPartition4Back" value="65" literal="ConstPartition4Back"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PGPRGPgFlgs">
-    <eLiterals name="VariablePageData" value="1" literal="VariablePageData"/>
-    <eLiterals name="PMCOverlays" value="2" literal="PMCOverlays"/>
-    <eLiterals name="PMCOverlayPosition" value="4" literal="PMCOverlayPosition"/>
-    <eLiterals name="PageViewControl" value="8" literal="PageViewControl"/>
+    <eLiterals name="VariablePageData" value="128" literal="VariablePageData"/>
+    <eLiterals name="PMCOverlays" value="64" literal="PMCOverlays"/>
+    <eLiterals name="PMCOverlayPosition" value="32" literal="PMCOverlayPosition"/>
+    <eLiterals name="PageViewControl" value="16" literal="PageViewControl"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="MMCRGkey">
     <eLiterals name="ConstHorizontalprintadjustment" value="14" literal="ConstHorizontalprintadjustment"/>
@@ -759,15 +759,15 @@
     <eLiterals name="ConstLength0C" value="12" literal="ConstLength0C"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="BeginSegmentCommandFLAG2">
-    <eLiterals name="Chained" value="1" literal="Chained"/>
-    <eLiterals name="Prolog" value="8" literal="Prolog"/>
-    <eLiterals name="NewSegment1" value="32" literal="NewSegment1"/>
-    <eLiterals name="NewSegment2" value="64" literal="NewSegment2"/>
+    <eLiterals name="Chained" value="128" literal="Chained"/>
+    <eLiterals name="Prolog" value="16" literal="Prolog"/>
+    <eLiterals name="NewSegment1" value="4" literal="NewSegment1"/>
+    <eLiterals name="NewSegment2" value="2" literal="NewSegment2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="GBARFLAGS">
-    <eLiterals name="RES1" value="1" literal="RES1"/>
-    <eLiterals name="BOUNDARY" value="2" literal="BOUNDARY"/>
-    <eLiterals name="INSIDE" value="4" literal="INSIDE"/>
+    <eLiterals name="RES1" value="128" literal="RES1"/>
+    <eLiterals name="BOUNDARY" value="64" literal="BOUNDARY"/>
+    <eLiterals name="INSIDE" value="32" literal="INSIDE"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="GBIMGFORMAT">
     <eLiterals name="Const1to1" literal="Const1to1"/>
@@ -896,10 +896,10 @@
     <eLiterals name="ConstMiter" value="3" literal="ConstMiter"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="WindowSpecificationFLAGS">
-    <eLiterals name="PPS" value="1" literal="PPS"/>
-    <eLiterals name="ABS" value="2" literal="ABS"/>
-    <eLiterals name="IMGRES" value="8" literal="IMGRES"/>
-    <eLiterals name="IMGNS" value="16" literal="IMGNS"/>
+    <eLiterals name="PPS" value="128" literal="PPS"/>
+    <eLiterals name="ABS" value="64" literal="ABS"/>
+    <eLiterals name="IMGRES" value="16" literal="IMGRES"/>
+    <eLiterals name="IMGNS" value="8" literal="IMGNS"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="WindowSpecificationRES3">
     <eLiterals name="ConstRES3" literal="ConstRES3"/>

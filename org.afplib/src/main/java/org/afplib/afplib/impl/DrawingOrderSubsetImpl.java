@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class DrawingOrderSubsetImpl extends TripletImpl implements DrawingOrderSubset {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected DrawingOrderSubsetImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.DRAWING_ORDER_SUBSET;
-	}
+        return AfplibPackage.eINSTANCE.getDrawingOrderSubset();
+    }
 
 } //DrawingOrderSubsetImpl

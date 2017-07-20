@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface ObjectContainerPresentationSpaceSize extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>PDF Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>PDF Size</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>PDF Size</em>' attribute.
-	 * @see #setPDFSize(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getObjectContainerPresentationSpaceSize_PDFSize()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>PDF Size</em>' attribute.
+     * @see #setPDFSize(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getObjectContainerPresentationSpaceSize_PDFSize()
+     * @model required="true"
+     * @generated
+     */
 	Integer getPDFSize();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.ObjectContainerPresentationSpaceSize#getPDFSize <em>PDF Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.ObjectContainerPresentationSpaceSize#getPDFSize <em>PDF Size</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>PDF Size</em>' attribute.
-	 * @see #getPDFSize()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>PDF Size</em>' attribute.
+     * @see #getPDFSize()
+     * @generated
+     */
 	void setPDFSize(Integer value);
 
 } // ObjectContainerPresentationSpaceSize

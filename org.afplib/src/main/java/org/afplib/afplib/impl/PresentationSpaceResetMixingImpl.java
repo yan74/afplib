@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class PresentationSpaceResetMixingImpl extends TripletImpl implements PresentationSpaceResetMixing {
 	/**
-	 * The default value of the '{@link #getBgMxFlag() <em>Bg Mx Flag</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getBgMxFlag() <em>Bg Mx Flag</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBgMxFlag()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBgMxFlag()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer BG_MX_FLAG_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getBgMxFlag() <em>Bg Mx Flag</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getBgMxFlag() <em>Bg Mx Flag</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBgMxFlag()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBgMxFlag()
+     * @generated
+     * @ordered
+     */
 	protected Integer bgMxFlag = BG_MX_FLAG_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PresentationSpaceResetMixingImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.PRESENTATION_SPACE_RESET_MIXING;
-	}
+        return AfplibPackage.eINSTANCE.getPresentationSpaceResetMixing();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getBgMxFlag() {
-		return bgMxFlag;
-	}
+        return bgMxFlag;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setBgMxFlag(Integer newBgMxFlag) {
-		Integer oldBgMxFlag = bgMxFlag;
-		bgMxFlag = newBgMxFlag;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG, oldBgMxFlag, bgMxFlag));
-	}
+        Integer oldBgMxFlag = bgMxFlag;
+        bgMxFlag = newBgMxFlag;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG, oldBgMxFlag, bgMxFlag));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
-				return getBgMxFlag();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
+                return getBgMxFlag();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
-				setBgMxFlag((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
+                setBgMxFlag((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
-				setBgMxFlag(BG_MX_FLAG_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
+                setBgMxFlag(BG_MX_FLAG_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
-				return BG_MX_FLAG_EDEFAULT == null ? bgMxFlag != null : !BG_MX_FLAG_EDEFAULT.equals(bgMxFlag);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.PRESENTATION_SPACE_RESET_MIXING__BG_MX_FLAG:
+                return BG_MX_FLAG_EDEFAULT == null ? bgMxFlag != null : !BG_MX_FLAG_EDEFAULT.equals(bgMxFlag);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (BgMxFlag: ");
-		result.append(bgMxFlag);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (BgMxFlag: ");
+        result.append(bgMxFlag);
+        result.append(')');
+        return result.toString();
+    }
 
 } //PresentationSpaceResetMixingImpl

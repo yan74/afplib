@@ -35,118 +35,118 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class SamplingRatiosImpl extends TripletImpl implements SamplingRatios {
 	/**
-	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRg()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRg()
+     * @generated
+     * @ordered
+     */
 	protected EList<SamplingRatiosRG> rg;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SamplingRatiosImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.SAMPLING_RATIOS;
-	}
+        return AfplibPackage.eINSTANCE.getSamplingRatios();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<SamplingRatiosRG> getRg() {
-		if (rg == null) {
-			rg = new EObjectContainmentEList.Resolving<SamplingRatiosRG>(SamplingRatiosRG.class, this, AfplibPackage.SAMPLING_RATIOS__RG);
-		}
-		return rg;
-	}
+        if (rg == null) {
+            rg = new EObjectContainmentEList.Resolving<SamplingRatiosRG>(SamplingRatiosRG.class, this, AfplibPackage.SAMPLING_RATIOS__RG);
+        }
+        return rg;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AfplibPackage.SAMPLING_RATIOS__RG:
-				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case AfplibPackage.SAMPLING_RATIOS__RG:
+                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.SAMPLING_RATIOS__RG:
-				return getRg();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.SAMPLING_RATIOS__RG:
+                return getRg();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.SAMPLING_RATIOS__RG:
-				getRg().clear();
-				getRg().addAll((Collection<? extends SamplingRatiosRG>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.SAMPLING_RATIOS__RG:
+                getRg().clear();
+                getRg().addAll((Collection<? extends SamplingRatiosRG>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.SAMPLING_RATIOS__RG:
-				getRg().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.SAMPLING_RATIOS__RG:
+                getRg().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.SAMPLING_RATIOS__RG:
-				return rg != null && !rg.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.SAMPLING_RATIOS__RG:
+                return rg != null && !rg.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //SamplingRatiosImpl

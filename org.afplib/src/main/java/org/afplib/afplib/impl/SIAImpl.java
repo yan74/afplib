@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class SIAImpl extends TripletImpl implements SIA {
 	/**
-	 * The default value of the '{@link #getADJSTMNT() <em>ADJSTMNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getADJSTMNT() <em>ADJSTMNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getADJSTMNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getADJSTMNT()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer ADJSTMNT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getADJSTMNT() <em>ADJSTMNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getADJSTMNT() <em>ADJSTMNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getADJSTMNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getADJSTMNT()
+     * @generated
+     * @ordered
+     */
 	protected Integer adjstmnt = ADJSTMNT_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDIRCTION() <em>DIRCTION</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getDIRCTION() <em>DIRCTION</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDIRCTION()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDIRCTION()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer DIRCTION_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDIRCTION() <em>DIRCTION</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getDIRCTION() <em>DIRCTION</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDIRCTION()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDIRCTION()
+     * @generated
+     * @ordered
+     */
 	protected Integer dirction = DIRCTION_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SIAImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.SIA;
-	}
+        return AfplibPackage.eINSTANCE.getSIA();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getADJSTMNT() {
-		return adjstmnt;
-	}
+        return adjstmnt;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setADJSTMNT(Integer newADJSTMNT) {
-		Integer oldADJSTMNT = adjstmnt;
-		adjstmnt = newADJSTMNT;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.SIA__ADJSTMNT, oldADJSTMNT, adjstmnt));
-	}
+        Integer oldADJSTMNT = adjstmnt;
+        adjstmnt = newADJSTMNT;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.SIA__ADJSTMNT, oldADJSTMNT, adjstmnt));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getDIRCTION() {
-		return dirction;
-	}
+        return dirction;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setDIRCTION(Integer newDIRCTION) {
-		Integer oldDIRCTION = dirction;
-		dirction = newDIRCTION;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.SIA__DIRCTION, oldDIRCTION, dirction));
-	}
+        Integer oldDIRCTION = dirction;
+        dirction = newDIRCTION;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.SIA__DIRCTION, oldDIRCTION, dirction));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.SIA__ADJSTMNT:
-				return getADJSTMNT();
-			case AfplibPackage.SIA__DIRCTION:
-				return getDIRCTION();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.SIA__ADJSTMNT:
+                return getADJSTMNT();
+            case AfplibPackage.SIA__DIRCTION:
+                return getDIRCTION();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.SIA__ADJSTMNT:
-				setADJSTMNT((Integer)newValue);
-				return;
-			case AfplibPackage.SIA__DIRCTION:
-				setDIRCTION((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.SIA__ADJSTMNT:
+                setADJSTMNT((Integer)newValue);
+                return;
+            case AfplibPackage.SIA__DIRCTION:
+                setDIRCTION((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.SIA__ADJSTMNT:
-				setADJSTMNT(ADJSTMNT_EDEFAULT);
-				return;
-			case AfplibPackage.SIA__DIRCTION:
-				setDIRCTION(DIRCTION_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.SIA__ADJSTMNT:
+                setADJSTMNT(ADJSTMNT_EDEFAULT);
+                return;
+            case AfplibPackage.SIA__DIRCTION:
+                setDIRCTION(DIRCTION_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.SIA__ADJSTMNT:
-				return ADJSTMNT_EDEFAULT == null ? adjstmnt != null : !ADJSTMNT_EDEFAULT.equals(adjstmnt);
-			case AfplibPackage.SIA__DIRCTION:
-				return DIRCTION_EDEFAULT == null ? dirction != null : !DIRCTION_EDEFAULT.equals(dirction);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.SIA__ADJSTMNT:
+                return ADJSTMNT_EDEFAULT == null ? adjstmnt != null : !ADJSTMNT_EDEFAULT.equals(adjstmnt);
+            case AfplibPackage.SIA__DIRCTION:
+                return DIRCTION_EDEFAULT == null ? dirction != null : !DIRCTION_EDEFAULT.equals(dirction);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (ADJSTMNT: ");
-		result.append(adjstmnt);
-		result.append(", DIRCTION: ");
-		result.append(dirction);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (ADJSTMNT: ");
+        result.append(adjstmnt);
+        result.append(", DIRCTION: ");
+        result.append(dirction);
+        result.append(')');
+        return result.toString();
+    }
 
 } //SIAImpl

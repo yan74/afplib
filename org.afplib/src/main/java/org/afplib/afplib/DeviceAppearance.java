@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface DeviceAppearance extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>Dev App</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Dev App</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Dev App</em>' attribute.
-	 * @see #setDevApp(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getDeviceAppearance_DevApp()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Dev App</em>' attribute.
+     * @see #setDevApp(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getDeviceAppearance_DevApp()
+     * @model required="true"
+     * @generated
+     */
 	Integer getDevApp();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.DeviceAppearance#getDevApp <em>Dev App</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.DeviceAppearance#getDevApp <em>Dev App</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Dev App</em>' attribute.
-	 * @see #getDevApp()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Dev App</em>' attribute.
+     * @see #getDevApp()
+     * @generated
+     */
 	void setDevApp(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Reserved</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Reserved</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Reserved</em>' attribute.
-	 * @see #setReserved(byte[])
-	 * @see org.afplib.afplib.AfplibPackage#getDeviceAppearance_Reserved()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Reserved</em>' attribute.
+     * @see #setReserved(byte[])
+     * @see org.afplib.afplib.AfplibPackage#getDeviceAppearance_Reserved()
+     * @model required="true"
+     * @generated
+     */
 	byte[] getReserved();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.DeviceAppearance#getReserved <em>Reserved</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.DeviceAppearance#getReserved <em>Reserved</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reserved</em>' attribute.
-	 * @see #getReserved()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Reserved</em>' attribute.
+     * @see #getReserved()
+     * @generated
+     */
 	void setReserved(byte[] value);
 
 } // DeviceAppearance

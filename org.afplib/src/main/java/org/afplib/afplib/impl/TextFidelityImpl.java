@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class TextFidelityImpl extends TripletImpl implements TextFidelity {
 	/**
-	 * The default value of the '{@link #getStpTxtEx() <em>Stp Txt Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getStpTxtEx() <em>Stp Txt Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStpTxtEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStpTxtEx()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer STP_TXT_EX_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getStpTxtEx() <em>Stp Txt Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getStpTxtEx() <em>Stp Txt Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStpTxtEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStpTxtEx()
+     * @generated
+     * @ordered
+     */
 	protected Integer stpTxtEx = STP_TXT_EX_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getRepTxtEx() <em>Rep Txt Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getRepTxtEx() <em>Rep Txt Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRepTxtEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRepTxtEx()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer REP_TXT_EX_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRepTxtEx() <em>Rep Txt Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRepTxtEx() <em>Rep Txt Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRepTxtEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRepTxtEx()
+     * @generated
+     * @ordered
+     */
 	protected Integer repTxtEx = REP_TXT_EX_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected TextFidelityImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.TEXT_FIDELITY;
-	}
+        return AfplibPackage.eINSTANCE.getTextFidelity();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getStpTxtEx() {
-		return stpTxtEx;
-	}
+        return stpTxtEx;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setStpTxtEx(Integer newStpTxtEx) {
-		Integer oldStpTxtEx = stpTxtEx;
-		stpTxtEx = newStpTxtEx;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TEXT_FIDELITY__STP_TXT_EX, oldStpTxtEx, stpTxtEx));
-	}
+        Integer oldStpTxtEx = stpTxtEx;
+        stpTxtEx = newStpTxtEx;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TEXT_FIDELITY__STP_TXT_EX, oldStpTxtEx, stpTxtEx));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getRepTxtEx() {
-		return repTxtEx;
-	}
+        return repTxtEx;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setRepTxtEx(Integer newRepTxtEx) {
-		Integer oldRepTxtEx = repTxtEx;
-		repTxtEx = newRepTxtEx;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TEXT_FIDELITY__REP_TXT_EX, oldRepTxtEx, repTxtEx));
-	}
+        Integer oldRepTxtEx = repTxtEx;
+        repTxtEx = newRepTxtEx;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TEXT_FIDELITY__REP_TXT_EX, oldRepTxtEx, repTxtEx));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
-				return getStpTxtEx();
-			case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
-				return getRepTxtEx();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
+                return getStpTxtEx();
+            case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
+                return getRepTxtEx();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
-				setStpTxtEx((Integer)newValue);
-				return;
-			case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
-				setRepTxtEx((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
+                setStpTxtEx((Integer)newValue);
+                return;
+            case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
+                setRepTxtEx((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
-				setStpTxtEx(STP_TXT_EX_EDEFAULT);
-				return;
-			case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
-				setRepTxtEx(REP_TXT_EX_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
+                setStpTxtEx(STP_TXT_EX_EDEFAULT);
+                return;
+            case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
+                setRepTxtEx(REP_TXT_EX_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
-				return STP_TXT_EX_EDEFAULT == null ? stpTxtEx != null : !STP_TXT_EX_EDEFAULT.equals(stpTxtEx);
-			case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
-				return REP_TXT_EX_EDEFAULT == null ? repTxtEx != null : !REP_TXT_EX_EDEFAULT.equals(repTxtEx);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.TEXT_FIDELITY__STP_TXT_EX:
+                return STP_TXT_EX_EDEFAULT == null ? stpTxtEx != null : !STP_TXT_EX_EDEFAULT.equals(stpTxtEx);
+            case AfplibPackage.TEXT_FIDELITY__REP_TXT_EX:
+                return REP_TXT_EX_EDEFAULT == null ? repTxtEx != null : !REP_TXT_EX_EDEFAULT.equals(repTxtEx);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (StpTxtEx: ");
-		result.append(stpTxtEx);
-		result.append(", RepTxtEx: ");
-		result.append(repTxtEx);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (StpTxtEx: ");
+        result.append(stpTxtEx);
+        result.append(", RepTxtEx: ");
+        result.append(repTxtEx);
+        result.append(')');
+        return result.toString();
+    }
 
 } //TextFidelityImpl

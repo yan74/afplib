@@ -19,250 +19,250 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum OBPXoaOrent implements Enumerator {
 	/**
-	 * The '<em><b>Const0degrees</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const0degrees</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CONST0DEGREES_VALUE
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST0DEGREES_VALUE
+     * @generated
+     * @ordered
+     */
 	CONST0DEGREES(0, "Const0degrees", "Const0degrees"),
 
 	/**
-	 * The '<em><b>Const90degrees</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const90degrees</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CONST90DEGREES_VALUE
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST90DEGREES_VALUE
+     * @generated
+     * @ordered
+     */
 	CONST90DEGREES(11520, "Const90degrees", "Const90degrees"),
 
 	/**
-	 * The '<em><b>Const180degrees</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const180degrees</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CONST180DEGREES_VALUE
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST180DEGREES_VALUE
+     * @generated
+     * @ordered
+     */
 	CONST180DEGREES(23040, "Const180degrees", "Const180degrees"),
 
 	/**
-	 * The '<em><b>Const270degrees</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const270degrees</b></em>' literal object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CONST270DEGREES_VALUE
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST270DEGREES_VALUE
+     * @generated
+     * @ordered
+     */
 	CONST270DEGREES(34560, "Const270degrees", "Const270degrees");
 
 	/**
-	 * The '<em><b>Const0degrees</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const0degrees</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const0degrees</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CONST0DEGREES
-	 * @model name="Const0degrees"
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST0DEGREES
+     * @model name="Const0degrees"
+     * @generated
+     * @ordered
+     */
 	public static final int CONST0DEGREES_VALUE = 0;
 
 	/**
-	 * The '<em><b>Const90degrees</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const90degrees</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const90degrees</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CONST90DEGREES
-	 * @model name="Const90degrees"
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST90DEGREES
+     * @model name="Const90degrees"
+     * @generated
+     * @ordered
+     */
 	public static final int CONST90DEGREES_VALUE = 11520;
 
 	/**
-	 * The '<em><b>Const180degrees</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const180degrees</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const180degrees</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CONST180DEGREES
-	 * @model name="Const180degrees"
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST180DEGREES
+     * @model name="Const180degrees"
+     * @generated
+     * @ordered
+     */
 	public static final int CONST180DEGREES_VALUE = 23040;
 
 	/**
-	 * The '<em><b>Const270degrees</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+     * The '<em><b>Const270degrees</b></em>' literal value.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const270degrees</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #CONST270DEGREES
-	 * @model name="Const270degrees"
-	 * @generated
-	 * @ordered
-	 */
+     * @see #CONST270DEGREES
+     * @model name="Const270degrees"
+     * @generated
+     * @ordered
+     */
 	public static final int CONST270DEGREES_VALUE = 34560;
 
 	/**
-	 * An array of all the '<em><b>OBP Xoa Orent</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+     * An array of all the '<em><b>OBP Xoa Orent</b></em>' enumerators.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private static final OBPXoaOrent[] VALUES_ARRAY =
 		new OBPXoaOrent[] {
-			CONST0DEGREES,
-			CONST90DEGREES,
-			CONST180DEGREES,
-			CONST270DEGREES,
-		};
+            CONST0DEGREES,
+            CONST90DEGREES,
+            CONST180DEGREES,
+            CONST270DEGREES,
+        };
 
 	/**
-	 * A public read-only list of all the '<em><b>OBP Xoa Orent</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
+     * A public read-only list of all the '<em><b>OBP Xoa Orent</b></em>' enumerators.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public static final List<OBPXoaOrent> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>OBP Xoa Orent</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>OBP Xoa Orent</b></em>' literal with the specified literal value.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param literal the literal.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static OBPXoaOrent get(String literal) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			OBPXoaOrent result = VALUES_ARRAY[i];
-			if (result.toString().equals(literal)) {
-				return result;
-			}
-		}
-		return null;
-	}
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            OBPXoaOrent result = VALUES_ARRAY[i];
+            if (result.toString().equals(literal)) {
+                return result;
+            }
+        }
+        return null;
+    }
 
 	/**
-	 * Returns the '<em><b>OBP Xoa Orent</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>OBP Xoa Orent</b></em>' literal with the specified name.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param name the name.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static OBPXoaOrent getByName(String name) {
-		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			OBPXoaOrent result = VALUES_ARRAY[i];
-			if (result.getName().equals(name)) {
-				return result;
-			}
-		}
-		return null;
-	}
+        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+            OBPXoaOrent result = VALUES_ARRAY[i];
+            if (result.getName().equals(name)) {
+                return result;
+            }
+        }
+        return null;
+    }
 
 	/**
-	 * Returns the '<em><b>OBP Xoa Orent</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
+     * Returns the '<em><b>OBP Xoa Orent</b></em>' literal with the specified integer value.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
-	 * @generated
-	 */
+     * @param value the integer value.
+     * @return the matching enumerator or <code>null</code>.
+     * @generated
+     */
 	public static OBPXoaOrent get(int value) {
-		switch (value) {
-			case CONST0DEGREES_VALUE: return CONST0DEGREES;
-			case CONST90DEGREES_VALUE: return CONST90DEGREES;
-			case CONST180DEGREES_VALUE: return CONST180DEGREES;
-			case CONST270DEGREES_VALUE: return CONST270DEGREES;
-		}
-		return null;
-	}
+        switch (value) {
+            case CONST0DEGREES_VALUE: return CONST0DEGREES;
+            case CONST90DEGREES_VALUE: return CONST90DEGREES;
+            case CONST180DEGREES_VALUE: return CONST180DEGREES;
+            case CONST270DEGREES_VALUE: return CONST270DEGREES;
+        }
+        return null;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
+     * Only this class can construct instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	private OBPXoaOrent(int value, String name, String literal) {
-		this.value = value;
-		this.name = name;
-		this.literal = literal;
-	}
+        this.value = value;
+        this.name = name;
+        this.literal = literal;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getValue() {
-	  return value;
-	}
+      return value;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getName() {
-	  return name;
-	}
+      return name;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getLiteral() {
-	  return literal;
-	}
+      return literal;
+    }
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
+     * Returns the literal value of the enumerator, which is its string representation.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		return literal;
-	}
+        return literal;
+    }
 	
 } //OBPXoaOrent

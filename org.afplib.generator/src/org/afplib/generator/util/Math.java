@@ -1,5 +1,7 @@
 package org.afplib.generator.util;
 
+import java.util.BitSet;
+
 public class Math {
 
 	public static Integer pow(Integer a, Integer b) {
@@ -26,5 +28,11 @@ public class Math {
 		}
 		throw new IllegalArgumentException("Unsupported size "+size);
 	}
-	
+
+	   public static Integer calculateFlagValue(Integer size, Integer bit) {
+	        BitSet set = new BitSet(size);
+	        set.set(size - bit - 1);
+	        return (int) set.toLongArray()[0];
+	    }
+
 }

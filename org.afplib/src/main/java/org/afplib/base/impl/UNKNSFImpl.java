@@ -16,22 +16,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class UNKNSFImpl extends SFImpl implements UNKNSF {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected UNKNSFImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return BasePackage.Literals.UNKNSF;
-	}
+        return BasePackage.Literals.UNKNSF;
+    }
 
 } //UNKNSFImpl

@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class AMIImpl extends TripletImpl implements AMI {
 	/**
-	 * The default value of the '{@link #getDSPLCMNT() <em>DSPLCMNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getDSPLCMNT() <em>DSPLCMNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDSPLCMNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDSPLCMNT()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer DSPLCMNT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDSPLCMNT() <em>DSPLCMNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getDSPLCMNT() <em>DSPLCMNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDSPLCMNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDSPLCMNT()
+     * @generated
+     * @ordered
+     */
 	protected Integer dsplcmnt = DSPLCMNT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected AMIImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.AMI;
-	}
+        return AfplibPackage.eINSTANCE.getAMI();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getDSPLCMNT() {
-		return dsplcmnt;
-	}
+        return dsplcmnt;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setDSPLCMNT(Integer newDSPLCMNT) {
-		Integer oldDSPLCMNT = dsplcmnt;
-		dsplcmnt = newDSPLCMNT;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.AMI__DSPLCMNT, oldDSPLCMNT, dsplcmnt));
-	}
+        Integer oldDSPLCMNT = dsplcmnt;
+        dsplcmnt = newDSPLCMNT;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.AMI__DSPLCMNT, oldDSPLCMNT, dsplcmnt));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.AMI__DSPLCMNT:
-				return getDSPLCMNT();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.AMI__DSPLCMNT:
+                return getDSPLCMNT();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.AMI__DSPLCMNT:
-				setDSPLCMNT((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.AMI__DSPLCMNT:
+                setDSPLCMNT((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.AMI__DSPLCMNT:
-				setDSPLCMNT(DSPLCMNT_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.AMI__DSPLCMNT:
+                setDSPLCMNT(DSPLCMNT_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.AMI__DSPLCMNT:
-				return DSPLCMNT_EDEFAULT == null ? dsplcmnt != null : !DSPLCMNT_EDEFAULT.equals(dsplcmnt);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.AMI__DSPLCMNT:
+                return DSPLCMNT_EDEFAULT == null ? dsplcmnt != null : !DSPLCMNT_EDEFAULT.equals(dsplcmnt);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (DSPLCMNT: ");
-		result.append(dsplcmnt);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (DSPLCMNT: ");
+        result.append(dsplcmnt);
+        result.append(')');
+        return result.toString();
+    }
 
 } //AMIImpl

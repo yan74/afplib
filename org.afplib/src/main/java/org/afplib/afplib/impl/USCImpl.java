@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class USCImpl extends TripletImpl implements USC {
 	/**
-	 * The default value of the '{@link #getBYPSIDEN() <em>BYPSIDEN</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getBYPSIDEN() <em>BYPSIDEN</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBYPSIDEN()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBYPSIDEN()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer BYPSIDEN_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getBYPSIDEN() <em>BYPSIDEN</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getBYPSIDEN() <em>BYPSIDEN</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBYPSIDEN()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBYPSIDEN()
+     * @generated
+     * @ordered
+     */
 	protected Integer bypsiden = BYPSIDEN_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected USCImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.USC;
-	}
+        return AfplibPackage.eINSTANCE.getUSC();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getBYPSIDEN() {
-		return bypsiden;
-	}
+        return bypsiden;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setBYPSIDEN(Integer newBYPSIDEN) {
-		Integer oldBYPSIDEN = bypsiden;
-		bypsiden = newBYPSIDEN;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.USC__BYPSIDEN, oldBYPSIDEN, bypsiden));
-	}
+        Integer oldBYPSIDEN = bypsiden;
+        bypsiden = newBYPSIDEN;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.USC__BYPSIDEN, oldBYPSIDEN, bypsiden));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.USC__BYPSIDEN:
-				return getBYPSIDEN();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.USC__BYPSIDEN:
+                return getBYPSIDEN();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.USC__BYPSIDEN:
-				setBYPSIDEN((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.USC__BYPSIDEN:
+                setBYPSIDEN((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.USC__BYPSIDEN:
-				setBYPSIDEN(BYPSIDEN_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.USC__BYPSIDEN:
+                setBYPSIDEN(BYPSIDEN_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.USC__BYPSIDEN:
-				return BYPSIDEN_EDEFAULT == null ? bypsiden != null : !BYPSIDEN_EDEFAULT.equals(bypsiden);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.USC__BYPSIDEN:
+                return BYPSIDEN_EDEFAULT == null ? bypsiden != null : !BYPSIDEN_EDEFAULT.equals(bypsiden);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (BYPSIDEN: ");
-		result.append(bypsiden);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (BYPSIDEN: ");
+        result.append(bypsiden);
+        result.append(')');
+        return result.toString();
+    }
 
 } //USCImpl

@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface NOP extends SF {
 	/**
-	 * Returns the value of the '<em><b>Undf Data</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Undf Data</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>variable length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Undf Data</em>' attribute.
-	 * @see #setUndfData(byte[])
-	 * @see org.afplib.afplib.AfplibPackage#getNOP_UndfData()
-	 * @model
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>variable length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Undf Data</em>' attribute.
+     * @see #setUndfData(byte[])
+     * @see org.afplib.afplib.AfplibPackage#getNOP_UndfData()
+     * @model
+     * @generated
+     */
 	byte[] getUndfData();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.NOP#getUndfData <em>Undf Data</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.NOP#getUndfData <em>Undf Data</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Undf Data</em>' attribute.
-	 * @see #getUndfData()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Undf Data</em>' attribute.
+     * @see #getUndfData()
+     * @generated
+     */
 	void setUndfData(byte[] value);
 
 } // NOP

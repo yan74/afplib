@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface BandImageRG extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>BITCNT</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>BITCNT</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>BITCNT</em>' attribute.
-	 * @see #setBITCNT(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getBandImageRG_BITCNT()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>BITCNT</em>' attribute.
+     * @see #setBITCNT(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getBandImageRG_BITCNT()
+     * @model required="true"
+     * @generated
+     */
 	Integer getBITCNT();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.BandImageRG#getBITCNT <em>BITCNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.BandImageRG#getBITCNT <em>BITCNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>BITCNT</em>' attribute.
-	 * @see #getBITCNT()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>BITCNT</em>' attribute.
+     * @see #getBITCNT()
+     * @generated
+     */
 	void setBITCNT(Integer value);
 
 } // BandImageRG

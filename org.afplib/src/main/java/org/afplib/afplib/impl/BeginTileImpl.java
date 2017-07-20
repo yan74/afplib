@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class BeginTileImpl extends TripletImpl implements BeginTile {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BeginTileImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.BEGIN_TILE;
-	}
+        return AfplibPackage.eINSTANCE.getBeginTile();
+    }
 
 } //BeginTileImpl

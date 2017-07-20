@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface GCRLINERG extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>XOSSF</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>XOSSF</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>XOSSF</em>' attribute.
-	 * @see #setXOSSF(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getGCRLINERG_XOSSF()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>XOSSF</em>' attribute.
+     * @see #setXOSSF(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getGCRLINERG_XOSSF()
+     * @model required="true"
+     * @generated
+     */
 	Integer getXOSSF();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GCRLINERG#getXOSSF <em>XOSSF</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GCRLINERG#getXOSSF <em>XOSSF</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>XOSSF</em>' attribute.
-	 * @see #getXOSSF()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>XOSSF</em>' attribute.
+     * @see #getXOSSF()
+     * @generated
+     */
 	void setXOSSF(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>YOFFS</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>YOFFS</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>YOFFS</em>' attribute.
-	 * @see #setYOFFS(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getGCRLINERG_YOFFS()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>YOFFS</em>' attribute.
+     * @see #setYOFFS(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getGCRLINERG_YOFFS()
+     * @model required="true"
+     * @generated
+     */
 	Integer getYOFFS();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GCRLINERG#getYOFFS <em>YOFFS</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GCRLINERG#getYOFFS <em>YOFFS</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>YOFFS</em>' attribute.
-	 * @see #getYOFFS()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>YOFFS</em>' attribute.
+     * @see #getYOFFS()
+     * @generated
+     */
 	void setYOFFS(Integer value);
 
 } // GCRLINERG

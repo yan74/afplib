@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class LineDataImpl extends SFImpl implements LineData {
 	/**
-	 * The default value of the '{@link #getLinedata() <em>Linedata</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getLinedata() <em>Linedata</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLinedata()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getLinedata()
+     * @generated
+     * @ordered
+     */
 	protected static final String LINEDATA_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getLinedata() <em>Linedata</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getLinedata() <em>Linedata</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLinedata()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getLinedata()
+     * @generated
+     * @ordered
+     */
 	protected String linedata = LINEDATA_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected LineDataImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.LINE_DATA;
-	}
+        return AfplibPackage.eINSTANCE.getLineData();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getLinedata() {
-		return linedata;
-	}
+        return linedata;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setLinedata(String newLinedata) {
-		String oldLinedata = linedata;
-		linedata = newLinedata;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.LINE_DATA__LINEDATA, oldLinedata, linedata));
-	}
+        String oldLinedata = linedata;
+        linedata = newLinedata;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.LINE_DATA__LINEDATA, oldLinedata, linedata));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA__LINEDATA:
-				return getLinedata();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA__LINEDATA:
+                return getLinedata();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA__LINEDATA:
-				setLinedata((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA__LINEDATA:
+                setLinedata((String)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA__LINEDATA:
-				setLinedata(LINEDATA_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA__LINEDATA:
+                setLinedata(LINEDATA_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.LINE_DATA__LINEDATA:
-				return LINEDATA_EDEFAULT == null ? linedata != null : !LINEDATA_EDEFAULT.equals(linedata);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.LINE_DATA__LINEDATA:
+                return LINEDATA_EDEFAULT == null ? linedata != null : !LINEDATA_EDEFAULT.equals(linedata);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (linedata: ");
-		result.append(linedata);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (linedata: ");
+        result.append(linedata);
+        result.append(')');
+        return result.toString();
+    }
 
 } //LineDataImpl

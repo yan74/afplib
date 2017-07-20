@@ -73,10 +73,10 @@
 	  
 	  «FOREACH elements AS e»
 	  «IF e.validValues.size > 0 && e.validValues.get(0).metaType == BitValue»
-  <eClassifiers xsi:type="ecore:EEnum" name="«name»«e.name»">	  
-	      «FOREACH e.validValues AS v»
-	      	«IF v.metaType == BitValue && ((BitValue)v).forceZero == false && ((BitValue)v).name != null»
-    <eLiterals name="«v.name.replaceAll(" ","")»" value="«pow(2,((BitValue)v).Bit)»" literal="«v.name.replaceAll(" ","")»"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="«name»«e.name»">
+          «FOREACH e.validValues AS v»
+            «IF v.metaType == BitValue && ((BitValue)v).forceZero == false && ((BitValue)v).name != null»
+    <eLiterals name="«v.name.replaceAll(" ","")»" value="«calculateFlagValue( (e.stop - e.start + 1)*8,((BitValue)v).Bit)»" literal="«v.name.replaceAll(" ","")»"/>
 	      	«ENDIF»
 	      «ENDFOREACH»
   </eClassifiers>

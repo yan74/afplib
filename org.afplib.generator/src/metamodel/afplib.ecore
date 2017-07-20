@@ -48,35 +48,35 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="BDAFlags">	  
-	      
-	      	
-    <eLiterals name="HRI" value="1" literal="HRI"/>
-	      	
-	      
-	      	
-    <eLiterals name="Position1" value="2" literal="Position1"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="BDAFlags">
+          
+            
+    <eLiterals name="HRI" value="128" literal="HRI"/>
 	      	
 	      
-	      	
-    <eLiterals name="Position2" value="4" literal="Position2"/>
-	      	
-	      
-	      	
-    <eLiterals name="SSCAST" value="8" literal="SSCAST"/>
+            
+    <eLiterals name="Position1" value="64" literal="Position1"/>
 	      	
 	      
+            
+    <eLiterals name="Position2" value="32" literal="Position2"/>
 	      	
 	      
-	      	
-    <eLiterals name="SupressBC" value="32" literal="SupressBC"/>
-	      	
-	      
-	      	
-    <eLiterals name="SupressBlanks" value="64" literal="SupressBlanks"/>
+            
+    <eLiterals name="SSCAST" value="16" literal="SSCAST"/>
 	      	
 	      
+            
+	      
+            
+    <eLiterals name="SupressBC" value="4" literal="SupressBC"/>
 	      	
+	      
+            
+    <eLiterals name="SupressBlanks" value="2" literal="SupressBlanks"/>
+	      	
+	      
+            
 	      
   </eClassifiers>
   
@@ -627,18 +627,18 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="CPCPrtFlags">	  
-	      
-	      	
-    <eLiterals name="Invalid" value="1" literal="Invalid"/>
-	      	
-	      
-	      	
-    <eLiterals name="Presentation" value="2" literal="Presentation"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="CPCPrtFlags">
+          
+            
+    <eLiterals name="Invalid" value="128" literal="Invalid"/>
 	      	
 	      
+            
+    <eLiterals name="Presentation" value="64" literal="Presentation"/>
 	      	
-    <eLiterals name="Increment" value="4" literal="Increment"/>
+	      
+            
+    <eLiterals name="Increment" value="32" literal="Increment"/>
 	      	
 	      
   </eClassifiers>
@@ -672,14 +672,14 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="CPCVSFlags">	  
+  <eClassifiers xsi:type="ecore:EEnum" name="CPCVSFlags">
+          
+            
+    <eLiterals name="SortOrder" value="128" literal="SortOrder"/>
+	      	
 	      
-	      	
-    <eLiterals name="SortOrder" value="1" literal="SortOrder"/>
-	      	
-	      
-	      	
-    <eLiterals name="VariableSpace" value="16" literal="VariableSpace"/>
+            
+    <eLiterals name="VariableSpace" value="8" literal="VariableSpace"/>
 	      	
 	      
   </eClassifiers>
@@ -993,31 +993,31 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="FNCFntFlags">	  
-	      
-	      	
-    <eLiterals name="PrintingType" value="1" literal="PrintingType"/>
-	      	
-	      
-	      	
-    <eLiterals name="ExtensionType" value="2" literal="ExtensionType"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="FNCFntFlags">
+          
+            
+    <eLiterals name="PrintingType" value="128" literal="PrintingType"/>
 	      	
 	      
+            
+    <eLiterals name="ExtensionType" value="64" literal="ExtensionType"/>
 	      	
 	      
+            
+	      
+            
+	      
+            
+    <eLiterals name="Retired" value="8" literal="Retired"/>
 	      	
 	      
-	      	
-    <eLiterals name="Retired" value="16" literal="Retired"/>
+            
+	      
+            
+    <eLiterals name="UniformCharacterBoxFont" value="2" literal="UniformCharacterBoxFont"/>
 	      	
 	      
-	      	
-	      
-	      	
-    <eLiterals name="UniformCharacterBoxFont" value="64" literal="UniformCharacterBoxFont"/>
-	      	
-	      
-	      	
+            
 	      
   </eClassifiers>
   
@@ -1346,47 +1346,47 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="FNDFtDsFlags">	  
-	      
-	      	
-    <eLiterals name="Italic" value="1" literal="Italic"/>
-	      	
-	      
-	      	
-    <eLiterals name="Underscored" value="2" literal="Underscored"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="FNDFtDsFlags">
+          
+            
+    <eLiterals name="Italic" value="32768" literal="Italic"/>
 	      	
 	      
+            
+    <eLiterals name="Underscored" value="16384" literal="Underscored"/>
 	      	
 	      
-	      	
-    <eLiterals name="Solid" value="8" literal="Solid"/>
+            
+	      
+            
+    <eLiterals name="Solid" value="4096" literal="Solid"/>
 	      	
 	      
-	      	
-    <eLiterals name="Overstruck" value="16" literal="Overstruck"/>
-	      	
-	      
+            
+    <eLiterals name="Overstruck" value="2048" literal="Overstruck"/>
 	      	
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
+	      
+            
 	      
   </eClassifiers>
   
@@ -1665,10 +1665,10 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="IPGIPgFlgs">	  
-	      
-	      	
-    <eLiterals name="Format" value="1" literal="Format"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="IPGIPgFlgs">
+          
+            
+    <eLiterals name="Format" value="128" literal="Format"/>
 	      	
 	      
   </eClassifiers>
@@ -1862,10 +1862,10 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="MDDMDDFlgs">	  
-	      
-	      	
-    <eLiterals name="CutSheetOrientation" value="1" literal="CutSheetOrientation"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="MDDMDDFlgs">
+          
+            
+    <eLiterals name="CutSheetOrientation" value="128" literal="CutSheetOrientation"/>
 	      	
 	      
   </eClassifiers>
@@ -1885,25 +1885,25 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="MFCMFCFlgs">	  
-	      
-	      	
-    <eLiterals name="ActivateMediumFinishControl" value="1" literal="ActivateMediumFinishControl"/>
-	      	
-	      
+  <eClassifiers xsi:type="ecore:EEnum" name="MFCMFCFlgs">
+          
+            
+    <eLiterals name="ActivateMediumFinishControl" value="128" literal="ActivateMediumFinishControl"/>
 	      	
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
+	      
+            
 	      
   </eClassifiers>
   
@@ -2188,10 +2188,10 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="PFCPFCFlgs">	  
-	      
-	      	
-    <eLiterals name="Reset" value="1" literal="Reset"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="PFCPFCFlgs">
+          
+            
+    <eLiterals name="Reset" value="128" literal="Reset"/>
 	      	
 	      
   </eClassifiers>
@@ -2430,30 +2430,30 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="OVSBYPSIDEN">	  
+  <eClassifiers xsi:type="ecore:EEnum" name="OVSBYPSIDEN">
+          
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
-	      
-	      	
-    <eLiterals name="BypassRelativeMoveInline" value="16" literal="BypassRelativeMoveInline"/>
-	      	
-	      
-	      	
-    <eLiterals name="BypassAbsoluteMoveInline" value="32" literal="BypassAbsoluteMoveInline"/>
+            
+    <eLiterals name="BypassRelativeMoveInline" value="8" literal="BypassRelativeMoveInline"/>
 	      	
 	      
-	      	
-    <eLiterals name="Bypassspacecharacters" value="64" literal="Bypassspacecharacters"/>
+            
+    <eLiterals name="BypassAbsoluteMoveInline" value="4" literal="BypassAbsoluteMoveInline"/>
 	      	
 	      
+            
+    <eLiterals name="Bypassspacecharacters" value="2" literal="Bypassspacecharacters"/>
 	      	
-    <eLiterals name="NoBypassinEffect" value="128" literal="NoBypassinEffect"/>
+	      
+            
+    <eLiterals name="NoBypassinEffect" value="1" literal="NoBypassinEffect"/>
 	      	
 	      
   </eClassifiers>
@@ -2769,30 +2769,30 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="USCBYPSIDEN">	  
+  <eClassifiers xsi:type="ecore:EEnum" name="USCBYPSIDEN">
+          
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
+            
 	      
-	      	
-	      
-	      	
-    <eLiterals name="BypassRelativeMoveInline" value="16" literal="BypassRelativeMoveInline"/>
-	      	
-	      
-	      	
-    <eLiterals name="BypassAbsoluteMoveInline" value="32" literal="BypassAbsoluteMoveInline"/>
+            
+    <eLiterals name="BypassRelativeMoveInline" value="8" literal="BypassRelativeMoveInline"/>
 	      	
 	      
-	      	
-    <eLiterals name="Bypassspacecharacters" value="64" literal="Bypassspacecharacters"/>
+            
+    <eLiterals name="BypassAbsoluteMoveInline" value="4" literal="BypassAbsoluteMoveInline"/>
 	      	
 	      
+            
+    <eLiterals name="Bypassspacecharacters" value="2" literal="Bypassspacecharacters"/>
 	      	
-    <eLiterals name="NoBypassinEffect" value="128" literal="NoBypassinEffect"/>
+	      
+            
+    <eLiterals name="NoBypassinEffect" value="1" literal="NoBypassinEffect"/>
 	      	
 	      
   </eClassifiers>
@@ -3498,30 +3498,30 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="ObjectClassificationStrucFlgs">	  
-	      
-	      	
-    <eLiterals name="ObjectContainer" value="1" literal="ObjectContainer"/>
-	      	
-	      
-	      	
-    <eLiterals name="ObjectContainer2" value="2" literal="ObjectContainer2"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="ObjectClassificationStrucFlgs">
+          
+            
+    <eLiterals name="ObjectContainer" value="32768" literal="ObjectContainer"/>
 	      	
 	      
-	      	
-    <eLiterals name="ObjectEnvironmentGroup" value="4" literal="ObjectEnvironmentGroup"/>
-	      	
-	      
-	      	
-    <eLiterals name="ObjectEnvironmentGroup2" value="8" literal="ObjectEnvironmentGroup2"/>
+            
+    <eLiterals name="ObjectContainer2" value="16384" literal="ObjectContainer2"/>
 	      	
 	      
-	      	
-    <eLiterals name="ObjectContainerData" value="16" literal="ObjectContainerData"/>
+            
+    <eLiterals name="ObjectEnvironmentGroup" value="8192" literal="ObjectEnvironmentGroup"/>
 	      	
 	      
+            
+    <eLiterals name="ObjectEnvironmentGroup2" value="4096" literal="ObjectEnvironmentGroup2"/>
 	      	
-    <eLiterals name="ObjectContainerData2" value="32" literal="ObjectContainerData2"/>
+	      
+            
+    <eLiterals name="ObjectContainerData" value="2048" literal="ObjectContainerData"/>
+	      	
+	      
+            
+    <eLiterals name="ObjectContainerData2" value="1024" literal="ObjectContainerData2"/>
 	      	
 	      
   </eClassifiers>
@@ -3693,14 +3693,14 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="PresentationControlPRSFlg">	  
+  <eClassifiers xsi:type="ecore:EEnum" name="PresentationControlPRSFlg">
+          
+            
+    <eLiterals name="Objectviewcontrol" value="128" literal="Objectviewcontrol"/>
+	      	
 	      
-	      	
-    <eLiterals name="Objectviewcontrol" value="1" literal="Objectviewcontrol"/>
-	      	
-	      
-	      	
-    <eLiterals name="Objectindexingcontrol" value="2" literal="Objectindexingcontrol"/>
+            
+    <eLiterals name="Objectindexingcontrol" value="64" literal="Objectindexingcontrol"/>
 	      	
 	      
   </eClassifiers>
@@ -3902,36 +3902,36 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="FontDescriptorSpecificationFtDsFlags">	  
-	      
-	      	
-    <eLiterals name="Italic" value="1" literal="Italic"/>
-	      	
-	      
-	      	
-    <eLiterals name="Underscored" value="2" literal="Underscored"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="FontDescriptorSpecificationFtDsFlags">
+          
+            
+    <eLiterals name="Italic" value="128" literal="Italic"/>
 	      	
 	      
+            
+    <eLiterals name="Underscored" value="64" literal="Underscored"/>
 	      	
 	      
-	      	
-    <eLiterals name="Solid" value="8" literal="Solid"/>
+            
+	      
+            
+    <eLiterals name="Solid" value="16" literal="Solid"/>
 	      	
 	      
-	      	
-    <eLiterals name="Overstruck" value="16" literal="Overstruck"/>
-	      	
-	      
-	      	
-    <eLiterals name="Proportionallyspaced" value="32" literal="Proportionallyspaced"/>
+            
+    <eLiterals name="Overstruck" value="8" literal="Overstruck"/>
 	      	
 	      
-	      	
-    <eLiterals name="Pairwisekerned" value="64" literal="Pairwisekerned"/>
+            
+    <eLiterals name="Proportionallyspaced" value="4" literal="Proportionallyspaced"/>
 	      	
 	      
+            
+    <eLiterals name="Pairwisekerned" value="2" literal="Pairwisekerned"/>
 	      	
-    <eLiterals name="Parameterisspecified" value="128" literal="Parameterisspecified"/>
+	      
+            
+    <eLiterals name="Parameterisspecified" value="1" literal="Parameterisspecified"/>
 	      	
 	      
   </eClassifiers>
@@ -3939,14 +3939,14 @@
   	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="FontDescriptorSpecificationFtUsFlags">	  
+  <eClassifiers xsi:type="ecore:EEnum" name="FontDescriptorSpecificationFtUsFlags">
+          
+            
+    <eLiterals name="OutlineFont" value="64" literal="OutlineFont"/>
+	      	
 	      
-	      	
-    <eLiterals name="OutlineFont" value="2" literal="OutlineFont"/>
-	      	
-	      
-	      	
-    <eLiterals name="Transformable" value="4" literal="Transformable"/>
+            
+    <eLiterals name="Transformable" value="32" literal="Transformable"/>
 	      	
 	      
   </eClassifiers>
@@ -4122,14 +4122,14 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="IDEStructureFLAGS">	  
+  <eClassifiers xsi:type="ecore:EEnum" name="IDEStructureFLAGS">
+          
+            
+    <eLiterals name="Subtractive" value="128" literal="Subtractive"/>
+	      	
 	      
-	      	
-    <eLiterals name="Subtractive" value="1" literal="Subtractive"/>
-	      	
-	      
-	      	
-    <eLiterals name="GrayCoding" value="2" literal="GrayCoding"/>
+            
+    <eLiterals name="GrayCoding" value="64" literal="GrayCoding"/>
 	      	
 	      
   </eClassifiers>
@@ -4475,26 +4475,26 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="PPORGProcFlgs">	  
-	      
-	      	
-    <eLiterals name="Degree0" value="1" literal="Degree0"/>
-	      	
-	      
-	      	
-    <eLiterals name="Degree90" value="2" literal="Degree90"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="PPORGProcFlgs">
+          
+            
+    <eLiterals name="Degree0" value="128" literal="Degree0"/>
 	      	
 	      
-	      	
-    <eLiterals name="Degree180" value="4" literal="Degree180"/>
-	      	
-	      
-	      	
-    <eLiterals name="Degree270" value="8" literal="Degree270"/>
+            
+    <eLiterals name="Degree90" value="64" literal="Degree90"/>
 	      	
 	      
+            
+    <eLiterals name="Degree180" value="32" literal="Degree180"/>
 	      	
-    <eLiterals name="PreprocessAll" value="16" literal="PreprocessAll"/>
+	      
+            
+    <eLiterals name="Degree270" value="16" literal="Degree270"/>
+	      	
+	      
+            
+    <eLiterals name="PreprocessAll" value="8" literal="PreprocessAll"/>
 	      	
 	      
   </eClassifiers>
@@ -4598,22 +4598,22 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="PGPRGPgFlgs">	  
-	      
-	      	
-    <eLiterals name="VariablePageData" value="1" literal="VariablePageData"/>
-	      	
-	      
-	      	
-    <eLiterals name="PMCOverlays" value="2" literal="PMCOverlays"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="PGPRGPgFlgs">
+          
+            
+    <eLiterals name="VariablePageData" value="128" literal="VariablePageData"/>
 	      	
 	      
-	      	
-    <eLiterals name="PMCOverlayPosition" value="4" literal="PMCOverlayPosition"/>
+            
+    <eLiterals name="PMCOverlays" value="64" literal="PMCOverlays"/>
 	      	
 	      
+            
+    <eLiterals name="PMCOverlayPosition" value="32" literal="PMCOverlayPosition"/>
 	      	
-    <eLiterals name="PageViewControl" value="8" literal="PageViewControl"/>
+	      
+            
+    <eLiterals name="PageViewControl" value="16" literal="PageViewControl"/>
 	      	
 	      
   </eClassifiers>
@@ -4901,22 +4901,22 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="BeginSegmentCommandFLAG2">	  
-	      
-	      	
-    <eLiterals name="Chained" value="1" literal="Chained"/>
-	      	
-	      
-	      	
-    <eLiterals name="Prolog" value="8" literal="Prolog"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="BeginSegmentCommandFLAG2">
+          
+            
+    <eLiterals name="Chained" value="128" literal="Chained"/>
 	      	
 	      
-	      	
-    <eLiterals name="NewSegment1" value="32" literal="NewSegment1"/>
+            
+    <eLiterals name="Prolog" value="16" literal="Prolog"/>
 	      	
 	      
+            
+    <eLiterals name="NewSegment1" value="4" literal="NewSegment1"/>
 	      	
-    <eLiterals name="NewSegment2" value="64" literal="NewSegment2"/>
+	      
+            
+    <eLiterals name="NewSegment2" value="2" literal="NewSegment2"/>
 	      	
 	      
   </eClassifiers>
@@ -4936,18 +4936,18 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="GBARFLAGS">	  
-	      
-	      	
-    <eLiterals name="RES1" value="1" literal="RES1"/>
-	      	
-	      
-	      	
-    <eLiterals name="BOUNDARY" value="2" literal="BOUNDARY"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="GBARFLAGS">
+          
+            
+    <eLiterals name="RES1" value="128" literal="RES1"/>
 	      	
 	      
+            
+    <eLiterals name="BOUNDARY" value="64" literal="BOUNDARY"/>
 	      	
-    <eLiterals name="INSIDE" value="4" literal="INSIDE"/>
+	      
+            
+    <eLiterals name="INSIDE" value="32" literal="INSIDE"/>
 	      	
 	      
   </eClassifiers>
@@ -5797,24 +5797,24 @@
 	  
 	  
 	  
-  <eClassifiers xsi:type="ecore:EEnum" name="WindowSpecificationFLAGS">	  
-	      
-	      	
-    <eLiterals name="PPS" value="1" literal="PPS"/>
-	      	
-	      
-	      	
-    <eLiterals name="ABS" value="2" literal="ABS"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="WindowSpecificationFLAGS">
+          
+            
+    <eLiterals name="PPS" value="128" literal="PPS"/>
 	      	
 	      
+            
+    <eLiterals name="ABS" value="64" literal="ABS"/>
 	      	
 	      
-	      	
-    <eLiterals name="IMGRES" value="8" literal="IMGRES"/>
+            
+	      
+            
+    <eLiterals name="IMGRES" value="16" literal="IMGRES"/>
 	      	
 	      
-	      	
-    <eLiterals name="IMGNS" value="16" literal="IMGNS"/>
+            
+    <eLiterals name="IMGNS" value="8" literal="IMGNS"/>
 	      	
 	      
   </eClassifiers>

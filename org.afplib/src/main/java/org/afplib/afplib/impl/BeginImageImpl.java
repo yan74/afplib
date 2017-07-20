@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class BeginImageImpl extends TripletImpl implements BeginImage {
 	/**
-	 * The default value of the '{@link #getOBJTYPE() <em>OBJTYPE</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getOBJTYPE() <em>OBJTYPE</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOBJTYPE()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getOBJTYPE()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer OBJTYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getOBJTYPE() <em>OBJTYPE</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getOBJTYPE() <em>OBJTYPE</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOBJTYPE()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getOBJTYPE()
+     * @generated
+     * @ordered
+     */
 	protected Integer objtype = OBJTYPE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BeginImageImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.BEGIN_IMAGE;
-	}
+        return AfplibPackage.eINSTANCE.getBeginImage();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getOBJTYPE() {
-		return objtype;
-	}
+        return objtype;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setOBJTYPE(Integer newOBJTYPE) {
-		Integer oldOBJTYPE = objtype;
-		objtype = newOBJTYPE;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BEGIN_IMAGE__OBJTYPE, oldOBJTYPE, objtype));
-	}
+        Integer oldOBJTYPE = objtype;
+        objtype = newOBJTYPE;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BEGIN_IMAGE__OBJTYPE, oldOBJTYPE, objtype));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
-				return getOBJTYPE();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
+                return getOBJTYPE();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
-				setOBJTYPE((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
+                setOBJTYPE((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
-				setOBJTYPE(OBJTYPE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
+                setOBJTYPE(OBJTYPE_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
-				return OBJTYPE_EDEFAULT == null ? objtype != null : !OBJTYPE_EDEFAULT.equals(objtype);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_IMAGE__OBJTYPE:
+                return OBJTYPE_EDEFAULT == null ? objtype != null : !OBJTYPE_EDEFAULT.equals(objtype);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (OBJTYPE: ");
-		result.append(objtype);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (OBJTYPE: ");
+        result.append(objtype);
+        result.append(')');
+        return result.toString();
+    }
 
 } //BeginImageImpl

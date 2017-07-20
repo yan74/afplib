@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface EDM extends SF {
 	/**
-	 * Returns the value of the '<em><b>DM Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>DM Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>DM Name</em>' attribute.
-	 * @see #setDMName(String)
-	 * @see org.afplib.afplib.AfplibPackage#getEDM_DMName()
-	 * @model dataType="org.afplib.base.ModcaString8" required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>DM Name</em>' attribute.
+     * @see #setDMName(String)
+     * @see org.afplib.afplib.AfplibPackage#getEDM_DMName()
+     * @model dataType="org.afplib.base.ModcaString8" required="true"
+     * @generated
+     */
 	String getDMName();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.EDM#getDMName <em>DM Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.EDM#getDMName <em>DM Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>DM Name</em>' attribute.
-	 * @see #getDMName()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>DM Name</em>' attribute.
+     * @see #getDMName()
+     * @generated
+     */
 	void setDMName(String value);
 
 } // EDM

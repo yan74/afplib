@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ResourceObjectTypeImpl extends TripletImpl implements ResourceObjectType {
 	/**
-	 * The default value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getObjType()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getObjType()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer OBJ_TYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getObjType()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getObjType()
+     * @generated
+     * @ordered
+     */
 	protected Integer objType = OBJ_TYPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getConData() <em>Con Data</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getConData() <em>Con Data</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConData()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getConData()
+     * @generated
+     * @ordered
+     */
 	protected static final byte[] CON_DATA_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getConData() <em>Con Data</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getConData() <em>Con Data</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConData()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getConData()
+     * @generated
+     * @ordered
+     */
 	protected byte[] conData = CON_DATA_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResourceObjectTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.RESOURCE_OBJECT_TYPE;
-	}
+        return AfplibPackage.eINSTANCE.getResourceObjectType();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getObjType() {
-		return objType;
-	}
+        return objType;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setObjType(Integer newObjType) {
-		Integer oldObjType = objType;
-		objType = newObjType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE, oldObjType, objType));
-	}
+        Integer oldObjType = objType;
+        objType = newObjType;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE, oldObjType, objType));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public byte[] getConData() {
-		return conData;
-	}
+        return conData;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setConData(byte[] newConData) {
-		byte[] oldConData = conData;
-		conData = newConData;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA, oldConData, conData));
-	}
+        byte[] oldConData = conData;
+        conData = newConData;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA, oldConData, conData));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
-				return getObjType();
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
-				return getConData();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
+                return getObjType();
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
+                return getConData();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
-				setObjType((Integer)newValue);
-				return;
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
-				setConData((byte[])newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
+                setObjType((Integer)newValue);
+                return;
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
+                setConData((byte[])newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
-				setObjType(OBJ_TYPE_EDEFAULT);
-				return;
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
-				setConData(CON_DATA_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
+                setObjType(OBJ_TYPE_EDEFAULT);
+                return;
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
+                setConData(CON_DATA_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
-				return OBJ_TYPE_EDEFAULT == null ? objType != null : !OBJ_TYPE_EDEFAULT.equals(objType);
-			case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
-				return CON_DATA_EDEFAULT == null ? conData != null : !CON_DATA_EDEFAULT.equals(conData);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__OBJ_TYPE:
+                return OBJ_TYPE_EDEFAULT == null ? objType != null : !OBJ_TYPE_EDEFAULT.equals(objType);
+            case AfplibPackage.RESOURCE_OBJECT_TYPE__CON_DATA:
+                return CON_DATA_EDEFAULT == null ? conData != null : !CON_DATA_EDEFAULT.equals(conData);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (ObjType: ");
-		result.append(objType);
-		result.append(", ConData: ");
-		result.append(conData);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (ObjType: ");
+        result.append(objType);
+        result.append(", ConData: ");
+        result.append(conData);
+        result.append(')');
+        return result.toString();
+    }
 
 } //ResourceObjectTypeImpl

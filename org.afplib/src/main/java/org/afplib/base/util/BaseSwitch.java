@@ -24,173 +24,173 @@ import org.eclipse.emf.ecore.util.Switch;
  */
 public class BaseSwitch<T> extends Switch<T> {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
+     * The cached model package
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected static BasePackage modelPackage;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
+     * Creates an instance of the switch.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public BaseSwitch() {
-		if (modelPackage == null) {
-			modelPackage = BasePackage.eINSTANCE;
-		}
-	}
+        if (modelPackage == null) {
+            modelPackage = BasePackage.eINSTANCE;
+        }
+    }
 
 	/**
-	 * Checks whether this is a switch for the given package.
-	 * <!-- begin-user-doc -->
+     * Checks whether this is a switch for the given package.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param ePackage the package in question.
-	 * @return whether this is a switch for the given package.
-	 * @generated
-	 */
+     * @param ePackage the package in question.
+     * @return whether this is a switch for the given package.
+     * @generated
+     */
 	@Override
 	protected boolean isSwitchFor(EPackage ePackage) {
-		return ePackage == modelPackage;
-	}
+        return ePackage == modelPackage;
+    }
 
 	/**
-	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	 * <!-- begin-user-doc -->
+     * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the first non-null result returned by a <code>caseXXX</code> call.
-	 * @generated
-	 */
+     * @return the first non-null result returned by a <code>caseXXX</code> call.
+     * @generated
+     */
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
-		switch (classifierID) {
-			case BasePackage.AFP: {
-				AFP afp = (AFP)theEObject;
-				T result = caseAFP(afp);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BasePackage.SF: {
-				SF sf = (SF)theEObject;
-				T result = caseSF(sf);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BasePackage.UNKNSF: {
-				UNKNSF unknsf = (UNKNSF)theEObject;
-				T result = caseUNKNSF(unknsf);
-				if (result == null) result = caseSF(unknsf);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BasePackage.SF_GROUPER: {
-				SFGrouper sfGrouper = (SFGrouper)theEObject;
-				T result = caseSFGrouper(sfGrouper);
-				if (result == null) result = caseSF(sfGrouper);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case BasePackage.TRIPLET: {
-				Triplet triplet = (Triplet)theEObject;
-				T result = caseTriplet(triplet);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			default: return defaultCase(theEObject);
-		}
-	}
+        switch (classifierID) {
+            case BasePackage.AFP: {
+                AFP afp = (AFP)theEObject;
+                T result = caseAFP(afp);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case BasePackage.SF: {
+                SF sf = (SF)theEObject;
+                T result = caseSF(sf);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case BasePackage.UNKNSF: {
+                UNKNSF unknsf = (UNKNSF)theEObject;
+                T result = caseUNKNSF(unknsf);
+                if (result == null) result = caseSF(unknsf);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case BasePackage.SF_GROUPER: {
+                SFGrouper sfGrouper = (SFGrouper)theEObject;
+                T result = caseSFGrouper(sfGrouper);
+                if (result == null) result = caseSF(sfGrouper);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case BasePackage.TRIPLET: {
+                Triplet triplet = (Triplet)theEObject;
+                T result = caseTriplet(triplet);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            default: return defaultCase(theEObject);
+        }
+    }
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>AFP</em>'.
-	 * <!-- begin-user-doc -->
+     * Returns the result of interpreting the object as an instance of '<em>AFP</em>'.
+     * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>AFP</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>AFP</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
 	public T caseAFP(AFP object) {
-		return null;
-	}
+        return null;
+    }
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>SF</em>'.
-	 * <!-- begin-user-doc -->
+     * Returns the result of interpreting the object as an instance of '<em>SF</em>'.
+     * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>SF</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>SF</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
 	public T caseSF(SF object) {
-		return null;
-	}
+        return null;
+    }
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>UNKNSF</em>'.
-	 * <!-- begin-user-doc -->
+     * Returns the result of interpreting the object as an instance of '<em>UNKNSF</em>'.
+     * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>UNKNSF</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>UNKNSF</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
 	public T caseUNKNSF(UNKNSF object) {
-		return null;
-	}
+        return null;
+    }
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>SF Grouper</em>'.
-	 * <!-- begin-user-doc -->
+     * Returns the result of interpreting the object as an instance of '<em>SF Grouper</em>'.
+     * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>SF Grouper</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>SF Grouper</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
 	public T caseSFGrouper(SFGrouper object) {
-		return null;
-	}
+        return null;
+    }
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Triplet</em>'.
-	 * <!-- begin-user-doc -->
+     * Returns the result of interpreting the object as an instance of '<em>Triplet</em>'.
+     * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Triplet</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>Triplet</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+     * @generated
+     */
 	public T caseTriplet(Triplet object) {
-		return null;
-	}
+        return null;
+    }
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * <!-- begin-user-doc -->
+     * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+     * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch, but this is the last case anyway.
 	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
-	 * @generated
-	 */
+     * @param object the target of the switch.
+     * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+     * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+     * @generated
+     */
 	@Override
 	public T defaultCase(EObject object) {
-		return null;
-	}
+        return null;
+    }
 
 } //BaseSwitch

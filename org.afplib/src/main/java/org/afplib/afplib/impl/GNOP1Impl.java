@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class GNOP1Impl extends TripletImpl implements GNOP1 {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected GNOP1Impl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.GNOP1;
-	}
+        return AfplibPackage.eINSTANCE.getGNOP1();
+    }
 
 } //GNOP1Impl

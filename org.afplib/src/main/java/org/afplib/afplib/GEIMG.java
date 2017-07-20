@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GEIMG extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>DATA</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>DATA</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>variable length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>DATA</em>' attribute.
-	 * @see #setDATA(byte[])
-	 * @see org.afplib.afplib.AfplibPackage#getGEIMG_DATA()
-	 * @model
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>variable length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>DATA</em>' attribute.
+     * @see #setDATA(byte[])
+     * @see org.afplib.afplib.AfplibPackage#getGEIMG_DATA()
+     * @model
+     * @generated
+     */
 	byte[] getDATA();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GEIMG#getDATA <em>DATA</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GEIMG#getDATA <em>DATA</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>DATA</em>' attribute.
-	 * @see #getDATA()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>DATA</em>' attribute.
+     * @see #getDATA()
+     * @generated
+     */
 	void setDATA(byte[] value);
 
 } // GEIMG

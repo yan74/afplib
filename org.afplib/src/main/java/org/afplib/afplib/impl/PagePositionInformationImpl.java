@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class PagePositionInformationImpl extends TripletImpl implements PagePositionInformation {
 	/**
-	 * The default value of the '{@link #getPGPRG() <em>PGPRG</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getPGPRG() <em>PGPRG</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPGPRG()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPGPRG()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer PGPRG_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getPGPRG() <em>PGPRG</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPGPRG() <em>PGPRG</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPGPRG()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPGPRG()
+     * @generated
+     * @ordered
+     */
 	protected Integer pgprg = PGPRG_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PagePositionInformationImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.PAGE_POSITION_INFORMATION;
-	}
+        return AfplibPackage.eINSTANCE.getPagePositionInformation();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getPGPRG() {
-		return pgprg;
-	}
+        return pgprg;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPGPRG(Integer newPGPRG) {
-		Integer oldPGPRG = pgprg;
-		pgprg = newPGPRG;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG, oldPGPRG, pgprg));
-	}
+        Integer oldPGPRG = pgprg;
+        pgprg = newPGPRG;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG, oldPGPRG, pgprg));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
-				return getPGPRG();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
+                return getPGPRG();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
-				setPGPRG((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
+                setPGPRG((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
-				setPGPRG(PGPRG_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
+                setPGPRG(PGPRG_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
-				return PGPRG_EDEFAULT == null ? pgprg != null : !PGPRG_EDEFAULT.equals(pgprg);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.PAGE_POSITION_INFORMATION__PGPRG:
+                return PGPRG_EDEFAULT == null ? pgprg != null : !PGPRG_EDEFAULT.equals(pgprg);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (PGPRG: ");
-		result.append(pgprg);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (PGPRG: ");
+        result.append(pgprg);
+        result.append(')');
+        return result.toString();
+    }
 
 } //PagePositionInformationImpl

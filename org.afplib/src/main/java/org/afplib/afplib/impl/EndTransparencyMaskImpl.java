@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class EndTransparencyMaskImpl extends TripletImpl implements EndTransparencyMask {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EndTransparencyMaskImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.END_TRANSPARENCY_MASK;
-	}
+        return AfplibPackage.eINSTANCE.getEndTransparencyMask();
+    }
 
 } //EndTransparencyMaskImpl

@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GEPROL extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>RES</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>RES</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>mandatory<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>RES</em>' attribute.
-	 * @see #setRES(Integer)
-	 * @see org.afplib.afplib.AfplibPackage#getGEPROL_RES()
-	 * @model required="true"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>mandatory<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>RES</em>' attribute.
+     * @see #setRES(Integer)
+     * @see org.afplib.afplib.AfplibPackage#getGEPROL_RES()
+     * @model required="true"
+     * @generated
+     */
 	Integer getRES();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.GEPROL#getRES <em>RES</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.GEPROL#getRES <em>RES</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>RES</em>' attribute.
-	 * @see #getRES()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>RES</em>' attribute.
+     * @see #getRES()
+     * @generated
+     */
 	void setRES(Integer value);
 
 } // GEPROL

@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface OCD extends SF {
 	/**
-	 * Returns the value of the '<em><b>Obj Cdat</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Obj Cdat</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>variable length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Obj Cdat</em>' attribute.
-	 * @see #setObjCdat(byte[])
-	 * @see org.afplib.afplib.AfplibPackage#getOCD_ObjCdat()
-	 * @model
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>variable length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>Obj Cdat</em>' attribute.
+     * @see #setObjCdat(byte[])
+     * @see org.afplib.afplib.AfplibPackage#getOCD_ObjCdat()
+     * @model
+     * @generated
+     */
 	byte[] getObjCdat();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.OCD#getObjCdat <em>Obj Cdat</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.OCD#getObjCdat <em>Obj Cdat</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Obj Cdat</em>' attribute.
-	 * @see #getObjCdat()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Obj Cdat</em>' attribute.
+     * @see #getObjCdat()
+     * @generated
+     */
 	void setObjCdat(byte[] value);
 
 } // OCD

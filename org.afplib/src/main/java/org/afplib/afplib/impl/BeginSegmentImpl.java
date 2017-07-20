@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class BeginSegmentImpl extends TripletImpl implements BeginSegment {
 	/**
-	 * The default value of the '{@link #getSEGNAME() <em>SEGNAME</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getSEGNAME() <em>SEGNAME</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSEGNAME()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getSEGNAME()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer SEGNAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getSEGNAME() <em>SEGNAME</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getSEGNAME() <em>SEGNAME</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSEGNAME()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getSEGNAME()
+     * @generated
+     * @ordered
+     */
 	protected Integer segname = SEGNAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BeginSegmentImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.BEGIN_SEGMENT;
-	}
+        return AfplibPackage.eINSTANCE.getBeginSegment();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getSEGNAME() {
-		return segname;
-	}
+        return segname;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setSEGNAME(Integer newSEGNAME) {
-		Integer oldSEGNAME = segname;
-		segname = newSEGNAME;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BEGIN_SEGMENT__SEGNAME, oldSEGNAME, segname));
-	}
+        Integer oldSEGNAME = segname;
+        segname = newSEGNAME;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BEGIN_SEGMENT__SEGNAME, oldSEGNAME, segname));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
-				return getSEGNAME();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
+                return getSEGNAME();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
-				setSEGNAME((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
+                setSEGNAME((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
-				setSEGNAME(SEGNAME_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
+                setSEGNAME(SEGNAME_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
-				return SEGNAME_EDEFAULT == null ? segname != null : !SEGNAME_EDEFAULT.equals(segname);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BEGIN_SEGMENT__SEGNAME:
+                return SEGNAME_EDEFAULT == null ? segname != null : !SEGNAME_EDEFAULT.equals(segname);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (SEGNAME: ");
-		result.append(segname);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (SEGNAME: ");
+        result.append(segname);
+        result.append(')');
+        return result.toString();
+    }
 
 } //BeginSegmentImpl

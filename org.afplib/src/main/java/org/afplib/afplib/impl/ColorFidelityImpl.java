@@ -30,243 +30,243 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ColorFidelityImpl extends TripletImpl implements ColorFidelity {
 	/**
-	 * The default value of the '{@link #getStpCoEx() <em>Stp Co Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getStpCoEx() <em>Stp Co Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStpCoEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStpCoEx()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer STP_CO_EX_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getStpCoEx() <em>Stp Co Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getStpCoEx() <em>Stp Co Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStpCoEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStpCoEx()
+     * @generated
+     * @ordered
+     */
 	protected Integer stpCoEx = STP_CO_EX_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getRepCoEx() <em>Rep Co Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getRepCoEx() <em>Rep Co Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRepCoEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRepCoEx()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer REP_CO_EX_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRepCoEx() <em>Rep Co Ex</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRepCoEx() <em>Rep Co Ex</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRepCoEx()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRepCoEx()
+     * @generated
+     * @ordered
+     */
 	protected Integer repCoEx = REP_CO_EX_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getColSub() <em>Col Sub</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getColSub() <em>Col Sub</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getColSub()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getColSub()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer COL_SUB_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getColSub() <em>Col Sub</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getColSub() <em>Col Sub</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getColSub()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getColSub()
+     * @generated
+     * @ordered
+     */
 	protected Integer colSub = COL_SUB_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ColorFidelityImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.COLOR_FIDELITY;
-	}
+        return AfplibPackage.eINSTANCE.getColorFidelity();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getStpCoEx() {
-		return stpCoEx;
-	}
+        return stpCoEx;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setStpCoEx(Integer newStpCoEx) {
-		Integer oldStpCoEx = stpCoEx;
-		stpCoEx = newStpCoEx;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.COLOR_FIDELITY__STP_CO_EX, oldStpCoEx, stpCoEx));
-	}
+        Integer oldStpCoEx = stpCoEx;
+        stpCoEx = newStpCoEx;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.COLOR_FIDELITY__STP_CO_EX, oldStpCoEx, stpCoEx));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getRepCoEx() {
-		return repCoEx;
-	}
+        return repCoEx;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setRepCoEx(Integer newRepCoEx) {
-		Integer oldRepCoEx = repCoEx;
-		repCoEx = newRepCoEx;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.COLOR_FIDELITY__REP_CO_EX, oldRepCoEx, repCoEx));
-	}
+        Integer oldRepCoEx = repCoEx;
+        repCoEx = newRepCoEx;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.COLOR_FIDELITY__REP_CO_EX, oldRepCoEx, repCoEx));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getColSub() {
-		return colSub;
-	}
+        return colSub;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setColSub(Integer newColSub) {
-		Integer oldColSub = colSub;
-		colSub = newColSub;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.COLOR_FIDELITY__COL_SUB, oldColSub, colSub));
-	}
+        Integer oldColSub = colSub;
+        colSub = newColSub;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.COLOR_FIDELITY__COL_SUB, oldColSub, colSub));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
-				return getStpCoEx();
-			case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
-				return getRepCoEx();
-			case AfplibPackage.COLOR_FIDELITY__COL_SUB:
-				return getColSub();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
+                return getStpCoEx();
+            case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
+                return getRepCoEx();
+            case AfplibPackage.COLOR_FIDELITY__COL_SUB:
+                return getColSub();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
-				setStpCoEx((Integer)newValue);
-				return;
-			case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
-				setRepCoEx((Integer)newValue);
-				return;
-			case AfplibPackage.COLOR_FIDELITY__COL_SUB:
-				setColSub((Integer)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
+                setStpCoEx((Integer)newValue);
+                return;
+            case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
+                setRepCoEx((Integer)newValue);
+                return;
+            case AfplibPackage.COLOR_FIDELITY__COL_SUB:
+                setColSub((Integer)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
-				setStpCoEx(STP_CO_EX_EDEFAULT);
-				return;
-			case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
-				setRepCoEx(REP_CO_EX_EDEFAULT);
-				return;
-			case AfplibPackage.COLOR_FIDELITY__COL_SUB:
-				setColSub(COL_SUB_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
+                setStpCoEx(STP_CO_EX_EDEFAULT);
+                return;
+            case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
+                setRepCoEx(REP_CO_EX_EDEFAULT);
+                return;
+            case AfplibPackage.COLOR_FIDELITY__COL_SUB:
+                setColSub(COL_SUB_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
-				return STP_CO_EX_EDEFAULT == null ? stpCoEx != null : !STP_CO_EX_EDEFAULT.equals(stpCoEx);
-			case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
-				return REP_CO_EX_EDEFAULT == null ? repCoEx != null : !REP_CO_EX_EDEFAULT.equals(repCoEx);
-			case AfplibPackage.COLOR_FIDELITY__COL_SUB:
-				return COL_SUB_EDEFAULT == null ? colSub != null : !COL_SUB_EDEFAULT.equals(colSub);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.COLOR_FIDELITY__STP_CO_EX:
+                return STP_CO_EX_EDEFAULT == null ? stpCoEx != null : !STP_CO_EX_EDEFAULT.equals(stpCoEx);
+            case AfplibPackage.COLOR_FIDELITY__REP_CO_EX:
+                return REP_CO_EX_EDEFAULT == null ? repCoEx != null : !REP_CO_EX_EDEFAULT.equals(repCoEx);
+            case AfplibPackage.COLOR_FIDELITY__COL_SUB:
+                return COL_SUB_EDEFAULT == null ? colSub != null : !COL_SUB_EDEFAULT.equals(colSub);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (StpCoEx: ");
-		result.append(stpCoEx);
-		result.append(", RepCoEx: ");
-		result.append(repCoEx);
-		result.append(", ColSub: ");
-		result.append(colSub);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (StpCoEx: ");
+        result.append(stpCoEx);
+        result.append(", RepCoEx: ");
+        result.append(repCoEx);
+        result.append(", ColSub: ");
+        result.append(colSub);
+        result.append(')');
+        return result.toString();
+    }
 
 } //ColorFidelityImpl

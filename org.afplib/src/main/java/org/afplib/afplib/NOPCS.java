@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface NOPCS extends Triplet {
 	/**
-	 * Returns the value of the '<em><b>IGNDATA</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>IGNDATA</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>variable length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>IGNDATA</em>' attribute.
-	 * @see #setIGNDATA(byte[])
-	 * @see org.afplib.afplib.AfplibPackage#getNOPCS_IGNDATA()
-	 * @model
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>variable length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>IGNDATA</em>' attribute.
+     * @see #setIGNDATA(byte[])
+     * @see org.afplib.afplib.AfplibPackage#getNOPCS_IGNDATA()
+     * @model
+     * @generated
+     */
 	byte[] getIGNDATA();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.NOPCS#getIGNDATA <em>IGNDATA</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.NOPCS#getIGNDATA <em>IGNDATA</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>IGNDATA</em>' attribute.
-	 * @see #getIGNDATA()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>IGNDATA</em>' attribute.
+     * @see #getIGNDATA()
+     * @generated
+     */
 	void setIGNDATA(byte[] value);
 
 } // NOPCS

@@ -40,185 +40,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class GDDImpl extends SFImpl implements GDD {
 	/**
-	 * The default value of the '{@link #getGOCAdes() <em>GOC Ades</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getGOCAdes() <em>GOC Ades</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGOCAdes()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getGOCAdes()
+     * @generated
+     * @ordered
+     */
 	protected static final byte[] GOC_ADES_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getGOCAdes() <em>GOC Ades</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getGOCAdes() <em>GOC Ades</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGOCAdes()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getGOCAdes()
+     * @generated
+     * @ordered
+     */
 	protected byte[] gocAdes = GOC_ADES_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getCommands() <em>Commands</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getCommands() <em>Commands</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCommands()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getCommands()
+     * @generated
+     * @ordered
+     */
 	protected EList<Triplet> commands;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected GDDImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.GDD;
-	}
+        return AfplibPackage.eINSTANCE.getGDD();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public byte[] getGOCAdes() {
-		return gocAdes;
-	}
+        return gocAdes;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setGOCAdes(byte[] newGOCAdes) {
-		byte[] oldGOCAdes = gocAdes;
-		gocAdes = newGOCAdes;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GDD__GOC_ADES, oldGOCAdes, gocAdes));
-	}
+        byte[] oldGOCAdes = gocAdes;
+        gocAdes = newGOCAdes;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GDD__GOC_ADES, oldGOCAdes, gocAdes));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<Triplet> getCommands() {
-		if (commands == null) {
-			commands = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.GDD__COMMANDS);
-		}
-		return commands;
-	}
+        if (commands == null) {
+            commands = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.GDD__COMMANDS);
+        }
+        return commands;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AfplibPackage.GDD__COMMANDS:
-				return ((InternalEList<?>)getCommands()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case AfplibPackage.GDD__COMMANDS:
+                return ((InternalEList<?>)getCommands()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.GDD__GOC_ADES:
-				return getGOCAdes();
-			case AfplibPackage.GDD__COMMANDS:
-				return getCommands();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.GDD__GOC_ADES:
+                return getGOCAdes();
+            case AfplibPackage.GDD__COMMANDS:
+                return getCommands();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.GDD__GOC_ADES:
-				setGOCAdes((byte[])newValue);
-				return;
-			case AfplibPackage.GDD__COMMANDS:
-				getCommands().clear();
-				getCommands().addAll((Collection<? extends Triplet>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.GDD__GOC_ADES:
+                setGOCAdes((byte[])newValue);
+                return;
+            case AfplibPackage.GDD__COMMANDS:
+                getCommands().clear();
+                getCommands().addAll((Collection<? extends Triplet>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.GDD__GOC_ADES:
-				setGOCAdes(GOC_ADES_EDEFAULT);
-				return;
-			case AfplibPackage.GDD__COMMANDS:
-				getCommands().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.GDD__GOC_ADES:
+                setGOCAdes(GOC_ADES_EDEFAULT);
+                return;
+            case AfplibPackage.GDD__COMMANDS:
+                getCommands().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.GDD__GOC_ADES:
-				return GOC_ADES_EDEFAULT == null ? gocAdes != null : !GOC_ADES_EDEFAULT.equals(gocAdes);
-			case AfplibPackage.GDD__COMMANDS:
-				return commands != null && !commands.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.GDD__GOC_ADES:
+                return GOC_ADES_EDEFAULT == null ? gocAdes != null : !GOC_ADES_EDEFAULT.equals(gocAdes);
+            case AfplibPackage.GDD__COMMANDS:
+                return commands != null && !commands.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (GOCAdes: ");
-		result.append(gocAdes);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (GOCAdes: ");
+        result.append(gocAdes);
+        result.append(')');
+        return result.toString();
+    }
 
 } //GDDImpl

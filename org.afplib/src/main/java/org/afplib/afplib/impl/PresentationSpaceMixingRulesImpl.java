@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PresentationSpaceMixingRulesImpl extends TripletImpl implements PresentationSpaceMixingRules {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PresentationSpaceMixingRulesImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.PRESENTATION_SPACE_MIXING_RULES;
-	}
+        return AfplibPackage.eINSTANCE.getPresentationSpaceMixingRules();
+    }
 
 } //PresentationSpaceMixingRulesImpl

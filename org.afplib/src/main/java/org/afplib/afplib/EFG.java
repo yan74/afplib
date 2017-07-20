@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface EFG extends SF {
 	/**
-	 * Returns the value of the '<em><b>FEG Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>FEG Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * <p>optional<br>fixed length</p>
-	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>FEG Name</em>' attribute.
-	 * @see #setFEGName(String)
-	 * @see org.afplib.afplib.AfplibPackage#getEFG_FEGName()
-	 * @model dataType="org.afplib.base.ModcaString8"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * <p>optional<br>fixed length</p>
+     * <!-- end-model-doc -->
+     * @return the value of the '<em>FEG Name</em>' attribute.
+     * @see #setFEGName(String)
+     * @see org.afplib.afplib.AfplibPackage#getEFG_FEGName()
+     * @model dataType="org.afplib.base.ModcaString8"
+     * @generated
+     */
 	String getFEGName();
 
 	/**
-	 * Sets the value of the '{@link org.afplib.afplib.EFG#getFEGName <em>FEG Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link org.afplib.afplib.EFG#getFEGName <em>FEG Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>FEG Name</em>' attribute.
-	 * @see #getFEGName()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>FEG Name</em>' attribute.
+     * @see #getFEGName()
+     * @generated
+     */
 	void setFEGName(String value);
 
 } // EFG

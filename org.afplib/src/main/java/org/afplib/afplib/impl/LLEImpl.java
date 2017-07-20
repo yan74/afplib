@@ -39,185 +39,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class LLEImpl extends SFImpl implements LLE {
 	/**
-	 * The default value of the '{@link #getLnkType() <em>Lnk Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getLnkType() <em>Lnk Type</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLnkType()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getLnkType()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer LNK_TYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getLnkType() <em>Lnk Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getLnkType() <em>Lnk Type</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLnkType()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getLnkType()
+     * @generated
+     * @ordered
+     */
 	protected Integer lnkType = LNK_TYPE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRG() <em>RG</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRG() <em>RG</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRG()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRG()
+     * @generated
+     * @ordered
+     */
 	protected EList<LLERG> rg;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected LLEImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.LLE;
-	}
+        return AfplibPackage.eINSTANCE.getLLE();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getLnkType() {
-		return lnkType;
-	}
+        return lnkType;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setLnkType(Integer newLnkType) {
-		Integer oldLnkType = lnkType;
-		lnkType = newLnkType;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.LLE__LNK_TYPE, oldLnkType, lnkType));
-	}
+        Integer oldLnkType = lnkType;
+        lnkType = newLnkType;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.LLE__LNK_TYPE, oldLnkType, lnkType));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<LLERG> getRG() {
-		if (rg == null) {
-			rg = new EObjectContainmentEList.Resolving<LLERG>(LLERG.class, this, AfplibPackage.LLE__RG);
-		}
-		return rg;
-	}
+        if (rg == null) {
+            rg = new EObjectContainmentEList.Resolving<LLERG>(LLERG.class, this, AfplibPackage.LLE__RG);
+        }
+        return rg;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AfplibPackage.LLE__RG:
-				return ((InternalEList<?>)getRG()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case AfplibPackage.LLE__RG:
+                return ((InternalEList<?>)getRG()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.LLE__LNK_TYPE:
-				return getLnkType();
-			case AfplibPackage.LLE__RG:
-				return getRG();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.LLE__LNK_TYPE:
+                return getLnkType();
+            case AfplibPackage.LLE__RG:
+                return getRG();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.LLE__LNK_TYPE:
-				setLnkType((Integer)newValue);
-				return;
-			case AfplibPackage.LLE__RG:
-				getRG().clear();
-				getRG().addAll((Collection<? extends LLERG>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.LLE__LNK_TYPE:
+                setLnkType((Integer)newValue);
+                return;
+            case AfplibPackage.LLE__RG:
+                getRG().clear();
+                getRG().addAll((Collection<? extends LLERG>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.LLE__LNK_TYPE:
-				setLnkType(LNK_TYPE_EDEFAULT);
-				return;
-			case AfplibPackage.LLE__RG:
-				getRG().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.LLE__LNK_TYPE:
+                setLnkType(LNK_TYPE_EDEFAULT);
+                return;
+            case AfplibPackage.LLE__RG:
+                getRG().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.LLE__LNK_TYPE:
-				return LNK_TYPE_EDEFAULT == null ? lnkType != null : !LNK_TYPE_EDEFAULT.equals(lnkType);
-			case AfplibPackage.LLE__RG:
-				return rg != null && !rg.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.LLE__LNK_TYPE:
+                return LNK_TYPE_EDEFAULT == null ? lnkType != null : !LNK_TYPE_EDEFAULT.equals(lnkType);
+            case AfplibPackage.LLE__RG:
+                return rg != null && !rg.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (LnkType: ");
-		result.append(lnkType);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (LnkType: ");
+        result.append(lnkType);
+        result.append(')');
+        return result.toString();
+    }
 
 } //LLEImpl

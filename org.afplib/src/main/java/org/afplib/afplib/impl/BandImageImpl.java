@@ -39,185 +39,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class BandImageImpl extends TripletImpl implements BandImage {
 	/**
-	 * The default value of the '{@link #getBCOUNT() <em>BCOUNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getBCOUNT() <em>BCOUNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBCOUNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBCOUNT()
+     * @generated
+     * @ordered
+     */
 	protected static final Integer BCOUNT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getBCOUNT() <em>BCOUNT</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getBCOUNT() <em>BCOUNT</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBCOUNT()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getBCOUNT()
+     * @generated
+     * @ordered
+     */
 	protected Integer bcount = BCOUNT_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRg()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRg()
+     * @generated
+     * @ordered
+     */
 	protected EList<BandImageRG> rg;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BandImageImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return AfplibPackage.Literals.BAND_IMAGE;
-	}
+        return AfplibPackage.eINSTANCE.getBandImage();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Integer getBCOUNT() {
-		return bcount;
-	}
+        return bcount;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setBCOUNT(Integer newBCOUNT) {
-		Integer oldBCOUNT = bcount;
-		bcount = newBCOUNT;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BAND_IMAGE__BCOUNT, oldBCOUNT, bcount));
-	}
+        Integer oldBCOUNT = bcount;
+        bcount = newBCOUNT;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BAND_IMAGE__BCOUNT, oldBCOUNT, bcount));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<BandImageRG> getRg() {
-		if (rg == null) {
-			rg = new EObjectContainmentEList.Resolving<BandImageRG>(BandImageRG.class, this, AfplibPackage.BAND_IMAGE__RG);
-		}
-		return rg;
-	}
+        if (rg == null) {
+            rg = new EObjectContainmentEList.Resolving<BandImageRG>(BandImageRG.class, this, AfplibPackage.BAND_IMAGE__RG);
+        }
+        return rg;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE__RG:
-				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE__RG:
+                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE__BCOUNT:
-				return getBCOUNT();
-			case AfplibPackage.BAND_IMAGE__RG:
-				return getRg();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE__BCOUNT:
+                return getBCOUNT();
+            case AfplibPackage.BAND_IMAGE__RG:
+                return getRg();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE__BCOUNT:
-				setBCOUNT((Integer)newValue);
-				return;
-			case AfplibPackage.BAND_IMAGE__RG:
-				getRg().clear();
-				getRg().addAll((Collection<? extends BandImageRG>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE__BCOUNT:
+                setBCOUNT((Integer)newValue);
+                return;
+            case AfplibPackage.BAND_IMAGE__RG:
+                getRg().clear();
+                getRg().addAll((Collection<? extends BandImageRG>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE__BCOUNT:
-				setBCOUNT(BCOUNT_EDEFAULT);
-				return;
-			case AfplibPackage.BAND_IMAGE__RG:
-				getRg().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE__BCOUNT:
+                setBCOUNT(BCOUNT_EDEFAULT);
+                return;
+            case AfplibPackage.BAND_IMAGE__RG:
+                getRg().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AfplibPackage.BAND_IMAGE__BCOUNT:
-				return BCOUNT_EDEFAULT == null ? bcount != null : !BCOUNT_EDEFAULT.equals(bcount);
-			case AfplibPackage.BAND_IMAGE__RG:
-				return rg != null && !rg.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case AfplibPackage.BAND_IMAGE__BCOUNT:
+                return BCOUNT_EDEFAULT == null ? bcount != null : !BCOUNT_EDEFAULT.equals(bcount);
+            case AfplibPackage.BAND_IMAGE__RG:
+                return rg != null && !rg.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (BCOUNT: ");
-		result.append(bcount);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (BCOUNT: ");
+        result.append(bcount);
+        result.append(')');
+        return result.toString();
+    }
 
 } //BandImageImpl
