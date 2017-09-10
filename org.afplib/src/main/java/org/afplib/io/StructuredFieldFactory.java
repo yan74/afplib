@@ -16,13 +16,13 @@ import org.afplib.afplib.*;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-class StructuredFieldFactory extends AbstractStructuredFieldFactory {
+public class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	Charset charset = CodepageHelper.CHARSET_IBM500;
 	Stack<Charset> charsets = new Stack<Charset>();
 	FNC fnc;
 
-	SF sf(byte[] buffer, int pos, int stop) {
+	public SF sf(byte[] buffer, int pos, int stop) {
 		int id = Data.toUnsigned(buffer, pos + 3, pos + 5);
 		SF sf;
 		switch (id) {
@@ -5004,7 +5004,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return sf;
 	}
 
-	void triplet(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+	public void triplet(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		while (pos + 1 <= bufstop) {
 			int length = buffer[pos] & 0xff;
@@ -7128,7 +7128,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
-	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
+	public void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		int lengthSize, lengthOffset, idSize, lengthAddition;
 
@@ -9452,7 +9452,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		}
 	}
 
-	Triplet cs(byte[] buffer, int pos, int stop, int id) {
+	public Triplet cs(byte[] buffer, int pos, int stop, int id) {
 		switch (id) {
 
 			case 210 : {
@@ -17608,7 +17608,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return start - bstart;
 	}
 
-	int binary_sdf(byte[] buffer, int bstart, List<Triplet> triplets) {
+	public int binary_sdf(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
 
 		for (Triplet m : triplets) {
@@ -18838,7 +18838,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return start - bstart;
 	}
 
-	int binary_cmd(byte[] buffer, int bstart, List<Triplet> triplets) {
+	public int binary_cmd(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
 
 		for (Triplet m : triplets) {
@@ -21437,7 +21437,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 		return start - bstart;
 	}
 
-	int binary_cs(byte[] buffer, int bstart, List<Triplet> triplets) {
+	public int binary_cs(byte[] buffer, int bstart, List<Triplet> triplets) {
 		int start = bstart;
 
 		boolean nextCSisUnChained = true;
