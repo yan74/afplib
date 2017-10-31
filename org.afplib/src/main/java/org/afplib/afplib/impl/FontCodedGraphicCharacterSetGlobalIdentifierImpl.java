@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class FontCodedGraphicCharacterSetGlobalIdentifierImpl extends TripletImpl implements FontCodedGraphicCharacterSetGlobalIdentifier {
 	/**
-     * The default value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getGCSGID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getGCSGID()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer GCSGID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getGCSGID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getGCSGID()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer gcsgid = GCSGID_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getCPGID() <em>CPGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCPGID() <em>CPGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getCPGID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCPGID()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer CPGID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getCPGID() <em>CPGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCPGID() <em>CPGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getCPGID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCPGID()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer cpgid = CPGID_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected FontCodedGraphicCharacterSetGlobalIdentifierImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier();
-    }
+		return AfplibPackage.eINSTANCE.getFontCodedGraphicCharacterSetGlobalIdentifier();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getGCSGID() {
-        return gcsgid;
-    }
+		return gcsgid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setGCSGID(Integer newGCSGID) {
-        Integer oldGCSGID = gcsgid;
-        gcsgid = newGCSGID;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID, oldGCSGID, gcsgid));
-    }
+		Integer oldGCSGID = gcsgid;
+		gcsgid = newGCSGID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID, oldGCSGID, gcsgid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getCPGID() {
-        return cpgid;
-    }
+		return cpgid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setCPGID(Integer newCPGID) {
-        Integer oldCPGID = cpgid;
-        cpgid = newCPGID;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID, oldCPGID, cpgid));
-    }
+		Integer oldCPGID = cpgid;
+		cpgid = newCPGID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID, oldCPGID, cpgid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
-                return getGCSGID();
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
-                return getCPGID();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
+				return getGCSGID();
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
+				return getCPGID();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
-                setGCSGID((Integer)newValue);
-                return;
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
-                setCPGID((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
+				setGCSGID((Integer)newValue);
+				return;
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
+				setCPGID((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
-                setGCSGID(GCSGID_EDEFAULT);
-                return;
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
-                setCPGID(CPGID_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
+				setGCSGID(GCSGID_EDEFAULT);
+				return;
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
+				setCPGID(CPGID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
-                return GCSGID_EDEFAULT == null ? gcsgid != null : !GCSGID_EDEFAULT.equals(gcsgid);
-            case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
-                return CPGID_EDEFAULT == null ? cpgid != null : !CPGID_EDEFAULT.equals(cpgid);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__GCSGID:
+				return GCSGID_EDEFAULT == null ? gcsgid != null : !GCSGID_EDEFAULT.equals(gcsgid);
+			case AfplibPackage.FONT_CODED_GRAPHIC_CHARACTER_SET_GLOBAL_IDENTIFIER__CPGID:
+				return CPGID_EDEFAULT == null ? cpgid != null : !CPGID_EDEFAULT.equals(cpgid);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (GCSGID: ");
-        result.append(gcsgid);
-        result.append(", CPGID: ");
-        result.append(cpgid);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (GCSGID: ");
+		result.append(gcsgid);
+		result.append(", CPGID: ");
+		result.append(cpgid);
+		result.append(')');
+		return result.toString();
+	}
 
 } //FontCodedGraphicCharacterSetGlobalIdentifierImpl

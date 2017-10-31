@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class EFNImpl extends SFImpl implements EFN {
 	/**
-     * The default value of the '{@link #getRSName() <em>RS Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getRSName() <em>RS Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRSName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRSName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String RS_NAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getRSName() <em>RS Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRSName() <em>RS Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRSName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRSName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String rsName = RS_NAME_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected EFNImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getEFN();
-    }
+		return AfplibPackage.eINSTANCE.getEFN();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getRSName() {
-        return rsName;
-    }
+		return rsName;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setRSName(String newRSName) {
-        String oldRSName = rsName;
-        rsName = newRSName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EFN__RS_NAME, oldRSName, rsName));
-    }
+		String oldRSName = rsName;
+		rsName = newRSName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EFN__RS_NAME, oldRSName, rsName));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.EFN__RS_NAME:
-                return getRSName();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.EFN__RS_NAME:
+				return getRSName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.EFN__RS_NAME:
-                setRSName((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.EFN__RS_NAME:
+				setRSName((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EFN__RS_NAME:
-                setRSName(RS_NAME_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EFN__RS_NAME:
+				setRSName(RS_NAME_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EFN__RS_NAME:
-                return RS_NAME_EDEFAULT == null ? rsName != null : !RS_NAME_EDEFAULT.equals(rsName);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EFN__RS_NAME:
+				return RS_NAME_EDEFAULT == null ? rsName != null : !RS_NAME_EDEFAULT.equals(rsName);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (RSName: ");
-        result.append(rsName);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (RSName: ");
+		result.append(rsName);
+		result.append(')');
+		return result.toString();
+	}
 
 } //EFNImpl

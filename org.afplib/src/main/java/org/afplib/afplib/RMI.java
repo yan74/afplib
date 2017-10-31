@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface RMI extends Triplet {
 	/**
-     * Returns the value of the '<em><b>INCRMENT</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>INCRMENT</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>INCRMENT</em>' attribute.
-     * @see #setINCRMENT(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getRMI_INCRMENT()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>INCRMENT</em>' attribute.
+	 * @see #setINCRMENT(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getRMI_INCRMENT()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getINCRMENT();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.RMI#getINCRMENT <em>INCRMENT</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.RMI#getINCRMENT <em>INCRMENT</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>INCRMENT</em>' attribute.
-     * @see #getINCRMENT()
-     * @generated
-     */
+	 * @param value the new value of the '<em>INCRMENT</em>' attribute.
+	 * @see #getINCRMENT()
+	 * @generated
+	 */
 	void setINCRMENT(Integer value);
 
 } // RMI

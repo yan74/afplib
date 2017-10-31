@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class EndImageImpl extends TripletImpl implements EndImage {
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected EndImageImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getEndImage();
-    }
+		return AfplibPackage.eINSTANCE.getEndImage();
+	}
 
 } //EndImageImpl

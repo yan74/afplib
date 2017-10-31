@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface ColorManagementResourceDescriptor extends Triplet {
 	/**
-     * Returns the value of the '<em><b>Proc Mode</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Proc Mode</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Proc Mode</em>' attribute.
-     * @see #setProcMode(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getColorManagementResourceDescriptor_ProcMode()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Proc Mode</em>' attribute.
+	 * @see #setProcMode(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getColorManagementResourceDescriptor_ProcMode()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getProcMode();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.ColorManagementResourceDescriptor#getProcMode <em>Proc Mode</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.ColorManagementResourceDescriptor#getProcMode <em>Proc Mode</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Proc Mode</em>' attribute.
-     * @see #getProcMode()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Proc Mode</em>' attribute.
+	 * @see #getProcMode()
+	 * @generated
+	 */
 	void setProcMode(Integer value);
 
 	/**
-     * Returns the value of the '<em><b>CMR Scpe</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>CMR Scpe</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>CMR Scpe</em>' attribute.
-     * @see #setCMRScpe(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getColorManagementResourceDescriptor_CMRScpe()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>CMR Scpe</em>' attribute.
+	 * @see #setCMRScpe(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getColorManagementResourceDescriptor_CMRScpe()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getCMRScpe();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.ColorManagementResourceDescriptor#getCMRScpe <em>CMR Scpe</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.ColorManagementResourceDescriptor#getCMRScpe <em>CMR Scpe</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>CMR Scpe</em>' attribute.
-     * @see #getCMRScpe()
-     * @generated
-     */
+	 * @param value the new value of the '<em>CMR Scpe</em>' attribute.
+	 * @see #getCMRScpe()
+	 * @generated
+	 */
 	void setCMRScpe(Integer value);
 
 } // ColorManagementResourceDescriptor

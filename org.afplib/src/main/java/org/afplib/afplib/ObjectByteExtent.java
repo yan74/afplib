@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface ObjectByteExtent extends Triplet {
 	/**
-     * Returns the value of the '<em><b>Byte Ext</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Byte Ext</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Byte Ext</em>' attribute.
-     * @see #setByteExt(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getObjectByteExtent_ByteExt()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Byte Ext</em>' attribute.
+	 * @see #setByteExt(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getObjectByteExtent_ByteExt()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getByteExt();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.ObjectByteExtent#getByteExt <em>Byte Ext</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.ObjectByteExtent#getByteExt <em>Byte Ext</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Byte Ext</em>' attribute.
-     * @see #getByteExt()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Byte Ext</em>' attribute.
+	 * @see #getByteExt()
+	 * @generated
+	 */
 	void setByteExt(Integer value);
 
 	/**
-     * Returns the value of the '<em><b>Byte Ext Hi</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Byte Ext Hi</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Byte Ext Hi</em>' attribute.
-     * @see #setByteExtHi(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getObjectByteExtent_ByteExtHi()
-     * @model
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Byte Ext Hi</em>' attribute.
+	 * @see #setByteExtHi(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getObjectByteExtent_ByteExtHi()
+	 * @model
+	 * @generated
+	 */
 	Integer getByteExtHi();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.ObjectByteExtent#getByteExtHi <em>Byte Ext Hi</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.ObjectByteExtent#getByteExtHi <em>Byte Ext Hi</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Byte Ext Hi</em>' attribute.
-     * @see #getByteExtHi()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Byte Ext Hi</em>' attribute.
+	 * @see #getByteExtHi()
+	 * @generated
+	 */
 	void setByteExtHi(Integer value);
 
 } // ObjectByteExtent

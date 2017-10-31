@@ -48,609 +48,609 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class IOBImpl extends SFImpl implements IOB {
 	/**
-     * The default value of the '{@link #getObjName() <em>Obj Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getObjName() <em>Obj Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getObjName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getObjName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String OBJ_NAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getObjName() <em>Obj Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getObjName() <em>Obj Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getObjName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getObjName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String objName = OBJ_NAME_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getObjType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getObjType()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer OBJ_TYPE_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getObjType() <em>Obj Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getObjType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getObjType()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer objType = OBJ_TYPE_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getXoaOset() <em>Xoa Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXoaOset() <em>Xoa Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXoaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXoaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XOA_OSET_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXoaOset() <em>Xoa Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXoaOset() <em>Xoa Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXoaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXoaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xoaOset = XOA_OSET_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYoaOset() <em>Yoa Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYoaOset() <em>Yoa Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYoaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYoaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YOA_OSET_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYoaOset() <em>Yoa Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYoaOset() <em>Yoa Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYoaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYoaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer yoaOset = YOA_OSET_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getXoaOrent() <em>Xoa Orent</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXoaOrent() <em>Xoa Orent</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXoaOrent()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXoaOrent()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XOA_ORENT_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXoaOrent() <em>Xoa Orent</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXoaOrent() <em>Xoa Orent</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXoaOrent()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXoaOrent()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xoaOrent = XOA_ORENT_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYoaOrent() <em>Yoa Orent</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYoaOrent() <em>Yoa Orent</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYoaOrent()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYoaOrent()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YOA_ORENT_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYoaOrent() <em>Yoa Orent</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYoaOrent() <em>Yoa Orent</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYoaOrent()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYoaOrent()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer yoaOrent = YOA_ORENT_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getXocaOset() <em>Xoca Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXocaOset() <em>Xoca Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXocaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXocaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XOCA_OSET_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXocaOset() <em>Xoca Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXocaOset() <em>Xoca Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXocaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXocaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xocaOset = XOCA_OSET_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYocaOset() <em>Yoca Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYocaOset() <em>Yoca Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYocaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYocaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YOCA_OSET_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYocaOset() <em>Yoca Oset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYocaOset() <em>Yoca Oset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYocaOset()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYocaOset()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer yocaOset = YOCA_OSET_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getRefCSys() <em>Ref CSys</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getRefCSys() <em>Ref CSys</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRefCSys()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRefCSys()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer REF_CSYS_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getRefCSys() <em>Ref CSys</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRefCSys() <em>Ref CSys</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRefCSys()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRefCSys()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer refCSys = REF_CSYS_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTriplets()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTriplets()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<Triplet> triplets;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected IOBImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getIOB();
-    }
+		return AfplibPackage.eINSTANCE.getIOB();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getObjName() {
-        return objName;
-    }
+		return objName;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setObjName(String newObjName) {
-        String oldObjName = objName;
-        objName = newObjName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__OBJ_NAME, oldObjName, objName));
-    }
+		String oldObjName = objName;
+		objName = newObjName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__OBJ_NAME, oldObjName, objName));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getObjType() {
-        return objType;
-    }
+		return objType;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setObjType(Integer newObjType) {
-        Integer oldObjType = objType;
-        objType = newObjType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__OBJ_TYPE, oldObjType, objType));
-    }
+		Integer oldObjType = objType;
+		objType = newObjType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__OBJ_TYPE, oldObjType, objType));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXoaOset() {
-        return xoaOset;
-    }
+		return xoaOset;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXoaOset(Integer newXoaOset) {
-        Integer oldXoaOset = xoaOset;
-        xoaOset = newXoaOset;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__XOA_OSET, oldXoaOset, xoaOset));
-    }
+		Integer oldXoaOset = xoaOset;
+		xoaOset = newXoaOset;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__XOA_OSET, oldXoaOset, xoaOset));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYoaOset() {
-        return yoaOset;
-    }
+		return yoaOset;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYoaOset(Integer newYoaOset) {
-        Integer oldYoaOset = yoaOset;
-        yoaOset = newYoaOset;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__YOA_OSET, oldYoaOset, yoaOset));
-    }
+		Integer oldYoaOset = yoaOset;
+		yoaOset = newYoaOset;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__YOA_OSET, oldYoaOset, yoaOset));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXoaOrent() {
-        return xoaOrent;
-    }
+		return xoaOrent;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXoaOrent(Integer newXoaOrent) {
-        Integer oldXoaOrent = xoaOrent;
-        xoaOrent = newXoaOrent;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__XOA_ORENT, oldXoaOrent, xoaOrent));
-    }
+		Integer oldXoaOrent = xoaOrent;
+		xoaOrent = newXoaOrent;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__XOA_ORENT, oldXoaOrent, xoaOrent));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYoaOrent() {
-        return yoaOrent;
-    }
+		return yoaOrent;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYoaOrent(Integer newYoaOrent) {
-        Integer oldYoaOrent = yoaOrent;
-        yoaOrent = newYoaOrent;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__YOA_ORENT, oldYoaOrent, yoaOrent));
-    }
+		Integer oldYoaOrent = yoaOrent;
+		yoaOrent = newYoaOrent;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__YOA_ORENT, oldYoaOrent, yoaOrent));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXocaOset() {
-        return xocaOset;
-    }
+		return xocaOset;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXocaOset(Integer newXocaOset) {
-        Integer oldXocaOset = xocaOset;
-        xocaOset = newXocaOset;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__XOCA_OSET, oldXocaOset, xocaOset));
-    }
+		Integer oldXocaOset = xocaOset;
+		xocaOset = newXocaOset;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__XOCA_OSET, oldXocaOset, xocaOset));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYocaOset() {
-        return yocaOset;
-    }
+		return yocaOset;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYocaOset(Integer newYocaOset) {
-        Integer oldYocaOset = yocaOset;
-        yocaOset = newYocaOset;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__YOCA_OSET, oldYocaOset, yocaOset));
-    }
+		Integer oldYocaOset = yocaOset;
+		yocaOset = newYocaOset;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__YOCA_OSET, oldYocaOset, yocaOset));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getRefCSys() {
-        return refCSys;
-    }
+		return refCSys;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setRefCSys(Integer newRefCSys) {
-        Integer oldRefCSys = refCSys;
-        refCSys = newRefCSys;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__REF_CSYS, oldRefCSys, refCSys));
-    }
+		Integer oldRefCSys = refCSys;
+		refCSys = newRefCSys;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IOB__REF_CSYS, oldRefCSys, refCSys));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<Triplet> getTriplets() {
-        if (triplets == null) {
-            triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.IOB__TRIPLETS);
-        }
-        return triplets;
-    }
+		if (triplets == null) {
+			triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.IOB__TRIPLETS);
+		}
+		return triplets;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.IOB__TRIPLETS:
-                return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.IOB__TRIPLETS:
+				return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.IOB__OBJ_NAME:
-                return getObjName();
-            case AfplibPackage.IOB__OBJ_TYPE:
-                return getObjType();
-            case AfplibPackage.IOB__XOA_OSET:
-                return getXoaOset();
-            case AfplibPackage.IOB__YOA_OSET:
-                return getYoaOset();
-            case AfplibPackage.IOB__XOA_ORENT:
-                return getXoaOrent();
-            case AfplibPackage.IOB__YOA_ORENT:
-                return getYoaOrent();
-            case AfplibPackage.IOB__XOCA_OSET:
-                return getXocaOset();
-            case AfplibPackage.IOB__YOCA_OSET:
-                return getYocaOset();
-            case AfplibPackage.IOB__REF_CSYS:
-                return getRefCSys();
-            case AfplibPackage.IOB__TRIPLETS:
-                return getTriplets();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.IOB__OBJ_NAME:
+				return getObjName();
+			case AfplibPackage.IOB__OBJ_TYPE:
+				return getObjType();
+			case AfplibPackage.IOB__XOA_OSET:
+				return getXoaOset();
+			case AfplibPackage.IOB__YOA_OSET:
+				return getYoaOset();
+			case AfplibPackage.IOB__XOA_ORENT:
+				return getXoaOrent();
+			case AfplibPackage.IOB__YOA_ORENT:
+				return getYoaOrent();
+			case AfplibPackage.IOB__XOCA_OSET:
+				return getXocaOset();
+			case AfplibPackage.IOB__YOCA_OSET:
+				return getYocaOset();
+			case AfplibPackage.IOB__REF_CSYS:
+				return getRefCSys();
+			case AfplibPackage.IOB__TRIPLETS:
+				return getTriplets();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.IOB__OBJ_NAME:
-                setObjName((String)newValue);
-                return;
-            case AfplibPackage.IOB__OBJ_TYPE:
-                setObjType((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__XOA_OSET:
-                setXoaOset((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__YOA_OSET:
-                setYoaOset((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__XOA_ORENT:
-                setXoaOrent((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__YOA_ORENT:
-                setYoaOrent((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__XOCA_OSET:
-                setXocaOset((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__YOCA_OSET:
-                setYocaOset((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__REF_CSYS:
-                setRefCSys((Integer)newValue);
-                return;
-            case AfplibPackage.IOB__TRIPLETS:
-                getTriplets().clear();
-                getTriplets().addAll((Collection<? extends Triplet>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.IOB__OBJ_NAME:
+				setObjName((String)newValue);
+				return;
+			case AfplibPackage.IOB__OBJ_TYPE:
+				setObjType((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__XOA_OSET:
+				setXoaOset((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__YOA_OSET:
+				setYoaOset((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__XOA_ORENT:
+				setXoaOrent((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__YOA_ORENT:
+				setYoaOrent((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__XOCA_OSET:
+				setXocaOset((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__YOCA_OSET:
+				setYocaOset((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__REF_CSYS:
+				setRefCSys((Integer)newValue);
+				return;
+			case AfplibPackage.IOB__TRIPLETS:
+				getTriplets().clear();
+				getTriplets().addAll((Collection<? extends Triplet>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.IOB__OBJ_NAME:
-                setObjName(OBJ_NAME_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__OBJ_TYPE:
-                setObjType(OBJ_TYPE_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__XOA_OSET:
-                setXoaOset(XOA_OSET_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__YOA_OSET:
-                setYoaOset(YOA_OSET_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__XOA_ORENT:
-                setXoaOrent(XOA_ORENT_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__YOA_ORENT:
-                setYoaOrent(YOA_ORENT_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__XOCA_OSET:
-                setXocaOset(XOCA_OSET_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__YOCA_OSET:
-                setYocaOset(YOCA_OSET_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__REF_CSYS:
-                setRefCSys(REF_CSYS_EDEFAULT);
-                return;
-            case AfplibPackage.IOB__TRIPLETS:
-                getTriplets().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.IOB__OBJ_NAME:
+				setObjName(OBJ_NAME_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__OBJ_TYPE:
+				setObjType(OBJ_TYPE_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__XOA_OSET:
+				setXoaOset(XOA_OSET_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__YOA_OSET:
+				setYoaOset(YOA_OSET_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__XOA_ORENT:
+				setXoaOrent(XOA_ORENT_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__YOA_ORENT:
+				setYoaOrent(YOA_ORENT_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__XOCA_OSET:
+				setXocaOset(XOCA_OSET_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__YOCA_OSET:
+				setYocaOset(YOCA_OSET_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__REF_CSYS:
+				setRefCSys(REF_CSYS_EDEFAULT);
+				return;
+			case AfplibPackage.IOB__TRIPLETS:
+				getTriplets().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.IOB__OBJ_NAME:
-                return OBJ_NAME_EDEFAULT == null ? objName != null : !OBJ_NAME_EDEFAULT.equals(objName);
-            case AfplibPackage.IOB__OBJ_TYPE:
-                return OBJ_TYPE_EDEFAULT == null ? objType != null : !OBJ_TYPE_EDEFAULT.equals(objType);
-            case AfplibPackage.IOB__XOA_OSET:
-                return XOA_OSET_EDEFAULT == null ? xoaOset != null : !XOA_OSET_EDEFAULT.equals(xoaOset);
-            case AfplibPackage.IOB__YOA_OSET:
-                return YOA_OSET_EDEFAULT == null ? yoaOset != null : !YOA_OSET_EDEFAULT.equals(yoaOset);
-            case AfplibPackage.IOB__XOA_ORENT:
-                return XOA_ORENT_EDEFAULT == null ? xoaOrent != null : !XOA_ORENT_EDEFAULT.equals(xoaOrent);
-            case AfplibPackage.IOB__YOA_ORENT:
-                return YOA_ORENT_EDEFAULT == null ? yoaOrent != null : !YOA_ORENT_EDEFAULT.equals(yoaOrent);
-            case AfplibPackage.IOB__XOCA_OSET:
-                return XOCA_OSET_EDEFAULT == null ? xocaOset != null : !XOCA_OSET_EDEFAULT.equals(xocaOset);
-            case AfplibPackage.IOB__YOCA_OSET:
-                return YOCA_OSET_EDEFAULT == null ? yocaOset != null : !YOCA_OSET_EDEFAULT.equals(yocaOset);
-            case AfplibPackage.IOB__REF_CSYS:
-                return REF_CSYS_EDEFAULT == null ? refCSys != null : !REF_CSYS_EDEFAULT.equals(refCSys);
-            case AfplibPackage.IOB__TRIPLETS:
-                return triplets != null && !triplets.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.IOB__OBJ_NAME:
+				return OBJ_NAME_EDEFAULT == null ? objName != null : !OBJ_NAME_EDEFAULT.equals(objName);
+			case AfplibPackage.IOB__OBJ_TYPE:
+				return OBJ_TYPE_EDEFAULT == null ? objType != null : !OBJ_TYPE_EDEFAULT.equals(objType);
+			case AfplibPackage.IOB__XOA_OSET:
+				return XOA_OSET_EDEFAULT == null ? xoaOset != null : !XOA_OSET_EDEFAULT.equals(xoaOset);
+			case AfplibPackage.IOB__YOA_OSET:
+				return YOA_OSET_EDEFAULT == null ? yoaOset != null : !YOA_OSET_EDEFAULT.equals(yoaOset);
+			case AfplibPackage.IOB__XOA_ORENT:
+				return XOA_ORENT_EDEFAULT == null ? xoaOrent != null : !XOA_ORENT_EDEFAULT.equals(xoaOrent);
+			case AfplibPackage.IOB__YOA_ORENT:
+				return YOA_ORENT_EDEFAULT == null ? yoaOrent != null : !YOA_ORENT_EDEFAULT.equals(yoaOrent);
+			case AfplibPackage.IOB__XOCA_OSET:
+				return XOCA_OSET_EDEFAULT == null ? xocaOset != null : !XOCA_OSET_EDEFAULT.equals(xocaOset);
+			case AfplibPackage.IOB__YOCA_OSET:
+				return YOCA_OSET_EDEFAULT == null ? yocaOset != null : !YOCA_OSET_EDEFAULT.equals(yocaOset);
+			case AfplibPackage.IOB__REF_CSYS:
+				return REF_CSYS_EDEFAULT == null ? refCSys != null : !REF_CSYS_EDEFAULT.equals(refCSys);
+			case AfplibPackage.IOB__TRIPLETS:
+				return triplets != null && !triplets.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (ObjName: ");
-        result.append(objName);
-        result.append(", ObjType: ");
-        result.append(objType);
-        result.append(", XoaOset: ");
-        result.append(xoaOset);
-        result.append(", YoaOset: ");
-        result.append(yoaOset);
-        result.append(", XoaOrent: ");
-        result.append(xoaOrent);
-        result.append(", YoaOrent: ");
-        result.append(yoaOrent);
-        result.append(", XocaOset: ");
-        result.append(xocaOset);
-        result.append(", YocaOset: ");
-        result.append(yocaOset);
-        result.append(", RefCSys: ");
-        result.append(refCSys);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (ObjName: ");
+		result.append(objName);
+		result.append(", ObjType: ");
+		result.append(objType);
+		result.append(", XoaOset: ");
+		result.append(xoaOset);
+		result.append(", YoaOset: ");
+		result.append(yoaOset);
+		result.append(", XoaOrent: ");
+		result.append(xoaOrent);
+		result.append(", YoaOrent: ");
+		result.append(yoaOrent);
+		result.append(", XocaOset: ");
+		result.append(xocaOset);
+		result.append(", YocaOset: ");
+		result.append(yocaOset);
+		result.append(", RefCSys: ");
+		result.append(refCSys);
+		result.append(')');
+		return result.toString();
+	}
 
 } //IOBImpl

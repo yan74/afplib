@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface EDX extends SF {
 	/**
-     * Returns the value of the '<em><b>DMX Name</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>DMX Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>DMX Name</em>' attribute.
-     * @see #setDMXName(String)
-     * @see org.afplib.afplib.AfplibPackage#getEDX_DMXName()
-     * @model dataType="org.afplib.base.ModcaString8" required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>DMX Name</em>' attribute.
+	 * @see #setDMXName(String)
+	 * @see org.afplib.afplib.AfplibPackage#getEDX_DMXName()
+	 * @model dataType="org.afplib.base.ModcaString8" required="true"
+	 * @generated
+	 */
 	String getDMXName();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.EDX#getDMXName <em>DMX Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.EDX#getDMXName <em>DMX Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>DMX Name</em>' attribute.
-     * @see #getDMXName()
-     * @generated
-     */
+	 * @param value the new value of the '<em>DMX Name</em>' attribute.
+	 * @see #getDMXName()
+	 * @generated
+	 */
 	void setDMXName(String value);
 
 } // EDX

@@ -40,238 +40,238 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class MMCImpl extends SFImpl implements MMC {
 	/**
-     * The default value of the '{@link #getMMCid() <em>MM Cid</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getMMCid() <em>MM Cid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getMMCid()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMMCid()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer MM_CID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getMMCid() <em>MM Cid</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMMCid() <em>MM Cid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getMMCid()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMMCid()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer mmCid = MM_CID_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getPARAMETER1() <em>PARAMETER1</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getPARAMETER1() <em>PARAMETER1</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getPARAMETER1()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPARAMETER1()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer PARAMETER1_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getPARAMETER1() <em>PARAMETER1</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPARAMETER1() <em>PARAMETER1</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getPARAMETER1()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPARAMETER1()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer parameter1 = PARAMETER1_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRg()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRg()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<MMCRG> rg;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected MMCImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getMMC();
-    }
+		return AfplibPackage.eINSTANCE.getMMC();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getMMCid() {
-        return mmCid;
-    }
+		return mmCid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setMMCid(Integer newMMCid) {
-        Integer oldMMCid = mmCid;
-        mmCid = newMMCid;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMC__MM_CID, oldMMCid, mmCid));
-    }
+		Integer oldMMCid = mmCid;
+		mmCid = newMMCid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMC__MM_CID, oldMMCid, mmCid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getPARAMETER1() {
-        return parameter1;
-    }
+		return parameter1;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setPARAMETER1(Integer newPARAMETER1) {
-        Integer oldPARAMETER1 = parameter1;
-        parameter1 = newPARAMETER1;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMC__PARAMETER1, oldPARAMETER1, parameter1));
-    }
+		Integer oldPARAMETER1 = parameter1;
+		parameter1 = newPARAMETER1;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMC__PARAMETER1, oldPARAMETER1, parameter1));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<MMCRG> getRg() {
-        if (rg == null) {
-            rg = new EObjectContainmentEList.Resolving<MMCRG>(MMCRG.class, this, AfplibPackage.MMC__RG);
-        }
-        return rg;
-    }
+		if (rg == null) {
+			rg = new EObjectContainmentEList.Resolving<MMCRG>(MMCRG.class, this, AfplibPackage.MMC__RG);
+		}
+		return rg;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.MMC__RG:
-                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMC__RG:
+				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.MMC__MM_CID:
-                return getMMCid();
-            case AfplibPackage.MMC__PARAMETER1:
-                return getPARAMETER1();
-            case AfplibPackage.MMC__RG:
-                return getRg();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMC__MM_CID:
+				return getMMCid();
+			case AfplibPackage.MMC__PARAMETER1:
+				return getPARAMETER1();
+			case AfplibPackage.MMC__RG:
+				return getRg();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.MMC__MM_CID:
-                setMMCid((Integer)newValue);
-                return;
-            case AfplibPackage.MMC__PARAMETER1:
-                setPARAMETER1((Integer)newValue);
-                return;
-            case AfplibPackage.MMC__RG:
-                getRg().clear();
-                getRg().addAll((Collection<? extends MMCRG>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMC__MM_CID:
+				setMMCid((Integer)newValue);
+				return;
+			case AfplibPackage.MMC__PARAMETER1:
+				setPARAMETER1((Integer)newValue);
+				return;
+			case AfplibPackage.MMC__RG:
+				getRg().clear();
+				getRg().addAll((Collection<? extends MMCRG>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MMC__MM_CID:
-                setMMCid(MM_CID_EDEFAULT);
-                return;
-            case AfplibPackage.MMC__PARAMETER1:
-                setPARAMETER1(PARAMETER1_EDEFAULT);
-                return;
-            case AfplibPackage.MMC__RG:
-                getRg().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMC__MM_CID:
+				setMMCid(MM_CID_EDEFAULT);
+				return;
+			case AfplibPackage.MMC__PARAMETER1:
+				setPARAMETER1(PARAMETER1_EDEFAULT);
+				return;
+			case AfplibPackage.MMC__RG:
+				getRg().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MMC__MM_CID:
-                return MM_CID_EDEFAULT == null ? mmCid != null : !MM_CID_EDEFAULT.equals(mmCid);
-            case AfplibPackage.MMC__PARAMETER1:
-                return PARAMETER1_EDEFAULT == null ? parameter1 != null : !PARAMETER1_EDEFAULT.equals(parameter1);
-            case AfplibPackage.MMC__RG:
-                return rg != null && !rg.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMC__MM_CID:
+				return MM_CID_EDEFAULT == null ? mmCid != null : !MM_CID_EDEFAULT.equals(mmCid);
+			case AfplibPackage.MMC__PARAMETER1:
+				return PARAMETER1_EDEFAULT == null ? parameter1 != null : !PARAMETER1_EDEFAULT.equals(parameter1);
+			case AfplibPackage.MMC__RG:
+				return rg != null && !rg.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (MMCid: ");
-        result.append(mmCid);
-        result.append(", PARAMETER1: ");
-        result.append(parameter1);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (MMCid: ");
+		result.append(mmCid);
+		result.append(", PARAMETER1: ");
+		result.append(parameter1);
+		result.append(')');
+		return result.toString();
+	}
 
 } //MMCImpl

@@ -40,185 +40,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class BAGImpl extends SFImpl implements BAG {
 	/**
-     * The default value of the '{@link #getAEGName() <em>AEG Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getAEGName() <em>AEG Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getAEGName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getAEGName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String AEG_NAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getAEGName() <em>AEG Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAEGName() <em>AEG Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getAEGName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getAEGName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String aegName = AEG_NAME_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTriplets()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTriplets()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<Triplet> triplets;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected BAGImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getBAG();
-    }
+		return AfplibPackage.eINSTANCE.getBAG();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getAEGName() {
-        return aegName;
-    }
+		return aegName;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setAEGName(String newAEGName) {
-        String oldAEGName = aegName;
-        aegName = newAEGName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BAG__AEG_NAME, oldAEGName, aegName));
-    }
+		String oldAEGName = aegName;
+		aegName = newAEGName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BAG__AEG_NAME, oldAEGName, aegName));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<Triplet> getTriplets() {
-        if (triplets == null) {
-            triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.BAG__TRIPLETS);
-        }
-        return triplets;
-    }
+		if (triplets == null) {
+			triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.BAG__TRIPLETS);
+		}
+		return triplets;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.BAG__TRIPLETS:
-                return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.BAG__TRIPLETS:
+				return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.BAG__AEG_NAME:
-                return getAEGName();
-            case AfplibPackage.BAG__TRIPLETS:
-                return getTriplets();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.BAG__AEG_NAME:
+				return getAEGName();
+			case AfplibPackage.BAG__TRIPLETS:
+				return getTriplets();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.BAG__AEG_NAME:
-                setAEGName((String)newValue);
-                return;
-            case AfplibPackage.BAG__TRIPLETS:
-                getTriplets().clear();
-                getTriplets().addAll((Collection<? extends Triplet>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.BAG__AEG_NAME:
+				setAEGName((String)newValue);
+				return;
+			case AfplibPackage.BAG__TRIPLETS:
+				getTriplets().clear();
+				getTriplets().addAll((Collection<? extends Triplet>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.BAG__AEG_NAME:
-                setAEGName(AEG_NAME_EDEFAULT);
-                return;
-            case AfplibPackage.BAG__TRIPLETS:
-                getTriplets().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.BAG__AEG_NAME:
+				setAEGName(AEG_NAME_EDEFAULT);
+				return;
+			case AfplibPackage.BAG__TRIPLETS:
+				getTriplets().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.BAG__AEG_NAME:
-                return AEG_NAME_EDEFAULT == null ? aegName != null : !AEG_NAME_EDEFAULT.equals(aegName);
-            case AfplibPackage.BAG__TRIPLETS:
-                return triplets != null && !triplets.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.BAG__AEG_NAME:
+				return AEG_NAME_EDEFAULT == null ? aegName != null : !AEG_NAME_EDEFAULT.equals(aegName);
+			case AfplibPackage.BAG__TRIPLETS:
+				return triplets != null && !triplets.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (AEGName: ");
-        result.append(aegName);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (AEGName: ");
+		result.append(aegName);
+		result.append(')');
+		return result.toString();
+	}
 
 } //BAGImpl

@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GBAR extends Triplet {
 	/**
-     * Returns the value of the '<em><b>FLAGS</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>FLAGS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>FLAGS</em>' attribute.
-     * @see #setFLAGS(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getGBAR_FLAGS()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>FLAGS</em>' attribute.
+	 * @see #setFLAGS(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getGBAR_FLAGS()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getFLAGS();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.GBAR#getFLAGS <em>FLAGS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.GBAR#getFLAGS <em>FLAGS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>FLAGS</em>' attribute.
-     * @see #getFLAGS()
-     * @generated
-     */
+	 * @param value the new value of the '<em>FLAGS</em>' attribute.
+	 * @see #getFLAGS()
+	 * @generated
+	 */
 	void setFLAGS(Integer value);
 
 } // GBAR

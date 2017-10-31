@@ -40,238 +40,238 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class GRLINEImpl extends TripletImpl implements GRLINE {
 	/**
-     * The default value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XPOS_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xpos = XPOS_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YPOS_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer ypos = YPOS_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRg()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRg()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<GRLINERG> rg;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected GRLINEImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getGRLINE();
-    }
+		return AfplibPackage.eINSTANCE.getGRLINE();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXPOS() {
-        return xpos;
-    }
+		return xpos;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXPOS(Integer newXPOS) {
-        Integer oldXPOS = xpos;
-        xpos = newXPOS;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GRLINE__XPOS, oldXPOS, xpos));
-    }
+		Integer oldXPOS = xpos;
+		xpos = newXPOS;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GRLINE__XPOS, oldXPOS, xpos));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYPOS() {
-        return ypos;
-    }
+		return ypos;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYPOS(Integer newYPOS) {
-        Integer oldYPOS = ypos;
-        ypos = newYPOS;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GRLINE__YPOS, oldYPOS, ypos));
-    }
+		Integer oldYPOS = ypos;
+		ypos = newYPOS;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GRLINE__YPOS, oldYPOS, ypos));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<GRLINERG> getRg() {
-        if (rg == null) {
-            rg = new EObjectContainmentEList.Resolving<GRLINERG>(GRLINERG.class, this, AfplibPackage.GRLINE__RG);
-        }
-        return rg;
-    }
+		if (rg == null) {
+			rg = new EObjectContainmentEList.Resolving<GRLINERG>(GRLINERG.class, this, AfplibPackage.GRLINE__RG);
+		}
+		return rg;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.GRLINE__RG:
-                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.GRLINE__RG:
+				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.GRLINE__XPOS:
-                return getXPOS();
-            case AfplibPackage.GRLINE__YPOS:
-                return getYPOS();
-            case AfplibPackage.GRLINE__RG:
-                return getRg();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.GRLINE__XPOS:
+				return getXPOS();
+			case AfplibPackage.GRLINE__YPOS:
+				return getYPOS();
+			case AfplibPackage.GRLINE__RG:
+				return getRg();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.GRLINE__XPOS:
-                setXPOS((Integer)newValue);
-                return;
-            case AfplibPackage.GRLINE__YPOS:
-                setYPOS((Integer)newValue);
-                return;
-            case AfplibPackage.GRLINE__RG:
-                getRg().clear();
-                getRg().addAll((Collection<? extends GRLINERG>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.GRLINE__XPOS:
+				setXPOS((Integer)newValue);
+				return;
+			case AfplibPackage.GRLINE__YPOS:
+				setYPOS((Integer)newValue);
+				return;
+			case AfplibPackage.GRLINE__RG:
+				getRg().clear();
+				getRg().addAll((Collection<? extends GRLINERG>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GRLINE__XPOS:
-                setXPOS(XPOS_EDEFAULT);
-                return;
-            case AfplibPackage.GRLINE__YPOS:
-                setYPOS(YPOS_EDEFAULT);
-                return;
-            case AfplibPackage.GRLINE__RG:
-                getRg().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GRLINE__XPOS:
+				setXPOS(XPOS_EDEFAULT);
+				return;
+			case AfplibPackage.GRLINE__YPOS:
+				setYPOS(YPOS_EDEFAULT);
+				return;
+			case AfplibPackage.GRLINE__RG:
+				getRg().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GRLINE__XPOS:
-                return XPOS_EDEFAULT == null ? xpos != null : !XPOS_EDEFAULT.equals(xpos);
-            case AfplibPackage.GRLINE__YPOS:
-                return YPOS_EDEFAULT == null ? ypos != null : !YPOS_EDEFAULT.equals(ypos);
-            case AfplibPackage.GRLINE__RG:
-                return rg != null && !rg.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GRLINE__XPOS:
+				return XPOS_EDEFAULT == null ? xpos != null : !XPOS_EDEFAULT.equals(xpos);
+			case AfplibPackage.GRLINE__YPOS:
+				return YPOS_EDEFAULT == null ? ypos != null : !YPOS_EDEFAULT.equals(ypos);
+			case AfplibPackage.GRLINE__RG:
+				return rg != null && !rg.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (XPOS: ");
-        result.append(xpos);
-        result.append(", YPOS: ");
-        result.append(ypos);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (XPOS: ");
+		result.append(xpos);
+		result.append(", YPOS: ");
+		result.append(ypos);
+		result.append(')');
+		return result.toString();
+	}
 
 } //GRLINEImpl

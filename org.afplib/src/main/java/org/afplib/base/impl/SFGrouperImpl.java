@@ -16,22 +16,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class SFGrouperImpl extends SFImpl implements SFGrouper {
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected SFGrouperImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return BasePackage.Literals.SF_GROUPER;
-    }
+		return BasePackage.Literals.SF_GROUPER;
+	}
 
 } //SFGrouperImpl

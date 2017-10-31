@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GSPSImpl extends TripletImpl implements GSPS {
 	/**
-     * The default value of the '{@link #getLCID() <em>LCID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getLCID() <em>LCID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getLCID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getLCID()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer LCID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getLCID() <em>LCID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLCID() <em>LCID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getLCID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getLCID()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer lcid = LCID_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected GSPSImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getGSPS();
-    }
+		return AfplibPackage.eINSTANCE.getGSPS();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getLCID() {
-        return lcid;
-    }
+		return lcid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setLCID(Integer newLCID) {
-        Integer oldLCID = lcid;
-        lcid = newLCID;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSPS__LCID, oldLCID, lcid));
-    }
+		Integer oldLCID = lcid;
+		lcid = newLCID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSPS__LCID, oldLCID, lcid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.GSPS__LCID:
-                return getLCID();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSPS__LCID:
+				return getLCID();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.GSPS__LCID:
-                setLCID((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSPS__LCID:
+				setLCID((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GSPS__LCID:
-                setLCID(LCID_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSPS__LCID:
+				setLCID(LCID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GSPS__LCID:
-                return LCID_EDEFAULT == null ? lcid != null : !LCID_EDEFAULT.equals(lcid);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSPS__LCID:
+				return LCID_EDEFAULT == null ? lcid != null : !LCID_EDEFAULT.equals(lcid);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (LCID: ");
-        result.append(lcid);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (LCID: ");
+		result.append(lcid);
+		result.append(')');
+		return result.toString();
+	}
 
 } //GSPSImpl

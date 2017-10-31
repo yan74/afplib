@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GSCDImpl extends TripletImpl implements GSCD {
 	/**
-     * The default value of the '{@link #getDIRECTION() <em>DIRECTION</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDIRECTION() <em>DIRECTION</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getDIRECTION()
-     * @generated
-     * @ordered
-     */
+	 * @see #getDIRECTION()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer DIRECTION_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getDIRECTION() <em>DIRECTION</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDIRECTION() <em>DIRECTION</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getDIRECTION()
-     * @generated
-     * @ordered
-     */
+	 * @see #getDIRECTION()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer direction = DIRECTION_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected GSCDImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getGSCD();
-    }
+		return AfplibPackage.eINSTANCE.getGSCD();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getDIRECTION() {
-        return direction;
-    }
+		return direction;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setDIRECTION(Integer newDIRECTION) {
-        Integer oldDIRECTION = direction;
-        direction = newDIRECTION;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCD__DIRECTION, oldDIRECTION, direction));
-    }
+		Integer oldDIRECTION = direction;
+		direction = newDIRECTION;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCD__DIRECTION, oldDIRECTION, direction));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.GSCD__DIRECTION:
-                return getDIRECTION();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCD__DIRECTION:
+				return getDIRECTION();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.GSCD__DIRECTION:
-                setDIRECTION((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCD__DIRECTION:
+				setDIRECTION((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GSCD__DIRECTION:
-                setDIRECTION(DIRECTION_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCD__DIRECTION:
+				setDIRECTION(DIRECTION_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GSCD__DIRECTION:
-                return DIRECTION_EDEFAULT == null ? direction != null : !DIRECTION_EDEFAULT.equals(direction);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCD__DIRECTION:
+				return DIRECTION_EDEFAULT == null ? direction != null : !DIRECTION_EDEFAULT.equals(direction);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (DIRECTION: ");
-        result.append(direction);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (DIRECTION: ");
+		result.append(direction);
+		result.append(')');
+		return result.toString();
+	}
 
 } //GSCDImpl

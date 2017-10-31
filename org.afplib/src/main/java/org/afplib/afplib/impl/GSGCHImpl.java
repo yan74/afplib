@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class GSGCHImpl extends TripletImpl implements GSGCH {
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected GSGCHImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getGSGCH();
-    }
+		return AfplibPackage.eINSTANCE.getGSGCH();
+	}
 
 } //GSGCHImpl

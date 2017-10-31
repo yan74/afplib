@@ -39,185 +39,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ExternalAlgorithmImpl extends TripletImpl implements ExternalAlgorithm {
 	/**
-     * The default value of the '{@link #getALGTYPE() <em>ALGTYPE</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getALGTYPE() <em>ALGTYPE</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getALGTYPE()
-     * @generated
-     * @ordered
-     */
+	 * @see #getALGTYPE()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer ALGTYPE_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getALGTYPE() <em>ALGTYPE</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getALGTYPE() <em>ALGTYPE</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getALGTYPE()
-     * @generated
-     * @ordered
-     */
+	 * @see #getALGTYPE()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer algtype = ALGTYPE_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRg()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRg()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExternalAlgorithmRG> rg;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ExternalAlgorithmImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getExternalAlgorithm();
-    }
+		return AfplibPackage.eINSTANCE.getExternalAlgorithm();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getALGTYPE() {
-        return algtype;
-    }
+		return algtype;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setALGTYPE(Integer newALGTYPE) {
-        Integer oldALGTYPE = algtype;
-        algtype = newALGTYPE;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE, oldALGTYPE, algtype));
-    }
+		Integer oldALGTYPE = algtype;
+		algtype = newALGTYPE;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE, oldALGTYPE, algtype));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<ExternalAlgorithmRG> getRg() {
-        if (rg == null) {
-            rg = new EObjectContainmentEList.Resolving<ExternalAlgorithmRG>(ExternalAlgorithmRG.class, this, AfplibPackage.EXTERNAL_ALGORITHM__RG);
-        }
-        return rg;
-    }
+		if (rg == null) {
+			rg = new EObjectContainmentEList.Resolving<ExternalAlgorithmRG>(ExternalAlgorithmRG.class, this, AfplibPackage.EXTERNAL_ALGORITHM__RG);
+		}
+		return rg;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.EXTERNAL_ALGORITHM__RG:
-                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTERNAL_ALGORITHM__RG:
+				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
-                return getALGTYPE();
-            case AfplibPackage.EXTERNAL_ALGORITHM__RG:
-                return getRg();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
+				return getALGTYPE();
+			case AfplibPackage.EXTERNAL_ALGORITHM__RG:
+				return getRg();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
-                setALGTYPE((Integer)newValue);
-                return;
-            case AfplibPackage.EXTERNAL_ALGORITHM__RG:
-                getRg().clear();
-                getRg().addAll((Collection<? extends ExternalAlgorithmRG>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
+				setALGTYPE((Integer)newValue);
+				return;
+			case AfplibPackage.EXTERNAL_ALGORITHM__RG:
+				getRg().clear();
+				getRg().addAll((Collection<? extends ExternalAlgorithmRG>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
-                setALGTYPE(ALGTYPE_EDEFAULT);
-                return;
-            case AfplibPackage.EXTERNAL_ALGORITHM__RG:
-                getRg().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
+				setALGTYPE(ALGTYPE_EDEFAULT);
+				return;
+			case AfplibPackage.EXTERNAL_ALGORITHM__RG:
+				getRg().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
-                return ALGTYPE_EDEFAULT == null ? algtype != null : !ALGTYPE_EDEFAULT.equals(algtype);
-            case AfplibPackage.EXTERNAL_ALGORITHM__RG:
-                return rg != null && !rg.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTERNAL_ALGORITHM__ALGTYPE:
+				return ALGTYPE_EDEFAULT == null ? algtype != null : !ALGTYPE_EDEFAULT.equals(algtype);
+			case AfplibPackage.EXTERNAL_ALGORITHM__RG:
+				return rg != null && !rg.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (ALGTYPE: ");
-        result.append(algtype);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (ALGTYPE: ");
+		result.append(algtype);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ExternalAlgorithmImpl

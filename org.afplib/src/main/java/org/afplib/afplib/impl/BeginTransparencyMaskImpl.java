@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class BeginTransparencyMaskImpl extends TripletImpl implements BeginTransparencyMask {
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected BeginTransparencyMaskImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getBeginTransparencyMask();
-    }
+		return AfplibPackage.eINSTANCE.getBeginTransparencyMask();
+	}
 
 } //BeginTransparencyMaskImpl

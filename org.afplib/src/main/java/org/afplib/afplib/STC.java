@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface STC extends Triplet {
 	/**
-     * Returns the value of the '<em><b>FRGCOLOR</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>FRGCOLOR</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>FRGCOLOR</em>' attribute.
-     * @see #setFRGCOLOR(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getSTC_FRGCOLOR()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>FRGCOLOR</em>' attribute.
+	 * @see #setFRGCOLOR(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getSTC_FRGCOLOR()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getFRGCOLOR();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.STC#getFRGCOLOR <em>FRGCOLOR</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.STC#getFRGCOLOR <em>FRGCOLOR</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>FRGCOLOR</em>' attribute.
-     * @see #getFRGCOLOR()
-     * @generated
-     */
+	 * @param value the new value of the '<em>FRGCOLOR</em>' attribute.
+	 * @see #getFRGCOLOR()
+	 * @generated
+	 */
 	void setFRGCOLOR(Integer value);
 
 	/**
-     * Returns the value of the '<em><b>PRECSION</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>PRECSION</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>PRECSION</em>' attribute.
-     * @see #setPRECSION(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getSTC_PRECSION()
-     * @model
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>PRECSION</em>' attribute.
+	 * @see #setPRECSION(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getSTC_PRECSION()
+	 * @model
+	 * @generated
+	 */
 	Integer getPRECSION();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.STC#getPRECSION <em>PRECSION</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.STC#getPRECSION <em>PRECSION</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>PRECSION</em>' attribute.
-     * @see #getPRECSION()
-     * @generated
-     */
+	 * @param value the new value of the '<em>PRECSION</em>' attribute.
+	 * @see #getPRECSION()
+	 * @generated
+	 */
 	void setPRECSION(Integer value);
 
 } // STC

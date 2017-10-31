@@ -31,296 +31,296 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ImageResolutionImpl extends TripletImpl implements ImageResolution {
 	/**
-     * The default value of the '{@link #getXBase() <em>XBase</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXBase() <em>XBase</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXBase()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXBase()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XBASE_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXBase() <em>XBase</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXBase() <em>XBase</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXBase()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXBase()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xBase = XBASE_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYBase() <em>YBase</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYBase() <em>YBase</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYBase()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYBase()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YBASE_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYBase() <em>YBase</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYBase() <em>YBase</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYBase()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYBase()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer yBase = YBASE_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getXResol() <em>XResol</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXResol() <em>XResol</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXResol()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXResol()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XRESOL_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXResol() <em>XResol</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXResol() <em>XResol</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXResol()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXResol()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xResol = XRESOL_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYResol() <em>YResol</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYResol() <em>YResol</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYResol()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYResol()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YRESOL_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYResol() <em>YResol</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYResol() <em>YResol</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYResol()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYResol()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer yResol = YRESOL_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ImageResolutionImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getImageResolution();
-    }
+		return AfplibPackage.eINSTANCE.getImageResolution();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXBase() {
-        return xBase;
-    }
+		return xBase;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXBase(Integer newXBase) {
-        Integer oldXBase = xBase;
-        xBase = newXBase;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__XBASE, oldXBase, xBase));
-    }
+		Integer oldXBase = xBase;
+		xBase = newXBase;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__XBASE, oldXBase, xBase));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYBase() {
-        return yBase;
-    }
+		return yBase;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYBase(Integer newYBase) {
-        Integer oldYBase = yBase;
-        yBase = newYBase;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__YBASE, oldYBase, yBase));
-    }
+		Integer oldYBase = yBase;
+		yBase = newYBase;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__YBASE, oldYBase, yBase));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXResol() {
-        return xResol;
-    }
+		return xResol;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXResol(Integer newXResol) {
-        Integer oldXResol = xResol;
-        xResol = newXResol;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__XRESOL, oldXResol, xResol));
-    }
+		Integer oldXResol = xResol;
+		xResol = newXResol;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__XRESOL, oldXResol, xResol));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYResol() {
-        return yResol;
-    }
+		return yResol;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYResol(Integer newYResol) {
-        Integer oldYResol = yResol;
-        yResol = newYResol;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__YRESOL, oldYResol, yResol));
-    }
+		Integer oldYResol = yResol;
+		yResol = newYResol;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.IMAGE_RESOLUTION__YRESOL, oldYResol, yResol));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_RESOLUTION__XBASE:
-                return getXBase();
-            case AfplibPackage.IMAGE_RESOLUTION__YBASE:
-                return getYBase();
-            case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
-                return getXResol();
-            case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
-                return getYResol();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_RESOLUTION__XBASE:
+				return getXBase();
+			case AfplibPackage.IMAGE_RESOLUTION__YBASE:
+				return getYBase();
+			case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
+				return getXResol();
+			case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
+				return getYResol();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_RESOLUTION__XBASE:
-                setXBase((Integer)newValue);
-                return;
-            case AfplibPackage.IMAGE_RESOLUTION__YBASE:
-                setYBase((Integer)newValue);
-                return;
-            case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
-                setXResol((Integer)newValue);
-                return;
-            case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
-                setYResol((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_RESOLUTION__XBASE:
+				setXBase((Integer)newValue);
+				return;
+			case AfplibPackage.IMAGE_RESOLUTION__YBASE:
+				setYBase((Integer)newValue);
+				return;
+			case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
+				setXResol((Integer)newValue);
+				return;
+			case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
+				setYResol((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_RESOLUTION__XBASE:
-                setXBase(XBASE_EDEFAULT);
-                return;
-            case AfplibPackage.IMAGE_RESOLUTION__YBASE:
-                setYBase(YBASE_EDEFAULT);
-                return;
-            case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
-                setXResol(XRESOL_EDEFAULT);
-                return;
-            case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
-                setYResol(YRESOL_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_RESOLUTION__XBASE:
+				setXBase(XBASE_EDEFAULT);
+				return;
+			case AfplibPackage.IMAGE_RESOLUTION__YBASE:
+				setYBase(YBASE_EDEFAULT);
+				return;
+			case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
+				setXResol(XRESOL_EDEFAULT);
+				return;
+			case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
+				setYResol(YRESOL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_RESOLUTION__XBASE:
-                return XBASE_EDEFAULT == null ? xBase != null : !XBASE_EDEFAULT.equals(xBase);
-            case AfplibPackage.IMAGE_RESOLUTION__YBASE:
-                return YBASE_EDEFAULT == null ? yBase != null : !YBASE_EDEFAULT.equals(yBase);
-            case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
-                return XRESOL_EDEFAULT == null ? xResol != null : !XRESOL_EDEFAULT.equals(xResol);
-            case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
-                return YRESOL_EDEFAULT == null ? yResol != null : !YRESOL_EDEFAULT.equals(yResol);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_RESOLUTION__XBASE:
+				return XBASE_EDEFAULT == null ? xBase != null : !XBASE_EDEFAULT.equals(xBase);
+			case AfplibPackage.IMAGE_RESOLUTION__YBASE:
+				return YBASE_EDEFAULT == null ? yBase != null : !YBASE_EDEFAULT.equals(yBase);
+			case AfplibPackage.IMAGE_RESOLUTION__XRESOL:
+				return XRESOL_EDEFAULT == null ? xResol != null : !XRESOL_EDEFAULT.equals(xResol);
+			case AfplibPackage.IMAGE_RESOLUTION__YRESOL:
+				return YRESOL_EDEFAULT == null ? yResol != null : !YRESOL_EDEFAULT.equals(yResol);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (XBase: ");
-        result.append(xBase);
-        result.append(", YBase: ");
-        result.append(yBase);
-        result.append(", XResol: ");
-        result.append(xResol);
-        result.append(", YResol: ");
-        result.append(yResol);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (XBase: ");
+		result.append(xBase);
+		result.append(", YBase: ");
+		result.append(yBase);
+		result.append(", XResol: ");
+		result.append(xResol);
+		result.append(", YResol: ");
+		result.append(yResol);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ImageResolutionImpl

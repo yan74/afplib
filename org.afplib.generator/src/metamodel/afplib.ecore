@@ -6086,6 +6086,8 @@
 	  
 	  
 	  
+	  
+	  
 
 	  
 	  
@@ -16262,6 +16264,14 @@
 	
 	
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="StpMedEx" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject">
+	
+	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>
+      </eAnnotations>
+	</eStructuralFeatures>
+	
+	
+	<eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray">
 	
 	  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="&lt;p>mandatory&lt;br>fixed length&lt;/p>"/>

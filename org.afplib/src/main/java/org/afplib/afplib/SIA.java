@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface SIA extends Triplet {
 	/**
-     * Returns the value of the '<em><b>ADJSTMNT</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>ADJSTMNT</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>ADJSTMNT</em>' attribute.
-     * @see #setADJSTMNT(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getSIA_ADJSTMNT()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>ADJSTMNT</em>' attribute.
+	 * @see #setADJSTMNT(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getSIA_ADJSTMNT()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getADJSTMNT();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.SIA#getADJSTMNT <em>ADJSTMNT</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.SIA#getADJSTMNT <em>ADJSTMNT</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>ADJSTMNT</em>' attribute.
-     * @see #getADJSTMNT()
-     * @generated
-     */
+	 * @param value the new value of the '<em>ADJSTMNT</em>' attribute.
+	 * @see #getADJSTMNT()
+	 * @generated
+	 */
 	void setADJSTMNT(Integer value);
 
 	/**
-     * Returns the value of the '<em><b>DIRCTION</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>DIRCTION</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>DIRCTION</em>' attribute.
-     * @see #setDIRCTION(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getSIA_DIRCTION()
-     * @model
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>DIRCTION</em>' attribute.
+	 * @see #setDIRCTION(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getSIA_DIRCTION()
+	 * @model
+	 * @generated
+	 */
 	Integer getDIRCTION();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.SIA#getDIRCTION <em>DIRCTION</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.SIA#getDIRCTION <em>DIRCTION</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>DIRCTION</em>' attribute.
-     * @see #getDIRCTION()
-     * @generated
-     */
+	 * @param value the new value of the '<em>DIRCTION</em>' attribute.
+	 * @see #getDIRCTION()
+	 * @generated
+	 */
 	void setDIRCTION(Integer value);
 
 } // SIA

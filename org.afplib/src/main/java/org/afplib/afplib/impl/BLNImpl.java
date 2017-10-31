@@ -18,22 +18,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class BLNImpl extends TripletImpl implements BLN {
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected BLNImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getBLN();
-    }
+		return AfplibPackage.eINSTANCE.getBLN();
+	}
 
 } //BLNImpl

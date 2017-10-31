@@ -26,43 +26,43 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface BIM extends SF {
 	/**
-     * Returns the value of the '<em><b>Ido Name</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Ido Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Ido Name</em>' attribute.
-     * @see #setIdoName(String)
-     * @see org.afplib.afplib.AfplibPackage#getBIM_IdoName()
-     * @model dataType="org.afplib.base.ModcaString8"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Ido Name</em>' attribute.
+	 * @see #setIdoName(String)
+	 * @see org.afplib.afplib.AfplibPackage#getBIM_IdoName()
+	 * @model dataType="org.afplib.base.ModcaString8"
+	 * @generated
+	 */
 	String getIdoName();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.BIM#getIdoName <em>Ido Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.BIM#getIdoName <em>Ido Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Ido Name</em>' attribute.
-     * @see #getIdoName()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Ido Name</em>' attribute.
+	 * @see #getIdoName()
+	 * @generated
+	 */
 	void setIdoName(String value);
 
 	/**
-     * Returns the value of the '<em><b>Triplets</b></em>' containment reference list.
-     * The list contents are of type {@link org.afplib.base.Triplet}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Triplets</b></em>' containment reference list.
+	 * The list contents are of type {@link org.afplib.base.Triplet}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>variable length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Triplets</em>' containment reference list.
-     * @see org.afplib.afplib.AfplibPackage#getBIM_Triplets()
-     * @model containment="true" resolveProxies="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>variable length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Triplets</em>' containment reference list.
+	 * @see org.afplib.afplib.AfplibPackage#getBIM_Triplets()
+	 * @model containment="true" resolveProxies="true"
+	 * @generated
+	 */
 	EList<Triplet> getTriplets();
 
 } // BIM

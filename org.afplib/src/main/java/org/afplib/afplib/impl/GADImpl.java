@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GADImpl extends SFImpl implements GAD {
 	/**
-     * The default value of the '{@link #getGOCAdat() <em>GOC Adat</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getGOCAdat() <em>GOC Adat</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getGOCAdat()
-     * @generated
-     * @ordered
-     */
+	 * @see #getGOCAdat()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final byte[] GOC_ADAT_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getGOCAdat() <em>GOC Adat</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getGOCAdat() <em>GOC Adat</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getGOCAdat()
-     * @generated
-     * @ordered
-     */
+	 * @see #getGOCAdat()
+	 * @generated
+	 * @ordered
+	 */
 	protected byte[] gocAdat = GOC_ADAT_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected GADImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getGAD();
-    }
+		return AfplibPackage.eINSTANCE.getGAD();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public byte[] getGOCAdat() {
-        return gocAdat;
-    }
+		return gocAdat;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setGOCAdat(byte[] newGOCAdat) {
-        byte[] oldGOCAdat = gocAdat;
-        gocAdat = newGOCAdat;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GAD__GOC_ADAT, oldGOCAdat, gocAdat));
-    }
+		byte[] oldGOCAdat = gocAdat;
+		gocAdat = newGOCAdat;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GAD__GOC_ADAT, oldGOCAdat, gocAdat));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.GAD__GOC_ADAT:
-                return getGOCAdat();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.GAD__GOC_ADAT:
+				return getGOCAdat();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.GAD__GOC_ADAT:
-                setGOCAdat((byte[])newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.GAD__GOC_ADAT:
+				setGOCAdat((byte[])newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GAD__GOC_ADAT:
-                setGOCAdat(GOC_ADAT_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GAD__GOC_ADAT:
+				setGOCAdat(GOC_ADAT_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GAD__GOC_ADAT:
-                return GOC_ADAT_EDEFAULT == null ? gocAdat != null : !GOC_ADAT_EDEFAULT.equals(gocAdat);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GAD__GOC_ADAT:
+				return GOC_ADAT_EDEFAULT == null ? gocAdat != null : !GOC_ADAT_EDEFAULT.equals(gocAdat);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (GOCAdat: ");
-        result.append(gocAdat);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (GOCAdat: ");
+		result.append(gocAdat);
+		result.append(')');
+		return result.toString();
+	}
 
 } //GADImpl

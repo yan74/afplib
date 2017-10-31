@@ -39,185 +39,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class TileTOCImpl extends TripletImpl implements TileTOC {
 	/**
-     * The default value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getReserved()
-     * @generated
-     * @ordered
-     */
+	 * @see #getReserved()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RESERVED_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getReserved()
-     * @generated
-     * @ordered
-     */
+	 * @see #getReserved()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer reserved = RESERVED_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRg() <em>Rg</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRg()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRg()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<TileTOCRG> rg;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected TileTOCImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getTileTOC();
-    }
+		return AfplibPackage.eINSTANCE.getTileTOC();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getReserved() {
-        return reserved;
-    }
+		return reserved;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setReserved(Integer newReserved) {
-        Integer oldReserved = reserved;
-        reserved = newReserved;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TILE_TOC__RESERVED, oldReserved, reserved));
-    }
+		Integer oldReserved = reserved;
+		reserved = newReserved;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TILE_TOC__RESERVED, oldReserved, reserved));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<TileTOCRG> getRg() {
-        if (rg == null) {
-            rg = new EObjectContainmentEList.Resolving<TileTOCRG>(TileTOCRG.class, this, AfplibPackage.TILE_TOC__RG);
-        }
-        return rg;
-    }
+		if (rg == null) {
+			rg = new EObjectContainmentEList.Resolving<TileTOCRG>(TileTOCRG.class, this, AfplibPackage.TILE_TOC__RG);
+		}
+		return rg;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.TILE_TOC__RG:
-                return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.TILE_TOC__RG:
+				return ((InternalEList<?>)getRg()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.TILE_TOC__RESERVED:
-                return getReserved();
-            case AfplibPackage.TILE_TOC__RG:
-                return getRg();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.TILE_TOC__RESERVED:
+				return getReserved();
+			case AfplibPackage.TILE_TOC__RG:
+				return getRg();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.TILE_TOC__RESERVED:
-                setReserved((Integer)newValue);
-                return;
-            case AfplibPackage.TILE_TOC__RG:
-                getRg().clear();
-                getRg().addAll((Collection<? extends TileTOCRG>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.TILE_TOC__RESERVED:
+				setReserved((Integer)newValue);
+				return;
+			case AfplibPackage.TILE_TOC__RG:
+				getRg().clear();
+				getRg().addAll((Collection<? extends TileTOCRG>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.TILE_TOC__RESERVED:
-                setReserved(RESERVED_EDEFAULT);
-                return;
-            case AfplibPackage.TILE_TOC__RG:
-                getRg().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.TILE_TOC__RESERVED:
+				setReserved(RESERVED_EDEFAULT);
+				return;
+			case AfplibPackage.TILE_TOC__RG:
+				getRg().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.TILE_TOC__RESERVED:
-                return RESERVED_EDEFAULT == null ? reserved != null : !RESERVED_EDEFAULT.equals(reserved);
-            case AfplibPackage.TILE_TOC__RG:
-                return rg != null && !rg.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.TILE_TOC__RESERVED:
+				return RESERVED_EDEFAULT == null ? reserved != null : !RESERVED_EDEFAULT.equals(reserved);
+			case AfplibPackage.TILE_TOC__RG:
+				return rg != null && !rg.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (Reserved: ");
-        result.append(reserved);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (Reserved: ");
+		result.append(reserved);
+		result.append(')');
+		return result.toString();
+	}
 
 } //TileTOCImpl

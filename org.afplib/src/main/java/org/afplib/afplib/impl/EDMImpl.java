@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class EDMImpl extends SFImpl implements EDM {
 	/**
-     * The default value of the '{@link #getDMName() <em>DM Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getDMName() <em>DM Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getDMName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getDMName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String DM_NAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getDMName() <em>DM Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDMName() <em>DM Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getDMName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getDMName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String dmName = DM_NAME_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected EDMImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getEDM();
-    }
+		return AfplibPackage.eINSTANCE.getEDM();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getDMName() {
-        return dmName;
-    }
+		return dmName;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setDMName(String newDMName) {
-        String oldDMName = dmName;
-        dmName = newDMName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EDM__DM_NAME, oldDMName, dmName));
-    }
+		String oldDMName = dmName;
+		dmName = newDMName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EDM__DM_NAME, oldDMName, dmName));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.EDM__DM_NAME:
-                return getDMName();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.EDM__DM_NAME:
+				return getDMName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.EDM__DM_NAME:
-                setDMName((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.EDM__DM_NAME:
+				setDMName((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EDM__DM_NAME:
-                setDMName(DM_NAME_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EDM__DM_NAME:
+				setDMName(DM_NAME_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EDM__DM_NAME:
-                return DM_NAME_EDEFAULT == null ? dmName != null : !DM_NAME_EDEFAULT.equals(dmName);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EDM__DM_NAME:
+				return DM_NAME_EDEFAULT == null ? dmName != null : !DM_NAME_EDEFAULT.equals(dmName);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (DMName: ");
-        result.append(dmName);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (DMName: ");
+		result.append(dmName);
+		result.append(')');
+		return result.toString();
+	}
 
 } //EDMImpl

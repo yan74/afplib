@@ -19,250 +19,250 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ObjectFunctionSetSpecificationObjType implements Enumerator {
 	/**
-     * The '<em><b>Const Presentation Text</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Presentation Text</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #CONST_PRESENTATION_TEXT_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_PRESENTATION_TEXT_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	CONST_PRESENTATION_TEXT(2, "ConstPresentationText", "ConstPresentationText"),
 
 	/**
-     * The '<em><b>Const Graphics</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Graphics</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #CONST_GRAPHICS_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_GRAPHICS_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	CONST_GRAPHICS(3, "ConstGraphics", "ConstGraphics"),
 
 	/**
-     * The '<em><b>Const Bar Code</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Bar Code</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #CONST_BAR_CODE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_BAR_CODE_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	CONST_BAR_CODE(5, "ConstBarCode", "ConstBarCode"),
 
 	/**
-     * The '<em><b>Const Image</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Image</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #CONST_IMAGE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_IMAGE_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	CONST_IMAGE(6, "ConstImage", "ConstImage");
 
 	/**
-     * The '<em><b>Const Presentation Text</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Presentation Text</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const Presentation Text</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @see #CONST_PRESENTATION_TEXT
-     * @model name="ConstPresentationText"
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_PRESENTATION_TEXT
+	 * @model name="ConstPresentationText"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int CONST_PRESENTATION_TEXT_VALUE = 2;
 
 	/**
-     * The '<em><b>Const Graphics</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Graphics</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const Graphics</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @see #CONST_GRAPHICS
-     * @model name="ConstGraphics"
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_GRAPHICS
+	 * @model name="ConstGraphics"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int CONST_GRAPHICS_VALUE = 3;
 
 	/**
-     * The '<em><b>Const Bar Code</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Bar Code</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const Bar Code</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @see #CONST_BAR_CODE
-     * @model name="ConstBarCode"
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_BAR_CODE
+	 * @model name="ConstBarCode"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int CONST_BAR_CODE_VALUE = 5;
 
 	/**
-     * The '<em><b>Const Image</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Const Image</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Const Image</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @see #CONST_IMAGE
-     * @model name="ConstImage"
-     * @generated
-     * @ordered
-     */
+	 * @see #CONST_IMAGE
+	 * @model name="ConstImage"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int CONST_IMAGE_VALUE = 6;
 
 	/**
-     * An array of all the '<em><b>Object Function Set Specification Obj Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Object Function Set Specification Obj Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	private static final ObjectFunctionSetSpecificationObjType[] VALUES_ARRAY =
 		new ObjectFunctionSetSpecificationObjType[] {
-            CONST_PRESENTATION_TEXT,
-            CONST_GRAPHICS,
-            CONST_BAR_CODE,
-            CONST_IMAGE,
-        };
+			CONST_PRESENTATION_TEXT,
+			CONST_GRAPHICS,
+			CONST_BAR_CODE,
+			CONST_IMAGE,
+		};
 
 	/**
-     * A public read-only list of all the '<em><b>Object Function Set Specification Obj Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Object Function Set Specification Obj Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public static final List<ObjectFunctionSetSpecificationObjType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-     * Returns the '<em><b>Object Function Set Specification Obj Type</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Object Function Set Specification Obj Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static ObjectFunctionSetSpecificationObjType get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            ObjectFunctionSetSpecificationObjType result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			ObjectFunctionSetSpecificationObjType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-     * Returns the '<em><b>Object Function Set Specification Obj Type</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Object Function Set Specification Obj Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static ObjectFunctionSetSpecificationObjType getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            ObjectFunctionSetSpecificationObjType result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			ObjectFunctionSetSpecificationObjType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-     * Returns the '<em><b>Object Function Set Specification Obj Type</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Object Function Set Specification Obj Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static ObjectFunctionSetSpecificationObjType get(int value) {
-        switch (value) {
-            case CONST_PRESENTATION_TEXT_VALUE: return CONST_PRESENTATION_TEXT;
-            case CONST_GRAPHICS_VALUE: return CONST_GRAPHICS;
-            case CONST_BAR_CODE_VALUE: return CONST_BAR_CODE;
-            case CONST_IMAGE_VALUE: return CONST_IMAGE;
-        }
-        return null;
-    }
+		switch (value) {
+			case CONST_PRESENTATION_TEXT_VALUE: return CONST_PRESENTATION_TEXT;
+			case CONST_GRAPHICS_VALUE: return CONST_GRAPHICS;
+			case CONST_BAR_CODE_VALUE: return CONST_BAR_CODE;
+			case CONST_IMAGE_VALUE: return CONST_IMAGE;
+		}
+		return null;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	private final int value;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	private final String name;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	private final String literal;
 
 	/**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	private ObjectFunctionSetSpecificationObjType(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
 	/**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 	
 } //ObjectFunctionSetSpecificationObjType

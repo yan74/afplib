@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class MediumMapPageNumberImpl extends TripletImpl implements MediumMapPageNumber {
 	/**
-     * The default value of the '{@link #getPageNum() <em>Page Num</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getPageNum() <em>Page Num</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getPageNum()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPageNum()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer PAGE_NUM_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getPageNum() <em>Page Num</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPageNum() <em>Page Num</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getPageNum()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPageNum()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer pageNum = PAGE_NUM_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected MediumMapPageNumberImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getMediumMapPageNumber();
-    }
+		return AfplibPackage.eINSTANCE.getMediumMapPageNumber();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getPageNum() {
-        return pageNum;
-    }
+		return pageNum;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setPageNum(Integer newPageNum) {
-        Integer oldPageNum = pageNum;
-        pageNum = newPageNum;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM, oldPageNum, pageNum));
-    }
+		Integer oldPageNum = pageNum;
+		pageNum = newPageNum;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM, oldPageNum, pageNum));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
-                return getPageNum();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
+				return getPageNum();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
-                setPageNum((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
+				setPageNum((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
-                setPageNum(PAGE_NUM_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
+				setPageNum(PAGE_NUM_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
-                return PAGE_NUM_EDEFAULT == null ? pageNum != null : !PAGE_NUM_EDEFAULT.equals(pageNum);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIUM_MAP_PAGE_NUMBER__PAGE_NUM:
+				return PAGE_NUM_EDEFAULT == null ? pageNum != null : !PAGE_NUM_EDEFAULT.equals(pageNum);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (PageNum: ");
-        result.append(pageNum);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (PageNum: ");
+		result.append(pageNum);
+		result.append(')');
+		return result.toString();
+	}
 
 } //MediumMapPageNumberImpl

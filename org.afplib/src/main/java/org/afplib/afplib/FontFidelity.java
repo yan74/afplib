@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface FontFidelity extends Triplet {
 	/**
-     * Returns the value of the '<em><b>Stp Fnt Ex</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Stp Fnt Ex</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Stp Fnt Ex</em>' attribute.
-     * @see #setStpFntEx(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getFontFidelity_StpFntEx()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Stp Fnt Ex</em>' attribute.
+	 * @see #setStpFntEx(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getFontFidelity_StpFntEx()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getStpFntEx();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.FontFidelity#getStpFntEx <em>Stp Fnt Ex</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.FontFidelity#getStpFntEx <em>Stp Fnt Ex</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Stp Fnt Ex</em>' attribute.
-     * @see #getStpFntEx()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Stp Fnt Ex</em>' attribute.
+	 * @see #getStpFntEx()
+	 * @generated
+	 */
 	void setStpFntEx(Integer value);
 
 } // FontFidelity

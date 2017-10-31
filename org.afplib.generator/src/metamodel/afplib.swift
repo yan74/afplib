@@ -5597,6 +5597,8 @@
   	  }
 	  
 	  
+	  
+	  
 
 	  
 	  
@@ -12668,6 +12670,10 @@
 	
 	
 	  public var StpMedEx: Int?
+	
+	
+	
+	  public var Reserved: [UInt8]?
 	
 	
 

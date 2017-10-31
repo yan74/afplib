@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class MediaEjectControlImpl extends TripletImpl implements MediaEjectControl {
 	/**
-     * The default value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getReserved()
-     * @generated
-     * @ordered
-     */
+	 * @see #getReserved()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RESERVED_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getReserved() <em>Reserved</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getReserved()
-     * @generated
-     * @ordered
-     */
+	 * @see #getReserved()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer reserved = RESERVED_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getEjCtrl() <em>Ej Ctrl</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getEjCtrl() <em>Ej Ctrl</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getEjCtrl()
-     * @generated
-     * @ordered
-     */
+	 * @see #getEjCtrl()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer EJ_CTRL_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getEjCtrl() <em>Ej Ctrl</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getEjCtrl() <em>Ej Ctrl</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getEjCtrl()
-     * @generated
-     * @ordered
-     */
+	 * @see #getEjCtrl()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer ejCtrl = EJ_CTRL_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected MediaEjectControlImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getMediaEjectControl();
-    }
+		return AfplibPackage.eINSTANCE.getMediaEjectControl();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getReserved() {
-        return reserved;
-    }
+		return reserved;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setReserved(Integer newReserved) {
-        Integer oldReserved = reserved;
-        reserved = newReserved;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED, oldReserved, reserved));
-    }
+		Integer oldReserved = reserved;
+		reserved = newReserved;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED, oldReserved, reserved));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getEjCtrl() {
-        return ejCtrl;
-    }
+		return ejCtrl;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setEjCtrl(Integer newEjCtrl) {
-        Integer oldEjCtrl = ejCtrl;
-        ejCtrl = newEjCtrl;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL, oldEjCtrl, ejCtrl));
-    }
+		Integer oldEjCtrl = ejCtrl;
+		ejCtrl = newEjCtrl;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL, oldEjCtrl, ejCtrl));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
-                return getReserved();
-            case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
-                return getEjCtrl();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
+				return getReserved();
+			case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
+				return getEjCtrl();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
-                setReserved((Integer)newValue);
-                return;
-            case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
-                setEjCtrl((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
+				setReserved((Integer)newValue);
+				return;
+			case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
+				setEjCtrl((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
-                setReserved(RESERVED_EDEFAULT);
-                return;
-            case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
-                setEjCtrl(EJ_CTRL_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
+				setReserved(RESERVED_EDEFAULT);
+				return;
+			case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
+				setEjCtrl(EJ_CTRL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
-                return RESERVED_EDEFAULT == null ? reserved != null : !RESERVED_EDEFAULT.equals(reserved);
-            case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
-                return EJ_CTRL_EDEFAULT == null ? ejCtrl != null : !EJ_CTRL_EDEFAULT.equals(ejCtrl);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MEDIA_EJECT_CONTROL__RESERVED:
+				return RESERVED_EDEFAULT == null ? reserved != null : !RESERVED_EDEFAULT.equals(reserved);
+			case AfplibPackage.MEDIA_EJECT_CONTROL__EJ_CTRL:
+				return EJ_CTRL_EDEFAULT == null ? ejCtrl != null : !EJ_CTRL_EDEFAULT.equals(ejCtrl);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (Reserved: ");
-        result.append(reserved);
-        result.append(", EjCtrl: ");
-        result.append(ejCtrl);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (Reserved: ");
+		result.append(reserved);
+		result.append(", EjCtrl: ");
+		result.append(ejCtrl);
+		result.append(')');
+		return result.toString();
+	}
 
 } //MediaEjectControlImpl

@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GSLJ extends Triplet {
 	/**
-     * Returns the value of the '<em><b>LINEJOIN</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>LINEJOIN</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>LINEJOIN</em>' attribute.
-     * @see #setLINEJOIN(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getGSLJ_LINEJOIN()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>LINEJOIN</em>' attribute.
+	 * @see #setLINEJOIN(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getGSLJ_LINEJOIN()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getLINEJOIN();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.GSLJ#getLINEJOIN <em>LINEJOIN</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.GSLJ#getLINEJOIN <em>LINEJOIN</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>LINEJOIN</em>' attribute.
-     * @see #getLINEJOIN()
-     * @generated
-     */
+	 * @param value the new value of the '<em>LINEJOIN</em>' attribute.
+	 * @see #getLINEJOIN()
+	 * @generated
+	 */
 	void setLINEJOIN(Integer value);
 
 } // GSLJ

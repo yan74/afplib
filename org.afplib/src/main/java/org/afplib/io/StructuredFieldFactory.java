@@ -6287,6 +6287,15 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 					}
 
+					{
+						int sstop = pos + 6;
+
+						if (sstop <= stop)
+
+							obj.setReserved(Arrays.copyOfRange(buffer, pos + 3, sstop + 1));
+
+					}
+
 					triplets.add(obj);
 
 					break;
@@ -16418,12 +16427,26 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 					if (2 + 1 > length)
 						length = 2 + 1;
 
+					if (6 + 1 > length)
+						length = 6 + 1;
+
 					if (obj.getStpMedEx() != null) {
 
 						Saver.saveUnsigned(buffer, start + 2, start + 2, obj.getStpMedEx());
 
 						if (2 + 1 > length)
 							length = 2 + 1;
+
+					}
+
+					if (obj.getReserved() != null) {
+
+						if (obj.getReserved() != null) {
+							Saver.save(buffer, start + 3, start + 6, obj.getReserved());
+						}
+
+						if (6 + 1 > length)
+							length = 6 + 1;
 
 					}
 

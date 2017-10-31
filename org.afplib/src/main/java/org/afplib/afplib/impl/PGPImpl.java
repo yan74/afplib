@@ -39,185 +39,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class PGPImpl extends SFImpl implements PGP {
 	/**
-     * The default value of the '{@link #getConstant() <em>Constant</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getConstant() <em>Constant</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getConstant()
-     * @generated
-     * @ordered
-     */
+	 * @see #getConstant()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer CONSTANT_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getConstant() <em>Constant</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getConstant() <em>Constant</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getConstant()
-     * @generated
-     * @ordered
-     */
+	 * @see #getConstant()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer constant = CONSTANT_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getRG() <em>RG</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRG() <em>RG</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRG()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRG()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<PGPRG> rg;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected PGPImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getPGP();
-    }
+		return AfplibPackage.eINSTANCE.getPGP();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getConstant() {
-        return constant;
-    }
+		return constant;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setConstant(Integer newConstant) {
-        Integer oldConstant = constant;
-        constant = newConstant;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PGP__CONSTANT, oldConstant, constant));
-    }
+		Integer oldConstant = constant;
+		constant = newConstant;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.PGP__CONSTANT, oldConstant, constant));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<PGPRG> getRG() {
-        if (rg == null) {
-            rg = new EObjectContainmentEList.Resolving<PGPRG>(PGPRG.class, this, AfplibPackage.PGP__RG);
-        }
-        return rg;
-    }
+		if (rg == null) {
+			rg = new EObjectContainmentEList.Resolving<PGPRG>(PGPRG.class, this, AfplibPackage.PGP__RG);
+		}
+		return rg;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.PGP__RG:
-                return ((InternalEList<?>)getRG()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.PGP__RG:
+				return ((InternalEList<?>)getRG()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.PGP__CONSTANT:
-                return getConstant();
-            case AfplibPackage.PGP__RG:
-                return getRG();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.PGP__CONSTANT:
+				return getConstant();
+			case AfplibPackage.PGP__RG:
+				return getRG();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.PGP__CONSTANT:
-                setConstant((Integer)newValue);
-                return;
-            case AfplibPackage.PGP__RG:
-                getRG().clear();
-                getRG().addAll((Collection<? extends PGPRG>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.PGP__CONSTANT:
+				setConstant((Integer)newValue);
+				return;
+			case AfplibPackage.PGP__RG:
+				getRG().clear();
+				getRG().addAll((Collection<? extends PGPRG>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.PGP__CONSTANT:
-                setConstant(CONSTANT_EDEFAULT);
-                return;
-            case AfplibPackage.PGP__RG:
-                getRG().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.PGP__CONSTANT:
+				setConstant(CONSTANT_EDEFAULT);
+				return;
+			case AfplibPackage.PGP__RG:
+				getRG().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.PGP__CONSTANT:
-                return CONSTANT_EDEFAULT == null ? constant != null : !CONSTANT_EDEFAULT.equals(constant);
-            case AfplibPackage.PGP__RG:
-                return rg != null && !rg.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.PGP__CONSTANT:
+				return CONSTANT_EDEFAULT == null ? constant != null : !CONSTANT_EDEFAULT.equals(constant);
+			case AfplibPackage.PGP__RG:
+				return rg != null && !rg.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (Constant: ");
-        result.append(constant);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (Constant: ");
+		result.append(constant);
+		result.append(')');
+		return result.toString();
+	}
 
 } //PGPImpl

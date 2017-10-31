@@ -40,185 +40,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class BOCImpl extends SFImpl implements BOC {
 	/**
-     * The default value of the '{@link #getObjCName() <em>Obj CName</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getObjCName() <em>Obj CName</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getObjCName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getObjCName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String OBJ_CNAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getObjCName() <em>Obj CName</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getObjCName() <em>Obj CName</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getObjCName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getObjCName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String objCName = OBJ_CNAME_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTriplets()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTriplets()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<Triplet> triplets;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected BOCImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getBOC();
-    }
+		return AfplibPackage.eINSTANCE.getBOC();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getObjCName() {
-        return objCName;
-    }
+		return objCName;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setObjCName(String newObjCName) {
-        String oldObjCName = objCName;
-        objCName = newObjCName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BOC__OBJ_CNAME, oldObjCName, objCName));
-    }
+		String oldObjCName = objCName;
+		objCName = newObjCName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.BOC__OBJ_CNAME, oldObjCName, objCName));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<Triplet> getTriplets() {
-        if (triplets == null) {
-            triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.BOC__TRIPLETS);
-        }
-        return triplets;
-    }
+		if (triplets == null) {
+			triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.BOC__TRIPLETS);
+		}
+		return triplets;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.BOC__TRIPLETS:
-                return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.BOC__TRIPLETS:
+				return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.BOC__OBJ_CNAME:
-                return getObjCName();
-            case AfplibPackage.BOC__TRIPLETS:
-                return getTriplets();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.BOC__OBJ_CNAME:
+				return getObjCName();
+			case AfplibPackage.BOC__TRIPLETS:
+				return getTriplets();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.BOC__OBJ_CNAME:
-                setObjCName((String)newValue);
-                return;
-            case AfplibPackage.BOC__TRIPLETS:
-                getTriplets().clear();
-                getTriplets().addAll((Collection<? extends Triplet>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.BOC__OBJ_CNAME:
+				setObjCName((String)newValue);
+				return;
+			case AfplibPackage.BOC__TRIPLETS:
+				getTriplets().clear();
+				getTriplets().addAll((Collection<? extends Triplet>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.BOC__OBJ_CNAME:
-                setObjCName(OBJ_CNAME_EDEFAULT);
-                return;
-            case AfplibPackage.BOC__TRIPLETS:
-                getTriplets().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.BOC__OBJ_CNAME:
+				setObjCName(OBJ_CNAME_EDEFAULT);
+				return;
+			case AfplibPackage.BOC__TRIPLETS:
+				getTriplets().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.BOC__OBJ_CNAME:
-                return OBJ_CNAME_EDEFAULT == null ? objCName != null : !OBJ_CNAME_EDEFAULT.equals(objCName);
-            case AfplibPackage.BOC__TRIPLETS:
-                return triplets != null && !triplets.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.BOC__OBJ_CNAME:
+				return OBJ_CNAME_EDEFAULT == null ? objCName != null : !OBJ_CNAME_EDEFAULT.equals(objCName);
+			case AfplibPackage.BOC__TRIPLETS:
+				return triplets != null && !triplets.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (ObjCName: ");
-        result.append(objCName);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (ObjCName: ");
+		result.append(objCName);
+		result.append(')');
+		return result.toString();
+	}
 
 } //BOCImpl

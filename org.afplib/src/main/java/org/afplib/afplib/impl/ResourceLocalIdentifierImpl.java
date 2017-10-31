@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ResourceLocalIdentifierImpl extends TripletImpl implements ResourceLocalIdentifier {
 	/**
-     * The default value of the '{@link #getResType() <em>Res Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getResType() <em>Res Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResType()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RES_TYPE_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getResType() <em>Res Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResType() <em>Res Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResType()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer resType = RES_TYPE_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getResLID() <em>Res LID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getResLID() <em>Res LID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResLID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResLID()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RES_LID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getResLID() <em>Res LID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResLID() <em>Res LID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResLID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResLID()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer resLID = RES_LID_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ResourceLocalIdentifierImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getResourceLocalIdentifier();
-    }
+		return AfplibPackage.eINSTANCE.getResourceLocalIdentifier();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getResType() {
-        return resType;
-    }
+		return resType;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setResType(Integer newResType) {
-        Integer oldResType = resType;
-        resType = newResType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE, oldResType, resType));
-    }
+		Integer oldResType = resType;
+		resType = newResType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE, oldResType, resType));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getResLID() {
-        return resLID;
-    }
+		return resLID;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setResLID(Integer newResLID) {
-        Integer oldResLID = resLID;
-        resLID = newResLID;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID, oldResLID, resLID));
-    }
+		Integer oldResLID = resLID;
+		resLID = newResLID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID, oldResLID, resLID));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
-                return getResType();
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
-                return getResLID();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
+				return getResType();
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
+				return getResLID();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
-                setResType((Integer)newValue);
-                return;
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
-                setResLID((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
+				setResType((Integer)newValue);
+				return;
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
+				setResLID((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
-                setResType(RES_TYPE_EDEFAULT);
-                return;
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
-                setResLID(RES_LID_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
+				setResType(RES_TYPE_EDEFAULT);
+				return;
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
+				setResLID(RES_LID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
-                return RES_TYPE_EDEFAULT == null ? resType != null : !RES_TYPE_EDEFAULT.equals(resType);
-            case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
-                return RES_LID_EDEFAULT == null ? resLID != null : !RES_LID_EDEFAULT.equals(resLID);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_TYPE:
+				return RES_TYPE_EDEFAULT == null ? resType != null : !RES_TYPE_EDEFAULT.equals(resType);
+			case AfplibPackage.RESOURCE_LOCAL_IDENTIFIER__RES_LID:
+				return RES_LID_EDEFAULT == null ? resLID != null : !RES_LID_EDEFAULT.equals(resLID);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (ResType: ");
-        result.append(resType);
-        result.append(", ResLID: ");
-        result.append(resLID);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (ResType: ");
+		result.append(resType);
+		result.append(", ResLID: ");
+		result.append(resLID);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ResourceLocalIdentifierImpl

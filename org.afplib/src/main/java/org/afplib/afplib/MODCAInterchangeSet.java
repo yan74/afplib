@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface MODCAInterchangeSet extends Triplet {
 	/**
-     * Returns the value of the '<em><b>IStype</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>IStype</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>IStype</em>' attribute.
-     * @see #setIStype(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getMODCAInterchangeSet_IStype()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>IStype</em>' attribute.
+	 * @see #setIStype(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getMODCAInterchangeSet_IStype()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getIStype();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.MODCAInterchangeSet#getIStype <em>IStype</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.MODCAInterchangeSet#getIStype <em>IStype</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>IStype</em>' attribute.
-     * @see #getIStype()
-     * @generated
-     */
+	 * @param value the new value of the '<em>IStype</em>' attribute.
+	 * @see #getIStype()
+	 * @generated
+	 */
 	void setIStype(Integer value);
 
 	/**
-     * Returns the value of the '<em><b>ISid</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>ISid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>ISid</em>' attribute.
-     * @see #setISid(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getMODCAInterchangeSet_ISid()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>ISid</em>' attribute.
+	 * @see #setISid(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getMODCAInterchangeSet_ISid()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getISid();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.MODCAInterchangeSet#getISid <em>ISid</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.MODCAInterchangeSet#getISid <em>ISid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>ISid</em>' attribute.
-     * @see #getISid()
-     * @generated
-     */
+	 * @param value the new value of the '<em>ISid</em>' attribute.
+	 * @see #getISid()
+	 * @generated
+	 */
 	void setISid(Integer value);
 
 } // MODCAInterchangeSet

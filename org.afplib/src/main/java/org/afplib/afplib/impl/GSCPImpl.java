@@ -29,190 +29,190 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class GSCPImpl extends TripletImpl implements GSCP {
 	/**
-     * The default value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer XPOS_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getXPOS() <em>XPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getXPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getXPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer xpos = XPOS_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer YPOS_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getYPOS() <em>YPOS</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getYPOS()
-     * @generated
-     * @ordered
-     */
+	 * @see #getYPOS()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer ypos = YPOS_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected GSCPImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getGSCP();
-    }
+		return AfplibPackage.eINSTANCE.getGSCP();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getXPOS() {
-        return xpos;
-    }
+		return xpos;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setXPOS(Integer newXPOS) {
-        Integer oldXPOS = xpos;
-        xpos = newXPOS;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCP__XPOS, oldXPOS, xpos));
-    }
+		Integer oldXPOS = xpos;
+		xpos = newXPOS;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCP__XPOS, oldXPOS, xpos));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getYPOS() {
-        return ypos;
-    }
+		return ypos;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setYPOS(Integer newYPOS) {
-        Integer oldYPOS = ypos;
-        ypos = newYPOS;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCP__YPOS, oldYPOS, ypos));
-    }
+		Integer oldYPOS = ypos;
+		ypos = newYPOS;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.GSCP__YPOS, oldYPOS, ypos));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.GSCP__XPOS:
-                return getXPOS();
-            case AfplibPackage.GSCP__YPOS:
-                return getYPOS();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCP__XPOS:
+				return getXPOS();
+			case AfplibPackage.GSCP__YPOS:
+				return getYPOS();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.GSCP__XPOS:
-                setXPOS((Integer)newValue);
-                return;
-            case AfplibPackage.GSCP__YPOS:
-                setYPOS((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCP__XPOS:
+				setXPOS((Integer)newValue);
+				return;
+			case AfplibPackage.GSCP__YPOS:
+				setYPOS((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GSCP__XPOS:
-                setXPOS(XPOS_EDEFAULT);
-                return;
-            case AfplibPackage.GSCP__YPOS:
-                setYPOS(YPOS_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCP__XPOS:
+				setXPOS(XPOS_EDEFAULT);
+				return;
+			case AfplibPackage.GSCP__YPOS:
+				setYPOS(YPOS_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.GSCP__XPOS:
-                return XPOS_EDEFAULT == null ? xpos != null : !XPOS_EDEFAULT.equals(xpos);
-            case AfplibPackage.GSCP__YPOS:
-                return YPOS_EDEFAULT == null ? ypos != null : !YPOS_EDEFAULT.equals(ypos);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.GSCP__XPOS:
+				return XPOS_EDEFAULT == null ? xpos != null : !XPOS_EDEFAULT.equals(xpos);
+			case AfplibPackage.GSCP__YPOS:
+				return YPOS_EDEFAULT == null ? ypos != null : !YPOS_EDEFAULT.equals(ypos);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (XPOS: ");
-        result.append(xpos);
-        result.append(", YPOS: ");
-        result.append(ypos);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (XPOS: ");
+		result.append(xpos);
+		result.append(", YPOS: ");
+		result.append(ypos);
+		result.append(')');
+		return result.toString();
+	}
 
 } //GSCPImpl

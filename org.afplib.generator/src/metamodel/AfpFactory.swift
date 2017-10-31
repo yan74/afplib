@@ -6668,6 +6668,14 @@ obj.CompName = toString(data.advancedBy(64), l, cpgid) // charset
 
 
 		
+		if(6 < length) {
+		  let l = 4
+		
+ 	obj.Reserved = toBytes(data.advancedBy(3), l)
+ 	} 
+
+
+		
 		
 		return obj
     }
@@ -12099,6 +12107,7 @@ obj.CP = toString(data.advancedBy(2), l, cpgid) // charset
 		}
 		return result 
 	} 
+
 
 
 

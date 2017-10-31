@@ -10051,6 +10051,12 @@
           name="Continue"
           intValue="2"/>
     </elements>
+    <elements
+    xsi:type="afplib:UNDF"
+    name="Reserved"
+    start="3"
+    stop="6"
+    isReserved="true"/>
   </groupMembers>
   <groupMembers
       name="FinishingFidelity"

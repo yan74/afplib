@@ -40,185 +40,185 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class EPFImpl extends SFImpl implements EPF {
 	/**
-     * The default value of the '{@link #getPFName() <em>PF Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getPFName() <em>PF Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getPFName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPFName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String PF_NAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getPFName() <em>PF Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPFName() <em>PF Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getPFName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getPFName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String pfName = PF_NAME_EDEFAULT;
 
 	/**
-     * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTriplets() <em>Triplets</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTriplets()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTriplets()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<Triplet> triplets;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected EPFImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getEPF();
-    }
+		return AfplibPackage.eINSTANCE.getEPF();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getPFName() {
-        return pfName;
-    }
+		return pfName;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setPFName(String newPFName) {
-        String oldPFName = pfName;
-        pfName = newPFName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EPF__PF_NAME, oldPFName, pfName));
-    }
+		String oldPFName = pfName;
+		pfName = newPFName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EPF__PF_NAME, oldPFName, pfName));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<Triplet> getTriplets() {
-        if (triplets == null) {
-            triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.EPF__TRIPLETS);
-        }
-        return triplets;
-    }
+		if (triplets == null) {
+			triplets = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.EPF__TRIPLETS);
+		}
+		return triplets;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.EPF__TRIPLETS:
-                return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.EPF__TRIPLETS:
+				return ((InternalEList<?>)getTriplets()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.EPF__PF_NAME:
-                return getPFName();
-            case AfplibPackage.EPF__TRIPLETS:
-                return getTriplets();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.EPF__PF_NAME:
+				return getPFName();
+			case AfplibPackage.EPF__TRIPLETS:
+				return getTriplets();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.EPF__PF_NAME:
-                setPFName((String)newValue);
-                return;
-            case AfplibPackage.EPF__TRIPLETS:
-                getTriplets().clear();
-                getTriplets().addAll((Collection<? extends Triplet>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.EPF__PF_NAME:
+				setPFName((String)newValue);
+				return;
+			case AfplibPackage.EPF__TRIPLETS:
+				getTriplets().clear();
+				getTriplets().addAll((Collection<? extends Triplet>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EPF__PF_NAME:
-                setPFName(PF_NAME_EDEFAULT);
-                return;
-            case AfplibPackage.EPF__TRIPLETS:
-                getTriplets().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EPF__PF_NAME:
+				setPFName(PF_NAME_EDEFAULT);
+				return;
+			case AfplibPackage.EPF__TRIPLETS:
+				getTriplets().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EPF__PF_NAME:
-                return PF_NAME_EDEFAULT == null ? pfName != null : !PF_NAME_EDEFAULT.equals(pfName);
-            case AfplibPackage.EPF__TRIPLETS:
-                return triplets != null && !triplets.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EPF__PF_NAME:
+				return PF_NAME_EDEFAULT == null ? pfName != null : !PF_NAME_EDEFAULT.equals(pfName);
+			case AfplibPackage.EPF__TRIPLETS:
+				return triplets != null && !triplets.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (PFName: ");
-        result.append(pfName);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (PFName: ");
+		result.append(pfName);
+		result.append(')');
+		return result.toString();
+	}
 
 } //EPFImpl

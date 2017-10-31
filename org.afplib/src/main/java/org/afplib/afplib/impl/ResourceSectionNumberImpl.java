@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ResourceSectionNumberImpl extends TripletImpl implements ResourceSectionNumber {
 	/**
-     * The default value of the '{@link #getResSNum() <em>Res SNum</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getResSNum() <em>Res SNum</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResSNum()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResSNum()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RES_SNUM_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getResSNum() <em>Res SNum</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResSNum() <em>Res SNum</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResSNum()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResSNum()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer resSNum = RES_SNUM_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ResourceSectionNumberImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getResourceSectionNumber();
-    }
+		return AfplibPackage.eINSTANCE.getResourceSectionNumber();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getResSNum() {
-        return resSNum;
-    }
+		return resSNum;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setResSNum(Integer newResSNum) {
-        Integer oldResSNum = resSNum;
-        resSNum = newResSNum;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM, oldResSNum, resSNum));
-    }
+		Integer oldResSNum = resSNum;
+		resSNum = newResSNum;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM, oldResSNum, resSNum));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
-                return getResSNum();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
+				return getResSNum();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
-                setResSNum((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
+				setResSNum((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
-                setResSNum(RES_SNUM_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
+				setResSNum(RES_SNUM_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
-                return RES_SNUM_EDEFAULT == null ? resSNum != null : !RES_SNUM_EDEFAULT.equals(resSNum);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.RESOURCE_SECTION_NUMBER__RES_SNUM:
+				return RES_SNUM_EDEFAULT == null ? resSNum != null : !RES_SNUM_EDEFAULT.equals(resSNum);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (ResSNum: ");
-        result.append(resSNum);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (ResSNum: ");
+		result.append(resSNum);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ResourceSectionNumberImpl

@@ -26,43 +26,43 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface PMC extends SF {
 	/**
-     * Returns the value of the '<em><b>PM Cid</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>PM Cid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>PM Cid</em>' attribute.
-     * @see #setPMCid(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getPMC_PMCid()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>PM Cid</em>' attribute.
+	 * @see #setPMCid(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getPMC_PMCid()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getPMCid();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.PMC#getPMCid <em>PM Cid</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.PMC#getPMCid <em>PM Cid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>PM Cid</em>' attribute.
-     * @see #getPMCid()
-     * @generated
-     */
+	 * @param value the new value of the '<em>PM Cid</em>' attribute.
+	 * @see #getPMCid()
+	 * @generated
+	 */
 	void setPMCid(Integer value);
 
 	/**
-     * Returns the value of the '<em><b>Triplets</b></em>' containment reference list.
-     * The list contents are of type {@link org.afplib.base.Triplet}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Triplets</b></em>' containment reference list.
+	 * The list contents are of type {@link org.afplib.base.Triplet}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>variable length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Triplets</em>' containment reference list.
-     * @see org.afplib.afplib.AfplibPackage#getPMC_Triplets()
-     * @model containment="true" resolveProxies="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>variable length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Triplets</em>' containment reference list.
+	 * @see org.afplib.afplib.AfplibPackage#getPMC_Triplets()
+	 * @model containment="true" resolveProxies="true"
+	 * @generated
+	 */
 	EList<Triplet> getTriplets();
 
 } // PMC

@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ExtensionFontImpl extends TripletImpl implements ExtensionFont {
 	/**
-     * The default value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getGCSGID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getGCSGID()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer GCSGID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getGCSGID() <em>GCSGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getGCSGID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getGCSGID()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer gcsgid = GCSGID_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ExtensionFontImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getExtensionFont();
-    }
+		return AfplibPackage.eINSTANCE.getExtensionFont();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getGCSGID() {
-        return gcsgid;
-    }
+		return gcsgid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setGCSGID(Integer newGCSGID) {
-        Integer oldGCSGID = gcsgid;
-        gcsgid = newGCSGID;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EXTENSION_FONT__GCSGID, oldGCSGID, gcsgid));
-    }
+		Integer oldGCSGID = gcsgid;
+		gcsgid = newGCSGID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.EXTENSION_FONT__GCSGID, oldGCSGID, gcsgid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.EXTENSION_FONT__GCSGID:
-                return getGCSGID();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTENSION_FONT__GCSGID:
+				return getGCSGID();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.EXTENSION_FONT__GCSGID:
-                setGCSGID((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTENSION_FONT__GCSGID:
+				setGCSGID((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EXTENSION_FONT__GCSGID:
-                setGCSGID(GCSGID_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTENSION_FONT__GCSGID:
+				setGCSGID(GCSGID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.EXTENSION_FONT__GCSGID:
-                return GCSGID_EDEFAULT == null ? gcsgid != null : !GCSGID_EDEFAULT.equals(gcsgid);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.EXTENSION_FONT__GCSGID:
+				return GCSGID_EDEFAULT == null ? gcsgid != null : !GCSGID_EDEFAULT.equals(gcsgid);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (GCSGID: ");
-        result.append(gcsgid);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (GCSGID: ");
+		result.append(gcsgid);
+		result.append(')');
+		return result.toString();
+	}
 
 } //ExtensionFontImpl

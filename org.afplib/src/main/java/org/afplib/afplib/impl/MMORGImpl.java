@@ -30,243 +30,243 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class MMORGImpl extends TripletImpl implements MMORG {
 	/**
-     * The default value of the '{@link #getOVLid() <em>OV Lid</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getOVLid() <em>OV Lid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getOVLid()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOVLid()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer OV_LID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getOVLid() <em>OV Lid</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOVLid() <em>OV Lid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getOVLid()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOVLid()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer ovLid = OV_LID_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getFlags() <em>Flags</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getFlags() <em>Flags</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getFlags()
-     * @generated
-     * @ordered
-     */
+	 * @see #getFlags()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer FLAGS_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getFlags() <em>Flags</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFlags() <em>Flags</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getFlags()
-     * @generated
-     * @ordered
-     */
+	 * @see #getFlags()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer flags = FLAGS_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getOVLname() <em>OV Lname</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getOVLname() <em>OV Lname</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getOVLname()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOVLname()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String OV_LNAME_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getOVLname() <em>OV Lname</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOVLname() <em>OV Lname</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getOVLname()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOVLname()
+	 * @generated
+	 * @ordered
+	 */
 	protected String ovLname = OV_LNAME_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected MMORGImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getMMORG();
-    }
+		return AfplibPackage.eINSTANCE.getMMORG();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getOVLid() {
-        return ovLid;
-    }
+		return ovLid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setOVLid(Integer newOVLid) {
-        Integer oldOVLid = ovLid;
-        ovLid = newOVLid;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMORG__OV_LID, oldOVLid, ovLid));
-    }
+		Integer oldOVLid = ovLid;
+		ovLid = newOVLid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMORG__OV_LID, oldOVLid, ovLid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getFlags() {
-        return flags;
-    }
+		return flags;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setFlags(Integer newFlags) {
-        Integer oldFlags = flags;
-        flags = newFlags;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMORG__FLAGS, oldFlags, flags));
-    }
+		Integer oldFlags = flags;
+		flags = newFlags;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMORG__FLAGS, oldFlags, flags));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String getOVLname() {
-        return ovLname;
-    }
+		return ovLname;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setOVLname(String newOVLname) {
-        String oldOVLname = ovLname;
-        ovLname = newOVLname;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMORG__OV_LNAME, oldOVLname, ovLname));
-    }
+		String oldOVLname = ovLname;
+		ovLname = newOVLname;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.MMORG__OV_LNAME, oldOVLname, ovLname));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.MMORG__OV_LID:
-                return getOVLid();
-            case AfplibPackage.MMORG__FLAGS:
-                return getFlags();
-            case AfplibPackage.MMORG__OV_LNAME:
-                return getOVLname();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMORG__OV_LID:
+				return getOVLid();
+			case AfplibPackage.MMORG__FLAGS:
+				return getFlags();
+			case AfplibPackage.MMORG__OV_LNAME:
+				return getOVLname();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.MMORG__OV_LID:
-                setOVLid((Integer)newValue);
-                return;
-            case AfplibPackage.MMORG__FLAGS:
-                setFlags((Integer)newValue);
-                return;
-            case AfplibPackage.MMORG__OV_LNAME:
-                setOVLname((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMORG__OV_LID:
+				setOVLid((Integer)newValue);
+				return;
+			case AfplibPackage.MMORG__FLAGS:
+				setFlags((Integer)newValue);
+				return;
+			case AfplibPackage.MMORG__OV_LNAME:
+				setOVLname((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MMORG__OV_LID:
-                setOVLid(OV_LID_EDEFAULT);
-                return;
-            case AfplibPackage.MMORG__FLAGS:
-                setFlags(FLAGS_EDEFAULT);
-                return;
-            case AfplibPackage.MMORG__OV_LNAME:
-                setOVLname(OV_LNAME_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMORG__OV_LID:
+				setOVLid(OV_LID_EDEFAULT);
+				return;
+			case AfplibPackage.MMORG__FLAGS:
+				setFlags(FLAGS_EDEFAULT);
+				return;
+			case AfplibPackage.MMORG__OV_LNAME:
+				setOVLname(OV_LNAME_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.MMORG__OV_LID:
-                return OV_LID_EDEFAULT == null ? ovLid != null : !OV_LID_EDEFAULT.equals(ovLid);
-            case AfplibPackage.MMORG__FLAGS:
-                return FLAGS_EDEFAULT == null ? flags != null : !FLAGS_EDEFAULT.equals(flags);
-            case AfplibPackage.MMORG__OV_LNAME:
-                return OV_LNAME_EDEFAULT == null ? ovLname != null : !OV_LNAME_EDEFAULT.equals(ovLname);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.MMORG__OV_LID:
+				return OV_LID_EDEFAULT == null ? ovLid != null : !OV_LID_EDEFAULT.equals(ovLid);
+			case AfplibPackage.MMORG__FLAGS:
+				return FLAGS_EDEFAULT == null ? flags != null : !FLAGS_EDEFAULT.equals(flags);
+			case AfplibPackage.MMORG__OV_LNAME:
+				return OV_LNAME_EDEFAULT == null ? ovLname != null : !OV_LNAME_EDEFAULT.equals(ovLname);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (OVLid: ");
-        result.append(ovLid);
-        result.append(", Flags: ");
-        result.append(flags);
-        result.append(", OVLname: ");
-        result.append(ovLname);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (OVLid: ");
+		result.append(ovLid);
+		result.append(", Flags: ");
+		result.append(flags);
+		result.append(", OVLname: ");
+		result.append(ovLname);
+		result.append(')');
+		return result.toString();
+	}
 
 } //MMORGImpl

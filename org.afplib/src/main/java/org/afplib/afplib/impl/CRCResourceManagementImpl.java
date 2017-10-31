@@ -30,243 +30,243 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class CRCResourceManagementImpl extends TripletImpl implements CRCResourceManagement {
 	/**
-     * The default value of the '{@link #getFmtQual() <em>Fmt Qual</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getFmtQual() <em>Fmt Qual</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getFmtQual()
-     * @generated
-     * @ordered
-     */
+	 * @see #getFmtQual()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer FMT_QUAL_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getFmtQual() <em>Fmt Qual</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFmtQual() <em>Fmt Qual</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getFmtQual()
-     * @generated
-     * @ordered
-     */
+	 * @see #getFmtQual()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer fmtQual = FMT_QUAL_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getRMValue() <em>RM Value</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getRMValue() <em>RM Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRMValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRMValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RM_VALUE_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getRMValue() <em>RM Value</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRMValue() <em>RM Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getRMValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRMValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer rmValue = RM_VALUE_EDEFAULT;
 
 	/**
-     * The default value of the '{@link #getResClassFlg() <em>Res Class Flg</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getResClassFlg() <em>Res Class Flg</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResClassFlg()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResClassFlg()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer RES_CLASS_FLG_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getResClassFlg() <em>Res Class Flg</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResClassFlg() <em>Res Class Flg</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getResClassFlg()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResClassFlg()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer resClassFlg = RES_CLASS_FLG_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected CRCResourceManagementImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getCRCResourceManagement();
-    }
+		return AfplibPackage.eINSTANCE.getCRCResourceManagement();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getFmtQual() {
-        return fmtQual;
-    }
+		return fmtQual;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setFmtQual(Integer newFmtQual) {
-        Integer oldFmtQual = fmtQual;
-        fmtQual = newFmtQual;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL, oldFmtQual, fmtQual));
-    }
+		Integer oldFmtQual = fmtQual;
+		fmtQual = newFmtQual;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL, oldFmtQual, fmtQual));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getRMValue() {
-        return rmValue;
-    }
+		return rmValue;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setRMValue(Integer newRMValue) {
-        Integer oldRMValue = rmValue;
-        rmValue = newRMValue;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE, oldRMValue, rmValue));
-    }
+		Integer oldRMValue = rmValue;
+		rmValue = newRMValue;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE, oldRMValue, rmValue));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getResClassFlg() {
-        return resClassFlg;
-    }
+		return resClassFlg;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setResClassFlg(Integer newResClassFlg) {
-        Integer oldResClassFlg = resClassFlg;
-        resClassFlg = newResClassFlg;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG, oldResClassFlg, resClassFlg));
-    }
+		Integer oldResClassFlg = resClassFlg;
+		resClassFlg = newResClassFlg;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG, oldResClassFlg, resClassFlg));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
-                return getFmtQual();
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
-                return getRMValue();
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
-                return getResClassFlg();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
+				return getFmtQual();
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
+				return getRMValue();
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
+				return getResClassFlg();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
-                setFmtQual((Integer)newValue);
-                return;
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
-                setRMValue((Integer)newValue);
-                return;
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
-                setResClassFlg((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
+				setFmtQual((Integer)newValue);
+				return;
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
+				setRMValue((Integer)newValue);
+				return;
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
+				setResClassFlg((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
-                setFmtQual(FMT_QUAL_EDEFAULT);
-                return;
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
-                setRMValue(RM_VALUE_EDEFAULT);
-                return;
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
-                setResClassFlg(RES_CLASS_FLG_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
+				setFmtQual(FMT_QUAL_EDEFAULT);
+				return;
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
+				setRMValue(RM_VALUE_EDEFAULT);
+				return;
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
+				setResClassFlg(RES_CLASS_FLG_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
-                return FMT_QUAL_EDEFAULT == null ? fmtQual != null : !FMT_QUAL_EDEFAULT.equals(fmtQual);
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
-                return RM_VALUE_EDEFAULT == null ? rmValue != null : !RM_VALUE_EDEFAULT.equals(rmValue);
-            case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
-                return RES_CLASS_FLG_EDEFAULT == null ? resClassFlg != null : !RES_CLASS_FLG_EDEFAULT.equals(resClassFlg);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__FMT_QUAL:
+				return FMT_QUAL_EDEFAULT == null ? fmtQual != null : !FMT_QUAL_EDEFAULT.equals(fmtQual);
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RM_VALUE:
+				return RM_VALUE_EDEFAULT == null ? rmValue != null : !RM_VALUE_EDEFAULT.equals(rmValue);
+			case AfplibPackage.CRC_RESOURCE_MANAGEMENT__RES_CLASS_FLG:
+				return RES_CLASS_FLG_EDEFAULT == null ? resClassFlg != null : !RES_CLASS_FLG_EDEFAULT.equals(resClassFlg);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (FmtQual: ");
-        result.append(fmtQual);
-        result.append(", RMValue: ");
-        result.append(rmValue);
-        result.append(", ResClassFlg: ");
-        result.append(resClassFlg);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (FmtQual: ");
+		result.append(fmtQual);
+		result.append(", RMValue: ");
+		result.append(rmValue);
+		result.append(", ResClassFlg: ");
+		result.append(resClassFlg);
+		result.append(')');
+		return result.toString();
+	}
 
 } //CRCResourceManagementImpl

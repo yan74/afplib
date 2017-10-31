@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class IncludeTileImpl extends TripletImpl implements IncludeTile {
 	/**
-     * The default value of the '{@link #getTIRID() <em>TIRID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getTIRID() <em>TIRID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTIRID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTIRID()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final Integer TIRID_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getTIRID() <em>TIRID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTIRID() <em>TIRID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTIRID()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTIRID()
+	 * @generated
+	 * @ordered
+	 */
 	protected Integer tirid = TIRID_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected IncludeTileImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getIncludeTile();
-    }
+		return AfplibPackage.eINSTANCE.getIncludeTile();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Integer getTIRID() {
-        return tirid;
-    }
+		return tirid;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setTIRID(Integer newTIRID) {
-        Integer oldTIRID = tirid;
-        tirid = newTIRID;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.INCLUDE_TILE__TIRID, oldTIRID, tirid));
-    }
+		Integer oldTIRID = tirid;
+		tirid = newTIRID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.INCLUDE_TILE__TIRID, oldTIRID, tirid));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.INCLUDE_TILE__TIRID:
-                return getTIRID();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.INCLUDE_TILE__TIRID:
+				return getTIRID();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.INCLUDE_TILE__TIRID:
-                setTIRID((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.INCLUDE_TILE__TIRID:
+				setTIRID((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.INCLUDE_TILE__TIRID:
-                setTIRID(TIRID_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.INCLUDE_TILE__TIRID:
+				setTIRID(TIRID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.INCLUDE_TILE__TIRID:
-                return TIRID_EDEFAULT == null ? tirid != null : !TIRID_EDEFAULT.equals(tirid);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.INCLUDE_TILE__TIRID:
+				return TIRID_EDEFAULT == null ? tirid != null : !TIRID_EDEFAULT.equals(tirid);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (TIRID: ");
-        result.append(tirid);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (TIRID: ");
+		result.append(tirid);
+		result.append(')');
+		return result.toString();
+	}
 
 } //IncludeTileImpl

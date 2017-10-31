@@ -23,53 +23,53 @@ import org.afplib.base.Triplet;
  */
 public interface FNNRG extends Triplet {
 	/**
-     * Returns the value of the '<em><b>GCGID</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>GCGID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>GCGID</em>' attribute.
-     * @see #setGCGID(String)
-     * @see org.afplib.afplib.AfplibPackage#getFNNRG_GCGID()
-     * @model dataType="org.afplib.base.ModcaString8" required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>GCGID</em>' attribute.
+	 * @see #setGCGID(String)
+	 * @see org.afplib.afplib.AfplibPackage#getFNNRG_GCGID()
+	 * @model dataType="org.afplib.base.ModcaString8" required="true"
+	 * @generated
+	 */
 	String getGCGID();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.FNNRG#getGCGID <em>GCGID</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.FNNRG#getGCGID <em>GCGID</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>GCGID</em>' attribute.
-     * @see #getGCGID()
-     * @generated
-     */
+	 * @param value the new value of the '<em>GCGID</em>' attribute.
+	 * @see #getGCGID()
+	 * @generated
+	 */
 	void setGCGID(String value);
 
 	/**
-     * Returns the value of the '<em><b>TS Offset</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>TS Offset</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>TS Offset</em>' attribute.
-     * @see #setTSOffset(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getFNNRG_TSOffset()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>TS Offset</em>' attribute.
+	 * @see #setTSOffset(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getFNNRG_TSOffset()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getTSOffset();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.FNNRG#getTSOffset <em>TS Offset</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.FNNRG#getTSOffset <em>TS Offset</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>TS Offset</em>' attribute.
-     * @see #getTSOffset()
-     * @generated
-     */
+	 * @param value the new value of the '<em>TS Offset</em>' attribute.
+	 * @see #getTSOffset()
+	 * @generated
+	 */
 	void setTSOffset(Integer value);
 
 } // FNNRG

@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class TRNImpl extends TripletImpl implements TRN {
 	/**
-     * The default value of the '{@link #getTRNDATA() <em>TRNDATA</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getTRNDATA() <em>TRNDATA</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTRNDATA()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTRNDATA()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final byte[] TRNDATA_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getTRNDATA() <em>TRNDATA</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTRNDATA() <em>TRNDATA</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getTRNDATA()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTRNDATA()
+	 * @generated
+	 * @ordered
+	 */
 	protected byte[] trndata = TRNDATA_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected TRNImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getTRN();
-    }
+		return AfplibPackage.eINSTANCE.getTRN();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public byte[] getTRNDATA() {
-        return trndata;
-    }
+		return trndata;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setTRNDATA(byte[] newTRNDATA) {
-        byte[] oldTRNDATA = trndata;
-        trndata = newTRNDATA;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TRN__TRNDATA, oldTRNDATA, trndata));
-    }
+		byte[] oldTRNDATA = trndata;
+		trndata = newTRNDATA;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.TRN__TRNDATA, oldTRNDATA, trndata));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.TRN__TRNDATA:
-                return getTRNDATA();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.TRN__TRNDATA:
+				return getTRNDATA();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.TRN__TRNDATA:
-                setTRNDATA((byte[])newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.TRN__TRNDATA:
+				setTRNDATA((byte[])newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.TRN__TRNDATA:
-                setTRNDATA(TRNDATA_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.TRN__TRNDATA:
+				setTRNDATA(TRNDATA_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.TRN__TRNDATA:
-                return TRNDATA_EDEFAULT == null ? trndata != null : !TRNDATA_EDEFAULT.equals(trndata);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.TRN__TRNDATA:
+				return TRNDATA_EDEFAULT == null ? trndata != null : !TRNDATA_EDEFAULT.equals(trndata);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (TRNDATA: ");
-        result.append(trndata);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (TRNDATA: ");
+		result.append(trndata);
+		result.append(')');
+		return result.toString();
+	}
 
 } //TRNImpl

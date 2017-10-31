@@ -22,28 +22,28 @@ import org.afplib.base.SF;
  */
 public interface GAD extends SF {
 	/**
-     * Returns the value of the '<em><b>GOC Adat</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>GOC Adat</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>optional<br>variable length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>GOC Adat</em>' attribute.
-     * @see #setGOCAdat(byte[])
-     * @see org.afplib.afplib.AfplibPackage#getGAD_GOCAdat()
-     * @model
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>optional<br>variable length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>GOC Adat</em>' attribute.
+	 * @see #setGOCAdat(byte[])
+	 * @see org.afplib.afplib.AfplibPackage#getGAD_GOCAdat()
+	 * @model
+	 * @generated
+	 */
 	byte[] getGOCAdat();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.GAD#getGOCAdat <em>GOC Adat</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.GAD#getGOCAdat <em>GOC Adat</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>GOC Adat</em>' attribute.
-     * @see #getGOCAdat()
-     * @generated
-     */
+	 * @param value the new value of the '<em>GOC Adat</em>' attribute.
+	 * @see #getGOCAdat()
+	 * @generated
+	 */
 	void setGOCAdat(byte[] value);
 
 } // GAD

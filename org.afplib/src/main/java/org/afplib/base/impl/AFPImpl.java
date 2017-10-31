@@ -35,118 +35,118 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class AFPImpl extends EObjectImpl implements AFP {
 	/**
-     * The cached value of the '{@link #getStructuredFields() <em>Structured Fields</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getStructuredFields() <em>Structured Fields</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getStructuredFields()
-     * @generated
-     * @ordered
-     */
+	 * @see #getStructuredFields()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<SF> structuredFields;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected AFPImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return BasePackage.Literals.AFP;
-    }
+		return BasePackage.Literals.AFP;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<SF> getStructuredFields() {
-        if (structuredFields == null) {
-            structuredFields = new EObjectContainmentEList.Resolving<SF>(SF.class, this, BasePackage.AFP__STRUCTURED_FIELDS);
-        }
-        return structuredFields;
-    }
+		if (structuredFields == null) {
+			structuredFields = new EObjectContainmentEList.Resolving<SF>(SF.class, this, BasePackage.AFP__STRUCTURED_FIELDS);
+		}
+		return structuredFields;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case BasePackage.AFP__STRUCTURED_FIELDS:
-                return ((InternalEList<?>)getStructuredFields()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case BasePackage.AFP__STRUCTURED_FIELDS:
+				return ((InternalEList<?>)getStructuredFields()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case BasePackage.AFP__STRUCTURED_FIELDS:
-                return getStructuredFields();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case BasePackage.AFP__STRUCTURED_FIELDS:
+				return getStructuredFields();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case BasePackage.AFP__STRUCTURED_FIELDS:
-                getStructuredFields().clear();
-                getStructuredFields().addAll((Collection<? extends SF>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case BasePackage.AFP__STRUCTURED_FIELDS:
+				getStructuredFields().clear();
+				getStructuredFields().addAll((Collection<? extends SF>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case BasePackage.AFP__STRUCTURED_FIELDS:
-                getStructuredFields().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case BasePackage.AFP__STRUCTURED_FIELDS:
+				getStructuredFields().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case BasePackage.AFP__STRUCTURED_FIELDS:
-                return structuredFields != null && !structuredFields.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case BasePackage.AFP__STRUCTURED_FIELDS:
+				return structuredFields != null && !structuredFields.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //AFPImpl

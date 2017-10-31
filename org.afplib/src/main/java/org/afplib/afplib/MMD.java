@@ -24,18 +24,18 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface MMD extends SF {
 	/**
-     * Returns the value of the '<em><b>RG</b></em>' containment reference list.
-     * The list contents are of type {@link org.afplib.afplib.MMDRG}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>RG</b></em>' containment reference list.
+	 * The list contents are of type {@link org.afplib.afplib.MMDRG}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>variable length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>RG</em>' containment reference list.
-     * @see org.afplib.afplib.AfplibPackage#getMMD_RG()
-     * @model containment="true" resolveProxies="true" required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>variable length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>RG</em>' containment reference list.
+	 * @see org.afplib.afplib.AfplibPackage#getMMD_RG()
+	 * @model containment="true" resolveProxies="true" required="true"
+	 * @generated
+	 */
 	EList<MMDRG> getRG();
 
 } // MMD

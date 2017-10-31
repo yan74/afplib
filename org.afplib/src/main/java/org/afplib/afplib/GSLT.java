@@ -22,28 +22,28 @@ import org.afplib.base.Triplet;
  */
 public interface GSLT extends Triplet {
 	/**
-     * Returns the value of the '<em><b>LINETYPE</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>LINETYPE</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>fixed length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>LINETYPE</em>' attribute.
-     * @see #setLINETYPE(Integer)
-     * @see org.afplib.afplib.AfplibPackage#getGSLT_LINETYPE()
-     * @model required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>fixed length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>LINETYPE</em>' attribute.
+	 * @see #setLINETYPE(Integer)
+	 * @see org.afplib.afplib.AfplibPackage#getGSLT_LINETYPE()
+	 * @model required="true"
+	 * @generated
+	 */
 	Integer getLINETYPE();
 
 	/**
-     * Sets the value of the '{@link org.afplib.afplib.GSLT#getLINETYPE <em>LINETYPE</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.afplib.afplib.GSLT#getLINETYPE <em>LINETYPE</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @param value the new value of the '<em>LINETYPE</em>' attribute.
-     * @see #getLINETYPE()
-     * @generated
-     */
+	 * @param value the new value of the '<em>LINETYPE</em>' attribute.
+	 * @see #getLINETYPE()
+	 * @generated
+	 */
 	void setLINETYPE(Integer value);
 
 } // GSLT

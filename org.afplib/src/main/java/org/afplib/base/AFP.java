@@ -24,19 +24,19 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface AFP extends EObject {
 	/**
-     * Returns the value of the '<em><b>Structured Fields</b></em>' containment reference list.
-     * The list contents are of type {@link org.afplib.base.SF}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Structured Fields</b></em>' containment reference list.
+	 * The list contents are of type {@link org.afplib.base.SF}.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Structured Fields</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-     * @return the value of the '<em>Structured Fields</em>' containment reference list.
-     * @see org.afplib.base.BasePackage#getAFP_StructuredFields()
-     * @model containment="true" resolveProxies="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Structured Fields</em>' containment reference list.
+	 * @see org.afplib.base.BasePackage#getAFP_StructuredFields()
+	 * @model containment="true" resolveProxies="true"
+	 * @generated
+	 */
 	EList<SF> getStructuredFields();
 
 } // AFP

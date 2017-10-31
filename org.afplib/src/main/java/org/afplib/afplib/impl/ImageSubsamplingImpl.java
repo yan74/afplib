@@ -36,118 +36,118 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class ImageSubsamplingImpl extends TripletImpl implements ImageSubsampling {
 	/**
-     * The cached value of the '{@link #getSdfs() <em>Sdfs</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSdfs() <em>Sdfs</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getSdfs()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSdfs()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<Triplet> sdfs;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected ImageSubsamplingImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getImageSubsampling();
-    }
+		return AfplibPackage.eINSTANCE.getImageSubsampling();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EList<Triplet> getSdfs() {
-        if (sdfs == null) {
-            sdfs = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.IMAGE_SUBSAMPLING__SDFS);
-        }
-        return sdfs;
-    }
+		if (sdfs == null) {
+			sdfs = new EObjectContainmentEList.Resolving<Triplet>(Triplet.class, this, AfplibPackage.IMAGE_SUBSAMPLING__SDFS);
+		}
+		return sdfs;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
-                return ((InternalEList<?>)getSdfs()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
+				return ((InternalEList<?>)getSdfs()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
-                return getSdfs();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
+				return getSdfs();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
-                getSdfs().clear();
-                getSdfs().addAll((Collection<? extends Triplet>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
+				getSdfs().clear();
+				getSdfs().addAll((Collection<? extends Triplet>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
-                getSdfs().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
+				getSdfs().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
-                return sdfs != null && !sdfs.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.IMAGE_SUBSAMPLING__SDFS:
+				return sdfs != null && !sdfs.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ImageSubsamplingImpl

@@ -24,18 +24,18 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface GMRK extends Triplet {
 	/**
-     * Returns the value of the '<em><b>Rg</b></em>' containment reference list.
-     * The list contents are of type {@link org.afplib.afplib.GMRKRG}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Rg</b></em>' containment reference list.
+	 * The list contents are of type {@link org.afplib.afplib.GMRKRG}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>variable length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Rg</em>' containment reference list.
-     * @see org.afplib.afplib.AfplibPackage#getGMRK_Rg()
-     * @model containment="true" resolveProxies="true" required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>variable length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Rg</em>' containment reference list.
+	 * @see org.afplib.afplib.AfplibPackage#getGMRK_Rg()
+	 * @model containment="true" resolveProxies="true" required="true"
+	 * @generated
+	 */
 	EList<GMRKRG> getRg();
 
 } // GMRK

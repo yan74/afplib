@@ -3075,6 +3075,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="MediaFidelity" eSuperTypes="http://afplib.org/afplibbase#//Triplet">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="StpMedEx" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Reserved" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FinishingFidelity" eSuperTypes="http://afplib.org/afplibbase#//Triplet">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="StpFinEx" lowerBound="1"

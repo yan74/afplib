@@ -24,18 +24,18 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface CFI extends SF {
 	/**
-     * Returns the value of the '<em><b>Fixed Length RG</b></em>' containment reference list.
-     * The list contents are of type {@link org.afplib.afplib.CFIRG}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Fixed Length RG</b></em>' containment reference list.
+	 * The list contents are of type {@link org.afplib.afplib.CFIRG}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * <!-- begin-model-doc -->
-     * <p>mandatory<br>variable length</p>
-     * <!-- end-model-doc -->
-     * @return the value of the '<em>Fixed Length RG</em>' containment reference list.
-     * @see org.afplib.afplib.AfplibPackage#getCFI_FixedLengthRG()
-     * @model containment="true" resolveProxies="true" required="true"
-     * @generated
-     */
+	 * <!-- begin-model-doc -->
+	 * <p>mandatory<br>variable length</p>
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Fixed Length RG</em>' containment reference list.
+	 * @see org.afplib.afplib.AfplibPackage#getCFI_FixedLengthRG()
+	 * @model containment="true" resolveProxies="true" required="true"
+	 * @generated
+	 */
 	EList<CFIRG> getFixedLengthRG();
 
 } // CFI

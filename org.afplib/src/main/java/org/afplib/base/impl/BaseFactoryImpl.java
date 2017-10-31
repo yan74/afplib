@@ -23,234 +23,234 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  */
 public class BaseFactoryImpl extends EFactoryImpl implements BaseFactory {
 	/**
-     * Creates the default factory implementation.
-     * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public static BaseFactory init() {
-        try {
-            BaseFactory theBaseFactory = (BaseFactory)EPackage.Registry.INSTANCE.getEFactory(BasePackage.eNS_URI);
-            if (theBaseFactory != null) {
-                return theBaseFactory;
-            }
-        }
-        catch (Exception exception) {
-            EcorePlugin.INSTANCE.log(exception);
-        }
-        return new BaseFactoryImpl();
-    }
+		try {
+			BaseFactory theBaseFactory = (BaseFactory)EPackage.Registry.INSTANCE.getEFactory(BasePackage.eNS_URI);
+			if (theBaseFactory != null) {
+				return theBaseFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new BaseFactoryImpl();
+	}
 
 	/**
-     * Creates an instance of the factory.
-     * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public BaseFactoryImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public EObject create(EClass eClass) {
-        switch (eClass.getClassifierID()) {
-            case BasePackage.AFP: return createAFP();
-            case BasePackage.UNKNSF: return createUNKNSF();
-            case BasePackage.SF_GROUPER: return createSFGrouper();
-            default:
-                throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-        }
-    }
+		switch (eClass.getClassifierID()) {
+			case BasePackage.AFP: return createAFP();
+			case BasePackage.UNKNSF: return createUNKNSF();
+			case BasePackage.SF_GROUPER: return createSFGrouper();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
-        switch (eDataType.getClassifierID()) {
-            case BasePackage.MODCA_STRING:
-                return createModcaStringFromString(eDataType, initialValue);
-            case BasePackage.MODCA_STRING4:
-                return createModcaString4FromString(eDataType, initialValue);
-            case BasePackage.MODCA_STRING8:
-                return createModcaString8FromString(eDataType, initialValue);
-            case BasePackage.MODCA_STRING32:
-                return createModcaString32FromString(eDataType, initialValue);
-            case BasePackage.CHARSET:
-                return createCharsetFromString(eDataType, initialValue);
-            default:
-                throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-        }
-    }
+		switch (eDataType.getClassifierID()) {
+			case BasePackage.MODCA_STRING:
+				return createModcaStringFromString(eDataType, initialValue);
+			case BasePackage.MODCA_STRING4:
+				return createModcaString4FromString(eDataType, initialValue);
+			case BasePackage.MODCA_STRING8:
+				return createModcaString8FromString(eDataType, initialValue);
+			case BasePackage.MODCA_STRING32:
+				return createModcaString32FromString(eDataType, initialValue);
+			case BasePackage.CHARSET:
+				return createCharsetFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
-        switch (eDataType.getClassifierID()) {
-            case BasePackage.MODCA_STRING:
-                return convertModcaStringToString(eDataType, instanceValue);
-            case BasePackage.MODCA_STRING4:
-                return convertModcaString4ToString(eDataType, instanceValue);
-            case BasePackage.MODCA_STRING8:
-                return convertModcaString8ToString(eDataType, instanceValue);
-            case BasePackage.MODCA_STRING32:
-                return convertModcaString32ToString(eDataType, instanceValue);
-            case BasePackage.CHARSET:
-                return convertCharsetToString(eDataType, instanceValue);
-            default:
-                throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-        }
-    }
+		switch (eDataType.getClassifierID()) {
+			case BasePackage.MODCA_STRING:
+				return convertModcaStringToString(eDataType, instanceValue);
+			case BasePackage.MODCA_STRING4:
+				return convertModcaString4ToString(eDataType, instanceValue);
+			case BasePackage.MODCA_STRING8:
+				return convertModcaString8ToString(eDataType, instanceValue);
+			case BasePackage.MODCA_STRING32:
+				return convertModcaString32ToString(eDataType, instanceValue);
+			case BasePackage.CHARSET:
+				return convertCharsetToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public AFP createAFP() {
-        AFPImpl afp = new AFPImpl();
-        return afp;
-    }
+		AFPImpl afp = new AFPImpl();
+		return afp;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public UNKNSF createUNKNSF() {
-        UNKNSFImpl unknsf = new UNKNSFImpl();
-        return unknsf;
-    }
+		UNKNSFImpl unknsf = new UNKNSFImpl();
+		return unknsf;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SFGrouper createSFGrouper() {
-        SFGrouperImpl sfGrouper = new SFGrouperImpl();
-        return sfGrouper;
-    }
+		SFGrouperImpl sfGrouper = new SFGrouperImpl();
+		return sfGrouper;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String createModcaStringFromString(EDataType eDataType, String initialValue) {
-        return (String)super.createFromString(eDataType, initialValue);
-    }
+		return (String)super.createFromString(eDataType, initialValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String convertModcaStringToString(EDataType eDataType, Object instanceValue) {
-        return super.convertToString(eDataType, instanceValue);
-    }
+		return super.convertToString(eDataType, instanceValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String createModcaString4FromString(EDataType eDataType, String initialValue) {
-        return (String)super.createFromString(eDataType, initialValue);
-    }
+		return (String)super.createFromString(eDataType, initialValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String convertModcaString4ToString(EDataType eDataType, Object instanceValue) {
-        return super.convertToString(eDataType, instanceValue);
-    }
+		return super.convertToString(eDataType, instanceValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String createModcaString8FromString(EDataType eDataType, String initialValue) {
-        return (String)super.createFromString(eDataType, initialValue);
-    }
+		return (String)super.createFromString(eDataType, initialValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String convertModcaString8ToString(EDataType eDataType, Object instanceValue) {
-        return super.convertToString(eDataType, instanceValue);
-    }
+		return super.convertToString(eDataType, instanceValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String createModcaString32FromString(EDataType eDataType, String initialValue) {
-        return (String)super.createFromString(eDataType, initialValue);
-    }
+		return (String)super.createFromString(eDataType, initialValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String convertModcaString32ToString(EDataType eDataType, Object instanceValue) {
-        return super.convertToString(eDataType, instanceValue);
-    }
+		return super.convertToString(eDataType, instanceValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public Charset createCharsetFromString(EDataType eDataType, String initialValue) {
-        return (Charset)super.createFromString(eDataType, initialValue);
-    }
+		return (Charset)super.createFromString(eDataType, initialValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public String convertCharsetToString(EDataType eDataType, Object instanceValue) {
-        return super.convertToString(eDataType, instanceValue);
-    }
+		return super.convertToString(eDataType, instanceValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public BasePackage getBasePackage() {
-        return (BasePackage)getEPackage();
-    }
+		return (BasePackage)getEPackage();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @deprecated
-     * @generated
-     */
+	 * @deprecated
+	 * @generated
+	 */
 	@Deprecated
 	public static BasePackage getPackage() {
-        return BasePackage.eINSTANCE;
-    }
+		return BasePackage.eINSTANCE;
+	}
 
 } //BaseFactoryImpl

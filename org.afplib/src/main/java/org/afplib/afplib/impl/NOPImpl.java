@@ -28,137 +28,137 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class NOPImpl extends SFImpl implements NOP {
 	/**
-     * The default value of the '{@link #getUndfData() <em>Undf Data</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getUndfData() <em>Undf Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getUndfData()
-     * @generated
-     * @ordered
-     */
+	 * @see #getUndfData()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final byte[] UNDF_DATA_EDEFAULT = null;
 
 	/**
-     * The cached value of the '{@link #getUndfData() <em>Undf Data</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUndfData() <em>Undf Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @see #getUndfData()
-     * @generated
-     * @ordered
-     */
+	 * @see #getUndfData()
+	 * @generated
+	 * @ordered
+	 */
 	protected byte[] undfData = UNDF_DATA_EDEFAULT;
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	protected NOPImpl() {
-        super();
-    }
+		super();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-        return AfplibPackage.eINSTANCE.getNOP();
-    }
+		return AfplibPackage.eINSTANCE.getNOP();
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public byte[] getUndfData() {
-        return undfData;
-    }
+		return undfData;
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public void setUndfData(byte[] newUndfData) {
-        byte[] oldUndfData = undfData;
-        undfData = newUndfData;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.NOP__UNDF_DATA, oldUndfData, undfData));
-    }
+		byte[] oldUndfData = undfData;
+		undfData = newUndfData;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AfplibPackage.NOP__UNDF_DATA, oldUndfData, undfData));
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case AfplibPackage.NOP__UNDF_DATA:
-                return getUndfData();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case AfplibPackage.NOP__UNDF_DATA:
+				return getUndfData();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case AfplibPackage.NOP__UNDF_DATA:
-                setUndfData((byte[])newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case AfplibPackage.NOP__UNDF_DATA:
+				setUndfData((byte[])newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.NOP__UNDF_DATA:
-                setUndfData(UNDF_DATA_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.NOP__UNDF_DATA:
+				setUndfData(UNDF_DATA_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case AfplibPackage.NOP__UNDF_DATA:
-                return UNDF_DATA_EDEFAULT == null ? undfData != null : !UNDF_DATA_EDEFAULT.equals(undfData);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case AfplibPackage.NOP__UNDF_DATA:
+				return UNDF_DATA_EDEFAULT == null ? undfData != null : !UNDF_DATA_EDEFAULT.equals(undfData);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (UndfData: ");
-        result.append(undfData);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (UndfData: ");
+		result.append(undfData);
+		result.append(')');
+		return result.toString();
+	}
 
 } //NOPImpl
