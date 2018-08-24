@@ -8,7 +8,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -172,7 +171,8 @@ public class AfpCombine {
 			files[i] = new InputFile();
 			
 			files[i].file = new File(inFiles[i]);
-			try(AfpInputStream ain = new AfpInputStream(new BufferedInputStream(new FileInputStream(files[i].file)))) {
+			try(FileInputStream fin = new FileInputStream(files[i].file);
+					AfpInputStream ain = new AfpInputStream(new BufferedInputStream(fin))) {
 				SF sf;
 				long filepos = 0, prevFilePos = 0;
 				ByteArrayOutputStream buffer = null;
@@ -457,7 +457,6 @@ public class AfpCombine {
 			for(int i=0; i<inFiles.length; i++) {
 				FileInputStream fin;
 				try(AfpInputStream ain = new AfpInputStream(fin = new FileInputStream(inFiles[i]))) {
-					FileChannel channel = fin.getChannel();
 					for(ResourceKey key : files[i].resources) {
 						
 						if(key.getType() == ResourceObjectTypeObjType.CONST_FORM_MAP_VALUE) {
@@ -465,7 +464,7 @@ public class AfpCombine {
 							continue;
 						}
 						
-						channel.position(files[i].filePos.get(key).start);
+						ain.position(files[i].filePos.get(key).start);
 						BRS brs = (BRS) ain.readStructuredField();
 						
 						if(files[i].renamings.containsKey(key)) {
@@ -489,7 +488,7 @@ public class AfpCombine {
 						aout.writeStructuredField(brs);
 						byte[] buffer = new byte[8 * 1024];
 						int l;
-						long left = files[i].filePos.get(key).ersPos - channel.position();
+						long left = files[i].filePos.get(key).ersPos - ain.getCurrentOffset();
 						while((l = fin.read(buffer, 0, left > buffer.length ? buffer.length : (int) left)) > 0) {
 							aout.write(buffer, 0, l);
 							left-=l;
@@ -532,14 +531,12 @@ public class AfpCombine {
 
 	private void writeDocuments() throws IOException {
 		for(int i=0; i<inFiles.length; i++) {
-			FileInputStream fin = null;
 			log.info("writing documents from {}", files[i].file.getName());
-			try (AfpInputStream in = new AfpInputStream(
-					new BufferedInputStream(fin = new FileInputStream(inFiles[i])));
+			try (AfpInputStream in = new AfpInputStream(new FileInputStream(inFiles[i]));
 					AfpOutputStream out = new AfpOutputStream(
 							new BufferedOutputStream(new FileOutputStream(outFile, true)))) {
 
-				fin.getChannel().position(files[i].documentStart);
+				in.position(files[i].documentStart);
 				final InputFile file = files[i];
 				
 				AfpFilter.filter(in, out, new Filter() {
