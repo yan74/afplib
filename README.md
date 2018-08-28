@@ -25,7 +25,7 @@ Use a pom like this:
 		<dependency>
 			<groupId>org.afplib</groupId>
 			<artifactId>afplib</artifactId>
-			<version>0.0.11</version>
+			<version>0.0.14</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.emf</groupId>
