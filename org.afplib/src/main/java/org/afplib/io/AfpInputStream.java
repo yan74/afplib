@@ -159,6 +159,7 @@ public class AfpInputStream extends FilterInputStream {
 	        if(offset + len <= header.length) return len;
 	        
 	        int res = super.read(b, off + bytesToReadFromHeaderBuffer, len - bytesToReadFromHeaderBuffer);
+	        header = null;
 	        return res + bytesToReadFromHeaderBuffer;
 	    }
 	    header = null;
