@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.afplib</groupId>
 	<artifactId>samples</artifactId>
-	<version>0.0.8-SNAPSHOT</version>
+	<version>0.0.8</version>
 	<name>AFP Library Samples</name>
 	<description>Samples using the object library able to read and write AFP (Advanced Function Presentation) files.</description>
 	<url>https://github.com/yan74/afplib</url>
@@ -122,7 +122,7 @@
 		<dependency>
 			<groupId>org.afplib</groupId>
 			<artifactId>afplib</artifactId>
-			<version>0.0.14-SNAPSHOT</version>
+			<version>0.0.14</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
