@@ -125,8 +125,8 @@ public class CreatePageWithPDFObject {
 				.with(AfplibPackage.PGD__YPG_BASE, PGDYpgBase.CONST10INCHES_VALUE)
 				.with(AfplibPackage.PGD__XPG_UNITS, 14400)					// 1440 dpi resolution
 				.with(AfplibPackage.PGD__YPG_UNITS, 14400)					// 1440 dpi resolution
-				.with(AfplibPackage.PGD__XPG_SIZE, 12240)					// 8.5 inch
-				.with(AfplibPackage.PGD__YPG_SIZE, 15840)					// 11 inch
+				.with(AfplibPackage.PGD__XPG_SIZE, 14400)					// 8.5 inch
+				.with(AfplibPackage.PGD__YPG_SIZE, 17280)					// 11 inch
 				.with(AfplibPackage.PGD__RESERVED, 0)
 				.create(PGD.class);
 
@@ -153,7 +153,7 @@ public class CreatePageWithPDFObject {
 						.with(AfplibPackage.STO__BORNTION, STOBORNTION.CONST90DEGREES_VALUE)
 						.create(STO.class))
 				.withMember(new AfpBuilder()
-						.with(AfplibPackage.AMB__DSPLCMNT, 1440)			// Text Cursor to 1 inch from top edge of the paper
+						.with(AfplibPackage.AMB__DSPLCMNT, 144)			// Text Cursor to 1 inch from top edge of the paper
 						.create(AMB.class))
 				.withMember(new AfpBuilder()
 						.with(AfplibPackage.AMI__DSPLCMNT, 720)				// Text Cursor to 0.5 inches from left edge of the paper
@@ -189,9 +189,9 @@ public class CreatePageWithPDFObject {
 		}
 
 		int dpi = 360;
-		int xsize = 2976;
-		int ysize = 4209;
-		InputStream fin = new BufferedInputStream(new FileInputStream("testdata/mushrooms.pdf"));
+		int xsize = 3600;
+		int ysize = 4320;
+		InputStream fin = new BufferedInputStream(new FileInputStream("0817bill.pdf"));
 		pdfoc(dpi, xsize, ysize, fin, out, "MUSHROOM");
 
 		for(SF sf : Arrays.asList(bpt, ptx, ept, epg, edt)) {
