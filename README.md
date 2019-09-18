@@ -7,6 +7,10 @@ afplib provides a low level API to transform AFP files, i.e. structured fields, 
 
 Home: http://afplib.org
 
+##### BEGIN Advertisement
+afplib is also the base for a commercial product the author built: https://afpworx.com an analyzing tool for AFP files. If you want to understand how your AFP is structured give it a shot - Free trials are available on the website.
+##### END Advertisement
+
 How to get started
 ------------------
 
