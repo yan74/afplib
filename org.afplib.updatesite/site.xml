@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.afplib.feature_1.0.0.201909201126.jar" id="org.afplib.feature" version="1.0.0.201909201126">
+   <feature url="features/org.afplib.feature_1.0.0.201909201334.jar" id="org.afplib.feature" version="1.0.0.201909201334">
       <category name="afplib"/>
    </feature>
    <category-def name="afplib" label="AFPLib"/>
