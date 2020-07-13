@@ -21,12 +21,12 @@ public class CodepageHelper {
 	public static Charset getCharset(int cpgid, int gcsgid) {		
 		Charset result;
 		
-		if(cpgid == 850) result = Charset.forName("ibm850");
-		else if(cpgid == 500) result = CHARSET_IBM500;
-		else if(cpgid == 1200) result = Charset.forName("UTF-16");
-		else if(cpgid == 1252) result = Charset.forName("windows-1252");
-		else if(cpgid == 1141) result = Charset.forName("CP1141");
-		else {
+
+		if(cpgid == 1200) {
+			result = Charset.forName("UTF-16");
+		} else if(cpgid == 1252) {
+			result = Charset.forName("windows-1252");
+		} else {
 			try {
 				result = Charset.forName("ibm"+cpgid);
 			} catch (UnsupportedCharsetException e) {
