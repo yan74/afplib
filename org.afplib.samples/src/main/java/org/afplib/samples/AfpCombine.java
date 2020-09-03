@@ -309,7 +309,7 @@ public class AfpCombine {
 							&& !f2.renameIMM.containsKey(mmName)) {
 						
 						String h1 = f1.mediumMaps.get(mmName).hash;
-						String h2 = f1.mediumMaps.get(mmName).hash;
+						String h2 = f2.mediumMaps.get(mmName).hash;
 
 						if(h1.equals(h2) 
 								&& equals(f1.mediumMaps.get(mmName).content, f2.mediumMaps.get(mmName).content)) {
