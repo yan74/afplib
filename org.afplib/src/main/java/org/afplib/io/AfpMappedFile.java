@@ -46,7 +46,7 @@ public class AfpMappedFile implements Closeable {
 
 		int remaining = afpData.remaining();
 		if(remaining == 0) return null;
-		if(remaining < 9) throw new IOException("trailing garbage at the end of file.");
+		if(remaining < 9) throw new AFPFormatException("trailing garbage at the end of file.");
 		
 		byte buf;
 		long thisOffset = afpData.position();
@@ -69,7 +69,7 @@ public class AfpMappedFile implements Closeable {
 			}
 			
 			if((buf & 0xff) != 0x5a)
-				throw new IOException("cannot find 5a magic byte");
+				throw new AFPFormatException("cannot find 5a magic byte");
 			data[0] = buf;
 			
 			buf = afpData.get();
@@ -83,7 +83,7 @@ public class AfpMappedFile implements Closeable {
 			length -= 2;
 			
 			if(length + 3 > data.length)
-				throw new IOException("length of structured field is too large: "+length);
+				throw new AFPFormatException("length of structured field is too large: "+length);
 					
 			afpData.get(data, 3, length);
 		} catch (BufferUnderflowException e) {
