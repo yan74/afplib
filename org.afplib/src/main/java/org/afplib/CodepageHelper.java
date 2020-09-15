@@ -28,7 +28,7 @@ public class CodepageHelper {
 			result = Charset.forName("windows-1252");
 		} else {
 			try {
-				result = Charset.forName("ibm"+cpgid);
+				result = Charset.forName("cp"+cpgid);
 			} catch (UnsupportedCharsetException e) {
 				log.error("unknown gpgid {}", cpgid);
 				result = CHARSET_IBM500; // FIXME
