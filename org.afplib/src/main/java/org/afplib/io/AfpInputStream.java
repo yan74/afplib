@@ -78,7 +78,7 @@ public class AfpInputStream extends FilterInputStream {
 			    buf = read();
 			    if(buf == -1) return null;
 			    if((buf & 0xff) != 0xd3) {
-		            throw new AFPFormatException("cannot find 5a magic byte nor d3 -> this is no AFP");			        
+		            throw new AfpFormatException("cannot find 5a magic byte nor d3 -> this is no AFP");			        
 			    }
 			    offset = 0;
 			}
@@ -100,7 +100,7 @@ public class AfpInputStream extends FilterInputStream {
 		}
 		
 		if(has5a && (buf & 0xff) != 0x5a) {
-			throw new AFPFormatException("cannot find 5a magic byte");
+			throw new AfpFormatException("cannot find 5a magic byte");
 		}
 		data[0] = 0x5a; // (byte) (buf & 0xff);
 		
@@ -110,7 +110,7 @@ public class AfpInputStream extends FilterInputStream {
 		}
 		
 		if(buf == -1) {
-			throw new AFPFormatException("premature end of file.");
+			throw new AfpFormatException("premature end of file.");
 		}
 		data[1] = (byte) (buf & 0xff);
 
@@ -118,7 +118,7 @@ public class AfpInputStream extends FilterInputStream {
 
 		buf = read(); offset++;
 		if(buf == -1)
-			throw new AFPFormatException("premature end of file.");
+			throw new AfpFormatException("premature end of file.");
 		data[2] = (byte) (buf & 0xff);
 
 		length |= (byte) buf & 0xff;
@@ -126,13 +126,13 @@ public class AfpInputStream extends FilterInputStream {
 		length -= 2;
 		
 		if(length > data.length)
-			throw new AFPFormatException("length of structured field is too large: "+length);
+			throw new AfpFormatException("length of structured field is too large: "+length);
 				
 		int read = read(data, 3, length);
 		offset += read;
 		
 		if(read < length)
-			throw new AFPFormatException("premature end of file.");
+			throw new AfpFormatException("premature end of file.");
 		
 		SF sf = factory.sf(data, 0, getLength() + 2);
 		sf.setLength(length + 3);

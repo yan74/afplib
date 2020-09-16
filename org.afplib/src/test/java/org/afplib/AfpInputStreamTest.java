@@ -9,7 +9,7 @@ import org.afplib.afplib.BRS;
 import org.afplib.afplib.ResourceObjectType;
 import org.afplib.base.SF;
 import org.afplib.base.Triplet;
-import org.afplib.io.AFPFormatException;
+import org.afplib.io.AfpFormatException;
 import org.afplib.io.AfpInputStream;
 import org.eclipse.emf.common.util.EList;
 import org.junit.Assert;
@@ -67,7 +67,7 @@ public class AfpInputStreamTest {
 		
 	}
 
-	@Test(expected = AFPFormatException.class) public void testPrematureEndOfFile() throws IOException {
+	@Test(expected = AfpFormatException.class) public void testPrematureEndOfFile() throws IOException {
 		String sf = "5A001CD3A8CE000000C6F1C1F1F0F1F1F100000A21FE00";
 		byte[] b = new byte[sf.length()/2];
 		for(int i=0; i<sf.length(); i+=2) {
