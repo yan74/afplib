@@ -5006,6 +5006,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	void triplet(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
+		int number = 0;
 		while (pos + 1 <= bufstop) {
 			int length = buffer[pos] & 0xff;
 			if (length == 0)
@@ -5019,6 +5020,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 128 : {
 					AttributeQualifier obj = AfplibFactory.eINSTANCE.createAttributeQualifier();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -5045,6 +5050,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 54 : {
 					AttributeValue obj = AfplibFactory.eINSTANCE.createAttributeValue();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -5072,6 +5081,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 1 : {
 					CGCSGID obj = AfplibFactory.eINSTANCE.createCGCSGID();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -5100,6 +5113,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 99 : {
 					CRCResourceManagement obj = AfplibFactory.eINSTANCE.createCRCResourceManagement();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5135,6 +5152,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 38 : {
 					CharacterRotation obj = AfplibFactory.eINSTANCE.createCharacterRotation();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -5152,6 +5173,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 78 : {
 					ColorSpecification obj = AfplibFactory.eINSTANCE.createColorSpecification();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -5215,6 +5240,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 101 : {
 					Comment obj = AfplibFactory.eINSTANCE.createComment();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -5233,6 +5262,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 139 : {
 					DataObjectFontDescriptor obj = AfplibFactory.eINSTANCE.createDataObjectFontDescriptor();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5313,6 +5346,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 67 : {
 					DescriptorPosition obj = AfplibFactory.eINSTANCE.createDescriptorPosition();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5330,6 +5367,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 80 : {
 					EncodingSchemeID obj = AfplibFactory.eINSTANCE.createEncodingSchemeID();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -5358,6 +5399,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 132 : {
 					FontResolution obj = AfplibFactory.eINSTANCE.createFontResolution();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5393,6 +5438,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 2 : {
 					FullyQualifiedName obj = AfplibFactory.eINSTANCE.createFullyQualifiedName();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5438,6 +5487,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 98 : {
 					LocalDateAndTimeStamp obj = AfplibFactory.eINSTANCE.createLocalDateAndTimeStamp();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5518,6 +5571,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 114 : {
 					UniversalDateAndTimeStamp obj = AfplibFactory.eINSTANCE.createUniversalDateAndTimeStamp();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5616,6 +5673,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 4 : {
 					MappingOption obj = AfplibFactory.eINSTANCE.createMappingOption();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5633,6 +5694,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 69 : {
 					MediaEjectControl obj = AfplibFactory.eINSTANCE.createMediaEjectControl();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5659,6 +5724,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 86 : {
 					MediumMapPageNumber obj = AfplibFactory.eINSTANCE.createMediumMapPageNumber();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -5676,6 +5745,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 104 : {
 					MediumOrientation obj = AfplibFactory.eINSTANCE.createMediumOrientation();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5693,6 +5766,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 75 : {
 					MeasurementUnits obj = AfplibFactory.eINSTANCE.createMeasurementUnits();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5737,6 +5814,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 24 : {
 					MODCAInterchangeSet obj = AfplibFactory.eINSTANCE.createMODCAInterchangeSet();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5763,6 +5844,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 76 : {
 					ObjectAreaSize obj = AfplibFactory.eINSTANCE.createObjectAreaSize();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5798,6 +5883,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 16 : {
 					ObjectClassification obj = AfplibFactory.eINSTANCE.createObjectClassification();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -5866,6 +5955,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case -33 : {
 					ObjectFunctionSetSpecification obj = AfplibFactory.eINSTANCE.createObjectFunctionSetSpecification();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5910,6 +6003,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 90 : {
 					ObjectOffset obj = AfplibFactory.eINSTANCE.createObjectOffset();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5947,6 +6044,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 33 : {
 					ResourceObjectType obj = AfplibFactory.eINSTANCE.createResourceObjectType();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5973,6 +6074,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 129 : {
 					PagePositionInformation obj = AfplibFactory.eINSTANCE.createPagePositionInformation();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -5990,6 +6095,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 131 : {
 					PresentationControl obj = AfplibFactory.eINSTANCE.createPresentationControl();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6007,6 +6116,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 112 : {
 					PresentationSpaceResetMixing obj = AfplibFactory.eINSTANCE.createPresentationSpaceResetMixing();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6024,6 +6137,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 113 : {
 					PresentationSpaceMixingRules obj = AfplibFactory.eINSTANCE.createPresentationSpaceMixingRules();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 
@@ -6032,6 +6149,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 36 : {
 					ResourceLocalIdentifier obj = AfplibFactory.eINSTANCE.createResourceLocalIdentifier();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6058,6 +6179,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 37 : {
 					ResourceSectionNumber obj = AfplibFactory.eINSTANCE.createResourceSectionNumber();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6075,6 +6200,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 29 : {
 					TextOrientation obj = AfplibFactory.eINSTANCE.createTextOrientation();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6101,6 +6230,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 93 : {
 					FontHorizontalScaleFactor obj = AfplibFactory.eINSTANCE.createFontHorizontalScaleFactor();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6118,6 +6251,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 31 : {
 					FontDescriptorSpecification obj = AfplibFactory.eINSTANCE.createFontDescriptorSpecification();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6182,6 +6319,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 116 : {
 					TonerSaver obj = AfplibFactory.eINSTANCE.createTonerSaver();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6199,6 +6340,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 117 : {
 					ColorFidelity obj = AfplibFactory.eINSTANCE.createColorFidelity();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6234,6 +6379,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 120 : {
 					FontFidelity obj = AfplibFactory.eINSTANCE.createFontFidelity();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6251,6 +6400,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 134 : {
 					TextFidelity obj = AfplibFactory.eINSTANCE.createTextFidelity();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6277,6 +6430,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 135 : {
 					MediaFidelity obj = AfplibFactory.eINSTANCE.createMediaFidelity();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6303,6 +6460,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 136 : {
 					FinishingFidelity obj = AfplibFactory.eINSTANCE.createFinishingFidelity();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6329,6 +6490,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 150 : {
 					CMRFidelity obj = AfplibFactory.eINSTANCE.createCMRFidelity();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6355,6 +6520,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 87 : {
 					ObjectByteExtent obj = AfplibFactory.eINSTANCE.createObjectByteExtent();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -6383,6 +6552,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 45 : {
 					ObjectByteOffset obj = AfplibFactory.eINSTANCE.createObjectByteOffset();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -6411,6 +6584,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 89 : {
 					ObjectStructuredFieldExtent obj = AfplibFactory.eINSTANCE.createObjectStructuredFieldExtent();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -6439,6 +6616,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 88 : {
 					ObjectStructuredFieldOffset obj = AfplibFactory.eINSTANCE.createObjectStructuredFieldOffset();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -6467,6 +6648,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 94 : {
 					ObjectCount obj = AfplibFactory.eINSTANCE.createObjectCount();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6504,6 +6689,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 100 : {
 					ObjectOriginIdentifier obj = AfplibFactory.eINSTANCE.createObjectOriginIdentifier();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6549,6 +6738,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				case 39 : {
 					LineDataObjectPositionMigration obj = AfplibFactory.eINSTANCE
 							.createLineDataObjectPositionMigration();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6567,6 +6760,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				case 145 : {
 					ColorManagementResourceDescriptor obj = AfplibFactory.eINSTANCE
 							.createColorManagementResourceDescriptor();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6593,6 +6790,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 154 : {
 					ImageResolution obj = AfplibFactory.eINSTANCE.createImageResolution();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 4;
@@ -6638,6 +6839,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				case 156 : {
 					ObjectContainerPresentationSpaceSize obj = AfplibFactory.eINSTANCE
 							.createObjectContainerPresentationSpaceSize();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 4;
@@ -6656,6 +6861,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				case 34 : {
 					ExtendedResourceLocalIdentifier obj = AfplibFactory.eINSTANCE
 							.createExtendedResourceLocalIdentifier();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6682,6 +6891,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 121 : {
 					MetricAdjustment obj = AfplibFactory.eINSTANCE.createMetricAdjustment();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6753,6 +6966,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 109 : {
 					ExtensionFont obj = AfplibFactory.eINSTANCE.createExtensionFont();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6770,6 +6987,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 149 : {
 					RenderingIntent obj = AfplibFactory.eINSTANCE.createRenderingIntent();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6833,6 +7054,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				case 32 : {
 					FontCodedGraphicCharacterSetGlobalIdentifier obj = AfplibFactory.eINSTANCE
 							.createFontCodedGraphicCharacterSetGlobalIdentifier();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6859,6 +7084,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 140 : {
 					LocaleSelector obj = AfplibFactory.eINSTANCE.createLocaleSelector();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -6924,6 +7153,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 133 : {
 					FinishingOperation obj = AfplibFactory.eINSTANCE.createFinishingOperation();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -6980,6 +7213,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 142 : {
 					UP3iFinishingOperation obj = AfplibFactory.eINSTANCE.createUP3iFinishingOperation();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7007,6 +7244,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 151 : {
 					DeviceAppearance obj = AfplibFactory.eINSTANCE.createDeviceAppearance();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 4;
@@ -7033,6 +7274,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 108 : {
 					ResourceObjectInclude obj = AfplibFactory.eINSTANCE.createResourceObjectInclude();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7089,6 +7334,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 				case 70 : {
 					PageOverlayConditionalProcessing obj = AfplibFactory.eINSTANCE
 							.createPageOverlayConditionalProcessing();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7117,6 +7366,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 71 : {
 					ResourceUsageAttribute obj = AfplibFactory.eINSTANCE.createResourceUsageAttribute();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7140,6 +7393,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		int lengthSize, lengthOffset, idSize, lengthAddition;
+		int number = 0;
 
 		while (pos + 1 <= bufstop) {
 
@@ -7168,6 +7422,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 112 : {
 					BeginSegment obj = AfplibFactory.eINSTANCE.createBeginSegment();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -7186,6 +7444,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 113 : {
 					EndSegment obj = AfplibFactory.eINSTANCE.createEndSegment();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7193,6 +7455,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 140 : {
 					BeginTile obj = AfplibFactory.eINSTANCE.createBeginTile();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7200,6 +7466,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 141 : {
 					EndTile obj = AfplibFactory.eINSTANCE.createEndTile();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7207,6 +7477,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 142 : {
 					BeginTransparencyMask obj = AfplibFactory.eINSTANCE.createBeginTransparencyMask();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7214,6 +7488,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 143 : {
 					EndTransparencyMask obj = AfplibFactory.eINSTANCE.createEndTransparencyMask();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7221,6 +7499,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 145 : {
 					BeginImage obj = AfplibFactory.eINSTANCE.createBeginImage();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7237,6 +7519,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 147 : {
 					EndImage obj = AfplibFactory.eINSTANCE.createEndImage();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7244,6 +7530,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 148 : {
 					ImageSize obj = AfplibFactory.eINSTANCE.createImageSize();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7296,6 +7586,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 149 : {
 					ImageEncoding obj = AfplibFactory.eINSTANCE.createImageEncoding();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7332,6 +7626,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 150 : {
 					IDESize obj = AfplibFactory.eINSTANCE.createIDESize();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7348,6 +7646,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 151 : {
 					ImageLUTID obj = AfplibFactory.eINSTANCE.createImageLUTID();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7364,6 +7666,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 152 : {
 					BandImage obj = AfplibFactory.eINSTANCE.createBandImage();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -7394,6 +7700,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 155 : {
 					IDEStructure obj = AfplibFactory.eINSTANCE.createIDEStructure();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7461,6 +7771,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 159 : {
 					ExternalAlgorithm obj = AfplibFactory.eINSTANCE.createExternalAlgorithm();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -7491,6 +7805,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 181 : {
 					TilePosition obj = AfplibFactory.eINSTANCE.createTilePosition();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -7516,6 +7834,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 182 : {
 					TileSize obj = AfplibFactory.eINSTANCE.createTileSize();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 5;
@@ -7552,6 +7874,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 183 : {
 					TileSetColor obj = AfplibFactory.eINSTANCE.createTileSetColor();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7649,6 +7975,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 246 : {
 					SetBiLevelImageColor obj = AfplibFactory.eINSTANCE.createSetBiLevelImageColor();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7684,6 +8014,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 247 : {
 					IOCAFunctionSetIdentification obj = AfplibFactory.eINSTANCE.createIOCAFunctionSetIdentification();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -7709,6 +8043,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 65170 : {
 					ImageData obj = AfplibFactory.eINSTANCE.createImageData();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -7726,6 +8064,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 65180 : {
 					BandImageData obj = AfplibFactory.eINSTANCE.createBandImageData();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 4;
@@ -7763,6 +8105,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 65208 : {
 					IncludeTile obj = AfplibFactory.eINSTANCE.createIncludeTile();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 7;
@@ -7779,6 +8125,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 65230 : {
 					ImageSubsampling obj = AfplibFactory.eINSTANCE.createImageSubsampling();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -7802,6 +8152,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 1 : {
 					SamplingRatios obj = AfplibFactory.eINSTANCE.createSamplingRatios();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -7823,6 +8177,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 65211 : {
 					TileTOC obj = AfplibFactory.eINSTANCE.createTileTOC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -7860,6 +8218,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	void cmd(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
+		int number = 0;
 
 		while (pos + 1 <= bufstop) {
 
@@ -7884,6 +8243,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 112 : {
 					BeginSegmentCommand obj = AfplibFactory.eINSTANCE.createBeginSegmentCommand();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -7945,6 +8308,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 113 : {
 					EndSegmentCommand obj = AfplibFactory.eINSTANCE.createEndSegmentCommand();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -7952,6 +8319,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 104 : {
 					GBAR obj = AfplibFactory.eINSTANCE.createGBAR();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -7968,6 +8339,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 209 : {
 					GBIMG obj = AfplibFactory.eINSTANCE.createGBIMG();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8029,6 +8404,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 145 : {
 					GCBIMG obj = AfplibFactory.eINSTANCE.createGCBIMG();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -8072,6 +8451,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 192 : {
 					GBOX obj = AfplibFactory.eINSTANCE.createGBOX();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8146,6 +8529,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 128 : {
 					GCBOX obj = AfplibFactory.eINSTANCE.createGCBOX();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8202,6 +8589,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 195 : {
 					GCHST obj = AfplibFactory.eINSTANCE.createGCHST();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8237,6 +8628,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 131 : {
 					GCCHST obj = AfplibFactory.eINSTANCE.createGCCHST();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32767;
@@ -8254,6 +8649,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 1 : {
 					GCOMT obj = AfplibFactory.eINSTANCE.createGCOMT();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32767;
@@ -8273,6 +8672,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 96 : {
 					GEAR obj = AfplibFactory.eINSTANCE.createGEAR();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32767;
@@ -8292,6 +8695,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 147 : {
 					GEIMG obj = AfplibFactory.eINSTANCE.createGEIMG();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32767;
@@ -8311,6 +8718,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 62 : {
 					GEPROL obj = AfplibFactory.eINSTANCE.createGEPROL();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -8327,6 +8738,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 197 : {
 					GFLT obj = AfplibFactory.eINSTANCE.createGFLT();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8348,6 +8763,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 133 : {
 					GCFLT obj = AfplibFactory.eINSTANCE.createGCFLT();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8369,6 +8788,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 199 : {
 					GFARC obj = AfplibFactory.eINSTANCE.createGFARC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8412,6 +8835,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 135 : {
 					GCFARC obj = AfplibFactory.eINSTANCE.createGCFARC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -8437,6 +8864,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 146 : {
 					GIMD obj = AfplibFactory.eINSTANCE.createGIMD();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3768;
@@ -8454,6 +8885,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 193 : {
 					GLINE obj = AfplibFactory.eINSTANCE.createGLINE();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8475,6 +8910,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 129 : {
 					GCLINE obj = AfplibFactory.eINSTANCE.createGCLINE();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8496,6 +8935,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 194 : {
 					GMRK obj = AfplibFactory.eINSTANCE.createGMRK();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8517,6 +8960,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 130 : {
 					GCMRK obj = AfplibFactory.eINSTANCE.createGCMRK();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8538,6 +8985,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 0 : {
 					GNOP1 obj = AfplibFactory.eINSTANCE.createGNOP1();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -8545,6 +8996,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 227 : {
 					GPARC obj = AfplibFactory.eINSTANCE.createGPARC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8624,6 +9079,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 163 : {
 					GCPARC obj = AfplibFactory.eINSTANCE.createGCPARC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8685,6 +9144,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 225 : {
 					GRLINE obj = AfplibFactory.eINSTANCE.createGRLINE();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8724,6 +9187,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 161 : {
 					GCRLINE obj = AfplibFactory.eINSTANCE.createGCRLINE();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -8745,6 +9212,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 4 : {
 					GSGCH obj = AfplibFactory.eINSTANCE.createGSGCH();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
@@ -8752,6 +9223,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 34 : {
 					GSAP obj = AfplibFactory.eINSTANCE.createGSAP();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8795,6 +9270,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 13 : {
 					GSBMX obj = AfplibFactory.eINSTANCE.createGSBMX();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -8811,6 +9290,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 52 : {
 					GSCA obj = AfplibFactory.eINSTANCE.createGSCA();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8836,6 +9319,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 51 : {
 					GSCC obj = AfplibFactory.eINSTANCE.createGSCC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8883,6 +9370,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 58 : {
 					GSCD obj = AfplibFactory.eINSTANCE.createGSCD();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -8899,6 +9390,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 57 : {
 					GSCR obj = AfplibFactory.eINSTANCE.createGSCR();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -8915,6 +9410,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 56 : {
 					GSCS obj = AfplibFactory.eINSTANCE.createGSCS();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -8931,6 +9430,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 53 : {
 					GSCH obj = AfplibFactory.eINSTANCE.createGSCH();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8956,6 +9459,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 10 : {
 					GSCOL obj = AfplibFactory.eINSTANCE.createGSCOL();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -8972,6 +9479,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 33 : {
 					GSCP obj = AfplibFactory.eINSTANCE.createGSCP();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -8997,6 +9508,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 38 : {
 					GSECOL obj = AfplibFactory.eINSTANCE.createGSECOL();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -9013,6 +9528,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 17 : {
 					GSFLW obj = AfplibFactory.eINSTANCE.createGSFLW();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -9038,6 +9557,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 24 : {
 					GSLT obj = AfplibFactory.eINSTANCE.createGSLT();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9054,6 +9577,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 25 : {
 					GSLW obj = AfplibFactory.eINSTANCE.createGSLW();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9070,6 +9597,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 55 : {
 					GSMC obj = AfplibFactory.eINSTANCE.createGSMC();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 3;
@@ -9095,6 +9626,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 59 : {
 					GSMP obj = AfplibFactory.eINSTANCE.createGSMP();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9111,6 +9646,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 60 : {
 					GSMS obj = AfplibFactory.eINSTANCE.createGSMS();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9127,6 +9666,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 41 : {
 					GSMT obj = AfplibFactory.eINSTANCE.createGSMT();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9143,6 +9686,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 12 : {
 					GSMX obj = AfplibFactory.eINSTANCE.createGSMX();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9159,6 +9706,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 8 : {
 					GSPS obj = AfplibFactory.eINSTANCE.createGSPS();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9175,6 +9726,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 40 : {
 					GSPT obj = AfplibFactory.eINSTANCE.createGSPT();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9191,6 +9746,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 178 : {
 					GSPCOL obj = AfplibFactory.eINSTANCE.createGSPCOL();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -9271,6 +9830,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 26 : {
 					GSLE obj = AfplibFactory.eINSTANCE.createGSLE();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9287,6 +9850,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 27 : {
 					GSLJ obj = AfplibFactory.eINSTANCE.createGSLJ();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 1;
@@ -9303,6 +9870,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 229 : {
 					GCBEZ obj = AfplibFactory.eINSTANCE.createGCBEZ();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -9324,6 +9895,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 165 : {
 					GCCBEZ obj = AfplibFactory.eINSTANCE.createGCCBEZ();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 32768;
@@ -9345,6 +9920,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 246 : {
 					WindowSpecification obj = AfplibFactory.eINSTANCE.createWindowSpecification();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					{
 						int sstop = pos + 2;
@@ -9451,6 +10030,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 				case 247 : {
 					DrawingOrderSubset obj = AfplibFactory.eINSTANCE.createDrawingOrderSubset();
+					obj.setTripletId(id);
+					obj.setTripletNumber(number++);
+					obj.setTripletLength(length);
+					obj.setFileOffset(pos);
 
 					triplets.add(obj);
 					break;
