@@ -68,6 +68,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	void triplet(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
+		int number = 0;
 		while(pos + 1 <= bufstop) {
 			int length = buffer[pos] & 0xff;
 			if(length == 0) break;
@@ -80,6 +81,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«IF t.type.toString() == "Triplet"»
 			case «t.id»: {
 				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+				obj.setTripletId(id);
+				obj.setTripletNumber(number++);
+				obj.setTripletLength(length);
+				obj.setFileOffset(pos);
 				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				triplets.add(obj);
@@ -108,6 +113,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 	void sdf(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
 		int lengthSize, lengthOffset, idSize, lengthAddition;
+		int number = 0;
 
 		while(pos + 1 <= bufstop) {
 
@@ -136,6 +142,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«IF t.type.toString() == "SDF"»
 			case «t.id»: {
 				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+				obj.setTripletId(id);
+				obj.setTripletNumber(number++);
+				obj.setTripletLength(length);
+				obj.setFileOffset(pos);
 				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				triplets.add(obj);
@@ -150,6 +160,7 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 
 	void cmd(List<Triplet> triplets, byte[] buffer, int start, int bufstop) {
 		int pos = start;
+		int number = 0;
 
 		while(pos + 1 <= bufstop) {
 
@@ -174,6 +185,10 @@ class StructuredFieldFactory extends AbstractStructuredFieldFactory {
 			«IF t.type.toString() == "GOCACmd"»
 			case «t.id»: {
 				«t.name» obj = AfplibFactory.eINSTANCE.create«t.name»();
+				obj.setTripletId(id);
+				obj.setTripletNumber(number++);
+				obj.setTripletLength(length);
+				obj.setFileOffset(pos);
 				«FOREACH t.elements AS e»«IF e.metaType == Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				«FOREACH t.elements AS e»«IF e.metaType != Group»«EXPAND setter FOR e»«ENDIF»«ENDFOREACH»
 				triplets.add(obj);
