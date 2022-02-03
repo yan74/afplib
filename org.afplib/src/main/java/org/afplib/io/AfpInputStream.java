@@ -56,9 +56,43 @@ public class AfpInputStream extends FilterInputStream {
 	 * @throws IOException
 	 */
 	public SF readStructuredField() throws IOException {
+		long offset = readStructuredFieldData();
+		if (offset == -1) return null;
+
+		SF sf = factory.sf(data, 0, getLength() + 2);
+		sf.setLength(length + 3);
+		sf.setOffset(offset);
+		sf.setNumber(number++);
 		
+		return sf;
+	}
+
+	/**
+	 * Skips the next structured field in the input stream.
+	 * This method is not thread-safe!
+	 *
+	 * @return true if a structured field was skipped or false if end of input
+	 * @throws IOException
+	 */
+	public boolean skipStructuredField() throws IOException {
+		long offset = readStructuredFieldData();
+		if (offset == -1) return false;
+
+		number++;
+
+		return true;
+	}
+
+	/**
+	 * Reads the raw data of a new structured field from the input stream.
+	 * This method is not thread-safe!
+	 *
+	 * @return offset to structured field or null if end of input.
+	 * @throws IOException
+	 */
+	private long readStructuredFieldData() throws IOException {
 		int buf = 0;
-		
+
 		long thisOffset = offset;
 
 		if(leadingLengthBytes == -1) {
@@ -69,22 +103,22 @@ public class AfpInputStream extends FilterInputStream {
 				buf = read(); offset++;
 				leadingLength++;
 			} while((buf & 0xff) != 0x5a && buf != -1 && leadingLength < 5);
-			
+
 			if((buf & 0xff) != 0x5a) {
 			    has5a = false;
 			    leadingLength = 1;
 			    // so try if byte 3 is 0xd3 -> so this would be an afp without 5a magic byte
 			    offset = 2;
 			    buf = read();
-			    if(buf == -1) return null;
+			    if(buf == -1) return -1;
 			    if((buf & 0xff) != 0xd3) {
-		            throw new AfpFormatException("cannot find 5a magic byte nor d3 -> this is no AFP");			        
+		            throw new AfpFormatException("cannot find 5a magic byte nor d3 -> this is no AFP");
 			    }
 			    offset = 0;
 			}
-			
+
 			leadingLengthBytes = leadingLength-1;
-			
+
 //			if(buf == -1 && leadingLength > 1)
 //				throw new IOException("found trailing garbage at the end of file.");
 		} else {
@@ -94,21 +128,22 @@ public class AfpInputStream extends FilterInputStream {
 			    offset++;
 			}
 		}
-		
+
 		if(buf == -1) {
-			return null;
+			return -1;
 		}
-		
+
 		if(has5a && (buf & 0xff) != 0x5a) {
 			throw new AfpFormatException("cannot find 5a magic byte");
 		}
 		data[0] = 0x5a; // (byte) (buf & 0xff);
-		
-		buf = read(); offset++;
+
+		buf = read();
+		offset++;
 		if(buf == -1 && !has5a) {
-		    return null; 
+			return -1;
 		}
-		
+
 		if(buf == -1) {
 			throw new AfpFormatException("premature end of file.");
 		}
@@ -116,32 +151,27 @@ public class AfpInputStream extends FilterInputStream {
 
 		length = (byte) buf << 8;
 
-		buf = read(); offset++;
+		buf = read();
+		offset++;
 		if(buf == -1)
 			throw new AfpFormatException("premature end of file.");
 		data[2] = (byte) (buf & 0xff);
 
 		length |= (byte) buf & 0xff;
-		
+
 		length -= 2;
-		
+
 		if(length > data.length)
 			throw new AfpFormatException("length of structured field is too large: "+length);
-				
+
 		int read = read(data, 3, length);
 		offset += read;
-		
+
 		if(read < length)
 			throw new AfpFormatException("premature end of file.");
-		
-		SF sf = factory.sf(data, 0, getLength() + 2);
-		sf.setLength(length + 3);
-		sf.setOffset(thisOffset);
-		sf.setNumber(number++);
-		
-		return sf;
+		return thisOffset;
 	}
-	
+
 	@Override
 	public int read() throws IOException {
 	    if(header != null && offset < header.length) {
