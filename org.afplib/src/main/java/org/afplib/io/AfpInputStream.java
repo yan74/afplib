@@ -87,7 +87,7 @@ public class AfpInputStream extends FilterInputStream {
 	 * Reads the raw data of a new structured field from the input stream.
 	 * This method is not thread-safe!
 	 *
-	 * @return offset to structured field or null if end of input.
+	 * @return offset to structured field or -1 if end of input.
 	 * @throws IOException
 	 */
 	private long readStructuredFieldData() throws IOException {
