@@ -6,6 +6,13 @@
  *    user zoom.
  */
 
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/Architects_Daughter/ArchitectsDaughter-Regular.ttf) format('truetype');
+}
+
 html {
   font-family: sans-serif; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -747,7 +754,6 @@ footer {
   margin-top: 40px;
   font-size: 13px;
   color: #aaa;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
 
 footer a {
