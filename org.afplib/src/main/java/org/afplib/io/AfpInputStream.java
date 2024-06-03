@@ -15,12 +15,12 @@ public class AfpInputStream extends FilterInputStream {
 	byte[] header = new byte[5];
 	byte[] data = new byte[32768];
 	int length;
-	
+
 	int number = 0;
 	long offset = 0;
 	int leadingLengthBytes = -1;
 	boolean has5a = true;
-	
+
 	public AfpInputStream(InputStream in) {
 		super(in);
 		try {
@@ -35,7 +35,7 @@ public class AfpInputStream extends FilterInputStream {
 	    this(in);
 		leadingLengthBytes = leadingBytesToIgnorePerSF;
 	}
-	
+
 	public FileChannel position(long filepos) throws IOException {
 		if(leadingLengthBytes == -1) {
 			readStructuredField(); // get rid of the header and initialize leadingLengthBytes
@@ -51,7 +51,7 @@ public class AfpInputStream extends FilterInputStream {
 	/**
 	 * Reads a new structured field from the input stream.
 	 * This method is not thread-safe!
-	 * 
+	 *
 	 * @return structured field or null if end of input.
 	 * @throws IOException
 	 */
@@ -63,7 +63,7 @@ public class AfpInputStream extends FilterInputStream {
 		sf.setLength(length + 3);
 		sf.setOffset(offset);
 		sf.setNumber(number++);
-		
+
 		return sf;
 	}
 
@@ -174,20 +174,22 @@ public class AfpInputStream extends FilterInputStream {
 
 	@Override
 	public int read() throws IOException {
-	    if(header != null && offset < header.length) {
-	        return header[(int) offset];
-	    }
-	    header = null;
-	    return super.read();
+		// Fix for Issue #65 "AFPInputStream does not handle structured field length correctly"
+		// https://github.com/yan74/afplib/issues/65
+		if (this.header != null && this.offset < this.header.length) {
+			return this.header[(int) this.offset] & 0xff;
+		}
+		this.header = null;
+		return super.read();
 	}
-	
+
 	@Override
 	public int read(byte[] b, int off, int len) throws IOException {
 	    if(header != null && offset < header.length) {
 	        int bytesToReadFromHeaderBuffer = Math.min(header.length - (int) offset, len);
             System.arraycopy(header, (int) offset, b, off, bytesToReadFromHeaderBuffer);
 	        if(offset + len <= header.length) return len;
-	        
+
 	        int res = super.read(b, off + bytesToReadFromHeaderBuffer, len - bytesToReadFromHeaderBuffer);
 	        header = null;
 	        return res + bytesToReadFromHeaderBuffer;
@@ -195,20 +197,20 @@ public class AfpInputStream extends FilterInputStream {
 	    header = null;
 	    return super.read(b, off, len);
 	}
-	
+
 	/**
 	 * current position in the input stream
-	 * 
+	 *
 	 * @return position
 	 */
 	public long getCurrentOffset() {
 		return offset;
 	}
-	
+
 	/**
 	 * returns a copy of the last read buffer that
 	 * contained the previous structured field.
-	 * 
+	 *
 	 * @return copy of internal buffer
 	 */
 	public byte[] getLastReadBuffer() {
@@ -216,10 +218,10 @@ public class AfpInputStream extends FilterInputStream {
 		System.arraycopy(data, 0, result, 0, length + 3);
 		return result;
 	}
-	
+
 	private int getLength() {
 		int result = length;
-		
+
 		if((data[6] & 0x08) == 0x08) { // padding
 			int padding = 0;
 			if(data[data.length - 1] == 0) {
@@ -235,5 +237,5 @@ public class AfpInputStream extends FilterInputStream {
 	public int getLeadingLengthBytes() {
 		return leadingLengthBytes;
 	}
-	
+
 }
