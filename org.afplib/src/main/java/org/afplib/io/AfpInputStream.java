@@ -1,13 +1,14 @@
 package org.afplib.io;
 
+import org.afplib.Data;
+import org.afplib.base.SF;
+
 import java.io.FileInputStream;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InterruptedIOException;
 import java.nio.channels.FileChannel;
-
-import org.afplib.Data;
-import org.afplib.base.SF;
 
 public class AfpInputStream extends FilterInputStream {
 
@@ -24,9 +25,8 @@ public class AfpInputStream extends FilterInputStream {
 	public AfpInputStream(InputStream in) {
 		super(in);
 		try {
-            super.read(header, 0, header.length);
+            readFully(in, header, 0, header.length);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 	}
@@ -122,7 +122,7 @@ public class AfpInputStream extends FilterInputStream {
 //			if(buf == -1 && leadingLength > 1)
 //				throw new IOException("found trailing garbage at the end of file.");
 		} else {
-			if(leadingLengthBytes > 0) read(data, 0, leadingLengthBytes); // just throw away those
+			if(leadingLengthBytes > 0) skipFully(this.in, leadingLengthBytes); // just throw away those
 			if(has5a) {
 			    buf = read();
 			    offset++;
@@ -190,16 +190,16 @@ public class AfpInputStream extends FilterInputStream {
             System.arraycopy(header, (int) offset, b, off, bytesToReadFromHeaderBuffer);
 	        if(offset + len <= header.length) return len;
 
-	        int res = super.read(b, off + bytesToReadFromHeaderBuffer, len - bytesToReadFromHeaderBuffer);
+	        int res = readFully(in, b, off + bytesToReadFromHeaderBuffer, len - bytesToReadFromHeaderBuffer);
 	        header = null;
 	        return res + bytesToReadFromHeaderBuffer;
 	    }
 	    header = null;
-	    return super.read(b, off, len);
+	    return readFully(this.in, b, off, len);
 	}
 
 	/**
-	 * current position in the input stream
+	 * Current position in the input stream
 	 *
 	 * @return position
 	 */
@@ -236,6 +236,39 @@ public class AfpInputStream extends FilterInputStream {
 
 	public int getLeadingLengthBytes() {
 		return leadingLengthBytes;
+	}
+
+	private static int readFully(final InputStream stream, final byte[] buffer, final int off, final int len)
+			throws IOException {
+
+		int read = 0;
+		while (read < len) {
+			if (Thread.currentThread().isInterrupted()) {
+				throw new InterruptedIOException();
+			}
+			final long cur = stream.read(buffer, off + read, len - read);
+			if (cur < 0) {
+				return read == 0 ? -1 : read;
+			}
+			read += cur;
+		}
+		return read;
+	}
+
+	public static long skipFully(final InputStream stream, final long length) throws IOException {
+
+		long skipped = 0;
+		while (skipped < length) {
+			if (Thread.currentThread().isInterrupted()) {
+				throw new InterruptedIOException();
+			}
+			final long cur = stream.skip(length);
+			if (cur == 0) {
+				return skipped == 0 ? -1 : skipped;
+			}
+			skipped += cur;
+		}
+		return skipped;
 	}
 
 }
