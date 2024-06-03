@@ -20,7 +20,7 @@ public class AfpOutputStream extends FilterOutputStream {
 	public void writeStructuredField(SF sf) throws IOException {
 		buffer = new byte[32768];
 		int length = factory.binary(buffer, 0, sf);
-		
+
 		buffer[0] = (byte) 0x5a;
 		byte[] bLength = Data.toUnsignedShort(length - 1);
 		buffer[1] = bLength[0];
@@ -33,7 +33,7 @@ public class AfpOutputStream extends FilterOutputStream {
 		byte[] bIndex = Data.toUnsignedShort(index++);
 		buffer[7] = bIndex[0]; // reserved
 		buffer[8] = bIndex[1]; // reserved
-		
-		write(buffer, 0, length);
+
+		out.write(buffer, 0, length);
 	}
 }
