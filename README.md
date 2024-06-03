@@ -29,22 +29,22 @@ Use a pom like this:
 		<dependency>
 			<groupId>org.afplib</groupId>
 			<artifactId>afplib</artifactId>
-			<version>0.0.14</version>
+			<version>0.0.15</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.emf</groupId>
 			<artifactId>org.eclipse.emf.ecore</artifactId>
-			<version>2.10.1</version>
+			<version>2.36.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.emf</groupId>
 			<artifactId>org.eclipse.emf.common</artifactId>
-			<version>2.10.1</version>
+			<version>2.36.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.emf</groupId>
 			<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
-			<version>2.10.1</version>
+			<version>2.36.0</version>
 		</dependency>
 	</dependencies>
 
@@ -55,8 +55,8 @@ Use a pom like this:
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
