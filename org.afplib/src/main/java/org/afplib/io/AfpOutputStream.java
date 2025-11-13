@@ -34,6 +34,6 @@ public class AfpOutputStream extends FilterOutputStream {
 		buffer[7] = bIndex[0]; // reserved
 		buffer[8] = bIndex[1]; // reserved
 		
-		write(buffer, 0, length);
+		out.write(buffer, 0, length);
 	}
 }
